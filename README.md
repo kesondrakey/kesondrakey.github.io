@@ -7,7 +7,7 @@ title: Example content
 ---
 
 ---
-About the Project: [/about/](https://kesondrakey.github.io/about)
+[/About the Project/](https://kesondrakey.github.io/about)
 ---
 <div class="message">
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
