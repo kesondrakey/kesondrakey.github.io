@@ -7,7 +7,7 @@ title: Example content
 ---
 
 ---
-[/About the Project/](https://kesondrakey.github.io/about)
+[About the Project](https://kesondrakey.github.io/about)
 ---
 <div class="message">
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
@@ -130,7 +130,7 @@ Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur e
   <style>
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       grid-gap: 10px;
     }
     
@@ -152,27 +152,28 @@ Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur e
 <body>
   <div class="grid-container">
     <div class="grid-item">
-      <a href="image1.html">
+      <a href="https://kesondrakey.github.io/fluxtower1">
         <img src="images/image1.jpeg" alt="Image 1">
       </a>
     </div>
     <div class="grid-item">
-      <a href="image2.html">
+      <a href="https://kesondrakey.github.io/fluxtower2">
         <img src="images/image2.jpeg" alt="Image 2">
       </a>
     </div>
     <div class="grid-item">
-      <a href="image3.html">
+      <a href="https://kesondrakey.github.io/fluxtower3">
         <img src="images/image3.jpeg" alt="Image 3">
       </a>
     </div>
     <div class="grid-item">
-      <a href="image4.html">
+      <a href="https://kesondrakey.github.io/fluxtower4">
         <img src="images/image4.jpeg" alt="Image 4">
       </a>
     </div>
-    <!-- Add more grid-items for the remaining images -->
   </div>
 </body>
 </html>
 
+
+[About the Project](https://kesondrakey.github.io/about)
