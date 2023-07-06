@@ -121,3 +121,58 @@ Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, conse
 </table>
 
 Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+    }
+    
+    .grid-item {
+      position: relative;
+      width: 100%;
+      padding-bottom: 100%;
+      overflow: hidden;
+    }
+    
+    .grid-item img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">
+      <a href="image1.html">
+        <img src="images/image1.jpeg" alt="Image 1">
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="image2.html">
+        <img src="images/image2.jpeg" alt="Image 2">
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="image3.html">
+        <img src="images/image3.jpeg" alt="Image 3">
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="image4.html">
+        <img src="images/image4.jpeg" alt="Image 4">
+      </a>
+    </div>
+    <!-- Add more grid-items for the remaining images -->
+  </div>
+</body>
+</html>
+
