@@ -16,7 +16,7 @@
 ---
 layout: post
 title: About the Project
-description: About the Project
+description: About the Project 
 image: images/bannerz.jpeg
 nav-menu: true
 --- 
