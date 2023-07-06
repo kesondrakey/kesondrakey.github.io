@@ -34,7 +34,7 @@ nav-menu: true
     <section id="banner" class="major">
         <div class="inner">
             <header class="major">
-                <h1>About the Project</h1>
+                <h1>Nature Based Climate Solutions</h1>
             </header>
             <div class="content">
                 <ul class="actions">
