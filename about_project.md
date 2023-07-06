@@ -1,4 +1,4 @@
-
+<html>
     <!-- Banner -->
     <section id="banner" class="major">
         <div class="inner">
@@ -12,7 +12,7 @@
         </div>
     </section>
     
-
+</html>
 
 ---
 layout: post
