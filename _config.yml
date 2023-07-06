@@ -1,6 +1,5 @@
-theme: jekyll-theme-slate
-#remote_theme: kesondrakey/forty-jekyll-theme
-#remote_theme: kesondrakey/minimal-mistakes
+#theme: jekyll-theme-slate
+remote_theme: kesondrakey/forty-jekyll-theme
 
 title: Nature Based Climate Solutions Flux Towers
 description: A comprehensive resource showcasing eddy covariance data from four distinct agricultural sites in Indiana
