@@ -6,4 +6,4 @@ image: images/bannerz.jpeg
 nav-menu: true
 ---
 
-testing
+About the Team
