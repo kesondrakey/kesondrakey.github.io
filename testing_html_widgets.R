@@ -33,7 +33,8 @@ p <- plot_ly(df, x = ~dates, y = ~data, type = 'scatter', mode = 'lines')
 # Save the plot to a standalone HTML file
 htmlwidgets::saveWidget(p, "my_plot1.html")
 
-#after saving, committing changes, pushing plots to github, put the "view raw" url from github here :https://raw.githack.com/
+#after saving, committing changes, pushing plots to github, put the "view raw" url from 
+#github here: https://raw.githack.com/
 #Use this URL in production url .. put that URL into the site page
 
 #ex for fluxtower1.md
