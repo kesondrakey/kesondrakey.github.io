@@ -48,7 +48,7 @@ nav-menu: true
 <body>
   <div class="grid-container">
     <div class="grid-item">
-      <a href="[https://blogs.iu.edu/oneillschool/2022/10/12/new-report-provides-road-map-for-the-science-of-nature-based-climate-solutions]">
+      <a href="https://blogs.iu.edu/oneillschool/2022/10/12/new-report-provides-road-map-for-the-science-of-nature-based-climate-solutions">
         <img src="images/nbcs.jpeg" alt="Nature Based Climate Solutions">
       </a>
     </div>
