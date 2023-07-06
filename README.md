@@ -3,11 +3,12 @@ A comprehensive resource showcasing invaluable data from four distinct agricultu
 
 ---
 layout: post
-title: Example content
+title: Main page
 ---
 
 ---
-[About the Project](https://kesondrakey.github.io/about)
+[About the Project](https://kesondrakey.github.io/about_project)
+[About the Team](https://kesondrakey.github.io/about_team)
 ---
 
 <html>
@@ -61,4 +62,4 @@ title: Example content
 </html>
 
 
-[About the Project](https://kesondrakey.github.io/about)
+
