@@ -55,6 +55,3 @@ A comprehensive resource showcasing invaluable data from four distinct agricultu
   </div>
 </body>
 </html>
-
-
-
