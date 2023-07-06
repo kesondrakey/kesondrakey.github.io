@@ -1,8 +1,3 @@
----
-layout: home
-nav-menu: true
----
-
 A comprehensive resource showcasing invaluable data from four distinct agricultural sites in Indiana
 
 ---
