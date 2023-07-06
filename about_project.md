@@ -1,25 +1,9 @@
-<html>
-    <!-- Banner -->
-    <section id="banner" class="major">
-        <div class="inner">
-            <header class="major">
-                <h1>{{ page.landing-title }}</h1>
-            </header>
-            <div class="content">
-                <ul class="actions">
-            </div>
-        </div>
-    </section>
-    
-</html>
-
-
 ---
 layout: post
 title: About the Project
 description: About the Project 
 nav-menu: true
---- 
+---
 
 <html>
 <head>
@@ -46,13 +30,26 @@ nav-menu: true
   </style>
 </head>
 <body>
-  <div class="grid-container">
-    <div class="grid-item">
-      <a href="https://blogs.iu.edu/oneillschool/2022/10/12/new-report-provides-road-map-for-the-science-of-nature-based-climate-solutions">
-        <img src="images/nbcs.jpeg" alt="Nature Based Climate Solutions">
-      </a>
+    <!-- Banner -->
+    <section id="banner" class="major">
+        <div class="inner">
+            <header class="major">
+                <h1>About the Project</h1>
+            </header>
+            <div class="content">
+                <ul class="actions">
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <a href="https://blogs.iu.edu/oneillschool/2022/10/12/new-report-provides-road-map-for-the-science-of-nature-based-climate-solutions">
+                <img src="images/nbcs.jpeg" alt="Nature Based Climate Solutions">
+            </a>
+        </div>
     </div>
-  </div>
 </body>
 </html>
 
