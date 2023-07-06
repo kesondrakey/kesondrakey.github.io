@@ -6,4 +6,8 @@ image: images/image1.jpeg
 nav-menu: true
 ---
 
-Flux Tower 1
+Entire Timeseries
+...
+
+Daily Plots
+...
