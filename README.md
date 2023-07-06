@@ -1,5 +1,4 @@
 ---
-title: Home
 nav-menu: true
 ---
 
