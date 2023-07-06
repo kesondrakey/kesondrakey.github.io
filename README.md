@@ -8,6 +8,7 @@ title: Main page
 
 ---
 [About the Project](https://kesondrakey.github.io/about_project)
+---
 [About the Team](https://kesondrakey.github.io/about_team)
 ---
 
