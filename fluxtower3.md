@@ -6,4 +6,6 @@ image: images/image3.jpeg
 nav-menu: true
 ---
 
-Tower 3
+Entire Timeseries ...
+
+Daily Plots ...
