@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Generic
-description: flux tower 1
+description: flux tower 2
 image: images/image2.jpeg
 nav-menu: true
 ---
