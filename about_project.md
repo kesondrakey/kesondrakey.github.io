@@ -13,11 +13,11 @@
     
 </html>
 
+
 ---
 layout: post
 title: About the Project
 description: About the Project 
-image: images/bannerz.jpeg
 nav-menu: true
 --- 
 
@@ -26,7 +26,7 @@ nav-menu: true
   <style>
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(2, 2fr);
+      grid-template-columns: repeat(1, 1fr);
       grid-gap: 10px;
     }
     
@@ -48,8 +48,8 @@ nav-menu: true
 <body>
   <div class="grid-container">
     <div class="grid-item">
-      <a href="[https://kesondrakey.github.io/fluxtower1](https://blogs.iu.edu/oneillschool/2022/10/12/new-report-provides-road-map-for-the-science-of-nature-based-climate-solutions/)">
-        <img src="images/nbcs.jpeg" alt="Image 1">
+      <a href="[https://blogs.iu.edu/oneillschool/2022/10/12/new-report-provides-road-map-for-the-science-of-nature-based-climate-solutions]">
+        <img src="images/nbcs.jpeg" alt="Nature Based Climate Solutions">
       </a>
     </div>
   </div>
