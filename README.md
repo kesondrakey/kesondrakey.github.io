@@ -124,13 +124,13 @@ Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur e
 
 
 
-<!DOCTYPE html>
+
 <html>
 <head>
   <style>
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 2fr);
       grid-gap: 10px;
     }
     
