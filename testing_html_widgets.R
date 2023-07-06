@@ -42,3 +42,23 @@ htmlwidgets::saveWidget(p, "my_plot1.html")
 #src="https://rawcdn.githack.com/kesondrakey/kesondrakey.github.io/aca4458d7a547f2aed9b3c90178f2cab30f4ae08/my_plot.html"></iframe>
   
 
+#plotly requires extra steps. we could do this over time if we want a nice full time series
+
+#for static images, we can streamline the process easier: 
+# library(ggplot2)
+# 
+# # Assume df is your data frame, and x and y are variables in df
+# p <- ggplot(df, aes(x = x, y = y)) + geom_line()
+# 
+# # Save the plot to a .png file
+# ggsave("my_plot.png", plot = p, width = 10, height = 10, dpi = 300)
+# 
+# 
+# # Assume you're already in the right directory and the plot is saved
+# system("git add my_plot.png")
+# system("git commit -m 'Update plot'")
+# system("git push")
+# 
+# 
+# <img src="path/to/my_plot.png" alt="My Plot">
+  
