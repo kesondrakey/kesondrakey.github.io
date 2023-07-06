@@ -45,12 +45,12 @@ nav-menu: true
 
     <div class="flex-container">
         <div class="flex-item-text">
-            <p>Your text here...</p>
+            <p>test test test test test test</p>
         </div>
 
         <div class="flex-item-image">
             <a href="https://oneill.indiana.edu/faculty-research/research/climate/index.html">
-                <img src="images/nbcs.jpeg" alt="Nature Based Climate Solutions">
+                <img src="images/nbcs.jpg" alt="Nature Based Climate Solutions">
             </a>
         </div>
     </div>
