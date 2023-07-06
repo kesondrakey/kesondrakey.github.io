@@ -6,4 +6,6 @@ image: images/image4.jpeg
 nav-menu: true
 ---
 
-Done
+Entire Timeseries ...
+
+Daily Plots ...
