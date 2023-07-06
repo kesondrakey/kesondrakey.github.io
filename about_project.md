@@ -14,9 +14,7 @@
                 <h1>{{ page.landing-title }}</h1>
             </header>
             <div class="content">
-                <p style="text-transform: uppercase;">{{ site.description }}</p>
                 <ul class="actions">
-                    <li><a href="/about_project" class="button next scrolly">About the Project</a></li>
                 </ul>
             </div>
         </div>
