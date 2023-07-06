@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Generic
+title: flux tower 4
 description: flux tower 4
 image: images/image4.jpeg
 nav-menu: true
 ---
 
-Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem dia
+Donec
