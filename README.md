@@ -58,7 +58,8 @@ A comprehensive resource showcasing invaluable data from four agricultural sites
         font-weight: 900;
       }
     }
-        .grid-item a .text-overlay {
+
+    .grid-item a .text-overlay {
       position: absolute;
       top: 0;
       left: 0;
@@ -79,16 +80,6 @@ A comprehensive resource showcasing invaluable data from four agricultural sites
     .grid-item a:hover .text-overlay {
       opacity: 1; /* Make the text visible when the link is hovered */
     }
-  </style>
-</head>
-<body>
-  <div class="grid-container">
-    <div class="grid-item">
-      <a href="https://kesondrakey.github.io/fluxtower1">
-        <img src="images/image1.jpeg" alt="Image 1">
-        <div class="text-overlay">Flux Tower 1</div>
-      </a>
-    </div>
   </style>
 </head>
 <body>
@@ -120,4 +111,3 @@ A comprehensive resource showcasing invaluable data from four agricultural sites
   </div>
 </body>
 </html>
-
