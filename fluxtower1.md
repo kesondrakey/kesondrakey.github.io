@@ -49,7 +49,7 @@ nav-menu: true
 
 
 
-
+<h2>Daily Plots </h2>
 
 
 <html>
