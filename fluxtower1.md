@@ -114,12 +114,12 @@ nav-menu: true
     <div class="html-object">
       <!-- Here's where you add the iframe to embed the Plotly graph -->
       <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://rawcdn.githack.com/kesondrakey/kesondrakey.github.io/5751ae02e646d085df29a0bdd78743b7f0f2358c/longterm_plots/longterm_plotly_fluxtower1.html">
-        <h6>Precipitation (precip_Tot); Temperature (T_tmpr_rh_mean, °C); Wind Speed (wnd_spd); Soil Water Content (Tsoil1_Avg)</h6>
+       
       </iframe>
     </div>
   </div>
 
-  
+   <h6>Precipitation (precip_Tot); Temperature (T_tmpr_rh_mean, °C); Wind Speed (wnd_spd); Soil Water Content (Tsoil1_Avg)</h6>
 
   <h2>Daily Plots</h2>
 
