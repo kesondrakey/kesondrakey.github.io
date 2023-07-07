@@ -4,7 +4,7 @@ title: Flux Tower 1
 description: Flux Tower 1
 nav-menu: true
 ---
-
+<h1>Timeseries </h1>
 <html>
 <head>
   <style>
@@ -53,6 +53,18 @@ nav-menu: true
 
 
 <html>
+<head>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 200px); /* Adjust the height as needed */
+      grid-gap: 10px;
+    }
+    
+    .grid-item {
+      position: relative;
+      overflow: hidden;<html>
 <head>
   <style>
     .grid-container {
@@ -145,6 +157,5 @@ nav-menu: true
   </div>
 </body>
 </html>
-
 
 
