@@ -52,9 +52,35 @@ nav-menu: true
 <h2>Daily Plots </h2>
 
 
+<!DOCTYPE html>
 <html>
 <head>
   <style>
+    .container {
+      display: flex;
+      align-items: center;
+    }
+    
+    .html-object {
+      flex: 2;
+    }
+    
+    .image {
+      flex: 1;
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .image img {
+      border-radius: 50%;
+      width: 250px; /* Increased the width to make the image bigger */
+      height: 250px; /* Increased the height to make the image bigger */
+      object-fit: cover;
+      filter: brightness(70%); /* Added dark overlay to improve text readability */
+    }
+    
     .grid-container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -113,6 +139,18 @@ nav-menu: true
   </style>
 </head>
 <body>
+  <div class="container">
+    <div class="html-object">
+      <!-- Here's where you add the iframe to embed the Plotly graph -->
+      <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://rawcdn.githack.com/kesondrakey/kesondrakey.github.io/d7d6c8619bd58493be9406344f4e9e6830b1f298/longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
+    </div>
+    <div class="image">
+      <img src="images/image1.jpeg" alt="Image 1">
+    </div>
+  </div>
+
+  <h2>Daily Plots</h2>
+
   <div class="grid-container">
     <div class="grid-item">
       <a href="https://kesondrakey.github.io/fluxtower1/precip">
