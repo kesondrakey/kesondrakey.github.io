@@ -59,14 +59,12 @@ nav-menu: true
     .grid-container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 200px); /* Adjust the height as needed */
-      grid-gap: 10px;
+      grid-template-rows: repeat(2, 1fr);
     }
     
     .grid-item {
       position: relative;
       overflow: hidden;
-      height: 200px; /* Adjust the height to make it square */
     }
     
     .grid-item a {
@@ -82,11 +80,12 @@ nav-menu: true
     }
     
     .grid-item img {
-      width: auto;
+      width: 100%;
       height: 100%;
       object-fit: cover;
       filter: brightness(100%);
       transition: filter 0.3s ease; /* Add transition effect */
+      outline: none; /* Remove the outline on images */
     }
     
     .grid-item:hover img {
@@ -102,7 +101,10 @@ nav-menu: true
       text-align: center;
       font-size: 20px; /* Adjust the font size as needed */
       font-weight: bold;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow to the text */
+    }
+    
+    .grid-item:hover span {
+      color: #ffffff; /* Change text color to white on hover */
     }
   </style>
 </head>
@@ -147,4 +149,3 @@ nav-menu: true
   </div>
 </body>
 </html>
-
