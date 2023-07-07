@@ -5,111 +5,7 @@ description: Flux Tower 1
 nav-menu: true
 ---
 
-<html>
-<head>
-  <style>
-    .container {
-      display: flex;
-      align-items: center;
-    }
-    
-    .html-object {
-      flex: 2;
-    }
-    
-    .image {
-      flex: 1;
-      margin-left: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .image img {
-      border-radius: 50%;
-      width: 250px; /* Increased the width to make the image bigger */
-      height: 250px; /* Increased the height to make the image bigger */
-      object-fit: cover;
-      filter: brightness(70%); /* Added dark overlay to improve text readability */
-    }
-    
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-gap: 10px;
-    }
-    
-    .grid-item {
-      position: relative;
-      overflow: hidden;
-      height: 0; /* Set the height to 0 to create a square shape */
-      padding-bottom: 100%; /* Set the padding-bottom to create a square shape */
-      border-radius: 0; /* Make the buttons square-shaped */
-    }
-    
-    .grid-item a {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 100%;
-      text-decoration: none;
-      color: #ffffff;
-      transition: background-color 0.3s ease; /* Add transition effect */
-      outline: none; /* Remove the outline on buttons */
-      border: none; /* Remove the border on buttons */
-    }
-    
-    .grid-item a::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7); /* Add black overlay */
-      transition: opacity 0.3s ease; /* Add transition effect */
-      opacity: 1; /* Set the initial opacity to show the black overlay */
-    }
-    
-    .grid-item a:hover::before {
-      opacity: 0; /* Remove the black overlay on hover */
-    }
-    
-    .grid-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: brightness(100%);
-      transition: filter 0.3s ease; /* Add transition effect */
-      outline: none; /* Remove the outline on images */
-    }
-    
-    .grid-item:hover img {
-      filter: brightness(50%); /* Darken the image on hover */
-    }
-    
-    .grid-item:hover span {
-      color: #ffffff; /* Keep the text white when hovering */
-    }
-    
-    .grid-item span {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 1;
-      text-align: center;
-      font-size: 26px; /* Adjust the font size as needed */
-      font-weight: bold;
-      pointer-events: none; /* Prevent the span from interfering with hover events */
-    }
-  </style>
-</head>
-<body>
+
   <div class="container">
     <div class="html-object">
       <!-- Here's where you add the iframe to embed the Plotly graph -->
@@ -119,10 +15,67 @@ nav-menu: true
     </div>
   </div>
 
-   <h6>Precipitation (precip_Tot); Temperature (T_tmpr_rh_mean, °C); Wind Speed (wnd_spd); Soil Water Content (Tsoil1_Avg)</h6>
+   <h6><i></i>Precipitation (precip_Tot); Temperature (T_tmpr_rh_mean, °C); Wind Speed (wnd_spd); Soil Water Content (Tsoil1_Avg)</h6></i>
 
   <h2>Daily Plots</h2>
 
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Make the grid responsive */
+      grid-gap: 1em;
+    }
+
+    .grid-item {
+      position: relative;
+      padding-top: 100%; /* Maintain the aspect ratio */
+      overflow: hidden;
+    }
+
+    .grid-item a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      text-decoration: none;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,0.5); /* Add a semi-transparent overlay */
+      transition: background-color 0.5s ease; /* Add a transition effect */
+    }
+
+    .grid-item a:hover {
+      background: rgba(0,0,0,0.7); /* Darken the overlay on hover */
+    }
+
+    .grid-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: filter 0.5s ease; /* Add a transition effect */
+    }
+
+    .grid-item:hover img {
+      filter: brightness(70%); /* Darken the image on hover */
+    }
+
+    .grid-item span {
+      font-size: 1.5rem; /* Adjust the font size */
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Add a text shadow for better visibility */
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
   <div class="grid-container">
     <div class="grid-item">
       <a href="https://kesondrakey.github.io/fluxtower1/precip">
@@ -163,3 +116,4 @@ nav-menu: true
   </div>
 </body>
 </html>
+
