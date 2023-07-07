@@ -58,6 +58,37 @@ A comprehensive resource showcasing invaluable data from four distinct agricultu
         font-weight: 900;
       }
     }
+        .grid-item a .text-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1; /* Make sure the text is above the image */
+      color: white; /* Set the text color */
+      font-size: 2em; /* Adjust the font size */
+      font-weight: bold; /* Make the text bold */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow for better visibility */
+      opacity: 0; /* Make the text invisible by default */
+      transition: opacity 0.3s ease; /* Smooth transition when the opacity changes */
+    }
+
+    .grid-item a:hover .text-overlay {
+      opacity: 1; /* Make the text visible when the link is hovered */
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">
+      <a href="https://kesondrakey.github.io/fluxtower1">
+        <img src="images/image1.jpeg" alt="Image 1">
+        <div class="text-overlay">Flux Tower 1</div>
+      </a>
+    </div>
   </style>
 </head>
 <body>
