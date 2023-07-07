@@ -32,12 +32,7 @@ nav-menu: true
       display: flex;
       align-items: center;
       justify-content: center;
-      background: rgba(0,0,0,0.5); /* Add a semi-transparent overlay */
-      transition: background-color 0.5s ease; /* Add a transition effect */
-    }
-
-    .grid-item a:hover {
-      background: rgba(0,0,0,0.7); /* Darken the overlay on hover */
+      background: rgba(0,0,0,0.7); /* Add a semi-transparent overlay */
     }
 
     .grid-item img {
@@ -47,17 +42,21 @@ nav-menu: true
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: filter 0.5s ease; /* Add a transition effect */
-    }
-
-    .grid-item:hover img {
-      filter: brightness(70%); /* Darken the image on hover */
     }
 
     .grid-item span {
-      font-size: 1.5rem; /* Adjust the font size */
+      font-size: 2rem; /* Adjust the font size */
       text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Add a text shadow for better visibility */
-      z-index: 1;
+      z-index: 2;
+      font-weight: bold; /* Make the text bolder */
+    }
+
+    /* Larger and bolder text for desktop */
+    @media (min-width: 768px) {
+      .grid-item span {
+        font-size: 3rem;
+        font-weight: 900;
+      }
     }
   </style>
 </head>
@@ -70,7 +69,7 @@ nav-menu: true
     </div>
   </div>
 
-  <h6><i>Precipitation (precip_Tot); Temperature (T_tmpr_rh_mean, °C); Wind Speed (wnd_spd); Soil Water Content (Tsoil1_Avg)</i></h6>
+  <i>Precipitation (precip_Tot); Temperature (T_tmpr_rh_mean, °C); Wind Speed (wnd_spd); Soil Water Content (Tsoil1_Avg)</i>
 
   <h2>Daily Plots</h2>
 
@@ -100,12 +99,6 @@ nav-menu: true
       </a>
     </div>
     <div class="grid-item">
-      <a href="https://kesondrakey.github.io/fluxtower1/netrad">
-        <img src="images/netrad.jpeg" alt="Net Radiation">
-        <span>Net Radiation</span>
-      </a>
-    </div>
-    <div class="grid-item">
       <a href="https://kesondrakey.github.io/fluxtower1/other">
         <img src="images/other.jpeg" alt="Other">
         <span>Other</span>
@@ -114,3 +107,4 @@ nav-menu: true
   </div>
 </body>
 </html>
+
