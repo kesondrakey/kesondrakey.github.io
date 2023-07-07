@@ -91,8 +91,8 @@ nav-menu: true
     .grid-item {
       position: relative;
       overflow: hidden;
-      width: 200px; /* Adjust the width to make it square */
       height: 200px; /* Adjust the height to make it square */
+      border-radius: 0; /* Make the buttons square-shaped */
     }
     
     .grid-item a {
@@ -107,12 +107,12 @@ nav-menu: true
       color: #ffffff;
       background-color: rgba(0, 0, 0, 0.5); /* Add black transparent overlay */
       transition: background-color 0.3s ease; /* Add transition effect */
-      outline: none; /* Remove the outline on hover */
+      outline: none; /* Remove the outline on buttons */
+      border: none; /* Remove the border on buttons */
     }
     
     .grid-item:hover a {
-      background-color: rgba(0, 0, 0, 0); /* Make the overlay disappear on hover */
-      color: #ffffff; /* Change the text color to white */
+      background-color: rgba(0, 0, 0, 0.7); /* Darken the overlay on hover */
     }
     
     .grid-item img {
@@ -122,22 +122,10 @@ nav-menu: true
       filter: brightness(100%);
       transition: filter 0.3s ease; /* Add transition effect */
       outline: none; /* Remove the outline on images */
-      position: relative;
     }
     
-    .grid-item:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); /* Add black overlay */
-      transition: background-color 0.3s ease; /* Add transition effect */
-    }
-    
-    .grid-item:hover:before {
-      background-color: rgba(0, 0, 0, 0); /* Make the overlay disappear on hover */
+    .grid-item:hover img {
+      filter: brightness(50%); /* Darken the image on hover */
     }
     
     .grid-item span {
@@ -185,9 +173,6 @@ nav-menu: true
         <span>Wind</span>
       </a>
     </div>
-    <divHere's the continuation of the updated code:
-
-```html
     <div class="grid-item">
       <a href="https://kesondrakey.github.io/fluxtower1/soil">
         <img src="images/soil.jpeg" alt="Soil">
@@ -209,5 +194,6 @@ nav-menu: true
   </div>
 </body>
 </html>
+
 
 
