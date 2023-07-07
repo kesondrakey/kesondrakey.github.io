@@ -7,32 +7,56 @@ A comprehensive resource showcasing invaluable data from four distinct agricultu
   <style>
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(2, 2fr);
-      grid-gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Make the grid responsive */
+      grid-gap: 1em;
     }
-    
+
     .grid-item {
       position: relative;
-      width: 100%;
-      padding-bottom: 100%;
+      padding-top: 100%; /* Maintain the aspect ratio */
       overflow: hidden;
+      border: none; /* Ensure no borders are added to the grid item */
     }
-    
+
+    .grid-item a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      text-decoration: none;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,0.7); /* Add a semi-transparent overlay */
+      border: none; /* Ensure no borders are added to the link */
+    }
+
     .grid-item img {
       position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border: none; /* Ensure no borders are added to the image */
+      outline: none; /* Ensure no outlines are added to the image */
     }
-    
-    .grid-item .text-overlay {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      font-size: 18px;
-      text-align: center;
+
+    .grid-item span {
+      font-size: 2rem; /* Adjust the font size */
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Add a text shadow for better visibility */
+      z-index: 2;
+      font-weight: bold; /* Make the text bolder */
+    }
+
+    /* Larger and bolder text for desktop */
+    @media (min-width: 768px) {
+      .grid-item span {
+        font-size: 3rem;
+        font-weight: 900;
+      }
     }
   </style>
 </head>
