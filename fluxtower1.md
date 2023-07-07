@@ -27,8 +27,9 @@ nav-menu: true
     
     .image img {
       border-radius: 50%;
-      width: 100%;
-      height: auto;
+      width: 150px; /* Adjust the width as needed */
+      height: 150px; /* Adjust the height as needed */
+      object-fit: cover;
     }
   </style>
 </head>
@@ -53,18 +54,6 @@ nav-menu: true
 
 
 <html>
-<head>
-  <style>
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 200px); /* Adjust the height as needed */
-      grid-gap: 10px;
-    }
-    
-    .grid-item {
-      position: relative;
-      overflow: hidden;<html>
 <head>
   <style>
     .grid-container {
@@ -113,6 +102,7 @@ nav-menu: true
       text-align: center;
       font-size: 20px; /* Adjust the font size as needed */
       font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow to the text */
     }
   </style>
 </head>
@@ -157,5 +147,4 @@ nav-menu: true
   </div>
 </body>
 </html>
-
 
