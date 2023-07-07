@@ -73,12 +73,12 @@ A comprehensive resource showcasing invaluable data from four agricultural sites
       font-size: 2em; /* Adjust the font size */
       font-weight: bold; /* Make the text bold */
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow for better visibility */
-      opacity: 0; /* Make the text invisible by default */
+      opacity: 0.7; /* Make the text semi-transparent by default */
       transition: opacity 0.3s ease; /* Smooth transition when the opacity changes */
     }
 
     .grid-item a:hover .text-overlay {
-      opacity: 1; /* Make the text visible when the link is hovered */
+      opacity: 1; /* Make the text fully opaque when the link is hovered */
     }
   </style>
 </head>
@@ -111,3 +111,4 @@ A comprehensive resource showcasing invaluable data from four agricultural sites
   </div>
 </body>
 </html>
+
