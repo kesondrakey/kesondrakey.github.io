@@ -5,20 +5,6 @@ description: Flux Tower 1
 nav-menu: true
 ---
 
-
-  <div class="container">
-    <div class="html-object">
-      <!-- Here's where you add the iframe to embed the Plotly graph -->
-      <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://rawcdn.githack.com/kesondrakey/kesondrakey.github.io/5751ae02e646d085df29a0bdd78743b7f0f2358c/longterm_plots/longterm_plotly_fluxtower1.html">
-       
-      </iframe>
-    </div>
-  </div>
-
-   <h6><i></i>Precipitation (precip_Tot); Temperature (T_tmpr_rh_mean, °C); Wind Speed (wnd_spd); Soil Water Content (Tsoil1_Avg)</h6></i>
-
-  <h2>Daily Plots</h2>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -76,6 +62,18 @@ nav-menu: true
   </style>
 </head>
 <body>
+  <div class="container">
+    <div class="html-object">
+      <!-- Here's where you add the iframe to embed the Plotly graph -->
+      <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://rawcdn.githack.com/kesondrakey/kesondrakey.github.io/5751ae02e646d085df29a0bdd78743b7f0f2358c/longterm_plots/longterm_plotly_fluxtower1.html">
+      </iframe>
+    </div>
+  </div>
+
+  <h6><i>Precipitation (precip_Tot); Temperature (T_tmpr_rh_mean, °C); Wind Speed (wnd_spd); Soil Water Content (Tsoil1_Avg)</i></h6>
+
+  <h2>Daily Plots</h2>
+
   <div class="grid-container">
     <div class="grid-item">
       <a href="https://kesondrakey.github.io/fluxtower1/precip">
@@ -116,4 +114,3 @@ nav-menu: true
   </div>
 </body>
 </html>
-
