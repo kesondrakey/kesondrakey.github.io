@@ -27,41 +27,16 @@ nav-menu: true
     
     .image img {
       border-radius: 50%;
-      width: 100%;
-      height: auto;
+      width: 250px; /* Increased the width to make the image bigger */
+      height: 250px; /* Increased the height to make the image bigger */
+      object-fit: cover;
+      filter: brightness(70%); /* Added dark overlay to improve text readability */
     }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="html-object">
-      <!-- Here's where you add the iframe to embed the Plotly graph -->
-      <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://rawcdn.githack.com/kesondrakey/kesondrakey.github.io/d7d6c8619bd58493be9406344f4e9e6830b1f298/longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
-    </div>
-    <div class="image">
-      <img src="images/image1.jpeg" alt="Image 1">
-    </div>
-  </div>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-<html>
-<head>
-  <style>
+    
     .grid-container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 200px); /* Adjust the height as needed */
+      grid-template-rows: repeat(2, 1fr);
       grid-gap: 10px;
     }
     
@@ -69,6 +44,7 @@ nav-menu: true
       position: relative;
       overflow: hidden;
       height: 200px; /* Adjust the height to make it square */
+      border-radius: 0; /* Make the buttons square-shaped */
     }
     
     .grid-item a {
@@ -81,13 +57,42 @@ nav-menu: true
       height: 100%;
       text-decoration: none;
       color: #ffffff;
+      transition: background-color 0.3s ease; /* Add transition effect */
+      outline: none; /* Remove the outline on buttons */
+      border: none; /* Remove the border on buttons */
+    }
+    
+    .grid-item a::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* Add black overlay */
+      transition: opacity 0.3s ease; /* Add transition effect */
+      opacity: 1; /* Set the initial opacity to show the black overlay */
+    }
+    
+    .grid-item a:hover::before {
+      opacity: 0; /* Remove the black overlay on hover */
     }
     
     .grid-item img {
-      width: auto;
+      width: 100%;
       height: 100%;
       object-fit: cover;
-      filter: brightness(50%);
+      filter: brightness(100%);
+      transition: filter 0.3s ease; /* Add transition effect */
+      outline: none; /* Remove the outline on images */
+    }
+    
+    .grid-item:hover img {
+      filter: brightness(50%); /* Darken the image on hover */
+    }
+    
+    .grid-item:hover span {
+      color: #ffffff; /* Keep the text white when hovering */
     }
     
     .grid-item span {
@@ -97,12 +102,22 @@ nav-menu: true
       transform: translate(-50%, -50%);
       z-index: 1;
       text-align: center;
-      font-size: 30px; /* Adjust the font size as needed */
+      font-size: 18px; /* Adjust the font size as needed */
       font-weight: bold;
+      pointer-events: none; /* Prevent the span from interfering with hover events */
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <div class="html-object">
+      <!-- Here's where you add the iframe to embed the Plotly graph -->
+      <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://rawcdn.githack.com/kesondrakey/kesondrakey.github.io/d7d6c8619bd58493be9406344f4e9e6830b1f298/longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
+    </div>
+  </div>
+
+  <h2>Daily Plots</h2>
+
   <div class="grid-container">
     <div class="grid-item">
       <a href="https://kesondrakey.github.io/fluxtower1/precip">
@@ -143,3 +158,8 @@ nav-menu: true
   </div>
 </body>
 </html>
+
+
+
+
+
