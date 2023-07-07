@@ -4,7 +4,7 @@ title: Flux Tower 1
 description: Flux Tower 1
 nav-menu: true
 ---
-<h1>Timeseries </h1>
+<h2>Timeseries </h2>
 <html>
 <head>
   <style>
