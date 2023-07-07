@@ -5,53 +5,6 @@ description: Flux Tower 1
 nav-menu: true
 ---
 
-
-
-<html>
-<head>
-  <style>
-    .container {
-      display: flex;
-      align-items: center;
-    }
-    
-    .html-object {
-      flex: 2;
-    }
-    
-    .image {
-      flex: 1;
-      margin-left: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .image img {
-      border-radius: 50%;
-      width: 200px; /* Adjust the width as needed */
-      height: 200px; /* Adjust the height as needed */
-      object-fit: cover;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="html-object">
-      <!-- Here's where you add the iframe to embed the Plotly graph -->
-      <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://rawcdn.githack.com/kesondrakey/kesondrakey.github.io/d7d6c8619bd58493be9406344f4e9e6830b1f298/longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
-    </div>
-    <div class="image">
-      <img src="images/image1.jpeg" alt="Image 1">
-    </div>
-  </div>
-</body>
-</html>
-
-
-<h2>Daily Plots </h2>
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -105,14 +58,29 @@ nav-menu: true
       height: 100%;
       text-decoration: none;
       color: #ffffff;
-      background-color: rgba(0, 0, 0, 0.5); /* Add black transparent overlay */
       transition: background-color 0.3s ease; /* Add transition effect */
       outline: none; /* Remove the outline on buttons */
       border: none; /* Remove the border on buttons */
     }
     
-    .grid-item:hover a {
-      background-color: rgba(0, 0, 0, 0.7); /* Darken the overlay on hover */
+    .grid-item a::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* Add black overlay */
+      opacity: 0;
+      transition: opacity 0.3s ease; /* Add transition effect */
+    }
+    
+    .grid-item a:hover::before {
+      opacity: 1; /* Show the black overlay on hover */
+    }
+    
+    .grid-item a:hover {
+      color: #ffffff; /* Keep the text white when hovering */
     }
     
     .grid-item img {
