@@ -4,54 +4,6 @@ title: Flux Tower 1
 description: Flux Tower 1
 nav-menu: true
 ---
-<h2>Timeseries </h2>
-<html>
-<head>
-  <style>
-    .container {
-      display: flex;
-      align-items: center;
-    }
-    
-    .html-object {
-      flex: 2;
-    }
-    
-    .image {
-      flex: 1;
-      margin-left: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .image img {
-      border-radius: 50%;
-      width: 150px; /* Adjust the width as needed */
-      height: 150px; /* Adjust the height as needed */
-      object-fit: cover;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="html-object">
-      <!-- Here's where you add the iframe to embed the Plotly graph -->
-      <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://rawcdn.githack.com/kesondrakey/kesondrakey.github.io/d7d6c8619bd58493be9406344f4e9e6830b1f298/longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
-    </div>
-    <div class="image">
-      <img src="images/image1.jpeg" alt="Image 1">
-    </div>
-  </div>
-</body>
-</html>
-
-
-
-
-
-<h2>Daily Plots </h2>
-
 
 <html>
 <head>
@@ -77,6 +29,7 @@ nav-menu: true
       height: 100%;
       text-decoration: none;
       color: #ffffff;
+      background-color: rgba(0, 0, 0, 0.5); /* Add black transparent overlay */
     }
     
     .grid-item img {
@@ -99,7 +52,7 @@ nav-menu: true
       transform: translate(-50%, -50%);
       z-index: 1;
       text-align: center;
-      font-size: 20px; /* Adjust the font size as needed */
+      font-size: 18px; /* Adjust the font size as needed */
       font-weight: bold;
     }
     
