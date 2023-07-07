@@ -114,9 +114,6 @@ nav-menu: true
       <!-- Here's where you add the iframe to embed the Plotly graph -->
       <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://rawcdn.githack.com/kesondrakey/kesondrakey.github.io/d7d6c8619bd58493be9406344f4e9e6830b1f298/longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
     </div>
-    <div class="image">
-      <img src="images/image1.jpeg" alt="Image 1">
-    </div>
   </div>
 
   <h2>Daily Plots</h2>
