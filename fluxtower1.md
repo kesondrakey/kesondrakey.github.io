@@ -102,7 +102,7 @@ nav-menu: true
       transform: translate(-50%, -50%);
       z-index: 1;
       text-align: center;
-      font-size: 18px; /* Adjust the font size as needed */
+      font-size: 26px; /* Adjust the font size as needed */
       font-weight: bold;
       pointer-events: none; /* Prevent the span from interfering with hover events */
     }
