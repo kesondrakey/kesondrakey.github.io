@@ -5,7 +5,7 @@ description: Flux Tower 1
 nav-menu: true
 ---
 
-<!DOCTYPE html>
+
 <html>
 <head>
   <style>
@@ -19,6 +19,7 @@ nav-menu: true
       position: relative;
       padding-top: 100%; /* Maintain the aspect ratio */
       overflow: hidden;
+      border: none; /* Ensure no borders are added to the grid item */
     }
 
     .grid-item a {
@@ -33,6 +34,7 @@ nav-menu: true
       align-items: center;
       justify-content: center;
       background: rgba(0,0,0,0.7); /* Add a semi-transparent overlay */
+      border: none; /* Ensure no borders are added to the link */
     }
 
     .grid-item img {
@@ -42,6 +44,8 @@ nav-menu: true
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border: none; /* Ensure no borders are added to the image */
+      outline: none; /* Ensure no outlines are added to the image */
     }
 
     .grid-item span {
@@ -69,7 +73,7 @@ nav-menu: true
     </div>
   </div>
 
-  <i>Precipitation (precip_Tot); Temperature (T_tmpr_rh_mean, °C); Wind Speed (wnd_spd); Soil Water Content (Tsoil1_Avg)</i>
+  <h6><i>Precipitation (precip_Tot); Temperature (T_tmpr_rh_mean, °C); Wind Speed (wnd_spd); Soil Water Content (Tsoil1_Avg)</i></h6>
 
   <h2>Daily Plots</h2>
 
@@ -107,4 +111,5 @@ nav-menu: true
   </div>
 </body>
 </html>
+
 
