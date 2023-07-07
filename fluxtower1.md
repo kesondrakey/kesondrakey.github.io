@@ -73,7 +73,7 @@ nav-menu: true
     </div>
   </div>
 
-  <h6><i>Precipitation (precip_Tot); Temperature (T_tmpr_rh_mean, °C); Wind Speed (wnd_spd); Soil Water Content (Tsoil1_Avg)</i></h6>
+  <i>*Precipitation (precip_Tot); Temperature (T_tmpr_rh_mean, °C); Wind Speed (wnd_spd); Soil Water Content (Tsoil1_Avg)</i>
 
   <h2>Daily Plots</h2>
 
