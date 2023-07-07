@@ -5,7 +5,6 @@ description: Flux Tower 1
 nav-menu: true
 ---
 
-Entire Timeseries
 <html>
 <head>
   <style>
@@ -48,8 +47,6 @@ Entire Timeseries
 
 
 
-
-Data
 <html>
 <head>
   <style>
@@ -66,6 +63,7 @@ Data
     }
     
     .grid-item a {
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -81,6 +79,15 @@ Data
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+    
+    .grid-item span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      text-align: center;
     }
   </style>
 </head>
@@ -125,4 +132,3 @@ Data
   </div>
 </body>
 </html>
-
