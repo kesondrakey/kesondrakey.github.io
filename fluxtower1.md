@@ -52,9 +52,6 @@ nav-menu: true
 
 
 
-
-
-
 <html>
 <head>
   <style>
@@ -87,7 +84,12 @@ nav-menu: true
       width: auto;
       height: 100%;
       object-fit: cover;
-      filter: brightness(50%);
+      filter: brightness(100%);
+      transition: filter 0.3s ease; /* Add transition effect */
+    }
+    
+    .grid-item:hover img {
+      filter: brightness(50%); /* Darken the image on hover */
     }
     
     .grid-item span {
@@ -97,7 +99,7 @@ nav-menu: true
       transform: translate(-50%, -50%);
       z-index: 1;
       text-align: center;
-      font-size: 30px; /* Adjust the font size as needed */
+      font-size: 20px; /* Adjust the font size as needed */
       font-weight: bold;
     }
   </style>
@@ -143,3 +145,6 @@ nav-menu: true
   </div>
 </body>
 </html>
+
+
+
