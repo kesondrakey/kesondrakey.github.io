@@ -80,38 +80,24 @@ nav-menu: true
       height: 100%;
       text-decoration: none;
       color: #ffffff;
-      background-color: rgba(0, 0, 0, 0.5);
     }
     
     .grid-item img {
-      width: 100px; /* Adjust the width as needed */
-      height: 100px; /* Adjust the height as needed */
+      width: 100%;
+      height: 100%;
       object-fit: cover;
-      border-radius: 50%;
+      filter: brightness(50%);
     }
     
     .grid-item span {
-      position: relative;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       z-index: 1;
       text-align: center;
       font-size: 16px; /* Adjust the font size as needed */
       font-weight: bold;
-    }
-    
-    .grid-item::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-    
-    .grid-item:hover::before {
-      opacity: 1;
     }
   </style>
 </head>
@@ -156,3 +142,4 @@ nav-menu: true
   </div>
 </body>
 </html>
+
