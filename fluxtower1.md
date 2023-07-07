@@ -87,38 +87,38 @@ Data
 <body>
   <div class="grid-container">
     <div class="grid-item">
-      <a href="https://kesondrakey.github.io/fluxtower1">
-        <img src="images/image1.jpeg" alt="Image 1">
+      <a href="https://kesondrakey.github.io/fluxtower1/precip">
+        <img src="images/precip.jpeg" alt="Precipitation">
         <span>Button 1</span>
       </a>
     </div>
     <div class="grid-item">
-      <a href="https://kesondrakey.github.io/fluxtower2">
-        <img src="images/image2.jpeg" alt="Image 2">
+      <a href="https://kesondrakey.github.io/fluxtower1/temp">
+        <img src="images/temp.jpeg" alt="Temperature">
         <span>Button 2</span>
       </a>
     </div>
     <div class="grid-item">
-      <a href="https://kesondrakey.github.io/fluxtower3">
-        <img src="images/image3.jpeg" alt="Image 3">
+      <a href="https://kesondrakey.github.io/fluxtower1/wind">
+        <img src="images/wind.jpeg" alt="Wind">
         <span>Button 3</span>
       </a>
     </div>
     <div class="grid-item">
-      <a href="https://kesondrakey.github.io/fluxtower4">
-        <img src="images/image4.jpeg" alt="Image 4">
+      <a href="https://kesondrakey.github.io/fluxtower1/soil">
+        <img src="images/soil.jpeg" alt="Soil">
         <span>Button 4</span>
       </a>
     </div>
     <div class="grid-item">
-      <a href="https://kesondrakey.github.io/fluxtower1">
-        <img src="images/image1.jpeg" alt="Image 1">
+      <a href="https://kesondrakey.github.io/fluxtower1/netrad">
+        <img src="images/netrad.jpeg" alt="Net Radiation">
         <span>Button 1</span>
       </a>
     </div>
     <div class="grid-item">
-      <a href="https://kesondrakey.github.io/fluxtower2">
-        <img src="images/image2.jpeg" alt="Image 2">
+      <a href="https://kesondrakey.github.io/fluxtower1/other">
+        <img src="images/other.jpeg" alt="Other">
         <span>Button 2</span>
       </a>
     </div>
