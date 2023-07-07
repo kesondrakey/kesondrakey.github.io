@@ -47,6 +47,14 @@ nav-menu: true
 
 
 
+
+
+
+
+
+
+
+
 <html>
 <head>
   <style>
@@ -76,18 +84,34 @@ nav-menu: true
     }
     
     .grid-item img {
-      width: 100%;
-      height: 100%;
+      width: 100px; /* Adjust the width as needed */
+      height: 100px; /* Adjust the height as needed */
       object-fit: cover;
+      border-radius: 50%;
     }
     
     .grid-item span {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      position: relative;
       z-index: 1;
       text-align: center;
+      font-size: 16px; /* Adjust the font size as needed */
+      font-weight: bold;
+    }
+    
+    .grid-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    .grid-item:hover::before {
+      opacity: 1;
     }
   </style>
 </head>
