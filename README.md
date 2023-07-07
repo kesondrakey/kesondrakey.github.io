@@ -1,5 +1,5 @@
 
-A comprehensive resource showcasing invaluable data from four distinct agricultural sites in Indiana
+A comprehensive resource showcasing invaluable data from four agricultural sites in Indiana
 
 
 <html>
@@ -7,22 +7,78 @@ A comprehensive resource showcasing invaluable data from four distinct agricultu
   <style>
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(2, 2fr);
-      grid-gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Make the grid responsive */
+      grid-gap: 1em;
     }
-    
+
     .grid-item {
       position: relative;
-      width: 100%;
-      padding-bottom: 100%;
+      padding-top: 100%; /* Maintain the aspect ratio */
       overflow: hidden;
+      border: none; /* Ensure no borders are added to the grid item */
     }
-    
+
+    .grid-item a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      text-decoration: none;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,0.7); /* Add a semi-transparent overlay */
+      border: none; /* Ensure no borders are added to the link */
+    }
+
     .grid-item img {
       position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border: none; /* Ensure no borders are added to the image */
+      outline: none; /* Ensure no outlines are added to the image */
+    }
+
+    .grid-item span {
+      font-size: 2rem; /* Adjust the font size */
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Add a text shadow for better visibility */
+      z-index: 2;
+      font-weight: bold; /* Make the text bolder */
+    }
+
+    /* Larger and bolder text for desktop */
+    @media (min-width: 768px) {
+      .grid-item span {
+        font-size: 3rem;
+        font-weight: 900;
+      }
+    }
+
+    .grid-item a .text-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1; /* Make sure the text is above the image */
+      color: white; /* Set the text color */
+      font-size: 2em; /* Adjust the font size */
+      font-weight: bold; /* Make the text bold */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow for better visibility */
+      opacity: 0.7; /* Make the text semi-transparent by default */
+      transition: opacity 0.3s ease; /* Smooth transition when the opacity changes */
+    }
+
+    .grid-item a:hover .text-overlay {
+      opacity: 1; /* Make the text fully opaque when the link is hovered */
     }
   </style>
 </head>
@@ -31,23 +87,28 @@ A comprehensive resource showcasing invaluable data from four distinct agricultu
     <div class="grid-item">
       <a href="https://kesondrakey.github.io/fluxtower1">
         <img src="images/image1.jpeg" alt="Image 1">
+        <div class="text-overlay">Flux Tower 1</div>
       </a>
     </div>
     <div class="grid-item">
       <a href="https://kesondrakey.github.io/fluxtower2">
         <img src="images/image2.jpeg" alt="Image 2">
+        <div class="text-overlay">Flux Tower 2</div>
       </a>
     </div>
     <div class="grid-item">
       <a href="https://kesondrakey.github.io/fluxtower3">
         <img src="images/image3.jpeg" alt="Image 3">
+        <div class="text-overlay">Flux Tower 3</div>
       </a>
     </div>
     <div class="grid-item">
       <a href="https://kesondrakey.github.io/fluxtower4">
         <img src="images/image4.jpeg" alt="Image 4">
+        <div class="text-overlay">Flux Tower 4</div>
       </a>
     </div>
   </div>
 </body>
 </html>
+
