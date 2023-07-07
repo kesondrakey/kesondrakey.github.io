@@ -43,7 +43,8 @@ nav-menu: true
     .grid-item {
       position: relative;
       overflow: hidden;
-      height: 200px; /* Adjust the height to make it square */
+      height: 0; /* Set the height to 0 to create a square shape */
+      padding-bottom: 100%; /* Set the padding-bottom to create a square shape */
       border-radius: 0; /* Make the buttons square-shaped */
     }
     
@@ -112,9 +113,13 @@ nav-menu: true
   <div class="container">
     <div class="html-object">
       <!-- Here's where you add the iframe to embed the Plotly graph -->
-      <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://rawcdn.githack.com/kesondrakey/kesondrakey.github.io/d7d6c8619bd58493be9406344f4e9e6830b1f298/longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
+      <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://rawcdn.githack.com/kesondrakey/kesondrakey.github.io/5751ae02e646d085df29a0bdd78743b7f0f2358c/longterm_plots/longterm_plotly_fluxtower1.html">
+        <h6>Precipitation (precip_Tot); Temperature (T_tmpr_rh_mean, °C); Wind Speed (wnd_spd); Soil Water Content (Tsoil1_Avg)</h6>
+      </iframe>
     </div>
   </div>
+
+  
 
   <h2>Daily Plots</h2>
 
@@ -158,8 +163,3 @@ nav-menu: true
   </div>
 </body>
 </html>
-
-
-
-
-
