@@ -5,7 +5,6 @@ description: Flux Tower 1
 nav-menu: true
 ---
 
-Entire Timeseries
 <html>
 <head>
   <style>
@@ -49,23 +48,31 @@ Entire Timeseries
 
 
 
-Data
+
+
+
+
+
+
+
 <html>
 <head>
   <style>
     .grid-container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 200px); /* Adjust the height as needed */
       grid-gap: 10px;
     }
     
     .grid-item {
       position: relative;
       overflow: hidden;
+      height: 200px; /* Adjust the height to make it square */
     }
     
     .grid-item a {
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -74,13 +81,24 @@ Data
       height: 100%;
       text-decoration: none;
       color: #ffffff;
-      background-color: rgba(0, 0, 0, 0.5);
     }
     
     .grid-item img {
-      width: 100%;
+      width: auto;
       height: 100%;
       object-fit: cover;
+      filter: brightness(50%);
+    }
+    
+    .grid-item span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      text-align: center;
+      font-size: 30px; /* Adjust the font size as needed */
+      font-weight: bold;
     }
   </style>
 </head>
@@ -89,40 +107,39 @@ Data
     <div class="grid-item">
       <a href="https://kesondrakey.github.io/fluxtower1/precip">
         <img src="images/precip.jpeg" alt="Precipitation">
-        <span>Button 1</span>
+        <span>Precipitation</span>
       </a>
     </div>
     <div class="grid-item">
       <a href="https://kesondrakey.github.io/fluxtower1/temp">
         <img src="images/temp.jpeg" alt="Temperature">
-        <span>Button 2</span>
+        <span>Temperature</span>
       </a>
     </div>
     <div class="grid-item">
       <a href="https://kesondrakey.github.io/fluxtower1/wind">
         <img src="images/wind.jpeg" alt="Wind">
-        <span>Button 3</span>
+        <span>Wind</span>
       </a>
     </div>
     <div class="grid-item">
       <a href="https://kesondrakey.github.io/fluxtower1/soil">
         <img src="images/soil.jpeg" alt="Soil">
-        <span>Button 4</span>
+        <span>Soil</span>
       </a>
     </div>
     <div class="grid-item">
       <a href="https://kesondrakey.github.io/fluxtower1/netrad">
         <img src="images/netrad.jpeg" alt="Net Radiation">
-        <span>Button 1</span>
+        <span>Net Radiation</span>
       </a>
     </div>
     <div class="grid-item">
       <a href="https://kesondrakey.github.io/fluxtower1/other">
         <img src="images/other.jpeg" alt="Other">
-        <span>Button 2</span>
+        <span>Other</span>
       </a>
     </div>
   </div>
 </body>
 </html>
-
