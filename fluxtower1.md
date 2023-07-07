@@ -61,13 +61,14 @@ nav-menu: true
     .grid-container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 200px); /* Adjust the height as needed */
       grid-gap: 10px;
     }
     
     .grid-item {
       position: relative;
       overflow: hidden;
+      height: 200px; /* Adjust the height to make it square */
     }
     
     .grid-item a {
@@ -83,7 +84,7 @@ nav-menu: true
     }
     
     .grid-item img {
-      width: 100%;
+      width: auto;
       height: 100%;
       object-fit: cover;
       filter: brightness(50%);
@@ -96,7 +97,7 @@ nav-menu: true
       transform: translate(-50%, -50%);
       z-index: 1;
       text-align: center;
-      font-size: 16px; /* Adjust the font size as needed */
+      font-size: 30px; /* Adjust the font size as needed */
       font-weight: bold;
     }
   </style>
@@ -142,4 +143,3 @@ nav-menu: true
   </div>
 </body>
 </html>
-
