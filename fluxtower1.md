@@ -21,6 +21,15 @@ Entire Timeseries
     .image {
       flex: 1;
       margin-left: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .image img {
+      border-radius: 50%;
+      width: 100%;
+      height: auto;
     }
   </style>
 </head>
@@ -36,6 +45,7 @@ Entire Timeseries
   </div>
 </body>
 </html>
+
 
 
 
