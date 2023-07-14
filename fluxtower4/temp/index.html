@@ -8,17 +8,17 @@ nav-menu: true
 <div style='width: 50%; text-align: center;'>
 <h2>Yesterday</h2>
 <div style='text-align:center; max-width:500px; margin:auto;'><h3>Temp and Rel Humidity mean</h3>
-<a href="../daily_plots/fluxtower4_T_tmpr_rh_mean_yesterday.png" target="_blank"><img src="../daily_plots/fluxtower4_T_tmpr_rh_mean_yesterday.png" alt="fluxtower4 - Temp and Rel Humidity mean" width="500">
+<a href="../daily_plots/fluxtower4_T_tmpr_rh_mean_yesterday.png" target="_blank"><img src="../daily_plots/fluxtower4_T_tmpr_rh_mean_yesterday.png" alt="fluxtower4 - Temp and Rel Humidity mean" width="500" onerror="imgError(this);">
 </a><div style="border:1px solid black; background-color: #003366; padding:10px; color: white;">
 Min: 17.03, Max: 24.64, Avg: 20.42
 </div>
 <hr style="border-top: 1px solid #ddd;"></div><div style='text-align:center; max-width:500px; margin:auto;'><h3>Sonic Virtual Temp Avg</h3>
-<a href="../daily_plots/fluxtower4_Ts_Avg_yesterday.png" target="_blank"><img src="../daily_plots/fluxtower4_Ts_Avg_yesterday.png" alt="fluxtower4 - Sonic Virtual Temp Avg" width="500">
+<a href="../daily_plots/fluxtower4_Ts_Avg_yesterday.png" target="_blank"><img src="../daily_plots/fluxtower4_Ts_Avg_yesterday.png" alt="fluxtower4 - Sonic Virtual Temp Avg" width="500" onerror="imgError(this);">
 </a><div style="border:1px solid black; background-color: #003366; padding:10px; color: white;">
 Min: 17.39, Max: 25.5, Avg: 20.94
 </div>
 <hr style="border-top: 1px solid #ddd;"></div><div style='text-align:center; max-width:500px; margin:auto;'><h3>Sonic Virtual Temp sd</h3>
-<a href="../daily_plots/fluxtower4_Ts_stdev_yesterday.png" target="_blank"><img src="../daily_plots/fluxtower4_Ts_stdev_yesterday.png" alt="fluxtower4 - Sonic Virtual Temp sd" width="500">
+<a href="../daily_plots/fluxtower4_Ts_stdev_yesterday.png" target="_blank"><img src="../daily_plots/fluxtower4_Ts_stdev_yesterday.png" alt="fluxtower4 - Sonic Virtual Temp sd" width="500" onerror="imgError(this);">
 </a><div style="border:1px solid black; background-color: #003366; padding:10px; color: white;">
 Min: 0.04, Max: 0.96, Avg: 0.35
 </div>
@@ -26,18 +26,23 @@ Min: 0.04, Max: 0.96, Avg: 0.35
 <div style='width: 50%; text-align: center;'>
 <h2>Today</h2>
 <div style='text-align:center; max-width:500px; margin:auto;'><h3>Temp and Rel Humidity mean</h3>
-<a href="../daily_plots/fluxtower4_T_tmpr_rh_mean_today.png" target="_blank"><img src="../daily_plots/fluxtower4_T_tmpr_rh_mean_today.png" alt="fluxtower4 - Temp and Rel Humidity mean" width="500">
+<a href="../daily_plots/fluxtower4_T_tmpr_rh_mean_today.png" target="_blank"><img src="../daily_plots/fluxtower4_T_tmpr_rh_mean_today.png" alt="fluxtower4 - Temp and Rel Humidity mean" width="500" onerror="imgError(this);">
 </a><div style="border:1px solid black; background-color: #003366; padding:10px; color: white;">
 Min: 15.54, Max: 27.88, Avg: 20.05
 </div>
 <hr style="border-top: 1px solid #ddd;"></div><div style='text-align:center; max-width:500px; margin:auto;'><h3>Sonic Virtual Temp Avg</h3>
-<a href="../daily_plots/fluxtower4_Ts_Avg_today.png" target="_blank"><img src="../daily_plots/fluxtower4_Ts_Avg_today.png" alt="fluxtower4 - Sonic Virtual Temp Avg" width="500">
+<a href="../daily_plots/fluxtower4_Ts_Avg_today.png" target="_blank"><img src="../daily_plots/fluxtower4_Ts_Avg_today.png" alt="fluxtower4 - Sonic Virtual Temp Avg" width="500" onerror="imgError(this);">
 </a><div style="border:1px solid black; background-color: #003366; padding:10px; color: white;">
 Min: 15.08, Max: 29.43, Avg: 20.39
 </div>
 <hr style="border-top: 1px solid #ddd;"></div><div style='text-align:center; max-width:500px; margin:auto;'><h3>Sonic Virtual Temp sd</h3>
-<a href="../daily_plots/fluxtower4_Ts_stdev_today.png" target="_blank"><img src="../daily_plots/fluxtower4_Ts_stdev_today.png" alt="fluxtower4 - Sonic Virtual Temp sd" width="500">
+<a href="../daily_plots/fluxtower4_Ts_stdev_today.png" target="_blank"><img src="../daily_plots/fluxtower4_Ts_stdev_today.png" alt="fluxtower4 - Sonic Virtual Temp sd" width="500" onerror="imgError(this);">
 </a><div style="border:1px solid black; background-color: #003366; padding:10px; color: white;">
 Min: 0.19, Max: 0.72, Avg: 0.45
 </div>
-<hr style="border-top: 1px solid #ddd;"></div></div></div>
+<hr style="border-top: 1px solid #ddd;"></div></div><script>
+function imgError(image) {
+    image.onerror = "";    image.outerHTML = '<img src="../../images/cat_attempt.png" alt="Cat 404" style="width: 200px; display: block; margin: auto;"><div>Sorry, not available! This means we don\'t have data for today yet, or the values are all NA!</div>';    return true;
+}
+</script>
+</div>
