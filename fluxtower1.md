@@ -105,7 +105,7 @@ nav-menu: true
       <div class="grid-container">
     <div class="grid-item">
       <a href="https://kesondrakey.github.io/fluxtower1/battery">
-        <img src="images/battery.jpeg" alt="Precipitation">
+        <img src="images/battery.jpeg" alt="Battery">
         <span>Battery</span>
       </a>
     </div>
