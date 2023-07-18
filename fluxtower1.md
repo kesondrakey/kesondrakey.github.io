@@ -102,6 +102,13 @@ nav-menu: true
         <span>Soil</span>
       </a>
     </div>
+      <div class="grid-container">
+    <div class="grid-item">
+      <a href="https://kesondrakey.github.io/fluxtower1/battery">
+        <img src="images/battery.jpeg" alt="Precipitation">
+        <span>Battery</span>
+      </a>
+    </div>
     <div class="grid-item">
       <a href="https://kesondrakey.github.io/fluxtower1/other">
         <img src="images/other.jpeg" alt="Other">
