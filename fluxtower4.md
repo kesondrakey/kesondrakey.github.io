@@ -108,7 +108,14 @@ nav-menu: true
       <span>Battery</span>
     </a>
   </div>
-  <div class
+  <div class="grid-item">
+    <a href="https://kesondrakey.github.io/fluxtower4/other">
+      <img src="images/other.jpeg" alt="Other">
+      <span>Other</span>
+    </a>
+  </div>
+</div>
+
 
   
 </body>
