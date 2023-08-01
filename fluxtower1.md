@@ -101,7 +101,7 @@ nav-menu: true
       <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower1.html">
       </iframe>
     </div>
-  </div>
+  </div> 
 
   <div class="container">
     <div class="html-object">
