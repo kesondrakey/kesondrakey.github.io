@@ -65,6 +65,26 @@ nav-menu: true
   </style>
 </head>
 <body>
+  <h1>Daily Data</h1>
+  <div class="container">
+    <div class="html-object">
+      <!-- Here's where you add the iframe to embed the Plotly graph -->
+      <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower1.html">
+      </iframe>
+    </div>
+  </div>
+    <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+
+  <div class="container">
+    <div class="html-object">
+      <!-- Here's where you add the iframe to embed the Plotly graph -->
+      <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html">
+      </iframe>
+    </div>
+  </div>
+
+  <h1>More Technical Data</h1>
+  
   <div class="container">
     <div class="html-object">
       <!-- Here's where you add the iframe to embed the Plotly graph -->
@@ -75,7 +95,7 @@ nav-menu: true
 
   <i>*Precipitation (precip_Tot; total mm); Temperature (T_tmpr_rh_mean, average °C); Wind Speed (wnd_spd); Soil Water Content (soil_water_Avg.1.; average volumetric water fraction (m^3/m^3))</i>
 
-  <h2>Daily Plots</h2>
+  <h2>Individual Daily Plots</h2> 
 
 <div class="grid-container">
   <div class="grid-item">
