@@ -80,17 +80,19 @@ nav-menu: true
   <div class="container">
     <div class="html-object">
       <!-- Here's where you add the iframe to embed the Plotly graph -->
-      <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html">
+      <iframe width="100%" height="400" frameborder="0" scrolling="yes" src="longterm_plots/datatable_daily_fluxtower1.html">
       </iframe>
     </div>
   </div>
 
-  <h1>More Technical Data</h1>
-  
+
+<button class="collapsible">More Technical Data</button>
+<div class="content">
+
   <div class="container">
     <div class="html-object">
       <!-- Here's where you add the iframe to embed the Plotly graph -->
-      <iframe width="100%" height="1000" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html">
+      <iframe width="100%" height="1000" frameborder="0" scrolling="yes" src="longterm_plots/longterm_plotly_fluxtower1.html">
       </iframe>
     </div>
   </div>
@@ -137,6 +139,28 @@ nav-menu: true
     </a>
   </div>
 </div>
+
+
+
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
 
     
 </body>
