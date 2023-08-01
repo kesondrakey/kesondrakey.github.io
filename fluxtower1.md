@@ -69,17 +69,27 @@ nav-menu: true
         font-size: 3rem;
         font-weight: 900;
       }
-    }
     .collapsible {
-      display: block; /* Block display to allow for centering */
-      margin: 20px auto; /* Top and bottom margin of 20px, auto left and right for centering */
-      padding: 10px 20px; /* Increase size of button by adding padding */
-      transition: color 0.5s; /* Transition for hover effect */
+    background-color: transparent; /* Or use 'darkblue' for a dark blue background */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid white; /* Change as per your requirement */
+    font-size: 20px; /* Change as per your requirement */
+    display: block; 
+    margin: 20px auto;
+    cursor: pointer; /* Changes the cursor to a hand when over the button */
+    transition: background-color 0.5s, color 0.5s; /* Transition for hover effect *
+    }
+    .collapsible:hover {
+    color: gray;
+    background-color: white; /* Change as per your requirement */
+    }
+    /* This is for hiding and showing the content when the button is clicked */
+    .content {
+    display: none;
     }
 
-    .collapsible:hover {
-      color: gray; /* Change text color to gray on hover */
-    }
 
   </style>
 </head>
@@ -92,7 +102,6 @@ nav-menu: true
       </iframe>
     </div>
   </div>
-    <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
 
   <div class="container">
     <div class="html-object">
@@ -101,11 +110,14 @@ nav-menu: true
       </iframe>
     </div>
   </div>
+      <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+
 
 
 <button class="collapsible">More Technical Data</button>
 <div class="content">
-
+<h1>Long Term Data</h1>
+  <h2>Click your variable of interest!</h2>
   <div class="container">
     <div class="html-object">
       <!-- Here's where you add the iframe to embed the Plotly graph -->
@@ -161,20 +173,20 @@ nav-menu: true
 
 </div>
 <script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
     }
-  });
-}
 </script>
 
 
