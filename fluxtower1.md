@@ -92,11 +92,8 @@ nav-menu: true
     /* This is for hiding and showing the content when the button is clicked */
     .content {
     display: none;
-    }
-    h1 {
-    text-align: center;
-    }
-      h4 {
+    
+    h4 {
     text-align: center;
     }
 
