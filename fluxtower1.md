@@ -16,7 +16,13 @@ nav-menu: true
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Make the grid responsive */
       grid-gap: 1em;
     }
-
+    
+   .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Make the grid responsive */
+      grid-gap: 1em;
+    }
+    
     .grid-item {
       position: relative;
       padding-top: 100%; /* Maintain the aspect ratio */
@@ -64,6 +70,17 @@ nav-menu: true
         font-weight: 900;
       }
     }
+    .collapsible {
+      display: block; /* Block display to allow for centering */
+      margin: 20px auto; /* Top and bottom margin of 20px, auto left and right for centering */
+      padding: 10px 20px; /* Increase size of button by adding padding */
+      transition: color 0.5s; /* Transition for hover effect */
+    }
+
+    .collapsible:hover {
+      color: gray; /* Change text color to gray on hover */
+    }
+
   </style>
 </head>
 <body>
