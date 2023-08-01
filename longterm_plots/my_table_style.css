@@ -1,0 +1,36 @@
+.dataTable {
+  color: white;
+  background-color: #1f2630 !important;
+}
+
+table.dataTable thead th,
+table.dataTable tbody td {
+  color: white !important;
+}
+
+table.dataTable tbody tr:hover {
+  background-color: #4a505c !important;
+}
+
+.dataTables_wrapper .dataTables_filter {
+  display: none;
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_processing,
+.dataTables_paginate {
+  color: white;
+}
+
+.pagination > .active > span {
+  background-color: white;
+  border-color: white;
+  color: #1f2630;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr[role=row]>td:first-child:before, 
+table.dataTable.dtr-inline.collapsed>tbody>tr[role=row]>th:first-child:before {
+  background-color: white;
+}
