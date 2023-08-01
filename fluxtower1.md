@@ -53,6 +53,29 @@ nav-menu: true
       z-index: 2;
       font-weight: bold; /* Make the text bolder */
     }
+      .button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 20px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+
+    .button:hover {background-color: #3e8e41}
+
+    .button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+
 
     /* Larger and bolder text for desktop */
     @media (min-width: 768px) {
@@ -82,16 +105,17 @@ nav-menu: true
     </div>
   </div>
 
-  <h1 id="moreTechnicalData" style="cursor: pointer;">More Technical Data</h1>
+<button id="moreTechnicalData" class="button">More Technical Data</button>
   
   <div id="technicalData" style="display: none;">
+    <!-- rest of your content -->
     <div class="container">
       <div class="html-object">
-        <!-- Here's where you add the iframe to embed the Plotly graph -->
-        <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html">
+        <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html">
         </iframe>
       </div>
     </div>
+
 
     <i>*Precipitation (precip_Tot; total mm); Temperature (T_tmpr_rh_mean, average °C); Wind Speed (wnd_spd); Soil Water Content (soil_water_Avg.1.; average volumetric water fraction (m^3/m^3))</i>
 
