@@ -93,6 +93,12 @@ nav-menu: true
     .content {
     display: none;
     }
+    h1 {
+    text-align: center;
+    }
+      h4 {
+    text-align: center;
+    }
 
 
   </style>
@@ -129,7 +135,7 @@ nav-menu: true
       </iframe>
     </div>
   </div>
-  <h3>*Click your variable of interest</h3>
+  <h4><i>*Click your variable of interest</i></h4>
 
   <h2>Individual Daily Plots</h2> 
 
