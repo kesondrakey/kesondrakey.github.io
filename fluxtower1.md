@@ -1,12 +1,10 @@
+
 ---
 layout: post
 title: Flux Tower 1
 description: Flux Tower 1
 nav-menu: true
 ---
-
-
-
 
 <html>
 <head>
@@ -64,6 +62,19 @@ nav-menu: true
         font-weight: 900;
       }
     }
+
+    /* Styles for button */
+    .collapsible {
+      font-size: 1.5em; /* Increase font size */
+      text-align: center; /* Center the text */
+      width: 200px; /* Adjust width as needed */
+      margin: 0 auto; /* This centers the button */
+      transition: 0.3s; /* Transition effect for hover */
+    }
+
+    .collapsible:hover {
+      color: gray; /* Change text color on hover */
+    }
   </style>
 </head>
 <body>
@@ -84,7 +95,6 @@ nav-menu: true
       </iframe>
     </div>
   </div>
-
 
 <button class="collapsible">More Technical Data</button>
 <div class="content">
@@ -140,8 +150,6 @@ nav-menu: true
   </div>
 </div>
 
-
-
 </div>
 <script>
 var coll = document.getElementsByClassName("collapsible");
@@ -160,8 +168,5 @@ for (i = 0; i < coll.length; i++) {
 }
 </script>
 
-
-
-    
 </body>
 </html>
