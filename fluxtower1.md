@@ -123,13 +123,15 @@ nav-menu: true
 <div class="content">
 <h1>Long Term Data</h1>
   
-  <div class="container">
-    <div class="html-object">
-      <!-- Here's where you add the iframe to embed the Plotly graph -->
-      <iframe width="100%" height="1000" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html">
-      </iframe>
-    </div>
+
+<div class="container" style="width: 100%; height: 800px;">
+  <div class="html-object">
+    <!-- Here's where you add the iframe to embed the Plotly graph -->
+    <iframe frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
   </div>
+</div>
+
+  
   <h4><i>*Click your variable of interest</i></h4>
 
 
