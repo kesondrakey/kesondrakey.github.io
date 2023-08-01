@@ -1,19 +1,24 @@
+/* CSS file for black DataTables table */
+
+/* Make the table background black */
 .dataTables_wrapper {
   background-color: black !important;
 }
 
+/* Make the text white */
 .dataTables_wrapper .dataTables_scrollBody {
   color: white !important;
 }
 
+/* Make the table header black and the text white */
 .dataTables_wrapper .dataTables_scrollHead .dataTable {
   background-color: black !important;
   color: white !important;
 }
 
+/* Make the table footer black and the text white */
 .dataTables_wrapper .dataTables_scrollFoot .dataTable {
   background-color: black !important;
   color: white !important;
 }
-
 
