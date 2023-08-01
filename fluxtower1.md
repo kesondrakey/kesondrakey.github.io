@@ -69,22 +69,26 @@ nav-menu: true
         font-size: 3rem;
         font-weight: 900;
       }
-    .collapsible {
-    background-color: transparent; /* Or use 'darkblue' for a dark blue background */
+      .collapsible {
+    background-color: transparent;
     color: white;
     text-align: center;
     padding: 15px;
-    border: 2px solid white; /* Change as per your requirement */
-    font-size: 20px; /* Change as per your requirement */
-    display: block; 
+    border: 2px solid white;
+    font-size: 20px;
+    display: flex; /* Change from block to flex */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
     margin: 20px auto;
-    cursor: pointer; /* Changes the cursor to a hand when over the button */
-    transition: background-color 0.5s, color 0.5s; /* Transition for hover effect *
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s, border-color 0.5s; /* Added transition for border color */
+    width: 70%; /* Adjust as needed */
     }
     .collapsible:hover {
     color: gray;
-    background-color: white; /* Change as per your requirement */
+    border-color: gray; /* Border color changes to gray on hover */
     }
+
     /* This is for hiding and showing the content when the button is clicked */
     .content {
     display: none;
@@ -117,16 +121,15 @@ nav-menu: true
 <button class="collapsible">More Technical Data</button>
 <div class="content">
 <h1>Long Term Data</h1>
-  <h2>Click your variable of interest!</h2>
+  
   <div class="container">
     <div class="html-object">
       <!-- Here's where you add the iframe to embed the Plotly graph -->
-      <iframe width="100%" height="1000" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html">
+      <iframe width="100%" height="1200" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html">
       </iframe>
     </div>
   </div>
-
-  <i>*Precipitation (precip_Tot; total mm); Temperature (T_tmpr_rh_mean, average °C); Wind Speed (wnd_spd); Soil Water Content (soil_water_Avg.1.; average volumetric water fraction (m^3/m^3))</i>
+  <h3>*Click your variable of interest</h3>
 
   <h2>Individual Daily Plots</h2> 
 
