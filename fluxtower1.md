@@ -5,13 +5,12 @@ description: Flux Tower 1
 nav-menu: true
 ---
 
-
 <html>
 <head>
   <style>
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Make the grid responsive */
+      grid-template-columns: repeat(3, 1fr); /* This will create a grid with three items in a row */
       grid-gap: 1em;
     }
 
@@ -73,7 +72,7 @@ nav-menu: true
       </iframe>
     </div>
   </div>
-    <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+  <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
 
   <div class="container">
     <div class="html-object">
@@ -83,60 +82,73 @@ nav-menu: true
     </div>
   </div>
 
-  <h1>More Technical Data</h1>
+  <h1 id="moreTechnicalData" style="cursor: pointer;">More Technical Data</h1>
   
-  <div class="container">
-    <div class="html-object">
-      <!-- Here's where you add the iframe to embed the Plotly graph -->
-      <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html">
-      </iframe>
+  <div id="technicalData" style="display: none;">
+    <div class="container">
+      <div class="html-object">
+        <!-- Here's where you add the iframe to embed the Plotly graph -->
+        <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html">
+        </iframe>
+      </div>
+    </div>
+
+    <i>*Precipitation (precip_Tot; total mm); Temperature (T_tmpr_rh_mean, average °C); Wind Speed (wnd_spd); Soil Water Content (soil_water_Avg.1.; average volumetric water fraction (m^3/m^3))</i>
+
+    <h2>Individual Daily Plots</h2> 
+
+    <div class="grid-container">
+      <!-- Rest of your grid items here -->
+      <div class="grid-item">
+        <a href="https://kesondrakey.github.io/fluxtower1/precip">
+          <img src="images/precip.jpeg" alt="Precipitation">
+          <span>Precipitation</span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="https://kesondrakey.github.io/fluxtower1/temp">
+          <img src="images/temp.jpeg" alt="Temperature">
+          <span>Temperature</span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="https://kesondrakey.github.io/fluxtower1/wind">
+          <img src="images/wind.jpeg" alt="Wind">
+          <span>Wind</span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="https://kesondrakey.github.io/fluxtower1/soil">
+          <img src="images/soil.jpeg" alt="Soil">
+          <span>Soil</span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="https://kesondrakey.github.io/fluxtower1/battery">
+          <img src="images/battery.jpeg" alt="Battery">
+          <span>Battery</span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="https://kesondrakey.github.io/fluxtower1/other">
+          <img src="images/other.jpeg" alt="Other">
+          <span>Other</span>
+        </a>
+      </div>
     </div>
   </div>
 
-  <i>*Precipitation (precip_Tot; total mm); Temperature (T_tmpr_rh_mean, average °C); Wind Speed (wnd_spd); Soil Water Content (soil_water_Avg.1.; average volumetric water fraction (m^3/m^3))</i>
+<script>
+  document.getElementById('moreTechnicalData').addEventListener('click', function() {
+    var technicalData = document.getElementById('technicalData');
+    if (technicalData.style.display === 'none') {
+      technicalData.style.display = 'block';
+    } else {
+      technicalData.style.display = 'none';
+    }
+  });
+</script>
 
-  <h2>Individual Daily Plots</h2> 
-
-<div class="grid-container">
-  <div class="grid-item">
-    <a href="https://kesondrakey.github.io/fluxtower1/precip">
-      <img src="images/precip.jpeg" alt="Precipitation">
-      <span>Precipitation</span>
-    </a>
-  </div>
-  <div class="grid-item">
-    <a href="https://kesondrakey.github.io/fluxtower1/temp">
-      <img src="images/temp.jpeg" alt="Temperature">
-      <span>Temperature</span>
-    </a>
-  </div>
-  <div class="grid-item">
-    <a href="https://kesondrakey.github.io/fluxtower1/wind">
-      <img src="images/wind.jpeg" alt="Wind">
-      <span>Wind</span>
-    </a>
-  </div>
-  <div class="grid-item">
-    <a href="https://kesondrakey.github.io/fluxtower1/soil">
-      <img src="images/soil.jpeg" alt="Soil">
-      <span>Soil</span>
-    </a>
-  </div>
-  <div class="grid-item">
-    <a href="https://kesondrakey.github.io/fluxtower1/battery">
-      <img src="images/battery.jpeg" alt="Battery">
-      <span>Battery</span>
-    </a>
-  </div>
-  <div class="grid-item">
-    <a href="https://kesondrakey.github.io/fluxtower1/other">
-      <img src="images/other.jpeg" alt="Other">
-      <span>Other</span>
-    </a>
-  </div>
-</div>
-
-    
 </body>
 </html>
 
