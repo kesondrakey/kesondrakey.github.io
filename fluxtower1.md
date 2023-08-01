@@ -6,6 +6,14 @@ nav-menu: true
 ---
 
 
+---
+layout: post
+title: Flux Tower 1
+description: Flux Tower 1
+nav-menu: true
+---
+
+
 <html>
 <head>
   <style>
@@ -139,5 +147,3 @@ nav-menu: true
     
 </body>
 </html>
-
-
