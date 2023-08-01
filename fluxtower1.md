@@ -126,7 +126,7 @@ nav-menu: true
   <div class="container">
     <div class="html-object">
       <!-- Here's where you add the iframe to embed the Plotly graph -->
-      <iframe width="100%" height="1000" frameborder="0" scrolling="yes" src="longterm_plots/longterm_plotly_fluxtower1.html">
+      <iframe width="100%" height="1000" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html">
       </iframe>
     </div>
   </div>
