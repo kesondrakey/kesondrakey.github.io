@@ -123,10 +123,11 @@ window.onload = function() {
 <div class="grid-container">
   <div class="grid-item">
     <h3>Flux Tower 1</h3>
-    <img src="../daily_plots/fluxtower1_T_tmpr_rh_mean_today.png" alt="Flux Tower 1">
+  <a href="../daily_plots/fluxtower1_T_tmpr_rh_mean_today.png" target="_blank">
+    <img src="../daily_plots/fluxtower1_T_tmpr_rh_mean_today.png" alt="fluxtower1 - Temperature " width="500" onerror="imgError(this);"></a>
   </div>
 
-<a href="../daily_plots/fluxtower1_batt_volt_Avg_yesterday.png" target="_blank"><img src="../daily_plots/fluxtower1_batt_volt_Avg_yesterday.png" alt="fluxtower1 - Battery Voltage Avg" width="500" onerror="imgError(this);"></a></div>
+
 
 
   
