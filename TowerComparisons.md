@@ -113,7 +113,6 @@ window.onload = function() {
     <h1 style="text-align:center;">Site Comparisons</h1>
 </header>
 
-
 <button class="collapsible">Temperature</button>
 <div class="content">
 <h1>Daily Plots</h1>
@@ -121,16 +120,21 @@ window.onload = function() {
 
 <h2>Today Plots</h2>
 <div class="grid-container">
+<hr style="border-top: 1px solid #ddd;">
+<div style='text-align:center; max-width:500px; margin:auto;'>
+    <h3>Sonic Virtual Temp Avg</h3>
+    <a href="../daily_plots/fluxtower1_Ts_Avg_today.png" target="_blank">
+        <img src="../daily_plots/fluxtower1_Ts_Avg_today.png" alt="fluxtower1 - Sonic Virtual Temp Avg" width="500" onerror="imgError(this);">
+    </a>
+</div>
+  
   <div class="grid-item">
     <h3>Flux Tower 1</h3>
   <a href="../daily_plots/fluxtower1_T_tmpr_rh_mean_today.png" target="_blank">
-    <img src="../daily_plots/fluxtower1_T_tmpr_rh_mean_today.png" alt="fluxtower1 - Temperature " width="500" onerror="imgError(this);"></a>
+    <img src="../daily_plots/fluxtower1_T_tmpr_rh_mean_today.png" alt="fluxtower1 - Temperature " width="500" onerror="imgError(this);">
+  </a>
   </div>
 
-
-
-
-  
   <div class="grid-item">
     <h3>Flux Tower 2</h3>
     <img src="../daily_plots/fluxtower2_T_tmpr_rh_mean_today.png" alt="Flux Tower 2">
@@ -144,6 +148,8 @@ window.onload = function() {
     <img src="../daily_plots/fluxtower4_T_tmpr_rh_mean_today.png" alt="Flux Tower 4">
   </div>
 </div>
+</div>
+
 
 
 <h2>Yesterday Plots</h2>
