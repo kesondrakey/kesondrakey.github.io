@@ -189,4 +189,4 @@ window.onload = function() {
   </div>
 </div>
 <h4><i>*Click your variable of interest</i></h4>
-</div> <!-- End of content
+</div> 
