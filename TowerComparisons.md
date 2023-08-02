@@ -118,21 +118,32 @@ window.onload = function() {
 <div class="content">
 <h1>Daily Plots</h1>
 
+
 <h2>Today Plots</h2>
 <div class="grid-container">
   <div class="grid-item">
+    <h3>Flux Tower 1</h3>
     <img src="../daily_plots/fluxtower1_T_tmpr_rh_mean_today.png" alt="Flux Tower 1">
   </div>
+
+<a href="../daily_plots/fluxtower1_batt_volt_Avg_yesterday.png" target="_blank"><img src="../daily_plots/fluxtower1_batt_volt_Avg_yesterday.png" alt="fluxtower1 - Battery Voltage Avg" width="500" onerror="imgError(this);"></a></div>
+
+
+  
   <div class="grid-item">
+    <h3>Flux Tower 2</h3>
     <img src="../daily_plots/fluxtower2_T_tmpr_rh_mean_today.png" alt="Flux Tower 2">
   </div>
   <div class="grid-item">
+    <h3>Flux Tower 3</h3>
     <img src="../daily_plots/fluxtower3_T_tmpr_rh_mean_today.png" alt="Flux Tower 3">
   </div>
   <div class="grid-item">
+    <h3>Flux Tower 4</h3>
     <img src="../daily_plots/fluxtower4_T_tmpr_rh_mean_today.png" alt="Flux Tower 4">
   </div>
 </div>
+
 
 <h2>Yesterday Plots</h2>
 <div class="grid-container">
@@ -190,3 +201,17 @@ window.onload = function() {
 </div>
 <h4><i>*Click your variable of interest</i></h4>
 </div> 
+
+
+
+<script>
+function imgError(image) {
+    image.onerror = "";
+    image.outerHTML = '<img src="../../images/cat_attempt.png" alt="Cat 404" style="width: 200px; display: block; margin: auto;"><div>Sorry, not available! This means we don\'t have data for today yet, or the values are all NA!</div>';
+    return true;
+}
+</script>
+
+</body>
+</html>
+
