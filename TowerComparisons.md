@@ -130,6 +130,14 @@ margin-bottom: 10px;
 
 
 </div>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  justify-content: center;
+}
+</style>
 
 <script>
 function imgError(image) {
