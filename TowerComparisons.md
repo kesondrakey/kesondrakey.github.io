@@ -2,7 +2,7 @@
 layout: post
 title: Tower Comparisons
 description: Tower Comparisons
-nav-menu: true
+nav-menu: true 
 ---
 
 <script>
@@ -34,39 +34,49 @@ function imgError(image) {
 
 <style>
 .collapsible {
-  background-color: transparent;
-  color: white;
   text-align: center;
   padding: 15px;
-  border: 2px solid white;
+  border: none;
   font-size: 20px;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
   transition: background-color 0.5s, color 0.5s, border-color 0.5s;
   width: 100%;
   display: block;
   margin: 0 auto;
   margin-bottom: 10px;
-  line-height: normal; /* Add this line */
-  margin-bottom: 10px;
+  line-height: normal;
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2); /* Shadow for 3D effect */
 }
-  .collapsible.other {
-  background-color: white;
+
+.collapsible.other {
+  background: linear-gradient(to right, #000, #2f2f2f); /* Darker gradient background */
+  color: white;
 }
 
 .collapsible.temperature {
-  background-color: red;
+  background: linear-gradient(to right, #b20000, #e67300); /* Darker gradient background */
+  color: white;
+}
+  
+.collapsible.day {
+  background: linear-gradient(to right, #000000, #1a1a1a); /* Darker gradient background from black to dark gray */
+  color: white;
 }
 
 .collapsible.precipitation {
-  background-color: blue;
+  background: linear-gradient(to right, #00008b, #008b8b); /* Darker gradient background */
+  color: white;
 }
-  .collapsible.soil {
-  background-color: green;
+
+.collapsible.soil {
+  background: linear-gradient(to right, #004d00, #7cfc00); /* Darker gradient background */
+  color: white;
 }
-  .collapsible.wind {
-  background-color: gray;
+
+.collapsible.wind {
+  background: linear-gradient(to right, #2d006b, #660066); /* Darker gradient background */
+  color: white;
 }
 
 .content {
@@ -74,6 +84,7 @@ function imgError(image) {
   margin: auto;
   width: 95%;
 }
+
 .collapsibleContainer {
   text-align: center;
 }
@@ -96,7 +107,7 @@ function imgError(image) {
 }
 
 .flex-container img:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
 }
 
 .flex-container a {
@@ -109,9 +120,7 @@ function imgError(image) {
 </style>
 
 
-<header>
-    <h1 style="text-align:center;">Site Comparisons</h1>
-</header>
+
 
 
 
@@ -128,7 +137,7 @@ function imgError(image) {
 <h2>Temp and Rel Humidity mean (T_tmpr_rh_mean)</h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 
 <div class="flex-container">
@@ -147,7 +156,7 @@ function imgError(image) {
 </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 
 <div class="flex-container">
@@ -169,7 +178,7 @@ function imgError(image) {
 <h2>Sonic Virtual Temp Avg (Ts_Avg)</h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 
 <div class="flex-container">
@@ -188,7 +197,7 @@ function imgError(image) {
 </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 
 <div class="flex-container">
@@ -210,7 +219,7 @@ function imgError(image) {
 <h2>Sonic Virtual Temp sd (Ts_stdev)</h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 
 <div class="flex-container">
@@ -229,7 +238,7 @@ function imgError(image) {
 </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 
 <div class="flex-container">
@@ -261,7 +270,7 @@ function imgError(image) {
 <h2> Precipitation (precip_Tot)</h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 
 <div class="flex-container">
@@ -280,7 +289,7 @@ function imgError(image) {
 </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 
 <div class="flex-container">
@@ -314,7 +323,7 @@ function imgError(image) {
 <h2> Soil Water Content (soil_water_Avg.1.)</h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 
 <div class="flex-container">
@@ -333,7 +342,7 @@ function imgError(image) {
 </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 
 <div class="flex-container">
@@ -374,7 +383,7 @@ function imgError(image) {
 <h2> Wind Speed (wnd_spd)</h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 
 <div class="flex-container">
@@ -393,7 +402,7 @@ function imgError(image) {
 </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 
 <div class="flex-container">
@@ -416,7 +425,7 @@ function imgError(image) {
 <h2> Covariance of Ts and Ux (Ts_Ux_cov)</h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 
 <div class="flex-container">
@@ -435,7 +444,7 @@ function imgError(image) {
 </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 
 <div class="flex-container">
@@ -459,7 +468,7 @@ function imgError(image) {
 <h2> Covariance of Ts and Uy (Ts_Uy_cov)</h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 
 <div class="flex-container">
@@ -478,7 +487,7 @@ function imgError(image) {
 </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 
 <div class="flex-container">
@@ -502,7 +511,7 @@ function imgError(image) {
 <h2> Covariance of Ts and Uz (Ts_Uz_cov)</h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 
 <div class="flex-container">
@@ -521,7 +530,7 @@ function imgError(image) {
 </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 
 <div class="flex-container">
@@ -545,7 +554,7 @@ function imgError(image) {
 <h2> Wind Velocity X sd (Ux_stdev )</h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 
 <div class="flex-container">
@@ -564,7 +573,7 @@ function imgError(image) {
 </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 
 <div class="flex-container">
@@ -587,7 +596,7 @@ function imgError(image) {
 <h2> Covariance of Ux and Uy (Ux_Uy_cov )</h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 
 <div class="flex-container">
@@ -606,7 +615,7 @@ function imgError(image) {
 </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 
 <div class="flex-container">
@@ -631,7 +640,7 @@ function imgError(image) {
 <h2> Covariance of Ux and Uz (Ux_Uz_cov)</h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 <h3>Today Plots</h3>
 <div class="flex-container">
@@ -650,7 +659,7 @@ function imgError(image) {
 </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 
 <div class="flex-container">
@@ -674,7 +683,7 @@ function imgError(image) {
 <h2> Wind Velocity Y sd (Uy_stdev)</h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 
 <div class="flex-container">
@@ -693,7 +702,7 @@ function imgError(image) {
 </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 
 <div class="flex-container">
@@ -716,7 +725,7 @@ function imgError(image) {
 <h2> Covariance of Uy and Uz (Uy_Uz_cov) </h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 
 <div class="flex-container">
@@ -735,7 +744,7 @@ function imgError(image) {
 </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 
 <div class="flex-container">
@@ -757,7 +766,7 @@ function imgError(image) {
 <h2> Wind Velocity Z sd (Uz_stdev) </h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 
 <div class="flex-container">
@@ -776,7 +785,7 @@ function imgError(image) {
 </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 
 <div class="flex-container">
@@ -798,7 +807,7 @@ function imgError(image) {
 <h2> Resultant Wind Speed (rslt_wnd_spd) </h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 
 <div class="flex-container">
@@ -817,7 +826,7 @@ function imgError(image) {
 </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 
 <div class="flex-container">
@@ -842,7 +851,7 @@ function imgError(image) {
 <h2> Sonic Wind Direction (wnd_dir_sonic) </h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 
 <div class="flex-container">
@@ -861,7 +870,7 @@ function imgError(image) {
 </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 
 <div class="flex-container">
@@ -883,7 +892,7 @@ function imgError(image) {
 <h2> Wind Direction sd (std_wnd_dir) </h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 
 <div class="flex-container">
@@ -902,7 +911,7 @@ function imgError(image) {
 </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 
 <div class="flex-container">
@@ -924,7 +933,7 @@ function imgError(image) {
 <h2> Wind Direction (wnd_dir_compass) </h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 
 <div class="flex-container">
@@ -943,7 +952,7 @@ function imgError(image) {
 </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 
 <div class="flex-container">
@@ -969,7 +978,7 @@ function imgError(image) {
 <h2> Wind Velocity X Avg (Ux_Avg) </h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 
 <div class="flex-container">
@@ -988,7 +997,7 @@ function imgError(image) {
 </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 <div class="flex-container">
 {% for i in (1..4) %}
@@ -1009,7 +1018,7 @@ function imgError(image) {
 <h2> Wind Velocity Y Avg (Uy_Avg) </h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 <div class="flex-container">
 {% for i in (1..4) %}
@@ -1027,7 +1036,7 @@ function imgError(image) {
 </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 <div class="flex-container">
 {% for i in (1..4) %}
@@ -1048,7 +1057,7 @@ function imgError(image) {
 <h2> Wind Velocity Z Avg (Uz_Avg) </h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 <div class="flex-container">
 {% for i in (1..4) %}
@@ -1066,7 +1075,7 @@ function imgError(image) {
 </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 <div class="flex-container">
 {% for i in (1..4) %}
@@ -1083,6 +1092,11 @@ function imgError(image) {
 </div>
 </div>
 
+
+</div> <!-- This is the closing tag for content div under Temperature -->
+</div> <!-- This is the closing tag for collapsibleContainer div under Temperature -->
+
+
 <div class="collapsibleContainer">
 <button class="collapsible other">Other</button>
 <div class="content">
@@ -1091,7 +1105,7 @@ function imgError(image) {
 <h2>Friction Velocity (u_star)</h2>
 
 
- <button class="collapsible">Today</button>
+ <button class="collapsible day">Today</button>
  <div class="content">
 
 <div class="flex-container">
@@ -1110,7 +1124,7 @@ function imgError(image) {
  </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 
 <div class="flex-container">
@@ -1133,7 +1147,7 @@ function imgError(image) {
 <h2> Sensible Heat Flux (Hs)</h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 
 <div class="flex-container">
@@ -1152,7 +1166,7 @@ function imgError(image) {
 </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 
 <div class="flex-container">
@@ -1174,7 +1188,7 @@ function imgError(image) {
 <h2> Momentum Flux Flux (tau)</h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 
 <div class="flex-container">
@@ -1193,7 +1207,7 @@ function imgError(image) {
 </div>
 
 
-<button class="collapsible">Yesterday</button>
+<button class="collapsible day">Yesterday</button>
 <div class="content">
 
 <div class="flex-container">
@@ -1218,8 +1232,7 @@ function imgError(image) {
 
 
 
-</div> <!-- This is the closing tag for content div under Temperature -->
-</div> <!-- This is the closing tag for collapsibleContainer div under Temperature -->
+
 
 
 

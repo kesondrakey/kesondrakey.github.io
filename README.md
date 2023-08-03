@@ -17,6 +17,11 @@ A comprehensive resource showcasing invaluable data from four agricultural sites
       overflow: hidden;
       border: none; /* Ensure no borders are added to the grid item */
     }
+    .grid-item.full-width {
+    grid-column: span 4; /* If you have 4 items in a row, this will make the item span all 4 columns */
+    padding-top: 20%; /* If you want this item to be thinner, adjust the padding-top value */
+    }
+
 
     .grid-item a {
       position: absolute;
@@ -108,6 +113,13 @@ A comprehensive resource showcasing invaluable data from four agricultural sites
         <div class="text-overlay">Flux Tower 4</div>
       </a>
     </div>
+    <div class="grid-item full-width">
+  <a href="https://kesondrakey.github.io/TowerComparisons">
+    <img src="images/image5.jpeg" alt="Image 5">
+    <div class="text-overlay">Tower Comparisons</div>
+  </a>
+</div>
+
   </div>
 </body>
 </html>
