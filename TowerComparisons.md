@@ -66,15 +66,14 @@ window.onload = function() {
 <a href="Fluxtower1/daily_plots/fluxtower1_precip_Tot_today.png" target="_blank">
   <img src="fluxtower1/daily_plots/fluxtower1_precip_Tot_today.png" alt="fluxtower1 - Total Precip" width="500" onerror="imgError(this);">
 </a>
-
-<!-- Your grid items here for Today Plots -->
+</div>
 </div>
 
 <h2>Yesterday Plots</h2>
 <div class="grid-container">
 <!-- Your grid items here for Yesterday Plots -->
 </div>
-</div>
+</div> <!-- Closes the first content div -->
 
 <button class="collapsible">Other</button>
 <div class="content">
@@ -89,7 +88,7 @@ window.onload = function() {
 <!-- Replace with your specific image paths -->
 <!-- TODO: Insert image paths -->
 </div>
-</div>
+</div> <!-- Closes the second content div -->
 
 <script>
 function imgError(image) {
@@ -98,3 +97,4 @@ function imgError(image) {
     return true;
 }
 </script>
+
