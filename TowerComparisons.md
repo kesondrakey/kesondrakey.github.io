@@ -51,19 +51,58 @@ window.onload = function() {
 .collapsibleContainer {
   text-align: center;
 }
+<style>
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* increased from 250px to 300px */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* adjust minmax values according to your preference */
   gap: 10px;
   justify-content: center;
 }
-.vertical-line {
-  width: 1px; /* Line width */
-  height: 200px; /* Line height - adjust according to your image height */
-  background-color: #A9A9A9; /* Line color - dark gray */
-  grid-column: 3; /* Adjust the grid column if needed */
+
+.grid-container > div {
+  position: relative;
+}
+
+.grid-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.25s ease;
+}
+
+.grid-container img:hover {
+  transform: scale(1.1);
+}
+
+.grid-container .vertical-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #A9A9A9;
+  z-index: 1;
+}
+
+.grid-container .vertical-line::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #A9A9A9;
+  z-index: 1;
 }
 </style>
+
+<script>
+function imgError(image) {
+    image.onerror = "";
+    image.outerHTML = '<img src="../../images/cat_attempt.png" alt="Cat 404" style="width: 200px; display: block; margin: auto;"><div>Sorry, not available! This means we don\'t have data for today yet, or the values are all NA!</div>';
+    return true;
+}
+</script>
+
 
 <header>
     <h1 style="text-align:center;">Site Comparisons</h1>
