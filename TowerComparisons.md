@@ -32,48 +32,127 @@ function imgError(image) {
 }
 </script>
 
+<style>
+.collapsible {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border: 2px solid white;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  line-height: normal; /* Add this line */
+  margin-bottom: 10px;
+}
+.content {
+  display: none;
+  margin: auto;
+  width: 70%;
+}
+.collapsibleContainer {
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flex-container > div {
+  width: 24%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.flex-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.flex-container img:hover {
+  transform: scale(1.1);
+}
+
+.flex-container a {
+  text-decoration: none;  /* Removes underline from anchor tags */
+}
+
+.flex-container a:hover {
+  text-decoration: none;  /* Removes underline from anchor tags even on hover */
+}
+</style>
+
+
 <header>
     <h1 style="text-align:center;">Site Comparisons</h1>
 </header>
 
-<div style="display: flex; justify-content: space-between;">
-  <div style="width: 50%; text-align: center;">
-    <h2>Yesterday</h2>
+<div class="collapsibleContainer">
+<button class="collapsible">Other</button>
+<div class="content">
 
-    <!-- Hs section -->
-    <h3>Sensible Heat Flux (Hs)</h3>
+<!-- u_star section -->
+<h2>Friction Velocity (u_star)</h2>
 
-    {% for i in (1..4) %}
-      <div style="text-align:center; max-width:500px; margin:auto;">
-        <h4>Flux Tower {{i}}</h4>
-        <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Hs_yesterday.png" target="_blank">
-          <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Hs_yesterday.png" alt="Fluxtower{{i}} - Hs yesterday" width="500" onerror="imgError(this);">
-        </a>
-        <div style="border:1px solid black; background-color: #003366; padding:10px; color: white;">
-          Min: 12.52, Max: 14.33, Avg: 13.17
-        </div>
-        <hr style="border-top: 1px solid #ddd;">
-      </div>
-    {% endfor %}
+<!-- Today Plots -->
+<h3>Today Plots</h3>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_u_star_today.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_u_star_today.png" alt="Fluxtower{{i}} - u_star today" onerror="imgError(this);">
+    </a>
   </div>
+{% endfor %}
+</div>
 
-  <div style="width: 50%; text-align: center;">
-    <h2>Today</h2>
-
-    <!-- Hs section -->
-    <h3>Sensible Heat Flux (Hs)</h3>
-
-    {% for i in (1..4) %}
-      <div style="text-align:center; max-width:500px; margin:auto;">
-        <h4>Flux Tower {{i}}</h4>
-        <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Hs_today.png" target="_blank">
-          <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Hs_today.png" alt="Fluxtower{{i}} - Hs today" width="500" onerror="imgError(this);">
-        </a>
-        <div style="border:1px solid black; background-color: #003366; padding:10px; color: white;">
-          Min: 12.52, Max: 14.33, Avg: 13.17
-        </div>
-        <hr style="border-top: 1px solid #ddd;">
-      </div>
-    {% endfor %}
+<!-- Yesterday Plots -->
+<h3>Yesterday Plots</h3>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_u_star_yesterday.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_u_star_yesterday.png" alt="Fluxtower{{i}} - u_star yesterday" onerror="imgError(this);">
+    </a>
   </div>
+{% endfor %}
+</div>
+
+<!-- Hs section -->
+<h2> Sensible Heat Flux (Hs)</h2>
+
+<!-- Today Plots -->
+<h3>Today Plots</h3>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Hs_today.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Hs_today.png" alt="Fluxtower{{i}} - Hs today" onerror="imgError(this);">
+    </a>
+  </div>
+{% endfor %}
+</div>
+
+<!-- Yesterday Plots -->
+<h3>Yesterday Plots</h3>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Hs_yesterday.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Hs_yesterday.png" alt="Fluxtower{{i}} - Hs yesterday" onerror="imgError(this);">
+    </a>
+  </div>
+{% endfor %}
 </div>
