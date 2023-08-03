@@ -102,10 +102,10 @@ function imgError(image) {
 <!-- u_star section -->
 <h2>Friction Velocity (u_star)</h2>
 
-<!-- Today Plots -->
+
  <button class="collapsible">Today</button>
  <div class="content">
-<h3>Today Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -121,10 +121,10 @@ function imgError(image) {
 </div>
  </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -141,13 +141,13 @@ function imgError(image) {
   </div>
 
 
-<!-- Hs section -->
+
 <h2> Sensible Heat Flux (Hs)</h2>
 
-<!-- Today Plots -->
+
 <button class="collapsible">Today</button>
 <div class="content">
-<h3>Today Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -163,10 +163,10 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -182,13 +182,13 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- tau section -->
+
 <h2> Momentum Flux Flux (tau)</h2>
 
-<!-- Today Plots -->
+
 <button class="collapsible">Today</button>
 <div class="content">
-<h3>Today Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -204,10 +204,10 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -237,13 +237,13 @@ function imgError(image) {
 <button class="collapsible">Temperature</button>
 <div class="content">
 
-<!-- T_tmpr_rh_mean section -->
+
 <h2>Temp and Rel Humidity mean (T_tmpr_rh_mean)</h2>
 
-<!-- Today Plots -->
+
 <button class="collapsible">Today</button>
 <div class="content">
-<h3>Today Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -259,10 +259,10 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -278,13 +278,13 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Ts_Avg section -->
+
 <h2>Sonic Virtual Temp Avg (Ts_Avg)</h2>
 
-<!-- Today Plots -->
+
 <button class="collapsible">Today</button>
 <div class="content">
-<h3>Today Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -300,10 +300,10 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -319,13 +319,13 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Ts_stdev section -->
+
 <h2>Sonic Virtual Temp sd (Ts_stdev)</h2>
 
-<!-- Today Plots -->
+
 <button class="collapsible">Today</button>
 <div class="content">
-<h3>Today Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -341,10 +341,10 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -370,13 +370,13 @@ function imgError(image) {
 <button class="collapsible">Precipitation</button>
 <div class="content">
 
-<!-- Precipitation section -->
+
 <h2> Precipitation (precip_Tot)</h2>
 
-<!-- Today Plots -->
+
 <button class="collapsible">Today</button>
 <div class="content">
-<h3>Today Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -392,10 +392,10 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -423,13 +423,13 @@ function imgError(image) {
 <button class="collapsible">Soil</button>
 <div class="content">
 
-<!-- Soil -->
+
 <h2> Soil Water Content (soil_water_Avg.1.)</h2>
 
-<!-- Today Plots -->
+
 <button class="collapsible">Today</button>
 <div class="content">
-<h3>Today Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -445,10 +445,10 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -483,13 +483,13 @@ function imgError(image) {
 <button class="collapsible">Wind</button>
 <div class="content">
 
-<!—Wind Speed section -->
+
 <h2> Wind Speed (wnd_spd)</h2>
 
-<!-- Today Plots -->
+
 <button class="collapsible">Today</button>
 <div class="content">
-<h3>Today Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -505,10 +505,10 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -525,13 +525,13 @@ function imgError(image) {
 </div>
 
 
-<!— Covariance of Ts and Ux -->
+
 <h2> Covariance of Ts and Ux (Ts_Ux_cov)</h2>
 
-<!-- Today Plots -->
+
 <button class="collapsible">Today</button>
 <div class="content">
-<h3>Today Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -547,10 +547,10 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -568,13 +568,13 @@ function imgError(image) {
 
 
 
-<!— Covariance of Ts and Uy -->
+
 <h2> Covariance of Ts and Uy (Ts_Uy_cov)</h2>
 
-<!-- Today Plots -->
+
 <button class="collapsible">Today</button>
 <div class="content">
-<h3>Today Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -590,10 +590,10 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -611,13 +611,13 @@ function imgError(image) {
 
 
 
-<!— Covariance of Ts and Uz -->
+
 <h2> Covariance of Ts and Uz (Ts_Uz_cov)</h2>
 
-<!-- Today Plots -->
+
 <button class="collapsible">Today</button>
 <div class="content">
-<h3>Today Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -633,10 +633,10 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -654,13 +654,13 @@ function imgError(image) {
 
 
 
-<!— Wind Velocity X sd -->
+
 <h2> Wind Velocity X sd (Ux_stdev )</h2>
 
-<!-- Today Plots -->
+
 <button class="collapsible">Today</button>
 <div class="content">
-<h3>Today Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -676,10 +676,10 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -696,13 +696,13 @@ function imgError(image) {
 </div>
 
 
-<!— Covariance of Ux and Uy -->
+
 <h2> Covariance of Ux and Uy (Ux_Uy_cov )</h2>
 
-<!-- Today Plots -->
+
 <button class="collapsible">Today</button>
 <div class="content">
-<h3>Today Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -718,10 +718,10 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -740,10 +740,10 @@ function imgError(image) {
 
 
 
-<!— Covariance of Ux and Uz -->
+
 <h2> Covariance of Ux and Uz (Ux_Uz_cov)</h2>
 
-<!-- Today Plots -->
+
 <button class="collapsible">Today</button>
 <div class="content">
 <h3>Today Plots</h3>
@@ -762,10 +762,10 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -783,13 +783,13 @@ function imgError(image) {
 
 
 
-<!— Wind Velocity Y sd -->
+
 <h2> Wind Velocity Y sd (Uy_stdev)</h2>
 
-<!-- Today Plots -->
+
 <button class="collapsible">Today</button>
 <div class="content">
-<h3>Today Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -805,10 +805,10 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -825,13 +825,13 @@ function imgError(image) {
 </div>
 
 
-<!-- Covariance of Uy and Uz -->
+
 <h2> Covariance of Uy and Uz (Uy_Uz_cov) </h2>
 
-<!-- Today Plots -->
+
 <button class="collapsible">Today</button>
 <div class="content">
-<h3>Today Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -847,10 +847,10 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -866,13 +866,13 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Wind Velocity Z sd -->
+
 <h2> Wind Velocity Z sd (Uz_stdev) </h2>
 
-<!-- Today Plots -->
+
 <button class="collapsible">Today</button>
 <div class="content">
-<h3>Today Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -888,10 +888,10 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -907,13 +907,13 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Resultant Wind Speed -->
+
 <h2> Resultant Wind Speed (rslt_wnd_spd) </h2>
 
-<!-- Today Plots -->
+
 <button class="collapsible">Today</button>
 <div class="content">
-<h3>Today Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -929,10 +929,10 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -951,13 +951,13 @@ function imgError(image) {
 
 
 
-<!-- Sonic Wind Direction -->
+
 <h2> Sonic Wind Direction (wnd_dir_sonic) </h2>
 
-<!-- Today Plots -->
+
 <button class="collapsible">Today</button>
 <div class="content">
-<h3>Today Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -973,10 +973,10 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -992,13 +992,13 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Wind Direction sd -->
+
 <h2> Wind Direction sd (std_wnd_dir) </h2>
 
-<!-- Today Plots -->
+
 <button class="collapsible">Today</button>
 <div class="content">
-<h3>Today Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -1014,10 +1014,10 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -1033,13 +1033,13 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Wind Direction -->
+
 <h2> Wind Direction (wnd_dir_compass) </h2>
 
-<!-- Today Plots -->
+
 <button class="collapsible">Today</button>
 <div class="content">
-<h3>Today Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -1055,10 +1055,10 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -1078,13 +1078,13 @@ function imgError(image) {
 
 
 
-<!-- Wind Velocity X Avg -->
+
 <h2> Wind Velocity X Avg (Ux_Avg) </h2>
 
-<!-- Today Plots -->
+
 <button class="collapsible">Today</button>
 <div class="content">
-<h3>Today Plots</h3>
+
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -1100,10 +1100,9 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -1119,13 +1118,12 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Wind Velocity Y Avg -->
+
 <h2> Wind Velocity Y Avg (Uy_Avg) </h2>
 
-<!-- Today Plots -->
+
 <button class="collapsible">Today</button>
 <div class="content">
-<h3>Today Plots</h3>
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -1141,10 +1139,9 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -1160,13 +1157,12 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Wind Velocity Z Avg -->
+
 <h2> Wind Velocity Z Avg (Uz_Avg) </h2>
 
-<!-- Today Plots -->
+
 <button class="collapsible">Today</button>
 <div class="content">
-<h3>Today Plots</h3>
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -1182,10 +1178,9 @@ function imgError(image) {
 </div>
 </div>
 
-<!-- Yesterday Plots -->
+
 <button class="collapsible">Yesterday</button>
 <div class="content">
-<h3>Yesterday Plots</h3>
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
