@@ -25,10 +25,6 @@ window.onload = function() {
 </script>
 
 <style>
-.collapsibleContainer {
-    display: flex;
-    justify-content: center;
-}
 .collapsible {
     background-color: transparent;
     color: white;
@@ -44,9 +40,14 @@ window.onload = function() {
     transition: background-color 0.5s, color 0.5s, border-color 0.5s;
     width: 70%;
     line-height: 1.5; /* Adjust this value to center text vertically */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 .content {
     display: none;
+    margin: auto;
+    width: 70%;
 }
 </style>
 
@@ -54,7 +55,6 @@ window.onload = function() {
     <h1 style="text-align:center;">Site Comparisons</h1>
 </header>
 
-<div class="collapsibleContainer">
 <button class="collapsible">Temperature</button>
 <div class="content">
 <h1>Daily Plots</h1>
@@ -62,7 +62,6 @@ window.onload = function() {
 <h2>Today Plots</h2>
 <div class="grid-container">
 
-  
 <div style='text-align:center; max-width:500px; margin:auto;'><h3>Total Precip</h3>
 <a href="Fluxtower1/daily_plots/fluxtower1_precip_Tot_today.png" target="_blank">
   <img src="fluxtower1/daily_plots/fluxtower1_precip_Tot_today.png" alt="fluxtower1 - Total Precip" width="500" onerror="imgError(this);">
@@ -76,9 +75,7 @@ window.onload = function() {
 <!-- Your grid items here for Yesterday Plots -->
 </div>
 </div>
-</div>
 
-<div class="collapsibleContainer">
 <button class="collapsible">Other</button>
 <div class="content">
 <h2>Today Plots</h2>
@@ -93,7 +90,6 @@ window.onload = function() {
 <!-- TODO: Insert image paths -->
 </div>
 </div>
-</div>
 
 <script>
 function imgError(image) {
@@ -102,5 +98,3 @@ function imgError(image) {
     return true;
 }
 </script>
-
-
