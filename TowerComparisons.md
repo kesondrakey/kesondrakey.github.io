@@ -60,7 +60,7 @@ function imgError(image) {
 }
   
 .collapsible.day {
-  background: linear-gradient(to right, #000000, #1a1a1a); /* Darker gradient background from black to dark gray */
+  background: linear-gradient(to right, #000000, #333333); /* Gradient background from black to dark gray */
   color: white;
 }
 
