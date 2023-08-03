@@ -50,32 +50,32 @@ function imgError(image) {
 }
 
 .collapsible.other {
-  background: linear-gradient(to right, #000, #434343); /* Gradient background */
+  background: linear-gradient(to right, #000, #2f2f2f); /* Darker gradient background */
   color: white;
 }
 
 .collapsible.temperature {
-  background: linear-gradient(to right, #ff0000, #ff7f00); /* Gradient background */
+  background: linear-gradient(to right, #b20000, #e67300); /* Darker gradient background */
   color: white;
 }
   
 .collapsible.day {
-  background: linear-gradient(to right, #000000, #333333); /* Gradient background from black to dark gray */
+  background: linear-gradient(to right, #000000, #1a1a1a); /* Darker gradient background from black to dark gray */
   color: white;
 }
 
 .collapsible.precipitation {
-  background: linear-gradient(to right, #0000ff, #00ffff); /* Gradient background */
+  background: linear-gradient(to right, #00008b, #008b8b); /* Darker gradient background */
   color: white;
 }
 
 .collapsible.soil {
-  background: linear-gradient(to right, #008000, #adff2f); /* Gradient background */
+  background: linear-gradient(to right, #004d00, #7cfc00); /* Darker gradient background */
   color: white;
 }
 
 .collapsible.wind {
-  background: linear-gradient(to right, #4b0082, #800080); /* Gradient background */
+  background: linear-gradient(to right, #2d006b, #660066); /* Darker gradient background */
   color: white;
 }
 
@@ -87,7 +87,6 @@ function imgError(image) {
 
 .collapsibleContainer {
   text-align: center;
-
 }
 
 .flex-container {
