@@ -24,6 +24,14 @@ window.onload = function() {
 }
 </script>
 
+<script>
+function imgError(image) {
+    image.onerror = "";
+    image.outerHTML = '<img src="../../images/cat_attempt.png" alt="Cat 404" style="width: 200px; display: block; margin: auto;"><div>Sorry, not available! This means we don\'t have data for today yet, or the values are all NA!</div>';
+    return true;
+}
+</script>
+
 <style>
 .collapsible {
   background-color: transparent;
@@ -51,7 +59,7 @@ window.onload = function() {
 .collapsibleContainer {
   text-align: center;
 }
-<style>
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* adjust minmax values according to your preference */
@@ -94,14 +102,6 @@ window.onload = function() {
   z-index: 1;
 }
 </style>
-
-<script>
-function imgError(image) {
-    image.onerror = "";
-    image.outerHTML = '<img src="../../images/cat_attempt.png" alt="Cat 404" style="width: 200px; display: block; margin: auto;"><div>Sorry, not available! This means we don\'t have data for today yet, or the values are all NA!</div>';
-    return true;
-}
-</script>
 
 
 <header>
@@ -148,11 +148,3 @@ function imgError(image) {
 
 </div>
 </div>
-
-<script>
-function imgError(image) {
-    image.onerror = "";
-    image.outerHTML = '<img src="../../images/cat_attempt.png" alt="Cat 404" style="width: 200px; display: block; margin: auto;"><div>Sorry, not available! This means we don\'t have data for today yet, or the values are all NA!</div>';
-    return true;
-}
-</script>
