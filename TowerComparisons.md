@@ -66,7 +66,7 @@ function imgError(image) {
   color: green;
 }
   .collapsible.wind {
-  color: gray;
+  color: purple;
 }
 
 .content {
