@@ -22,7 +22,7 @@ window.onload = function() {
     });
   }
 }
-</script>
+</script> 
 
 <script>
 function imgError(image) {
@@ -60,7 +60,7 @@ function imgError(image) {
 }
   
 .collapsible.day {
-  background: linear-gradient(to right, #000000, #1a1a1a); /* Darker gradient background from black to dark gray */
+  background: linear-gradient(to right, #000000, #333333); /* Gradient background from black to dark gray */
   color: white;
 }
 
@@ -551,7 +551,7 @@ function imgError(image) {
 
 
 
-<h2> Wind Velocity X sd (Ux_stdev )</h2>
+<h2> Wind Velocity X sd (Ux_stdev)</h2>
 
 
 <button class="collapsible day">Today</button>
@@ -561,8 +561,8 @@ function imgError(image) {
 {% for i in (1..4) %}
   <div>
     <h4>Flux Tower {{i}}</h4>
-    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_stdev _today.png" target="_blank">
-      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_stdev _today.png" alt="Fluxtower{{i}} - Tau today" onerror="imgError(this);">
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_stdev_today.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_stdev_today.png" alt="Fluxtower{{i}} - Tau today" onerror="imgError(this);">
     </a>
   </div>
   {% if i == 2 %}
@@ -580,8 +580,8 @@ function imgError(image) {
 {% for i in (1..4) %}
   <div>
     <h4>Flux Tower {{i}}</h4>
-    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_stdev _yesterday.png" target="_blank">
-      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_stdev _yesterday.png" alt="Fluxtower{{i}} - Tau yesterday" onerror="imgError(this);">
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_stdev_yesterday.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_stdev_yesterday.png" alt="Fluxtower{{i}} - Tau yesterday" onerror="imgError(this);">
     </a>
   </div>
   {% if i == 2 %}
@@ -603,8 +603,8 @@ function imgError(image) {
 {% for i in (1..4) %}
   <div>
     <h4>Flux Tower {{i}}</h4>
-    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_Uy_cov _today.png" target="_blank">
-      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_Uy_cov _today.png" alt="Fluxtower{{i}} - Tau today" onerror="imgError(this);">
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_Uy_cov_today.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_Uy_cov_today.png" alt="Fluxtower{{i}} - Tau today" onerror="imgError(this);">
     </a>
   </div>
   {% if i == 2 %}
@@ -622,8 +622,8 @@ function imgError(image) {
 {% for i in (1..4) %}
   <div>
     <h4>Flux Tower {{i}}</h4>
-    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_Uy_cov _yesterday.png" target="_blank">
-      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_Uy_cov _yesterday.png" alt="Fluxtower{{i}} - Tau yesterday" onerror="imgError(this);">
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_Uy_cov_yesterday.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_Uy_cov_yesterday.png" alt="Fluxtower{{i}} - Tau yesterday" onerror="imgError(this);">
     </a>
   </div>
   {% if i == 2 %}
