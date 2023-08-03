@@ -6,8 +6,6 @@ nav-menu: true
 ---
 
 <script>
-
-  
 window.onload = function() {
   var coll = document.getElementsByClassName("collapsible");
   var i;
@@ -27,31 +25,43 @@ window.onload = function() {
 </script>
 
 <style>
-  .collapsible {
-    background-color: transparent;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    border: 2px solid white;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: background-color 0.5s, color 0.5s, border-color 0.5s;
-    width: 70%;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    line-height: normal; /* Add this line */
-margin-bottom: 10px;
+.collapsible {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border: 2px solid white;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  line-height: normal; /* Add this line */
+  margin-bottom: 10px;
 }
 .content {
-    display: none;
-    margin: auto;
-    width: 70%;
+  display: none;
+  margin: auto;
+  width: 70%;
 }
 .collapsibleContainer {
-    text-align: center;
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* increased from 250px to 300px */
+  gap: 10px;
+  justify-content: center;
+}
+.vertical-line {
+  width: 1px; /* Line width */
+  height: 200px; /* Line height - adjust according to your image height */
+  background-color: #A9A9A9; /* Line color - dark gray */
+  grid-column: 3; /* Adjust the grid column if needed */
 }
 </style>
 
@@ -60,40 +70,43 @@ margin-bottom: 10px;
 </header>
 
 <div class="collapsibleContainer">
-<button class="collapsible">Temperature</button>
-<div class="content">
-<h1>Daily Plots</h1>
-
-<h2>Today Plots</h2>
-<div class="grid-container">
-<div style='text-align:center; max-width:500px; margin:auto;'><h3>Total Precip</h3>
-<a href="Fluxtower1/daily_plots/fluxtower1_precip_Tot_today.png" target="_blank">
-  <img src="fluxtower1/daily_plots/fluxtower1_precip_Tot_today.png" alt="fluxtower1 - Total Precip" width="500" onerror="imgError(this);">
-</a>
-<!-- Your grid items here for Today Plots -->
-</div>
-
-<h2>Yesterday Plots</h2>
-<div class="grid-container">
-<!-- Your grid items here for Yesterday Plots -->
-</div>
-</div>
-</div>
-
-<div class="collapsibleContainer">
 <button class="collapsible">Other</button>
 <div class="content">
-<h2>Today Plots</h2>
+
+<!-- u_star section -->
+<h2>Friction Velocity (u_star)</h2>
+
+<!-- Replace 'fluxtower1' with the actual tower names -->
+<!-- Create an anchor link for each image. The href attribute points to the full-sized image, and the img element displays a smaller version. -->
+
+<!-- Today Plots -->
+<h3>Today Plots</h3>
 <div class="grid-container">
-<!-- Replace with your specific image paths -->
-<!-- TODO: Insert image paths -->
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_u_star_today.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_u_star_today.png" alt="Fluxtower{{i}} - u_star today" onerror="imgError(this);">
+    </a>
+  </div>
+{% endfor %}
 </div>
 
-<h2>Yesterday Plots</h2>
+<!-- Yesterday Plots -->
+<h3>Yesterday Plots</h3>
 <div class="grid-container">
-<!-- Replace with your specific image paths -->
-<!-- TODO: Insert image paths -->
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_u_star_yesterday.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_u_star_yesterday.png" alt="Fluxtower{{i}} - u_star yesterday" onerror="imgError(this);">
+    </a>
+  </div>
+{% endfor %}
 </div>
+
+<!-- Rest of the content (Hs and tau sections) would go here, modified in a similar fashion -->
+
 </div>
 </div>
 
@@ -104,4 +117,3 @@ function imgError(image) {
     return true;
 }
 </script>
-
