@@ -72,7 +72,7 @@ function imgError(image) {
 .content {
   display: none;
   margin: auto;
-  width: 90%;
+  width: 95%;
 }
 .collapsibleContainer {
   text-align: center;
