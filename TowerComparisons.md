@@ -741,7 +741,7 @@ function imgError(image) {
 
 
 <!— Covariance of Ux and Uz -->
-<h2> Covariance of Ux and Uz (Ux_Uz_cov  )</h2>
+<h2> Covariance of Ux and Uz (Ux_Uz_cov)</h2>
 
 <!-- Today Plots -->
 <button class="collapsible">Today</button>
@@ -751,8 +751,8 @@ function imgError(image) {
 {% for i in (1..4) %}
   <div>
     <h4>Flux Tower {{i}}</h4>
-    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_Uz_cov  _today.png" target="_blank">
-      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_Uz_cov  _today.png" alt="Fluxtower{{i}} - Tau today" onerror="imgError(this);">
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_Uz_cov_today.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_Uz_cov_today.png" alt="Fluxtower{{i}} - Tau today" onerror="imgError(this);">
     </a>
   </div>
   {% if i == 2 %}
@@ -770,8 +770,8 @@ function imgError(image) {
 {% for i in (1..4) %}
   <div>
     <h4>Flux Tower {{i}}</h4>
-    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_Uz_cov  _yesterday.png" target="_blank">
-      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_Uz_cov  _yesterday.png" alt="Fluxtower{{i}} - Tau yesterday" onerror="imgError(this);">
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_Uz_cov_yesterday.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_Uz_cov_yesterday.png" alt="Fluxtower{{i}} - Tau yesterday" onerror="imgError(this);">
     </a>
   </div>
   {% if i == 2 %}
