@@ -34,12 +34,9 @@ function imgError(image) {
 
 <style>
 .collapsible {
-  background-color: #f1f1f1; /* Lighter color for the background */
-  color: black; /* Default color */
   text-align: center;
   padding: 15px;
-  border: 2px solid #444; /* Border color */
-  border-radius: 5px; /* Rounded corners */
+  border: none;
   font-size: 20px;
   cursor: pointer;
   transition: background-color 0.5s, color 0.5s, border-color 0.5s;
@@ -48,40 +45,33 @@ function imgError(image) {
   margin: 0 auto;
   margin-bottom: 10px;
   line-height: normal;
+  border-radius: 5px; /* Rounded corners */
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2); /* Shadow for 3D effect */
 }
 
-.collapsible:hover {
-  background-color: #ddd; /* Change background on hover */
-}
-
-.collapsible:active {
-  background-color: #bbb; /* Change background when active (being clicked) */
-}
-
 .collapsible.other {
+  background: linear-gradient(to right, #000, #434343); /* Gradient background */
   color: white;
-  border-color: white; /* Border color for differentiation */
 }
 
 .collapsible.temperature {
-  color: red;
-  border-color: red; /* Border color for differentiation */
+  background: linear-gradient(to right, #ff0000, #ff7f00); /* Gradient background */
+  color: white;
 }
 
 .collapsible.precipitation {
-  color: blue;
-  border-color: blue; /* Border color for differentiation */
+  background: linear-gradient(to right, #0000ff, #00ffff); /* Gradient background */
+  color: white;
 }
 
 .collapsible.soil {
-  color: green;
-  border-color: green; /* Border color for differentiation */
+  background: linear-gradient(to right, #008000, #adff2f); /* Gradient background */
+  color: white;
 }
 
 .collapsible.wind {
-  color: purple;
-  border-color: purple; /* Border color for differentiation */
+  background: linear-gradient(to right, #4b0082, #800080); /* Gradient background */
+  color: white;
 }
 
 .content {
@@ -92,6 +82,7 @@ function imgError(image) {
 
 .collapsibleContainer {
   text-align: center;
+
 }
 
 .flex-container {
