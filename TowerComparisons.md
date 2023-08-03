@@ -58,6 +58,11 @@ function imgError(image) {
   background: linear-gradient(to right, #ff0000, #ff7f00); /* Gradient background */
   color: white;
 }
+  
+.collapsible.day {
+  background: linear-gradient(to right, #000000, #333333); /* Gradient background from black to dark gray */
+  color: white;
+}
 
 .collapsible.precipitation {
   background: linear-gradient(to right, #0000ff, #00ffff); /* Gradient background */
@@ -133,7 +138,7 @@ function imgError(image) {
 <h2>Temp and Rel Humidity mean (T_tmpr_rh_mean)</h2>
 
 
-<button class="collapsible">Today</button>
+<button class="collapsible day">Today</button>
 <div class="content">
 
 <div class="flex-container">
