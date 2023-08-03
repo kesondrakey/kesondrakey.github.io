@@ -34,7 +34,7 @@ function imgError(image) {
 
 <style>
 .collapsible {
-  background-color: black;
+  background-color: transparent;
   color: white;
   text-align: center;
   padding: 15px;
@@ -51,6 +51,24 @@ function imgError(image) {
   line-height: normal; /* Add this line */
   margin-bottom: 10px;
 }
+  .collapsible.other {
+  background-color: white;
+}
+
+.collapsible.temperature {
+  background-color: red;
+}
+
+.collapsible.precipitation {
+  background-color: blue;
+}
+  .collapsible.soil {
+  background-color: green;
+}
+  .collapsible.wind {
+  background-color: gray;
+}
+
 .content {
   display: none;
   margin: auto;
@@ -95,137 +113,6 @@ function imgError(image) {
     <h1 style="text-align:center;">Site Comparisons</h1>
 </header>
 
-<div class="collapsibleContainer">
-<button class="collapsible">Other</button>
-<div class="content">
-
-<!-- u_star section -->
-<h2>Friction Velocity (u_star)</h2>
-
-
- <button class="collapsible">Today</button>
- <div class="content">
-
-<div class="flex-container">
-{% for i in (1..4) %}
-  <div>
-    <h4>Flux Tower {{i}}</h4>
-    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_u_star_today.png" target="_blank">
-      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_u_star_today.png" alt="Fluxtower{{i}} - u_star today" onerror="imgError(this);">
-    </a>
-  </div>
-    {% if i == 2 %}
-  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
-  {% endif %}
-{% endfor %}
-</div>
- </div>
-
-
-<button class="collapsible">Yesterday</button>
-<div class="content">
-
-<div class="flex-container">
-{% for i in (1..4) %}
-  <div>
-    <h4>Flux Tower {{i}}</h4>
-    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_u_star_yesterday.png" target="_blank">
-      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_u_star_yesterday.png" alt="Fluxtower{{i}} - Hs yesterday" onerror="imgError(this);">
-    </a>
-  </div>
-  {% if i == 2 %}
-  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
-  {% endif %}
-{% endfor %}
-</div>
-  </div>
-
-
-
-<h2> Sensible Heat Flux (Hs)</h2>
-
-
-<button class="collapsible">Today</button>
-<div class="content">
-
-<div class="flex-container">
-{% for i in (1..4) %}
-  <div>
-    <h4>Flux Tower {{i}}</h4>
-    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Hs_today.png" target="_blank">
-      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Hs_today.png" alt="Fluxtower{{i}} - Hs today" onerror="imgError(this);">
-    </a>
-  </div>
-  {% if i == 2 %}
-  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
-  {% endif %}
-{% endfor %}
-</div>
-</div>
-
-
-<button class="collapsible">Yesterday</button>
-<div class="content">
-
-<div class="flex-container">
-{% for i in (1..4) %}
-  <div>
-    <h4>Flux Tower {{i}}</h4>
-    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Hs_yesterday.png" target="_blank">
-      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Hs_yesterday.png" alt="Fluxtower{{i}} - Hs yesterday" onerror="imgError(this);">
-    </a>
-  </div>
-  {% if i == 2 %}
-  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
-  {% endif %}
-{% endfor %}
-</div>
-</div>
-
-
-<h2> Momentum Flux Flux (tau)</h2>
-
-
-<button class="collapsible">Today</button>
-<div class="content">
-
-<div class="flex-container">
-{% for i in (1..4) %}
-  <div>
-    <h4>Flux Tower {{i}}</h4>
-    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_tau_today.png" target="_blank">
-      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_tau_today.png" alt="Fluxtower{{i}} - Tau today" onerror="imgError(this);">
-    </a>
-  </div>
-  {% if i == 2 %}
-  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
-  {% endif %}
-{% endfor %}
-</div>
-</div>
-
-
-<button class="collapsible">Yesterday</button>
-<div class="content">
-
-<div class="flex-container">
-{% for i in (1..4) %}
-  <div>
-    <h4>Flux Tower {{i}}</h4>
-    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_tau_yesterday.png" target="_blank">
-      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_tau_yesterday.png" alt="Fluxtower{{i}} - Tau yesterday" onerror="imgError(this);">
-    </a>
-  </div>
-  {% if i == 2 %}
-  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
-  {% endif %}
-{% endfor %}
-</div>
-</div>
-
-</div>
-</div>
-
 
 
 
@@ -234,7 +121,7 @@ function imgError(image) {
 
 
 <div class="collapsibleContainer">
-<button class="collapsible">Temperature</button>
+<button class="collapsible temperature">Temperature</button>
 <div class="content">
 
 
@@ -367,7 +254,7 @@ function imgError(image) {
 
 
 <div class="collapsibleContainer">
-<button class="collapsible">Precipitation</button>
+<button class="collapsible precipitation">Precipitation</button>
 <div class="content">
 
 
@@ -420,7 +307,7 @@ function imgError(image) {
 
 
 <div class="collapsibleContainer">
-<button class="collapsible">Soil</button>
+<button class="collapsible soil">Soil</button>
 <div class="content">
 
 
@@ -480,7 +367,7 @@ function imgError(image) {
 
 
 <div class="collapsibleContainer">
-<button class="collapsible">Wind</button>
+<button class="collapsible wind">Wind</button>
 <div class="content">
 
 
@@ -1193,6 +1080,137 @@ function imgError(image) {
   <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
   {% endif %}
 {% endfor %}
+</div>
+</div>
+
+<div class="collapsibleContainer">
+<button class="collapsible other">Other</button>
+<div class="content">
+
+
+<h2>Friction Velocity (u_star)</h2>
+
+
+ <button class="collapsible">Today</button>
+ <div class="content">
+
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_u_star_today.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_u_star_today.png" alt="Fluxtower{{i}} - u_star today" onerror="imgError(this);">
+    </a>
+  </div>
+    {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+ </div>
+
+
+<button class="collapsible">Yesterday</button>
+<div class="content">
+
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_u_star_yesterday.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_u_star_yesterday.png" alt="Fluxtower{{i}} - Hs yesterday" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+  </div>
+
+
+
+<h2> Sensible Heat Flux (Hs)</h2>
+
+
+<button class="collapsible">Today</button>
+<div class="content">
+
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Hs_today.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Hs_today.png" alt="Fluxtower{{i}} - Hs today" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
+
+
+<button class="collapsible">Yesterday</button>
+<div class="content">
+
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Hs_yesterday.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Hs_yesterday.png" alt="Fluxtower{{i}} - Hs yesterday" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
+
+
+<h2> Momentum Flux Flux (tau)</h2>
+
+
+<button class="collapsible">Today</button>
+<div class="content">
+
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_tau_today.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_tau_today.png" alt="Fluxtower{{i}} - Tau today" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
+
+
+<button class="collapsible">Yesterday</button>
+<div class="content">
+
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_tau_yesterday.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_tau_yesterday.png" alt="Fluxtower{{i}} - Tau yesterday" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
+
 </div>
 </div>
 
