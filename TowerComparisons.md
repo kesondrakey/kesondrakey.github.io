@@ -2,7 +2,7 @@
 layout: post
 title: Tower Comparisons
 description: Tower Comparisons
-nav-menu: true
+nav-menu: true 
 ---
 
 <script>
@@ -116,9 +116,7 @@ function imgError(image) {
 </style>
 
 
-<header>
-    <h1 style="text-align:center;">Site Comparisons</h1>
-</header>
+
 
 
 
