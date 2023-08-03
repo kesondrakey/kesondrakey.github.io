@@ -24,7 +24,26 @@ window.onload = function() {
 }
 </script>
 
-<!-- Here, HTML, HEAD and BODY tags and CSS styles are omitted for brevity, please use them as in your code -->
+<style>
+.collapsible {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid white;
+    font-size: 20px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+    width: 70%;
+}
+.content {
+    display: none;
+}
+</style>
 
 <header>
     <h1 style="text-align:center;">Site Comparisons</h1>
@@ -43,7 +62,6 @@ window.onload = function() {
 <a href="Fluxtower1/daily_plots/fluxtower1_precip_Tot_today.png" target="_blank">
   <img src="fluxtower1/daily_plots/fluxtower1_precip_Tot_today.png" alt="fluxtower1 - Total Precip" width="500" onerror="imgError(this);">
 </a>
-
 
 <!-- Your grid items here for Today Plots -->
 </div>
@@ -80,5 +98,4 @@ function imgError(image) {
 }
 </script>
 
-<!-- End of BODY and HTML tags -->
 
