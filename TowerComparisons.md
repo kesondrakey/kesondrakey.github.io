@@ -1,6 +1,6 @@
 ---
 layout: post
-title:
+title: Tower Comparisons
 description: Tower Comparisons
 nav-menu: true
 ---
@@ -34,7 +34,7 @@ function imgError(image) {
 
 <style>
 .collapsible {
-  background-color: transparent;
+  background-color: black;
   color: white;
   text-align: center;
   padding: 15px;
@@ -91,12 +91,12 @@ function imgError(image) {
 }
 
 .flex-container img {
-  max-width: 120%;
+  max-width: 110%;
   height: auto;
 }
 
 .flex-container img:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
 }
 
 .flex-container a {
