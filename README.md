@@ -19,7 +19,7 @@ A comprehensive resource showcasing invaluable data from four agricultural sites
     }
     .grid-item.full-width {
     grid-column: span 4; /* If you have 4 items in a row, this will make the item span all 4 columns */
-    padding-top: 50%; /* If you want this item to be thinner, adjust the padding-top value */
+    padding-top: 30%; /* If you want this item to be thinner, adjust the padding-top value */
     }
 
 
