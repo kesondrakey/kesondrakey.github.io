@@ -101,6 +101,13 @@ function imgError(image) {
   background-color: #A9A9A9;
   z-index: 1;
 }
+  .grid-container a {
+  text-decoration: none;  /* Removes underline from anchor tags */
+}
+
+.grid-container a:hover {
+  text-decoration: none;  /* Removes underline from anchor tags even on hover */
+}
 </style>
 
 
