@@ -5,25 +5,6 @@ description: Tower Comparisons
 nav-menu: true
 ---
 
-<script>
-window.onload = function() {
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
-
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.display === "block") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "block";
-      }
-    });
-  }
-}
-</script>
-
 <style>
 .collapsible {
     background-color: transparent;
@@ -89,6 +70,25 @@ window.onload = function() {
 <!-- TODO: Insert image paths -->
 </div>
 </div> <!-- Closes the second content div -->
+
+<script>
+window.onload = function() {
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+}
+</script>
 
 <script>
 function imgError(image) {
