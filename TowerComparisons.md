@@ -6,6 +6,8 @@ nav-menu: true
 ---
 
 <script>
+
+  
 window.onload = function() {
   var coll = document.getElementsByClassName("collapsible");
   var i;
@@ -25,7 +27,7 @@ window.onload = function() {
 </script>
 
 <style>
-.collapsible {
+  .collapsible {
     background-color: transparent;
     color: white;
     text-align: center;
@@ -40,6 +42,8 @@ window.onload = function() {
     display: block;
     margin: 0 auto;
     margin-bottom: 10px;
+    line-height: normal; /* Add this line */
+margin-bottom: 10px;
 }
 .content {
     display: none;
