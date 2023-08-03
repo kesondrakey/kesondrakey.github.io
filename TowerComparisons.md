@@ -67,7 +67,7 @@ function imgError(image) {
 }
 
 .flex-container > div {
-  width: 25%;
+  width: 24%;
   text-align: center;
   margin-bottom: 20px;
 }
