@@ -22,7 +22,7 @@ window.onload = function() {
     });
   }
 }
-</script>
+</script> 
 
 <script>
 function imgError(image) {
