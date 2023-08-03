@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tower Comparisons
+title:
 description: Tower Comparisons
 nav-menu: true
 ---
@@ -52,21 +52,21 @@ function imgError(image) {
   margin-bottom: 10px;
 }
   .collapsible.other {
-  background-color: white;
+  color: white;
 }
 
 .collapsible.temperature {
-  background-color: red;
+  color: red;
 }
 
 .collapsible.precipitation {
-  background-color: blue;
+  color: blue;
 }
   .collapsible.soil {
-  background-color: green;
+  color: green;
 }
   .collapsible.wind {
-  background-color: gray;
+  color: gray;
 }
 
 .content {
@@ -91,7 +91,7 @@ function imgError(image) {
 }
 
 .flex-container img {
-  max-width: 100%;
+  max-width: 120%;
   height: auto;
 }
 
@@ -1083,6 +1083,11 @@ function imgError(image) {
 </div>
 </div>
 
+
+</div> <!-- This is the closing tag for content div under Temperature -->
+</div> <!-- This is the closing tag for collapsibleContainer div under Temperature -->
+
+
 <div class="collapsibleContainer">
 <button class="collapsible other">Other</button>
 <div class="content">
@@ -1218,8 +1223,7 @@ function imgError(image) {
 
 
 
-</div> <!-- This is the closing tag for content div under Temperature -->
-</div> <!-- This is the closing tag for collapsibleContainer div under Temperature -->
+
 
 
 
