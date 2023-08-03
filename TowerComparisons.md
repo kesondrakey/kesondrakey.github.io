@@ -83,18 +83,73 @@ margin-bottom: 10px;
 <div class="collapsibleContainer">
 <button class="collapsible">Other</button>
 <div class="content">
-<h2>Today Plots</h2>
+
+<!-- u_star section -->
+<h2>Friction Velocity (u_star)</h2>
+
+<h3>Today Plots</h3>
 <div class="grid-container">
-<!-- Replace with your specific image paths -->
-<!-- TODO: Insert image paths -->
+  <!-- Replace 'Fluxtower1' with the actual tower names -->
+  <div><img src="Fluxtower1/daily_plots/fluxtower1_u_star_today.png" alt="Fluxtower1 - u_star today" onerror="imgError(this);"></div>
+  <div><img src="Fluxtower2/daily_plots/fluxtower2_u_star_today.png" alt="Fluxtower2 - u_star today" onerror="imgError(this);"></div>
+  <div><img src="Fluxtower3/daily_plots/fluxtower3_u_star_today.png" alt="Fluxtower3 - u_star today" onerror="imgError(this);"></div>
+  <div><img src="Fluxtower4/daily_plots/fluxtower4_u_star_today.png" alt="Fluxtower4 - u_star today" onerror="imgError(this);"></div>
 </div>
 
-<h2>Yesterday Plots</h2>
+<h3>Yesterday Plots</h3>
 <div class="grid-container">
-<!-- Replace with your specific image paths -->
-<!-- TODO: Insert image paths -->
+  <div><img src="Fluxtower1/daily_plots/fluxtower1_u_star_yesterday.png" alt="Fluxtower1 - u_star yesterday" onerror="imgError(this);"></div>
+  <div><img src="Fluxtower2/daily_plots/fluxtower2_u_star_yesterday.png" alt="Fluxtower2 - u_star yesterday" onerror="imgError(this);"></div>
+  <div><img src="Fluxtower3/daily_plots/fluxtower3_u_star_yesterday.png" alt="Fluxtower3 - u_star yesterday" onerror="imgError(this);"></div>
+  <div><img src="Fluxtower4/daily_plots/fluxtower4_u_star_yesterday.png" alt="Fluxtower4 - u_star yesterday" onerror="imgError(this);"></div>
+</div>
+
+<!-- Hs section -->
+<h2>Sensible Heat Flux (Hs)</h2>
+
+<h3>Today Plots</h3>
+<div class="grid-container">
+  <!-- Replace 'Fluxtower1' with the actual tower names -->
+  <div><img src="Fluxtower1/daily_plots/fluxtower1_Hs_today.png" alt="Fluxtower1 - Hs today" onerror="imgError(this);"></div>
+  <div><img src="Fluxtower2/daily_plots/fluxtower2_Hs_today.png" alt="Fluxtower2 - Hs today" onerror="imgError(this);"></div>
+  <div><img src="Fluxtower3/daily_plots/fluxtower3_Hs_today.png" alt="Fluxtower3 - Hs today" onerror="imgError(this);"></div>
+  <div><img src="Fluxtower4/daily_plots/fluxtower4_Hs_today.png" alt="Fluxtower4 - Hs today" onerror="imgError(this);"></div>
+</div>
+
+<h3>Yesterday Plots</h3>
+<div class="grid-container">
+  <div><img src="Fluxtower1/daily_plots/fluxtower1_Hs_yesterday.png" alt="Fluxtower1 - Hs yesterday" onerror="imgError(this);"></div>
+  <div><img src="Fluxtower2/daily_plots/fluxtower2_Hs_yesterday.png" alt="Fluxtower2 - Hs yesterday" onerror="imgError(this);"></div>
+  <div><img src="Fluxtower3/daily_plots/fluxtower3_Hs_yesterday.png" alt="Fluxtower3 - Hs yesterday" onerror="imgError(this);"></div>
+  <div><img src="Fluxtower4/daily_plots/fluxtower4_Hs_yesterday.png" alt="Fluxtower4 - Hs yesterday" onerror="imgError(this);"></div>
+</div>
+
+<!-- tau section -->
+<h2>Momentum Flux (tau)</h2>
+
+<h3>Today Plots</h3>
+<div class="grid-container">
+  <!-- Replace 'Fluxtower1' with the actual tower names -->
+  <div><img src="Fluxtower1/daily_plots/fluxtower1_tau_today.png" alt="Fluxtower1 - tau today" onerror="imgError(this);"></div>
+  <div><img src="Fluxtower2/daily_plots/fluxtower2_tau_today.png" alt="Fluxtower2 - tau today" onerror="imgError(this);"></div>
+  <div><img src="Fluxtower3/daily_plots/fluxtower3_tau_today.png" alt="Fluxtower3 - tau today" onerror="imgError(this);"></div>
+  <div><img src="Fluxtower4/daily_plots/fluxtower4_tau_today.png" alt="Fluxtower4 - tau today" onerror="imgError(this);"></div>
+</div>
+
+<h3>Yesterday Plots</h3>
+<div class="grid-container">
+  <div><img src="Fluxtower1/daily_plots/fluxtower1_tau_yesterday.png" alt="Fluxtower1 - tau yesterday" onerror="imgError(this);"></div>
+  <div><img src="Fluxtower2/daily_plots/fluxtower2_tau_yesterday.png" alt="Fluxtower2 - tau yesterday" onerror="imgError(this);"></div>
+  <div><img src="Fluxtower3/daily_plots/fluxtower3_tau_yesterday.png" alt="Fluxtower3 - tau yesterday" onerror="imgError(this);"></div>
+  <div><img src="Fluxtower4/daily_plots/fluxtower4_tau_yesterday.png" alt="Fluxtower4 - tau yesterday" onerror="imgError(this);"></div>
+</div>
+
 </div>
 </div>
+
+
+
+
 </div>
 
 <script>
