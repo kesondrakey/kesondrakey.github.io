@@ -40,9 +40,10 @@ window.onload = function() {
 
   
 <div style='text-align:center; max-width:500px; margin:auto;'><h3>Total Precip</h3>
-<a href="../Fluxtower1/daily_plots/fluxtower1_precip_Tot_today.png" target="_blank">
-    <img src="../Fluxtower1/daily_plots/fluxtower1_precip_Tot_today.png" alt="fluxtower1 - Total Precip" width="500" onerror="imgError(this);">
+<a href="Fluxtower1/daily_plots/fluxtower1_precip_Tot_today.png" target="_blank">
+    <img src="Fluxtower1/daily_plots/fluxtower1_precip_Tot_today.png" alt="fluxtower1 - Total Precip" width="500" onerror="imgError(this);">
 </a>
+
 
 <!-- Your grid items here for Today Plots -->
 </div>
