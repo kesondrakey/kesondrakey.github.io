@@ -34,39 +34,54 @@ function imgError(image) {
 
 <style>
 .collapsible {
-  background-color: black;
-  color: white;
+  background-color: #f1f1f1; /* Lighter color for the background */
+  color: black; /* Default color */
   text-align: center;
   padding: 15px;
-  border: 2px solid white;
+  border: 2px solid #444; /* Border color */
+  border-radius: 5px; /* Rounded corners */
   font-size: 20px;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
   transition: background-color 0.5s, color 0.5s, border-color 0.5s;
   width: 100%;
   display: block;
   margin: 0 auto;
   margin-bottom: 10px;
-  line-height: normal; /* Add this line */
-  margin-bottom: 10px;
+  line-height: normal;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2); /* Shadow for 3D effect */
 }
-  .collapsible.other {
+
+.collapsible:hover {
+  background-color: #ddd; /* Change background on hover */
+}
+
+.collapsible:active {
+  background-color: #bbb; /* Change background when active (being clicked) */
+}
+
+.collapsible.other {
   color: white;
+  border-color: white; /* Border color for differentiation */
 }
 
 .collapsible.temperature {
   color: red;
+  border-color: red; /* Border color for differentiation */
 }
 
 .collapsible.precipitation {
   color: blue;
+  border-color: blue; /* Border color for differentiation */
 }
-  .collapsible.soil {
+
+.collapsible.soil {
   color: green;
+  border-color: green; /* Border color for differentiation */
 }
-  .collapsible.wind {
+
+.collapsible.wind {
   color: purple;
+  border-color: purple; /* Border color for differentiation */
 }
 
 .content {
@@ -74,6 +89,7 @@ function imgError(image) {
   margin: auto;
   width: 95%;
 }
+
 .collapsibleContainer {
   text-align: center;
 }
@@ -91,7 +107,7 @@ function imgError(image) {
 }
 
 .flex-container img {
-  max-width: 110%;
+  max-width: 100%;
   height: auto;
 }
 
