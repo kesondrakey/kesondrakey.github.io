@@ -825,10 +825,381 @@ function imgError(image) {
 </div>
 
 
+<!-- Covariance of Uy and Uz -->
+<h2> Covariance of Uy and Uz (Uy_Uz_cov) </h2>
+
+<!-- Today Plots -->
+<button class="collapsible">Today</button>
+<div class="content">
+<h3>Today Plots</h3>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Uy_Uz_cov_today.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Uy_Uz_cov_today.png" alt="Fluxtower{{i}} - Cov today" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
+
+<!-- Yesterday Plots -->
+<button class="collapsible">Yesterday</button>
+<div class="content">
+<h3>Yesterday Plots</h3>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Uy_Uz_cov_yesterday.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Uy_Uz_cov_yesterday.png" alt="Fluxtower{{i}} - Cov yesterday" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
+
+<!-- Wind Velocity Z sd -->
+<h2> Wind Velocity Z sd (Uz_stdev) </h2>
+
+<!-- Today Plots -->
+<button class="collapsible">Today</button>
+<div class="content">
+<h3>Today Plots</h3>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Uz_stdev_today.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Uz_stdev_today.png" alt="Fluxtower{{i}} - Z sd today" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
+
+<!-- Yesterday Plots -->
+<button class="collapsible">Yesterday</button>
+<div class="content">
+<h3>Yesterday Plots</h3>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Uz_stdev_yesterday.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Uz_stdev_yesterday.png" alt="Fluxtower{{i}} - Z sd yesterday" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
+
+<!-- Resultant Wind Speed -->
+<h2> Resultant Wind Speed (rslt_wnd_spd) </h2>
+
+<!-- Today Plots -->
+<button class="collapsible">Today</button>
+<div class="content">
+<h3>Today Plots</h3>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_rslt_wnd_spd_today.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_rslt_wnd_spd_today.png" alt="Fluxtower{{i}} - Wind Speed today" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
+
+<!-- Yesterday Plots -->
+<button class="collapsible">Yesterday</button>
+<div class="content">
+<h3>Yesterday Plots</h3>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_rslt_wnd_spd_yesterday.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_rslt_wnd_spd_yesterday.png" alt="Fluxtower{{i}} - Wind Speed yesterday" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
 
 
 
 
+<!-- Sonic Wind Direction -->
+<h2> Sonic Wind Direction (wnd_dir_sonic) </h2>
+
+<!-- Today Plots -->
+<button class="collapsible">Today</button>
+<div class="content">
+<h3>Today Plots</h3>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_wnd_dir_sonic_today.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_wnd_dir_sonic_today.png" alt="Fluxtower{{i}} - Sonic Direction today" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
+
+<!-- Yesterday Plots -->
+<button class="collapsible">Yesterday</button>
+<div class="content">
+<h3>Yesterday Plots</h3>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_wnd_dir_sonic_yesterday.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_wnd_dir_sonic_yesterday.png" alt="Fluxtower{{i}} - Sonic Direction yesterday" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
+
+<!-- Wind Direction sd -->
+<h2> Wind Direction sd (std_wnd_dir) </h2>
+
+<!-- Today Plots -->
+<button class="collapsible">Today</button>
+<div class="content">
+<h3>Today Plots</h3>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_std_wnd_dir_today.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_std_wnd_dir_today.png" alt="Fluxtower{{i}} - Wind Direction sd today" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
+
+<!-- Yesterday Plots -->
+<button class="collapsible">Yesterday</button>
+<div class="content">
+<h3>Yesterday Plots</h3>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_std_wnd_dir_yesterday.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_std_wnd_dir_yesterday.png" alt="Fluxtower{{i}} - Wind Direction sd yesterday" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
+
+<!-- Wind Direction -->
+<h2> Wind Direction (wnd_dir_compass) </h2>
+
+<!-- Today Plots -->
+<button class="collapsible">Today</button>
+<div class="content">
+<h3>Today Plots</h3>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_wnd_dir_compass_today.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_wnd_dir_compass_today.png" alt="Fluxtower{{i}} - Wind Direction today" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
+
+<!-- Yesterday Plots -->
+<button class="collapsible">Yesterday</button>
+<div class="content">
+<h3>Yesterday Plots</h3>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_wnd_dir_compass_yesterday.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_wnd_dir_compass_yesterday.png" alt="Fluxtower{{i}} - Wind Direction yesterday" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
+
+
+
+
+
+<!-- Wind Velocity X Avg -->
+<h2> Wind Velocity X Avg (Ux_Avg) </h2>
+
+<!-- Today Plots -->
+<button class="collapsible">Today</button>
+<div class="content">
+<h3>Today Plots</h3>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_Avg_today.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_Avg_today.png" alt="Fluxtower{{i}} - Wind Velocity X Avg today" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
+
+<!-- Yesterday Plots -->
+<button class="collapsible">Yesterday</button>
+<div class="content">
+<h3>Yesterday Plots</h3>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_Avg_yesterday.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ux_Avg_yesterday.png" alt="Fluxtower{{i}} - Wind Velocity X Avg yesterday" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
+
+<!-- Wind Velocity Y Avg -->
+<h2> Wind Velocity Y Avg (Uy_Avg) </h2>
+
+<!-- Today Plots -->
+<button class="collapsible">Today</button>
+<div class="content">
+<h3>Today Plots</h3>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Uy_Avg_today.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Uy_Avg_today.png" alt="Fluxtower{{i}} - Wind Velocity Y Avg today" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
+
+<!-- Yesterday Plots -->
+<button class="collapsible">Yesterday</button>
+<div class="content">
+<h3>Yesterday Plots</h3>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Uy_Avg_yesterday.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Uy_Avg_yesterday.png" alt="Fluxtower{{i}} - Wind Velocity Y Avg yesterday" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
+
+<!-- Wind Velocity Z Avg -->
+<h2> Wind Velocity Z Avg (Uz_Avg) </h2>
+
+<!-- Today Plots -->
+<button class="collapsible">Today</button>
+<div class="content">
+<h3>Today Plots</h3>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Uz_Avg_today.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Uz_Avg_today.png" alt="Fluxtower{{i}} - Wind Velocity Z Avg today" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
+
+<!-- Yesterday Plots -->
+<button class="collapsible">Yesterday</button>
+<div class="content">
+<h3>Yesterday Plots</h3>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Uz_Avg_yesterday.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Uz_Avg_yesterday.png" alt="Fluxtower{{i}} - Wind Velocity Z Avg yesterday" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
 
 
 
