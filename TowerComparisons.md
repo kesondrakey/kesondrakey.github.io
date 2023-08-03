@@ -112,8 +112,12 @@ function imgError(image) {
       <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_u_star_today.png" alt="Fluxtower{{i}} - u_star today" onerror="imgError(this);">
     </a>
   </div>
+    {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
 {% endfor %}
 </div>
+
 
 <!-- Yesterday Plots -->
 <h3>Yesterday Plots</h3>
@@ -122,11 +126,16 @@ function imgError(image) {
   <div>
     <h4>Flux Tower {{i}}</h4>
     <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_u_star_yesterday.png" target="_blank">
-      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_u_star_yesterday.png" alt="Fluxtower{{i}} - u_star yesterday" onerror="imgError(this);">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_u_star_yesterday.png" alt="Fluxtower{{i}} - Hs yesterday" onerror="imgError(this);">
     </a>
   </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
 {% endfor %}
 </div>
+
+
 
 <!-- Hs section -->
 <h2> Sensible Heat Flux (Hs)</h2>
