@@ -34,7 +34,7 @@ function imgError(image) {
 
 <style>
 .collapsible {
-  background-color: transparent;
+  background-color: black;
   color: white;
   text-align: center;
   padding: 15px;
