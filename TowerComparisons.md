@@ -223,6 +223,14 @@ function imgError(image) {
 </div>
 </div>
 
+
+
+
+
+
+
+
+
 <div class="collapsibleContainer">
 <button class="collapsible">Temperature</button>
 <div class="content">
@@ -352,3 +360,59 @@ function imgError(image) {
 
 </div> <!-- This is the closing tag for content div under Temperature -->
 </div> <!-- This is the closing tag for collapsibleContainer div under Temperature -->
+
+
+
+
+<div class="collapsibleContainer">
+<button class="collapsible">Precipitation</button>
+<div class="content">
+
+<!-- Precipitation section -->
+<h2> Precipitation (precip_Tot)</h2>
+
+<!-- Today Plots -->
+<button class="collapsible">Today</button>
+<div class="content">
+<h3>Today Plots</h3>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_ precip_Tot _today.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_ precip_Tot_today.png" alt="Fluxtower{{i}} - T_tmpr_rh_mean today" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
+
+<!-- Yesterday Plots -->
+<button class="collapsible">Yesterday</button>
+<div class="content">
+<h3>Yesterday Plots</h3>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_ precip_Tot_yesterday.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_ precip_Tot_yesterday.png" alt="Fluxtower{{i}} - T_tmpr_rh_mean yesterday" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
+
+
+</div> <!-- This is the closing tag for content div under Precipitation  -->
+</div> <!-- This is the closing tag for collapsibleContainer div under Precipitation -->
+
+
+
+
