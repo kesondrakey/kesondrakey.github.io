@@ -44,7 +44,7 @@ function imgError(image) {
   align-items: center;
   cursor: pointer;
   transition: background-color 0.5s, color 0.5s, border-color 0.5s;
-  width: 70%;
+  width: 100%;
   display: block;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -67,7 +67,7 @@ function imgError(image) {
 }
 
 .flex-container > div {
-  width: 24%;
+  width: 25%;
   text-align: center;
   margin-bottom: 20px;
 }
