@@ -103,6 +103,8 @@ function imgError(image) {
 <h2>Friction Velocity (u_star)</h2>
 
 <!-- Today Plots -->
+ <button class="collapsible">Today</button>
+ <div class="content">
 <h3>Today Plots</h3>
 <div class="flex-container">
 {% for i in (1..4) %}
@@ -117,9 +119,11 @@ function imgError(image) {
   {% endif %}
 {% endfor %}
 </div>
-
+ </div>
 
 <!-- Yesterday Plots -->
+<button class="collapsible">Yesterday</button>
+<div class="content">
 <h3>Yesterday Plots</h3>
 <div class="flex-container">
 {% for i in (1..4) %}
@@ -134,6 +138,7 @@ function imgError(image) {
   {% endif %}
 {% endfor %}
 </div>
+  </div>
 
 
 
