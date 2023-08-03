@@ -25,6 +25,10 @@ window.onload = function() {
 </script>
 
 <style>
+.collapsibleContainer {
+    display: flex;
+    justify-content: center;
+}
 .collapsible {
     background-color: transparent;
     color: white;
@@ -39,6 +43,7 @@ window.onload = function() {
     cursor: pointer;
     transition: background-color 0.5s, color 0.5s, border-color 0.5s;
     width: 70%;
+    line-height: 1.5; /* Adjust this value to center text vertically */
 }
 .content {
     display: none;
