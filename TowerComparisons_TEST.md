@@ -119,24 +119,19 @@ function imgError(image) {
 }
 </style>
 
+<!-- This is an HTML comment, it won't appear on the page -->
+<!-- Start site objects and things here: -->
 
-
-
-
-
-
-
-
-
-
+<!-- Start Temperature section: -->
 <div class="collapsibleContainer">
 <button class="collapsible temperature">Temperature</button>
 <div class="content">
-
-
+  
+<!-- Start Today button: -->
 <button class="collapsible day">Today</button>
 <div class="content">
 
+<!-- Start T_tmpr_rh_mean: -->
 <h2>Temp and Rel Humidity mean (T_tmpr_rh_mean)</h2>
 
 <div class="flex-container">
@@ -152,8 +147,10 @@ function imgError(image) {
   {% endif %}
 {% endfor %}
 </div>
+<!-- end T_tmpr_rh_mean: -->
+            
+<!-- Start Ts_Avg: -->
 <h2>Sonic Virtual Temp Avg (Ts_Avg)</h2>
-
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -167,6 +164,9 @@ function imgError(image) {
   {% endif %}
 {% endfor %}
 </div>
+<!-- End Ts_Avg: -->
+
+<h2>Sonic Virtual Temp SD (Ts_stdev)</h2>
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -181,13 +181,17 @@ function imgError(image) {
 {% endfor %}
 </div>
 
+<!-- More sections would go here! -->
 
 </div>
+<!-- End Today button: -->
 
-
+<!-- Start Yesterday button: -->
 <button class="collapsible day">Yesterday</button>
 <div class="content">
 
+<!-- Start T_tmpr_rh_mean: -->
+<h2>Temp and Rel Humidity mean (T_tmpr_rh_mean)</h2>
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -201,9 +205,9 @@ function imgError(image) {
   {% endif %}
 {% endfor %}
 </div>
-<h2>Sonic Virtual Temp sd (Ts_stdev)</h2>
 
 
+<h2>Sonic Virtual Temp Average (Ts_Avg)</h2>
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -218,6 +222,7 @@ function imgError(image) {
 {% endfor %}
 </div>
 
+<h2>Sonic Virtual Temp sd (Ts_stdev)</h2>
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -231,25 +236,28 @@ function imgError(image) {
   {% endif %}
 {% endfor %}
 </div>
+
+<!-- More sections would go here: -->
 </div>
 
 </div> <!-- This is the closing tag for content div under Temperature -->
 </div> <!-- This is the closing tag for collapsibleContainer div under Temperature -->
+<!-- END Temperature section: -->
+
+
+ 
 
 
 
-
+<!-- Start Precipitation section: -->
 <div class="collapsibleContainer">
 <button class="collapsible precipitation">Precipitation</button>
 <div class="content">
 
-
-<h2> Precipitation (precip_Tot)</h2>
-
-
 <button class="collapsible day">Today</button>
 <div class="content">
 
+<h2> Precipitation (precip_Tot)</h2>
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -268,7 +276,7 @@ function imgError(image) {
 
 <button class="collapsible day">Yesterday</button>
 <div class="content">
-
+<h2> Precipitation (precip_Tot)</h2>
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
@@ -282,6 +290,9 @@ function imgError(image) {
   {% endif %}
 {% endfor %}
 </div>
+  
+<!-- More sections would go here  -->
+  
 </div>
 
 
@@ -297,12 +308,10 @@ function imgError(image) {
 <div class="content">
 
 
-<h2> Soil Water Content (soil_water_Avg.1.)</h2>
-
-
 <button class="collapsible day">Today</button>
 <div class="content">
 
+<h2> Soil Water Content (soil_water_Avg.1.)</h2>
 <div class="flex-container">
 {% for i in (1..4) %}
   <div>
