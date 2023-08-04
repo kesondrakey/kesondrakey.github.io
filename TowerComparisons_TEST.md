@@ -364,7 +364,6 @@ function imgError(image) {
 
 <button class="collapsible day">Today</button>
 <div class="content">
-
 <h2> Wind Speed (wnd_spd)</h2>
 <div class="flex-container">
 {% for i in (1..4) %}
@@ -380,7 +379,6 @@ function imgError(image) {
 {% endfor %}
 </div>
 
-
 <h2> Covariance of Ts and Ux (Ts_Ux_cov)</h2>
 <div class="flex-container">
 {% for i in (1..4) %}
@@ -395,7 +393,6 @@ function imgError(image) {
   {% endif %}
 {% endfor %}
 </div>
-
 
 <h2> Covariance of Ts and Uy (Ts_Uy_cov)</h2>
 <div class="flex-container">
@@ -441,6 +438,7 @@ function imgError(image) {
   {% endif %}
 {% endfor %}
 </div>
+
 <h2> Covariance of Ux and Uy (Ux_Uy_cov )</h2>
 <div class="flex-container">
 {% for i in (1..4) %}
@@ -501,7 +499,6 @@ function imgError(image) {
 {% endfor %}
 </div>
 
-
 <h2> Wind Velocity Z sd (Uz_stdev) </h2>
 <div class="flex-container">
 {% for i in (1..4) %}
@@ -517,7 +514,6 @@ function imgError(image) {
 {% endfor %}
 </div>
 
-
 <h2> Resultant Wind Speed (rslt_wnd_spd) </h2>
 <div class="flex-container">
 {% for i in (1..4) %}
@@ -532,6 +528,7 @@ function imgError(image) {
   {% endif %}
 {% endfor %}
 </div>
+
 <h2> Sonic Wind Direction (wnd_dir_sonic) </h2>
 <div class="flex-container">
 {% for i in (1..4) %}
@@ -546,9 +543,6 @@ function imgError(image) {
   {% endif %}
 {% endfor %}
 </div>
-
-
-
 
 <h2> Wind Direction sd (std_wnd_dir) </h2>
 <div class="flex-container">
@@ -624,15 +618,11 @@ function imgError(image) {
   {% endif %}
 {% endfor %}
 </div>
-
-
-
 </div>
 
 
 <button class="collapsible day">Yesterday</button>
 <div class="content">
-
 <h2> Wind Speed (wnd_spd)</h2>
 <div class="flex-container">
 {% for i in (1..4) %}
