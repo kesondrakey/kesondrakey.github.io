@@ -102,27 +102,55 @@ nav-menu: true
 
 
 
-<!-- Your scripts and styles go here -->
+<script>
+var categories = {
+  "Carbon Flux": ["CO2_li_wpl_H_li"],
+  "Temperature": ["T_tmpr_rh_mean", "Ts_Avg"],
+  "Net Radiation": ["albedo_Avg", "Rn_Avg", "par_Avg", "Rl_incoming_Avg", "Rl_outgoing_Avg", "Rs_incoming_Avg", "Rs_outgoing_Avg"],
+  "Relative Humidity": ["RH_tmpr_rh_mean"],
+  "Latent Heat Flux": ["LE_li_irga", "LE_li_wpl"],
+  "Sensible Heat Flux": ["Hs"],
+  "Precipitation": ["precip_Tot"],
+  "Wind": ["u_star", "wnd_spd", "Uz_Avg", "Uz_stdev"],
+  "Soil": ["soil_water_Avg.1.", "soil_water_Avg.2.", "soil_water_Avg.3.", "Tsoil1_Avg", "Tsoil2_Avg", "Tsoil3_Avg", "Tsoil4_Avg"],
+  "Battery Data": ["batt_volt_Avg", "cdm_batt_volt_Avg"]
+};
 
-<div class="collapsibleContainer">
-  {% for category in vars_to_plot %}
-    <button class="collapsible">{{ category }}</button>
-    <div class="content">
-      <!-- Loop through variables in the current category -->
-      {% for variable in vars_to_plot[category] %}
-        <h2>{{ variable }}</h2>
-        <div class="flex-container">
-          {% for tower in ("1_2", "3_4") %}
-            <div>
-              <h4>Flux Tower {{ tower }}</h4>
-              <a href="fluxtower{{ tower }}/daily_plots/fluxtower{{ tower }}_{{ variable }}_yesterday.png" target="_blank">
-                <img src="fluxtower{{ tower }}/daily_plots/fluxtower{{ tower }}_{{ variable }}_yesterday.png" alt="Fluxtower{{ tower }} - {{ variable }} yesterday" onerror="imgError(this);">
-              </a>
-            </div>
-          {% endfor %}
-        </div>
-      {% endfor %}
-    </div>
-  {% endfor %}
+
+function generateCollapsible(category, variables) {
+  var content = '';
+  content += '<button class="collapsible">' + category + '</button>';
+  content += '<div class="content">';
+  for (var i = 0; i < variables.length; i++) {
+    content += '<h2>' + variables[i] + '</h2>';
+    content += '<div class="flex-container">';
+    for (var j = 0; j < 2; j++) { // Loop through tower 1_2 and 3_4
+      var tower = (j === 0) ? '1_2' : '3_4';
+      content += '<div>';
+      content += '<h4>Flux Tower ' + tower + '</h4>';
+      content += '<a href="fluxtower' + tower + '/daily_plots/fluxtower' + tower + '_' + variables[i] + '_yesterday.png" target="_blank">';
+      content += '<img src="../fluxtower' + tower + '/daily_plots/fluxtower' + tower + '_' + variables[i] + '_yesterday.png" alt="Fluxtower' + tower + ' - ' + variables[i] + ' yesterday" onerror="imgError(this);">';
+      content += '</a>';
+      content += '</div>';
+    }
+    content += '</div>';
+  }
+  content += '</div>';
+  return content;
+}
+</script>
+
+<div class="grid-container">
+  <script>
+  for (var category in categories) {
+    if (categories.hasOwnProperty(category)) {
+      document.write(generateCollapsible(category, categories[category]));
+    }
+  }
+  </script>
 </div>
 
+</body>
+</html>
+</body>
+</html>
