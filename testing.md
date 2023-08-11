@@ -100,10 +100,6 @@ nav-menu: true
 </head>
 <body>
 
-
-
-<!-- Your scripts and styles go here -->
-
 <div class="collapsibleContainer">
   {% for category in vars_to_plot %}
     <button class="collapsible">{{ category }}</button>
@@ -111,10 +107,9 @@ nav-menu: true
       <!-- Loop through variables in the current category -->
       {% for variable in vars_to_plot[category] %}
         <h2>{{ variable }}</h2>
-        <div class="flex-container">
+        <div class="grid-container">
           {% for tower in ("1_2", "3_4") %}
-            <div>
-              <h4>Flux Tower {{ tower }}</h4>
+            <div class="grid-item">
               <a href="fluxtower{{ tower }}/daily_plots/fluxtower{{ tower }}_{{ variable }}_yesterday.png" target="_blank">
                 <img src="fluxtower{{ tower }}/daily_plots/fluxtower{{ tower }}_{{ variable }}_yesterday.png" alt="Fluxtower{{ tower }} - {{ variable }} yesterday" onerror="imgError(this);">
               </a>
@@ -126,3 +121,5 @@ nav-menu: true
   {% endfor %}
 </div>
 
+</body>
+</html>
