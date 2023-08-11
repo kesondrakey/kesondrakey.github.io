@@ -116,6 +116,7 @@ var categories = {
   "Battery Data": ["batt_volt_Avg", "cdm_batt_volt_Avg"]
 };
 
+
 function generateCollapsible(category, variables) {
   var content = '';
   content += '<button class="collapsible">' + category + '</button>';
@@ -128,7 +129,7 @@ function generateCollapsible(category, variables) {
       content += '<div>';
       content += '<h4>Flux Tower ' + tower + '</h4>';
       content += '<a href="fluxtower' + tower + '/daily_plots/fluxtower' + tower + '_' + variables[i] + '_yesterday.png" target="_blank">';
-      content += '<img src="fluxtower' + tower + '/daily_plots/fluxtower' + tower + '_' + variables[i] + '_yesterday.png" alt="Fluxtower' + tower + ' - ' + variables[i] + ' yesterday" onerror="imgError(this);">';
+      content += '<img src="../fluxtower' + tower + '/daily_plots/fluxtower' + tower + '_' + variables[i] + '_yesterday.png" alt="Fluxtower' + tower + ' - ' + variables[i] + ' yesterday" onerror="imgError(this);">';
       content += '</a>';
       content += '</div>';
     }
@@ -151,6 +152,5 @@ function generateCollapsible(category, variables) {
 
 </body>
 </html>
-
 </body>
 </html>
