@@ -101,6 +101,9 @@ nav-menu: true
 <body>
 
 
+
+<!-- Your scripts and styles go here -->
+
 <div class="collapsibleContainer">
   {% for category in vars_to_plot %}
     <button class="collapsible">{{ category }}</button>
