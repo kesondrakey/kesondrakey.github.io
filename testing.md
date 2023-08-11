@@ -100,32 +100,26 @@ nav-menu: true
 </head>
 <body>
 
-<div class="flex-container">
-  <!-- Left Column for Towers 1_2 -->
-  <div class="left-column">
-    {% for tower in ("1_2") %}
-      <div>
-        <!-- Add content for towers 1_2 -->
-        <h4>Flux Tower {{ tower }}</h4>
-        <a href="fluxtower{{ tower }}/daily_plots/fluxtower{{ tower }}_albedo_Avg_yesterday.png" target="_blank">
-          <img src="fluxtower{{ tower }}/daily_plots/fluxtower{{ tower }}_albedo_Avg_yesterday.png" alt="Fluxtower{{ tower }} - albedo_Avg yesterday" onerror="imgError(this);">
-        </a>
-        <!-- Add more variables here if needed -->
-      </div>
-    {% endfor %}
-  </div>
 
-  <!-- Right Column for Towers 3_4 -->
-  <div class="right-column">
-    {% for tower in ("3_4") %}
-      <div>
-        <!-- Add content for towers 3_4 -->
-        <h4>Flux Tower {{ tower }}</h4>
-        <a href="fluxtower{{ tower }}/daily_plots/fluxtower{{ tower }}_albedo_Avg_yesterday.png" target="_blank">
-          <img src="fluxtower{{ tower }}/daily_plots/fluxtower{{ tower }}_albedo_Avg_yesterday.png" alt="Fluxtower{{ tower }} - albedo_Avg yesterday" onerror="imgError(this);">
-        </a>
-        <!-- Add more variables here if needed -->
-      </div>
-    {% endfor %}
-  </div>
+<div class="collapsibleContainer">
+  {% for category in vars_to_plot %}
+    <button class="collapsible">{{ category }}</button>
+    <div class="content">
+      <!-- Loop through variables in the current category -->
+      {% for variable in vars_to_plot[category] %}
+        <h2>{{ variable }}</h2>
+        <div class="flex-container">
+          {% for tower in ("1_2", "3_4") %}
+            <div>
+              <h4>Flux Tower {{ tower }}</h4>
+              <a href="fluxtower{{ tower }}/daily_plots/fluxtower{{ tower }}_{{ variable }}_yesterday.png" target="_blank">
+                <img src="fluxtower{{ tower }}/daily_plots/fluxtower{{ tower }}_{{ variable }}_yesterday.png" alt="Fluxtower{{ tower }} - {{ variable }} yesterday" onerror="imgError(this);">
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
 </div>
+
