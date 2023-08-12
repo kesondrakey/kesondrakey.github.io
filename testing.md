@@ -1,86 +1,22 @@
 ---
 layout: post
 title: Tower Comparisons
-description: Tower Comparisons
-nav-menu: true 
 ---
-
-<html>
-<head>
-    <style>
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-            grid-gap: 1em;
-        }
-        .grid-item {
-            position: relative;
-            padding-top: 100%;
-            overflow: hidden;
-        }
-        .grid-item a {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            text-decoration: none;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: rgba(0,0,0,0.7);
-        }
-        .grid-item img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .grid-item span {
-            font-size: 2rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-            z-index: 2;
-        }
-        @media (min-width: 768px) {
-            .grid-item span {
-                font-size: 3rem;
-            }
-            .collapsible {
-                background-color: transparent;
-                color: white;
-                text-align: center;
-                padding: 15px;
-                font-size: 20px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin: 20px auto;
-                cursor: pointer;
-                width: 70%;
-            }
-            .collapsible:hover {
-                color: gray;
-            }
-        }
-    </style>
-</head>
-<body>
 
 <h1>Tower Comparisons</h1>
 
-{% for category, variables in site.data.categories %}
+{% assign categories = site.data.categories %}
+
+{% for category, items in categories %}
     <button class="collapsible">{{ category }}</button>
     <div class="content">
         <h2>{{ category }}</h2>
         <div class="grid-container">
-            {% for variable in variables %}
+            {% for item in items %}
                 <div class="grid-item">
-                    <a href="#" target="_blank">  <!-- Change this placeholder link -->
-                        <img src="#" alt="{{ variable }}" onerror="imgError(this);"> <!-- Change this placeholder image source -->
-                        <span>{{ variable }}</span>
+                    <a href="#" target="_blank">
+                        <img src="#" alt="{{ item }}" onerror="imgError(this);">
+                        <span>{{ item }}</span>
                     </a>
                 </div>
             {% endfor %}
@@ -106,10 +42,50 @@ nav-menu: true
 
     function imgError(image) {
         image.onerror = null;
-        image.src = "#";  <!-- Change this placeholder for a fallback image URL -->
+        image.src = "#"; // Add your fallback image URL here
     }
 </script>
 
-</body>
-</html>
+<style>
+    /* Collapsible button style */
+    .collapsible {
+      background-color: #555;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
+
+    .collapsible:active, .collapsible:hover {
+        background-color: #777;
+    }
+
+    /* Content of the collapsible sections */
+    .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+        transition: max-height 0.2s ease-out;
+    }
+
+    /* Style for grid items */
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+    }
+
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+</style>
 
