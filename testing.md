@@ -5,7 +5,20 @@ title: Tower Comparisons
 
 <h1>Tower Comparisons</h1>
 
-{% assign categories = site.data.categories %}
+{% assign categories = 
+  {
+    "Carbon Flux": ["CO2_li_wpl_H_li"],
+    "Temperature": ["T_tmpr_rh_mean", "Ts_Avg"],
+    "Net Radiation": ["albedo_Avg", "Rn_Avg", "par_Avg", "Rl_incoming_Avg", "Rl_outgoing_Avg", "Rs_incoming_Avg", "Rs_outgoing_Avg"],
+    "Relative Humidity": ["RH_tmpr_rh_mean"],
+    "Latent Heat Flux": ["LE_li_irga", "LE_li_wpl"],
+    "Sensible Heat Flux": ["Hs"],
+    "Precipitation": ["precip_Tot"],
+    "Wind": ["u_star", "wnd_spd", "Uz_Avg", "Uz_stdev"],
+    "Soil": ["soil_water_Avg.1", "soil_water_Avg.2", "soil_water_Avg.3", "Tsoil1_Avg", "Tsoil2_Avg", "Tsoil3_Avg", "Tsoil4_Avg"],
+    "Battery Data": ["batt_volt_Avg", "cdm_batt_volt_Avg"]
+  } 
+%}
 
 {% for category, items in categories %}
     <button class="collapsible">{{ category }}</button>
@@ -88,5 +101,3 @@ title: Tower Comparisons
         text-align: center;
     }
 </style>
-
-
