@@ -1,140 +1,103 @@
 ---
 layout: post
 title: Tower Comparisons
-description: Tower Comparisons
-nav-menu: true 
 ---
 
-<html>
-<head>
-    <style>
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Make the grid responsive */
-            grid-gap: 1em;
-        }
+<h1>Tower Comparisons</h1>
 
-        .grid-item {
-            position: relative;
-            padding-top: 100%; /* Maintain the aspect ratio */
-            overflow: hidden;
-            border: none; /* Ensure no borders are added to the grid item */
-        }
-
-        .grid-item a {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            text-decoration: none;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: rgba(0,0,0,0.7); /* Add a semi-transparent overlay */
-            border: none; /* Ensure no borders are added to the link */
-        }
-
-        .grid-item img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border: none; /* Ensure no borders are added to the image */
-            outline: none; /* Ensure no outlines are added to the image */
-        }
-
-        .grid-item span {
-            font-size: 2rem; /* Adjust the font size */
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Add a text shadow for better visibility */
-            z-index: 2;
-            font-weight: bold; /* Make the text bolder */
-        }
-
-        @media (min-width: 768px) {
-            .grid-item span {
-                font-size: 3rem;
-                font-weight: 900;
-            }
-            .collapsible {
-                background-color: transparent;
-                color: white;
-                text-align: center;
-                padding: 15px;
-                border: 2px solid white;
-                font-size: 20px;
-                display: flex; /* Change from block to flex */
-                justify-content: center; /* Center content horizontally */
-                align-items: center; /* Center content vertically */
-                margin: 20px auto;
-                cursor: pointer;
-                transition: background-color 0.5s, color 0.5s, border-color 0.5s; /* Added transition for border color */
-                width: 70%; /* Adjust as needed */
-            }
-            .collapsible:hover {
-                color: gray;
-                border-color: gray; /* Border color changes to gray on hover */
-            }
-        }
-    </style>
-</head>
-<body>
-  ---
-layout: post
-title: Tower Comparisons
-description: Tower Comparisons
-nav-menu: true 
----
-
-<html>
-<head>
-    <style>
-        /* ... [The rest of your CSS styles] ... */
-    </style>
-</head>
-<body>
-    <h1>Tower Comparisons</h1>
-
-    {% for category, variables in site.data.categories %}
-        <button class="collapsible">{{ category }}</button>
-        <div class="content">
-            <h2>{{ category }}</h2>
-            <div class="grid-container">
-                {% for variable in variables %}
-                    <div class="grid-item">
-                        <a href="link_to_image" target="_blank">
-                            <img src="link_to_image" alt="{{ variable }}" onerror="imgError(this);">
-                            <span>{{ variable }}</span>
-                        </a>
-                    </div>
-                {% endfor %}
-            </div>
+{% for category_pair in 
+  [
+    ["Carbon Flux", ["CO2_li_wpl_H_li"]],
+    ["Temperature", ["T_tmpr_rh_mean", "Ts_Avg"]],
+    ["Net Radiation", ["albedo_Avg", "Rn_Avg", "par_Avg", "Rl_incoming_Avg", "Rl_outgoing_Avg", "Rs_incoming_Avg", "Rs_outgoing_Avg"]],
+    ["Relative Humidity", ["RH_tmpr_rh_mean"]],
+    ["Latent Heat Flux", ["LE_li_irga", "LE_li_wpl"]],
+    ["Sensible Heat Flux", ["Hs"]],
+    ["Precipitation", ["precip_Tot"]],
+    ["Wind", ["u_star", "wnd_spd", "Uz_Avg", "Uz_stdev"]],
+    ["Soil", ["soil_water_Avg.1", "soil_water_Avg.2", "soil_water_Avg.3", "Tsoil1_Avg", "Tsoil2_Avg", "Tsoil3_Avg", "Tsoil4_Avg"]],
+    ["Battery Data", ["batt_volt_Avg", "cdm_batt_volt_Avg"]]
+  ] 
+%}
+    <button class="collapsible">{{ category_pair[0] }}</button>
+    <div class="content">
+        <h2>{{ category_pair[0] }}</h2>
+        <div class="grid-container">
+            {% for item in category_pair[1] %}
+                <div class="grid-item">
+                    <a href="#" target="_blank">
+                        <img src="#" alt="{{ item }}" onerror="imgError(this);">
+                        <span>{{ item }}</span>
+                    </a>
+                </div>
+            {% endfor %}
         </div>
-    {% endfor %}
+    </div>
+{% endfor %}
 
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
 
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
-        }
 
-        function imgError(image) {
-            image.onerror = null;
-            image.src = "fallback_image_url";
-        }
-    </script>
-</body>
-</html>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+
+    function imgError(image) {
+        image.onerror = null;
+        image.src = "#"; // Add your fallback image URL here
+    }
+</script>
+
+<style>
+    /* Collapsible button style */
+    .collapsible {
+      background-color: #555;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
+
+    .collapsible:active, .collapsible:hover {
+        background-color: #777;
+    }
+
+    /* Content of the collapsible sections */
+    .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+        transition: max-height 0.2s ease-out;
+    }
+
+    /* Style for grid items */
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+    }
+
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+</style>

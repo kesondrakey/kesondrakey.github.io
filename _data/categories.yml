@@ -1,8 +1,8 @@
-Carbon Flux: 
+Carbon Flux:
   - CO2_li_wpl_H_li
-Temperature: 
+Temperature:
   - T_tmpr_rh_mean
-  - Ts_Avg
+  - Ts_Avg 
 Net Radiation:
   - albedo_Avg
   - Rn_Avg
