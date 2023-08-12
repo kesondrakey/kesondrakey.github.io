@@ -4,7 +4,7 @@ title: Tower Comparisons
 description: Tower Comparisons
 nav-menu: true 
 ---
- 
+
 <html>
 <head>
     <style>
@@ -82,20 +82,6 @@ nav-menu: true
     </style>
 </head>
 <body>
-  ---
-layout: post
-title: Tower Comparisons
-description: Tower Comparisons
-nav-menu: true 
----
-
-<html>
-<head>
-    <style>
-        /* ... [The rest of your CSS styles] ... */
-    </style>
-</head>
-<body>
     <h1>Tower Comparisons</h1>
 
     {% for category, variables in site.data.categories %}
@@ -133,7 +119,7 @@ nav-menu: true
 
         function imgError(image) {
             image.onerror = null;
-            image.src = "fallback_image_url";
+            image.src = "fallback_image_url"; // Replace 'fallback_image_url' with your fallback image URL.
         }
     </script>
 </body>
