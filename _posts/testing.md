@@ -82,25 +82,23 @@ nav-menu: true
     </style>
 </head>
 <body>
-    <script>
-        var categories = {
-  "Carbon Flux": ["CO2_li_wpl_H_li"],
-  "Temperature": ["T_tmpr_rh_mean", "Ts_Avg"],
-  "Net Radiation": ["albedo_Avg", "Rn_Avg", "par_Avg", "Rl_incoming_Avg", "Rl_outgoing_Avg", "Rs_incoming_Avg", "Rs_outgoing_Avg"],
-  "Relative Humidity": ["RH_tmpr_rh_mean"],
-  "Latent Heat Flux": ["LE_li_irga", "LE_li_wpl"],
-  "Sensible Heat Flux": ["Hs"],
-  "Precipitation": ["precip_Tot"],
-  "Wind": ["u_star", "wnd_spd", "Uz_Avg", "Uz_stdev"],
-  "Soil": ["soil_water_Avg.1.", "soil_water_Avg.2.", "soil_water_Avg.3.", "Tsoil1_Avg", "Tsoil2_Avg", "Tsoil3_Avg", "Tsoil4_Avg"],
-  "Battery Data": ["batt_volt_Avg", "cdm_batt_volt_Avg"]
-};
-    </script>
+  ---
+layout: post
+title: Tower Comparisons
+description: Tower Comparisons
+nav-menu: true 
+---
 
+<html>
+<head>
+    <style>
+        /* ... [The rest of your CSS styles] ... */
+    </style>
+</head>
+<body>
     <h1>Tower Comparisons</h1>
 
-    <!-- Category buttons and content here -->
-    {% for category, variables in categories %}
+    {% for category, variables in site.data.categories %}
         <button class="collapsible">{{ category }}</button>
         <div class="content">
             <h2>{{ category }}</h2>
@@ -140,4 +138,3 @@ nav-menu: true
     </script>
 </body>
 </html>
-
