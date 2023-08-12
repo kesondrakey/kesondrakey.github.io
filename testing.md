@@ -117,40 +117,123 @@ var categories = {
 };
 
 
-function generateCollapsible(category, variables) {
-  var content = '';
-  content += '<button class="collapsible">' + category + '</button>';
-  content += '<div class="content">';
-  for (var i = 0; i < variables.length; i++) {
-    content += '<h2>' + variables[i] + '</h2>';
-    content += '<div class="flex-container">';
-    for (var j = 0; j < 2; j++) { // Loop through tower 1_2 and 3_4
-      var tower = (j === 0) ? '1_2' : '3_4';
-      content += '<div>';
-      content += '<h4>Flux Tower ' + tower + '</h4>';
-      content += '<a href="fluxtower' + tower + '/daily_plots/fluxtower' + tower + '_' + variables[i] + '_yesterday.png" target="_blank">';
-      content += '<img src="../fluxtower' + tower + '/daily_plots/fluxtower' + tower + '_' + variables[i] + '_yesterday.png" alt="Fluxtower' + tower + ' - ' + variables[i] + ' yesterday" onerror="imgError(this);">';
-      content += '</a>';
-      content += '</div>';
-    }
-    content += '</div>';
-  }
-  content += '</div>';
-  return content;
-}
-</script>
-
-<div class="grid-container">
-  <script>
-  for (var category in categories) {
-    if (categories.hasOwnProperty(category)) {
-      document.write(generateCollapsible(category, categories[category]));
-    }
-  }
-  </script>
+<!-- Continue Temperature section -->
+<!-- Start Ts_stdev: -->
+<h2>Sonic Virtual Temp SD (Ts_stdev)</h2>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ts_stdev_today.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_Ts_stdev_today.png" alt="Fluxtower{{i}} - Ts_stdev today" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
 </div>
+<!-- End Ts_stdev: -->
 
-</body>
-</html>
-</body>
-</html>
+<!-- Add more variables under this section if needed -->
+
+</div>
+<!-- End Today button: -->
+
+<!-- Start Yesterday button: -->
+<button class="collapsible day">Yesterday</button>
+<div class="content">
+
+<!-- Add more sections and variables for yesterday if needed -->
+
+</div>
+<!-- End Yesterday button: -->
+<!-- Continue Temperature section -->
+
+
+<!-- Continue Precipitation section -->
+<!-- Start Another Section: -->
+<button class="collapsible day">Another Section</button>
+<div class="content">
+
+<!-- Start Another Variable: -->
+<h2>Variable Name</h2>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_variable_name_today.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_variable_name_today.png" alt="Fluxtower{{i}} - Variable Name today" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+<!-- End Another Variable -->
+
+<!-- Add more variables under this section if needed -->
+
+</div>
+<!-- End Another Section -->
+<!-- Continue Precipitation section -->
+
+
+<!-- Continue Soil section -->
+<!-- Start Another Section: -->
+<button class="collapsible day">Another Section</button>
+<div class="content">
+
+<!-- Start Another Variable: -->
+<h2>Variable Name</h2>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_variable_name_today.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_variable_name_today.png" alt="Fluxtower{{i}} - Variable Name today" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+<!-- End Another Variable -->
+
+<!-- Add more variables under this section if needed -->
+
+</div>
+<!-- End Another Section -->
+<!-- Continue Soil section -->
+
+
+<!-- Continue Wind section -->
+<!-- Start Another Section: -->
+<button class="collapsible day">Another Section</button>
+<div class="content">
+
+<!-- Start Another Variable: -->
+<h2>Variable Name</h2>
+<div class="flex-container">
+{% for i in (1..4) %}
+  <div>
+    <h4>Flux Tower {{i}}</h4>
+    <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_variable_name_today.png" target="_blank">
+      <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_variable_name_today.png" alt="Fluxtower{{i}} - Variable Name today" onerror="imgError(this);">
+    </a>
+  </div>
+  {% if i == 2 %}
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+  {% endif %}
+{% endfor %}
+</div>
+<!-- End Another Variable -->
+
+<!-- Add more variables under this section if needed -->
+
+</div>
+<!-- End Another Section -->
+<!-- Continue Wind section -->
+
