@@ -82,6 +82,8 @@ nav-menu: true
     </style>
 </head>
 <body>
+
+
     <h1>Tower Comparisons</h1>
 
     {% for category, variables in site.data.categories %}
@@ -91,8 +93,8 @@ nav-menu: true
             <div class="grid-container">
                 {% for variable in variables %}
                     <div class="grid-item">
-                        <a href="link_to_image" target="_blank">
-                            <img src="link_to_image" alt="{{ variable }}" onerror="imgError(this);">
+                        <a href="#" target="_blank"> <!-- TODO: Replace # with the actual link to image -->
+                            <img src="#" alt="{{ variable }}" onerror="imgError(this);"> <!-- TODO: Replace # with the actual image link -->
                             <span>{{ variable }}</span>
                         </a>
                     </div>
@@ -119,7 +121,7 @@ nav-menu: true
 
         function imgError(image) {
             image.onerror = null;
-            image.src = "fallback_image_url"; // Replace 'fallback_image_url' with your fallback image URL.
+            image.src = "fallback_image_url"; <!-- TODO: Replace with the actual fallback image URL -->
         }
     </script>
 </body>
