@@ -19,85 +19,70 @@ title: Tower Comparisons
     ["Battery Data", ["batt_volt_Avg", "cdm_batt_volt_Avg"]]
   ] 
 %}
-    <button class="collapsible">{{ category_pair[0] }}</button>
-    <div class="content">
-        <h2>{{ category_pair[0] }}</h2>
-        <div class="grid-container">
-            {% for item in category_pair[1] %}
-                <div class="grid-item">
-                    <a href="#" target="_blank">
-                        <img src="#" alt="{{ item }}" onerror="imgError(this);">
-                        <span>{{ item }}</span>
-                    </a>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
+
+<button class="collapsible">{{ category_pair[0] }}</button>
+<div class="content">
+
+{% for variable in category_pair[1] %}
+  <!-- Images for Each Tower for Today and Yesterday -->
+  {% for day in ["Yesterday", "Today"] %}
+    {% for i in (1..4) %}
+        {% assign tower_directory = "fluxtower" %}
+        {% if i <= 2 %}
+          {% assign tower_directory = tower_directory | append: "1_2" %}
+        {% else %}
+          {% assign tower_directory = tower_directory | append: "3_4" %}
+        {% endif %}
+        <a href="/{{ tower_directory }}/daily_plots/{{ tower_directory }}_{{ variable }}_{{ day | downcase }}.png" target="_blank">
+            <img src="/{{ tower_directory }}/daily_plots/{{ tower_directory }}_{{ variable }}_{{ day | downcase }}.png" alt="Fluxtower{{i}} - {{ variable }} {{ day }}">
+        </a>
+    {% endfor %}
+  {% endfor %}
+{% endfor %}
+</div>
 {% endfor %}
 
-
-
 <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
-        });
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
     }
+  });
+}
 
-    function imgError(image) {
-        image.onerror = null;
-        image.src = "#"; // Add your fallback image URL here
-    }
+function imgError(image) {
+    image.onerror = "";
+    image.src = "/path/to/your/default/image.png";
+    return true;
+}
 </script>
 
 <style>
-    /* Collapsible button style */
-    .collapsible {
-      background-color: #555;
-      color: white;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 15px;
-      transition: 0.4s;
-    }
+.collapsible {
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
 
-    .collapsible:active, .collapsible:hover {
-        background-color: #777;
-    }
+.content {
+  display: none;
+  overflow: hidden;
+}
 
-    /* Content of the collapsible sections */
-    .content {
-        padding: 0 18px;
-        display: none;
-        overflow: hidden;
-        background-color: #f1f1f1;
-        transition: max-height 0.2s ease-out;
-    }
-
-    /* Style for grid items */
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        gap: 10px;
-    }
-
-    .grid-item {
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 20px;
-        font-size: 30px;
-        text-align: center;
-    }
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 </style>
+
