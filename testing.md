@@ -21,101 +21,73 @@ title: Tower Comparisons
 %}
   <button class="collapsible">{{ category_pair[0] }}</button>
   <div class="content">
-    {% for subcategory_code in category_pair[1] %}
-      <h2>{{ subcategory_code }}</h2>
-      {% for day in ["Today", "Yesterday"] %}
-        <button class="collapsible day">{{ day }}</button>
-        <div class="content">
-          <div class="flex-container">
-            {% for i in (1..4) %}
-              <div>
-                <h4>Flux Tower {{i}}</h4>
-                {% if i <= 2 %}
-                <a href="/fluxtower1_2/daily_plots/fluxtower{{i}}_{{ subcategory_code }}_{{ day | downcase }}.png" target="_blank">
-                    <img src="/fluxtower1_2/daily_plots/fluxtower{{i}}_{{ subcategory_code }}_{{ day | downcase }}.png" alt="Fluxtower{{i}} - {{ subcategory_code }} {{ day }}" onerror="imgError(this);">
-                </a>
-                {% else %}
-                <a href="/fluxtower3_4/daily_plots/fluxtower{{i}}_{{ subcategory_code }}_{{ day | downcase }}.png" target="_blank">
-                    <img src="/fluxtower3_4/daily_plots/fluxtower{{i}}_{{ subcategory_code }}_{{ day | downcase }}.png" alt="Fluxtower{{i}} - {{ subcategory_code }} {{ day }}" onerror="imgError(this);">
-                </a>
-                {% endif %}
-              </div>
-              {% if i == 2 %}
-                <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
-              {% endif %}
-            {% endfor %}
+
+  {% for variable in category_pair[1] %}
+    <h3>{{ variable }}</h3>
+    <div class="flex-container">
+      {% for day in ["Yesterday", "Today"] %}
+        <div>
+          <h4>{{ day }}</h4>
+          <div>
+            <h5>Flux Tower 1_2</h5>
+            <a href="/fluxtower1_2/daily_plots/fluxtower1_{{ variable }}_{{ day | downcase }}.png" target="_blank">
+                <img src="/fluxtower1_2/daily_plots/fluxtower1_{{ variable }}_{{ day | downcase }}.png" alt="Fluxtower1 - {{ variable }} {{ day }}" onerror="imgError(this);">
+            </a>
+            <a href="/fluxtower1_2/daily_plots/fluxtower2_{{ variable }}_{{ day | downcase }}.png" target="_blank">
+                <img src="/fluxtower1_2/daily_plots/fluxtower2_{{ variable }}_{{ day | downcase }}.png" alt="Fluxtower2 - {{ variable }} {{ day }}" onerror="imgError(this);">
+            </a>
+          </div>
+          <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+          <div>
+            <h5>Flux Tower 3_4</h5>
+            <a href="/fluxtower3_4/daily_plots/fluxtower3_{{ variable }}_{{ day | downcase }}.png" target="_blank">
+                <img src="/fluxtower3_4/daily_plots/fluxtower3_{{ variable }}_{{ day | downcase }}.png" alt="Fluxtower3 - {{ variable }} {{ day }}" onerror="imgError(this);">
+            </a>
+            <a href="/fluxtower3_4/daily_plots/fluxtower4_{{ variable }}_{{ day | downcase }}.png" target="_blank">
+                <img src="/fluxtower3_4/daily_plots/fluxtower4_{{ variable }}_{{ day | downcase }}.png" alt="Fluxtower4 - {{ variable }} {{ day }}" onerror="imgError(this);">
+            </a>
           </div>
         </div>
       {% endfor %}
-    {% endfor %}
+    </div>
+  {% endfor %}
+
   </div>
 {% endfor %}
 
 <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
-        });
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
     }
-
-    function imgError(image) {
-        image.onerror = null;
-        image.src = "#"; // Add your fallback image URL here
-    }
+  });
+}
+function imgError(image) {
+    image.onerror = "";
+    image.src = "/path/to/your/default/image.png";
+    return true;
+}
 </script>
 
-
-
-
-
 <style>
-    /* Collapsible button style */
-    .collapsible {
-      background-color: #555;
-      color: white;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 15px;
-      transition: 0.4s;
-    }
+.collapsible {
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
 
-    .collapsible:active, .collapsible:hover {
-        background-color: #777;
-    }
-
-    /* Content of the collapsible sections */
-    .content {
-        padding: 0 18px;
-        display: none;
-        overflow: hidden;
-        background-color: #f1f1f1;
-        transition: max-height 0.2s ease-out;
-    }
-
-    /* Style for grid items */
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        gap: 10px;
-    }
-
-    .grid-item {
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 20px;
-        font-size: 30px;
-        text-align: center;
-    }
+.content {
+  display: none;
+  overflow: hidden;
+}
 </style>
