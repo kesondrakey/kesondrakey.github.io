@@ -19,40 +19,38 @@ title: Tower Comparisons
     ["Battery Data", ["batt_volt_Avg", "cdm_batt_volt_Avg"]]
   ] 
 %}
-  <button class="collapsible">{{ category_pair[0] }}</button>
-  <div class="content">
+
+<button class="collapsible">{{ category_pair[0] }}</button>
+<div class="content">
 
   {% for variable in category_pair[1] %}
-    <h3>{{ variable }}</h3>
+    <h2>{{ variable }}</h2>
+
+    <!-- Images for Each Tower for Today and Yesterday -->
+    {% for day in ["Yesterday", "Today"] %}
     <div class="flex-container">
-      {% for day in ["Yesterday", "Today"] %}
+      {% for i in (1..4) %}
         <div>
-          <h4>{{ day }}</h4>
-          <div>
-            <h5>Flux Tower 1_2</h5>
-            <a href="/fluxtower1_2/daily_plots/fluxtower1_{{ variable }}_{{ day | downcase }}.png" target="_blank">
-                <img src="/fluxtower1_2/daily_plots/fluxtower1_{{ variable }}_{{ day | downcase }}.png" alt="Fluxtower1 - {{ variable }} {{ day }}" onerror="imgError(this);">
+          <h4>Flux Tower {{i}}</h4>
+          {% if i <= 2 %}
+            <a href="/fluxtower1_2/daily_plots/fluxtower{{i}}_{{ variable }}_{{ day | downcase }}.png" target="_blank">
+                <img src="/fluxtower1_2/daily_plots/fluxtower{{i}}_{{ variable }}_{{ day | downcase }}.png" alt="Fluxtower{{i}} - {{ variable }} {{ day }}" onerror="imgError(this);">
             </a>
-            <a href="/fluxtower1_2/daily_plots/fluxtower2_{{ variable }}_{{ day | downcase }}.png" target="_blank">
-                <img src="/fluxtower1_2/daily_plots/fluxtower2_{{ variable }}_{{ day | downcase }}.png" alt="Fluxtower2 - {{ variable }} {{ day }}" onerror="imgError(this);">
+          {% else %}
+            <a href="/fluxtower3_4/daily_plots/fluxtower{{i}}_{{ variable }}_{{ day | downcase }}.png" target="_blank">
+                <img src="/fluxtower3_4/daily_plots/fluxtower{{i}}_{{ variable }}_{{ day | downcase }}.png" alt="Fluxtower{{i}} - {{ variable }} {{ day }}" onerror="imgError(this);">
             </a>
-          </div>
-          <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
-          <div>
-            <h5>Flux Tower 3_4</h5>
-            <a href="/fluxtower3_4/daily_plots/fluxtower3_{{ variable }}_{{ day | downcase }}.png" target="_blank">
-                <img src="/fluxtower3_4/daily_plots/fluxtower3_{{ variable }}_{{ day | downcase }}.png" alt="Fluxtower3 - {{ variable }} {{ day }}" onerror="imgError(this);">
-            </a>
-            <a href="/fluxtower3_4/daily_plots/fluxtower4_{{ variable }}_{{ day | downcase }}.png" target="_blank">
-                <img src="/fluxtower3_4/daily_plots/fluxtower4_{{ variable }}_{{ day | downcase }}.png" alt="Fluxtower4 - {{ variable }} {{ day }}" onerror="imgError(this);">
-            </a>
-          </div>
+          {% endif %}
         </div>
+        {% if i == 2 %}
+          <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+        {% endif %}
       {% endfor %}
     </div>
+    {% endfor %}
   {% endfor %}
 
-  </div>
+</div>
 {% endfor %}
 
 <script>
@@ -89,5 +87,12 @@ function imgError(image) {
 .content {
   display: none;
   overflow: hidden;
+}
+
+/* Additional CSS for flex-container */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 </style>
