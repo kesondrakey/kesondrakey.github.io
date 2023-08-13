@@ -32,15 +32,15 @@ title: Tower Comparisons
       {% for i in (1..4) %}
         <div>
           <h4>Flux Tower {{i}}</h4>
+          {% assign tower_directory = "fluxtower" %}
           {% if i <= 2 %}
-            <a href="/fluxtower1_2/daily_plots/fluxtower{{i}}_{{ variable }}_{{ day | downcase }}.png" target="_blank">
-                <img src="/fluxtower1_2/daily_plots/fluxtower{{i}}_{{ variable }}_{{ day | downcase }}.png" alt="Fluxtower{{i}} - {{ variable }} {{ day }}" onerror="imgError(this);">
-            </a>
+            {% assign tower_directory = tower_directory | append: "1_2" %}
           {% else %}
-            <a href="/fluxtower3_4/daily_plots/fluxtower{{i}}_{{ variable }}_{{ day | downcase }}.png" target="_blank">
-                <img src="/fluxtower3_4/daily_plots/fluxtower{{i}}_{{ variable }}_{{ day | downcase }}.png" alt="Fluxtower{{i}} - {{ variable }} {{ day }}" onerror="imgError(this);">
-            </a>
+            {% assign tower_directory = tower_directory | append: "3_4" %}
           {% endif %}
+          <a href="/{{ tower_directory }}/daily_plots/{{ tower_directory }}_{{ variable }}_{{ day | downcase }}.png" target="_blank">
+              <img src="/{{ tower_directory }}/daily_plots/{{ tower_directory }}_{{ variable }}_{{ day | downcase }}.png" alt="Fluxtower{{i}} - {{ variable }} {{ day }}" onerror="imgError(this);">
+          </a>
         </div>
         {% if i == 2 %}
           <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
@@ -68,6 +68,7 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
 function imgError(image) {
     image.onerror = "";
     image.src = "/path/to/your/default/image.png";
@@ -89,7 +90,6 @@ function imgError(image) {
   overflow: hidden;
 }
 
-/* Additional CSS for flex-container */
 .flex-container {
   display: flex;
   flex-wrap: wrap;
