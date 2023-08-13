@@ -39,7 +39,8 @@ title: Tower Comparisons
     {% endfor %}
   {% endfor %}
 {% endfor %}
-
+</div>
+{% endfor %}
 
 <script>
 var coll = document.getElementsByClassName("collapsible");
@@ -84,3 +85,4 @@ function imgError(image) {
   justify-content: space-between;
 }
 </style>
+
