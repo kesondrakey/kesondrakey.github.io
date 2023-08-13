@@ -19,22 +19,33 @@ title: Tower Comparisons
     ["Battery Data", ["batt_volt_Avg", "cdm_batt_volt_Avg"]]
   ] 
 %}
-    <button class="collapsible">{{ category_pair[0] }}</button>
-    <div class="content">
-        <h2>{{ category_pair[0] }}</h2>
-        <div class="grid-container">
-            {% for item in category_pair[1] %}
-                <div class="grid-item">
-                    <a href="#" target="_blank">
-                        <img src="#" alt="{{ item }}" onerror="imgError(this);">
-                        <span>{{ item }}</span>
-                    </a>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
-{% endfor %}
 
+
+  <button class="collapsible">{{ category_pair[0] }}</button>
+  <div class="content">
+    {% for subcategory_code in category_pair[1] %}
+      <h2>{{ subcategory_code }}</h2>
+      {% for day in ["Today", "Yesterday"] %}
+        <button class="collapsible day">{{ day }}</button>
+        <div class="content">
+          <div class="flex-container">
+            {% for i in (1..4) %}
+              <div>
+                <h4>Flux Tower {{i}}</h4>
+                <a href="fluxtower{{i}}/daily_plots/fluxtower{{i}}_{{ subcategory_code }}_{{ day | downcase }}.png" target="_blank">
+                  <img src="fluxtower{{i}}/daily_plots/fluxtower{{i}}_{{ subcategory_code }}_{{ day | downcase }}.png" alt="Fluxtower{{i}} - {{ subcategory_code }} {{ day }}" onerror="imgError(this);">
+                </a>
+              </div>
+              {% if i == 2 %}
+                <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    {% endfor %}
+  </div>
+{% endfor %}
 
 
 <script>
