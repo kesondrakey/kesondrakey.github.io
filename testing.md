@@ -23,35 +23,23 @@ title: Tower Comparisons
 <button class="collapsible">{{ category_pair[0] }}</button>
 <div class="content">
 
-  {% for variable in category_pair[1] %}
-    <h2>{{ variable }}</h2>
-
-    <!-- Images for Each Tower for Today and Yesterday -->
-    {% for day in ["Yesterday", "Today"] %}
-    <div class="flex-container">
-      {% for i in (1..4) %}
-        <div>
-          <h4>Flux Tower {{i}}</h4>
-          {% assign tower_directory = "fluxtower" %}
-          {% if i <= 2 %}
-            {% assign tower_directory = tower_directory | append: "1_2" %}
-          {% else %}
-            {% assign tower_directory = tower_directory | append: "3_4" %}
-          {% endif %}
-          <a href="/{{ tower_directory }}/daily_plots/{{ tower_directory }}_{{ variable }}_{{ day | downcase }}.png" target="_blank">
-              <img src="/{{ tower_directory }}/daily_plots/{{ tower_directory }}_{{ variable }}_{{ day | downcase }}.png" alt="Fluxtower{{i}} - {{ variable }} {{ day }}" onerror="imgError(this);">
-          </a>
-        </div>
-        {% if i == 2 %}
-          <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+{% for variable in category_pair[1] %}
+  <!-- Images for Each Tower for Today and Yesterday -->
+  {% for day in ["Yesterday", "Today"] %}
+    {% for i in (1..4) %}
+        {% assign tower_directory = "fluxtower" %}
+        {% if i <= 2 %}
+          {% assign tower_directory = tower_directory | append: "1_2" %}
+        {% else %}
+          {% assign tower_directory = tower_directory | append: "3_4" %}
         {% endif %}
-      {% endfor %}
-    </div>
+        <a href="/{{ tower_directory }}/daily_plots/{{ tower_directory }}_{{ variable }}_{{ day | downcase }}.png" target="_blank">
+            <img src="/{{ tower_directory }}/daily_plots/{{ tower_directory }}_{{ variable }}_{{ day | downcase }}.png" alt="Fluxtower{{i}} - {{ variable }} {{ day }}">
+        </a>
     {% endfor %}
   {% endfor %}
-
-</div>
 {% endfor %}
+
 
 <script>
 var coll = document.getElementsByClassName("collapsible");
