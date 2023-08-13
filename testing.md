@@ -19,13 +19,10 @@ title: Tower Comparisons
     ["Battery Data", ["batt_volt_Avg", "cdm_batt_volt_Avg"]]
   ] 
 %}
-
-
-{% for category in site.data.towers.categories %}
-  <button class="collapsible {{ category.class }}">{{ category.name }}</button>
+  <button class="collapsible">{{ category_pair[0] }}</button>
   <div class="content">
-    {% for subcategory in category.subcategories %}
-      <h2>{{ subcategory.title }} ({{ subcategory.code }})</h2>
+    {% for subcategory_code in category_pair[1] %}
+      <h2>{{ subcategory_code }}</h2>
       {% for day in ["Today", "Yesterday"] %}
         <button class="collapsible day">{{ day }}</button>
         <div class="content">
@@ -34,12 +31,12 @@ title: Tower Comparisons
               <div>
                 <h4>Flux Tower {{i}}</h4>
                 {% if i <= 2 %}
-                <a href="/fluxtower1_2/daily_plots/fluxtower{{i}}_{{ subcategory.code }}_{{ day | downcase }}.png" target="_blank">
-                    <img src="/fluxtower1_2/daily_plots/fluxtower{{i}}_{{ subcategory.code }}_{{ day | downcase }}.png" alt="Fluxtower{{i}} - {{ subcategory.code }} {{ day }}" onerror="imgError(this);">
+                <a href="/fluxtower1_2/daily_plots/fluxtower{{i}}_{{ subcategory_code }}_{{ day | downcase }}.png" target="_blank">
+                    <img src="/fluxtower1_2/daily_plots/fluxtower{{i}}_{{ subcategory_code }}_{{ day | downcase }}.png" alt="Fluxtower{{i}} - {{ subcategory_code }} {{ day }}" onerror="imgError(this);">
                 </a>
                 {% else %}
-                <a href="/fluxtower3_4/daily_plots/fluxtower{{i}}_{{ subcategory.code }}_{{ day | downcase }}.png" target="_blank">
-                    <img src="/fluxtower3_4/daily_plots/fluxtower{{i}}_{{ subcategory.code }}_{{ day | downcase }}.png" alt="Fluxtower{{i}} - {{ subcategory.code }} {{ day }}" onerror="imgError(this);">
+                <a href="/fluxtower3_4/daily_plots/fluxtower{{i}}_{{ subcategory_code }}_{{ day | downcase }}.png" target="_blank">
+                    <img src="/fluxtower3_4/daily_plots/fluxtower{{i}}_{{ subcategory_code }}_{{ day | downcase }}.png" alt="Fluxtower{{i}} - {{ subcategory_code }} {{ day }}" onerror="imgError(this);">
                 </a>
                 {% endif %}
               </div>
@@ -53,9 +50,6 @@ title: Tower Comparisons
     {% endfor %}
   </div>
 {% endfor %}
-
-
-
 
 <script>
     var coll = document.getElementsByClassName("collapsible");
@@ -78,6 +72,10 @@ title: Tower Comparisons
         image.src = "#"; // Add your fallback image URL here
     }
 </script>
+
+
+
+
 
 <style>
     /* Collapsible button style */
