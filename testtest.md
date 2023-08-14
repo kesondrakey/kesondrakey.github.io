@@ -212,3 +212,59 @@ nav-menu: true
 </div> <!-- This is the closing tag for content div under Temperature -->
 </div> <!-- This is the closing tag for collapsibleContainer div under Temperature -->
 <!-- END Temperature section: -->
+
+
+
+
+
+<!-- Start Carbon Flux section: -->
+<div class="collapsibleContainer">
+<button class="collapsible Carbon Flux">Carbon Flux</button>
+<div class="content">
+
+<!-- Start CO2_li_wpl_H_li: -->
+<h2>Carbon Flux (CO2_li_wpl_H_li)</h2>
+
+<div class="flex-container">
+
+  <!-- Fluxtower 1_2 Plots -->
+  <div>
+    <h4>Flux Towers 1 & 2 - Yesterday</h4>
+    <a href="fluxtower1_2/daily_plots/fluxtower1_2_CO2_li_wpl_H_li_yesterday.png" target="_blank">
+      <img src="fluxtower1_2/daily_plots/fluxtower1_2_CO2_li_wpl_H_li_yesterday.png" alt="Fluxtower1_2 - CO2_li_wpl_H_li yesterday" onerror="imgError(this);">
+    </a>
+  </div>
+
+  <div>
+    <h4>Flux Towers 1 & 2 - Today</h4>
+    <a href="fluxtower1_2/daily_plots/fluxtower1_2_CO2_li_wpl_H_li_today.png" target="_blank">
+      <img src="fluxtower1_2/daily_plots/fluxtower1_2_CO2_li_wpl_H_li_today.png" alt="Fluxtower1_2 - CO2_li_wpl_H_li today" onerror="imgError(this);">
+    </a>
+  </div>
+
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+
+  <!-- Fluxtower 3_4 Plots -->
+  <div>
+    <h4>Flux Towers 3 & 4 - Yesterday</h4>
+    <a href="fluxtower3_4/daily_plots/fluxtower3_4_CO2_li_wpl_H_li_yesterday.png" target="_blank">
+      <img src="fluxtower3_4/daily_plots/fluxtower3_4_CO2_li_wpl_H_li_yesterday.png" alt="Fluxtower3_4 - CO2_li_wpl_H_li yesterday" onerror="imgError(this);">
+    </a>
+  </div>
+
+  <div>
+    <h4>Flux Towers 3 & 4 - Today</h4>
+    <a href="fluxtower3_4/daily_plots/fluxtower3_4_CO2_li_wpl_H_li_today.png" target="_blank">
+      <img src="fluxtower3_4/daily_plots/fluxtower3_4_CO2_li_wpl_H_li_today.png" alt="Fluxtower3_4 - CO2_li_wpl_H_li today" onerror="imgError(this);">
+    </a>
+  </div>
+
+</div>
+
+<!-- end CO2_li_wpl_H_li: -->
+            
+
+</div> <!-- This is the closing tag for content div under Carbon Flux -->
+</div> <!-- This is the closing tag for collapsibleContainer div under Carbon Flux -->
+<!-- END Carbon Flux section: -->
+ 
