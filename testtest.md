@@ -128,22 +128,22 @@ nav-menu: true
 <div class="content">
 
 <!-- Start T_tmpr_rh_mean: -->
-<h2>Temp and Rel Humidity mean (T_tmpr_rh_mean)</h2>
+<h2>Air Temperature (T_tmpr_rh_mean)</h2>
 
 <div class="flex-container">
 
   <!-- Fluxtower 1_2 Plots -->
   <div>
-    <h4>Flux Tower 1 and 2 - Yesterday</h4>
+    <h4>Flux Towers 1 & 2 - Yesterday</h4>
     <a href="fluxtower1_2/daily_plots/fluxtower1_2_T_tmpr_rh_mean_yesterday.png" target="_blank">
-      <img src="fluxtower1_2/daily_plots/fluxtower1_2_T_tmpr_rh_mean_yesterday.png" alt="Fluxtower1_2 - CO2_li_wpl_H_li yesterday" onerror="imgError(this);">
+      <img src="fluxtower1_2/daily_plots/fluxtower1_2_T_tmpr_rh_mean_yesterday.png" alt="Fluxtower1_2 - T_tmpr_rh_mean yesterday" onerror="imgError(this);">
     </a>
   </div>
 
   <div>
-    <h4>Flux Tower 1 and 2 - Today</h4>
+    <h4>Flux Towers 1 & 2 - Today</h4>
     <a href="fluxtower1_2/daily_plots/fluxtower1_2_T_tmpr_rh_mean_today.png" target="_blank">
-      <img src="fluxtower1_2/daily_plots/fluxtower1_2_T_tmpr_rh_mean_today.png" alt="Fluxtower1_2 - CO2_li_wpl_H_li today" onerror="imgError(this);">
+      <img src="fluxtower1_2/daily_plots/fluxtower1_2_T_tmpr_rh_mean_today.png" alt="Fluxtower1_2 - T_tmpr_rh_mean today" onerror="imgError(this);">
     </a>
   </div>
 
@@ -151,16 +151,16 @@ nav-menu: true
 
   <!-- Fluxtower 3_4 Plots -->
   <div>
-    <h4>Flux Tower 3 and 4 - Yesterday</h4>
+    <h4>Flux Towers 3 & 4 - Yesterday</h4>
     <a href="fluxtower3_4/daily_plots/fluxtower3_4_T_tmpr_rh_mean_yesterday.png" target="_blank">
-      <img src="fluxtower3_4/daily_plots/fluxtower3_4_T_tmpr_rh_mean_yesterday.png" alt="Fluxtower3_4 - LE_li_irga yesterday" onerror="imgError(this);">
+      <img src="fluxtower3_4/daily_plots/fluxtower3_4_T_tmpr_rh_mean_yesterday.png" alt="Fluxtower3_4 - T_tmpr_rh_mean yesterday" onerror="imgError(this);">
     </a>
   </div>
 
   <div>
-    <h4>Flux Tower 3 and 4 - Today</h4>
+    <h4>Flux Towers 3 & 4 - Today</h4>
     <a href="fluxtower3_4/daily_plots/fluxtower3_4_T_tmpr_rh_mean_today.png" target="_blank">
-      <img src="fluxtower3_4/daily_plots/fluxtower3_4_T_tmpr_rh_mean_today.png" alt="Fluxtower3_4 - LE_li_irga today" onerror="imgError(this);">
+      <img src="fluxtower3_4/daily_plots/fluxtower3_4_T_tmpr_rh_mean_today.png" alt="Fluxtower3_4 - T_tmpr_rh_mean today" onerror="imgError(this);">
     </a>
   </div>
 
@@ -168,9 +168,46 @@ nav-menu: true
 
 <!-- end T_tmpr_rh_mean: -->
             
+<!-- Start Ts_Avg: -->
+<h2>Average Ts (Ts_Avg)</h2>
 
-<!-- More sections would go here: -->
+<div class="flex-container">
+
+  <!-- Fluxtower 1_2 Plots -->
+  <div>
+    <h4>Flux Towers 1 & 2 - Yesterday</h4>
+    <a href="fluxtower1_2/daily_plots/fluxtower1_2_Ts_Avg_yesterday.png" target="_blank">
+      <img src="fluxtower1_2/daily_plots/fluxtower1_2_Ts_Avg_yesterday.png" alt="Fluxtower1_2 - Ts_Avg yesterday" onerror="imgError(this);">
+    </a>
+  </div>
+
+  <div>
+    <h4>Flux Towers 1 & 2 - Today</h4>
+    <a href="fluxtower1_2/daily_plots/fluxtower1_2_Ts_Avg_today.png" target="_blank">
+      <img src="fluxtower1_2/daily_plots/fluxtower1_2_Ts_Avg_today.png" alt="Fluxtower1_2 - Ts_Avg today" onerror="imgError(this);">
+    </a>
+  </div>
+
+  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
+
+  <!-- Fluxtower 3_4 Plots -->
+  <div>
+    <h4>Flux Towers 3 & 4 - Yesterday</h4>
+    <a href="fluxtower3_4/daily_plots/fluxtower3_4_Ts_Avg_yesterday.png" target="_blank">
+      <img src="fluxtower3_4/daily_plots/fluxtower3_4_Ts_Avg_yesterday.png" alt="Fluxtower3_4 - Ts_Avg yesterday" onerror="imgError(this);">
+    </a>
+  </div>
+
+  <div>
+    <h4>Flux Towers 3 & 4 - Today</h4>
+    <a href="fluxtower3_4/daily_plots/fluxtower3_4_Ts_Avg_today.png" target="_blank">
+      <img src="fluxtower3_4/daily_plots/fluxtower3_4_Ts_Avg_today.png" alt="Fluxtower3_4 - Ts_Avg today" onerror="imgError(this);">
+    </a>
+  </div>
+
 </div>
+
+<!-- end Ts_Avg: -->
 
 </div> <!-- This is the closing tag for content div under Temperature -->
 </div> <!-- This is the closing tag for collapsibleContainer div under Temperature -->
