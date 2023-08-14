@@ -126,10 +126,6 @@ nav-menu: true
 <div class="collapsibleContainer">
 <button class="collapsible temperature">Temperature</button>
 <div class="content">
-  
-<!-- Start Today button: -->
-<button class="collapsible day">Today</button>
-<div class="content">
 
 <!-- Start T_tmpr_rh_mean: -->
 <h2>Temp and Rel Humidity mean (T_tmpr_rh_mean)</h2>
@@ -138,16 +134,16 @@ nav-menu: true
 
   <!-- Fluxtower 1_2 Plots -->
   <div>
-    <h4>Flux Tower 1_2 - Yesterday</h4>
-    <a href="fluxtower1_2/daily_plots/fluxtower1_2_CO2_li_wpl_H_li_yesterday.png" target="_blank">
-      <img src="fluxtower1_2/daily_plots/fluxtower1_2_CO2_li_wpl_H_li_yesterday.png" alt="Fluxtower1_2 - CO2_li_wpl_H_li yesterday" onerror="imgError(this);">
+    <h4>Flux Tower 1 and 2 - Yesterday</h4>
+    <a href="fluxtower1_2/daily_plots/fluxtower1_2_T_tmpr_rh_mean_yesterday.png" target="_blank">
+      <img src="fluxtower1_2/daily_plots/fluxtower1_2_T_tmpr_rh_mean_yesterday.png" alt="Fluxtower1_2 - CO2_li_wpl_H_li yesterday" onerror="imgError(this);">
     </a>
   </div>
 
   <div>
-    <h4>Flux Tower 1_2 - Today</h4>
-    <a href="fluxtower1_2/daily_plots/fluxtower1_2_CO2_li_wpl_H_li_today.png" target="_blank">
-      <img src="fluxtower1_2/daily_plots/fluxtower1_2_CO2_li_wpl_H_li_today.png" alt="Fluxtower1_2 - CO2_li_wpl_H_li today" onerror="imgError(this);">
+    <h4>Flux Tower 1 and 2 - Today</h4>
+    <a href="fluxtower1_2/daily_plots/fluxtower1_2_T_tmpr_rh_mean_today.png" target="_blank">
+      <img src="fluxtower1_2/daily_plots/fluxtower1_2_T_tmpr_rh_mean_today.png" alt="Fluxtower1_2 - CO2_li_wpl_H_li today" onerror="imgError(this);">
     </a>
   </div>
 
@@ -155,16 +151,16 @@ nav-menu: true
 
   <!-- Fluxtower 3_4 Plots -->
   <div>
-    <h4>Flux Tower 3_4 - Yesterday</h4>
-    <a href="fluxtower3_4/daily_plots/fluxtower3_4_LE_li_irga_yesterday.png" target="_blank">
-      <img src="fluxtower3_4/daily_plots/fluxtower3_4_LE_li_irga_yesterday.png" alt="Fluxtower3_4 - LE_li_irga yesterday" onerror="imgError(this);">
+    <h4>Flux Tower 3 and 4 - Yesterday</h4>
+    <a href="fluxtower3_4/daily_plots/fluxtower3_4_T_tmpr_rh_mean_yesterday.png" target="_blank">
+      <img src="fluxtower3_4/daily_plots/fluxtower3_4_T_tmpr_rh_mean_yesterday.png" alt="Fluxtower3_4 - LE_li_irga yesterday" onerror="imgError(this);">
     </a>
   </div>
 
   <div>
-    <h4>Flux Tower 3_4 - Today</h4>
-    <a href="fluxtower3_4/daily_plots/fluxtower3_4_LE_li_irga_today.png" target="_blank">
-      <img src="fluxtower3_4/daily_plots/fluxtower3_4_LE_li_irga_today.png" alt="Fluxtower3_4 - LE_li_irga today" onerror="imgError(this);">
+    <h4>Flux Tower 3 and 4 - Today</h4>
+    <a href="fluxtower3_4/daily_plots/fluxtower3_4_T_tmpr_rh_mean_today.png" target="_blank">
+      <img src="fluxtower3_4/daily_plots/fluxtower3_4_T_tmpr_rh_mean_today.png" alt="Fluxtower3_4 - LE_li_irga today" onerror="imgError(this);">
     </a>
   </div>
 
