@@ -64,12 +64,12 @@ nav-menu: true
 }
 
 
-.collapsible.day {
+.collapsible.battery {
   background: linear-gradient(to right, #000000, #333333); /* Gradient background from black to dark gray */
                               color: white;
 }
 
-.collapsible.precipitation {
+.collapsible.precip {
   background: linear-gradient(to right, #00008b, #008b8b); /* Darker gradient background */
                               color: white;
 }
@@ -87,6 +87,26 @@ nav-menu: true
   background: linear-gradient(to right, #0074D9, #7FDBFF); /* Gradient background from blue to light blue */
   color: white;
 }
+
+
+.collapsible.sensible {
+  background: linear-gradient(to right, #8B008B, #DA70D6); /* Gradient background from dark purple to light purple */
+  color: white;
+}
+
+.collapsible.latent {
+  background: linear-gradient(to right, #0074D9, #7FDBFF); /* Gradient background from dark blue to light blue */
+  color: white;
+}
+
+.collapsible.radiation {
+  background: linear-gradient(to right, #FFD700, #FFFFE0); /* Gradient background from yellow to light yellow */
+  color: white;
+}
+
+
+
+
 
 
 .content {
@@ -339,7 +359,7 @@ nav-menu: true
 
 <!-- Start Precipitation section: -->
 <div class="collapsibleContainer">
-<button class="collapsible relativehum">Precipitation</button>
+<button class="collapsible precip">Precipitation</button>
 <div class="content">
 
 <!-- Start precip_Tot: -->
@@ -392,7 +412,7 @@ nav-menu: true
  
 <!-- Start Net Radiation section: -->
 <div class="collapsibleContainer">
-<button class="collapsible relativehum">Net Radiation</button>
+<button class="collapsible radiation">Net Radiation</button>
 <div class="content">
 
 <!-- Start albedo_Avg: -->
@@ -700,7 +720,7 @@ nav-menu: true
 
 <!-- Start Latent Heat Flux section: -->
 <div class="collapsibleContainer">
-<button class="collapsible relativehum">Latent Heat Flux</button>
+<button class="collapsible latent">Latent Heat Flux</button>
 <div class="content">
 
 <!-- Start LE_li_irga: -->
@@ -794,11 +814,11 @@ nav-menu: true
  
  <!-- Sensible Heat Flux Flux section: -->
 <div class="collapsibleContainer">
-<button class="collapsible relativehum">Latent Heat Flux</button>
+<button class="collapsible sensible">Sensible Heat Flux</button>
 <div class="content">
 
 <!-- Start Hs: -->
-<h2>Latent Heat Flux (Hs)</h2>
+<h2>Hs (Hs)</h2>
 
 <div class="flex-container">
 
@@ -841,13 +861,13 @@ nav-menu: true
 
 </div> <!-- This is the closing tag for content div under Latent Heat Flux -->
 </div> <!-- This is the closing tag for collapsibleContainer div under Latent Heat Flux -->
-<!-- END Latent Heat Flux section: -->
+<!-- END sensible Flux section: -->
 
 
 
 <!-- Wind section: -->
 <div class="collapsibleContainer">
-<button class="collapsible relativehum">Latent Heat Flux</button>
+<button class="collapsible wind">Wind</button>
 <div class="content">
 
 <!-- Start u_star: -->
@@ -1027,7 +1047,7 @@ nav-menu: true
 
 <!-- Wind section: -->
 <div class="collapsibleContainer">
-<button class="collapsible relativehum">Soil</button>
+<button class="collapsible soil">Soil</button>
 <div class="content">
 
 <!-- Start Soil Water Content Section-->
@@ -1074,7 +1094,7 @@ nav-menu: true
 <!-- end soil_water_Avg.1: -->
 
 <!-- Start soil_water_Avg.2: -->
-<h2>Soil Water Content, Level 1 (soil_water_Avg.2)</h2>
+<h2>Soil Water Content, Level 2 (soil_water_Avg.2)</h2>
 
 <div class="flex-container">
 
@@ -1116,7 +1136,7 @@ nav-menu: true
 
 
 <!-- Start soil_water_Avg.3: -->
-<h2>Soil Water Content, Level 1 (soil_water_Avg.3)</h2>
+<h2>Soil Water Content, Level 3 (soil_water_Avg.3)</h2>
 
 <div class="flex-container">
 
