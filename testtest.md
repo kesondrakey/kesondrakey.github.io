@@ -37,7 +37,7 @@ nav-menu: true
   text-align: center;
   padding: 15px;
   border: none;
-  font-size: 20px;
+  font-size: 22px;
   cursor: pointer;
   transition: background-color 0.5s, color 0.5s, border-color 0.5s;
   width: 100%;
@@ -55,7 +55,7 @@ nav-menu: true
 }
 
 .collapsible.temperature {
-  background: linear-gradient(to right, #b20000, #e67300);
+  background: linear-gradient(to right, #b20000, #e67300); /* Darker gradient background */
   color: white;
 }
 
@@ -65,7 +65,7 @@ nav-menu: true
 }
 
 .collapsible.precipitation {
-  background: linear-gradient(to right, #00008b, #008b8b);
+  background: linear-gradient(to right, #00008b, #008b8b); /* Darker gradient background */
   color: white;
 }
 
@@ -77,6 +77,14 @@ nav-menu: true
 .collapsible.wind {
   background: linear-gradient(to right, #2d006b, #660066);
   color: white;
+}
+
+.collapsible.carbonflux {
+  background: linear-gradient(to right, #00008B, #FFFFFF);
+  color: black;
+}
+h4, h5 {
+  font-size: 18px; /* Making headers smaller */
 }
 
 .content {
@@ -96,9 +104,11 @@ nav-menu: true
 }
 
 .plot {
-  width: 45%;
-  text-align: center;
+  width: 48%;
+  margin-right: 1%;
 }
+
+
 
 .flex-container img {
   max-width: 100%;
@@ -127,13 +137,11 @@ nav-menu: true
   <!-- This is an HTML comment, it won't appear on the page -->
 <!-- Start site objects and things here: -->
 
-
 <!-- Start Carbon Flux section: -->
 <div class="collapsibleContainer">
 <button class="collapsible carbonflux">Carbon Flux</button>
 <div class="content">
 
-<!-- Start CO2_li_wpl_H_li: -->
 <!-- Start CO2_li_wpl_H_li: -->
 <h2>Carbon Flux (CO2_li_wpl_H_li)</h2>
 
@@ -141,15 +149,16 @@ nav-menu: true
 
   <!-- Fluxtower 1_2 Plots -->
   <div class="row">
+   <h4>Flux Towers 1 & 2</h4>
     <div class="plot">
-      <h4>Flux Towers 1 & 2 - Yesterday</h4>
+      <h5>Yesterday</h5>
       <a href="fluxtower1_2/daily_plots/fluxtower1_2_CO2_li_wpl_H_li_yesterday.png" target="_blank">
         <img src="fluxtower1_2/daily_plots/fluxtower1_2_CO2_li_wpl_H_li_yesterday.png" alt="Fluxtower1_2 - CO2_li_wpl_H_li yesterday" onerror="imgError(this);">
       </a>
     </div>
 
     <div class="plot">
-      <h4>Flux Towers 1 & 2 - Today</h4>
+      <h5>Today</h5>
       <a href="fluxtower1_2/daily_plots/fluxtower1_2_CO2_li_wpl_H_li_today.png" target="_blank">
         <img src="fluxtower1_2/daily_plots/fluxtower1_2_CO2_li_wpl_H_li_today.png" alt="Fluxtower1_2 - CO2_li_wpl_H_li today" onerror="imgError(this);">
       </a>
@@ -158,15 +167,16 @@ nav-menu: true
 
   <!-- Fluxtower 3_4 Plots -->
   <div class="row">
+   <h4>Flux Towers 3 & 4</h4>
     <div class="plot">
-      <h4>Flux Towers 3 & 4 - Yesterday</h4>
+      <h5>Yesterday</h5>
       <a href="fluxtower3_4/daily_plots/fluxtower3_4_CO2_li_wpl_H_li_yesterday.png" target="_blank">
         <img src="fluxtower3_4/daily_plots/fluxtower3_4_CO2_li_wpl_H_li_yesterday.png" alt="Fluxtower3_4 - CO2_li_wpl_H_li yesterday" onerror="imgError(this);">
       </a>
     </div>
 
     <div class="plot">
-      <h4>Flux Towers 3 & 4 - Today</h4>
+      <h5>Today</h5>
       <a href="fluxtower3_4/daily_plots/fluxtower3_4_CO2_li_wpl_H_li_today.png" target="_blank">
         <img src="fluxtower3_4/daily_plots/fluxtower3_4_CO2_li_wpl_H_li_today.png" alt="Fluxtower3_4 - CO2_li_wpl_H_li today" onerror="imgError(this);">
       </a>
