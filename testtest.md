@@ -838,7 +838,7 @@ h4, h5 {
 
 <!-- Start Sensible Heat Flux section: -->
 <div class="collapsibleContainer">
-<button class="collapsible Sensible">Sensible Heat Flux</button>
+<button class="collapsible sensible">Sensible Heat Flux</button>
 <div class="content">
 
 <!-- Start Hs: -->
@@ -894,7 +894,7 @@ h4, h5 {
  
 <!-- Start wind section: -->
 <div class="collapsibleContainer">
-<button class="collapsible Sensible">wind</button>
+<button class="collapsible wind">wind</button>
 <div class="content">
 
 <!-- Start u_star: -->
@@ -1080,7 +1080,7 @@ h4, h5 {
 
 <!-- Start Soil section: -->
 <div class="collapsibleContainer">
-<button class="collapsible Sensible">Soil</button>
+<button class="collapsible soil">Soil</button>
 <div class="content">
 
 <!-- Start soil_water_Avg.1: -->
@@ -1269,126 +1269,45 @@ h4, h5 {
 
 <!-- end Tsoil1_Avg: -->
 
-
-
-
-</div> <!-- This is the closing tag for content div under Soil -->
-</div> <!-- This is the closing tag for collapsibleContainer div under Soil -->
-<!-- END Soil section: -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
- 
-   
- 
-
-
-
-
-
-   
-
-
-
-            
-            
-
-            
-            
-            
-
-
-<!-- Start Soil Temp: -->
-<h1>Soil Temperature</h1>
-
-<!-- Start Tsoil1_Avg: -->
-<h2>Soil Temperature, Level 1 (Tsoil1_Avg)</h2>
-
-<div class="flex-container">
-
-  <!-- Fluxtower 1_2 Plots -->
-  <div>
-    <h4>Flux Towers 1 & 2 - Yesterday</h4>
-    <a href="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil1_Avg_yesterday.png" target="_blank">
-      <img src="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil1_Avg_yesterday.png" alt="Fluxtower1_2 - Tsoil1_Avg yesterday" onerror="imgError(this);">
-    </a>
-  </div>
-
-  <div>
-    <h4>Flux Towers 1 & 2 - Today</h4>
-    <a href="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil1_Avg_today.png" target="_blank">
-      <img src="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil1_Avg_today.png" alt="Fluxtower1_2 - Tsoil1_Avg today" onerror="imgError(this);">
-    </a>
-  </div>
-
-  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
-
-  <!-- Fluxtower 3_4 Plots -->
-  <div>
-    <h4>Flux Towers 3 & 4 - Yesterday</h4>
-    <a href="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil1_Avg_yesterday.png" target="_blank">
-      <img src="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil1_Avg_yesterday.png" alt="Fluxtower3_4 - Tsoil1_Avg yesterday" onerror="imgError(this);">
-    </a>
-  </div>
-
-  <div>
-    <h4>Flux Towers 3 & 4 - Today</h4>
-    <a href="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil1_Avg_today.png" target="_blank">
-      <img src="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil1_Avg_today.png" alt="Fluxtower3_4 - Tsoil1_Avg today" onerror="imgError(this);">
-    </a>
-  </div>
-
-</div>
-
-<!-- end Tsoil1_Avg: -->
-            
 <!-- Start Tsoil2_Avg: -->
 <h2>Soil Temperature, Level 2 (Tsoil2_Avg)</h2>
 
 <div class="flex-container">
 
   <!-- Fluxtower 1_2 Plots -->
-  <div>
-    <h4>Flux Towers 1 & 2 - Yesterday</h4>
-    <a href="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil2_Avg_yesterday.png" target="_blank">
-      <img src="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil2_Avg_yesterday.png" alt="Fluxtower1_2 - Tsoil2_Avg yesterday" onerror="imgError(this);">
-    </a>
-  </div>
+  <h3>Flux Towers 1 & 2</h3>
+  <div class="row">
+    <div class="plot">
+      <h5>Yesterday</h5>
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil2_Avg_yesterday.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil2_Avg_yesterday.png" alt="Fluxtower1_2 - Tsoil2_Avg yesterday" onerror="imgError(this);">
+      </a>
+    </div>
 
-  <div>
-    <h4>Flux Towers 1 & 2 - Today</h4>
-    <a href="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil2_Avg_today.png" target="_blank">
-      <img src="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil2_Avg_today.png" alt="Fluxtower1_2 - Tsoil2_Avg today" onerror="imgError(this);">
-    </a>
+    <div class="plot">
+      <h5>Today</h5>
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil2_Avg_today.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil2_Avg_today.png" alt="Fluxtower1_2 - Tsoil2_Avg today" onerror="imgError(this);">
+      </a>
+    </div>
   </div>
-
-  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
 
   <!-- Fluxtower 3_4 Plots -->
-  <div>
-    <h4>Flux Towers 3 & 4 - Yesterday</h4>
-    <a href="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil2_Avg_yesterday.png" target="_blank">
-      <img src="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil2_Avg_yesterday.png" alt="Fluxtower3_4 - Tsoil2_Avg yesterday" onerror="imgError(this);">
-    </a>
-  </div>
+  <h3>Flux Towers 3 & 4</h3>
+  <div class="row">
+    <div class="plot">
+      <h5>Yesterday</h5>
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil2_Avg_yesterday.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil2_Avg_yesterday.png" alt="Fluxtower3_4 - Tsoil2_Avg yesterday" onerror="imgError(this);">
+      </a>
+    </div>
 
-  <div>
-    <h4>Flux Towers 3 & 4 - Today</h4>
-    <a href="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil2_Avg_today.png" target="_blank">
-      <img src="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil2_Avg_today.png" alt="Fluxtower3_4 - Tsoil2_Avg today" onerror="imgError(this);">
-    </a>
+    <div class="plot">
+      <h5>Today</h5>
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil2_Avg_today.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil2_Avg_today.png" alt="Fluxtower3_4 - Tsoil2_Avg today" onerror="imgError(this);">
+      </a>
+    </div>
   </div>
 
 </div>
@@ -1401,183 +1320,191 @@ h4, h5 {
 <div class="flex-container">
 
   <!-- Fluxtower 1_2 Plots -->
-  <div>
-    <h4>Flux Towers 1 & 2 - Yesterday</h4>
-    <a href="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil3_Avg_yesterday.png" target="_blank">
-      <img src="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil3_Avg_yesterday.png" alt="Fluxtower1_2 - Tsoil3_Avg yesterday" onerror="imgError(this);">
-    </a>
-  </div>
+  <h3>Flux Towers 1 & 2</h3>
+  <div class="row">
+    <div class="plot">
+      <h5>Yesterday</h5>
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil3_Avg_yesterday.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil3_Avg_yesterday.png" alt="Fluxtower1_2 - Tsoil3_Avg yesterday" onerror="imgError(this);">
+      </a>
+    </div>
 
-  <div>
-    <h4>Flux Towers 1 & 2 - Today</h4>
-    <a href="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil3_Avg_today.png" target="_blank">
-      <img src="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil3_Avg_today.png" alt="Fluxtower1_2 - Tsoil3_Avg today" onerror="imgError(this);">
-    </a>
+    <div class="plot">
+      <h5>Today</h5>
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil3_Avg_today.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil3_Avg_today.png" alt="Fluxtower1_2 - Tsoil3_Avg today" onerror="imgError(this);">
+      </a>
+    </div>
   </div>
-
-  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
 
   <!-- Fluxtower 3_4 Plots -->
-  <div>
-    <h4>Flux Towers 3 & 4 - Yesterday</h4>
-    <a href="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil3_Avg_yesterday.png" target="_blank">
-      <img src="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil3_Avg_yesterday.png" alt="Fluxtower3_4 - Tsoil3_Avg yesterday" onerror="imgError(this);">
-    </a>
-  </div>
+  <h3>Flux Towers 3 & 4</h3>
+  <div class="row">
+    <div class="plot">
+      <h5>Yesterday</h5>
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil3_Avg_yesterday.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil3_Avg_yesterday.png" alt="Fluxtower3_4 - Tsoil3_Avg yesterday" onerror="imgError(this);">
+      </a>
+    </div>
 
-  <div>
-    <h4>Flux Towers 3 & 4 - Today</h4>
-    <a href="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil3_Avg_today.png" target="_blank">
-      <img src="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil3_Avg_today.png" alt="Fluxtower3_4 - Tsoil3_Avg today" onerror="imgError(this);">
-    </a>
+    <div class="plot">
+      <h5>Today</h5>
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil3_Avg_today.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil3_Avg_today.png" alt="Fluxtower3_4 - Tsoil3_Avg today" onerror="imgError(this);">
+      </a>
+    </div>
   </div>
 
 </div>
 
 <!-- end Tsoil3_Avg: -->
-            
-            
 <!-- Start Tsoil4_Avg: -->
 <h2>Soil Temperature, Level 4 (Tsoil4_Avg)</h2>
 
 <div class="flex-container">
 
   <!-- Fluxtower 1_2 Plots -->
-  <div>
-    <h4>Flux Towers 1 & 2 - Yesterday</h4>
-    <a href="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil4_Avg_yesterday.png" target="_blank">
-      <img src="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil4_Avg_yesterday.png" alt="Fluxtower1_2 - Tsoil4_Avg yesterday" onerror="imgError(this);">
-    </a>
-  </div>
+  <h3>Flux Towers 1 & 2</h3>
+  <div class="row">
+    <div class="plot">
+      <h5>Yesterday</h5>
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil4_Avg_yesterday.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil4_Avg_yesterday.png" alt="Fluxtower1_2 - Tsoil4_Avg yesterday" onerror="imgError(this);">
+      </a>
+    </div>
 
-  <div>
-    <h4>Flux Towers 1 & 2 - Today</h4>
-    <a href="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil4_Avg_today.png" target="_blank">
-      <img src="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil4_Avg_today.png" alt="Fluxtower1_2 - Tsoil4_Avg today" onerror="imgError(this);">
-    </a>
+    <div class="plot">
+      <h5>Today</h5>
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil4_Avg_today.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil4_Avg_today.png" alt="Fluxtower1_2 - Tsoil4_Avg today" onerror="imgError(this);">
+      </a>
+    </div>
   </div>
-
-  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
 
   <!-- Fluxtower 3_4 Plots -->
-  <div>
-    <h4>Flux Towers 3 & 4 - Yesterday</h4>
-    <a href="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil4_Avg_yesterday.png" target="_blank">
-      <img src="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil4_Avg_yesterday.png" alt="Fluxtower3_4 - Tsoil4_Avg yesterday" onerror="imgError(this);">
-    </a>
-  </div>
+  <h3>Flux Towers 3 & 4</h3>
+  <div class="row">
+    <div class="plot">
+      <h5>Yesterday</h5>
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil4_Avg_yesterday.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil4_Avg_yesterday.png" alt="Fluxtower3_4 - Tsoil4_Avg yesterday" onerror="imgError(this);">
+      </a>
+    </div>
 
-  <div>
-    <h4>Flux Towers 3 & 4 - Today</h4>
-    <a href="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil4_Avg_today.png" target="_blank">
-      <img src="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil4_Avg_today.png" alt="Fluxtower3_4 - Tsoil4_Avg today" onerror="imgError(this);">
-    </a>
+    <div class="plot">
+      <h5>Today</h5>
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil4_Avg_today.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil4_Avg_today.png" alt="Fluxtower3_4 - Tsoil4_Avg today" onerror="imgError(this);">
+      </a>
+    </div>
   </div>
 
 </div>
 
 <!-- end Tsoil4_Avg: -->
-            
-            
-            
 
 </div> <!-- This is the closing tag for content div under Soil -->
 </div> <!-- This is the closing tag for collapsibleContainer div under Soil -->
 <!-- END Soil section: -->
- 
- 
- 
- <!-- battery section: -->
+
+
+
+<!-- Start Battery section: -->
 <div class="collapsibleContainer">
-<button class="collapsible battery">Battery</button>
+<button class="collapsible precip">Battery</button>
 <div class="content">
 
-
 <!-- Start batt_volt_Avg: -->
-<h2>Battery Data (batt_volt_Avg)</h2>
+<h2>Battery (batt_volt_Avg)</h2>
 
 <div class="flex-container">
 
   <!-- Fluxtower 1_2 Plots -->
-  <div>
-    <h4>Flux Towers 1 & 2 - Yesterday</h4>
-    <a href="fluxtower1_2/daily_plots/fluxtower1_2_batt_volt_Avg_yesterday.png" target="_blank">
-      <img src="fluxtower1_2/daily_plots/fluxtower1_2_batt_volt_Avg_yesterday.png" alt="Fluxtower1_2 - batt_volt_Avg yesterday" onerror="imgError(this);">
-    </a>
-  </div>
+  <h3>Flux Towers 1 & 2</h3>
+  <div class="row">
+    <div class="plot">
+      <h5>Yesterday</h5>
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_batt_volt_Avg_yesterday.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_batt_volt_Avg_yesterday.png" alt="Fluxtower1_2 - batt_volt_Avg yesterday" onerror="imgError(this);">
+      </a>
+    </div>
 
-  <div>
-    <h4>Flux Towers 1 & 2 - Today</h4>
-    <a href="fluxtower1_2/daily_plots/fluxtower1_2_batt_volt_Avg_today.png" target="_blank">
-      <img src="fluxtower1_2/daily_plots/fluxtower1_2_batt_volt_Avg_today.png" alt="Fluxtower1_2 - batt_volt_Avg today" onerror="imgError(this);">
-    </a>
+    <div class="plot">
+      <h5>Today</h5>
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_batt_volt_Avg_today.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_batt_volt_Avg_today.png" alt="Fluxtower1_2 - batt_volt_Avg today" onerror="imgError(this);">
+      </a>
+    </div>
   </div>
-
-  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
 
   <!-- Fluxtower 3_4 Plots -->
-  <div>
-    <h4>Flux Towers 3 & 4 - Yesterday</h4>
-    <a href="fluxtower3_4/daily_plots/fluxtower3_4_batt_volt_Avg_yesterday.png" target="_blank">
-      <img src="fluxtower3_4/daily_plots/fluxtower3_4_batt_volt_Avg_yesterday.png" alt="Fluxtower3_4 - batt_volt_Avg yesterday" onerror="imgError(this);">
-    </a>
-  </div>
+  <h3>Flux Towers 3 & 4</h3>
+  <div class="row">
+    <div class="plot">
+      <h5>Yesterday</h5>
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_batt_volt_Avg_yesterday.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_batt_volt_Avg_yesterday.png" alt="Fluxtower3_4 - batt_volt_Avg yesterday" onerror="imgError(this);">
+      </a>
+    </div>
 
-  <div>
-    <h4>Flux Towers 3 & 4 - Today</h4>
-    <a href="fluxtower3_4/daily_plots/fluxtower3_4_batt_volt_Avg_today.png" target="_blank">
-      <img src="fluxtower3_4/daily_plots/fluxtower3_4_batt_volt_Avg_today.png" alt="Fluxtower3_4 - batt_volt_Avg today" onerror="imgError(this);">
-    </a>
+    <div class="plot">
+      <h5>Today</h5>
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_batt_volt_Avg_today.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_batt_volt_Avg_today.png" alt="Fluxtower3_4 - batt_volt_Avg today" onerror="imgError(this);">
+      </a>
+    </div>
   </div>
 
 </div>
 
 <!-- end batt_volt_Avg: -->
-            
-            
 <!-- Start cdm_batt_volt_Avg: -->
-<h2>CDM Battery Data (cdm_batt_volt_Avg)</h2>
+<h2>Battery (cdm_batt_volt_Avg)</h2>
 
 <div class="flex-container">
 
   <!-- Fluxtower 1_2 Plots -->
-  <div>
-    <h4>Flux Towers 1 & 2 - Yesterday</h4>
-    <a href="fluxtower1_2/daily_plots/fluxtower1_2_cdm_batt_volt_Avg_yesterday.png" target="_blank">
-      <img src="fluxtower1_2/daily_plots/fluxtower1_2_cdm_batt_volt_Avg_yesterday.png" alt="Fluxtower1_2 - cdm_batt_volt_Avg yesterday" onerror="imgError(this);">
-    </a>
-  </div>
+  <h3>Flux Towers 1 & 2</h3>
+  <div class="row">
+    <div class="plot">
+      <h5>Yesterday</h5>
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_cdm_batt_volt_Avg_yesterday.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_cdm_batt_volt_Avg_yesterday.png" alt="Fluxtower1_2 - cdm_batt_volt_Avg yesterday" onerror="imgError(this);">
+      </a>
+    </div>
 
-  <div>
-    <h4>Flux Towers 1 & 2 - Today</h4>
-    <a href="fluxtower1_2/daily_plots/fluxtower1_2_cdm_batt_volt_Avg_today.png" target="_blank">
-      <img src="fluxtower1_2/daily_plots/fluxtower1_2_cdm_batt_volt_Avg_today.png" alt="Fluxtower1_2 - cdm_batt_volt_Avg today" onerror="imgError(this);">
-    </a>
+    <div class="plot">
+      <h5>Today</h5>
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_cdm_batt_volt_Avg_today.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_cdm_batt_volt_Avg_today.png" alt="Fluxtower1_2 - cdm_batt_volt_Avg today" onerror="imgError(this);">
+      </a>
+    </div>
   </div>
-
-  <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
 
   <!-- Fluxtower 3_4 Plots -->
-  <div>
-    <h4>Flux Towers 3 & 4 - Yesterday</h4>
-    <a href="fluxtower3_4/daily_plots/fluxtower3_4_cdm_batt_volt_Avg_yesterday.png" target="_blank">
-      <img src="fluxtower3_4/daily_plots/fluxtower3_4_cdm_batt_volt_Avg_yesterday.png" alt="Fluxtower3_4 - cdm_batt_volt_Avg yesterday" onerror="imgError(this);">
-    </a>
-  </div>
+  <h3>Flux Towers 3 & 4</h3>
+  <div class="row">
+    <div class="plot">
+      <h5>Yesterday</h5>
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_cdm_batt_volt_Avg_yesterday.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_cdm_batt_volt_Avg_yesterday.png" alt="Fluxtower3_4 - cdm_batt_volt_Avg yesterday" onerror="imgError(this);">
+      </a>
+    </div>
 
-  <div>
-    <h4>Flux Towers 3 & 4 - Today</h4>
-    <a href="fluxtower3_4/daily_plots/fluxtower3_4_cdm_batt_volt_Avg_today.png" target="_blank">
-      <img src="fluxtower3_4/daily_plots/fluxtower3_4_cdm_batt_volt_Avg_today.png" alt="Fluxtower3_4 - cdm_batt_volt_Avg today" onerror="imgError(this);">
-    </a>
+    <div class="plot">
+      <h5>Today</h5>
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_cdm_batt_volt_Avg_today.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_cdm_batt_volt_Avg_today.png" alt="Fluxtower3_4 - cdm_batt_volt_Avg today" onerror="imgError(this);">
+      </a>
+    </div>
   </div>
 
 </div>
 
 <!-- end cdm_batt_volt_Avg: -->
-            
 
-</div> <!-- This is the closing tag for content div under Soil -->
-</div> <!-- This is the closing tag for collapsibleContainer div under Soil -->
+
+</div> <!-- This is the closing tag for content div under Battery -->
+</div> <!-- This is the closing tag for collapsibleContainer div under Battery -->
 <!-- END Battery section: -->
- 
+
