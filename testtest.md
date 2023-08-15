@@ -60,7 +60,7 @@ nav-menu: true
 }
 
 .collapsible.rel {
-  background: linear-gradient(to right, #e67300, #b20000); /* Darker gradient background */
+  background: linear-gradient(to right, #006400, #00FF00); /* Darker gradient background */
   color: white;
 }
 
@@ -312,7 +312,7 @@ h4, h5 {
 
 <!-- Start Relative Humidity section: -->
 <div class="collapsibleContainer">
-<button class="collapsible relativehum">Relative Humidity</button>
+<button class="collapsible rel">Relative Humidity</button>
 <div class="content">
 
 <!-- Start RH_tmpr_rh_mean: -->
