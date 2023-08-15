@@ -70,7 +70,7 @@ nav-menu: true
 }
    
 .collapsible.rn {
-  background: linear-gradient(to right,#000000, #FFFF00); /* Yellow to Black gradient background */
+  background: linear-gradient(to right,#FFD700, #FFFF00); /* Yellow to Black gradient background */
   color: white;
 }
    
