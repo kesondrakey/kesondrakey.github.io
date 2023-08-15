@@ -126,7 +126,11 @@ h4, h5 {
 
 .plot {
   width: 48%;
-  margin-right: 4%;
+  margin-right: 0.5%; /* Even smaller percentage */
+}
+
+.plot:last-child {
+  margin-right: 0; /* Set the margin-right to 0 for the last plot in each row */
 }
 
 .flex-container img {
