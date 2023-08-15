@@ -99,7 +99,7 @@ nav-menu: true
 }
 
 .collapsible.other {
-  background: linear-gradient(to right, #596164, #868F96); /* Gradient background from black to dark gray */
+  background: linear-gradient(to right, #93A5CF, #E4EfE9); /* Gradient background from black to dark gray */
   color: white;
 }
    
