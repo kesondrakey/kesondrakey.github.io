@@ -53,20 +53,19 @@ nav-menu: true
   background: linear-gradient(to right, #505050, #A9A9A9);
   color: white;
 }
-
 .collapsible.temperature {
   background: linear-gradient(to right, #e67300, #b20000); /* Darker gradient background */
   color: white;
 }
-
+  
 .collapsible.rel {
   background: linear-gradient(to right, #006400, #00FF00); /* Darker gradient background */
   color: white;
 }
 
 .collapsible.precipitation {
-  background: linear-gradient(to right, #808080, #FFFFFF); /* Gray to White gradient background */
-  color: black;
+  background: linear-gradient(to right, #00008b, #008b8b); /* Darker gradient background */
+  color: white;
 }
    
 .collapsible.rn {
