@@ -49,18 +49,18 @@ nav-menu: true
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-.collapsible.other {
-  background: linear-gradient(to right, #000, #2f2f2f);
-  color: white;
+.collapsible.carbonflux {
+  background: linear-gradient(to right, #505050, #A9A9A9);
+  color: black;
 }
 
 .collapsible.temperature {
-  background: linear-gradient(to right, #b20000, #e67300); /* Darker gradient background */
+  background: linear-gradient(to right, #e67300, #b20000); /* Darker gradient background */
   color: white;
 }
 
-.collapsible.day {
-  background: linear-gradient(to right, #000000, #333333);
+.collapsible.rel {
+  background: linear-gradient(to right, #e67300, #b20000); /* Darker gradient background */
   color: white;
 }
 
@@ -73,6 +73,27 @@ nav-menu: true
   background: linear-gradient(to right,#000000, #FFFF00); /* Yellow to Black gradient background */
   color: white;
 }
+   
+.collapsible.sensible {
+  background: linear-gradient(to right, #8B0000, #FF4500);
+  color: white;
+}
+  
+.collapsible.latent {
+  background: linear-gradient(to right, #008B8B, #20B2AA);
+  color: white;
+}
+
+
+.collapsible.wind {
+  background: linear-gradient(to right, #2d006b, #660066);
+  color: white;
+}
+   
+.collapsible.soil {
+  background: linear-gradient(to right, #004d00, #7cfc00);
+  color: white;
+}
 
 .collapsible.battery {
   background: linear-gradient(to right, #000000, #333333); /* Gradient background from black to dark gray */
@@ -80,20 +101,6 @@ nav-menu: true
 }
    
 
-.collapsible.soil {
-  background: linear-gradient(to right, #004d00, #7cfc00);
-  color: white;
-}
-
-.collapsible.wind {
-  background: linear-gradient(to right, #2d006b, #660066);
-  color: white;
-}
-
-.collapsible.carbonflux {
-  background: linear-gradient(to right, #00008B, #FFFFFF);
-  color: black;
-}
 h4, h5 {
   font-size: 18px; /* Making headers smaller */
 }
