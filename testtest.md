@@ -64,17 +64,17 @@ nav-menu: true
 }
 
 .collapsible.precip {
-  background: linear-gradient(to right, #00008b, #008b8b); /* Darker gradient background */
+  background: linear-gradient(to right, #764BA2, #667EEA); /* Darker gradient background */
   color: white;
 }
-   
+
 .collapsible.rn {
-  background: linear-gradient(to right, #D2691E, #FFA07A);
+  background: linear-gradient(to right, #1D2671, #C33764);
   color: white;
 }
    
 .collapsible.sensible {
-  background: linear-gradient(to right, #8B0000, #FF4500);
+  background: linear-gradient(to right, #93A5CF, #E4EfE9);
   color: white;
 }
   
@@ -95,6 +95,11 @@ nav-menu: true
 
 .collapsible.battery {
   background: linear-gradient(to right, #000000, #333333); /* Gradient background from black to dark gray */
+  color: white;
+}
+
+.collapsible.other {
+  background: linear-gradient(to right, #333333, #777777); /* Gradient background from black to dark gray */
   color: white;
 }
    
@@ -120,9 +125,11 @@ h4, h5 {
 }
 
 .plot {
-  width: 48%;
-  margin-right: 2%;
+  width: 50%;
+  margin-right: -5px;
 }
+
+
 
 .flex-container img {
   max-width: 100%;
@@ -245,63 +252,6 @@ h4, h5 {
 </div> <!-- This is the closing tag for content div under Temperature -->
 </div> <!-- This is the closing tag for collapsibleContainer div under Temperature -->
 <!-- END Temperature section: -->
-
-
-<!-- Start Precipitation section: -->
-<div class="collapsibleContainer">
-<button class="collapsible precip">Precipitation</button>
-<div class="content">
-
-<!-- Start precip_Tot: -->
-<h2>Precipitation (precip_Tot)</h2>
-
-<div class="flex-container">
-
-  <!-- Fluxtower 1_2 Plots -->
-  <h3>Flux Towers 1 & 2</h3>
-  <div class="row">
-    <div class="plot">
-      <h5>Yesterday</h5>
-      <a href="fluxtower1_2/daily_plots/fluxtower1_2_precip_Tot_yesterday.png" target="_blank">
-        <img src="fluxtower1_2/daily_plots/fluxtower1_2_precip_Tot_yesterday.png" alt="Fluxtower1_2 - precip_Tot yesterday" onerror="imgError(this);">
-      </a>
-    </div>
-
-    <div class="plot">
-      <h5>Today</h5>
-      <a href="fluxtower1_2/daily_plots/fluxtower1_2_precip_Tot_today.png" target="_blank">
-        <img src="fluxtower1_2/daily_plots/fluxtower1_2_precip_Tot_today.png" alt="Fluxtower1_2 - precip_Tot today" onerror="imgError(this);">
-      </a>
-    </div>
-  </div>
-
-  <!-- Fluxtower 3_4 Plots -->
-  <h3>Flux Towers 3 & 4</h3>
-  <div class="row">
-    <div class="plot">
-      <h5>Yesterday</h5>
-      <a href="fluxtower3_4/daily_plots/fluxtower3_4_precip_Tot_yesterday.png" target="_blank">
-        <img src="fluxtower3_4/daily_plots/fluxtower3_4_precip_Tot_yesterday.png" alt="Fluxtower3_4 - precip_Tot yesterday" onerror="imgError(this);">
-      </a>
-    </div>
-
-    <div class="plot">
-      <h5>Today</h5>
-      <a href="fluxtower3_4/daily_plots/fluxtower3_4_precip_Tot_today.png" target="_blank">
-        <img src="fluxtower3_4/daily_plots/fluxtower3_4_precip_Tot_today.png" alt="Fluxtower3_4 - precip_Tot today" onerror="imgError(this);">
-      </a>
-    </div>
-  </div>
-
-</div>
-
-<!-- end precip_Tot: -->
-
-
-</div> <!-- This is the closing tag for content div under Precipitation -->
-</div> <!-- This is the closing tag for collapsibleContainer div under Precipitation -->
-<!-- END Precipitation section: -->
-
 
 
 
@@ -625,6 +575,72 @@ h4, h5 {
 </div> <!-- This is the closing tag for content div under Net Radiation -->
 </div> <!-- This is the closing tag for collapsibleContainer div under Net Radiation -->
 <!-- END Net Radiation section: -->
+
+
+
+
+
+
+
+
+
+<!-- Start Precipitation section: -->
+<div class="collapsibleContainer">
+<button class="collapsible precip">Precipitation</button>
+<div class="content">
+
+<!-- Start precip_Tot: -->
+<h2>Precipitation (precip_Tot)</h2>
+
+<div class="flex-container">
+
+  <!-- Fluxtower 1_2 Plots -->
+  <h3>Flux Towers 1 & 2</h3>
+  <div class="row">
+    <div class="plot">
+      <h5>Yesterday</h5>
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_precip_Tot_yesterday.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_precip_Tot_yesterday.png" alt="Fluxtower1_2 - precip_Tot yesterday" onerror="imgError(this);">
+      </a>
+    </div>
+
+    <div class="plot">
+      <h5>Today</h5>
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_precip_Tot_today.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_precip_Tot_today.png" alt="Fluxtower1_2 - precip_Tot today" onerror="imgError(this);">
+      </a>
+    </div>
+  </div>
+
+  <!-- Fluxtower 3_4 Plots -->
+  <h3>Flux Towers 3 & 4</h3>
+  <div class="row">
+    <div class="plot">
+      <h5>Yesterday</h5>
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_precip_Tot_yesterday.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_precip_Tot_yesterday.png" alt="Fluxtower3_4 - precip_Tot yesterday" onerror="imgError(this);">
+      </a>
+    </div>
+
+    <div class="plot">
+      <h5>Today</h5>
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_precip_Tot_today.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_precip_Tot_today.png" alt="Fluxtower3_4 - precip_Tot today" onerror="imgError(this);">
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<!-- end precip_Tot: -->
+
+
+</div> <!-- This is the closing tag for content div under Precipitation -->
+</div> <!-- This is the closing tag for collapsibleContainer div under Precipitation -->
+<!-- END Precipitation section: -->
+
+
+
 
 
 
@@ -1249,55 +1265,10 @@ h4, h5 {
 </div>
 
 <!-- end Tsoil3_Avg: -->
-<!-- Start Tsoil4_Avg: -->
-<h2>Soil Temperature, Level 4 (Tsoil4_Avg)</h2>
 
-<div class="flex-container">
-
-  <!-- Fluxtower 1_2 Plots -->
-  <h3>Flux Towers 1 & 2</h3>
-  <div class="row">
-    <div class="plot">
-      <h5>Yesterday</h5>
-      <a href="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil4_Avg_yesterday.png" target="_blank">
-        <img src="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil4_Avg_yesterday.png" alt="Fluxtower1_2 - Tsoil4_Avg yesterday" onerror="imgError(this);">
-      </a>
-    </div>
-
-    <div class="plot">
-      <h5>Today</h5>
-      <a href="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil4_Avg_today.png" target="_blank">
-        <img src="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil4_Avg_today.png" alt="Fluxtower1_2 - Tsoil4_Avg today" onerror="imgError(this);">
-      </a>
-    </div>
-  </div>
-
-  <!-- Fluxtower 3_4 Plots -->
-  <h3>Flux Towers 3 & 4</h3>
-  <div class="row">
-    <div class="plot">
-      <h5>Yesterday</h5>
-      <a href="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil4_Avg_yesterday.png" target="_blank">
-        <img src="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil4_Avg_yesterday.png" alt="Fluxtower3_4 - Tsoil4_Avg yesterday" onerror="imgError(this);">
-      </a>
-    </div>
-
-    <div class="plot">
-      <h5>Today</h5>
-      <a href="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil4_Avg_today.png" target="_blank">
-        <img src="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil4_Avg_today.png" alt="Fluxtower3_4 - Tsoil4_Avg today" onerror="imgError(this);">
-      </a>
-    </div>
-  </div>
-
-</div>
-
-<!-- end Tsoil4_Avg: -->
 </div> <!-- This is the closing tag for content div under Soil -->
 </div> <!-- This is the closing tag for collapsibleContainer div under Soil -->
 <!-- END Soil section: -->
-
-
 
 
 
