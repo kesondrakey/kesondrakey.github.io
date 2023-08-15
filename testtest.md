@@ -67,14 +67,14 @@ nav-menu: true
   background: linear-gradient(to right, #2E3192, #1BFFFF); /* Darker gradient background */
   color: white;
 }
-   #2E3192 → #1BFFFF
+
 .collapsible.rn {
   background: linear-gradient(to right, #D4145A, #FBB03B);
   color: white;
 }
    
 .collapsible.sensible {
-  background: linear-gradient(to right, #8B0000, #FF4500);
+  background: linear-gradient(to right, #93A5CF, #E4EfE9);
   color: white;
 }
   
@@ -99,7 +99,7 @@ nav-menu: true
 }
 
 .collapsible.other {
-  background: linear-gradient(to right, #868F96, #596164); /* Gradient background from black to dark gray */
+  background: linear-gradient(to right, #596164, #868F96); /* Gradient background from black to dark gray */
   color: white;
 }
    
