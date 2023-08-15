@@ -63,15 +63,16 @@ nav-menu: true
   color: white;
 }
 
-.collapsible.precipitation {
+.collapsible.precip {
   background: linear-gradient(to right, #00008b, #008b8b); /* Darker gradient background */
   color: white;
 }
    
 .collapsible.rn {
-  background: linear-gradient(to right,#FFD700, #FFFF00); /* Yellow to Black gradient background */
+  background: linear-gradient(to right, #FF8C00, #FFA500);
   color: white;
 }
+
    
 .collapsible.sensible {
   background: linear-gradient(to right, #8B0000, #FF4500);
@@ -79,9 +80,10 @@ nav-menu: true
 }
   
 .collapsible.latent {
-  background: linear-gradient(to right, #008B8B, #20B2AA);
+  background: linear-gradient(to right, #008080, #20B2AA);
   color: white;
 }
+
 
 
 .collapsible.wind {
