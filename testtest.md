@@ -65,9 +65,20 @@ nav-menu: true
 }
 
 .collapsible.precipitation {
-  background: linear-gradient(to right, #00008b, #008b8b); /* Darker gradient background */
+  background: linear-gradient(to right, #808080, #FFFFFF); /* Gray to White gradient background */
+  color: black;
+}
+   
+.collapsible.rn {
+  background: linear-gradient(to right, #FFFF00, #000000); /* Yellow to Black gradient background */
   color: white;
 }
+
+.collapsible.battery {
+  background: linear-gradient(to right, #000000, #333333); /* Gradient background from black to dark gray */
+  color: white;
+}
+   
 
 .collapsible.soil {
   background: linear-gradient(to right, #004d00, #7cfc00);
@@ -401,7 +412,7 @@ h4, h5 {
  
 <!-- Start Net Radiation section: -->
 <div class="collapsibleContainer">
-<button class="collapsible radiation">Net Radiation</button>
+<button class="collapsible rn">Net Radiation</button>
 <div class="content">
 
 <!-- Start albedo_Avg: -->
