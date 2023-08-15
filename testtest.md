@@ -777,6 +777,11 @@ h4, h5 {
 </div> <!-- This is the closing tag for collapsibleContainer div under Sensible Heat Flux -->
 <!-- END Sensible Heat Flux section: -->
 
+
+
+
+
+
  
 <!-- Start wind section: -->
 <div class="collapsibleContainer">
@@ -964,6 +969,12 @@ h4, h5 {
 <!-- END wind section: -->
 
 
+
+
+
+
+
+
 <!-- Start Soil section: -->
 <div class="collapsibleContainer">
 <button class="collapsible soil">Soil</button>
@@ -980,15 +991,15 @@ h4, h5 {
   <div class="row">
     <div class="plot">
       <h5>Yesterday</h5>
-      <a href="fluxtower1_2/daily_plots/fluxtower1_2_soil_water_Avg.1_yesterday.png" target="_blank">
-        <img src="fluxtower1_2/daily_plots/fluxtower1_2_soil_water_Avg.1_yesterday.png" alt="Fluxtower1_2 - soil_water_Avg.1 yesterday" onerror="imgError(this);">
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_soil_water_Avg.1._yesterday.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_soil_water_Avg.1._yesterday.png" alt="Fluxtower1_2 - soil_water_Avg.1 yesterday" onerror="imgError(this);">
       </a>
     </div>
 
     <div class="plot">
       <h5>Today</h5>
-      <a href="fluxtower1_2/daily_plots/fluxtower1_2_soil_water_Avg.1_today.png" target="_blank">
-        <img src="fluxtower1_2/daily_plots/fluxtower1_2_soil_water_Avg.1_today.png" alt="Fluxtower1_2 - soil_water_Avg.1 today" onerror="imgError(this);">
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_soil_water_Avg.1._today.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_soil_water_Avg.1._today.png" alt="Fluxtower1_2 - soil_water_Avg.1 today" onerror="imgError(this);">
       </a>
     </div>
   </div>
@@ -998,15 +1009,15 @@ h4, h5 {
   <div class="row">
     <div class="plot">
       <h5>Yesterday</h5>
-      <a href="fluxtower3_4/daily_plots/fluxtower3_4_soil_water_Avg.1_yesterday.png" target="_blank">
-        <img src="fluxtower3_4/daily_plots/fluxtower3_4_soil_water_Avg.1_yesterday.png" alt="Fluxtower3_4 - soil_water_Avg.1 yesterday" onerror="imgError(this);">
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_soil_water_Avg.1._yesterday.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_soil_water_Avg.1._yesterday.png" alt="Fluxtower3_4 - soil_water_Avg.1 yesterday" onerror="imgError(this);">
       </a>
     </div>
 
     <div class="plot">
       <h5>Today</h5>
-      <a href="fluxtower3_4/daily_plots/fluxtower3_4_soil_water_Avg.1_today.png" target="_blank">
-        <img src="fluxtower3_4/daily_plots/fluxtower3_4_soil_water_Avg.1_today.png" alt="Fluxtower3_4 - soil_water_Avg.1 today" onerror="imgError(this);">
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_soil_water_Avg.1._today.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_soil_water_Avg.1._today.png" alt="Fluxtower3_4 - soil_water_Avg.1 today" onerror="imgError(this);">
       </a>
     </div>
   </div>
@@ -1024,15 +1035,15 @@ h4, h5 {
   <div class="row">
     <div class="plot">
       <h5>Yesterday</h5>
-      <a href="fluxtower1_2/daily_plots/fluxtower1_2_soil_water_Avg.2_yesterday.png" target="_blank">
-        <img src="fluxtower1_2/daily_plots/fluxtower1_2_soil_water_Avg.2_yesterday.png" alt="Fluxtower1_2 - soil_water_Avg.2 yesterday" onerror="imgError(this);">
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_soil_water_Avg.2._yesterday.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_soil_water_Avg.2._yesterday.png" alt="Fluxtower1_2 - soil_water_Avg.2 yesterday" onerror="imgError(this);">
       </a>
     </div>
 
     <div class="plot">
       <h5>Today</h5>
-      <a href="fluxtower1_2/daily_plots/fluxtower1_2_soil_water_Avg.2_today.png" target="_blank">
-        <img src="fluxtower1_2/daily_plots/fluxtower1_2_soil_water_Avg.2_today.png" alt="Fluxtower1_2 - soil_water_Avg.2 today" onerror="imgError(this);">
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_soil_water_Avg...png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_soil_water_Avg.2._today.png" alt="Fluxtower1_2 - soil_water_Avg.2 today" onerror="imgError(this);">
       </a>
     </div>
   </div>
@@ -1042,15 +1053,15 @@ h4, h5 {
   <div class="row">
     <div class="plot">
       <h5>Yesterday</h5>
-      <a href="fluxtower3_4/daily_plots/fluxtower3_4_soil_water_Avg.2_yesterday.png" target="_blank">
-        <img src="fluxtower3_4/daily_plots/fluxtower3_4_soil_water_Avg.2_yesterday.png" alt="Fluxtower3_4 - soil_water_Avg.2 yesterday" onerror="imgError(this);">
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_soil_water_Avg.2._yesterday.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_soil_water_Avg.2._yesterday.png" alt="Fluxtower3_4 - soil_water_Avg.2 yesterday" onerror="imgError(this);">
       </a>
     </div>
 
     <div class="plot">
       <h5>Today</h5>
-      <a href="fluxtower3_4/daily_plots/fluxtower3_4_soil_water_Avg.2_today.png" target="_blank">
-        <img src="fluxtower3_4/daily_plots/fluxtower3_4_soil_water_Avg.2_today.png" alt="Fluxtower3_4 - soil_water_Avg.2 today" onerror="imgError(this);">
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_soil_water_Avg.2._today.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_soil_water_Avg.2._today.png" alt="Fluxtower3_4 - soil_water_Avg.2 today" onerror="imgError(this);">
       </a>
     </div>
   </div>
@@ -1069,15 +1080,15 @@ h4, h5 {
   <div class="row">
     <div class="plot">
       <h5>Yesterday</h5>
-      <a href="fluxtower1_2/daily_plots/fluxtower1_2_soil_water_Avg.3_yesterday.png" target="_blank">
-        <img src="fluxtower1_2/daily_plots/fluxtower1_2_soil_water_Avg.3_yesterday.png" alt="Fluxtower1_2 - soil_water_Avg.3 yesterday" onerror="imgError(this);">
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_soil_water_Avg.3._yesterday.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_soil_water_Avg.3._yesterday.png" alt="Fluxtower1_2 - soil_water_Avg.3 yesterday" onerror="imgError(this);">
       </a>
     </div>
 
     <div class="plot">
       <h5>Today</h5>
-      <a href="fluxtower1_2/daily_plots/fluxtower1_2_soil_water_Avg.3_today.png" target="_blank">
-        <img src="fluxtower1_2/daily_plots/fluxtower1_2_soil_water_Avg.3_today.png" alt="Fluxtower1_2 - soil_water_Avg.3 today" onerror="imgError(this);">
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_soil_water_Avg.3._today.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_soil_water_Avg.3._today.png" alt="Fluxtower1_2 - soil_water_Avg.3 today" onerror="imgError(this);">
       </a>
     </div>
   </div>
@@ -1087,15 +1098,15 @@ h4, h5 {
   <div class="row">
     <div class="plot">
       <h5>Yesterday</h5>
-      <a href="fluxtower3_4/daily_plots/fluxtower3_4_soil_water_Avg.3_yesterday.png" target="_blank">
-        <img src="fluxtower3_4/daily_plots/fluxtower3_4_soil_water_Avg.3_yesterday.png" alt="Fluxtower3_4 - soil_water_Avg.3 yesterday" onerror="imgError(this);">
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_soil_water_Avg.3._yesterday.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_soil_water_Avg.3._yesterday.png" alt="Fluxtower3_4 - soil_water_Avg.3 yesterday" onerror="imgError(this);">
       </a>
     </div>
 
     <div class="plot">
       <h5>Today</h5>
-      <a href="fluxtower3_4/daily_plots/fluxtower3_4_soil_water_Avg.3_today.png" target="_blank">
-        <img src="fluxtower3_4/daily_plots/fluxtower3_4_soil_water_Avg.3_today.png" alt="Fluxtower3_4 - soil_water_Avg.3 today" onerror="imgError(this);">
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_soil_water_Avg.3._today.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_soil_water_Avg.3._today.png" alt="Fluxtower3_4 - soil_water_Avg.3 today" onerror="imgError(this);">
       </a>
     </div>
   </div>
@@ -1104,12 +1115,6 @@ h4, h5 {
 
 <!-- end soil_water_Avg.3: -->
 <h1>Soil Temperature</h1>
-
-<!-- Start Soil section: -->
-<div class="collapsibleContainer">
-<button class="collapsible Sensible">Soil</button>
-<div class="content">
-
 <!-- Start Tsoil1_Avg: -->
 <h2>Soil Temperature, Level 1 (Tsoil1_Avg)</h2>
 
@@ -1288,10 +1293,13 @@ h4, h5 {
 </div>
 
 <!-- end Tsoil4_Avg: -->
-
 </div> <!-- This is the closing tag for content div under Soil -->
 </div> <!-- This is the closing tag for collapsibleContainer div under Soil -->
 <!-- END Soil section: -->
+
+
+
+
 
 
 
