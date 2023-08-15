@@ -148,8 +148,8 @@ h4, h5 {
 <div class="flex-container">
 
   <!-- Fluxtower 1_2 Plots -->
+  <h3>Flux Towers 1 & 2</h3>
   <div class="row">
-   <h4>Flux Towers 1 & 2</h4>
     <div class="plot">
       <h5>Yesterday</h5>
       <a href="fluxtower1_2/daily_plots/fluxtower1_2_CO2_li_wpl_H_li_yesterday.png" target="_blank">
@@ -166,8 +166,8 @@ h4, h5 {
   </div>
 
   <!-- Fluxtower 3_4 Plots -->
+  <h3>Flux Towers 3 & 4</h3>
   <div class="row">
-   <h4>Flux Towers 3 & 4</h4>
     <div class="plot">
       <h5>Yesterday</h5>
       <a href="fluxtower3_4/daily_plots/fluxtower3_4_CO2_li_wpl_H_li_yesterday.png" target="_blank">
