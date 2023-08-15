@@ -148,7 +148,7 @@ h4, h5 {
 <div class="flex-container">
 
   <!-- Fluxtower 1_2 Plots -->
-  <h4>Flux Towers 1 & 2</h4>
+  <h3>Flux Towers 1 & 2</h3>
   <div class="row">
     <div class="plot">
       <h5>Yesterday</h5>
@@ -166,7 +166,7 @@ h4, h5 {
   </div>
 
   <!-- Fluxtower 3_4 Plots -->
-  <h4>Flux Towers 3 & 4</h4>
+  <h3>Flux Towers 3 & 4</h3>
   <div class="row">
     <div class="plot">
       <h5>Yesterday</h5>
