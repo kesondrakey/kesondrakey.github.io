@@ -1,5 +1,5 @@
 ---
-  layout: post
+layout: post
 title: Tower Comparisons
 description: Tower Comparisons
 nav-menu: true 
@@ -49,30 +49,48 @@ nav-menu: true
       box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2); /* Shadow for 3D effect */
   }
 
-.collapsible.other {
-  background: linear-gradient(to right, #000, #2f2f2f); /* Darker gradient background */
-                              color: white;
+    .flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.flex-item {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
+
+.vertical-divider {
+  width: 2px;
+  background-color: darkgrey;
+  height: 100%;
+  margin: 0 10px;
+}
+
+
+
+.collapsible.relativehum {
+  background: linear-gradient(to right, #FF7F00, #FFB347);
+  color: white;
+}
+
+.collapsible.precip {
+  background: linear-gradient(to right, #00008b, #008b8b);
+  color: white;
+}
+
+.collapsible.radiation {
+  background: linear-gradient(to right, #FFD700, #FFFFE0);
+  color: white;
 }
 
 .collapsible.temperature {
   background: linear-gradient(to right, #b20000, #e67300); /* Darker gradient background */
                               color: white;
 }
-.collapsible.relativehum {
-  background: linear-gradient(to right, #FF7F00, #FFB347); /* Gradient background from orange to light orange */
-  color: white;
-}
 
-
-.collapsible.battery {
-  background: linear-gradient(to right, #000000, #333333); /* Gradient background from black to dark gray */
-                              color: white;
-}
-
-.collapsible.precip {
-  background: linear-gradient(to right, #00008b, #008b8b); /* Darker gradient background */
-                              color: white;
-}
 
 .collapsible.soil {
   background: linear-gradient(to right, #004d00, #7cfc00); /* Darker gradient background */
@@ -99,10 +117,6 @@ nav-menu: true
   color: white;
 }
 
-.collapsible.radiation {
-  background: linear-gradient(to right, #FFD700, #FFFFE0); /* Gradient background from yellow to light yellow */
-  color: white;
-}
 
 
 
@@ -179,7 +193,8 @@ nav-menu: true
   </div>
 
   <div style="width: 2px; background-color: darkgrey; height: 100%; margin: 0 10px;"></div>
-
+  
+  <div class="vertical-divider"></div>
   <!-- Fluxtower 3_4 Plots -->
   <div>
     <h4>Flux Towers 3 & 4 - Yesterday</h4>
