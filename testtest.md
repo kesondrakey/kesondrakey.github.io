@@ -146,59 +146,6 @@ h4, h5 {
 <!-- This is an HTML comment, it won't appear on the page -->
 <!-- Start site objects and things here: -->
 
-<!-- Start Carbon Flux section: -->
-<div class="collapsibleContainer">
-<button class="collapsible carbonflux">Carbon Flux</button>
-<div class="content">
-
-<!-- Start CO2_li_wpl_H_li: -->
-<h2>Carbon Flux (CO2_li_wpl_H_li)</h2>
-
-<div class="flex-container">
-
-  <!-- Fluxtower 1_2 Plots -->
-  <h3>Flux Towers 1 & 2</h3>
-  <div class="row">
-    <div class="plot">
-      <h5>Yesterday</h5>
-      <a href="fluxtower1_2/daily_plots/fluxtower1_2_CO2_li_wpl_H_li_yesterday.png" target="_blank">
-        <img src="fluxtower1_2/daily_plots/fluxtower1_2_CO2_li_wpl_H_li_yesterday.png" alt="Fluxtower1_2 - CO2_li_wpl_H_li yesterday" onerror="imgError(this);">
-      </a>
-    </div>
-
-    <div class="plot">
-      <h5>Today</h5>
-      <a href="fluxtower1_2/daily_plots/fluxtower1_2_CO2_li_wpl_H_li_today.png" target="_blank">
-        <img src="fluxtower1_2/daily_plots/fluxtower1_2_CO2_li_wpl_H_li_today.png" alt="Fluxtower1_2 - CO2_li_wpl_H_li today" onerror="imgError(this);">
-      </a>
-    </div>
-  </div>
-
-  <!-- Fluxtower 3_4 Plots -->
-  <h3>Flux Towers 3 & 4</h3>
-  <div class="row">
-    <div class="plot">
-      <h5>Yesterday</h5>
-      <a href="fluxtower3_4/daily_plots/fluxtower3_4_CO2_li_wpl_H_li_yesterday.png" target="_blank">
-        <img src="fluxtower3_4/daily_plots/fluxtower3_4_CO2_li_wpl_H_li_yesterday.png" alt="Fluxtower3_4 - CO2_li_wpl_H_li yesterday" onerror="imgError(this);">
-      </a>
-    </div>
-
-    <div class="plot">
-      <h5>Today</h5>
-      <a href="fluxtower3_4/daily_plots/fluxtower3_4_CO2_li_wpl_H_li_today.png" target="_blank">
-        <img src="fluxtower3_4/daily_plots/fluxtower3_4_CO2_li_wpl_H_li_today.png" alt="Fluxtower3_4 - CO2_li_wpl_H_li today" onerror="imgError(this);">
-      </a>
-    </div>
-  </div>
-
-</div>
-
-<!-- end CO2_li_wpl_H_li: -->
-
-</div> <!-- This is the closing tag for content div under Carbon Flux -->
-</div> <!-- This is the closing tag for collapsibleContainer div under Carbon Flux -->
-<!-- END Carbon Flux section: -->
 
 <!-- Start Temperature section: -->
 <div class="collapsibleContainer">
@@ -298,62 +245,6 @@ h4, h5 {
 </div> <!-- This is the closing tag for content div under Temperature -->
 </div> <!-- This is the closing tag for collapsibleContainer div under Temperature -->
 <!-- END Temperature section: -->
-
-
-<!-- Start Relative Humidity section: -->
-<div class="collapsibleContainer">
-<button class="collapsible rel">Relative Humidity</button>
-<div class="content">
-
-<!-- Start RH_tmpr_rh_mean: -->
-<h2>Relative Humidity (RH_tmpr_rh_mean)</h2>
-
-<div class="flex-container">
-
-  <!-- Fluxtower 1_2 Plots -->
-  <h3>Flux Towers 1 & 2</h3>
-  <div class="row">
-    <div class="plot">
-      <h5>Yesterday</h5>
-      <a href="fluxtower1_2/daily_plots/fluxtower1_2_RH_tmpr_rh_mean_yesterday.png" target="_blank">
-        <img src="fluxtower1_2/daily_plots/fluxtower1_2_RH_tmpr_rh_mean_yesterday.png" alt="Fluxtower1_2 - RH_tmpr_rh_mean yesterday" onerror="imgError(this);">
-      </a>
-    </div>
-
-    <div class="plot">
-      <h5>Today</h5>
-      <a href="fluxtower1_2/daily_plots/fluxtower1_2_RH_tmpr_rh_mean_today.png" target="_blank">
-        <img src="fluxtower1_2/daily_plots/fluxtower1_2_RH_tmpr_rh_mean_today.png" alt="Fluxtower1_2 - RH_tmpr_rh_mean today" onerror="imgError(this);">
-      </a>
-    </div>
-  </div>
-
-  <!-- Fluxtower 3_4 Plots -->
-  <h3>Flux Towers 3 & 4</h3>
-  <div class="row">
-    <div class="plot">
-      <h5>Yesterday</h5>
-      <a href="fluxtower3_4/daily_plots/fluxtower3_4_RH_tmpr_rh_mean_yesterday.png" target="_blank">
-        <img src="fluxtower3_4/daily_plots/fluxtower3_4_RH_tmpr_rh_mean_yesterday.png" alt="Fluxtower3_4 - RH_tmpr_rh_mean yesterday" onerror="imgError(this);">
-      </a>
-    </div>
-
-    <div class="plot">
-      <h5>Today</h5>
-      <a href="fluxtower3_4/daily_plots/fluxtower3_4_RH_tmpr_rh_mean_today.png" target="_blank">
-        <img src="fluxtower3_4/daily_plots/fluxtower3_4_RH_tmpr_rh_mean_today.png" alt="Fluxtower3_4 - RH_tmpr_rh_mean today" onerror="imgError(this);">
-      </a>
-    </div>
-  </div>
-
-</div>
-
-<!-- end RH_tmpr_rh_mean: -->
-
-</div> <!-- This is the closing tag for content div under Relative Humidity -->
-</div> <!-- This is the closing tag for collapsibleContainer div under Relative Humidity -->
-<!-- END Relative Humidity section: -->
-
 
 
 <!-- Start Precipitation section: -->
@@ -736,9 +627,14 @@ h4, h5 {
 <!-- END Net Radiation section: -->
 
 
+
+
+
+
+
 <!-- Start Latent Heat Flux section: -->
 <div class="collapsibleContainer">
-<button class="collapsible latent">Latent Heat Flux</button>
+<button class="collapsible latent">Sensible & Latent Heat Flux</button>
 <div class="content">
 
 <!-- Start LE_li_irga: -->
@@ -830,16 +726,6 @@ h4, h5 {
 
 <!-- end LE_li_wpl: -->
 
-</div> <!-- This is the closing tag for content div under Latent Heat Flux -->
-</div> <!-- This is the closing tag for collapsibleContainer div under Latent Heat Flux -->
-<!-- END Latent Heat Flux section: -->
-
-
-
-<!-- Start Sensible Heat Flux section: -->
-<div class="collapsibleContainer">
-<button class="collapsible sensible">Sensible Heat Flux</button>
-<div class="content">
 
 <!-- Start Hs: -->
 <h2>Sensible Heat Flux (Hs)</h2>
@@ -1411,7 +1297,7 @@ h4, h5 {
 
 <!-- Start Battery section: -->
 <div class="collapsibleContainer">
-<button class="collapsible precip">Battery</button>
+<button class="collapsible battery">Battery</button>
 <div class="content">
 
 <!-- Start batt_volt_Avg: -->
@@ -1508,3 +1394,104 @@ h4, h5 {
 </div> <!-- This is the closing tag for collapsibleContainer div under Battery -->
 <!-- END Battery section: -->
 
+
+
+<!-- Start Other section: -->
+<div class="collapsibleContainer">
+<button class="collapsible other">Other</button>
+<div class="content">
+
+<!-- Start CO2_li_wpl_H_li: -->
+<h2>Carbon Flux (CO2_li_wpl_H_li)</h2>
+
+<div class="flex-container">
+
+  <!-- Fluxtower 1_2 Plots -->
+  <h3>Flux Towers 1 & 2</h3>
+  <div class="row">
+    <div class="plot">
+      <h5>Yesterday</h5>
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_CO2_li_wpl_H_li_yesterday.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_CO2_li_wpl_H_li_yesterday.png" alt="Fluxtower1_2 - CO2_li_wpl_H_li yesterday" onerror="imgError(this);">
+      </a>
+    </div>
+
+    <div class="plot">
+      <h5>Today</h5>
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_CO2_li_wpl_H_li_today.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_CO2_li_wpl_H_li_today.png" alt="Fluxtower1_2 - CO2_li_wpl_H_li today" onerror="imgError(this);">
+      </a>
+    </div>
+  </div>
+
+  <!-- Fluxtower 3_4 Plots -->
+  <h3>Flux Towers 3 & 4</h3>
+  <div class="row">
+    <div class="plot">
+      <h5>Yesterday</h5>
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_CO2_li_wpl_H_li_yesterday.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_CO2_li_wpl_H_li_yesterday.png" alt="Fluxtower3_4 - CO2_li_wpl_H_li yesterday" onerror="imgError(this);">
+      </a>
+    </div>
+
+    <div class="plot">
+      <h5>Today</h5>
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_CO2_li_wpl_H_li_today.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_CO2_li_wpl_H_li_today.png" alt="Fluxtower3_4 - CO2_li_wpl_H_li today" onerror="imgError(this);">
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<!-- end CO2_li_wpl_H_li: -->
+
+<!-- Start RH_tmpr_rh_mean: -->
+<h2>Relative Humidity (RH_tmpr_rh_mean)</h2>
+
+<div class="flex-container">
+
+  <!-- Fluxtower 1_2 Plots -->
+  <h3>Flux Towers 1 & 2</h3>
+  <div class="row">
+    <div class="plot">
+      <h5>Yesterday</h5>
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_RH_tmpr_rh_mean_yesterday.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_RH_tmpr_rh_mean_yesterday.png" alt="Fluxtower1_2 - RH_tmpr_rh_mean yesterday" onerror="imgError(this);">
+      </a>
+    </div>
+
+    <div class="plot">
+      <h5>Today</h5>
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_RH_tmpr_rh_mean_today.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_RH_tmpr_rh_mean_today.png" alt="Fluxtower1_2 - RH_tmpr_rh_mean today" onerror="imgError(this);">
+      </a>
+    </div>
+  </div>
+
+  <!-- Fluxtower 3_4 Plots -->
+  <h3>Flux Towers 3 & 4</h3>
+  <div class="row">
+    <div class="plot">
+      <h5>Yesterday</h5>
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_RH_tmpr_rh_mean_yesterday.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_RH_tmpr_rh_mean_yesterday.png" alt="Fluxtower3_4 - RH_tmpr_rh_mean yesterday" onerror="imgError(this);">
+      </a>
+    </div>
+
+    <div class="plot">
+      <h5>Today</h5>
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_RH_tmpr_rh_mean_today.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_RH_tmpr_rh_mean_today.png" alt="Fluxtower3_4 - RH_tmpr_rh_mean today" onerror="imgError(this);">
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<!-- end RH_tmpr_rh_mean: -->
+
+
+</div> <!-- This is the closing tag for content div under Battery -->
+</div> <!-- This is the closing tag for collapsibleContainer div under Battery -->
+<!-- END Other section: -->
