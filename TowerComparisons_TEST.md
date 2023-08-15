@@ -55,7 +55,7 @@ function imgError(image) {
 }
 
 .collapsible.temperature {
-  background: linear-gradient(to right, #b20000, #e67300); /* Darker gradient background */
+  background: linear-gradient(to right, #e67300, #b20000); /* Darker gradient background */
   color: white;
 }
   
