@@ -4,7 +4,7 @@ title: Tower Comparisons
 description: Tower Comparisons
 nav-menu: true 
 ---
- 
+  
   <script>
   window.onload = function() {
     var coll = document.getElementsByClassName("collapsible");
