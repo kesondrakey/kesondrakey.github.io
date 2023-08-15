@@ -50,7 +50,7 @@ nav-menu: true
 }
 
 .collapsible.carbonflux {
-  background: linear-gradient(to right, #505050, #A9A9A9);
+  background: linear-gradient(to right, #614385, #516395);
   color: white;
 }
 .collapsible.temperature {
@@ -59,7 +59,7 @@ nav-menu: true
 }
   
 .collapsible.rel {
-  background: linear-gradient(to right, #006400, #00FF00); /* Darker gradient background */
+  background: linear-gradient(to right, #662D8C, #ED1E79); /* Darker gradient background */
   color: white;
 }
 
@@ -81,7 +81,7 @@ nav-menu: true
 }
   
 .collapsible.latent {
-  background: linear-gradient(to right, #008080, #20B2AA);
+  background: linear-gradient(to right, #2E3192, #1BFFFF);
   color: white;
 }
 
