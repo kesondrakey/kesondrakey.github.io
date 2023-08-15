@@ -121,7 +121,7 @@ h4, h5 {
 
 .plot {
   width: 48%;
-  margin-right: 1%;
+  margin-right: 2%;
 }
 
 .flex-container img {
