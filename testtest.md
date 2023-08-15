@@ -64,7 +64,7 @@ nav-menu: true
 }
 
 .collapsible.precip {
-  background: linear-gradient(to right, #667EEA, #764BA2); /* Darker gradient background */
+  background: linear-gradient(to right, #764BA2, #667EEA); /* Darker gradient background */
   color: white;
 }
 
@@ -99,7 +99,7 @@ nav-menu: true
 }
 
 .collapsible.other {
-  background: linear-gradient(to right, #333333, #E4EfE9); /* Gradient background from black to dark gray */
+  background: linear-gradient(to right, #333333, #777777); /* Gradient background from black to dark gray */
   color: white;
 }
    
