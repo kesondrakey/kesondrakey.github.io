@@ -51,7 +51,7 @@ nav-menu: true
 
 .collapsible.carbonflux {
   background: linear-gradient(to right, #505050, #A9A9A9);
-  color: black;
+  color: white;
 }
 
 .collapsible.temperature {
