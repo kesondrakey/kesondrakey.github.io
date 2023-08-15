@@ -125,8 +125,8 @@ h4, h5 {
 }
 
 .plot {
-  width: 48%;
-  margin-right: 0.5%; /* Even smaller percentage */
+  width: 45%;
+  margin-right: -10px;
 }
 
 .plot:last-child {
