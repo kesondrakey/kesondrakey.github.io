@@ -126,7 +126,7 @@ h4, h5 {
 
 .plot {
   width: 48%;
-  margin-right: 2%;
+  margin-right: 4%;
 }
 
 .flex-container img {
@@ -1263,55 +1263,10 @@ h4, h5 {
 </div>
 
 <!-- end Tsoil3_Avg: -->
-<!-- Start Tsoil4_Avg: -->
-<h2>Soil Temperature, Level 4 (Tsoil4_Avg)</h2>
 
-<div class="flex-container">
-
-  <!-- Fluxtower 1_2 Plots -->
-  <h3>Flux Towers 1 & 2</h3>
-  <div class="row">
-    <div class="plot">
-      <h5>Yesterday</h5>
-      <a href="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil4_Avg_yesterday.png" target="_blank">
-        <img src="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil4_Avg_yesterday.png" alt="Fluxtower1_2 - Tsoil4_Avg yesterday" onerror="imgError(this);">
-      </a>
-    </div>
-
-    <div class="plot">
-      <h5>Today</h5>
-      <a href="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil4_Avg_today.png" target="_blank">
-        <img src="fluxtower1_2/daily_plots/fluxtower1_2_Tsoil4_Avg_today.png" alt="Fluxtower1_2 - Tsoil4_Avg today" onerror="imgError(this);">
-      </a>
-    </div>
-  </div>
-
-  <!-- Fluxtower 3_4 Plots -->
-  <h3>Flux Towers 3 & 4</h3>
-  <div class="row">
-    <div class="plot">
-      <h5>Yesterday</h5>
-      <a href="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil4_Avg_yesterday.png" target="_blank">
-        <img src="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil4_Avg_yesterday.png" alt="Fluxtower3_4 - Tsoil4_Avg yesterday" onerror="imgError(this);">
-      </a>
-    </div>
-
-    <div class="plot">
-      <h5>Today</h5>
-      <a href="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil4_Avg_today.png" target="_blank">
-        <img src="fluxtower3_4/daily_plots/fluxtower3_4_Tsoil4_Avg_today.png" alt="Fluxtower3_4 - Tsoil4_Avg today" onerror="imgError(this);">
-      </a>
-    </div>
-  </div>
-
-</div>
-
-<!-- end Tsoil4_Avg: -->
 </div> <!-- This is the closing tag for content div under Soil -->
 </div> <!-- This is the closing tag for collapsibleContainer div under Soil -->
 <!-- END Soil section: -->
-
-
 
 
 
