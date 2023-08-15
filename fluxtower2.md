@@ -5,7 +5,7 @@ description: Flux Tower 2
 nav-menu: true
 ---
 
-<html>
+<html> 
 <head>
   <style>
     .grid-container {
