@@ -252,63 +252,6 @@ h4, h5 {
 <!-- END Temperature section: -->
 
 
-<!-- Start Precipitation section: -->
-<div class="collapsibleContainer">
-<button class="collapsible precip">Precipitation</button>
-<div class="content">
-
-<!-- Start precip_Tot: -->
-<h2>Precipitation (precip_Tot)</h2>
-
-<div class="flex-container">
-
-  <!-- Fluxtower 1_2 Plots -->
-  <h3>Flux Towers 1 & 2</h3>
-  <div class="row">
-    <div class="plot">
-      <h5>Yesterday</h5>
-      <a href="fluxtower1_2/daily_plots/fluxtower1_2_precip_Tot_yesterday.png" target="_blank">
-        <img src="fluxtower1_2/daily_plots/fluxtower1_2_precip_Tot_yesterday.png" alt="Fluxtower1_2 - precip_Tot yesterday" onerror="imgError(this);">
-      </a>
-    </div>
-
-    <div class="plot">
-      <h5>Today</h5>
-      <a href="fluxtower1_2/daily_plots/fluxtower1_2_precip_Tot_today.png" target="_blank">
-        <img src="fluxtower1_2/daily_plots/fluxtower1_2_precip_Tot_today.png" alt="Fluxtower1_2 - precip_Tot today" onerror="imgError(this);">
-      </a>
-    </div>
-  </div>
-
-  <!-- Fluxtower 3_4 Plots -->
-  <h3>Flux Towers 3 & 4</h3>
-  <div class="row">
-    <div class="plot">
-      <h5>Yesterday</h5>
-      <a href="fluxtower3_4/daily_plots/fluxtower3_4_precip_Tot_yesterday.png" target="_blank">
-        <img src="fluxtower3_4/daily_plots/fluxtower3_4_precip_Tot_yesterday.png" alt="Fluxtower3_4 - precip_Tot yesterday" onerror="imgError(this);">
-      </a>
-    </div>
-
-    <div class="plot">
-      <h5>Today</h5>
-      <a href="fluxtower3_4/daily_plots/fluxtower3_4_precip_Tot_today.png" target="_blank">
-        <img src="fluxtower3_4/daily_plots/fluxtower3_4_precip_Tot_today.png" alt="Fluxtower3_4 - precip_Tot today" onerror="imgError(this);">
-      </a>
-    </div>
-  </div>
-
-</div>
-
-<!-- end precip_Tot: -->
-
-
-</div> <!-- This is the closing tag for content div under Precipitation -->
-</div> <!-- This is the closing tag for collapsibleContainer div under Precipitation -->
-<!-- END Precipitation section: -->
-
-
-
 
 <!-- Start Net Radiation section: -->
 <div class="collapsibleContainer">
@@ -630,6 +573,72 @@ h4, h5 {
 </div> <!-- This is the closing tag for content div under Net Radiation -->
 </div> <!-- This is the closing tag for collapsibleContainer div under Net Radiation -->
 <!-- END Net Radiation section: -->
+
+
+
+
+
+
+
+
+
+<!-- Start Precipitation section: -->
+<div class="collapsibleContainer">
+<button class="collapsible precip">Precipitation</button>
+<div class="content">
+
+<!-- Start precip_Tot: -->
+<h2>Precipitation (precip_Tot)</h2>
+
+<div class="flex-container">
+
+  <!-- Fluxtower 1_2 Plots -->
+  <h3>Flux Towers 1 & 2</h3>
+  <div class="row">
+    <div class="plot">
+      <h5>Yesterday</h5>
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_precip_Tot_yesterday.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_precip_Tot_yesterday.png" alt="Fluxtower1_2 - precip_Tot yesterday" onerror="imgError(this);">
+      </a>
+    </div>
+
+    <div class="plot">
+      <h5>Today</h5>
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_precip_Tot_today.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_precip_Tot_today.png" alt="Fluxtower1_2 - precip_Tot today" onerror="imgError(this);">
+      </a>
+    </div>
+  </div>
+
+  <!-- Fluxtower 3_4 Plots -->
+  <h3>Flux Towers 3 & 4</h3>
+  <div class="row">
+    <div class="plot">
+      <h5>Yesterday</h5>
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_precip_Tot_yesterday.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_precip_Tot_yesterday.png" alt="Fluxtower3_4 - precip_Tot yesterday" onerror="imgError(this);">
+      </a>
+    </div>
+
+    <div class="plot">
+      <h5>Today</h5>
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_precip_Tot_today.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_precip_Tot_today.png" alt="Fluxtower3_4 - precip_Tot today" onerror="imgError(this);">
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<!-- end precip_Tot: -->
+
+
+</div> <!-- This is the closing tag for content div under Precipitation -->
+</div> <!-- This is the closing tag for collapsibleContainer div under Precipitation -->
+<!-- END Precipitation section: -->
+
+
+
 
 
 
