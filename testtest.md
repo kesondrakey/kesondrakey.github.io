@@ -33,94 +33,55 @@ nav-menu: true
 </script>
   
   <style>
-  .collapsible {
-    text-align: center;
-    padding: 15px;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    transition: background-color 0.5s, color 0.5s, border-color 0.5s;
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    line-height: normal;
-    border-radius: 5px; /* Rounded corners */
-      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2); /* Shadow for 3D effect */
-  }
-
-    .flex-container {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.flex-item {
-  flex: 1;
-  margin: 10px;
+.collapsible {
   text-align: center;
+  padding: 15px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  line-height: normal;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-.vertical-divider {
-  width: 2px;
-  background-color: darkgrey;
-  height: 100%;
-  margin: 0 10px;
-}
-
-
-
-.collapsible.relativehum {
-  background: linear-gradient(to right, #FF7F00, #FFB347);
-  color: white;
-}
-
-.collapsible.precip {
-  background: linear-gradient(to right, #00008b, #008b8b);
-  color: white;
-}
-
-.collapsible.radiation {
-  background: linear-gradient(to right, #FFD700, #FFFFE0);
+.collapsible.other {
+  background: linear-gradient(to right, #000, #2f2f2f);
   color: white;
 }
 
 .collapsible.temperature {
-  background: linear-gradient(to right, #b20000, #e67300); /* Darker gradient background */
-                              color: white;
+  background: linear-gradient(to right, #b20000, #e67300);
+  color: white;
 }
 
+.collapsible.day {
+  background: linear-gradient(to right, #000000, #333333);
+  color: white;
+}
+
+.collapsible.precipitation {
+  background: linear-gradient(to right, #00008b, #008b8b);
+  color: white;
+}
 
 .collapsible.soil {
-  background: linear-gradient(to right, #004d00, #7cfc00); /* Darker gradient background */
-                              color: white;
+  background: linear-gradient(to right, #004d00, #7cfc00);
+  color: white;
 }
 
 .collapsible.wind {
-  background: linear-gradient(to right, #2d006b, #660066); /* Darker gradient background */
+  background: linear-gradient(to right, #2d006b, #660066);
+  color: white;
+}
+.collapsible.battery {
+  background: linear-gradient(to right, #000000, #333333); /* Gradient background from black to dark gray */
                               color: white;
 }
-.collapsible.carbonflux {
-  background: linear-gradient(to right, #0074D9, #7FDBFF); /* Gradient background from blue to light blue */
-  color: white;
-}
-
-
-.collapsible.sensible {
-  background: linear-gradient(to right, #8B008B, #DA70D6); /* Gradient background from dark purple to light purple */
-  color: white;
-}
-
-.collapsible.latent {
-  background: linear-gradient(to right, #0074D9, #7FDBFF); /* Gradient background from dark blue to light blue */
-  color: white;
-}
-
-
-
-
-
 
 
 .content {
@@ -133,16 +94,15 @@ nav-menu: true
   text-align: center;
 }
 
-.flex-container {
+.row {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 20px;
 }
 
-.flex-container > div {
-  width: 24%;
+.plot {
+  width: 45%;
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .flex-container img {
@@ -155,12 +115,14 @@ nav-menu: true
 }
 
 .flex-container a {
-  text-decoration: none;  /* Removes underline from anchor tags */
+  text-decoration: none;
 }
 
 .flex-container a:hover {
-  text-decoration: none;  /* Removes underline from anchor tags even on hover */
+  text-decoration: none;
 }
+
+
 </style>
 
   <!-- This is an HTML comment, it won't appear on the page -->
