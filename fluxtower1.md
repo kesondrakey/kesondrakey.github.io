@@ -99,7 +99,7 @@ nav-menu: true
   </style>
 </head>
 <body>
-  <h1>Daily Data</h1>
+  <h1>Long Term Data</h1>
   <div class="container">
     <div class="html-object">
       <!-- Here's where you add the iframe to embed the Plotly graph -->
@@ -107,7 +107,7 @@ nav-menu: true
       </iframe>
     </div>
   </div> 
-
+  <h1>Daily Data</h1>
   <div class="container">
     <div class="html-object">
       <!-- Here's where you add the iframe to embed the Plotly graph -->
