@@ -135,50 +135,8 @@ nav-menu: true
   <h4><i>*Click your variable of interest</i></h4>
 
 
-  <h2>Individual Daily Plots</h2>
+ 
 
-<!-- Wrapped the grid items for images in two rows inside a single .grid-container div -->
-<div class="grid-container">
-  <!-- First Row -->
-  <div class="grid-item">
-    <a href="https://kesondrakey.github.io/fluxtower1/precip">
-      <img src="images/precip.jpeg" alt="Precipitation">
-      <span>Precipitation</span>
-    </a>
-  </div>
-  <div class="grid-item">
-    <a href="https://kesondrakey.github.io/fluxtower1/temp">
-      <img src="images/temp.jpeg" alt="Temperature">
-      <span>Temperature</span>
-    </a>
-  </div>
-  <div class="grid-item">
-    <a href="https://kesondrakey.github.io/fluxtower1/wind">
-      <img src="images/wind.jpeg" alt="Wind">
-      <span>Wind</span>
-    </a>
-  </div>
-
-  <!-- Second Row -->
-  <div class="grid-item">
-    <a href="https://kesondrakey.github.io/fluxtower1/soil">
-      <img src="images/soil.jpeg" alt="Soil">
-      <span>Soil</span>
-    </a>
-  </div>
-  <div class="grid-item">
-    <a href="https://kesondrakey.github.io/fluxtower1/battery">
-      <img src="images/battery.jpeg" alt="Battery">
-      <span>Battery</span>
-    </a>
-  </div>
-  <div class="grid-item">
-    <a href="https://kesondrakey.github.io/fluxtower1/other">
-      <img src="images/other.jpeg" alt="Other">
-      <span>Other</span>
-    </a>
-  </div>
-</div>
 
 
 
