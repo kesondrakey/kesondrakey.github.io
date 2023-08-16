@@ -355,6 +355,8 @@ h4, h5 {
 
   <!-- Fluxtower 1_2 Plots -->
   <h3>Flux Towers 1 & 2</h3>
+  <h5>Tower 2 does not have PAR sensor</h5>
+  
   <div class="row">
     <div class="plot">
       <h5>Yesterday</h5>
@@ -373,6 +375,7 @@ h4, h5 {
 
   <!-- Fluxtower 3_4 Plots -->
   <h3>Flux Towers 3 & 4</h3>
+   <h5>Towers 4 does not have PAR sensor</h5>
   <div class="row">
     <div class="plot">
       <h5>Yesterday</h5>
@@ -596,6 +599,7 @@ h4, h5 {
 
   <!-- Fluxtower 1_2 Plots -->
   <h3>Flux Towers 1 & 2</h3>
+   <h5>Towers 2 does not have precip sensor</h5>
   <div class="row">
     <div class="plot">
       <h5>Yesterday</h5>
