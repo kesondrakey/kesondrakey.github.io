@@ -650,7 +650,7 @@ h4, h5 {
 
 <!-- Start Latent Heat Flux section: -->
 <div class="collapsibleContainer">
-<button class="collapsible latent">Sensible & Latent Heat Flux</button>
+<button class="collapsible latent">Sensible/Latent Heat</button>
 <div class="content">
 
 <!-- Start LE_li_irga: -->
