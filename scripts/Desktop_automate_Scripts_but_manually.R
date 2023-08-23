@@ -22,14 +22,15 @@ for(script in scripts) {
 # # Change to the target directory
 setwd("C:/Users/keyke/Documents/GitHub/kesondrakey.github.io")
 
-
 git_status <- system("git status --porcelain", intern = TRUE)
 if(length(git_status) > 0) {
-  system("git add .")
-  system("git commit -m \"Automated commit\"", intern = TRUE)
+  timestamp <- format(Sys.time(), "%Y-%m-%d %H:%M:%S")
+  commit_msg <- paste0("Automated commit at ", timestamp)
+  system(paste0("git add ."))
+  system(paste0("git commit -m \"", commit_msg, "\""), intern = TRUE)
   system("git push")
 }
-
+ 
 
 
 
