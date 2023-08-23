@@ -20,12 +20,15 @@ for(script in scripts) {
 }
 
 # # Change to the target directory
-#setwd("path/to/kesondrakey.github.io")
+setwd("C:/Users/keyke/Documents/GitHub/kesondrakey.github.io")
 
 
-system("git add .")   # Stage all changes
-system("git commit -m 'Automated commit'") # Commit with a generic message
-system("git push")  # Push to GitHub
+git_status <- system("git status --porcelain", intern = TRUE)
+if(length(git_status) > 0) {
+  system("git add .")
+  system("git commit -m \"Automated commit\"", intern = TRUE)
+  system("git push")
+}
 
 
 
