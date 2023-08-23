@@ -19,18 +19,53 @@ for(script in scripts) {
   clean_environment()
 }
 
-# # Change to the target directory
-setwd("C:/Users/keyke/Documents/GitHub/kesondrakey.github.io")
+# # # Change to the target directory
+# setwd("C:/Users/keyke/Documents/GitHub/kesondrakey.github.io")
+# 
+# git_status <- system("git status --porcelain", intern = TRUE)
+# if(length(git_status) > 0) {
+#   timestamp <- format(Sys.time(), "%Y-%m-%d %H:%M:%S")
+#   commit_msg <- paste0("Automated commit at ", timestamp)
+#   system(paste0("git add ."))
+#   system(paste0("git commit -m \"", commit_msg, "\""), intern = TRUE)
+#   system("git push")
+# }
+#  
 
+
+
+####
+# Define the log file path
+log_file <- "//ewa-fluxfp1/FluxTower/DISES_data/Workspace/scripts/log.txt"
+
+# Define the logging function
+log_message <- function(msg) {
+  timestamp <- format(Sys.time(), "%Y-%m-%d %H:%M:%S")
+  cat(paste0(timestamp, ": ", msg, "\n"), file = log_file, append = TRUE)
+}
+
+# Begin script operations
+log_message("Script started.")
+
+# Check Git status
 git_status <- system("git status --porcelain", intern = TRUE)
+
+# Log the Git status
+log_message(paste0("Git status: ", ifelse(length(git_status) > 0, git_status, "No changes.")))
+
+# If there are changes, commit and push them
 if(length(git_status) > 0) {
   timestamp <- format(Sys.time(), "%Y-%m-%d %H:%M:%S")
   commit_msg <- paste0("Automated commit at ", timestamp)
-  system(paste0("git add ."))
+  
+  log_message("Starting the git add process.")
+  system("git add .")
+  
+  log_message("Starting the git commit process.")
   system(paste0("git commit -m \"", commit_msg, "\""), intern = TRUE)
+  
+  log_message("Starting the git push process.")
   system("git push")
 }
- 
 
-
-
+log_message("Script finished.")
