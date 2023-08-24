@@ -589,7 +589,7 @@ h4, h5 {
 
 <!-- Start Precipitation section: -->
 <div class="collapsibleContainer">
-<button class="collapsible precip">Precipitation</button>
+<button class="collapsible precip">Water</button>
 <div class="content">
 
 <!-- Start precip_Tot: -->
@@ -638,7 +638,7 @@ h4, h5 {
 
 <!-- end precip_Tot: -->
 <!-- Start H2O_li_mean: -->
-<h2>Average H2O (H2O_li_mean)</h2>
+<h2>Water Vapor (H2O_li_mean)</h2>
 
 <div class="flex-container">
 
@@ -681,7 +681,50 @@ h4, h5 {
 </div>
 
 <!-- end H2O_li_mean: -->
+<!-- Start RH_tmpr_rh_mean: -->
+<h2>Relative Humidity (RH_tmpr_rh_mean)</h2>
 
+<div class="flex-container">
+
+  <!-- Fluxtower 1_2 Plots -->
+  <h3>Flux Towers 1 & 2</h3>
+  <div class="row">
+    <div class="plot">
+      <h5>Yesterday</h5>
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_RH_tmpr_rh_mean_yesterday.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_RH_tmpr_rh_mean_yesterday.png" alt="Fluxtower1_2 - RH_tmpr_rh_mean yesterday" onerror="imgError(this);">
+      </a>
+    </div>
+
+    <div class="plot">
+      <h5>Today</h5>
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_RH_tmpr_rh_mean_today.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_RH_tmpr_rh_mean_today.png" alt="Fluxtower1_2 - RH_tmpr_rh_mean today" onerror="imgError(this);">
+      </a>
+    </div>
+  </div>
+
+  <!-- Fluxtower 3_4 Plots -->
+  <h3>Flux Towers 3 & 4</h3>
+  <div class="row">
+    <div class="plot">
+      <h5>Yesterday</h5>
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_RH_tmpr_rh_mean_yesterday.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_RH_tmpr_rh_mean_yesterday.png" alt="Fluxtower3_4 - RH_tmpr_rh_mean yesterday" onerror="imgError(this);">
+      </a>
+    </div>
+
+    <div class="plot">
+      <h5>Today</h5>
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_RH_tmpr_rh_mean_today.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_RH_tmpr_rh_mean_today.png" alt="Fluxtower3_4 - RH_tmpr_rh_mean today" onerror="imgError(this);">
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<!-- end RH_tmpr_rh_mean: -->
 
 </div> <!-- This is the closing tag for content div under Precipitation -->
 </div> <!-- This is the closing tag for collapsibleContainer div under Precipitation -->
@@ -1473,50 +1516,7 @@ h4, h5 {
 
 <!-- end CO2_li_wpl_H_li: -->
 
-<!-- Start RH_tmpr_rh_mean: -->
-<h2>Relative Humidity (RH_tmpr_rh_mean)</h2>
 
-<div class="flex-container">
-
-  <!-- Fluxtower 1_2 Plots -->
-  <h3>Flux Towers 1 & 2</h3>
-  <div class="row">
-    <div class="plot">
-      <h5>Yesterday</h5>
-      <a href="fluxtower1_2/daily_plots/fluxtower1_2_RH_tmpr_rh_mean_yesterday.png" target="_blank">
-        <img src="fluxtower1_2/daily_plots/fluxtower1_2_RH_tmpr_rh_mean_yesterday.png" alt="Fluxtower1_2 - RH_tmpr_rh_mean yesterday" onerror="imgError(this);">
-      </a>
-    </div>
-
-    <div class="plot">
-      <h5>Today</h5>
-      <a href="fluxtower1_2/daily_plots/fluxtower1_2_RH_tmpr_rh_mean_today.png" target="_blank">
-        <img src="fluxtower1_2/daily_plots/fluxtower1_2_RH_tmpr_rh_mean_today.png" alt="Fluxtower1_2 - RH_tmpr_rh_mean today" onerror="imgError(this);">
-      </a>
-    </div>
-  </div>
-
-  <!-- Fluxtower 3_4 Plots -->
-  <h3>Flux Towers 3 & 4</h3>
-  <div class="row">
-    <div class="plot">
-      <h5>Yesterday</h5>
-      <a href="fluxtower3_4/daily_plots/fluxtower3_4_RH_tmpr_rh_mean_yesterday.png" target="_blank">
-        <img src="fluxtower3_4/daily_plots/fluxtower3_4_RH_tmpr_rh_mean_yesterday.png" alt="Fluxtower3_4 - RH_tmpr_rh_mean yesterday" onerror="imgError(this);">
-      </a>
-    </div>
-
-    <div class="plot">
-      <h5>Today</h5>
-      <a href="fluxtower3_4/daily_plots/fluxtower3_4_RH_tmpr_rh_mean_today.png" target="_blank">
-        <img src="fluxtower3_4/daily_plots/fluxtower3_4_RH_tmpr_rh_mean_today.png" alt="Fluxtower3_4 - RH_tmpr_rh_mean today" onerror="imgError(this);">
-      </a>
-    </div>
-  </div>
-
-</div>
-
-<!-- end RH_tmpr_rh_mean: -->
 <!-- Start CO2_li_mean: -->
 <h2>Average CO2 (CO2_li_mean)</h2>
 
