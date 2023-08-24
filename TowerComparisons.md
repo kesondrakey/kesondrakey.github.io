@@ -678,7 +678,10 @@ h4, h5 {
     </div>
   </div>
 
-  <!-- Start RH_tmpr_rh_mean: -->
+</div>
+
+<!-- end H2O_li_mean: -->
+<!-- Start RH_tmpr_rh_mean: -->
 <h2>Relative Humidity (RH_tmpr_rh_mean)</h2>
 
 <div class="flex-container">
@@ -721,8 +724,7 @@ h4, h5 {
 
 </div>
 
-<!-- end H2O_li_mean: -->
-
+<!-- end RH_tmpr_rh_mean: -->
 
 </div> <!-- This is the closing tag for content div under Precipitation -->
 </div> <!-- This is the closing tag for collapsibleContainer div under Precipitation -->
@@ -1515,10 +1517,6 @@ h4, h5 {
 <!-- end CO2_li_wpl_H_li: -->
 
 
-
-</div>
-
-<!-- end RH_tmpr_rh_mean: -->
 <!-- Start CO2_li_mean: -->
 <h2>Average CO2 (CO2_li_mean)</h2>
 
