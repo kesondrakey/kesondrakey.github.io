@@ -1605,8 +1605,8 @@ h4, h5 {
 </div>
 
 <!-- end agc_li_Avg: -->
-<!-- Start amb_pressure_li_mean: -->
-<h2>Average Ambient Pressure (amb_pressure_li_mean)</h2>
+<!-- Start amb_press_li_mean: -->
+<h2>Average Ambient Pressure (amb_press_li_mean)</h2>
 
 <div class="flex-container">
 
@@ -1615,15 +1615,15 @@ h4, h5 {
   <div class="row">
     <div class="plot">
       <h5>Yesterday</h5>
-      <a href="fluxtower1_2/daily_plots/fluxtower1_2_amb_pressure_li_mean_yesterday.png" target="_blank">
-        <img src="fluxtower1_2/daily_plots/fluxtower1_2_amb_pressure_li_mean_yesterday.png" alt="Fluxtower1_2 - amb_pressure_li_mean yesterday" onerror="imgError(this);">
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_amb_press_li_mean_yesterday.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_amb_press_li_mean_yesterday.png" alt="Fluxtower1_2 - amb_press_li_mean yesterday" onerror="imgError(this);">
       </a>
     </div>
 
     <div class="plot">
       <h5>Today</h5>
-      <a href="fluxtower1_2/daily_plots/fluxtower1_2_amb_pressure_li_mean_today.png" target="_blank">
-        <img src="fluxtower1_2/daily_plots/fluxtower1_2_amb_pressure_li_mean_today.png" alt="Fluxtower1_2 - amb_pressure_li_mean today" onerror="imgError(this);">
+      <a href="fluxtower1_2/daily_plots/fluxtower1_2_amb_press_li_mean_today.png" target="_blank">
+        <img src="fluxtower1_2/daily_plots/fluxtower1_2_amb_press_li_mean_today.png" alt="Fluxtower1_2 - amb_press_li_mean today" onerror="imgError(this);">
       </a>
     </div>
   </div>
@@ -1633,22 +1633,22 @@ h4, h5 {
   <div class="row">
     <div class="plot">
       <h5>Yesterday</h5>
-      <a href="fluxtower3_4/daily_plots/fluxtower3_4_amb_pressure_li_mean_yesterday.png" target="_blank">
-        <img src="fluxtower3_4/daily_plots/fluxtower3_4_amb_pressure_li_mean_yesterday.png" alt="Fluxtower3_4 - amb_pressure_li_mean yesterday" onerror="imgError(this);">
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_amb_press_li_mean_yesterday.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_amb_press_li_mean_yesterday.png" alt="Fluxtower3_4 - amb_press_li_mean yesterday" onerror="imgError(this);">
       </a>
     </div>
 
     <div class="plot">
       <h5>Today</h5>
-      <a href="fluxtower3_4/daily_plots/fluxtower3_4_amb_pressure_li_mean_today.png" target="_blank">
-        <img src="fluxtower3_4/daily_plots/fluxtower3_4_amb_pressure_li_mean_today.png" alt="Fluxtower3_4 - amb_pressure_li_mean today" onerror="imgError(this);">
+      <a href="fluxtower3_4/daily_plots/fluxtower3_4_amb_press_li_mean_today.png" target="_blank">
+        <img src="fluxtower3_4/daily_plots/fluxtower3_4_amb_press_li_mean_today.png" alt="Fluxtower3_4 - amb_press_li_mean today" onerror="imgError(this);">
       </a>
     </div>
   </div>
 
 </div>
 
-<!-- end amb_pressure_li_mean: -->
+<!-- end amb_press_li_mean: -->
 
 
 
