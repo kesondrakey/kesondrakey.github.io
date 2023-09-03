@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About the Team
-description: About the Team
+title: About the Teams
+description: About the Teams
 image: images/bannerz.jpeg
 nav-menu: true
 ---
