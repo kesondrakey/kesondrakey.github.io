@@ -29,12 +29,13 @@ nav-menu: true
     margin-right: 300px; /* Adjust this value based on the width of your image */
 }
 
-    #top-right-image {
-        position: absolute;
-        top: 0; /* Position it at the very top */
-        right: 20px;
-        z-index: 1; /* Make sure it is above other elements */
-    } 
+#top-right-image {
+    position: absolute;
+    top: 5%;  /* Adjust this value to position the image vertically */
+    right: 20px;
+    z-index: 1; /* Make sure it is above other elements */
+}
+
         /* Adjust the size of the YouTube embed */
     #video iframe {
         width: 800px; /* Adjust width as per your preference */
