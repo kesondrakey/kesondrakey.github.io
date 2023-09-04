@@ -27,6 +27,13 @@ nav-menu: true
       max-width: 100%;
       height: auto;
     }
+
+    .section-title {
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
   </style>
 </head>
 <body>
@@ -45,7 +52,23 @@ nav-menu: true
 
     <div class="flex-container">
         <div class="flex-item-text">
-            <p>test test test test test test</p>
+            <p class="section-title">Overview:</p>
+            <p>Nature-based climate solutions (NbCS) offer a promising avenue to combat climate change by leveraging natural processes to reduce greenhouse gas concentrations. These strategies include reforestation, climate-smart agriculture, and wetland restoration. Despite garnering significant bipartisan support and private sector interest, the scientific frameworks guiding NbCS implementation and monitoring are yet to be fully established.</p>
+            
+            <p class="section-title">Key Highlights:</p>
+            <ul>
+                <li>The Need: As the climate crisis intensifies, simply reducing greenhouse gas emissions may not suffice. Complementing this with NbCS, which targets atmospheric CO2 sequestration and greenhouse gas emission reduction, can bolster our fight against climate change.</li>
+                <li>Benefits Beyond Climate Mitigation: NbCS not only aids in climate mitigation but also positively impacts biodiversity, air and water quality, soil health, and boosts ecosystem resilience.</li>
+                <li>Criteria for Success: For NbCS to be effective, they must meet four essential criteria: additional enhancements to carbon uptake, net cooling effect, durability of carbon storage, and accounting for leakage.</li>
+                <li>Challenges and Uncertainties: The current scientific knowledge lacks a complete understanding of NbCS impacts across varying scales, raising questions about their overall efficacy.</li>
+                <li>Bridging the Gap: Over the years, technological advancements and innovative measurement tools have provided insights into the ecosystem carbon cycles. By integrating these tools and technologies, we can develop a comprehensive NbCS "Information Network," a cornerstone in guiding the implementation of effective NbCS strategies.</li>
+            </ul>
+            
+            <p class="section-title">Objective:</p>
+            <p>This initiative aims to provide a scientific roadmap to ensure robust, scalable, and credible NbCS in the U.S. It focuses on identifying knowledge gaps, integrating the best available tools, and offering actionable cross-sectoral data. By understanding both the technical and socio-economic potential of NbCS, we can steer our efforts towards strategies that genuinely mitigate climate change impacts.</p>
+            
+            <p class="section-title">Join Us:</p>
+            <p>Explore our in-depth report, be part of the conversation, and help us shape a sustainable future.</p>
         </div>
 
         <div class="flex-item-image">
