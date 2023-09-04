@@ -89,7 +89,7 @@ nav-menu: true
         </div>
     </section>
 
-   <p class="section-title"><strong>Overview:</strong>strong></p>
+   <p class="section-title"><strong>Overview:</strong></p>
     <p>Nature-based climate solutions (NbCS) offer a promising avenue to combat climate change by leveraging natural processes to reduce greenhouse gas concentrations. Some of these strategies include reforestation, climate-smart agriculture, and wetland restoration. Despite garnering significant bipartisan support and private sector interest, the scientific frameworks guiding NbCS implementation and monitoring are yet to be fully established. That is where this project comes in.</p>
 
     <p class="section-title"><strong>Objective:</strong></p>
