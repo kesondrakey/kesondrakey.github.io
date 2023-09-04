@@ -14,20 +14,22 @@ nav-menu: true
       justify-content: space-between;
       align-items: start; /* aligned at the top */
     }
+    .flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
 
-    .flex-item-text {
-      flex: 1;
-      padding-right: 20px;
-    }
+.flex-item-text {
+  flex: 1;
+  padding-right: 20px;
+}
     
-    .flex-item-image {
-      flex: 1;
-    }
+.flex-item-image {
+  flex: 1;
+}
 
-    .flex-item-image a img {
-      max-width: 100%;
-      height: auto;
-    }
+
 
     .section-title {
       font-weight: bold;
