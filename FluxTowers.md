@@ -33,7 +33,6 @@ nav-menu: true
     position: absolute;
     top: 5%;  /* Adjust this value to position the image vertically */
     right: 20px;
-    z-index: 1; /* Make sure it is above other elements */
 }
 
         /* Adjust the size of the YouTube embed */
