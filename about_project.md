@@ -23,13 +23,19 @@ nav-menu: true
       width: 48%; /* Adjusted width */
     }
 
+    .section-title {
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
 
-    #banner {
-      height: 100px;
-      overflow: hidden;
+    /* Explicitly setting banner height */
+    #banner, 
+    #banner .inner {
+        height: 50px !important; 
     }
     
-    #banner h1 {
+    #banner h1 { 
       font-size: 2em;
       margin: 0;
       padding: 0;
@@ -43,11 +49,11 @@ nav-menu: true
       font-weight: bold;
     }
 
-    .image-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+    .image-container .section-title {
+        font-size: 0.9em;
+        margin-top: 10px;
+        margin-bottom: 5px;  /* Reduce space below title */
+        text-align: center;  /* Centering the text */
     }
 
     .flex-item-image a, 
