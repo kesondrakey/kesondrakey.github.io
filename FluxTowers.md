@@ -5,18 +5,39 @@ description: Overviewing Flux Towers
 nav-menu: true
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature-based Climate Solutions</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Assuming you have a CSS file named 'styles.css'. If not, you can remove this line. -->
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming you have a CSS file named 'styles.css'. -->
+    <style>
+        #flux-tower h2, #video h3, #image h3 {
+            margin-bottom: 10px; /* Reduce the space below the title */
+        }
+
+        #video, #video p, #video iframe {
+            text-align: center; /* Center the content in the video section */
+        }
+
+        #flux-tower {
+            background: url(images/fluxtower.png) no-repeat; /* Add banner behind the title */
+            background-size: cover;
+            padding: 30px; /* Some padding around the content for aesthetics */
+        }
+
+        #top-right-image {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
 </head>
 
 <body>
+
+    <img id="top-right-image" src="images/eddy_cov_ex.png" alt="Eddy Covariance Example">
+
 
     <section id="intro">
         <h1>Understanding Nature's Role in Climate Solutions</h1>
@@ -47,12 +68,15 @@ nav-menu: true
 </section>
 
 
-    <section id="image">
+ <section id="image">
         <h3>Monitoring Scales for NbCS</h3>
         <p>
             Understanding the diverse scales of monitoring is crucial for the successful implementation of NbCS. The image below offers a comparative view:
         </p>
         <img src="images/Nbcs_scales.png" alt="Monitoring Scales for NbCS" />
+        <p style="font-style: italic; text-align: center;">
+            <a href="https://oneill.indiana.edu/doc/research/climate/climate-solutions-summary.pdf" target="_blank" rel="noopener noreferrer">Sourced from the report</a>
+        </p>
     </section>
 
     <!-- You can continue with other sections or include a footer etc. -->
