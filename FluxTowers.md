@@ -12,12 +12,12 @@ nav-menu: true
     <title>Nature-based Climate Solutions</title>
     <link rel="stylesheet" href="styles.css"> <!-- Assuming you have a CSS file named 'styles.css'. -->
     <style>
-        #flux-tower h2, #video h3, #image h3 {
+        #flux-tower h2 {
             margin-bottom: 10px; /* Reduce the space below the title */
         }
 
-        #video, #video p, #video iframe {
-            text-align: center; /* Center the content in the video section */
+        #video, #video p, #video iframe, #image, #image img {
+            text-align: center; /* Center the content in the video and image section */
         }
 
         #flux-tower {
@@ -28,7 +28,7 @@ nav-menu: true
 
         #top-right-image {
             position: absolute;
-            top: 20px;
+            top: calc(100% - 100px); /* Adjust the top value so it aligns better with the title. */
             right: 20px;
         }
     </style>
@@ -38,7 +38,6 @@ nav-menu: true
 
     <img id="top-right-image" src="images/eddy_cov_ex.png" alt="Eddy Covariance Example">
 
-
     <section id="intro">
         <h1>Understanding Nature's Role in Climate Solutions</h1>
         <p>
@@ -46,38 +45,40 @@ nav-menu: true
         </p>
     </section>
 
-    <section id="flux-tower">
+   <section id="flux-tower">
         <h2>The Significance of Flux Towers</h2>
         <p>
             However, to successfully implement NbCS, we need reliable data to ensure these strategies truly benefit the climate. This is where flux towers come into the picture.
         </p>
         <p>
-            Imagine a lighthouse that doesn’t guide ships but instead gathers vital data from the surrounding environment. <strong>Flux towers</strong> are like these lighthouses, standing tall amidst fields, forests, and wetlands, continuously collecting essential data. Each tower, covering anywhere from 10 to 1,000 acres, is equipped with sophisticated instruments that measure the exchange of carbon dioxide, water vapor, and energy between the earth and the atmosphere. By analyzing the tiniest of changes in the air, flux towers give us a clear picture of how gases and energy move in and out of an ecosystem. In essence, they help us monitor the health of our lands and the success of our conservation efforts.
+            Imagine a lighthouse that doesn’t guide ships but instead gathers vital data from the surrounding environment. <strong>Flux towers</strong> are like these lighthouses, standing tall amidst fields, forests, and wetlands, continuously collecting essential data. Each tower, covering anywhere from 10 to 1,000 acres, is equipped with sophisticated instruments that measure the exchange of carbon dioxide, water vapor, and energy between the earth and the atmosphere.
         </p>
-    </section>
-
-<section id="video">
-    <h3>What is a Flux Tower?</h3>
-    <p>
-        The National Ecological Observatory Network (NEON) provides a comprehensive overview of flux towers and eddy covariance in the video below:
-    </p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/CR4Anc8Mkas" title="Flux Tower Explanation by NEON" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p style="font-style: italic;">
-        <a href="https://www.neonscience.org/impact/observatory-blog/ameriflux-and-neon-program-join-forces-eddy-covariance-data" target="_blank" rel="noopener noreferrer">Sourced from NEON</a>
-    </p>
-</section>
-
-
- <section id="image">
-        <h3>Monitoring Scales for NbCS</h3>
         <p>
             Understanding the diverse scales of monitoring is crucial for the successful implementation of NbCS. The image below offers a comparative view:
         </p>
-        <img src="images/Nbcs_scales.png" alt="Monitoring Scales for NbCS" />
+        <img src="images/Nbcs_scales.png" alt="Monitoring Scales for NbCS" style="display:block;margin:auto;">
         <p style="font-style: italic; text-align: center;">
             <a href="https://oneill.indiana.edu/doc/research/climate/climate-solutions-summary.pdf" target="_blank" rel="noopener noreferrer">Sourced from the report</a>
         </p>
+        <p>
+            By analyzing the tiniest of changes in the air, flux towers give us a clear picture of how gases and energy move in and out of an ecosystem. In essence, they help us monitor the health of our lands and the success of our conservation efforts.
+        </p>
     </section>
+    
+
+<section id="video">
+        <p>
+            The National Ecological Observatory Network (NEON) provides a comprehensive overview of flux towers and eddy covariance in the video below:
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CR4Anc8Mkas" title="Flux Tower Explanation by NEON" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p style="font-style: italic;">
+            <a href="https://www.neonscience.org/impact/observatory-blog/ameriflux-and-neon-program-join-forces-eddy-covariance-data" target="_blank" rel="noopener noreferrer">Sourced from NEON</a>
+        </p>
+    </section>
+
+
+
+ 
 
     <!-- You can continue with other sections or include a footer etc. -->
 
