@@ -25,6 +25,9 @@ nav-menu: true
             background-size: cover;
             padding: 30px; /* Some padding around the content for aesthetics */
         }
+        #main-content {
+    margin-right: 300px; /* Adjust this value based on the width of your image */
+}
 
     #top-right-image {
         position: absolute;
@@ -43,8 +46,9 @@ nav-menu: true
 </head>
 
 <body>
-
     <img id="top-right-image" src="images/eddy_cov_ex.png" alt="Eddy Covariance Example">
+
+    <div id="main-content">
 
     <section id="intro">
         <h1>Understanding Nature's Role in Climate Solutions</h1>
