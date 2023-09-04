@@ -5,7 +5,7 @@ description: Exploring the Nature Based Climate Solutions Project
 nav-menu: true
 ---
 
-<html>
+<html> 
 <head>
   <style>
     .flex-container {
