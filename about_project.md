@@ -36,9 +36,14 @@ nav-menu: true
 
     /* Control banner height */
     #banner {
-      height: 250px; /* You can adjust this value */
+      height: 200px; /* You can adjust this value */
       overflow: hidden;
     }
+    #banner h1 {
+    font-size: 2em; /* Adjust to desired font-size */
+    margin: 0; /* Removes default margins */
+    padding: 0; /* Removes default padding */
+}
 
     /* Space between bullet points and bold titles */
     ul li {
@@ -47,6 +52,24 @@ nav-menu: true
     
     ul li strong {
       font-weight: bold;
+    }
+        /* Add these styles */
+    .image-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center content horizontally */
+      justify-content: center; /* Center content vertically */
+    }
+
+    .flex-item-image a {
+      border: none; /* Ensure no borders are added to the link */
+      text-decoration: none;
+      outline: none; /* Ensure no outlines are added to the link */
+    }
+
+    .flex-item-image img {
+      border: none; /* Ensure no borders are added to the image */
+      outline: none; /* Ensure no outlines are added to the image */
     }
 
   </style>
@@ -83,13 +106,13 @@ nav-menu: true
             <p>This initiative aims to provide a scientific roadmap to ensure robust, scalable, and credible NbCS in the U.S. It focuses on identifying knowledge gaps, integrating the best available tools, and offering actionable cross-sectoral data. By understanding both the technical and socio-economic potential of NbCS, we can steer our efforts towards strategies that genuinely mitigate climate change impacts.</p>
         </div>
 
-        <div class="flex-item-image">
-            <a href="https://oneill.indiana.edu/faculty-research/research/climate/index.html">
-                <img src="images/nbcs.jpg" alt="Nature Based Climate Solutions">
-            </a>
-            <p class="section-title">Join Us:</p>
-            <p>Explore our in-depth report, be part of the conversation, and help us shape a sustainable future.</p>
-        </div>
+<div class="flex-item-image image-container">
+    <a href="https://oneill.indiana.edu/faculty-research/research/climate/index.html">
+        <img src="images/nbcs.jpg" alt="Nature Based Climate Solutions">
+    </a>
+    <p class="section-title">Join Us:</p>
+    <p>Explore our in-depth report, be part of the conversation, and help us shape a sustainable future.</p>
+</div>
     </div>
 </body>
 </html>
