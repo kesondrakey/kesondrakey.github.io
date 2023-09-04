@@ -23,14 +23,9 @@ nav-menu: true
       width: 48%; /* Adjusted width */
     }
 
-    .section-title {
-      font-weight: bold;
-      margin-top: 20px;
-      margin-bottom: 10px;
-    }
 
     #banner {
-      height: 200px;
+      height: 100px;
       overflow: hidden;
     }
     
