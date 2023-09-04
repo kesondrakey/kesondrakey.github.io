@@ -26,11 +26,19 @@ nav-menu: true
             padding: 30px; /* Some padding around the content for aesthetics */
         }
 
-        #top-right-image {
-            position: absolute;
-            top: calc(100% - 100px); /* Adjust the top value so it aligns better with the title. */
-            right: 20px;
-        }
+    #top-right-image {
+        position: absolute;
+        top: 0; /* Position it at the very top */
+        right: 20px;
+        z-index: 1; /* Make sure it is above other elements */
+    } 
+        /* Adjust the size of the YouTube embed */
+    #video iframe {
+        width: 800px; /* Adjust width as per your preference */
+        height: 450px; /* Adjust height maintaining the aspect ratio */
+        max-width: 100%; /* Ensure it doesn't go beyond the container width on smaller screens */
+    }
+    
     </style>
 </head>
 
@@ -84,4 +92,4 @@ nav-menu: true
 
 </body>
 
-</html>
+
