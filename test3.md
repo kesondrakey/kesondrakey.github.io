@@ -7,11 +7,10 @@ nav-menu: true
 <head>
 <style>
     /* ================= Basic Grid Styles ================= */
-   body, h2, h3, .grid-container {
-    margin: 0;
-    padding: 0;
-}
-
+ .grid-container {
+       margin-top: -20px;  /* Reduce space before the first plot */
+   }
+ 
 
     .grid-item {
         position: relative;
@@ -65,10 +64,12 @@ nav-menu: true
     }
 
     .icon img {
-       width: 100%;  /* This will cover the entire area of the icon */
-       height: 100%;
-       object-fit: cover;
-    }
+       width: 90%;  /* Reduced size to ensure the whole image is seen */
+       height: 90%;
+       object-fit: contain; /* Changed to 'contain' to ensure whole image is visible */
+       margin: 5%; /* Center the image */
+     }
+
 
     .icon-label {
         position: absolute;
@@ -83,9 +84,15 @@ nav-menu: true
     }
 
 
-    .icon-daily { background-color: lightblue; }
-    .icon-weekly { background-color: purple; }
-    .icon-monthly { background-color: green; }
+    .icon-daily { 
+    background: linear-gradient(to right, #85a3e0, #1e57a8); 
+    }
+    .icon-weekly { 
+        background: linear-gradient(to right, #a57ad8, #501a7a); 
+    }
+    .icon-monthly { 
+        background: linear-gradient(to right, #7cd68f, #2a8c39); 
+    }
 
     /* ================= Collapsible Button and Full-Screen Styles ================= */
     .collapsible {
@@ -170,8 +177,6 @@ nav-menu: true
     }
 </style>
 
-
-
 <!-- Long Term Data -->
 <div class="grid-container">
     <div class="grid-item">
@@ -186,7 +191,6 @@ nav-menu: true
 </div>
 
 
-<!-- Choose Data View -->
 <!-- Choose Data View -->
 <h3>Choose Data Table:</h3>
 <div class="toggle-icons">
@@ -205,21 +209,18 @@ nav-menu: true
 </div>
 
 <!-- More Technical Data -->
-<h3>More Technical Data</h3>
-<button class="collapsible">Toggle Technical Data</button>
+<button class="collapsible">More Technical Data</button>
 <div class="content">
-    <h4>For Mobile Users:</h4>
-    <div class="container">
+    <div class="">
         <div class="html-object">
             <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
             <h4><i>*Simply click your variable of interest!</i></h4>
         </div>
     </div>
 
-    <h4>For Desktop Users:</h4>
-    <div class="full-screen-text-container">
-        <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower1.html" class="full-screen-link">View in Full Screen</a>
-        <h4><i>*Simply click your variable of interest!</i></h4>
+    <h4>For Full View:</h4>
+    <div class="full-screen-text-">
+        <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower1.html" class="full-screen-link">View in Full Screen <i>*Simply click your variable of interest!</i> </a>
     </div>
 </div>
 
@@ -228,14 +229,19 @@ nav-menu: true
 
 <script>
     // Collapsible Functionality
-    var coll = document.getElementsByClassName("collapsible");
-    for (let i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            content.style.display = content.style.display === "block" ? "none" : "block";
-        });
-    }
+// Collapsible Functionality
+var coll = document.getElementsByClassName("collapsible");
+var contents = document.getElementsByClassName("content");
+for (let i = 0; i < coll.length; i++) {
+    contents[i].style.display = "none"; // Set default state to hidden
+
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        content.style.display = content.style.display === "block" ? "none" : "block";
+    });
+}
+
 
    // Data View Toggle
     const icons = document.querySelectorAll('.icon');  // target the icon itself
@@ -258,5 +264,4 @@ icons.forEach(icon => {
 });
 
 </script>
-</body>
-</html>
+
