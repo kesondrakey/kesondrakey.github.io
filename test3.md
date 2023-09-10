@@ -264,28 +264,10 @@ nav-menu: true
 
 
 <script>
-// Get all the icons
-const icons = document.querySelectorAll('.icon');
-
-icons.forEach(icon => {
-    icon.addEventListener('click', function() {
-        // Hide all plots
-        const allPlots = document.querySelectorAll('.plot-container');
-        allPlots.forEach(plot => {
-            plot.style.display = "none";
-        });
-
-        // Show the associated plot for the clicked icon
-        const thisPlot = this.querySelector('.plot-container');
-        if (thisPlot) {
-            thisPlot.style.display = "block";
-        }
-    });
-});
-    
 // Collapsible Functionality
 var coll = document.getElementsByClassName("collapsible");
 var contents = document.getElementsByClassName("content");
+
 for (let i = 0; i < coll.length; i++) {
     contents[i].style.display = "none"; // Set default state to hidden
 
@@ -296,17 +278,26 @@ for (let i = 0; i < coll.length; i++) {
     });
 }
 
-
-   // Data View Toggle
-    const icons = document.querySelectorAll('.icon');  // target the icon itself
-// rest of the code remains unchanged
-
+// Data View Toggle
+const icons = document.querySelectorAll('.icon');
 const tables = document.querySelectorAll('.data-table');
 
 icons.forEach(icon => {
     icon.addEventListener('click', function() {
-        const view = this.getAttribute('data-view');
+        // Hide all plots first
+        const allPlots = document.querySelectorAll('.plot-container');
+        allPlots.forEach(plot => {
+            plot.style.display = "none";
+        });
 
+        // Show the associated plot for the clicked icon
+        const thisPlot = this.querySelector('.plot-container');
+        if (thisPlot) {
+            thisPlot.style.display = "block";
+        }
+
+        // Hide or Show the respective data table
+        const view = this.getAttribute('data-view');
         tables.forEach(table => {
             if (table.getAttribute('data-view') === view) {
                 table.style.display = table.style.display === "none" ? "block" : "none";
@@ -316,6 +307,7 @@ icons.forEach(icon => {
         });
     });
 });
+
 
 </script>
 
