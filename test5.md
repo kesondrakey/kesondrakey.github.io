@@ -48,55 +48,63 @@ nav-menu: true
 }
 
     /* Styling for the icons */
-    .icon {
+.icon {
     color: white;
     border: none;
     cursor: pointer;
-    padding: 15px 30px;
-    border-radius: 4px;
+    padding: 30px;              
+    border-radius: 50%;         
     text-align: center;
-    display: block;
-    margin: 10px auto; /* vertical spacing & horizontally centering */
-    width: 200px;      /* width of the icons/buttons */
+    display: inline-block;      
+    margin: 10px;               
+    width: auto;                
     font-weight: bold;
     line-height: 40px;
+    background-size: 100%;      
 }
-    .table-container {
-    display: none;
-    margin-top: 20px;  /* spacing above the table */
+
+.icon-daily { 
+    background: linear-gradient(to right, #85a3e0, #1e57a8); 
+}
+
+.icon-weekly { 
+    background: linear-gradient(to right, #a57ad8, #501a7a); 
+}
+
+.icon-monthly { 
+    background: linear-gradient(to right, #7cd68f, #2a8c39); 
+}
+
+.icon-container {
+    text-align: center;         
 }
 
 
 </style>
 
-  <!-- Long Term Data -->
-<div class="grid-container">
-    <!-- You should place your plots inside this grid container, they will be the .grid-item elements. -->
-    <div class="grid-item">
-         <div class="container">
-    <div class="html-object">
-      <!-- Here's where you add the iframe to embed the Plotly graph -->
-      <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower1.html">
-      </iframe>
-      <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
-    </div>
-</div>
+
 
 
 <!-- Icons/buttons -->
-<button class="icon icon-daily" onclick="showTable('daily')">Daily</button>
-<button class="icon icon-weekly" onclick="showTable('weekly')">Weekly</button>
-<button class="icon icon-monthly" onclick="showTable('monthly')">Monthly</button>
+<div class="icon-container">
+    <button class="icon icon-daily" onclick="showTable('daily')">Daily</button>
+    <button class="icon icon-weekly" onclick="showTable('weekly')">Weekly</button>
+    <button class="icon icon-monthly" onclick="showTable('monthly')">Monthly</button>
+</div>
+
 
 <!-- Tables (they're iframes in your case) -->
 <div id="daily-table" class="table-container">
-    <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
+    <iframe width="100%" height="600" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
+     <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
 </div>
 <div id="weekly-table" class="table-container">
-    <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower1.html"></iframe>
+    <iframe width="100%" height="600" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower1.html"></iframe>
+     <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
 </div>
 <div id="monthly-table" class="table-container">
-    <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower1.html"></iframe>
+    <iframe width="100%" height="600" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower1.html"></iframe>
+     <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
 </div>
 
 
