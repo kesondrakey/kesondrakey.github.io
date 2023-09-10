@@ -9,11 +9,11 @@ nav-menu: true
 <head>
 <style>
     /* ================= Basic Grid Styles ================= */
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-gap: 1em;
-    }
+   body, h2, h3, .grid-container {
+    margin: 0;
+    padding: 0;
+}
+
 
     .grid-item {
         position: relative;
@@ -72,12 +72,16 @@ nav-menu: true
 
     .icon-label {
         position: absolute;
-        top: -25px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         width: 100%;
         text-align: center;
         font-size: 14px;
         font-weight: bold;
+        color: white;
     }
+
 
     .icon-daily { background-color: lightblue; }
     .icon-weekly { background-color: purple; }
@@ -86,6 +90,7 @@ nav-menu: true
     /* ================= Collapsible Button and Full-Screen Styles ================= */
     .collapsible {
         background: linear-gradient(to right, #764BA2, #667EEA);
+         line-height: 1.5;
         color: white;
         border: none;
         display: block;
@@ -112,6 +117,15 @@ nav-menu: true
         color: white;
         text-decoration: none;
         text-align: center;
+    }
+
+    .full-screen-link:focus {
+    outline: none;
+}
+
+    .full-screen-link h4 {
+       margin: 0;
+       text-align: center;
     }
 
     .full-screen-link:hover { background-color: rgba(0, 0, 0, 0.2); }
