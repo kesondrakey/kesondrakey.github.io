@@ -56,6 +56,9 @@ nav-menu: true
     width: 120px;   /* fixed width */
     height: 120px;  /* fixed height */
     border-radius: 50%; 
+    overflow: hidden; /* Prevent text overflow */
+    white-space: nowrap; /* Prevent breaking onto multiple lines */
+    text-overflow: ellipsis; /* Add ellipsis for overflowing text */
     text-align: center;
     display: flex;
     align-items: center;
@@ -72,6 +75,10 @@ nav-menu: true
 .icon:focus {
     outline: none;
     box-shadow: none; /* Some browsers might use a box-shadow for focus; this removes it */
+}
+    /* Add darker shade when button is active/clicked */
+.icon:active {
+    filter: brightness(85%); /* This reduces the brightness by 15% for an active click */
 }
     
 .icon-daily { 
@@ -155,22 +162,26 @@ nav-menu: true
 
 
 <script>
-    // Adjust the showTable function
-function showTable(tableType) {
-    // Hide all tables first
+    function showTable(tableType) {
     const tables = document.querySelectorAll('.table-container');
+    const selectedTable = document.getElementById(tableType + '-table');
+
+    // Check if the selected table is already displayed
+    if (selectedTable.style.display === 'block') {
+        selectedTable.style.display = 'none';
+        return;  // Exit the function early
+    }
+    
+    // If not, hide all tables first
     tables.forEach(table => {
         table.style.display = 'none';
     });
 
-    // Show the selected table
-    const selectedTable = document.getElementById(tableType + '-table');
-    if (selectedTable.style.display === 'block') {
-        selectedTable.style.display = 'none';
-    } else {
-        selectedTable.style.display = 'block';
-    }
+    // Then, show the selected table
+    selectedTable.style.display = 'block';
 }
+
+    
 
     
 // Collapsible Functionality
