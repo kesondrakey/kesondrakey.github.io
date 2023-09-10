@@ -48,36 +48,24 @@ nav-menu: true
 
 <!-- More Technical Data -->
 <div class="collapsible-container">
-    <button class="collapsible">Toggle Technical Data</button>
+    <button class="collapsible">More Technical Data</button>
     <div class="container">
         <div class="html-object">
             <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
             <h4><i>*Simply click your variable of interest!</i></h4>
+            <!-- View in full View Button -->
+<a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower1.html" class="full-view-button">View in full View</a>
+
         </div>
     </div>
 </div>
 
-<!-- View in full View Button -->
-<a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower1.html" class="full-view-button">View in full View</a>
 
 
 
 
 
-<!-- More Technical Data -->
-<h3>Keeping for testing </h3>
-<button class="collapsible">Toggle Technical Data</button> <!-- This button will toggle the content below *currently doesnt work; i want this button the be a gradient blue color with white text -->
- <div class="container">
-    <div class="html-object">
-      <!-- Here's where you add the iframe to embed the Plotly graph -->
-      <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html">
-      </iframe>
-          <h4><i>*Simply click your variable of interest!</i></h4>
-    </div>
-  </div>
 
-
-</div>
 
 <script>
 // Collapsible Functionality
