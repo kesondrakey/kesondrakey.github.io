@@ -44,8 +44,8 @@ nav-menu: true
     }
 
     .icon {
-        width: 50px;
-        height: 50px;
+        width: 80px; /* Made icons larger */
+        height: 80px; /* Made icons larger */
         border-radius: 50%; /* Makes them circular */
         cursor: pointer; /* Indicates they're clickable */
         display: flex;
@@ -67,7 +67,7 @@ nav-menu: true
     }
 
     .icon img {
-        width: 80%; /* Adjust as needed */
+        width: 90%; /* Adjusted size */
         height: auto; /* Maintain the aspect ratio */
     }
 
@@ -81,9 +81,9 @@ nav-menu: true
         border: none; /* Ensure no borders are added to the image */
         outline: none; /* Ensure no outlines are added to the image */
     }
-        .data-table {
+     .data-table {
         display: none;  /* Set the data tables to not display by default */
-        background-color: #111; /* or a really dark gray like #333333 */
+        background-color: black; /* Set the table background to black */
         color: white; /* Text color set to white for visibility on dark background */
     }
 
@@ -142,6 +142,8 @@ nav-menu: true
     }
 </style>
 </head>
+<body>
+  
 
   <h1>Long Term Data</h1>
   <div class="container">
@@ -229,23 +231,6 @@ icons.forEach(icon => {
     });
 });
 
-// Adjust Iframe Height
-function adjustIframeHeight() {
-    const iframes = document.querySelectorAll('.html-object iframe');
-    iframes.forEach(iframe => {
-        if (window.innerWidth <= 768) {
-            iframe.style.maxHeight = `calc(50vw)`;  // Adjust as needed
-        } else {
-            iframe.style.maxHeight = '600px'; // Adjust as needed for larger screens
-        }
-    });
-}
-
-window.addEventListener('resize', adjustIframeHeight);
-window.addEventListener('DOMContentLoaded', adjustIframeHeight); // To adjust the height on page load
-
-
-    
 </script>
 
 <!-- Rest of your content... -->
