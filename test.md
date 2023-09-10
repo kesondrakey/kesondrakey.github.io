@@ -172,13 +172,13 @@ nav-menu: true
 <div class="data-table" data-view="weekly" style="display: none;">
     <h1>Weekly Data</h1>
     <div class="html-object">
-        <iframe width="100%" height="430" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
+        <iframe width="100%" height="430" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower1.html"></iframe>
     </div>
 </div>
 <div class="data-table" data-view="monthly" style="display: none;">
     <h1>Monthly Data</h1>
     <div class="html-object">
-        <iframe width="100%" height="430" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
+        <iframe width="100%" height="430" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower1.html"></iframe>
     </div>
 </div>
 
