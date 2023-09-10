@@ -48,19 +48,32 @@ nav-menu: true
 }
 
     /* Styling for the icons */
+/* Google font inclusion */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Updated Styling for the icons */
 .icon {
     color: white;
     border: none;
     cursor: pointer;
-    padding: 30px;              
-    border-radius: 50%;         
+    padding: 10px; 
+    width: 70px;   /* fixed width */
+    height: 70px;  /* fixed height */
+    border-radius: 50%; 
     text-align: center;
-    display: inline-block;      
-    margin: 10px;               
-    width: auto;                
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    background-size: 100%;
     font-weight: bold;
-    line-height: 40px;
-    background-size: 100%;      
+    font-size: 1em;
+    background-color: transparent; /* Removes any default background color */
+    outline: none; /* Removes focus outline which browsers apply */
 }
 
 .icon-daily { 
@@ -77,6 +90,9 @@ nav-menu: true
 
 .icon-container {
     text-align: center;         
+}
+    .table-container {
+    display: none;
 }
 
 
