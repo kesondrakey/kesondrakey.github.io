@@ -4,7 +4,7 @@ title: Flux Tower 1
 description: Flux Tower 1
 nav-menu: true
 ---
-
+<!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -193,9 +193,9 @@ nav-menu: true
 <h3>Choose Data Table:</h3>
 <div class="toggle-icons">
     <div class="icon icon-daily" data-view="daily">
-        <img src="images/daily.jpg" alt="Daily Icon">
-        <span class="icon-label">Daily</span>
-    </div>
+    <span class="icon-label">Daily</span>
+    <img src="images/daily.jpg" alt="Daily Icon">
+</div>
     <div class="icon icon-weekly" data-view="weekly">
         <img src="images/weekly.png" alt="Weekly Icon">
         <span class="icon-label">Weekly</span>
@@ -205,6 +205,26 @@ nav-menu: true
         <span class="icon-label">Monthly</span>
     </div>
 </div>
+
+<!-- More Technical Data -->
+<h3>More Technical Data</h3>
+<button class="collapsible">Toggle Technical Data</button>
+<div class="content">
+    <h4>For Mobile Users:</h4>
+    <div class="container">
+        <div class="html-object">
+            <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
+            <h4><i>*Simply click your variable of interest!</i></h4>
+        </div>
+    </div>
+
+    <h4>For Desktop Users:</h4>
+    <div class="full-screen-text-container">
+        <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower1.html" class="full-screen-link">View in Full Screen</a>
+        <h4><i>*Simply click your variable of interest!</i></h4>
+    </div>
+</div>
+
 
 <!-- More Technical Data -->
 <button class="collapsible">More Technical Data</button> <!-- Fixed this line -->
@@ -236,7 +256,9 @@ nav-menu: true
     }
 
    // Data View Toggle
-const icons = document.querySelectorAll('.icon');  // target the entire icon container
+    const icons = document.querySelectorAll('.icon');  // target the icon itself
+// rest of the code remains unchanged
+
 const tables = document.querySelectorAll('.data-table');
 
 icons.forEach(icon => {
