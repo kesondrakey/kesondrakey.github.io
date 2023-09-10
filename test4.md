@@ -25,8 +25,9 @@ nav-menu: true
     height: 0;
     overflow: hidden;  /* To ensure the content is hidden when the height is set to 0 */
 }
-
-
+    .centered-text {
+    text-align: center;
+}
 
 
 /* Styling for the View in full View button */
@@ -52,7 +53,8 @@ nav-menu: true
     <div class="container">
         <div class="html-object">
             <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
-            <h4><i>*Simply click your variable of interest!</i></h4>
+            <h4 class="centered-text"><i>*Simply click your variable of interest!</i></h4>
+            
             <!-- View in full View Button -->
 <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower1.html" class="full-view-button">View in full View</a>
 
