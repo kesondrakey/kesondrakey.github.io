@@ -217,14 +217,18 @@ nav-menu: true
        <div class="plot-container">
             <iframe width="100%" height="430" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
         </div>
-        </div>
+    </div> <!-- This closing div was missing for the 'icon-weekly' -->
     <div class="icon icon-monthly" data-view="monthly">
         <img src="images/monthly.jpg" alt="Monthly Icon">
         <span class="icon-label">Monthly</span>
        <div class="plot-container">
             <iframe width="100%" height="430" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
         </div>
+    </div>
 </div>
+
+
+
 
 <!-- More Technical Data -->
 <button class="collapsible">More Technical Data</button>
