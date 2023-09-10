@@ -62,12 +62,18 @@ nav-menu: true
     justify-content: center;
     margin: 10px;
     background-size: 100%;
+    letter-spacing: 1px; /* Adjust the spacing between letters */
+    font-size: 1.2em; /* Slightly increase the font size */
     font-weight: bold;
-    font-size: 1em;
     background-color: transparent; /* Removes any default background color */
     outline: none; /* Removes focus outline which browsers apply */
 }
-
+/* Remove the default focus border around the button */
+.icon:focus {
+    outline: none;
+    box-shadow: none; /* Some browsers might use a box-shadow for focus; this removes it */
+}
+    
 .icon-daily { 
     background: linear-gradient(to right, #85a3e0, #1e57a8); 
 }
@@ -110,15 +116,15 @@ nav-menu: true
 
 
 <!-- Tables (they're iframes in your case) -->
-<div id="daily-table" class="table-container">
+<div id="daily-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
      <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
 </div>
-<div id="weekly-table" class="table-container">
+<div id="weekly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower1.html"></iframe>
      <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
 </div>
-<div id="monthly-table" class="table-container">
+<div id="monthly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower1.html"></iframe>
      <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
 </div>
@@ -149,6 +155,24 @@ nav-menu: true
 
 
 <script>
+    // Adjust the showTable function
+function showTable(tableType) {
+    // Hide all tables first
+    const tables = document.querySelectorAll('.table-container');
+    tables.forEach(table => {
+        table.style.display = 'none';
+    });
+
+    // Show the selected table
+    const selectedTable = document.getElementById(tableType + '-table');
+    if (selectedTable.style.display === 'block') {
+        selectedTable.style.display = 'none';
+    } else {
+        selectedTable.style.display = 'block';
+    }
+}
+
+    
 // Collapsible Functionality
 var coll = document.getElementsByClassName("collapsible");
 for (let i = 0; i < coll.length; i++) {
