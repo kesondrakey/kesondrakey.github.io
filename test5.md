@@ -47,22 +47,14 @@ nav-menu: true
     font-weight: bold; /* Bold text */
 }
 
-    /* Styling for the icons */
-/* Google font inclusion */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-/* Updated Styling for the icons */
+ /* Styling for the icons */
 .icon {
     color: white;
     border: none;
     cursor: pointer;
     padding: 10px; 
-    width: 70px;   /* fixed width */
-    height: 70px;  /* fixed height */
+    width: 120px;   /* fixed width */
+    height: 120px;  /* fixed height */
     border-radius: 50%; 
     text-align: center;
     display: flex;
@@ -111,15 +103,15 @@ body {
 
 <!-- Tables (they're iframes in your case) -->
 <div id="daily-table" class="table-container">
-    <iframe width="100%" height="600" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
      <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
 </div>
 <div id="weekly-table" class="table-container">
-    <iframe width="100%" height="600" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower1.html"></iframe>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower1.html"></iframe>
      <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
 </div>
 <div id="monthly-table" class="table-container">
-    <iframe width="100%" height="600" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower1.html"></iframe>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower1.html"></iframe>
      <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
 </div>
 
