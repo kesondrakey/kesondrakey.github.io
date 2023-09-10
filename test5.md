@@ -74,7 +74,7 @@ nav-menu: true
 }
 /* Remove the default focus border around the button */
 .icon:focus {
-    outline: none;
+    outline: 0;
     box-shadow: none; /* Some browsers might use a box-shadow for focus; this removes it */
 }
     /* Add darker shade when button is active/clicked */
