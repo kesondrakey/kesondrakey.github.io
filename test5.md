@@ -70,6 +70,7 @@ nav-menu: true
     font-weight: bold;
     background-color: transparent; /* Removes any default background color */
     outline: none; /* Removes focus outline which browsers apply */
+       transition: filter 0.2s; /* Smoothens the brightness effect */
 }
 /* Remove the default focus border around the button */
 .icon:focus {
@@ -162,24 +163,23 @@ nav-menu: true
 
 
 <script>
-    function showTable(tableType) {
+   function showTable(tableType) {
     const tables = document.querySelectorAll('.table-container');
     const selectedTable = document.getElementById(tableType + '-table');
 
-    // Check if the selected table is already displayed
-    if (selectedTable.style.display === 'block') {
-        selectedTable.style.display = 'none';
-        return;  // Exit the function early
-    }
-    
-    // If not, hide all tables first
+    let isAlreadyVisible = (selectedTable.style.display === 'block');
+
+    // Hide all tables first
     tables.forEach(table => {
         table.style.display = 'none';
     });
 
-    // Then, show the selected table
-    selectedTable.style.display = 'block';
+    // If the selected table was not already visible, show it
+    if (!isAlreadyVisible) {
+        selectedTable.style.display = 'block';
+    }
 }
+
 
     
 
