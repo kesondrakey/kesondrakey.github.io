@@ -7,18 +7,20 @@ nav-menu: true
 
 <style>
 /* Styling for the Toggle Technical Data button */
-.collapsible, .full-view-button {
+.collapsible {
     color: white;
-    background-image: linear-gradient(to right, #764BA2, #667EEA);  /* Adjust gradient for .full-view-button if needed */
+    background-image: linear-gradient(to right, #764BA2, #667EEA);
     border: none;
     cursor: pointer;
     padding: 10px 15px;
     border-radius: 4px;
     text-align: center;
-    display: block;
-    margin: auto;
-    line-height: 40px; /* Adjusted line height to center the text */
+    display: block; /* This ensures it takes the full width */
+    margin: auto;   /* This will center the button if it's not full width */
+    width: 100%;    /* This sets the button to take the full width of its parent container */
+    line-height: 40px; 
 }
+
 
 .container {
     visibility: hidden;
