@@ -8,7 +8,7 @@ nav-menu: true
 <style>
     /* ================= Basic Grid Styles ================= */
  .grid-container {
-       margin-top: -20px;  /* Reduce space before the first plot */
+       margin-top: 0;  /* Reduce space before the first plot */
    }
  
 
@@ -64,18 +64,21 @@ nav-menu: true
     }
 
     .icon img {
-       width: 90%;  /* Reduced size to ensure the whole image is seen */
-       height: 90%;
-       object-fit: contain; /* Changed to 'contain' to ensure whole image is visible */
+       width: 100%;  /* Reduced size to ensure the whole image is seen */
+       height: 100%;
+       object-fit: cover; /* Changed to 'contain' to ensure whole image is visible */
        margin: 5%; /* Center the image */
      }
-
+    .content {
+        display: none;
+    }
 
     .icon-label {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         width: 100%;
         text-align: center;
         font-size: 20px;
