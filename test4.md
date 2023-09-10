@@ -6,10 +6,10 @@ nav-menu: true
 ---
 
 <style>
-/* Styling for the Toggle Technical Data button */ 
-.collapsible {
+/* Styling for the Toggle Technical Data button */
+.collapsible, .full-view-button {
     color: white;
-    background-image: linear-gradient(to right, #764BA2, #667EEA);
+    background-image: linear-gradient(to right, #764BA2, #667EEA);  /* Adjust gradient for .full-view-button if needed */
     border: none;
     cursor: pointer;
     padding: 10px 15px;
@@ -17,13 +17,15 @@ nav-menu: true
     text-align: center;
     display: block;
     margin: auto;
+    line-height: 40px; /* Adjusted line height to center the text */
 }
-    .container {
+
+.container {
     visibility: hidden;
     height: 0;
-    display: none;  /* Start as hidden */
-    overflow: hidden;  // to ensure the content is hidden when the height is set to 0
+    overflow: hidden;  /* To ensure the content is hidden when the height is set to 0 */
 }
+
 
 
 
@@ -54,7 +56,6 @@ nav-menu: true
         </div>
     </div>
 </div>
-
 
 <!-- View in full View Button -->
 <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower1.html" class="full-view-button">View in full View</a>
