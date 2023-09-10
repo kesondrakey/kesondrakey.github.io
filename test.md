@@ -81,6 +81,16 @@ nav-menu: true
         border: none; /* Ensure no borders are added to the image */
         outline: none; /* Ensure no outlines are added to the image */
     }
+        .data-table {
+        display: none;  /* Set the data tables to not display by default */
+        background-color: #111; /* or a really dark gray like #333333 */
+        color: white; /* Text color set to white for visibility on dark background */
+    }
+
+    .html-object iframe {
+        width: 100%;
+        max-height: calc(50vw); /* Changed height to max-height */
+    }
 
     .grid-item span {
         font-size: 2rem; /* Adjust the font size */
@@ -131,11 +141,7 @@ nav-menu: true
         display: none;
     }
 </style>
-
 </head>
-
-<body>
-  <img id="top-right-image" src="images/eddy_cov_ex.png" alt="Eddy Covariance Example">
 
   <h1>Long Term Data</h1>
   <div class="container">
@@ -163,52 +169,49 @@ nav-menu: true
 
 
 <!-- Data Tables -->
-<div class="data-table" data-view="daily">
-    <h1>Daily Data</h1>
-    <div class="html-object">
-        <iframe width="100%" height="430" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
-    </div>
-</div>
-<div class="data-table" data-view="weekly" style="display: none;">
-    <h1>Weekly Data</h1>
-    <div class="html-object">
-        <iframe width="100%" height="430" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower1.html"></iframe>
-    </div>
-</div>
-<div class="data-table" data-view="monthly" style="display: none;">
-    <h1>Monthly Data</h1>
-    <div class="html-object">
-        <iframe width="100%" height="430" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower1.html"></iframe>
-    </div>
-</div>
-
-<button class="collapsible">More Technical Data</button>
-<div class="content">
-<h1>Long Term Data</h1>
-  
-  <div class="container">
-    <div class="html-object">
-      <!-- Here's where you add the iframe to embed the Plotly graph -->
-      <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html">
-      </iframe>
-    </div>
+  <div class="data-table" data-view="daily">
+      <h1>Daily Data</h1>
+      <div class="html-object">
+          <iframe width="100%" height="430" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
+      </div>
+  </div>
+  <div class="data-table" data-view="weekly">
+      <h1>Weekly Data</h1>
+      <div class="html-object">
+          <iframe width="100%" height="430" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower1.html"></iframe>
+      </div>
+  </div>
+  <div class="data-table" data-view="monthly">
+      <h1>Monthly Data</h1>
+      <div class="html-object">
+          <iframe width="100%" height="430" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower1.html"></iframe>
+      </div>
   </div>
 
-  <h4><i>*Click your variable of interest</i></h4>
+  <button class="collapsible">More Technical Data</button>
+  <div class="content">
+      <h1>Long Term Data</h1>
+      <div class="container">
+          <div class="html-object">
+              <!-- Here's where you add the iframe to embed the Plotly graph -->
+              <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
+          </div>
+      </div>
+      <h4><i>*Click your variable of interest</i></h4>
+  </div>
 
-<script>
-    // Collapsible Functionality
-    var coll = document.getElementsByClassName("collapsible");
-    for (let i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            content.style.display = content.style.display === "block" ? "none" : "block";
-        });
-    }
+ <script>
+        // Collapsible Functionality
+        var coll = document.getElementsByClassName("collapsible");
+        for (let i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                content.style.display = content.style.display === "block" ? "none" : "block";
+            });
+        }
 
-    // Data View Toggle
-    document.addEventListener('DOMContentLoaded', function() {
+        // Data View Toggle
         const icons = document.querySelectorAll('.icon');
         const tables = document.querySelectorAll('.data-table');
 
@@ -217,28 +220,30 @@ nav-menu: true
                 const view = this.getAttribute('data-view');
 
                 tables.forEach(table => {
-                    table.style.display = table.getAttribute('data-view') === view ? "block" : "none";
+                    if(table.getAttribute('data-view') === view) {
+                        table.style.display = table.style.display === "none" ? "block" : "none";
+                    } else {
+                        table.style.display = "none";
+                    }
                 });
             });
         });
-    });
 
-    // Adjust Iframe Height
-    function adjustIframeHeight() {
-        const iframes = document.querySelectorAll('.html-object iframe');
-        iframes.forEach(iframe => {
-            if (window.innerWidth <= 768) {
-                iframe.style.height = `calc(50vw)`;  // Adjust as needed
-            } else {
-                iframe.style.height = '600px'; // Adjust as needed for larger screens
-            }
-        });
-    }
+        // Adjust Iframe Height
+        function adjustIframeHeight() {
+            const iframes = document.querySelectorAll('.html-object iframe');
+            iframes.forEach(iframe => {
+                if (window.innerWidth <= 768) {
+                    iframe.style.maxHeight = `calc(50vw)`;  // Adjust as needed
+                } else {
+                    iframe.style.maxHeight = '600px'; // Adjust as needed for larger screens
+                }
+            });
+        }
 
-    window.addEventListener('resize', adjustIframeHeight);
-    window.addEventListener('DOMContentLoaded', adjustIframeHeight); // To adjust the height on page load
-</script>
-
+        window.addEventListener('resize', adjustIframeHeight);
+        window.addEventListener('DOMContentLoaded', adjustIframeHeight); // To adjust the height on page load
+    </script>
 
 <!-- Rest of your content... -->
 </body>
