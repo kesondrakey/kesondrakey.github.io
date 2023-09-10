@@ -203,9 +203,10 @@ nav-menu: true
       <!-- Here's where you add the iframe to embed the Plotly graph -->
       <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html">
       </iframe>
+          <h4><i>*Simply click your variable of interest!</i></h4>
     </div>
   </div>
-  <h4><i>*Simply click your variable of interest!</i></h4>
+
   
     <div class="html-object">
         <iframe src="your_iframe_source_here"></iframe>
