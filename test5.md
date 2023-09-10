@@ -10,15 +10,15 @@ nav-menu: true
 .collapsible {
     color: white;
     background-image: linear-gradient(to right, #764BA2, #667EEA);
-    border: none;
+    border: none; /* <-- Added this line to remove border */
     cursor: pointer;
     padding: 10px 15px;
     border-radius: 4px;
     text-align: center;
-    display: inline-block; /* This ensures it takes the full width */
-    margin: auto;   /* This will center the button if it's not full width */
-    width: 100%;    /* This sets the button to take the full width of its parent container */
-    line-height: 40px; 
+    display: block;
+    margin: auto;
+    width: 100%;
+    line-height: 40px;
 }
 
 
@@ -81,7 +81,10 @@ nav-menu: true
 }
 
 .icon-container {
-    text-align: center;         
+    display: flex;
+    justify-content: center;
+}
+       
 }
     .table-container {
     display: none;
@@ -91,25 +94,6 @@ nav-menu: true
 .grid-container, .toggle-icons, .content {
     margin-bottom: 40px;
 }
-
- /* Styling for text */
-    h3, h4 {
-    font-family: 'Arial', sans-serif; 
-    color: #333; 
-    margin-top: 20px; 
-    margin-bottom: 15px;
-}
-
-h3 {
-    font-size: 24px;
-    font-weight: 700;
-}
-
-h4 {
-    font-size: 20px;
-    font-weight: 600;
-}
-
 
 
 </style>
@@ -145,7 +129,7 @@ h4 {
 <div class="collapsible-container">
     <button class="collapsible">More Technical Data</button>
     <div class="container">
-             <h3>This plot shows multiple types of variables coming in from the site. Just click your variable of interest to see the pattern across the entire period of data collection!</h3>
+             <h2>This plot shows multiple types of variables coming in from the site. Just click your variable of interest to see the pattern across the entire period of data collection!</h2>
     
         <div class="html-object">
             <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
