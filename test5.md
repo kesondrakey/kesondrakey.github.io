@@ -15,7 +15,7 @@ nav-menu: true
     padding: 10px 15px;
     border-radius: 4px;
     text-align: center;
-    display: block; /* This ensures it takes the full width */
+    display: inline-block; /* This ensures it takes the full width */
     margin: auto;   /* This will center the button if it's not full width */
     width: 100%;    /* This sets the button to take the full width of its parent container */
     line-height: 40px; 
@@ -86,6 +86,30 @@ nav-menu: true
     .table-container {
     display: none;
 }
+
+    /* Use consistent margins for top-level sections */
+.grid-container, .toggle-icons, .content {
+    margin-bottom: 40px;
+}
+
+ /* Styling for text */
+    h3, h4 {
+    font-family: 'Arial', sans-serif; 
+    color: #333; 
+    margin-top: 20px; 
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
 
 
 </style>
