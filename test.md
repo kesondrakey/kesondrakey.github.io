@@ -166,12 +166,29 @@ nav-menu: true
 
     table.dataTable tbody td {
      color: white;
-}
+    }
+    .view-toggle-button {
+    background-color: black;
+    color: blue;
+    padding: 10px 20px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    }
+
+    .view-toggle-button:hover {
+       background-color: #1a1a1a;
+    color: deepskyblue;
+    }
+
 
     table.dataTable thead th {
       background-color: gray;
       color: white;
-}
+    }
+
 </style>
 </head>
 <body>
@@ -231,16 +248,31 @@ nav-menu: true
   </div>
 
 <button class="collapsible">More Technical Data</button>
-<div class="content">
-    <h1>Long Term Data</h1>
-    <div class="container">
-        <div class="html-object">
-            <!-- Here's where you add the iframe to embed the Plotly graph -->
-            <iframe width="100%" height="600" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
-               <h4><i>*Click your variable of interest (currently works better on mobile devices)</i></h4>
-<div class="full-screen-text-container">
-    <p>For Desktop users, <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower1.html" target="_blank" class="full-screen-link">click this link</a> to view in full size!</p>
+
+<div class="view-toggle">
+    <button class="view-toggle-button" onclick="showEmbedded()">For Mobile Users</button>
+    <button class="view-toggle-button" onclick="showFullscreen()">For Desktop Users</button>
 </div>
+
+<div id="embeddedPlot" style="display:block;">
+    <div class="content">
+        <h1>Long Term Data</h1>
+        <div class="container">
+            <div class="html-object">
+                <!-- Here's where you add the iframe to embed the Plotly graph -->
+                <iframe width="100%" height="600" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
+                <h4><i>*Click your variable of interest (currently works better on mobile devices)</i></h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="fullscreenLink" style="display:none;">
+    <div class="full-screen-text-container">
+        <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower1.html" target="_blank" class="full-screen-link">Click this link to view in full size!</a>
+    </div>
+</div>
+
 
         </div>
     </div>
@@ -258,6 +290,17 @@ for (let i = 0; i < coll.length; i++) {
     });
 }
 
+   function showEmbedded() {
+    document.getElementById('embeddedPlot').style.display = 'block';
+    document.getElementById('fullscreenLink').style.display = 'none';
+}
+
+function showFullscreen() {
+    document.getElementById('embeddedPlot').style.display = 'none';
+    document.getElementById('fullscreenLink').style.display = 'block';
+}
+
+   
 // Data View Toggle
 const icons = document.querySelectorAll('.icon img');  // target the img inside the icon
 const tables = document.querySelectorAll('.data-table');
