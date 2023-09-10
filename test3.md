@@ -198,20 +198,24 @@ nav-menu: true
 <h3>Choose Data Table:</h3>
 <div class="toggle-icons">
     <div class="icon icon-daily" data-view="daily">
-    <span class="icon-label">Daily</span>
-    <img src="images/daily.jpg" alt="Daily Icon">
-        hi?
-</div>
+        <span class="icon-label">Daily</span>
+        <img src="images/daily.jpg" alt="Daily Icon">
+        <div class="plot-container">
+            <iframe width="100%" height="430" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
+        </div>
+    </div>
     <div class="icon icon-weekly" data-view="weekly">
         <img src="images/weekly.png" alt="Weekly Icon">
         <span class="icon-label">Weekly</span>
-        hello?
-    </div>
+       <div class="plot-container">
+            <iframe width="100%" height="430" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
+        </div>
     <div class="icon icon-monthly" data-view="monthly">
         <img src="images/monthly.jpg" alt="Monthly Icon">
         <span class="icon-label">Monthly</span>
-        hola?
-    </div>
+       <div class="plot-container">
+            <iframe width="100%" height="430" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
+        </div>
 </div>
 
 <!-- More Technical Data -->
@@ -230,6 +234,20 @@ nav-menu: true
     </div>
 </div>
 
+
+
+<!-- More Technical Data -->
+<h3>testing</h3>
+<button class="collapsible">Toggle Technical Data</button> <!-- This button will toggle the content below -->
+<div class="content">
+ <div class="container">
+    <div class="html-object">
+      <!-- Here's where you add the iframe to embed the Plotly graph -->
+      <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html">
+      </iframe>
+          <h4><i>*Simply click your variable of interest!</i></h4>
+    </div>
+  </div>
 
 
 
