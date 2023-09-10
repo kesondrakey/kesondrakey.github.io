@@ -50,24 +50,26 @@ nav-menu: true
     .toggle-icons {
         display: flex;
         justify-content: center;
-        gap: 15px;
+        gap: 20px;
         margin: 20px 0;
     }
 
     .icon {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         border-radius: 50%;
         cursor: pointer;
         display: flex;
         align-items: center;
         justify-content: center;
         overflow: hidden;
+        position: relative; /* Important for proper positioning of label */
     }
 
     .icon img {
-        width: 90%;
-        height: auto;
+       width: 100%;  /* This will cover the entire area of the icon */
+       height: 100%;
+       object-fit: cover;
     }
 
     .icon-label {
@@ -77,7 +79,7 @@ nav-menu: true
         transform: translate(-50%, -50%);
         width: 100%;
         text-align: center;
-        font-size: 14px;
+        font-size: 20px;
         font-weight: bold;
         color: white;
     }
@@ -187,25 +189,26 @@ nav-menu: true
 
 
 <!-- Choose Data View -->
+<!-- Choose Data View -->
 <h3>Choose Data Table:</h3>
 <div class="toggle-icons">
     <div class="icon icon-daily" data-view="daily">
-        <span class="icon-label">Daily</span>
         <img src="images/daily.jpg" alt="Daily Icon">
+        <span class="icon-label">Daily</span>
     </div>
     <div class="icon icon-weekly" data-view="weekly">
-        <span class="icon-label">Weekly</span>
         <img src="images/weekly.png" alt="Weekly Icon">
+        <span class="icon-label">Weekly</span>
     </div>
     <div class="icon icon-monthly" data-view="monthly">
-        <span class="icon-label">Monthly</span>
         <img src="images/monthly.jpg" alt="Monthly Icon">
+        <span class="icon-label">Monthly</span>
     </div>
 </div>
 
 <!-- More Technical Data -->
-<button class="collapsible"More Technical Data"</button>
-<div class="content">
+<button class="collapsible">More Technical Data</button> <!-- Fixed this line -->
+<div class="content" style="display: none;"> <!-- Initially hide the content -->
     <div class="container">
         <div class="html-object">
             <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
@@ -213,8 +216,10 @@ nav-menu: true
         </div>
     </div>
     <div class="full-screen-text-container">
-        <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower1.html" class="full-screen-link">View in Full Screen</a>
-        <h4><i>*Simply click your variable of interest!</i></h4>
+        <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower1.html" class="full-screen-link">
+            <h4>View in Full Screen</h4>
+            <p><i>*Simply click your variable of interest!</i></p>
+        </a>
     </div>
 </div>
 
