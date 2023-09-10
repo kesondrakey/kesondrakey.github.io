@@ -44,6 +44,27 @@ nav-menu: true
     text-decoration: none; /* Since it will be an anchor tag */
     font-weight: bold; /* Bold text */
 }
+
+    /* Styling for the icons */
+    .icon {
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 4px;
+    text-align: center;
+    display: block;
+    margin: 10px auto; /* vertical spacing & horizontally centering */
+    width: 200px;      /* width of the icons/buttons */
+    font-weight: bold;
+    line-height: 40px;
+}
+    .table-container {
+    display: none;
+    margin-top: 20px;  /* spacing above the table */
+}
+
+
 </style>
 
   <!-- Long Term Data -->
@@ -60,6 +81,21 @@ nav-menu: true
 </div>
 
 
+<!-- Icons/buttons -->
+<button class="icon icon-daily" onclick="showTable('daily')">Daily</button>
+<button class="icon icon-weekly" onclick="showTable('weekly')">Weekly</button>
+<button class="icon icon-monthly" onclick="showTable('monthly')">Monthly</button>
+
+<!-- Tables (they're iframes in your case) -->
+<div id="daily-table" class="table-container">
+    <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
+</div>
+<div id="weekly-table" class="table-container">
+    <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower1.html"></iframe>
+</div>
+<div id="monthly-table" class="table-container">
+    <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower1.html"></iframe>
+</div>
 
 
 
@@ -86,7 +122,6 @@ nav-menu: true
 
 <script>
 // Collapsible Functionality
-// Collapsible Functionality
 var coll = document.getElementsByClassName("collapsible");
 for (let i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
@@ -103,6 +138,17 @@ for (let i = 0; i < coll.length; i++) {
             content.style.height = "auto";  // revert to its original height
         }
     });
+}
+// for the icons
+    function showTable(tableType) {
+    // Hide all tables first
+    const tables = document.querySelectorAll('.table-container');
+    tables.forEach(table => {
+        table.style.display = 'none';
+    });
+
+    // Show the selected table
+    document.getElementById(tableType + '-table').style.display = 'block';
 }
 
 
