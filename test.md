@@ -7,277 +7,217 @@ nav-menu: true
 
 <html>
 <head>
-  <style>
+<style>
+    /* ================= Basic Grid Styles ================= */
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Make the grid responsive */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-gap: 1em;
     }
 
     .grid-item {
         position: relative;
-        padding-top: 100%; /* Maintain the aspect ratio */
+        padding-top: 100%;
         overflow: hidden;
-        border: none; /* Ensure no borders are added to the grid item */
+        border: none;
     }
 
-    .grid-item a {
+    .grid-item a,
+    .grid-item img {
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        text-decoration: none;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: rgba(0, 0, 0, 0.7); /* Add a semi-transparent overlay */
-        border: none; /* Ensure no borders are added to the link */
+        border: none;
     }
 
+    .grid-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        outline: none;
+    }
+
+    .grid-item span {
+        font-size: 2rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        z-index: 2;
+        font-weight: bold;
+    }
+
+    /* ================= Toggle Icons and Labels ================= */
     .toggle-icons {
         display: flex;
         justify-content: center;
         gap: 15px;
-        margin-bottom: 20px;
+        margin: 20px 0;
     }
 
     .icon {
-        width: 100px; /* Made icons larger */
-        height: 100px; /* Made icons larger */
-        border-radius: 50%; /* Makes them circular */
-        cursor: pointer; /* Indicates they're clickable */
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        cursor: pointer;
         display: flex;
-        align-items: center; /* Center the img within the circular div */
+        align-items: center;
         justify-content: center;
-        overflow: hidden; /* Ensure the img doesn't overflow out of the circular div */
-    }
-
-    .icon-daily {
-        background-color: lightblue;
-    }
-
-    .icon-weekly {
-        background-color: purple;
-    }
-
-    .icon-monthly {
-        background-color: green;
+        overflow: hidden;
     }
 
     .icon img {
-        width: 90%; /* Adjusted size */
-        height: auto; /* Maintain the aspect ratio */
+        width: 90%;
+        height: auto;
     }
 
-    .grid-item img {
+    .icon-label {
         position: absolute;
-        top: 0;
-        left: 0;
+        top: -25px;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border: none; /* Ensure no borders are added to the image */
-        outline: none; /* Ensure no outlines are added to the image */
-    }
-     .data-table {
-        display: none;  /* Set the data tables to not display by default */
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
     }
 
-    .html-object iframe {
-        width: 100%;
-        max-height: calc(50vw); /* Changed height to max-height */
+    .icon-daily { background-color: lightblue; }
+    .icon-weekly { background-color: purple; }
+    .icon-monthly { background-color: green; }
+
+    /* ================= Collapsible Button and Full-Screen Styles ================= */
+    .collapsible {
+        background: linear-gradient(to right, #764BA2, #667EEA);
+        color: white;
+        border: none;
+        display: block;
+        margin: 20px auto;
+        padding: 10px;
+        width: 50%;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.5s;
     }
 
-    .grid-item span {
-        font-size: 2rem; /* Adjust the font size */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow for better visibility */
-        z-index: 2;
-        font-weight: bold; /* Make the text bolder */
-    }
+    .collapsible:hover { background: linear-gradient(to right, #667EEA, #764BA2); }
+
     .full-screen-text-container {
-    background-color: black;  /* Set background to black */
-    color: blue;              /* Set text color to blue */
-    text-align: center;       /* Center the text */
-    padding: 10px;            /* Add some padding for better appearance */
+        background: linear-gradient(to right, #764BA2, #667EEA);
+        border-radius: 5px;
+        margin: 20px auto;
+        cursor: pointer;
     }
 
     .full-screen-link {
-    color: blue;             /* Make the link text blue */
-    text-decoration: underline;  /* Underline the link */
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
     }
 
-    .full-screen-link:hover {
-    color: deepskyblue;     /* Change color on hover for better user feedback */
+    .full-screen-link:hover { background-color: rgba(0, 0, 0, 0.2); }
+
+    /* ================= Table Styles ================= */
+    .data-table { display: none; }
+
+    table.dataTable {
+        background-color: darkgray;
+        color: white;
     }
 
+    table.dataTable thead th {
+        background-color: gray;
+        color: white;
+    }
 
-    .full-screen-link:hover {
-      background-color: #0056b3;  /* Darker blue on hover */
-  }
+    table.dataTable tbody td { color: white; }
 
+    .view-toggle-button {
+        background-color: black;
+        color: blue;
+        padding: 10px 20px;
+        border: none;
+        margin: 10px;
+        cursor: pointer;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+    }
 
-    /* Larger and bolder text for desktop */
+    .view-toggle-button:hover {
+        background-color: #1a1a1a;
+        color: deepskyblue;
+    }
+
+    /* ================= Media Queries ================= */
     @media (min-width: 768px) {
         .grid-item span {
             font-size: 3rem;
             font-weight: 900;
         }
-
-        .collapsible {
-            background-color: transparent;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            border: 2px solid white;
-            font-size: 20px;
-            display: flex; /* Change from block to flex */
-            justify-content: center; /* Center content horizontally */
-            align-items: center; /* Center content vertically */
-            margin: 20px auto;
-            cursor: pointer;
-            transition: background-color 0.5s, color 0.5s, border-color 0.5s; /* Added transition for border color */
-            width: 70%; /* Adjust as needed */
-        }
-    .icon-label {
-      position: absolute;
-      top: -25px; /* Adjust this as needed */
-      width: 100%;
-      text-align: center;
-      font-size: 14px;
-      font-weight: bold;
     }
-
-        .collapsible:hover {
-            color: gray;
-            border-color: gray; /* Border color changes to gray on hover */
-        }
-
-
-
-    .content {
-        display: none;
-    }
-    table.dataTable {
-    background-color: darkgray;
-    color: white;
- }
-
-    table.dataTable tbody td {
-     color: white;
-    }
-    .view-toggle-button {
-    background-color: black;
-    color: blue;
-    padding: 10px 20px;
-    border: none;
-    margin: 10px;
-    cursor: pointer;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-    }
-
-    .view-toggle-button:hover {
-       background-color: #1a1a1a;
-    color: deepskyblue;
-    }
-
-
-    table.dataTable thead th {
-      background-color: gray;
-      color: white;
-    }
-
 </style>
+
 </head>
 <body>
   
 
-  <h1>Long Term Data</h1>
-  <div class="container">
+  <!-- Long Term Data -->
+<div class="grid-container">
+    <!-- You should place your plots inside this grid container, they will be the .grid-item elements. -->
+    <div class="grid-item">
+         <div class="container">
     <div class="html-object">
       <!-- Here's where you add the iframe to embed the Plotly graph -->
       <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower1.html">
       </iframe>
       <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
     </div>
-  </div> 
+</div>
 
+<!-- Compact Data Snapshot -->
+<h2>Compact Data Snapshot</h2>
 
- 
-<!-- Toggle Icons -->
+<!-- Choose Data View -->
+<h3>Choose Data View:</h3>
 <div class="toggle-icons">
     <div class="icon icon-daily">
-        <span class="icon-label">Daily</span> <!-- The new label -->
-        <img src="images/daily.jpg" alt="Daily" data-view="daily">
+        <span class="icon-label">Daily</span>
+        <img src="images/daily.jpg" alt="Daily Icon">
     </div>
     <div class="icon icon-weekly">
-        <span class="icon-label">Weekly</span> <!-- The new label -->
-        <img src="images/weekly.png" alt="Weekly" data-view="weekly">
+        <span class="icon-label">Weekly</span>
+        <img src="images/weekly.png" alt="Weekly Icon">
     </div>
     <div class="icon icon-monthly">
-        <span class="icon-label">Monthly</span> <!-- The new label -->
-        <img src="images/monthly.jpg" alt="Monthly" data-view="monthly">
+        <span class="icon-label">Monthly</span>
+        <img src="images/monthly.jpg" alt="Monthly Icon">
     </div>
 </div>
 
-
-
-<!-- Data Tables -->
-  <div class="data-table" data-view="daily">
-      <h1>Daily Data</h1>
-      <div class="html-object">
-          <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
-        <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
-      </div>
-  </div>
-  <div class="data-table" data-view="weekly">
-      <h1>Weekly Data</h1>
-      <div class="html-object">
-          <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower1.html"></iframe>
-        <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
-      </div>
-  </div>
-  <div class="data-table" data-view="monthly">
-      <h1>Monthly Data</h1>
-      <div class="html-object">
-          <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower1.html"></iframe>
-        <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
-      </div>
-  </div>
-
-<button class="collapsible">More Technical Data</button>
-
-<div class="view-toggle">
-    <button class="view-toggle-button" onclick="showEmbedded()">For Mobile Users</button>
-    <button class="view-toggle-button" onclick="showFullscreen()">For Desktop Users</button>
-</div>
-
-<div id="embeddedPlot" style="display:block;">
-    <div class="content">
-        <h1>Long Term Data</h1>
-        <div class="container">
-            <div class="html-object">
-                <!-- Here's where you add the iframe to embed the Plotly graph -->
-                <iframe width="100%" height="600" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
-                <h4><i>*Click your variable of interest (currently works better on mobile devices)</i></h4>
-            </div>
-        </div>
+<!-- More Technical Data -->
+<h3>More Technical Data</h3>
+<button class="collapsible">Toggle Technical Data</button> <!-- This button will toggle the content below -->
+<div class="content">
+    <h4>For Mobile Users:</h4>
+ <div class="container">
+    <div class="html-object">
+      <!-- Here's where you add the iframe to embed the Plotly graph -->
+      <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html">
+      </iframe>
     </div>
-</div>
+  </div>
+  <h4><i>*Simply click your variable of interest!</i></h4>
+  
+    <div class="html-object">
+        <iframe src="your_iframe_source_here"></iframe>
+    </div>
 
-<div id="fullscreenLink" style="display:none;">
+    <h4>For Desktop Users:</h4>
     <div class="full-screen-text-container">
-        <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower1.html" target="_blank" class="full-screen-link">Click this link to view in full size!</a>
+        <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower1.html" class="full-screen-link">View in Full Screen</a>
+          <h4><i>*Simply click your variable of interest!</i></h4>
     </div>
 </div>
 
-
-        </div>
-    </div>
-
-</div>
 
  <script>
        // Collapsible Functionality
