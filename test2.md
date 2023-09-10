@@ -4,7 +4,6 @@ title: Flux Tower 1
 description: Flux Tower 1
 nav-menu: true
 ---
-<!DOCTYPE html>
 <head>
 <style>
     /* ================= Basic Grid Styles ================= */
