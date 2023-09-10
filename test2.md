@@ -186,30 +186,25 @@ nav-menu: true
 </div>
 
 
-<!-- Compact Data Snapshot -->
-<h2>Compact Data Snapshot</h2>
-
 <!-- Choose Data View -->
-<h3>Choose Data View:</h3>
+<h3>Choose Data Table:</h3>
 <div class="toggle-icons">
-    <div class="icon icon-daily">
+    <div class="icon icon-daily" data-view="daily">
         <span class="icon-label">Daily</span>
         <img src="images/daily.jpg" alt="Daily Icon">
     </div>
-    <div class="icon icon-weekly">
+    <div class="icon icon-weekly" data-view="weekly">
         <span class="icon-label">Weekly</span>
         <img src="images/weekly.png" alt="Weekly Icon">
     </div>
-    <div class="icon icon-monthly">
+    <div class="icon icon-monthly" data-view="monthly">
         <span class="icon-label">Monthly</span>
         <img src="images/monthly.jpg" alt="Monthly Icon">
     </div>
 </div>
 
-
 <!-- More Technical Data -->
-<h3>More Technical Data</h3>
-<button class="collapsible">Toggle Technical Data</button>
+<button class="collapsible"More Technical Data"</button>
 <div class="content">
     <div class="container">
         <div class="html-object">
@@ -235,23 +230,24 @@ nav-menu: true
         });
     }
 
-    // Data View Toggle
-    const icons = document.querySelectorAll('.icon img');  // target the img inside the icon
-    const tables = document.querySelectorAll('.data-table');
+   // Data View Toggle
+const icons = document.querySelectorAll('.icon');  // target the entire icon container
+const tables = document.querySelectorAll('.data-table');
 
-    icons.forEach(icon => {
-        icon.addEventListener('click', function() {
-            const view = this.getAttribute('data-view');
+icons.forEach(icon => {
+    icon.addEventListener('click', function() {
+        const view = this.getAttribute('data-view');
 
-            tables.forEach(table => {
-                if (table.getAttribute('data-view') === view) {
-                    table.style.display = table.style.display === "none" ? "block" : "none";
-                } else {
-                    table.style.display = "none";
-                }
-            });
+        tables.forEach(table => {
+            if (table.getAttribute('data-view') === view) {
+                table.style.display = table.style.display === "none" ? "block" : "none";
+            } else {
+                table.style.display = "none";
+            }
         });
     });
+});
+
 </script>
 </body>
 </html>
