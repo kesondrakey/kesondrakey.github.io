@@ -12,6 +12,7 @@ nav-menu: true
     background-image: linear-gradient(to right, #764BA2, #667EEA);
     border: none; /* <-- Added this line to remove border */
     cursor: pointer;
+    outline: none;
     padding: 10px 15px;
     border-radius: 4px;
     text-align: center;
@@ -81,6 +82,10 @@ nav-menu: true
 .icon:active {
     filter: brightness(85%); /* This reduces the brightness by 15% for an active click */
 }
+
+    .icon:active, .collapsible:active {
+    transform: scale(0.98); /* Slightly shrinks the button to give a pressed effect */
+}
     
 .icon-daily { 
     background: linear-gradient(to right, #85a3e0, #1e57a8); 
@@ -97,7 +102,6 @@ nav-menu: true
 .icon-container {
     display: flex;
     justify-content: center;
-}
        
 }
     .table-container {
