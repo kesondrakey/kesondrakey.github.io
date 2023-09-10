@@ -15,13 +15,18 @@ nav-menu: true
     padding: 10px 15px;
     border-radius: 4px;
     text-align: center;
+    display: block;
+    margin: auto;
+}
+    .container {
+    display: none;  /* Start as hidden */
 }
 
 /* Styling for the View in full View button */
 .full-view-button {
     display: block;
-    margin: 20px auto; /* centers the button */
-    background-image: linear-gradient(to right, darkgray, gray);
+    margin: 20px auto; /* centers the button horizontally */
+    background-image: linear-gradient(to right, #555, #777);  /* darker grays */
     color: white;
     border: none;
     cursor: pointer;
@@ -29,6 +34,7 @@ nav-menu: true
     border-radius: 4px;
     text-align: center;
     text-decoration: none; /* Since it will be an anchor tag */
+    font-weight: bold; /* Bold text */
 }
 </style>
 
@@ -75,4 +81,5 @@ for (let i = 0; i < coll.length; i++) {
         content.style.display = content.style.display === "block" ? "none" : "block";
     });
 }
+
 </script>
