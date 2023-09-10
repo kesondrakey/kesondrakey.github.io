@@ -163,7 +163,7 @@ nav-menu: true
 
 
 <script>
-   function showTable(tableType) {
+function showTable(tableType) {
     const tables = document.querySelectorAll('.table-container');
     const selectedTable = document.getElementById(tableType + '-table');
 
@@ -180,10 +180,6 @@ nav-menu: true
     }
 }
 
-
-    
-
-    
 // Collapsible Functionality
 var coll = document.getElementsByClassName("collapsible");
 for (let i = 0; i < coll.length; i++) {
@@ -201,17 +197,6 @@ for (let i = 0; i < coll.length; i++) {
             content.style.height = "auto";  // revert to its original height
         }
     });
-}
-// for the icons
-    function showTable(tableType) {
-    // Hide all tables first
-    const tables = document.querySelectorAll('.table-container');
-    tables.forEach(table => {
-        table.style.display = 'none';
-    });
-
-    // Show the selected table
-    document.getElementById(tableType + '-table').style.display = 'block';
 }
 
 
