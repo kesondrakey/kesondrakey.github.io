@@ -66,7 +66,7 @@ nav-menu: true
     margin: 10px;
     background-size: 100%;
     letter-spacing: 1px; /* Adjust the spacing between letters */
-    font-size: 1.2em; /* Slightly increase the font size */
+    font-size: 1em; /* Slightly increase the font size */
     font-weight: bold;
     background-color: transparent; /* Removes any default background color */
     outline: none; /* Removes focus outline which browsers apply */
