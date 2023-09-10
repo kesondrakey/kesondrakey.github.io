@@ -177,6 +177,7 @@ nav-menu: true
       <!-- Here's where you add the iframe to embed the Plotly graph -->
       <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower1.html">
       </iframe>
+      <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
     </div>
   </div> 
 
@@ -205,18 +206,21 @@ nav-menu: true
       <h1>Daily Data</h1>
       <div class="html-object">
           <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
+        <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
       </div>
   </div>
   <div class="data-table" data-view="weekly">
       <h1>Weekly Data</h1>
       <div class="html-object">
           <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower1.html"></iframe>
+        <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
       </div>
   </div>
   <div class="data-table" data-view="monthly">
       <h1>Monthly Data</h1>
       <div class="html-object">
           <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower1.html"></iframe>
+        <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
       </div>
   </div>
 
@@ -227,10 +231,11 @@ nav-menu: true
         <div class="html-object">
             <!-- Here's where you add the iframe to embed the Plotly graph -->
             <iframe width="100%" height="600" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
-            <p>For Desktop users: <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower1.html" target="_blank" class="full-screen-link">click this link</a> to view in full size!</p>
+               <h4><i>*Click your variable of interest (currently works better on mobile devices)</i></h4>
+          <p>For Desktop users: <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower1.html" target="_blank" class="full-screen-link">click this link</a> to view in full size!</p>
         </div>
     </div>
-    <h4><i>*Click your variable of interest (currently works better on mobile devices)</i></h4>
+
 </div>
 
  <script>
