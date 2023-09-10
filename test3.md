@@ -171,6 +171,11 @@ nav-menu: true
         color: deepskyblue;
     }
 
+    .plot-container {
+    display: none;
+    }
+
+
     /* ================= Media Queries ================= */
     @media (min-width: 768px) {
         .grid-item span {
@@ -252,7 +257,25 @@ nav-menu: true
 
 
 <script>
-    // Collapsible Functionality
+// Get all the icons
+const icons = document.querySelectorAll('.icon');
+
+icons.forEach(icon => {
+    icon.addEventListener('click', function() {
+        // Hide all plots
+        const allPlots = document.querySelectorAll('.plot-container');
+        allPlots.forEach(plot => {
+            plot.style.display = "none";
+        });
+
+        // Show the associated plot for the clicked icon
+        const thisPlot = this.querySelector('.plot-container');
+        if (thisPlot) {
+            thisPlot.style.display = "block";
+        }
+    });
+});
+    
 // Collapsible Functionality
 var coll = document.getElementsByClassName("collapsible");
 var contents = document.getElementsByClassName("content");
