@@ -201,49 +201,52 @@ nav-menu: true
   </div>
 
  <script>
-        // Collapsible Functionality
-        var coll = document.getElementsByClassName("collapsible");
-        for (let i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                content.style.display = content.style.display === "block" ? "none" : "block";
-            });
-        }
+       // Collapsible Functionality
+var coll = document.getElementsByClassName("collapsible");
+for (let i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        content.style.display = content.style.display === "block" ? "none" : "block";
+    });
+}
 
-        // Data View Toggle
-        const icons = document.querySelectorAll('.icon');
-        const tables = document.querySelectorAll('.data-table');
+// Data View Toggle
+const icons = document.querySelectorAll('.icon img');  // target the img inside the icon
+const tables = document.querySelectorAll('.data-table');
 
-        icons.forEach(icon => {
-            icon.addEventListener('click', function() {
-                const view = this.getAttribute('data-view');
+icons.forEach(icon => {
+    icon.addEventListener('click', function() {
+        const view = this.getAttribute('data-view');
 
-                tables.forEach(table => {
-                    if(table.getAttribute('data-view') === view) {
-                        table.style.display = table.style.display === "none" ? "block" : "none";
-                    } else {
-                        table.style.display = "none";
-                    }
-                });
-            });
+        tables.forEach(table => {
+            if (table.getAttribute('data-view') === view) {
+                table.style.display = table.style.display === "none" ? "block" : "none";
+            } else {
+                table.style.display = "none";
+            }
         });
+    });
+});
 
-        // Adjust Iframe Height
-        function adjustIframeHeight() {
-            const iframes = document.querySelectorAll('.html-object iframe');
-            iframes.forEach(iframe => {
-                if (window.innerWidth <= 768) {
-                    iframe.style.maxHeight = `calc(50vw)`;  // Adjust as needed
-                } else {
-                    iframe.style.maxHeight = '600px'; // Adjust as needed for larger screens
-                }
-            });
+// Adjust Iframe Height
+function adjustIframeHeight() {
+    const iframes = document.querySelectorAll('.html-object iframe');
+    iframes.forEach(iframe => {
+        if (window.innerWidth <= 768) {
+            iframe.style.maxHeight = `calc(50vw)`;  // Adjust as needed
+        } else {
+            iframe.style.maxHeight = '600px'; // Adjust as needed for larger screens
         }
+    });
+}
 
-        window.addEventListener('resize', adjustIframeHeight);
-        window.addEventListener('DOMContentLoaded', adjustIframeHeight); // To adjust the height on page load
-    </script>
+window.addEventListener('resize', adjustIframeHeight);
+window.addEventListener('DOMContentLoaded', adjustIframeHeight); // To adjust the height on page load
+
+
+    
+</script>
 
 <!-- Rest of your content... -->
 </body>
