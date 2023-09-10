@@ -36,7 +36,7 @@ nav-menu: true
 .full-view-button {
     display: block;
     margin: 20px auto; /* centers the button horizontally */
-    background-image: linear-gradient(to right, #007BFF, #00C6FF);  /* darker grays */
+    background-image: linear-gradient(to right, #000000, #333333);  /* darker grays */
     color: white;
     border: none;
     cursor: pointer;
