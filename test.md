@@ -44,8 +44,8 @@ nav-menu: true
     }
 
     .icon {
-        width: 80px; /* Made icons larger */
-        height: 80px; /* Made icons larger */
+        width: 100px; /* Made icons larger */
+        height: 100px; /* Made icons larger */
         border-radius: 50%; /* Makes them circular */
         cursor: pointer; /* Indicates they're clickable */
         display: flex;
@@ -83,8 +83,6 @@ nav-menu: true
     }
      .data-table {
         display: none;  /* Set the data tables to not display by default */
-        background-color: black; /* Set the table background to black */
-        color: white; /* Text color set to white for visibility on dark background */
     }
 
     .html-object iframe {
@@ -121,25 +119,38 @@ nav-menu: true
             transition: background-color 0.5s, color 0.5s, border-color 0.5s; /* Added transition for border color */
             width: 70%; /* Adjust as needed */
         }
+    .icon-label {
+      position: absolute;
+      top: -25px; /* Adjust this as needed */
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+    }
 
         .collapsible:hover {
             color: gray;
             border-color: gray; /* Border color changes to gray on hover */
         }
 
-        .html-object iframe {
-            height: 600px; /* Set a static height for larger screens, adjust as needed. */
-        }
-    }
 
-    .html-object iframe {
-        width: 100%;
-        height: calc(50vw); /* Change the value as necessary to adjust the iframe height based on the viewport width. */
-    }
 
     .content {
         display: none;
     }
+    table.dataTable {
+    background-color: darkgray;
+    color: white;
+ }
+
+    table.dataTable tbody td {
+     color: white;
+}
+
+    table.dataTable thead th {
+      background-color: gray;
+      color: white;
+}
 </style>
 </head>
 <body>
@@ -158,35 +169,39 @@ nav-menu: true
  
 <!-- Toggle Icons -->
 <div class="toggle-icons">
-   <div class="icon icon-daily">
-       <img src="images/daily.jpg" alt="Daily" data-view="daily">
-   </div>
-   <div class="icon icon-weekly">
-       <img src="images/weekly.png" alt="Weekly" data-view="weekly">
-   </div>
-   <div class="icon icon-monthly">
-       <img src="images/monthly.jpg" alt="Monthly" data-view="monthly">
-   </div>
+    <div class="icon icon-daily">
+        <span class="icon-label">Daily</span> <!-- The new label -->
+        <img src="images/daily.jpg" alt="Daily" data-view="daily">
+    </div>
+    <div class="icon icon-weekly">
+        <span class="icon-label">Weekly</span> <!-- The new label -->
+        <img src="images/weekly.png" alt="Weekly" data-view="weekly">
+    </div>
+    <div class="icon icon-monthly">
+        <span class="icon-label">Monthly</span> <!-- The new label -->
+        <img src="images/monthly.jpg" alt="Monthly" data-view="monthly">
+    </div>
 </div>
+
 
 
 <!-- Data Tables -->
   <div class="data-table" data-view="daily">
       <h1>Daily Data</h1>
       <div class="html-object">
-          <iframe width="100%" height="430" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
+          <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
       </div>
   </div>
   <div class="data-table" data-view="weekly">
       <h1>Weekly Data</h1>
       <div class="html-object">
-          <iframe width="100%" height="430" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower1.html"></iframe>
+          <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower1.html"></iframe>
       </div>
   </div>
   <div class="data-table" data-view="monthly">
       <h1>Monthly Data</h1>
       <div class="html-object">
-          <iframe width="100%" height="430" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower1.html"></iframe>
+          <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower1.html"></iframe>
       </div>
   </div>
 
