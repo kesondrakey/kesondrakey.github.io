@@ -199,6 +199,8 @@ nav-menu: true
 </div>
 
 
+
+
 <!-- Choose Data View -->
 <h3>Choose Data Table:</h3>
 <div class="toggle-icons">
@@ -214,6 +216,7 @@ nav-menu: true
         <span class="icon-label">Weekly</span>
        <div class="plot-container">
             <iframe width="100%" height="430" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
+        </div>
         </div>
     <div class="icon icon-monthly" data-view="monthly">
         <img src="images/monthly.jpg" alt="Monthly Icon">
