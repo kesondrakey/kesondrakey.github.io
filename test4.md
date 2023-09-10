@@ -40,14 +40,16 @@ nav-menu: true
 
 
 <!-- More Technical Data -->
-<h3>More Technical Data</h3>
-<button class="collapsible">Toggle Technical Data</button>
-<div class="container">
-    <div class="html-object">
-      <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
-      <h4><i>*Simply click your variable of interest!</i></h4>
+<div class="collapsible-container">
+    <button class="collapsible">Toggle Technical Data</button>
+    <div class="container">
+        <div class="html-object">
+            <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
+            <h4><i>*Simply click your variable of interest!</i></h4>
+        </div>
     </div>
 </div>
+
 
 <!-- View in full View Button -->
 <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower1.html" class="full-view-button">View in full View</a>
@@ -77,9 +79,13 @@ var coll = document.getElementsByClassName("collapsible");
 for (let i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
-        var content = this.nextElementSibling;
+        
+        // Adjust this part to target the .container inside the .collapsible-container
+        var content = this.parentNode.querySelector(".container");
+        
         content.style.display = content.style.display === "block" ? "none" : "block";
     });
 }
+
 
 </script>
