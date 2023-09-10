@@ -67,7 +67,7 @@ nav-menu: true
        width: 100%;  /* Reduced size to ensure the whole image is seen */
        height: 100%;
        object-fit: cover; /* Changed to 'contain' to ensure whole image is visible */
-       margin: 5%; /* Center the image */
+       margin: 0; /* Center the image */
      }
     .content {
         display: none;
@@ -200,14 +200,17 @@ nav-menu: true
     <div class="icon icon-daily" data-view="daily">
     <span class="icon-label">Daily</span>
     <img src="images/daily.jpg" alt="Daily Icon">
+        hi?
 </div>
     <div class="icon icon-weekly" data-view="weekly">
         <img src="images/weekly.png" alt="Weekly Icon">
         <span class="icon-label">Weekly</span>
+        hello?
     </div>
     <div class="icon icon-monthly" data-view="monthly">
         <img src="images/monthly.jpg" alt="Monthly Icon">
         <span class="icon-label">Monthly</span>
+        hola?
     </div>
 </div>
 
@@ -216,7 +219,7 @@ nav-menu: true
 <div class="content">
     <div class="">
         <div class="html-object">
-            <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
+            <iframe width="100%" height="600" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
             <h4><i>*Simply click your variable of interest!</i></h4>
         </div>
     </div>
