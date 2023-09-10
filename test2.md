@@ -5,7 +5,6 @@ description: Flux Tower 1
 nav-menu: true
 ---
 <!DOCTYPE html>
-<html>
 <head>
 <style>
     /* ================= Basic Grid Styles ================= */
@@ -226,22 +225,6 @@ nav-menu: true
 </div>
 
 
-<!-- More Technical Data -->
-<button class="collapsible">More Technical Data</button> <!-- Fixed this line -->
-<div class="content" style="display: none;"> <!-- Initially hide the content -->
-    <div class="container">
-        <div class="html-object">
-            <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
-            <h4><i>*Simply click your variable of interest!</i></h4>
-        </div>
-    </div>
-    <div class="full-screen-text-container">
-        <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower1.html" class="full-screen-link">
-            <h4>View in Full Screen</h4>
-            <p><i>*Simply click your variable of interest!</i></p>
-        </a>
-    </div>
-</div>
 
 
 <script>
