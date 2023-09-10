@@ -19,8 +19,13 @@ nav-menu: true
     margin: auto;
 }
     .container {
+    visibility: hidden;
+    height: 0;
     display: none;  /* Start as hidden */
+    overflow: hidden;  // to ensure the content is hidden when the height is set to 0
 }
+
+
 
 /* Styling for the View in full View button */
 .full-view-button {
@@ -75,6 +80,7 @@ nav-menu: true
 
 <script>
 // Collapsible Functionality
+// Collapsible Functionality
 var coll = document.getElementsByClassName("collapsible");
 for (let i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
@@ -82,8 +88,14 @@ for (let i = 0; i < coll.length; i++) {
         
         // Adjust this part to target the .container inside the .collapsible-container
         var content = this.parentNode.querySelector(".container");
-        
-        content.style.display = content.style.display === "block" ? "none" : "block";
+
+        if (content.style.visibility === "visible" || content.style.visibility === "") {
+            content.style.visibility = "hidden";
+            content.style.height = "0";  // this will collapse the space taken by the hidden content
+        } else {
+            content.style.visibility = "visible";
+            content.style.height = "auto";  // revert to its original height
+        }
     });
 }
 
