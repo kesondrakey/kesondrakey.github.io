@@ -6,10 +6,10 @@ nav-menu: true
 ---
 
 <style>
-/* Styling for the Toggle Technical Data button */
+/* Styling for the Toggle Technical Data button */ 
 .collapsible {
     color: white;
-    background-image: linear-gradient(to right, #007BFF, #00C6FF);
+    background-image: linear-gradient(to right, #764BA2, #667EEA);
     border: none;
     cursor: pointer;
     padding: 10px 15px;
@@ -26,7 +26,7 @@ nav-menu: true
 .full-view-button {
     display: block;
     margin: 20px auto; /* centers the button horizontally */
-    background-image: linear-gradient(to right, #555, #777);  /* darker grays */
+    background-image: linear-gradient(to right, #007BFF, #00C6FF);  /* darker grays */
     color: white;
     border: none;
     cursor: pointer;
