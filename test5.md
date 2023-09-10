@@ -21,6 +21,7 @@ nav-menu: true
     line-height: 40px; 
 }
 
+
 .container {
     visibility: hidden;
     height: 0;
@@ -30,11 +31,12 @@ nav-menu: true
     text-align: center;
 }
 
+
 /* Styling for the View in full View button */
 .full-view-button {
     display: block;
     margin: 20px auto; /* centers the button horizontally */
-    background-image: linear-gradient(to right, #007BFF, #00C6FF);  /* darker grays */
+    background-image: linear-gradient(to right, #121821, #222e40);  /* darker grays */
     color: white;
     border: none;
     cursor: pointer;
@@ -103,12 +105,14 @@ nav-menu: true
 <div class="collapsible-container">
     <button class="collapsible">More Technical Data</button>
     <div class="container">
+             <h3>This plot shows multiple types of variables coming in from the site. Just click your variable of interest to see the pattern across the entire period of data collection!</h3>
+    
         <div class="html-object">
             <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
-            <h4 class="centered-text"><i>*Simply click your variable of interest!</i></h4>
-            
+     
             <!-- View in full View Button -->
 <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower1.html" class="full-view-button">View in full View</a>
+       
         </div>
     </div>
 </div>
