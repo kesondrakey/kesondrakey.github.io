@@ -53,6 +53,8 @@ nav-menu: true
 <div class="collapsible-container">
     <button class="collapsible">More Technical Data</button>
     <div class="container">
+             <h4 class="centered-text"><i>**add text here that says something like: This plot shows multiple types of variables coming in from the site. Just click your variable of interest to see the pattern across the entire period of data collection!*</i></h4>
+    
         <div class="html-object">
             <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
      
@@ -73,7 +75,6 @@ nav-menu: true
 
 
 <script>
-// Collapsible Functionality
 // Collapsible Functionality
 var coll = document.getElementsByClassName("collapsible");
 for (let i = 0; i < coll.length; i++) {
