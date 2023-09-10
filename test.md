@@ -96,16 +96,22 @@ nav-menu: true
         z-index: 2;
         font-weight: bold; /* Make the text bolder */
     }
+    .full-screen-text-container {
+    background-color: black;  /* Set background to black */
+    color: blue;              /* Set text color to blue */
+    text-align: center;       /* Center the text */
+    padding: 10px;            /* Add some padding for better appearance */
+    }
+
     .full-screen-link {
-    display: inline-block;
-    background-color: #007BFF;  /* Blue background */
-    color: white;
-    padding: 10px 15px;
-    margin-top: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
+    color: blue;             /* Make the link text blue */
+    text-decoration: underline;  /* Underline the link */
+    }
+
+    .full-screen-link:hover {
+    color: deepskyblue;     /* Change color on hover for better user feedback */
+    }
+
 
     .full-screen-link:hover {
       background-color: #0056b3;  /* Darker blue on hover */
@@ -232,7 +238,10 @@ nav-menu: true
             <!-- Here's where you add the iframe to embed the Plotly graph -->
             <iframe width="100%" height="600" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
                <h4><i>*Click your variable of interest (currently works better on mobile devices)</i></h4>
-          <p>For Desktop users: <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower1.html" target="_blank" class="full-screen-link">click this link</a> to view in full size!</p>
+<div class="full-screen-text-container">
+    <p>For Desktop users, <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower1.html" target="_blank" class="full-screen-link">click this link</a> to view in full size!</p>
+</div>
+
         </div>
     </div>
 
