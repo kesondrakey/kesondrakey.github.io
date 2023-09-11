@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post 
 title: Flux Towers
 description: Overviewing Flux Towers
 nav-menu: true
