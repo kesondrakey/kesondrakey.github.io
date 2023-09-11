@@ -62,12 +62,11 @@ nav-menu: true
             <section id="intro">
                 <h1>Understanding Nature's Role in Climate Solutions</h1>
                 <p>
-                    Farmers and land stewards have a unique opportunity to play a major role in combatting climate change. Nature-based Climate Solutions (NbCS) are management techniques that enhance the sequestration of carbon dioxide and reduce greenhouse gas emissions in croplands, grasslands, forests, and wetlands. In addition to aiding in the fight against global warming, NbCS provides numerous benefits such as improved soil health, better air and water quality, and increased resilience against climate threats like floods and droughts.
+                    Farmers and land stewards have a unique opportunity to play a major role in combatting climate change. Nature-based Climate Solutions (NbCS) are management techniques that enhance the sequestration of carbon dioxide and reduce greenhouse gas emissions in croplands, grasslands, forests, and wetlands. In addition to aiding in the fight against global warming, NbCS provides numerous benefits such as improved soil health, better air and water quality,  <img id="top-right-image" src="images/eddy_cov_ex.png" alt="Eddy Covariance Example"> and increased resilience against climate threats like floods and droughts.
                 </p>
             </section>
 
             <section id="flux-tower">
-             <img id="top-right-image" src="images/eddy_cov_ex.png" alt="Eddy Covariance Example">
                 <h2>The Significance of Flux Towers</h2>
                 <p>
                     However, to successfully implement NbCS, we need reliable data to ensure these strategies truly benefit the climate. This is where flux towers come into the picture.
