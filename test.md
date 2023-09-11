@@ -129,24 +129,23 @@ nav-menu: true
     }
     
     .logo {
-      height: 80px;  /* Set a fixed height */
+      height: 120px;  /* Set a fixed height */
       width: auto;  /* Maintain the aspect ratio */
       margin: 0 20px;  /* Add some horizontal space between the logos */
     }
 
-     /* trying to remove the white dots  */
-ul, ol {
-    list-style-type: none;
+    
+     /* for removing dots */
+    .logos .logo-link, .logos .logo-link img {
+      text-decoration: none;
+    }
+
+    .no-dot {
+  text-decoration: none;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 
-  
 
     </style>
 </head>
@@ -195,7 +194,7 @@ ul, ol {
                 </p>
                 <img src="images/Nbcs_scales.png" alt="Monitoring Scales for NbCS" style="display:block;margin:auto;">
                 <p style="font-style: italic; text-align: center;">
-                    <a href="https://oneill.indiana.edu/doc/research/climate/climate-solutions-summary.pdf" target="_blank" rel="noopener noreferrer">Sourced from the report</a>
+                    <a class="no-dot" a href="https://oneill.indiana.edu/doc/research/climate/climate-solutions-summary.pdf" target="_blank" rel="noopener noreferrer">Sourced from the report</a>
                 </p>
                 <p>
                     By analyzing the tiniest of changes in the air, flux towers give us a clear picture of how gases and energy move in and out of an ecosystem. In essence, they help us monitor the health of our lands and the success of our conservation efforts.
@@ -208,7 +207,7 @@ ul, ol {
                 </p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/CR4Anc8Mkas" title="Flux Tower Explanation by NEON" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p style="font-style: italic;">
-                    <a href="https://www.neonscience.org/impact/observatory-blog/ameriflux-and-neon-program-join-forces-eddy-covariance-data" target="_blank" rel="noopener noreferrer">Sourced from NEON</a>
+                    <a class="no-dot" a href="https://www.neonscience.org/impact/observatory-blog/ameriflux-and-neon-program-join-forces-eddy-covariance-data" target="_blank" rel="noopener noreferrer">Sourced from NEON</a>
                 </p>
 
 
@@ -222,10 +221,10 @@ ul, ol {
             </section>
 
 <div class="logos">
-      <a href="https://fluxnet.org/" target="_blank" rel="noopener noreferrer">
-    <img src="images/fluxnet.png" alt="Fluxnet logo" class="logo">
-  </a>
-  <a href="https://www.ameriflux.lbl.gov/" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.ameriflux.lbl.gov/" target="_blank" rel="noopener noreferrer" class="logo-link">
     <img src="images/ameriflux.png" alt="Ameriflux logo" class="logo">
+  </a>
+      <a href="https://fluxnet.org/" target="_blank" rel="noopener noreferrer" class="logo-link">
+    <img src="images/fluxnet.png" alt="Fluxnet logo" class="logo">
   </a>
 </div>
