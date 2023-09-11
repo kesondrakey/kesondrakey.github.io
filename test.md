@@ -63,6 +63,13 @@ nav-menu: true
     
     /* Modify your existing text-overlay */
     .text-overlay {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
       transition: color 0.3s ease, border 0.3s ease; /* Added transition for border */
       position: absolute;
       top: 50%;
@@ -119,20 +126,24 @@ nav-menu: true
     .logos {
       text-align: center;  /* Center the logos horizontally */
       margin-bottom: 20px; /* Add some space below the logos */
-                  overflow: hidden;
-            border: none;
-            outline: none;
     }
     
     .logo {
       height: 80px;  /* Set a fixed height */
       width: auto;  /* Maintain the aspect ratio */
       margin: 0 20px;  /* Add some horizontal space between the logos */
-                  overflow: hidden;
-            border: none;
-            outline: none;
     }
 
+     /* trying to remove the white dots  */
+ul, ol {
+    list-style-type: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
   
