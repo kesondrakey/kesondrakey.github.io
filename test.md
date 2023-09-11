@@ -101,6 +101,7 @@ nav-menu: true
       margin: 0;
       padding: 0;
       border: none;
+        overflow: hidden;
     }
     
         .arrow-icon {
