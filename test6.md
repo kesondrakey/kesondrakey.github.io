@@ -93,29 +93,30 @@ button, a, iframe {
 
 /* Styling for the icons */
 
-/* Daily - Blue tones */
+/* Daily - Deep Blue to Light Gray */
 .icon-daily { 
-    background-image: linear-gradient(to right,#2C73D2 0%, #0081CF 100%);
+    background-image: linear-gradient(to right, #363851 0%, #AAAABC 100%);
 }
 .icon-daily.selected { 
-    background-image: linear-gradient(to right, #4E8397 0%, #318EAB 100%);
+    background-image: linear-gradient(to right, #2B2D3E 0%, #88899A 100%);
 }
 
-/* Weekly - Purple tones */
+/* Weekly - Mid-tone Purple to Light Gray */
 .icon-weekly { 
-    background-image: linear-gradient(to right, #845EC2 0%, #A178DF 100%);
+    background-image: linear-gradient(to right, #757687 0%, #AAAABC 100%);
 }
 .icon-weekly.selected { 
-    background-image: linear-gradient(to right, #51308E 0%, #593796 100%);
+    background-image: linear-gradient(to right, #5B5A6C 0%, #88889A 100%);
 }
 
-/* Monthly - Green tones */
+/* Monthly - Deep Blue to Mid-tone Purple */
 .icon-monthly { 
-    background-image: linear-gradient(to right, #005B44 0%, #00C9A7 100%); 
+    background-image: linear-gradient(to right, #363851 0%, #757687 100%);
 }
 .icon-monthly.selected { 
-    background-image: linear-gradient(to right, #008D83 0%, #005B44 100%); 
+    background-image: linear-gradient(to right, #2B2D3E 0%, #5B5A6C 100%);
 }
+
 
 
 
@@ -184,16 +185,19 @@ iframe + i {
 
 <!-- Tables (they're iframes in your case) -->
 <div id="daily-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
+    <b>Daily Data Table:</b>
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
      <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
     <div style="margin-bottom:20px;"></div>
 </div>
 <div id="weekly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
+    <b>Weekly Data Table:</b>
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower1.html"></iframe>
      <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
     <div style="margin-bottom:20px;"></div>
 </div>
 <div id="monthly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
+    <b>Monthly Data Table:</b>
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower1.html"></iframe>
      <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
     <div style="margin-bottom:20px;"></div>
