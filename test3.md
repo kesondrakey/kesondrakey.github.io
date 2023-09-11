@@ -66,7 +66,7 @@ button, a, iframe {
 
 /* Styling for the icons */
 .icon {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* horizontal offset, vertical offset, blur radius, color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* horizontal offset, vertical offset, blur radius, color */
     position: relative;
     color: white;
     text-transform: none;  
@@ -168,7 +168,7 @@ iframe + i {
 .text-overlay {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 10%;
   transform: translateY(-50%);
   color: white;
   background-color: rgba(0, 0, 0, 0); /* Make it transparent */
@@ -194,10 +194,9 @@ iframe + i {
 
 /* Style the image */
 .grid-item img {
-  width: 100%;  /* Make it span full width */
-  height: auto;  /* Keep aspect ratio */
-  margin: 0;
-  padding: 0;
+  object-fit: cover;  /* Adjust to make the image cover the entire div */
+  width: 100%;  
+  height: 100%;  /* Make it span full height */
 }
 
 
