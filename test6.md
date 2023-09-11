@@ -68,13 +68,11 @@ button, a, iframe {
     transition: filter 0.2s;
 }
 
-.icon:active::before {
-    filter: brightness(70%); /* You can adjust this value based on your preference. */
+.icon.selected::before {
+    filter: brightness(60%)!important;
 }
 
-.icon.selected::before {
-    filter: brightness(60%);
-}
+
 
 /* Styling for the icons */
 .icon {
