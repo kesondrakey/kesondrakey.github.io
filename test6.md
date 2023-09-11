@@ -68,10 +68,7 @@ button, a, iframe {
     transition: filter 0.2s;
 }
 
-    .icon.selected {
-    color: white;
-    filter: brightness(60%); /* darken the color */
-}
+
 
 .collapsible.selected {
     filter: brightness(60%); /* darken the color */
