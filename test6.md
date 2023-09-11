@@ -151,7 +151,7 @@ button, a, iframe {
 <div class="collapsible-container">
     <button class="collapsible">More Technical Data</button>
     <div class="container">
-             <h2>This plot shows multiple types of variables coming in from the site. Just click your variable of interest to see the pattern across the entire period of data collection!</h2>
+             <h6>This plot shows multiple types of variables coming in from the site. Just click your variable of interest to see the pattern across the entire period of data collection!</h6>
     
         <div class="html-object">
             <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
