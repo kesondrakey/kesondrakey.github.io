@@ -90,30 +90,33 @@ button, a, iframe {
     transition: filter 0.2s;
 }
 
+
 /* Styling for the icons */
-/* Daily - blue */
+
+/* Daily - blue tones */
 .icon-daily { 
-    background-image: linear-gradient(to right, #09203f 0%, #537895 100%);
+    background-image: linear-gradient(to right, #000f3f 0%, #3c6e91 100%);
 }
 .icon-daily.selected { 
-    background-image: linear-gradient(to right, #08162f 0%, #3a5c73 100%);
+    background-image: linear-gradient(to right, #000c2f 0%, #2a5573 100%);
 }
 
-/* Weekly - mauve to lavender */
+/* Weekly - green tones */
 .icon-weekly { 
-    background-image: linear-gradient(to right, #4b3048 0%, #887a91 100%);
+    background-image: linear-gradient(to right, #004022 0%, #4c8b65 100%);
 }
 .icon-weekly.selected { 
-    background-image: linear-gradient(to right, #3a2337 0%, #6a5d76 100%);
+    background-image: linear-gradient(to right, #002a15 0%, #356f4a 100%);
 }
 
-/* Monthly - teal to sea green */
+/* Monthly - yellow to red */
 .icon-monthly { 
-    background-image: linear-gradient(to right, #1f4f4a 0%, #5a8d87 100%); 
+    background-image: linear-gradient(to right, #cca300 0%, #c70000 100%); 
 }
 .icon-monthly.selected { 
-    background-image: linear-gradient(to right, #173936 0%, #4a766f 100%); 
+    background-image: linear-gradient(to right, #996600 0%, #990000 100%); 
 }
+
 
 
 
@@ -153,7 +156,7 @@ iframe + i {
 </style>
 
 <!-- Daily Plot - Simple Variables -->
-<h1>Long Term Data</h1>
+<h2>Long Term Data</h2>
 <h4>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - <i> just click the variable name and see!</i></h4>
 <div class="plot-container">
   <div class="html-object">
@@ -168,8 +171,7 @@ iframe + i {
 
 
 <!-- Table Section -->
-<h2>Select your time period of interest to see the data in a table format:</h2>
-
+<h3>Select your time period of interest to see the data in a table format:</h3>
 <!-- Icons/buttons -->
 <div class="icon-container">
     <button class="icon icon-daily" onclick="showTable('daily')">Daily</button>
