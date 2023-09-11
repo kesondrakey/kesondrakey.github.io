@@ -125,7 +125,7 @@ nav-menu: true
     }
     
     .logo {
-      height: 100px;  /* Set a fixed height */
+      height: 80px;  /* Set a fixed height */
       width: auto;  /* Maintain the aspect ratio */
       margin: 0 20px;  /* Add some horizontal space between the logos */
                   overflow: hidden;
