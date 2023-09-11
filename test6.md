@@ -100,7 +100,6 @@ button, a, iframe {
 }
 
       /* weekly - purple */
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 .icon-weekly { 
     background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
 }
@@ -148,7 +147,7 @@ iframe + i {
 
 <!-- Daily Plot - Simple Variables -->
   <h1>Long Term Data</h1>
-  <h2>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - just click the variable name and see!</h2>
+  <h4>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - just click the variable name and see!</h4>
   <div class="container">
     <div class="html-object">
       <!-- Here's where you add the iframe to embed the Plotly graph -->
