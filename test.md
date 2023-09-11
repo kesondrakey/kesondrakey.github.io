@@ -54,7 +54,7 @@ nav-menu: true
         }
         /* Updated styles for flux-tower section */
         #flux-tower {
-            background: url(images/fluxtower-banner.png) no-repeat; /* Add banner image behind the title */
+            background: url(images/corn.jpeg) no-repeat; /* Add banner image behind the title */
             background-size: cover; /* Cover the entire section */
             position: relative; /* Make it a positioned element for child items */
             padding: 30px; /* Add padding around the content */
