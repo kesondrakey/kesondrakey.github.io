@@ -20,12 +20,6 @@ nav-menu: true
             text-align: center; /* Center the content in the video and image section */
         }
 
-        #flux-tower {
-            background: url(images/fluxtower.png) no-repeat; /* Add banner behind the title */
-            background-size: cover;
-            position: relative;
-            padding: 30px; /* Some padding around the content for aesthetics */
-        }
       #content-wrapper {
             position: relative; /* This might not be necessary if you're using float */
         }
@@ -57,7 +51,7 @@ nav-menu: true
       /* Banner styles */
     /* Make the image darker by adding this overlay */
     .grid-item:before {
-            height: 200px;
+            height: 300px;
         width: 100%;
       content: "";
       position: absolute;
@@ -95,7 +89,7 @@ nav-menu: true
     
     /* Update grid-item to position the image and text overlay */
     .grid-item {
-        height: 200px;
+        height: 300px;
         width: 100%;
       position: relative;
       margin: 0;
@@ -120,21 +114,53 @@ nav-menu: true
         padding: 0;
     }
 
+ /* for citation */
+    .image-note {
+  text-align: right;
+}
+
+ /* for logos */
+
+.logos {
+  text-align: center;  /* Center the logos horizontally */
+  margin-bottom: 20px; /* Add some space below the logos */
+}
+
+.logo {
+  height: 40px;  /* Set a fixed height */
+  width: auto;  /* Maintain the aspect ratio */
+  margin: 0 10px;  /* Add some horizontal space between the logos */
+}
+
+
+
+  
+
     </style>
 </head>
+
+  
+<body>
 
 <!-- Add the banner grid-container here -->
 <div class="grid-container">
   <div class="grid-item">
     <a href="https://kesondrakey.github.io/about_flux_tower_project">
-      <img src="images/corn.jpeg" alt="clouds">
+
+      <img src="images/flux_tower.jpg" alt="fluxtower">
+        
       <div class="text-overlay">Learn about the role of flux towers in the project &#8594;</div> <!-- Added arrow here -->
     </a>
   </div>
 </div>
 
+<div class="image-note">
+  <i>Image is of the Morgan Monroe Flux Tower. Bloomington, IN</i>
+</div>
+
+
+<!-- end the banner grid-container here -->
     
-<body>
     <div id="content-wrapper">
         <div id="main-content">
 
@@ -174,4 +200,22 @@ nav-menu: true
                 <p style="font-style: italic;">
                     <a href="https://www.neonscience.org/impact/observatory-blog/ameriflux-and-neon-program-join-forces-eddy-covariance-data" target="_blank" rel="noopener noreferrer">Sourced from NEON</a>
                 </p>
+
+
+
+          <p>
+                  <i>  Data sourced from this project will later be submitted to Ameriflux and Fluxnet. </i>
+                </p>
+
+
+                
             </section>
+
+<div class="logos">
+      <a href="https://fluxnet.org/" target="_blank" rel="noopener noreferrer">
+    <img src="images/fluxnet.png" alt="Fluxnet logo" class="logo">
+  </a>
+  <a href="https://www.ameriflux.lbl.gov/" target="_blank" rel="noopener noreferrer">
+    <img src="images/ameriflux.png" alt="Ameriflux logo" class="logo">
+  </a>
+</div>
