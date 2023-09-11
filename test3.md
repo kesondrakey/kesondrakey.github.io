@@ -66,6 +66,8 @@ button, a, iframe {
 
 /* Styling for the icons */
 .icon {
+        color: rgba(255, 255, 255, 0.7); /* Making text a bit transparent */
+    transition: color 0.3s ease; /* Smooth transition for color changes */
        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1),
                 0px 1px 3px rgba(0, 0, 0, 0.2); /* outer and inner shadows */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* horizontal offset, vertical offset, blur radius, color */
@@ -93,7 +95,12 @@ button, a, iframe {
     transition: filter 0.2s;
 }
 
+/* New :hover state for .icon */
+.icon:hover {
+    color: white; /* Text becomes fully white when hovered */
+}
 
+    
 /* Styling for the icons */
 /* Adjusted styles for a better differentiation and harmony with an indigo blue background */
 
@@ -109,6 +116,7 @@ button, a, iframe {
     background: linear-gradient(to right, #1C1D59, #118B8B);
         box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1),
                 inset 0px 1px 3px rgba(0, 0, 0, 0.2); /* inner shadows for selected */
+    color: white; /* Text becomes fully white when selected */
 }
 
 /* Weekly */
@@ -121,6 +129,7 @@ button, a, iframe {
     background: linear-gradient(to right, #1C003E, #4C004D);
         box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1),
                 inset 0px 1px 3px rgba(0, 0, 0, 0.2); /* inner shadows for selected */
+    color: white; /* Text becomes fully white when selected */
 }
 
 /* Monthly */
@@ -133,6 +142,7 @@ button, a, iframe {
     background: linear-gradient(to right, #003200, #59A800);
         box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1),
                 inset 0px 1px 3px rgba(0, 0, 0, 0.2); /* inner shadows for selected */
+    color: white; /* Text becomes fully white when selected */
 }
 .icon-container {
     display: flex;
@@ -168,6 +178,8 @@ iframe + i {
   /* Banner styles */
 /* Make the image darker by adding this overlay */
 .grid-item:before {
+        height: 400px;
+    width: 100%;
   content: "";
   position: absolute;
   top: 0;
@@ -180,6 +192,8 @@ iframe + i {
 
 /* Modify your existing text-overlay */
 .text-overlay {
+    color: rgba(255, 255, 255, 0.7); /* Making text a bit transparent */
+    transition: color 0.3s ease; /* Smooth transition for color changes */
   position: absolute;
   top: 50%;
   right: 10%;
@@ -193,8 +207,14 @@ iframe + i {
   z-index: 2; /* Sit on top of the image and the dark overlay */
 }
 
+    .text-overlay:hover {
+    color: white; /* Text becomes fully white when hovered */
+}
+
 /* Update grid-item to position the image and text overlay */
 .grid-item {
+    height: 400px;
+    width: 100%;
   position: relative;
   margin: 0;
   padding: 0;
