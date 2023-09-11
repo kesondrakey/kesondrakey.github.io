@@ -127,7 +127,7 @@ nav-menu: true
 <div class="grid-container">
   <div class="grid-item">
     <a href="https://kesondrakey.github.io/about_flux_tower_project">
-      <img src="images/corn.jpeg" alt="clouds">
+      <img src="images/flux_tower.jpg" alt="fluxtower">
       <div class="text-overlay">Learn about the role of flux towers in the project &#8594;</div> <!-- Added arrow here -->
     </a>
   </div>
