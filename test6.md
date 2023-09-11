@@ -90,29 +90,31 @@ button, a, iframe {
     transition: filter 0.2s;
 }
 
-
+    /* Styling for the icons */
+    /* Daily - blue */
 .icon-daily { 
-    background: linear-gradient(to right, #89f7fe, #66a6ff); 
+    background: linear-gradient(to right, #00f2fe 0%, #4facfe 100%);
 }
     .icon-daily.selected { 
-    background: linear-gradient(to right, #66a6ff, #89f7fe);
+    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
 }
 
-
-    
+      /* weekly - purple */
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 .icon-weekly { 
-    background: linear-gradient(to right, #21D4FD, #B721FF); 
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
 }
     .icon-weekly.selected { 
-    background: linear-gradient(to right, #B721FF, #21D4FD); 
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
+    /* monthly - green */
 
 .icon-monthly { 
-    background: linear-gradient(to right, #667eea, #764ba2); 
+    background:  linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
 }
     .icon-monthly.selected { 
-    background: linear-gradient(to right, #764ba2, #667eea); 
+    background:  linear-gradient(to right, #38f9d7 0%, #43e97b 100%);
 }
 
 
@@ -144,6 +146,21 @@ iframe + i {
     
 </style>
 
+<!-- Daily Plot - Simple Variables -->
+  <h1>Long Term Data</h1>
+  <h2>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - just click the variable name and see!</h2>
+  <div class="container">
+    <div class="html-object">
+      <!-- Here's where you add the iframe to embed the Plotly graph -->
+      <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower1.html">
+      </iframe>
+    </div>
+  </div> 
+
+
+<!-- Table Section -->
+<h2>Select your time period of interest to see the data in a table format</h2>
+
 <!-- Icons/buttons -->
 <div class="icon-container">
     <button class="icon icon-daily" onclick="showTable('daily')">Daily</button>
@@ -170,12 +187,12 @@ iframe + i {
 </div>
 
 
-
+<!-- Technical Data Section -->
 <!-- More Technical Data -->
 <div class="collapsible-container">
     <button class="collapsible">More Technical Data</button>
     <div class="container">
-             <h5>This plot shows multiple types of variables coming in from the site. Just click your variable of interest to see the pattern across the entire period of data collection!</h5>
+             <h5>Flux towers take a lot of different kinds of data. Just click your variable of interest to see the pattern across the entire period of data collection!</h5>
     
         <div class="html-object">
             <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
