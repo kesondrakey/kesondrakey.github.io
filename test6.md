@@ -122,14 +122,26 @@ button, a, iframe {
 .icon-daily { 
     background: linear-gradient(to right, #85a3e0, #1e57a8); 
 }
+    .icon-daily.selected { 
+    background: linear-gradient(to right, #6479bd, #1e4d8a);
+}
+
 
 .icon-weekly { 
     background: linear-gradient(to right, #a57ad8, #501a7a); 
 }
+    .icon-weekly.selected { 
+    background: linear-gradient(to right, #8f66c4, #461260); 
+}
+
 
 .icon-monthly { 
     background: linear-gradient(to right, #7cd68f, #2a8c39); 
 }
+    .icon-monthly.selected { 
+    background: linear-gradient(to right, #67bf78, #257c2d); 
+}
+
 
 .icon-container {
     display: flex;
