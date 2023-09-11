@@ -23,17 +23,23 @@ nav-menu: true
         #flux-tower {
             background: url(images/fluxtower.png) no-repeat; /* Add banner behind the title */
             background-size: cover;
+            position: relative;
             padding: 30px; /* Some padding around the content for aesthetics */
         }
-
-        #content-wrapper {
-            display: flex;
-            align-items: flex-start;
+      #content-wrapper {
+            position: relative; /* This might not be necessary if you're using float */
         }
-
+        
+        #top-right-image {
+            float: right;  /* Float the image to the right */
+            margin: 0 0 20px 20px; /* Add some margins for aesthetics: top right bottom left */
+            max-height: 500px;  /* You can adjust the height */
+            width: auto;  /* Keep the aspect ratio */
+        }
+        
         #main-content {
-            flex: 1; /* Let's make sure it takes up the full available width minus the image */
-            padding-right: 20px; /* Optional: gives some spacing between the image and the content */
+            /* If you're using float, flex might not be necessary */
+            padding: 0 20px 20px 0; /* Optional: gives some spacing between the image and the content */
         }
 
         #top-right-image {
@@ -61,6 +67,7 @@ nav-menu: true
             </section>
 
             <section id="flux-tower">
+             <img id="top-right-image" src="images/eddy_cov_ex.png" alt="Eddy Covariance Example">
                 <h2>The Significance of Flux Towers</h2>
                 <p>
                     However, to successfully implement NbCS, we need reliable data to ensure these strategies truly benefit the climate. This is where flux towers come into the picture.
@@ -91,8 +98,6 @@ nav-menu: true
             </section>
 
         </div>
-
-        <img id="top-right-image" src="images/eddy_cov_ex.png" alt="Eddy Covariance Example">
     </div>
 
     <!-- Rest of your content... -->
