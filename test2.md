@@ -159,15 +159,16 @@ iframe + i {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(18, 24, 33, 0.7); /* Dark blue with 70% opacity */
-  z-index: 1; /* Sit on top of the image */
+  background-color: rgba(18, 24, 33, 0.7); /* Your specific dark blue with 70% opacity */
+  z-index: 1;
 }
+
 
 /* Modify your existing text-overlay */
 .text-overlay {
   position: absolute;
   top: 50%;
-  left: 80%; /* move it more to the right */
+  left: 50%;  /* Center the text */
   transform: translate(-50%, -50%);
   color: white;
   background-color: rgba(0, 0, 0, 0); /* Make it transparent */
@@ -179,12 +180,22 @@ iframe + i {
 }
 
 
+
 /* Update grid-item to position the image and text overlay */
 .grid-item {
   position: relative;
-  overflow: hidden;
-     padding-top: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
+
+
+    .arrow-icon {
+  z-index: 2;  /* Make sure this is higher than the z-index of the overlay */
+  position: relative;
+  /* ... other styles ... */
+}
+
 
 /* Style the image */
 .grid-item img {
