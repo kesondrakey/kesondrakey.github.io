@@ -52,6 +52,25 @@ nav-menu: true
             height: 450px; /* Adjust height maintaining the aspect ratio */
             max-width: 100%; /* Ensure it doesn't go beyond the container width on smaller screens */
         }
+        /* Updated styles for flux-tower section */
+        #flux-tower {
+            background: url(images/fluxtower-banner.png) no-repeat; /* Add banner image behind the title */
+            background-size: cover; /* Cover the entire section */
+            position: relative; /* Make it a positioned element for child items */
+            padding: 30px; /* Add padding around the content */
+        }
+
+        /* Add a style for the title to overlay the banner */
+        #flux-tower h2 {
+            position: absolute; /* Position the title */
+            top: 50%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%); /* Actual centering */
+            color: white; /* Text color */
+            font-size: 24px; /* Increase font size */
+            background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black background for readability */
+            padding: 10px; /* Add padding around the title text */
+        }
     </style>
 </head>
 
@@ -61,13 +80,13 @@ nav-menu: true
 
             <section id="intro">
                 <h1>Understanding Nature's Role in Climate Solutions</h1>
+                <img id="top-right-image" src="images/eddy_cov_ex.png" alt="Eddy Covariance Example">
                 <p>
                     Farmers and land stewards have a unique opportunity to play a major role in combatting climate change. Nature-based Climate Solutions (NbCS) are management techniques that enhance the sequestration of carbon dioxide and reduce greenhouse gas emissions in croplands, grasslands, forests, and wetlands. In addition to aiding in the fight against global warming, NbCS provides numerous benefits such as improved soil health, better air and water quality, and increased resilience against climate threats like floods and droughts.
                 </p>
             </section>
 
             <section id="flux-tower">
-             <img id="top-right-image" src="images/eddy_cov_ex.png" alt="Eddy Covariance Example">
                 <h2>The Significance of Flux Towers</h2>
                 <p>
                     However, to successfully implement NbCS, we need reliable data to ensure these strategies truly benefit the climate. This is where flux towers come into the picture.
@@ -96,9 +115,3 @@ nav-menu: true
                     <a href="https://www.neonscience.org/impact/observatory-blog/ameriflux-and-neon-program-join-forces-eddy-covariance-data" target="_blank" rel="noopener noreferrer">Sourced from NEON</a>
                 </p>
             </section>
-
-        </div>
-    </div>
-
-    <!-- Rest of your content... -->
-</body>
