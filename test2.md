@@ -1,339 +1,231 @@
 ---
 layout: post
-description: Flux Tower 1
-title: Flux Tower 1
+title: Flux Towers
+description: Overviewing Flux Towers
 nav-menu: true
 ---
 
-<style>
-/* General resets for buttons and icons */
-button, a, iframe {
-    border: none;
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature-based Climate Solutions</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming you have a CSS file named 'styles.css'. -->
+    <style>
+        #flux-tower h2 {
+            margin-bottom: 10px; /* Reduce the space below the title */
+        }
+
+        #video, #video p, #video iframe, #image, #image img {
+            text-align: center; /* Center the content in the video and image section */
+        }
+
+        #flux-tower {
+            background: url(images/fluxtower.png) no-repeat; /* Add banner behind the title */
+            background-size: cover;
+            position: relative;
+            padding: 30px; /* Some padding around the content for aesthetics */
+        }
+      #content-wrapper {
+            position: relative; /* This might not be necessary if you're using float */
+        }
+        
+        #top-right-image {
+            float: right;  /* Float the image to the right */
+            margin: 0 0 20px 20px; /* Add some margins for aesthetics: top right bottom left */
+            max-height: 500px;  /* You can adjust the height */
+            width: auto;  /* Keep the aspect ratio */
+        }
+        
+        #main-content {
+            /* If you're using float, flex might not be necessary */
+            padding: 0 20px 20px 0; /* Optional: gives some spacing between the image and the content */
+        }
+
+        #top-right-image {
+            margin-left: 20px; /* Optional: gives some spacing between the image and the content */
+        }
+
+        /* Adjust the size of the YouTube embed */
+        #video iframe {
+            width: 800px; /* Adjust width as per your preference */
+            height: 450px; /* Adjust height maintaining the aspect ratio */
+            max-width: 100%; /* Ensure it doesn't go beyond the container width on smaller screens */
+        }
+
+              /* Style for the banner */
+      /* Banner styles */
+    /* Make the image darker by adding this overlay */
+    .grid-item:before {
+            height: 300px;
+        width: 100%;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(18, 24, 33, 0.5); /* Your specific dark blue with 70% opacity */
+      z-index: 1;
+    }
+    
+    /* Modify your existing text-overlay */
+    .text-overlay {
+      transition: all 0.3s ease; /* Add transition for smooth changes */
+      color: rgba(255, 255, 255, 0.7); /* Making text a bit transparent */
+      transition: color 0.3s ease, border 0.3s ease; /* Added transition for border */
+      position: absolute;
+      top: 50%;
+      right: 10%;
+      transform: translateY(-50%);
+      color: white;
+      background-color: rgba(0, 0, 0, 0); /* Make it transparent */
+      border: 2px solid white; /* White border */
+      padding: 10px;
+      border-radius: 4px;
+      font-weight: bold; /* Make text bold */
+      z-index: 2; /* Sit on top of the image and the dark overlay */
+    }
+    
+    .text-overlay:hover {
+        border: 2px solid lightblue; /* Add light blue border */
+        color: white; /* Keep the text color white */
+        background-color: rgba(0, 0, 0, 0.1); /* Slight background change to indicate hover */
+    }
+    
+    /* Update grid-item to position the image and text overlay */
+    .grid-item {
+        height: 300px;
+        width: 100%;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      border: none;
+            overflow: hidden;
+            border: none;
+            outline: none;
+    }
+    
+        .arrow-icon {
+      z-index: 2;  /* Make sure this is higher than the z-index of the overlay */
+      position: relative;
+    }
+    
+    /* Style the image */
+    .grid-item img {
+      object-fit: cover;  /* Adjust to make the image cover the entire div */
+      width: 100%;  
+      height: 100%;  /* Make it span full height */
+            margin: 0;
+        padding: 0;
+    }
+
+ /* for citation */
+    .image-note {
+  text-align: right;
+}
+
+ /* for logos */
+
+.logos {
+  text-align: center;  /* Center the logos horizontally */
+  margin-bottom: 20px; /* Add some space below the logos */
+}
+
+.logo {
+  height: 60px;  /* Set a fixed height */
+  width: auto;  /* Maintain the aspect ratio */
+  margin: 0 10px;  /* Add some horizontal space between the logos */
+}
+
+ /*remove dots for all links */
+a {
+    text-decoration: none;
     outline: none;
-    box-shadow: none;
-}
-
-/* Styling for the Toggle Technical Data button */
-.collapsible {
-   background-image: linear-gradient(to right, #121821, #222e40);
-    cursor: pointer;
-    padding: 10px 15px;
-    border-radius: 4px;
-    text-align: center;
-    text-transform: none;
-    display: block;
-    margin: auto;
-    margin-bottom: 20px;  
-    width: 100%;
-    line-height: 40px;
-    color: white;
-}
-
-/* Styles for container */
-.container {
-    visibility: hidden;
-    height: 0;
-    overflow: hidden;  
-}
-
-.centered-text {
-    text-align: center;
-}
-
-/* Styling for the View in full View button */
-.full-view-button {
-    display: block;
-    margin: 20px auto; 
-    background-image: linear-gradient(to right, #121821, #222e40);
-    color: white;
-    cursor: pointer;
-    padding: 10px 15px;
-    border-radius: 4px;
-    text-align: center;
-    font-size: 1em; 
-    text-decoration: none; 
-    font-weight: bold; 
 }
 
 
 
-.collapsible.selected {
-    filter: brightness(60%); /* darken the color */
-}
-    
+    </style>
+</head>
 
-
-
-/* Styling for the icons */
-.icon {
-    position: relative;
-    color: white;
-    text-transform: none;  
-    cursor: pointer;
-    padding: 10px; 
-    width: 140px;   
-    height: 140px;  
-    border-radius: 50%; 
-    overflow: hidden; 
-    white-space: nowrap; 
-    text-overflow: ellipsis; 
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    background-size: 100%;
-    letter-spacing: 1px; 
-    font-size: 1em; 
-    font-weight: bold;
-    background-color: transparent; 
-    transition: filter 0.2s;
-}
-
-
-/* Styling for the icons */
-/* Adjusted styles for a better differentiation and harmony with an indigo blue background */
-
-/* Styling for the icons */
-
-/* Daily */
-.icon-daily { 
-    background: linear-gradient(to right, #2E3192, #1BFFFF);
-}
-.icon-daily.selected { 
-    background: linear-gradient(to right, #1C1D59, #118B8B);
-}
-
-/* Weekly */
-.icon-weekly { 
-    background: linear-gradient(to right, #2d006b, #660066);
-}
-.icon-weekly.selected { 
-    background: linear-gradient(to right, #1C003E, #4C004D);
-}
-
-/* Monthly */
-.icon-monthly { 
-    background: linear-gradient(to right, #004d00, #7cfc00);
-}
-.icon-monthly.selected { 
-    background: linear-gradient(to right, #003200, #59A800);
-}
-.icon-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-    /* Space after the note */
-iframe + i {
-    display: block; /* ensure the element takes up its full width */
-    margin-bottom: 20px; /* space below the note */
-}
-
-/* Ensuring text size consistency */
-.icon, .collapsible {
-    font-size: 1em;
-}
-    
-.table-container {
-    display: none;
-}
-
-.grid-container, .toggle-icons, .content {
-    margin-bottom: 40px;
-}
-    
-/* for static plot */
-    .plot-container {
-    visibility: visible;  // makes it visible
-    height: auto;        // adjusts the height to its content
-}
-
-  /* Banner styles */
-/* Make the image darker by adding this overlay */
-.grid-item:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(18, 24, 33, 0.7); /* Your specific dark blue with 70% opacity */
-  z-index: 1;
-}
-
-
-/* Modify your existing text-overlay */
-.text-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;  /* Center the text */
-  transform: translate(-50%, -50%);
-  color: white;
-  background-color: rgba(0, 0, 0, 0); /* Make it transparent */
-  border: 2px solid white; /* White border */
-  padding: 10px;
-  border-radius: 4px;
-  font-weight: bold; /* Make text bold */
-  z-index: 2; /* Sit on top of the image and the dark overlay */
-}
-
-
-
-/* Update grid-item to position the image and text overlay */
-.grid-item {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
-
-    .arrow-icon {
-  z-index: 2;  /* Make sure this is higher than the z-index of the overlay */
-  position: relative;
-  /* ... other styles ... */
-}
-
-
-/* Style the image */
-.grid-item img {
-  width: 100%;  /* Make it span full width */
-  height: auto;  /* Keep aspect ratio */
-}
-
-
-</style>
-
+  
+<body>
 
 <!-- Add the banner grid-container here -->
 <div class="grid-container">
   <div class="grid-item">
-    <a href="https://kesondrakey.github.io/FluxTowers">
-      <img src="images/corn.jpeg" alt="clouds">
-      <div class="text-overlay">Learn about Flux Towers</div>
+    <a href="https://kesondrakey.github.io/about_flux_tower_project">
+
+      <img src="images/flux_tower.jpg" alt="fluxtower">
+        
+      <div class="text-overlay">Learn about the role of flux towers in the project &#8594;</div> <!-- Added arrow here -->
     </a>
   </div>
 </div>
 
-
-<!-- Your existing HTML content starts here -->
-
-
-<!-- Daily Plot - Simple Variables -->
-<h2>Long Term Data</h2>
-<h4>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - <i> just click the variable name and see!</i></h4>
-<div class="plot-container">
-  <div class="html-object">
-    <!-- Here's where you add the iframe to embed the Plotly graph -->
-    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower1.html">
-    </iframe>
-      <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
-      <div style="margin-bottom:20px;"></div>
-  </div>
-</div> 
-
-
-
-<!-- Table Section -->
-<h3>Select your time period of interest to see the data in a table format:</h3>
-<!-- Icons/buttons -->
-<div class="icon-container">
-    <button class="icon icon-daily" onclick="showTable('daily')">Daily</button>
-    <button class="icon icon-weekly" onclick="showTable('weekly')">Weekly</button>
-    <button class="icon icon-monthly" onclick="showTable('monthly')">Monthly</button>
-</div>
-
-<!-- Tables -->
-<div id="daily-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
-    <b>Daily Data Table:</b>
-    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
-     <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
-    <div style="margin-bottom:20px;"></div>
-</div>
-<div id="weekly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
-    <b>Weekly Data Table:  <i>*coming soon!</i> </b>
-    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower1.html"></iframe>
-     <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
-    <div style="margin-bottom:20px;"></div>
-</div>
-<div id="monthly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
-    <b>Monthly Data Table: <i>*coming soon!</i> </b>
-    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower1.html"></iframe>
-     <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
-    <div style="margin-bottom:20px;"></div>
+<div class="image-note">
+  <i>Image is of the Morgan Monroe Flux Tower. Bloomington, IN</i>
 </div>
 
 
-
-
-
-<!-- Technical Data Section -->
-<!-- More Technical Data -->
-<div class="collapsible-container">
-    <button class="collapsible">More Technical Data</button>
-    <div class="container">
-             <h5>Flux towers take a lot of different kinds of data. Just click your variable of interest to see the pattern across the entire period of data collection!</h5>
+<!-- end the banner grid-container here -->
     
-        <div class="html-object">
-            <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
-     
-            <!-- View in full View Button -->
-<a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower1.html" class="full-view-button">Click for full view</a>
-       
-        </div>
-    </div>
+    <div id="content-wrapper">
+        <div id="main-content">
+
+            <section id="intro">
+                <h1>Understanding Nature's Role in Climate Solutions</h1>
+                <img id="top-right-image" src="images/eddy_cov_ex.png" alt="Eddy Covariance Example">
+                <p>
+                    Farmers and land stewards have a unique opportunity to play a major role in combatting climate change. Nature-based Climate Solutions (NbCS) are management techniques that enhance the sequestration of carbon dioxide and reduce greenhouse gas emissions in croplands, grasslands, forests, and wetlands. In addition to aiding in the fight against global warming, NbCS provides numerous benefits such as improved soil health, better air and water quality, and increased resilience against climate threats like floods and droughts.
+                </p>
+            </section>
+
+            <section id="flux-tower">
+                <h2>The Significance of Flux Towers</h2>
+                <p>
+                    However, to successfully implement NbCS, we need reliable data to ensure these strategies truly benefit the climate. This is where flux towers come into the picture.
+                </p>
+                <p>
+                    Imagine a lighthouse that doesn’t guide ships but instead gathers vital data from the surrounding environment. <strong>Flux towers</strong> are like these lighthouses, standing tall amidst fields, forests, and wetlands, continuously collecting essential data. Each tower, covering anywhere from 10 to 1,000 acres, is equipped with sophisticated instruments that measure the exchange of carbon dioxide, water vapor, and energy between the earth and the atmosphere.
+                </p>
+                <p>
+                    Understanding the diverse scales of monitoring is crucial for the successful implementation of NbCS. The image below offers a comparative view:
+                </p>
+                <img src="images/Nbcs_scales.png" alt="Monitoring Scales for NbCS" style="display:block;margin:auto;">
+                <p style="font-style: italic; text-align: center;">
+                    <a href="https://oneill.indiana.edu/doc/research/climate/climate-solutions-summary.pdf" target="_blank" rel="noopener noreferrer">Sourced from the report</a>
+                </p>
+                <p>
+                    By analyzing the tiniest of changes in the air, flux towers give us a clear picture of how gases and energy move in and out of an ecosystem. In essence, they help us monitor the health of our lands and the success of our conservation efforts.
+                </p>
+            </section>
+
+            <section id="video">
+                <p>
+                    The National Ecological Observatory Network (NEON) provides a comprehensive overview of flux towers and eddy covariance in the video below:
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CR4Anc8Mkas" title="Flux Tower Explanation by NEON" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p style="font-style: italic;">
+                    <a href="https://www.neonscience.org/impact/observatory-blog/ameriflux-and-neon-program-join-forces-eddy-covariance-data" target="_blank" rel="noopener noreferrer">Sourced from NEON</a>
+                </p>
+
+
+
+          <p>
+                  <i>  Data sourced from this project will later be submitted to Ameriflux and Fluxnet. </i>
+                </p>
+
+
+                
+            </section>
+
+<div class="logos">
+      <a href="https://fluxnet.org/" target="_blank" rel="noopener noreferrer">
+    <img src="images/fluxnet.png" alt="Fluxnet logo" class="logo">
+  </a>
+  <a href="https://www.ameriflux.lbl.gov/" target="_blank" rel="noopener noreferrer">
+    <img src="images/ameriflux.png" alt="Ameriflux logo" class="logo">
+  </a>
 </div>
-
-
-
-
-
-<script>
-function showTable(tableType) {
-    const tables = document.querySelectorAll('.table-container');
-    const selectedTable = document.getElementById(tableType + '-table');
-    const icons = document.querySelectorAll('.icon');
-    let isAlreadyVisible = (selectedTable.style.display === 'block');
-
-    // Hide all tables first
-    tables.forEach(table => {
-        table.style.display = 'none';
-    });
-
-    // Remove selected class from all icons
-    icons.forEach(icon => {
-        icon.classList.remove('selected');
-    });
-
-    // If the selected table was not already visible, show it
-    if (!isAlreadyVisible) {
-        selectedTable.style.display = 'block';
-        // Add the selected class to the clicked icon only if the table was not already visible
-        document.querySelector('.icon-' + tableType).classList.add('selected');
-    }
-}
-
-
-// Collapsible Functionality
-var coll = document.getElementsByClassName("collapsible");
-for (let i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        
-        // Adjust this part to target the .container inside the .collapsible-container
-        var content = this.parentNode.querySelector(".container");
-
-        if (content.style.visibility === "visible" || content.style.visibility === "") {
-            content.style.visibility = "hidden";
-            content.style.height = "0";  // this will collapse the space taken by the hidden content
-        } else {
-            content.style.visibility = "visible";
-            content.style.height = "auto";  // revert to its original height
-        }
-    });
-}
-
-
-</script>
