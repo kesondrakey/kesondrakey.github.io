@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Flux Tower 1
 description: Flux Tower 1
 nav-menu: true
 ---
@@ -155,13 +154,16 @@ iframe + i {
 .text-overlay {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 75%; /* Adjusts the position to center-right */
   transform: translate(-50%, -50%);
   color: white;
-  background-color: rgba(0, 0, 0, 0.4); /* black with 40% opacity */
+  background-color: rgba(0, 0, 0, 0); /* Makes the background transparent */
   padding: 10px;
+  border: 2px solid white; /* Adds a white border */
   border-radius: 4px;
+  font-weight: bold; /* Makes the text bold */
 }
+
 
 /* Style to add a black arrow to the text box */
 .text-overlay::after {
@@ -203,7 +205,8 @@ iframe + i {
 
 <!-- Your existing HTML content starts here -->
 
-
+<!-- Manually insert the title -->
+## Flux Tower 1
 
 <!-- Daily Plot - Simple Variables -->
 <h2>Long Term Data</h2>
