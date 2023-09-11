@@ -108,10 +108,10 @@ button, a, iframe {
 
 
 .icon-monthly { 
-    background: linear-gradient(to right, #7cd68f, #2a8c39); 
+    background: linear-gradient(to right, #0F3443, #34E89E); 
 }
     .icon-monthly.selected { 
-    background: linear-gradient(to right, #67bf78, #257c2d); 
+    background: linear-gradient(to right, #34E89E, #0F3443); 
 }
 
 
