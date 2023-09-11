@@ -44,7 +44,7 @@ button, a, iframe {
 .full-view-button {
     display: block;
     margin: 20px auto; 
-    background-image: linear-gradient(to right, #121821, #222e40);
+    background-image: linear-gradient(to right, #09203f 0%, #537895 100%);
     color: white;
     cursor: pointer;
     padding: 10px 15px;
@@ -71,8 +71,8 @@ button, a, iframe {
     text-transform: none;  
     cursor: pointer;
     padding: 10px; 
-    width: 160px;   
-    height: 160px;  
+    width: 150px;   
+    height: 150px;  
     border-radius: 50%; 
     overflow: hidden; 
     white-space: nowrap; 
@@ -90,32 +90,32 @@ button, a, iframe {
     transition: filter 0.2s;
 }
 
-    /* Styling for the icons */
-    /* Daily - blue */
+/* Styling for the icons */
+
+/* Daily - blue */
 .icon-daily { 
-   background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
 }
-    .icon-daily.selected { 
-    background: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+.icon-daily.selected { 
+    background: linear-gradient(to top, #0047a0 0%, #003366 100%);
 }
 
-
-      /* weekly - purple */
+/* weekly - purple */
 .icon-weekly { 
     background: linear-gradient(to top, #b224ef 0%, #7579ff 100%);
 }
-    .icon-weekly.selected { 
-    background: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
+.icon-weekly.selected { 
+    background: linear-gradient(to top, #861aad 0%, #4e4c8c 100%);
 }
 
-    /* monthly - green */
-
+/* monthly - green */
 .icon-monthly { 
-    background: linear-gradient(to right, #7cfc00, #7cfc00);
+    background: linear-gradient(to right, #7cfc00, #32cd32);  // Adjusted the second color for a smoother gradient
 }
-    .icon-monthly.selected { 
-    background: linear-gradient(to right, #7cfc00, #7cfc00);
+.icon-monthly.selected { 
+    background: linear-gradient(to right, #228b22, #006400); // A blend of forest green shades
 }
+
 
 
 .icon-container {
