@@ -148,8 +148,10 @@ nav-menu: true
         
       <div class="image-with-citation">
     <img src="images/flux_tower.jpg" alt="fluxtower">
-    <div class="citation">source: Morgan Monroe Flux Tower, Bloomington, IN</div>
+    <div class="citation" style="font-style: italic; font-size: 12px; position: absolute; bottom: 0; right: 0; padding: 10px; z-index: 3;">
+    source: Morgan Monroe Flux Tower, Bloomington, IN
     </div>
+
 
         
       <div class="text-overlay">Learn about the role of flux towers in the project &#8594;</div> <!-- Added arrow here -->
