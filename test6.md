@@ -139,14 +139,6 @@ iframe + i {
     margin-bottom: 40px;
 }
 
-    body, table {
-    background-color: #222;
-    color: #eee;
-}
-table th, table td {
-    border: 1px solid #555;
-}
-
     
 </style>
 
