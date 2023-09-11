@@ -5,6 +5,7 @@ description: Flux Tower 3
 nav-menu: true
 ---
 
+
 <style>
 /* General resets for buttons and icons */
 button, a, iframe {
@@ -184,18 +185,22 @@ iframe + i {
      <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
     <div style="margin-bottom:20px;"></div>
 </div>
+
 <div id="weekly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <b>Weekly Data Table:  <i>*coming soon!</i> </b>
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower3.html"></iframe>
      <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
     <div style="margin-bottom:20px;"></div>
 </div>
+
 <div id="monthly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <b>Monthly Data Table: <i>*coming soon!</i> </b>
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower3.html"></iframe>
      <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
     <div style="margin-bottom:20px;"></div>
 </div>
+
+
 
 
 
@@ -264,6 +269,5 @@ for (let i = 0; i < coll.length; i++) {
         }
     });
 }
-
-
+  
 </script>
