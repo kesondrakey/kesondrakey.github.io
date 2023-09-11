@@ -23,35 +23,17 @@ button, a, iframe {
     text-transform: none;
     display: block;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 20px;  
     width: 100%;
     line-height: 40px;
     color: white;
-    position: relative; /* Added */
-}
-
-.collapsible::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 4px; /* same as parent */
-    z-index: -1;
-    background: inherit;
-    transition: filter 0.2s;
-}
-
-.collapsible.selected::before {
-    filter: brightness(60%);
 }
 
 /* Styles for container */
 .container {
     visibility: hidden;
     height: 0;
-    overflow: hidden;
+    overflow: hidden;  
 }
 
 .centered-text {
@@ -61,18 +43,17 @@ button, a, iframe {
 /* Styling for the View in full View button */
 .full-view-button {
     display: block;
-    margin: 20px auto;
+    margin: 20px auto; 
     background-image: linear-gradient(to right, #121821, #222e40);
     color: white;
     cursor: pointer;
     padding: 10px 15px;
     border-radius: 4px;
     text-align: center;
-    font-size: 1em;
-    text-decoration: none;
-    font-weight: bold;
+    font-size: 1em; 
+    text-decoration: none; 
+    font-weight: bold; 
 }
-
 /* Pseudo-element for icon background */
 .icon::before {
     content: "";
@@ -87,42 +68,67 @@ button, a, iframe {
     transition: filter 0.2s;
 }
 
-.icon.selected::before {
-    filter: brightness(60%);
+    .icon.selected {
+    color: white;
+    filter: brightness(60%); /* darken the color */
 }
+
+.collapsible.selected {
+    filter: brightness(60%); /* darken the color */
+}
+    
+/* Styling for the icons */
+.icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%; /* inherit the rounded shape */
+    z-index: -1; /* sit behind the text/content */
+    background: inherit; /* inherit the gradient of the parent */
+    transition: filter 0.2s;
+}
+
 
 /* Styling for the icons */
 .icon {
     position: relative;
     color: white;
-    text-transform: none;
+    text-transform: none;  
     cursor: pointer;
-    padding: 10px;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    padding: 10px; 
+    width: 120px;   
+    height: 120px;  
+    border-radius: 50%; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 10px;
-    background-color: transparent;
+    background-size: 100%;
+    letter-spacing: 1px; 
+    font-size: 1em; 
+    font-weight: bold;
+    background-color: transparent; 
     transition: filter 0.2s;
 }
 
-.icon-daily {
-    background: linear-gradient(to right, #85a3e0, #1e57a8);
+
+.icon-daily { 
+    background: linear-gradient(to right, #85a3e0, #1e57a8); 
 }
 
-.icon-weekly {
-    background: linear-gradient(to right, #a57ad8, #501a7a);
+.icon-weekly { 
+    background: linear-gradient(to right, #a57ad8, #501a7a); 
 }
 
-.icon-monthly {
-    background: linear-gradient(to right, #7cd68f, #2a8c39);
+.icon-monthly { 
+    background: linear-gradient(to right, #7cd68f, #2a8c39); 
 }
 
 .icon-container {
@@ -131,15 +137,17 @@ button, a, iframe {
     margin-bottom: 20px;
 }
 
+    /* Space after the note */
 iframe + i {
-    display: block;
-    margin-bottom: 20px;
+    display: block; /* ensure the element takes up its full width */
+    margin-bottom: 20px; /* space below the note */
 }
 
+/* Ensuring text size consistency */
 .icon, .collapsible {
     font-size: 1em;
 }
-
+    
 .table-container {
     display: none;
 }
@@ -150,7 +158,6 @@ iframe + i {
 
     
 </style>
-
 
 <!-- Icons/buttons -->
 <div class="icon-container">
