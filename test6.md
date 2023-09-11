@@ -92,30 +92,30 @@ button, a, iframe {
 
 
 /* Styling for the icons */
-
 /* Daily - blue tones */
 .icon-daily { 
-    background-image: linear-gradient(to right, #000f3f 0%, #3c6e91 100%);
+    background-image: linear-gradient(to right, #001f4d 0%, #4d88bf 100%);
 }
 .icon-daily.selected { 
-    background-image: linear-gradient(to right, #000c2f 0%, #2a5573 100%);
+    background-image: linear-gradient(to right, #001237 0%, #396a94 100%);
 }
 
-/* Weekly - green tones */
+/* Weekly - purple tones */
 .icon-weekly { 
-    background-image: linear-gradient(to right, #cca300 0%, #c70000 100%); 
+    background-image: linear-gradient(to right, #4d004d 0%, #bf80bf 100%);
 }
 .icon-weekly.selected { 
-       background-image: linear-gradient(to right, #996600 0%, #990000 100%); 
+    background-image: linear-gradient(to right, #390039 0%, #995e99 100%);
 }
 
-/* Monthly - yellow to red */
+/* Monthly - green tones */
 .icon-monthly { 
-     background-image: linear-gradient(to right, #004022 0%, #4c8b65 100%);
+    background-image: linear-gradient(to right, #004d23 0%, #4dbf88 100%); 
 }
 .icon-monthly.selected { 
-     background-image: linear-gradient(to right, #002a15 0%, #356f4a 100%);
+    background-image: linear-gradient(to right, #00381a 0%, #39906f 100%); 
 }
+
 
 
 
