@@ -134,23 +134,6 @@ nav-menu: true
       margin: 0 20px;  /* Add some horizontal space between the logos */
     }
 
-    
-     /* for removing dots */
-    .logos .logo-link, .logos .logo-link img {
-      text-decoration: none;
-    }
-
-    .logos ul, .logos ol {
-  list-style: none; /* Remove list item markers */
-}
-
-
-a.no-dot {
-  text-decoration: none !important;
-}
-
-
-
 
     </style>
 </head>
@@ -199,7 +182,7 @@ a.no-dot {
                 </p>
                 <img src="images/Nbcs_scales.png" alt="Monitoring Scales for NbCS" style="display:block;margin:auto;">
                 <p style="font-style: italic; text-align: center;">
-           <a style="text-decoration: none;" href="https://oneill.indiana.edu/doc/research/climate/climate-solutions-summary.pdf" target="_blank" rel="noopener noreferrer">Sourced from the report</a>
+           <a href="https://oneill.indiana.edu/doc/research/climate/climate-solutions-summary.pdf" target="_blank" rel="noopener noreferrer">Sourced from the report</a>
                 </p>
                 <p>
                     By analyzing the tiniest of changes in the air, flux towers give us a clear picture of how gases and energy move in and out of an ecosystem. In essence, they help us monitor the health of our lands and the success of our conservation efforts.
@@ -212,7 +195,7 @@ a.no-dot {
                 </p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/CR4Anc8Mkas" title="Flux Tower Explanation by NEON" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p style="font-style: italic;">
-    <a style="text-decoration: none;" href="https://www.neonscience.org/impact/observatory-blog/ameriflux-and-neon-program-join-forces-eddy-covariance-data" target="_blank" rel="noopener noreferrer">Sourced from NEON</a>
+    <a href="https://www.neonscience.org/impact/observatory-blog/ameriflux-and-neon-program-join-forces-eddy-covariance-data" target="_blank" rel="noopener noreferrer">Sourced from NEON</a>
                     </p>
 
 
@@ -226,10 +209,10 @@ a.no-dot {
             </section>
 
 <div class="logos">
-  <a style="text-decoration: none;" href="https://www.ameriflux.lbl.gov/" target="_blank" rel="noopener noreferrer" class="logo-link">
+  <a href="https://www.ameriflux.lbl.gov/" target="_blank" rel="noopener noreferrer" class="logo-link">
     <img src="images/ameriflux.png" alt="Ameriflux logo" class="logo">
   </a>
-  <a style="text-decoration: none;" href="https://fluxnet.org/" target="_blank" rel="noopener noreferrer" class="logo-link">
+  <a href="https://fluxnet.org/" target="_blank" rel="noopener noreferrer" class="logo-link">
     <img src="images/fluxnet.png" alt="Fluxnet logo" class="logo">
   </a>
 </div>
