@@ -141,20 +141,29 @@ iframe + i {
 .grid-container, .toggle-icons, .content {
     margin-bottom: 40px;
 }
+    
+/* for static plot */
+    .plot-container {
+    visibility: visible;  // makes it visible
+    height: auto;        // adjusts the height to its content
+}
+
 
     
 </style>
 
 <!-- Daily Plot - Simple Variables -->
-  <h1>Long Term Data</h1>
-  <h4>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - just click the variable name and see!</h4>
-  <div class="container">
-    <div class="html-object">
-      <!-- Here's where you add the iframe to embed the Plotly graph -->
-      <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower1.html">
-      </iframe>
-    </div>
-  </div> 
+<!-- Daily Plot - Simple Variables -->
+<h1>Long Term Data</h1>
+<h4>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - just click the variable name and see!</h4>
+<div class="plot-container">
+  <div class="html-object">
+    <!-- Here's where you add the iframe to embed the Plotly graph -->
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower1.html">
+    </iframe>
+  </div>
+</div> 
+
 
 
 <!-- Table Section -->
