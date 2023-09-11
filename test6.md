@@ -54,19 +54,7 @@ button, a, iframe {
     text-decoration: none; 
     font-weight: bold; 
 }
-/* Pseudo-element for icon background */
-.icon::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 50%; /* inherit the rounded shape */
-    z-index: -1; /* sit behind the text/content */
-    background: inherit; /* inherit the gradient of the parent */
-    transition: filter 0.2s;
-}
+
 
 
 .collapsible.selected {
@@ -210,7 +198,6 @@ function showTable(tableType) {
     const tables = document.querySelectorAll('.table-container');
     const selectedTable = document.getElementById(tableType + '-table');
     const icons = document.querySelectorAll('.icon');
-
     let isAlreadyVisible = (selectedTable.style.display === 'block');
 
     // Hide all tables first
@@ -218,20 +205,19 @@ function showTable(tableType) {
         table.style.display = 'none';
     });
 
-    // If the selected table was not already visible, show it
-    if (!isAlreadyVisible) {
-        selectedTable.style.display = 'block';
-    }
-
     // Remove selected class from all icons
     icons.forEach(icon => {
         icon.classList.remove('selected');
     });
 
-    // Add the selected class to the clicked icon
-    document.querySelector('.icon-' + tableType).classList.add('selected');
-
+    // If the selected table was not already visible, show it
+    if (!isAlreadyVisible) {
+        selectedTable.style.display = 'block';
+        // Add the selected class to the clicked icon only if the table was not already visible
+        document.querySelector('.icon-' + tableType).classList.add('selected');
+    }
 }
+
 
 // Collapsible Functionality
 var coll = document.getElementsByClassName("collapsible");
