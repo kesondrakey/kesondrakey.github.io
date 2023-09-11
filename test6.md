@@ -68,8 +68,8 @@ button, a, iframe {
     transition: filter 0.2s;
 }
 
-.icon.selected::before {
-    filter: brightness(60%)!important;
+.icon.selected, .collapsible.selected {
+    filter: brightness(60%); /* darken the color */
 }
 
 
@@ -221,6 +221,7 @@ function showTable(tableType) {
 
     // Add the selected class to the clicked icon
     document.querySelector('.icon-' + tableType).classList.add('selected');
+
 }
 
 // Collapsible Functionality
