@@ -1,6 +1,7 @@
 ---
 layout: post
 description: Flux Tower 1
+Title: Flux Tower 1
 nav-menu: true
 ---
 
@@ -208,8 +209,6 @@ iframe + i {
 
 <!-- Your existing HTML content starts here -->
 
-<!-- Manually insert the title -->
-## Flux Tower 1
 
 <!-- Daily Plot - Simple Variables -->
 <h2>Long Term Data</h2>
