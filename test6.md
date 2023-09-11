@@ -50,6 +50,7 @@ button, a, iframe {
     padding: 10px 15px;
     border-radius: 4px;
     text-align: center;
+    font-size: 1em; 
     text-decoration: none; 
     font-weight: bold; 
 }
