@@ -101,7 +101,16 @@ button, a, iframe {
     justify-content: center;
     margin-bottom: 20px;
 }
+/* Added styling for selected state */
+.icon.selected, .collapsible.selected {
+    background-color: rgba(255, 255, 255, 0.2);  /* light overlay */
+}
 
+/* Ensuring text size consistency */
+.icon, .collapsible {
+    font-size: 1em;
+}
+    
 .table-container {
     display: none;
 }
@@ -164,6 +173,7 @@ button, a, iframe {
 function showTable(tableType) {
     const tables = document.querySelectorAll('.table-container');
     const selectedTable = document.getElementById(tableType + '-table');
+    const icons = document.querySelectorAll('.icon');
 
     let isAlreadyVisible = (selectedTable.style.display === 'block');
 
@@ -176,6 +186,14 @@ function showTable(tableType) {
     if (!isAlreadyVisible) {
         selectedTable.style.display = 'block';
     }
+
+    // Remove selected class from all icons
+    icons.forEach(icon => {
+        icon.classList.remove('selected');
+    });
+
+    // Add the selected class to the clicked icon
+    document.querySelector('.icon-' + tableType).classList.add('selected');
 }
 
 // Collapsible Functionality
