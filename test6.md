@@ -71,8 +71,8 @@ button, a, iframe {
     text-transform: none;  
     cursor: pointer;
     padding: 10px; 
-    width: 120px;   
-    height: 120px;  
+    width: 140px;   
+    height: 140px;  
     border-radius: 50%; 
     overflow: hidden; 
     white-space: nowrap; 
