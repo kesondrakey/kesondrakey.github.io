@@ -196,7 +196,7 @@ iframe + i {
 <div class="grid-container">
   <div class="grid-item">
     <a href="https://kesondrakey.github.io/FluxTowers">
-      <img src="images/cloud.jpeg" alt="clouds">
+      <img src="images/corn.jpeg" alt="clouds">
       <div class="text-overlay">Learn about Flux Towers</div>
     </a>
   </div>
