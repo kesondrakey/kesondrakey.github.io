@@ -52,28 +52,37 @@ nav-menu: true
             height: 450px; /* Adjust height maintaining the aspect ratio */
             max-width: 100%; /* Ensure it doesn't go beyond the container width on smaller screens */
         }
-        /* Updated styles for flux-tower section */
-        #flux-tower {
-            background: url(images/corn.jpeg) no-repeat; /* Add banner image behind the title */
-            background-size: cover; /* Cover the entire section */
-            position: relative; /* Make it a positioned element for child items */
-            padding: 30px; /* Add padding around the content */
-        }
 
-        /* Add a style for the title to overlay the banner */
-        #flux-tower h2 {
-            position: absolute; /* Position the title */
-            top: 50%; /* Center vertically */
-            left: 50%; /* Center horizontally */
-            transform: translate(-50%, -50%); /* Actual centering */
-            color: white; /* Text color */
-            font-size: 24px; /* Increase font size */
-            background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black background for readability */
-            padding: 10px; /* Add padding around the title text */
+              /* Style for the banner */
+        .banner {
+            width: 100%;
+            height: 200px;
+            position: relative;
         }
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            right: 10%;
+            transform: translateY(-50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 4px;
+        }
+        
     </style>
 </head>
 
+    <div class="banner">
+        <img src="images/corn.jpeg" alt="Corn">
+        <div class="banner-text">Learn about Flux Towers</div>
+    </div>
+    
 <body>
     <div id="content-wrapper">
         <div id="main-content">
