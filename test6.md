@@ -106,6 +106,15 @@ button, a, iframe {
 .icon.selected, .collapsible.selected {
     background-color: rgba(255, 255, 255, 0.2);  /* light overlay */
 }
+    /* For selected state */
+.icon.selected, .collapsible.selected {
+    filter: brightness(60%); /* darken the color */
+}
+    /* Space after the note */
+iframe + i {
+    display: block; /* ensure the element takes up its full width */
+    margin-bottom: 20px; /* space below the note */
+}
 
 /* Ensuring text size consistency */
 .icon, .collapsible {
@@ -118,6 +127,17 @@ button, a, iframe {
 
 .grid-container, .toggle-icons, .content {
     margin-bottom: 40px;
+}
+    /* Example Dark Mode styling for tables 
+   Note: This won't affect iframes, so you'd have to add these to the content of your iframes 
+         if you control them.
+*/
+table {
+    background-color: #222;
+    color: #eee;
+}
+table th, table td {
+    border: 1px solid #555;
 }
     
 </style>
@@ -135,14 +155,17 @@ button, a, iframe {
 <div id="daily-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
      <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+    <div style="margin-bottom:20px;"></div>
 </div>
 <div id="weekly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower1.html"></iframe>
      <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+    <div style="margin-bottom:20px;"></div>
 </div>
 <div id="monthly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower1.html"></iframe>
      <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+    <div style="margin-bottom:20px;"></div>
 </div>
 
 
