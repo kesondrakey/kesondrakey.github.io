@@ -103,6 +103,10 @@ nav-menu: true
 .icon-monthly { 
     background: linear-gradient(to right, #7cd68f, #2a8c39); 
 }
+    .icon, .icon:active, .icon:hover, .icon:visited {
+    border: none;
+}
+
 
 .icon-container {
     display: flex;
