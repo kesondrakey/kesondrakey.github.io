@@ -119,12 +119,18 @@ nav-menu: true
     .logos {
       text-align: center;  /* Center the logos horizontally */
       margin-bottom: 20px; /* Add some space below the logos */
+                  overflow: hidden;
+            border: none;
+            outline: none;
     }
     
     .logo {
       height: 100px;  /* Set a fixed height */
       width: auto;  /* Maintain the aspect ratio */
       margin: 0 20px;  /* Add some horizontal space between the logos */
+                  overflow: hidden;
+            border: none;
+            outline: none;
     }
 
 
