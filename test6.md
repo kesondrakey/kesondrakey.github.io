@@ -68,7 +68,12 @@ button, a, iframe {
     transition: filter 0.2s;
 }
 
-.icon.selected, .collapsible.selected {
+    .icon.selected {
+    color: white;
+    filter: brightness(60%); /* darken the color */
+}
+
+.collapsible.selected {
     filter: brightness(60%); /* darken the color */
 }
 
@@ -100,10 +105,6 @@ button, a, iframe {
     transition: filter 0.2s;
 }
 
-.icon:active, .collapsible:active {
-    transform: scale(0.98);
-    filter: brightness(85%);
-}
 
 .icon-daily { 
     background: linear-gradient(to right, #85a3e0, #1e57a8); 
