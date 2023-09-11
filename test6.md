@@ -103,18 +103,18 @@ button, a, iframe {
 
 /* Weekly - green tones */
 .icon-weekly { 
-    background-image: linear-gradient(to right, #004022 0%, #4c8b65 100%);
+    background-image: linear-gradient(to right, #cca300 0%, #c70000 100%); 
 }
 .icon-weekly.selected { 
-    background-image: linear-gradient(to right, #002a15 0%, #356f4a 100%);
+       background-image: linear-gradient(to right, #996600 0%, #990000 100%); 
 }
 
 /* Monthly - yellow to red */
 .icon-monthly { 
-    background-image: linear-gradient(to right, #cca300 0%, #c70000 100%); 
+     background-image: linear-gradient(to right, #004022 0%, #4c8b65 100%);
 }
 .icon-monthly.selected { 
-    background-image: linear-gradient(to right, #996600 0%, #990000 100%); 
+     background-image: linear-gradient(to right, #002a15 0%, #356f4a 100%);
 }
 
 
