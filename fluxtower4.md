@@ -180,25 +180,24 @@ iframe + i {
 <!-- Tables -->
 <div id="daily-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <b>Daily Data Table:</b>
-    <iframe onerror="contentError(this)" width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower4.html"></iframe>
-    <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower4.html"></iframe>
+     <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
     <div style="margin-bottom:20px;"></div>
 </div>
 
 <div id="weekly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <b>Weekly Data Table:  <i>*coming soon!</i> </b>
-    <iframe onerror="contentError(this)" width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower4.html"></iframe>
-    <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower4.html"></iframe>
+     <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
     <div style="margin-bottom:20px;"></div>
 </div>
 
 <div id="monthly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <b>Monthly Data Table: <i>*coming soon!</i> </b>
-    <iframe onerror="contentError(this)" width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower4.html"></iframe>
-    <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower4.html"></iframe>
+     <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
     <div style="margin-bottom:20px;"></div>
 </div>
-
 
 
 
@@ -270,11 +269,4 @@ for (let i = 0; i < coll.length; i++) {
     });
 }
   
-function imgError(image) {
-    image.onerror = "";
-    image.outerHTML = '<img src="../../images/cat_attempt.png" alt="Cat 404" style="width: 200px; display: block; margin: auto;"><div>Sorry, not available! This means we don\'t have data for today yet, the values are all NA, or this feature will come later!</div>';
-    return true;
-}
-
-
 </script>
