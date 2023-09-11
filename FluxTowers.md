@@ -57,7 +57,7 @@ nav-menu: true
       /* Banner styles */
     /* Make the image darker by adding this overlay */
     .grid-item:before {
-            height: 200px;
+            height: 300px;
         width: 100%;
       content: "";
       position: absolute;
@@ -95,7 +95,7 @@ nav-menu: true
     
     /* Update grid-item to position the image and text overlay */
     .grid-item {
-        height: 200px;
+        height: 300px;
         width: 100%;
       position: relative;
       margin: 0;
