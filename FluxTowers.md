@@ -133,10 +133,11 @@ nav-menu: true
 }
 
 .logo {
-  height: 100px;  /* Set a fixed height */
+  height: 40px;  /* Set a fixed height */
   width: auto;  /* Maintain the aspect ratio */
   margin: 0 10px;  /* Add some horizontal space between the logos */
 }
+
 
 
   
@@ -216,7 +217,12 @@ nav-menu: true
                 
             </section>
 
-            <div class="logos">
-  <img src="images/ameriflux.png" alt="Ameriflux logo" class="logo">
-  <img src="images/fluxnet.png" alt="Fluxnet logo" class="logo">
+<div class="logos">
+  <a href="https://www.ameriflux.lbl.gov/" target="_blank" rel="noopener noreferrer">
+    <img src="images/ameriflux.png" alt="Ameriflux logo" class="logo">
+  </a>
+  <a href="https://fluxnet.org/" target="_blank" rel="noopener noreferrer">
+    <img src="images/fluxnet.png" alt="Fluxnet logo" class="logo">
+  </a>
 </div>
+
