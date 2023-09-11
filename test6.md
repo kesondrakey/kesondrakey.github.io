@@ -71,8 +71,8 @@ button, a, iframe {
     text-transform: none;  
     cursor: pointer;
     padding: 10px; 
-    width: 150px;   
-    height: 150px;  
+    width: 140px;   
+    height: 140px;  
     border-radius: 50%; 
     overflow: hidden; 
     white-space: nowrap; 
@@ -95,26 +95,26 @@ button, a, iframe {
 
 /* Daily - Blue tones */
 .icon-daily { 
-    background-image: linear-gradient(to right, #0A00FF 0%, #5278FF 100%);
+    background-image: linear-gradient(to right,#2C73D2 0%, #0081CF 100%);
 }
 .icon-daily.selected { 
-    background-image: linear-gradient(to right, #0600B0 0%, #3B4CBF 100%);
+    background-image: linear-gradient(to right, #4E8397 0%, #318EAB 100%);
 }
 
 /* Weekly - Purple tones */
 .icon-weekly { 
-    background-image: linear-gradient(to right, #682D90 0%, #9E62B0 100%);
+    background-image: linear-gradient(to right, #845EC2 0%, #A178DF 100%);
 }
 .icon-weekly.selected { 
-    background-image: linear-gradient(to right, #4C1F66 0%, #7D498A 100%);
+    background-image: linear-gradient(to right, #51308E 0%, #593796 100%);
 }
 
 /* Monthly - Green tones */
 .icon-monthly { 
-    background-image: linear-gradient(to right, #18621B 0%, #49A348 100%); 
+    background-image: linear-gradient(to right, #005B44 0%, #00C9A7 100%); 
 }
 .icon-monthly.selected { 
-    background-image: linear-gradient(to right, #0E3D10 0%, #357A30 100%); 
+    background-image: linear-gradient(to right, #008D83 0%, #005B44 100%); 
 }
 
 
