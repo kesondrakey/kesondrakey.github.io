@@ -231,6 +231,8 @@ iframe + i {
   object-fit: cover;  /* Adjust to make the image cover the entire div */
   width: 100%;  
   height: 100%;  /* Make it span full height */
+        margin: 0;
+    padding: 0;
 }
 
 
