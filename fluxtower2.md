@@ -5,153 +5,267 @@ description: Flux Tower 2
 nav-menu: true
 ---
 
-<html> 
-<head>
-  <style>
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Make the grid responsive */
-      grid-gap: 1em;
-    }
-    
-   .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Make the grid responsive */
-      grid-gap: 1em;
-    }
-    
-    .grid-item {
-      position: relative;
-      padding-top: 100%; /* Maintain the aspect ratio */
-      overflow: hidden;
-      border: none; /* Ensure no borders are added to the grid item */
-    }
+<style>
+/* General resets for buttons and icons */
+button, a, iframe {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
 
-    .grid-item a {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      text-decoration: none;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(0,0,0,0.7); /* Add a semi-transparent overlay */
-      border: none; /* Ensure no borders are added to the link */
-    }
-
-    .grid-item img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border: none; /* Ensure no borders are added to the image */
-      outline: none; /* Ensure no outlines are added to the image */
-    }
-
-    .grid-item span {
-      font-size: 2rem; /* Adjust the font size */
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Add a text shadow for better visibility */
-      z-index: 2;
-      font-weight: bold; /* Make the text bolder */
-    }
-
-    /* Larger and bolder text for desktop */
-    @media (min-width: 768px) {
-      .grid-item span {
-        font-size: 3rem;
-        font-weight: 900;
-      }
-      .collapsible {
-    background-color: transparent;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    border: 2px solid white;
-    font-size: 20px;
-    display: flex; /* Change from block to flex */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    margin: 20px auto;
+/* Styling for the Toggle Technical Data button */
+.collapsible {
+   background-image: linear-gradient(to right, #121821, #222e40);
     cursor: pointer;
-    transition: background-color 0.5s, color 0.5s, border-color 0.5s; /* Added transition for border color */
-    width: 70%; /* Adjust as needed */
-    }
-    .collapsible:hover {
-    color: gray;
-    border-color: gray; /* Border color changes to gray on hover */
-    }
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-align: center;
+    text-transform: none;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;  
+    width: 100%;
+    line-height: 40px;
+    color: white;
+}
 
-    /* This is for hiding and showing the content when the button is clicked */
-    .content {
+/* Styles for container */
+.container {
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;  
+}
+
+.centered-text {
+    text-align: center;
+}
+
+/* Styling for the View in full View button */
+.full-view-button {
+    display: block;
+    margin: 20px auto; 
+    background-image: linear-gradient(to right, #121821, #222e40);
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1em; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+
+
+.collapsible.selected {
+    filter: brightness(60%); /* darken the color */
+}
+    
+
+
+
+/* Styling for the icons */
+.icon {
+    position: relative;
+    color: white;
+    text-transform: none;  
+    cursor: pointer;
+    padding: 10px; 
+    width: 140px;   
+    height: 140px;  
+    border-radius: 50%; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    background-size: 100%;
+    letter-spacing: 1px; 
+    font-size: 1em; 
+    font-weight: bold;
+    background-color: transparent; 
+    transition: filter 0.2s;
+}
+
+
+/* Styling for the icons */
+/* Adjusted styles for a better differentiation and harmony with an indigo blue background */
+/* Daily */
+.icon-daily { 
+    background: linear-gradient(to right, #2E3192, #1BFFFF);
+}
+.icon-daily.selected { 
+    background: linear-gradient(to right, #1C1D59, #118B8B);
+}
+
+/* Weekly */
+.icon-weekly { 
+    background: linear-gradient(to right, #2d006b, #660066);
+}
+.icon-weekly.selected { 
+    background: linear-gradient(to right, #1C003E, #4C004D);
+}
+
+/* Monthly */
+.icon-monthly { 
+    background: linear-gradient(to right, #004d00, #7cfc00);
+}
+.icon-monthly.selected { 
+    background: linear-gradient(to right, #003200, #59A800);
+}
+.icon-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+    /* Space after the note */
+iframe + i {
+    display: block; /* ensure the element takes up its full width */
+    margin-bottom: 20px; /* space below the note */
+}
+
+/* Ensuring text size consistency */
+.icon, .collapsible {
+    font-size: 1em;
+}
+    
+.table-container {
     display: none;
+}
+
+.grid-container, .toggle-icons, .content {
+    margin-bottom: 40px;
+}
     
+/* for static plot */
+    .plot-container {
+    visibility: visible;  // makes it visible
+    height: auto;        // adjusts the height to its content
+}
+
+
+</style>
 
 
 
-  </style>
-</head>
-<body>
-  <h1>Long Term Data</h1>
-  <div class="container">
-    <div class="html-object">
-      <!-- Here's where you add the iframe to embed the Plotly graph -->
-      <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower2.html">
-      </iframe>
-    </div>
-  </div> 
-  <h1>Daily Data</h1>
-  <div class="container">
-    <div class="html-object">
-      <!-- Here's where you add the iframe to embed the Plotly graph -->
-      <iframe width="100%" height="430" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower2.html">
-      </iframe>
-    </div>
-  </div>
+
+<!-- Daily Plot - Simple Variables -->
+<h2>Long Term Data</h2>
+<h4>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - <i> just click the variable name and see!</i></h4>
+<div class="plot-container">
+  <div class="html-object">
+    <!-- Here's where you add the iframe to embed the Plotly graph -->
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower2.html">
+    </iframe>
       <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
-
-
-
-<button class="collapsible">More Technical Data</button>
-<div class="content">
-<h1>Long Term Data</h1>
-  
-  <div class="container">
-    <div class="html-object">
-      <!-- Here's where you add the iframe to embed the Plotly graph -->
-      <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower2.html">
-      </iframe>
-    </div>
+      <div style="margin-bottom:20px;"></div>
   </div>
-
-  
-  <h4><i>*Click your variable of interest</i></h4>
+</div> 
 
 
+
+<!-- Table Section -->
+<h3>Select your time period of interest to see the data in a table format:</h3>
+<!-- Icons/buttons -->
+<div class="icon-container">
+    <button class="icon icon-daily" onclick="showTable('daily')">Daily</button>
+    <button class="icon icon-weekly" onclick="showTable('weekly')">Weekly</button>
+    <button class="icon icon-monthly" onclick="showTable('monthly')">Monthly</button>
 </div>
-<script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
 
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
-        });
-    }
-</script>
+<!-- Tables -->
+<div id="daily-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
+    <b>Daily Data Table:</b>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower2.html"></iframe>
+     <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+    <div style="margin-bottom:20px;"></div>
+</div>
+<div id="weekly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
+    <b>Weekly Data Table:  <i>*coming soon!</i> </b>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower2.html"></iframe>
+     <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+    <div style="margin-bottom:20px;"></div>
+</div>
+<div id="monthly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
+    <b>Monthly Data Table: <i>*coming soon!</i> </b>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower2.html"></iframe>
+     <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+    <div style="margin-bottom:20px;"></div>
+</div>
 
 
 
+
+
+<!-- Technical Data Section -->
+<!-- More Technical Data -->
+<div class="collapsible-container">
+    <button class="collapsible">More Technical Data</button>
+    <div class="container">
+             <h5>Flux towers take a lot of different kinds of data. Just click your variable of interest to see the pattern across the entire period of data collection!</h5>
     
-</body>
-</html>
+        <div class="html-object">
+            <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower2.html"></iframe>
+     
+            <!-- View in full View Button -->
+<a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower2.html" class="full-view-button">Click for full view</a>
+       
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+function showTable(tableType) {
+    const tables = document.querySelectorAll('.table-container');
+    const selectedTable = document.getElementById(tableType + '-table');
+    const icons = document.querySelectorAll('.icon');
+    let isAlreadyVisible = (selectedTable.style.display === 'block');
+
+    // Hide all tables first
+    tables.forEach(table => {
+        table.style.display = 'none';
+    });
+
+    // Remove selected class from all icons
+    icons.forEach(icon => {
+        icon.classList.remove('selected');
+    });
+
+    // If the selected table was not already visible, show it
+    if (!isAlreadyVisible) {
+        selectedTable.style.display = 'block';
+        // Add the selected class to the clicked icon only if the table was not already visible
+        document.querySelector('.icon-' + tableType).classList.add('selected');
+    }
+}
+
+
+// Collapsible Functionality
+var coll = document.getElementsByClassName("collapsible");
+for (let i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        
+        // Adjust this part to target the .container inside the .collapsible-container
+        var content = this.parentNode.querySelector(".container");
+
+        if (content.style.visibility === "visible" || content.style.visibility === "") {
+            content.style.visibility = "hidden";
+            content.style.height = "0";  // this will collapse the space taken by the hidden content
+        } else {
+            content.style.visibility = "visible";
+            content.style.height = "auto";  // revert to its original height
+        }
+    });
+}
+
+
+</script>
