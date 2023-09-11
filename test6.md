@@ -94,34 +94,28 @@ button, a, iframe {
 /* Styling for the icons */
 /* Adjusted styles for a better differentiation and harmony with an indigo blue background */
 
-/* Daily - Deep Blue to Light Gray */
+/* Daily  */
 .icon-daily { 
-    background-image: linear-gradient(to right, #3E4159 0%, #C0C2C8 100%);
-    border-radius: 4px; /* Added for a smoother look */
-    transition: background-image 0.3s ease; /* For smoother transitions when changed */
+    background: linear-gradient(to right, #2E3192, #1BFFFF);
 }
 .icon-daily.selected { 
-    background-image: linear-gradient(to right, #2B2D3E 0%, #989AA2 100%);
+    background-image: linear-gradient(to right, #1BFFFF, #2E3192);
 }
 
-/* Weekly - Mid-tone Purple to Light Gray */
+/* Weekly */
 .icon-weekly { 
-    background-image: linear-gradient(to right, #7D7E92 0%, #C0C2C8 100%);
-    border-radius: 4px;
-    transition: background-image 0.3s ease;
+    background: linear-gradient(to right, #2d006b, #660066);
 }
 .icon-weekly.selected { 
-    background-image: linear-gradient(to right, #5C5D77 0%, #989AA2 100%);
+    background-image: linear-gradient(to right, #660066, #2d006b);
 }
 
-/* Monthly - Deep Blue to Mid-tone Purple */
+/* Monthly */
 .icon-monthly { 
-    background-image: linear-gradient(to right, #3E4159 0%, #7D7E92 100%);
-    border-radius: 4px;
-    transition: background-image 0.3s ease;
+    background: linear-gradient(to right, #004d00, #7cfc00);
 }
 .icon-monthly.selected { 
-    background-image: linear-gradient(to right, #2B2D3E 0%, #5C5D77 100%);
+    background: linear-gradient(to right, #7cfc00, #004d00);
 }
 
 
