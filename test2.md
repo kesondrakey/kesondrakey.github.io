@@ -150,32 +150,39 @@ iframe + i {
 }
 
   /* Banner styles */
-/* Style for the text overlay */
+/* Make the image darker by adding this overlay */
+.grid-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* black with 40% opacity */
+  z-index: 1; /* Sit on top of the image */
+}
+
+/* Modify your existing text-overlay */
 .text-overlay {
   position: absolute;
   top: 50%;
-  left: 75%; /* Adjusts the position to center-right */
+  left: 80%; /* move it more to the right */
   transform: translate(-50%, -50%);
   color: white;
-  background-color: rgba(0, 0, 0, 0); /* Makes the background transparent */
+  background-color: rgba(0, 0, 0, 0); /* Make it transparent */
+  border: 2px solid white; /* White border */
   padding: 10px;
-  border: 2px solid white; /* Adds a white border */
   border-radius: 4px;
-  font-weight: bold; /* Makes the text bold */
+  font-weight: bold; /* Make text bold */
+  z-index: 2; /* Sit on top of the image and the dark overlay */
 }
 
-
-/* Style to add a black arrow to the text box */
-.text-overlay::after {
-  content: '→';
-  font-size: larger;
-  margin-left: 10px;
-}
 
 /* Update grid-item to position the image and text overlay */
 .grid-item {
   position: relative;
   overflow: hidden;
+     padding-top: 0;
 }
 
 /* Style the image */
@@ -183,10 +190,6 @@ iframe + i {
   width: 100%;  /* Make it span full width */
   height: auto;  /* Keep aspect ratio */
 }
-
-/* Remove padding-top from grid-item */
-.grid-item {
-  padding-top: 0;
 
 
 </style>
