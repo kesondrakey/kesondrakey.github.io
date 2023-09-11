@@ -92,13 +92,14 @@ button, a, iframe {
 
 
 .icon-daily { 
-    background: linear-gradient(to right, #08AEEA, #2AF598); 
+    background: linear-gradient(to right, #89f7fe, #66a6ff); 
 }
     .icon-daily.selected { 
-    background: linear-gradient(to right, #2AF598, #08AEEA);
+    background: linear-gradient(to right, #66a6ff, #89f7fe);
 }
 
 
+    
 .icon-weekly { 
     background: linear-gradient(to right, #21D4FD, #B721FF); 
 }
@@ -108,12 +109,11 @@ button, a, iframe {
 
 
 .icon-monthly { 
-    background: linear-gradient(to right, #FA8BFF, #2BD2FF, #2BFF88); 
+    background: linear-gradient(to right, #667eea, #764ba2); 
 }
     .icon-monthly.selected { 
-    background: linear-gradient(to right, #2BFF88, #2BD2FF, #FA8BFF); 
+    background: linear-gradient(to right, #764ba2, #667eea); 
 }
-
 
 
 .icon-container {
