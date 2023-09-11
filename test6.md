@@ -15,7 +15,7 @@ button, a, iframe {
 
 /* Styling for the Toggle Technical Data button */
 .collapsible {
-    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     cursor: pointer;
     padding: 10px 15px;
     border-radius: 4px;
@@ -71,8 +71,8 @@ button, a, iframe {
     text-transform: none;  
     cursor: pointer;
     padding: 10px; 
-    width: 140px;   
-    height: 140px;  
+    width: 160px;   
+    height: 160px;  
     border-radius: 50%; 
     overflow: hidden; 
     white-space: nowrap; 
@@ -93,28 +93,28 @@ button, a, iframe {
     /* Styling for the icons */
     /* Daily - blue */
 .icon-daily { 
-    background: linear-gradient(to right, #00f2fe 0%, #4facfe 100%);
+   background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
 }
     .icon-daily.selected { 
-    background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    background: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
 }
 
 
       /* weekly - purple */
 .icon-weekly { 
-    background: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+    background: linear-gradient(to top, #b224ef 0%, #7579ff 100%);
 }
     .icon-weekly.selected { 
-    background: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+    background: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
 }
 
     /* monthly - green */
 
 .icon-monthly { 
-    background:  linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    background: linear-gradient(to right, #7cfc00, #7cfc00);
 }
     .icon-monthly.selected { 
-    background: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
+    background: linear-gradient(to right, #7cfc00, #7cfc00);
 }
 
 
