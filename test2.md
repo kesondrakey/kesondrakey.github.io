@@ -151,18 +151,40 @@ iframe + i {
 }
 
   /* Banner styles */
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr; /* Single column for mobile view */
-  grid-gap: 1em;
+/* Style for the text overlay */
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4); /* black with 40% opacity */
+  padding: 10px;
+  border-radius: 4px;
 }
 
+/* Style to add a black arrow to the text box */
+.text-overlay::after {
+  content: '→';
+  font-size: larger;
+  margin-left: 10px;
+}
+
+/* Update grid-item to position the image and text overlay */
 .grid-item {
   position: relative;
-  padding-top: 20%; /* Smaller aspect ratio */
   overflow: hidden;
-  border: none;
 }
+
+/* Style the image */
+.grid-item img {
+  width: 100%;  /* Make it span full width */
+  height: auto;  /* Keep aspect ratio */
+}
+
+/* Remove padding-top from grid-item */
+.grid-item {
+  padding-top: 0;
 
 
 </style>
@@ -177,6 +199,7 @@ iframe + i {
     </a>
   </div>
 </div>
+
 
 <!-- Your existing HTML content starts here -->
 
