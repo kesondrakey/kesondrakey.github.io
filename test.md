@@ -25,22 +25,21 @@ nav-menu: true
             background-size: cover;
             padding: 30px; /* Some padding around the content for aesthetics */
         }
-        #content-wrapper {
-    position: relative; /* Make this a positioning parent */
-      }
-      
-      #top-right-image {
-          position: absolute;  /* Take it out of the normal flow */
-          top: 0;              /* Align it with the top edge of the parent */
-          right: 0;            /* Align it with the right edge of the parent */
-          max-height: 300px;   /* You can adjust the height */
-          width: auto;         /* Keep the aspect ratio */
-      }
-      
-      #main-content {
-          flex: 1; /* Let's make sure it takes up the full available width minus the image */
-          padding-right: 20px; /* Optional: gives some spacing between the image and the content */
-      }
+      #content-wrapper {
+            position: relative; /* This might not be necessary if you're using float */
+        }
+        
+        #top-right-image {
+            float: right;  /* Float the image to the right */
+            margin: 0 0 20px 20px; /* Add some margins for aesthetics: top right bottom left */
+            max-height: 300px;  /* You can adjust the height */
+            width: auto;  /* Keep the aspect ratio */
+        }
+        
+        #main-content {
+            /* If you're using float, flex might not be necessary */
+            padding: 0 20px 20px 0; /* Optional: gives some spacing between the image and the content */
+        }
 
         #top-right-image {
             margin-left: 20px; /* Optional: gives some spacing between the image and the content */
