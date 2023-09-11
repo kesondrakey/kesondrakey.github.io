@@ -47,12 +47,10 @@ nav-menu: true
             max-width: 100%; /* Ensure it doesn't go beyond the container width on smaller screens */
         }
 
-              /* Style for the banner */
-      /* Banner styles */
-    /* Make the image darker by adding this overlay */
+    /* Style for the banner */
     .grid-item:before {
-            height: 300px;
-        width: 100%;
+      height: 300px;
+      width: 100%;
       content: "";
       position: absolute;
       top: 0;
@@ -65,8 +63,6 @@ nav-menu: true
     
     /* Modify your existing text-overlay */
     .text-overlay {
-      transition: all 0.3s ease; /* Add transition for smooth changes */
-      color: rgba(255, 255, 255, 0.7); /* Making text a bit transparent */
       transition: color 0.3s ease, border 0.3s ease; /* Added transition for border */
       position: absolute;
       top: 50%;
@@ -114,23 +110,22 @@ nav-menu: true
         padding: 0;
     }
 
- /* for citation */
-    .image-note {
-  text-align: right;
-}
-
- /* for logos */
-
-.logos {
-  text-align: center;  /* Center the logos horizontally */
-  margin-bottom: 20px; /* Add some space below the logos */
-}
-
-.logo {
-  height: 40px;  /* Set a fixed height */
-  width: auto;  /* Maintain the aspect ratio */
-  margin: 0 10px;  /* Add some horizontal space between the logos */
-}
+     /* for citation */
+        .image-note {
+      text-align: right;
+    }
+    
+     /* for logos */
+    .logos {
+      text-align: center;  /* Center the logos horizontally */
+      margin-bottom: 20px; /* Add some space below the logos */
+    }
+    
+    .logo {
+      height: 100px;  /* Set a fixed height */
+      width: auto;  /* Maintain the aspect ratio */
+      margin: 0 20px;  /* Add some horizontal space between the logos */
+    }
 
 
 
@@ -146,9 +141,7 @@ nav-menu: true
 <div class="grid-container">
   <div class="grid-item">
     <a href="https://kesondrakey.github.io/about_flux_tower_project">
-
       <img src="images/flux_tower.jpg" alt="fluxtower">
-        
       <div class="text-overlay">Learn about the role of flux towers in the project &#8594;</div> <!-- Added arrow here -->
     </a>
   </div>
