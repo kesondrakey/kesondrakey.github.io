@@ -119,14 +119,7 @@ button, a, iframe {
     justify-content: center;
     margin-bottom: 20px;
 }
-/* Added styling for selected state */
-.icon.selected, .collapsible.selected {
-    background-color: rgba(255, 255, 255, 0.2);  /* light overlay */
-}
-    /* For selected state */
-.icon.selected, .collapsible.selected {
-    filter: brightness(60%); /* darken the color */
-}
+
     /* Space after the note */
 iframe + i {
     display: block; /* ensure the element takes up its full width */
@@ -145,17 +138,7 @@ iframe + i {
 .grid-container, .toggle-icons, .content {
     margin-bottom: 40px;
 }
-    /* Example Dark Mode styling for tables 
-   Note: This won't affect iframes, so you'd have to add these to the content of your iframes 
-         if you control them.
-*/
-table {
-    background-color: #222;
-    color: #eee;
-}
-table th, table td {
-    border: 1px solid #555;
-}
+
     body, table {
     background-color: #222;
     color: #eee;
