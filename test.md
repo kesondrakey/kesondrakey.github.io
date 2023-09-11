@@ -219,7 +219,7 @@ nav-menu: true
 
 
           <p>
-                  <i>  Data sourced from this project will later be submitted to Ameriflux and Fluxnet. </i>
+                  <i>  Data sourced from this project will later be submitted to Ameriflux and Fluxnet </i>
                 </p>
 
 
