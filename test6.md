@@ -94,12 +94,14 @@ button, a, iframe {
 /* Styling for the icons */
 /* Adjusted styles for a better differentiation and harmony with an indigo blue background */
 
-/* Daily  */
+/* Styling for the icons */
+
+/* Daily */
 .icon-daily { 
     background: linear-gradient(to right, #2E3192, #1BFFFF);
 }
 .icon-daily.selected { 
-    background-image: linear-gradient(to right, #1BFFFF, #2E3192);
+    background: linear-gradient(to right, #1C1D59, #118B8B);
 }
 
 /* Weekly */
@@ -107,7 +109,7 @@ button, a, iframe {
     background: linear-gradient(to right, #2d006b, #660066);
 }
 .icon-weekly.selected { 
-    background-image: linear-gradient(to right, #660066, #2d006b);
+    background: linear-gradient(to right, #1C003E, #4C004D);
 }
 
 /* Monthly */
@@ -115,8 +117,9 @@ button, a, iframe {
     background: linear-gradient(to right, #004d00, #7cfc00);
 }
 .icon-monthly.selected { 
-    background: linear-gradient(to right, #7cfc00, #004d00);
+    background: linear-gradient(to right, #003200, #59A800);
 }
+
 
 
 
@@ -192,13 +195,13 @@ iframe + i {
     <div style="margin-bottom:20px;"></div>
 </div>
 <div id="weekly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
-    <b>Weekly Data Table:</b>
+    <b>Weekly Data Table:  <i>*coming soon!</i> </b>
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower1.html"></iframe>
      <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
     <div style="margin-bottom:20px;"></div>
 </div>
 <div id="monthly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
-    <b>Monthly Data Table:</b>
+    <b>Monthly Data Table: <i>*coming soon!</i> </b>
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower1.html"></iframe>
      <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
     <div style="margin-bottom:20px;"></div>
