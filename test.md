@@ -194,7 +194,8 @@ nav-menu: true
                 </p>
                 <img src="images/Nbcs_scales.png" alt="Monitoring Scales for NbCS" style="display:block;margin:auto;">
                 <p style="font-style: italic; text-align: center;">
-                    <a class="no-dot" a href="https://oneill.indiana.edu/doc/research/climate/climate-solutions-summary.pdf" target="_blank" rel="noopener noreferrer">Sourced from the report</a>
+                    <a class="no-dot" href="https://oneill.indiana.edu/doc/research/climate/climate-solutions-summary.pdf" target="_blank" rel="noopener noreferrer">Sourced from the report</a>
+
                 </p>
                 <p>
                     By analyzing the tiniest of changes in the air, flux towers give us a clear picture of how gases and energy move in and out of an ecosystem. In essence, they help us monitor the health of our lands and the success of our conservation efforts.
@@ -207,7 +208,7 @@ nav-menu: true
                 </p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/CR4Anc8Mkas" title="Flux Tower Explanation by NEON" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p style="font-style: italic;">
-                    <a class="no-dot" a href="https://www.neonscience.org/impact/observatory-blog/ameriflux-and-neon-program-join-forces-eddy-covariance-data" target="_blank" rel="noopener noreferrer">Sourced from NEON</a>
+                    <a class="no-dot" href="https://www.neonscience.org/impact/observatory-blog/ameriflux-and-neon-program-join-forces-eddy-covariance-data" target="_blank" rel="noopener noreferrer">Sourced from NEON</a>
                 </p>
 
 
