@@ -121,45 +121,27 @@ nav-menu: true
     }
 
 
-    /* add citation to image */
-    .citation {
-    font-style: italic;
-    font-size: 12px;  /* Adjust the font size as needed */
-    position: absolute;
-    bottom: 0;  /* Aligns text to the bottom */
-    right: 0;   /* Aligns text to the right */
-    padding: 10px;  /* Adds some space around the text */
-    z-index: 3;  /* Keeps the text above other elements */
-    }
-    .image-with-citation {
-        position: relative;
-    }
-
-
+  
 
     </style>
 </head>
 
   
 <body>
-    
-<!-- Add the banner grid-container here -->
-      <div class="grid-container">
-    <div class="grid-item">
-      <div class="image-with-citation">
-        <a href="https://kesondrakey.github.io/about_flux_tower_project">
-          <img src="images/flux_tower.jpg" alt="fluxtower">
-        </a>
-        <div class="citation">
-          source: Morgan Monroe Flux Tower, Bloomington, IN
-        </div>
-      </div>
-      <a href="https://kesondrakey.github.io/about_flux_tower_project">
-        <div class="text-overlay">Learn about the role of flux towers in the project &#8594;</div>
-      </a>
-    </div>
-  </div>
 
+<!-- Add the banner grid-container here -->
+<div class="grid-container">
+  <div class="grid-item">
+    <a href="https://kesondrakey.github.io/about_flux_tower_project">
+
+      <img src="images/flux_tower.jpg" alt="fluxtower">
+        
+      <div class="text-overlay">Learn about the role of flux towers in the project &#8594;</div> <!-- Added arrow here -->
+    </a>
+  </div>
+</div>
+
+<i>Image is of the Morgan Monroe Flux Tower. Bloomington, IN</i>
 
 <!-- end the banner grid-container here -->
     
