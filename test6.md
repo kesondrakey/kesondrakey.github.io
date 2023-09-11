@@ -92,18 +92,18 @@ button, a, iframe {
 
 
 .icon-daily { 
-    background: linear-gradient(to right, #85a3e0, #1e57a8); 
+    background: linear-gradient(to right, #08AEEA, #2AF598); 
 }
     .icon-daily.selected { 
-    background: linear-gradient(to right, #6479bd, #1e4d8a);
+    background: linear-gradient(to right, #2AF598, #08AEEA);
 }
 
 
 .icon-weekly { 
-    background: linear-gradient(to right, #a57ad8, #501a7a); 
+    background: linear-gradient(to right, #21D4FD, #B721FF); 
 }
     .icon-weekly.selected { 
-    background: linear-gradient(to right, #8f66c4, #461260); 
+    background: linear-gradient(to right, #B721FF, #21D4FD); 
 }
 
 
