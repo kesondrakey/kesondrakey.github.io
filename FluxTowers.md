@@ -121,6 +121,12 @@ nav-menu: true
     }
 
 
+    .image-note {
+  text-align: right;
+}
+
+
+
   
 
     </style>
@@ -141,7 +147,10 @@ nav-menu: true
   </div>
 </div>
 
-<i>Image is of the Morgan Monroe Flux Tower. Bloomington, IN</i>
+<div class="image-note">
+  <i>Image is of the Morgan Monroe Flux Tower. Bloomington, IN</i>
+</div>
+
 
 <!-- end the banner grid-container here -->
     
