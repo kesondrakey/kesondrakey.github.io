@@ -66,6 +66,8 @@ button, a, iframe {
 
 /* Styling for the icons */
 .icon {
+       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1),
+                0px 1px 3px rgba(0, 0, 0, 0.2); /* outer and inner shadows */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* horizontal offset, vertical offset, blur radius, color */
     position: relative;
     color: white;
@@ -100,25 +102,37 @@ button, a, iframe {
 /* Daily */
 .icon-daily { 
     background: linear-gradient(to right, #2E3192, #1BFFFF);
+        box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1),
+                inset 0px 1px 3px rgba(0, 0, 0, 0.2); /* inner shadows for selected */
 }
 .icon-daily.selected { 
     background: linear-gradient(to right, #1C1D59, #118B8B);
+        box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1),
+                inset 0px 1px 3px rgba(0, 0, 0, 0.2); /* inner shadows for selected */
 }
 
 /* Weekly */
 .icon-weekly { 
     background: linear-gradient(to right, #2d006b, #660066);
+        box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1),
+                inset 0px 1px 3px rgba(0, 0, 0, 0.2); /* inner shadows for selected */
 }
 .icon-weekly.selected { 
     background: linear-gradient(to right, #1C003E, #4C004D);
+        box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1),
+                inset 0px 1px 3px rgba(0, 0, 0, 0.2); /* inner shadows for selected */
 }
 
 /* Monthly */
 .icon-monthly { 
     background: linear-gradient(to right, #004d00, #7cfc00);
+        box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1),
+                inset 0px 1px 3px rgba(0, 0, 0, 0.2); /* inner shadows for selected */
 }
 .icon-monthly.selected { 
     background: linear-gradient(to right, #003200, #59A800);
+        box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1),
+                inset 0px 1px 3px rgba(0, 0, 0, 0.2); /* inner shadows for selected */
 }
 .icon-container {
     display: flex;
