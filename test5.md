@@ -16,8 +16,10 @@ nav-menu: true
     padding: 10px 15px;
     border-radius: 4px;
     text-align: center;
+    text-transform: none;
     display: block;
     margin: auto;
+    margin-bottom: 20px;  
     width: 100%;
     line-height: 40px;
 }
@@ -51,6 +53,7 @@ nav-menu: true
  /* Styling for the icons */
 .icon {
     color: white;
+    text-transform: none;  /* Add this line to prevent text from being automatically capitalized */
     border: none;
     cursor: pointer;
     padding: 10px; 
@@ -85,7 +88,9 @@ nav-menu: true
 
     .icon:active, .collapsible:active {
     transform: scale(0.98); /* Slightly shrinks the button to give a pressed effect */
+        filter: brightness(85%); /* This reduces the brightness by 15% for an active click */
 }
+    
     
 .icon-daily { 
     background: linear-gradient(to right, #85a3e0, #1e57a8); 
@@ -102,7 +107,7 @@ nav-menu: true
 .icon-container {
     display: flex;
     justify-content: center;
-       
+    margin-bottom: 20px;   /* Add this line to give space below the icon buttons */
 }
     .table-container {
     display: none;
