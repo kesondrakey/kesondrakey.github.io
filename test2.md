@@ -151,14 +151,14 @@ iframe + i {
 
   /* Banner styles */
 /* Make the image darker by adding this overlay */
-.grid-item::before {
+.grid-item:before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* black with 40% opacity */
+  right: 0;
+  bottom: 0;
+  background-color: rgba(18, 24, 33, 0.7); /* Dark blue with 70% opacity */
   z-index: 1; /* Sit on top of the image */
 }
 
