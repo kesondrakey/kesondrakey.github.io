@@ -66,8 +66,6 @@ button, a, iframe {
 
 /* Styling for the icons */
 .icon {
-        color: rgba(255, 255, 255, 0.7); /* Making text a bit transparent */
-    transition: color 0.3s ease; /* Smooth transition for color changes */
        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1),
                 0px 1px 3px rgba(0, 0, 0, 0.2); /* outer and inner shadows */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* horizontal offset, vertical offset, blur radius, color */
@@ -192,8 +190,8 @@ iframe + i {
 
 /* Modify your existing text-overlay */
 .text-overlay {
-    color: rgba(255, 255, 255, 0.7); /* Making text a bit transparent */
-    transition: color 0.3s ease; /* Smooth transition for color changes */
+  color: rgba(255, 255, 255, 0.7); /* Making text a bit transparent */
+  transition: color 0.3s ease, border 0.3s ease; /* Added transition for border */
   position: absolute;
   top: 50%;
   right: 10%;
@@ -207,8 +205,9 @@ iframe + i {
   z-index: 2; /* Sit on top of the image and the dark overlay */
 }
 
-    .text-overlay:hover {
-    color: white; /* Text becomes fully white when hovered */
+.text-overlay:hover {
+  color: white; /* Text becomes fully white when hovered */
+  border-color: #add8e6; /* Light blue border when hovered */
 }
 
 /* Update grid-item to position the image and text overlay */
