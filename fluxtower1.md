@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Flux Tower 1
 description: Flux Tower 1
+title: Flux Tower 1
 nav-menu: true
 ---
 
@@ -66,6 +66,9 @@ button, a, iframe {
 
 /* Styling for the icons */
 .icon {
+       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1),
+                0px 1px 3px rgba(0, 0, 0, 0.2); /* outer and inner shadows */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* horizontal offset, vertical offset, blur radius, color */
     position: relative;
     color: white;
     text-transform: none;  
@@ -91,6 +94,7 @@ button, a, iframe {
 }
 
 
+    
 /* Styling for the icons */
 /* Adjusted styles for a better differentiation and harmony with an indigo blue background */
 
@@ -99,9 +103,13 @@ button, a, iframe {
 /* Daily */
 .icon-daily { 
     background: linear-gradient(to right, #2E3192, #1BFFFF);
+        box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1),
+                inset 0px 1px 3px rgba(0, 0, 0, 0.2); /* inner shadows for selected */
 }
 .icon-daily.selected { 
     background: linear-gradient(to right, #1C1D59, #118B8B);
+        box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1),
+                inset 0px 1px 3px rgba(0, 0, 0, 0.2); /* inner shadows for selected */
 }
 
 /* Weekly */
@@ -150,10 +158,85 @@ iframe + i {
     height: auto;        // adjusts the height to its content
 }
 
+  /* Banner styles */
+/* Make the image darker by adding this overlay */
+.grid-item:before {
+        height: 200px;
+    width: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(18, 24, 33, 0.4); /* Your specific dark blue with 70% opacity */
+  z-index: 1;
+}
+
+/* Modify your existing text-overlay */
+.text-overlay {
+  transition: all 0.3s ease; /* Add transition for smooth changes */
+  color: rgba(255, 255, 255, 0.7); /* Making text a bit transparent */
+  transition: color 0.3s ease, border 0.3s ease; /* Added transition for border */
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0); /* Make it transparent */
+  border: 2px solid white; /* White border */
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: bold; /* Make text bold */
+  z-index: 2; /* Sit on top of the image and the dark overlay */
+}
+
+.text-overlay:hover {
+    border: 2px solid lightblue; /* Add light blue border */
+    color: white; /* Keep the text color white */
+    background-color: rgba(0, 0, 0, 0.1); /* Slight background change to indicate hover */
+}
+
+/* Update grid-item to position the image and text overlay */
+.grid-item {
+    height: 200px;
+    width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+    .arrow-icon {
+  z-index: 2;  /* Make sure this is higher than the z-index of the overlay */
+  position: relative;
+}
+
+/* Style the image */
+.grid-item img {
+  object-fit: cover;  /* Adjust to make the image cover the entire div */
+  width: 100%;  
+  height: 100%;  /* Make it span full height */
+        margin: 0;
+    padding: 0;
+}
+
 
 </style>
 
 
+<!-- Add the banner grid-container here -->
+<div class="grid-container">
+  <div class="grid-item">
+    <a href="https://kesondrakey.github.io/FluxTowers">
+      <img src="images/corn.jpeg" alt="clouds">
+      <div class="text-overlay">Learn about Flux Towers &#8594;</div> <!-- Added arrow here -->
+    </a>
+  </div>
+</div>
+
+
+<!-- Your existing HTML content starts here -->
 
 
 <!-- Daily Plot - Simple Variables -->
