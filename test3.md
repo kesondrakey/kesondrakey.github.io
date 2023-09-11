@@ -93,10 +93,6 @@ button, a, iframe {
     transition: filter 0.2s;
 }
 
-/* New :hover state for .icon */
-.icon:hover {
-    color: white; /* Text becomes fully white when hovered */
-}
 
     
 /* Styling for the icons */
@@ -114,33 +110,22 @@ button, a, iframe {
     background: linear-gradient(to right, #1C1D59, #118B8B);
         box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1),
                 inset 0px 1px 3px rgba(0, 0, 0, 0.2); /* inner shadows for selected */
-    color: white; /* Text becomes fully white when selected */
 }
 
 /* Weekly */
 .icon-weekly { 
     background: linear-gradient(to right, #2d006b, #660066);
-        box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1),
-                inset 0px 1px 3px rgba(0, 0, 0, 0.2); /* inner shadows for selected */
 }
 .icon-weekly.selected { 
     background: linear-gradient(to right, #1C003E, #4C004D);
-        box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1),
-                inset 0px 1px 3px rgba(0, 0, 0, 0.2); /* inner shadows for selected */
-    color: white; /* Text becomes fully white when selected */
 }
 
 /* Monthly */
 .icon-monthly { 
     background: linear-gradient(to right, #004d00, #7cfc00);
-        box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1),
-                inset 0px 1px 3px rgba(0, 0, 0, 0.2); /* inner shadows for selected */
 }
 .icon-monthly.selected { 
     background: linear-gradient(to right, #003200, #59A800);
-        box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1),
-                inset 0px 1px 3px rgba(0, 0, 0, 0.2); /* inner shadows for selected */
-    color: white; /* Text becomes fully white when selected */
 }
 .icon-container {
     display: flex;
@@ -190,6 +175,7 @@ iframe + i {
 
 /* Modify your existing text-overlay */
 .text-overlay {
+  transition: all 0.3s ease; /* Add transition for smooth changes */
   color: rgba(255, 255, 255, 0.7); /* Making text a bit transparent */
   transition: color 0.3s ease, border 0.3s ease; /* Added transition for border */
   position: absolute;
@@ -206,8 +192,9 @@ iframe + i {
 }
 
 .text-overlay:hover {
-  color: white; /* Text becomes fully white when hovered */
-  border-color: #add8e6; /* Light blue border when hovered */
+    border: 2px solid lightblue; /* Add light blue border */
+    color: white; /* Keep the text color white */
+    background-color: rgba(0, 0, 0, 0.1); /* Slight background change to indicate hover */
 }
 
 /* Update grid-item to position the image and text overlay */
