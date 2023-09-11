@@ -66,6 +66,7 @@ button, a, iframe {
 
 /* Styling for the icons */
 .icon {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* horizontal offset, vertical offset, blur radius, color */
     position: relative;
     color: white;
     text-transform: none;  
