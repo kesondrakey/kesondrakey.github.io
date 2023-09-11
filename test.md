@@ -140,6 +140,11 @@ nav-menu: true
       text-decoration: none;
     }
 
+    .logos ul, .logos ol {
+  list-style: none; /* Remove list item markers */
+}
+
+
     .no-dot {
   text-decoration: none;
 }
