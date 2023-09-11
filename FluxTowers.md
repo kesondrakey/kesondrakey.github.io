@@ -210,7 +210,7 @@ nav-menu: true
 
 
           <p>
-                    Data sourced from this project will later be submitted to Ameriflux and Fluxnet.
+                  <i>  Data sourced from this project will later be submitted to Ameriflux and Fluxnet. </i>
                 </p>
 
 
@@ -218,11 +218,11 @@ nav-menu: true
             </section>
 
 <div class="logos">
+      <a href="https://fluxnet.org/" target="_blank" rel="noopener noreferrer">
+    <img src="images/fluxnet.png" alt="Fluxnet logo" class="logo">
+  </a>
   <a href="https://www.ameriflux.lbl.gov/" target="_blank" rel="noopener noreferrer">
     <img src="images/ameriflux.png" alt="Ameriflux logo" class="logo">
-  </a>
-  <a href="https://fluxnet.org/" target="_blank" rel="noopener noreferrer">
-    <img src="images/fluxnet.png" alt="Fluxnet logo" class="logo">
   </a>
 </div>
 
