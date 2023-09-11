@@ -120,11 +120,23 @@ nav-menu: true
         padding: 0;
     }
 
-
+ /* for citation */
     .image-note {
   text-align: right;
 }
 
+ /* for logos */
+
+.logos {
+  text-align: center;  /* Center the logos horizontally */
+  margin-bottom: 20px; /* Add some space below the logos */
+}
+
+.logo {
+  height: 100px;  /* Set a fixed height */
+  width: auto;  /* Maintain the aspect ratio */
+  margin: 0 10px;  /* Add some horizontal space between the logos */
+}
 
 
   
@@ -193,4 +205,18 @@ nav-menu: true
                 <p style="font-style: italic;">
                     <a href="https://www.neonscience.org/impact/observatory-blog/ameriflux-and-neon-program-join-forces-eddy-covariance-data" target="_blank" rel="noopener noreferrer">Sourced from NEON</a>
                 </p>
+
+
+
+          <p>
+                    Data sourced from this project will later be submitted to Ameriflux and Fluxnet.
+                </p>
+
+
+                
             </section>
+
+            <div class="logos">
+  <img src="images/ameriflux.png" alt="Ameriflux logo" class="logo">
+  <img src="images/fluxnet.png" alt="Fluxnet logo" class="logo">
+</div>
