@@ -92,29 +92,31 @@ button, a, iframe {
 
 
 /* Styling for the icons */
-/* Daily - blue tones */
+
+/* Daily - Blue tones */
 .icon-daily { 
-    background-image: linear-gradient(to right, #001f4d 0%, #4d88bf 100%);
+    background-image: linear-gradient(to right, #0A00FF 0%, #5278FF 100%);
 }
 .icon-daily.selected { 
-    background-image: linear-gradient(to right, #001237 0%, #396a94 100%);
+    background-image: linear-gradient(to right, #0600B0 0%, #3B4CBF 100%);
 }
 
-/* Weekly - purple tones */
+/* Weekly - Purple tones */
 .icon-weekly { 
-    background-image: linear-gradient(to right, #4d004d 0%, #bf80bf 100%);
+    background-image: linear-gradient(to right, #682D90 0%, #9E62B0 100%);
 }
 .icon-weekly.selected { 
-    background-image: linear-gradient(to right, #390039 0%, #995e99 100%);
+    background-image: linear-gradient(to right, #4C1F66 0%, #7D498A 100%);
 }
 
-/* Monthly - green tones */
+/* Monthly - Green tones */
 .icon-monthly { 
-    background-image: linear-gradient(to right, #004d23 0%, #4dbf88 100%); 
+    background-image: linear-gradient(to right, #18621B 0%, #49A348 100%); 
 }
 .icon-monthly.selected { 
-    background-image: linear-gradient(to right, #00381a 0%, #39906f 100%); 
+    background-image: linear-gradient(to right, #0E3D10 0%, #357A30 100%); 
 }
+
 
 
 
