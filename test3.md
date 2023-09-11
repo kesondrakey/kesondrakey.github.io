@@ -169,7 +169,7 @@ iframe + i {
   position: absolute;
   top: 50%;
   right: 0;
-  transform: translate(-50%);
+  transform: translateY(-50%);
   color: white;
   background-color: rgba(0, 0, 0, 0); /* Make it transparent */
   border: 2px solid white; /* White border */
@@ -196,6 +196,8 @@ iframe + i {
 .grid-item img {
   width: 100%;  /* Make it span full width */
   height: auto;  /* Keep aspect ratio */
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -207,7 +209,7 @@ iframe + i {
   <div class="grid-item">
     <a href="https://kesondrakey.github.io/FluxTowers">
       <img src="images/corn.jpeg" alt="clouds">
-      <div class="text-overlay">Learn about Flux Towers -></div> <!-- Added arrow here -->
+      <div class="text-overlay">Learn about Flux Towers &#8594;</div> <!-- Added arrow here -->
     </a>
   </div>
 </div>
