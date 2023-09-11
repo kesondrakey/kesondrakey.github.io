@@ -15,7 +15,7 @@ button, a, iframe {
 
 /* Styling for the Toggle Technical Data button */
 .collapsible {
-   background-image: linear-gradient(to right, #09203f 0%, #537895 100%);
+   background-image: linear-gradient(to right, #121821, #222e40);
     cursor: pointer;
     padding: 10px 15px;
     border-radius: 4px;
@@ -91,33 +91,29 @@ button, a, iframe {
 }
 
 /* Styling for the icons */
-/* Styling for the icons */
-
 /* Daily - blue */
 .icon-daily { 
-    background: linear-gradient(to top, #337ab7 0%, #2c5ca5 100%);
+    background-image: linear-gradient(to right, #09203f 0%, #537895 100%);
 }
 .icon-daily.selected { 
-    background: linear-gradient(to top, #2c4f8c 0%, #2a3a66 100%);
+    background-image: linear-gradient(to right, #08162f 0%, #3a5c73 100%);
 }
 
-/* weekly - purple */
+/* Weekly - mauve to lavender */
 .icon-weekly { 
-    background: linear-gradient(to top, #8a74b0 0%, #746098 100%);
+    background-image: linear-gradient(to right, #4b3048 0%, #887a91 100%);
 }
 .icon-weekly.selected { 
-    background: linear-gradient(to top, #6c5792 0%, #594470 100%);
+    background-image: linear-gradient(to right, #3a2337 0%, #6a5d76 100%);
 }
 
-/* monthly - green */
+/* Monthly - teal to sea green */
 .icon-monthly { 
-    background: linear-gradient(to right, #4d946e, #3c7a5c); 
+    background-image: linear-gradient(to right, #1f4f4a 0%, #5a8d87 100%); 
 }
 .icon-monthly.selected { 
-    background: linear-gradient(to right, #30654c, #244a3a); 
+    background-image: linear-gradient(to right, #173936 0%, #4a766f 100%); 
 }
-
-
 
 
 
