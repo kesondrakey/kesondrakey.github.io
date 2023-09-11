@@ -23,6 +23,7 @@ nav-menu: true
         #flux-tower {
             background: url(images/fluxtower.png) no-repeat; /* Add banner behind the title */
             background-size: cover;
+            position: relative;
             padding: 30px; /* Some padding around the content for aesthetics */
         }
       #content-wrapper {
@@ -32,7 +33,7 @@ nav-menu: true
         #top-right-image {
             float: right;  /* Float the image to the right */
             margin: 0 0 20px 20px; /* Add some margins for aesthetics: top right bottom left */
-            max-height: 300px;  /* You can adjust the height */
+            max-height: 500px;  /* You can adjust the height */
             width: auto;  /* Keep the aspect ratio */
         }
         
@@ -59,9 +60,9 @@ nav-menu: true
         <div id="main-content">
 
             <section id="intro">
+            <img id="top-right-image" src="images/eddy_cov_ex.png" alt="Eddy Covariance Example">
                 <h1>Understanding Nature's Role in Climate Solutions</h1>
                 <p>
-                <img id="top-right-image" src="images/eddy_cov_ex.png" alt="Eddy Covariance Example">
                     Farmers and land stewards have a unique opportunity to play a major role in combatting climate change. Nature-based Climate Solutions (NbCS) are management techniques that enhance the sequestration of carbon dioxide and reduce greenhouse gas emissions in croplands, grasslands, forests, and wetlands. In addition to aiding in the fight against global warming, NbCS provides numerous benefits such as improved soil health, better air and water quality, and increased resilience against climate threats like floods and droughts.
                 </p>
             </section>
