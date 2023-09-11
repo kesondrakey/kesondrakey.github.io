@@ -15,7 +15,7 @@ button, a, iframe {
 
 /* Styling for the Toggle Technical Data button */
 .collapsible {
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+   background-image: linear-gradient(to right, #09203f 0%, #537895 100%);
     cursor: pointer;
     padding: 10px 15px;
     border-radius: 4px;
@@ -44,7 +44,7 @@ button, a, iframe {
 .full-view-button {
     display: block;
     margin: 20px auto; 
-    background-image: linear-gradient(to right, #09203f 0%, #537895 100%);
+    background-image: linear-gradient(to right, #121821, #222e40);
     color: white;
     cursor: pointer;
     padding: 10px 15px;
@@ -91,30 +91,33 @@ button, a, iframe {
 }
 
 /* Styling for the icons */
+/* Styling for the icons */
 
 /* Daily - blue */
 .icon-daily { 
-    background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    background: linear-gradient(to top, #337ab7 0%, #2c5ca5 100%);
 }
 .icon-daily.selected { 
-    background: linear-gradient(to top, #0047a0 0%, #003366 100%);
+    background: linear-gradient(to top, #2c4f8c 0%, #2a3a66 100%);
 }
 
 /* weekly - purple */
 .icon-weekly { 
-    background: linear-gradient(to top, #b224ef 0%, #7579ff 100%);
+    background: linear-gradient(to top, #8a74b0 0%, #746098 100%);
 }
 .icon-weekly.selected { 
-    background: linear-gradient(to top, #861aad 0%, #4e4c8c 100%);
+    background: linear-gradient(to top, #6c5792 0%, #594470 100%);
 }
 
 /* monthly - green */
 .icon-monthly { 
-    background: linear-gradient(to right, #7cfc00, #32cd32);  // Adjusted the second color for a smoother gradient
+    background: linear-gradient(to right, #4d946e, #3c7a5c); 
 }
 .icon-monthly.selected { 
-    background: linear-gradient(to right, #228b22, #006400); // A blend of forest green shades
+    background: linear-gradient(to right, #30654c, #244a3a); 
 }
+
+
 
 
 
@@ -169,7 +172,7 @@ iframe + i {
 
 
 <!-- Table Section -->
-<h2>Select your time period of interest to see the data in a table format</h2>
+<h2>Select your time period of interest to see the data in a table format:</h2>
 
 <!-- Icons/buttons -->
 <div class="icon-container">
