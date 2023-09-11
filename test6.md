@@ -15,7 +15,7 @@ button, a, iframe {
 
 /* Styling for the Toggle Technical Data button */
 .collapsible {
-    background-image: linear-gradient(to right, #764BA2, #667EEA);
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     cursor: pointer;
     padding: 10px 15px;
     border-radius: 4px;
@@ -96,15 +96,16 @@ button, a, iframe {
     background: linear-gradient(to right, #00f2fe 0%, #4facfe 100%);
 }
     .icon-daily.selected { 
-    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
 }
+
 
       /* weekly - purple */
 .icon-weekly { 
-    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    background: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
 }
     .icon-weekly.selected { 
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
 }
 
     /* monthly - green */
@@ -113,7 +114,7 @@ button, a, iframe {
     background:  linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
 }
     .icon-monthly.selected { 
-    background:  linear-gradient(to right, #38f9d7 0%, #43e97b 100%);
+    background: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
 }
 
 
