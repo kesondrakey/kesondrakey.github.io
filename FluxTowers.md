@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post 
 title: Flux Towers
 description: Overviewing Flux Towers
 nav-menu: true
@@ -20,12 +20,6 @@ nav-menu: true
             text-align: center; /* Center the content in the video and image section */
         }
 
-        #flux-tower {
-            background: url(images/fluxtower.png) no-repeat; /* Add banner behind the title */
-            background-size: cover;
-            position: relative;
-            padding: 30px; /* Some padding around the content for aesthetics */
-        }
       #content-wrapper {
             position: relative; /* This might not be necessary if you're using float */
         }
@@ -53,12 +47,10 @@ nav-menu: true
             max-width: 100%; /* Ensure it doesn't go beyond the container width on smaller screens */
         }
 
-              /* Style for the banner */
-      /* Banner styles */
-    /* Make the image darker by adding this overlay */
+    /* Style for the banner */
     .grid-item:before {
-            height: 300px;
-        width: 100%;
+      height: 300px;
+      width: 100%;
       content: "";
       position: absolute;
       top: 0;
@@ -71,8 +63,13 @@ nav-menu: true
     
     /* Modify your existing text-overlay */
     .text-overlay {
-      transition: all 0.3s ease; /* Add transition for smooth changes */
-      color: rgba(255, 255, 255, 0.7); /* Making text a bit transparent */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
       transition: color 0.3s ease, border 0.3s ease; /* Added transition for border */
       position: absolute;
       top: 50%;
@@ -120,27 +117,40 @@ nav-menu: true
         padding: 0;
     }
 
- /* for citation */
-    .image-note {
-  text-align: right;
+     /* for citation */
+        .image-note {
+      text-align: right;
+    }
+    
+     /* for logos */
+    .logos {
+      text-align: center;  /* Center the logos horizontally */
+      margin-bottom: 20px; /* Add some space below the logos */
+    }
+    
+    .logo {
+      height: 120px;  /* Set a fixed height */
+      width: auto;  /* Maintain the aspect ratio */
+      margin: 0 20px;  /* Add some horizontal space between the logos */
+    }
+
+    
+     /* for removing dots */
+    .logos .logo-link, .logos .logo-link img {
+      text-decoration: none;
+    }
+
+    .logos ul, .logos ol {
+  list-style: none; /* Remove list item markers */
 }
 
- /* for logos */
 
-.logos {
-  text-align: center;  /* Center the logos horizontally */
-  margin-bottom: 20px; /* Add some space below the logos */
-}
-
-.logo {
-  height: 40px;  /* Set a fixed height */
-  width: auto;  /* Maintain the aspect ratio */
-  margin: 0 10px;  /* Add some horizontal space between the logos */
+a.no-dot {
+  text-decoration: none !important;
 }
 
 
 
-  
 
     </style>
 </head>
@@ -152,9 +162,7 @@ nav-menu: true
 <div class="grid-container">
   <div class="grid-item">
     <a href="https://kesondrakey.github.io/about_flux_tower_project">
-
       <img src="images/flux_tower.jpg" alt="fluxtower">
-        
       <div class="text-overlay">Learn about the role of flux towers in the project &#8594;</div> <!-- Added arrow here -->
     </a>
   </div>
@@ -191,7 +199,7 @@ nav-menu: true
                 </p>
                 <img src="images/Nbcs_scales.png" alt="Monitoring Scales for NbCS" style="display:block;margin:auto;">
                 <p style="font-style: italic; text-align: center;">
-                    <a href="https://oneill.indiana.edu/doc/research/climate/climate-solutions-summary.pdf" target="_blank" rel="noopener noreferrer">Sourced from the report</a>
+           <a style="text-decoration: none;" href="https://oneill.indiana.edu/doc/research/climate/climate-solutions-summary.pdf" target="_blank" rel="noopener noreferrer">Sourced from the report</a>
                 </p>
                 <p>
                     By analyzing the tiniest of changes in the air, flux towers give us a clear picture of how gases and energy move in and out of an ecosystem. In essence, they help us monitor the health of our lands and the success of our conservation efforts.
@@ -204,13 +212,13 @@ nav-menu: true
                 </p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/CR4Anc8Mkas" title="Flux Tower Explanation by NEON" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p style="font-style: italic;">
-                    <a href="https://www.neonscience.org/impact/observatory-blog/ameriflux-and-neon-program-join-forces-eddy-covariance-data" target="_blank" rel="noopener noreferrer">Sourced from NEON</a>
-                </p>
+    <a style="text-decoration: none;" href="https://www.neonscience.org/impact/observatory-blog/ameriflux-and-neon-program-join-forces-eddy-covariance-data" target="_blank" rel="noopener noreferrer">Sourced from NEON</a>
+                    </p>
 
 
 
           <p>
-                  <i>  Data sourced from this project will later be submitted to Ameriflux and Fluxnet. </i>
+                  <i>  Data sourced from this project will later be submitted to Ameriflux and Fluxnet </i>
                 </p>
 
 
@@ -218,11 +226,10 @@ nav-menu: true
             </section>
 
 <div class="logos">
-      <a href="https://fluxnet.org/" target="_blank" rel="noopener noreferrer">
-    <img src="images/fluxnet.png" alt="Fluxnet logo" class="logo">
-  </a>
-  <a href="https://www.ameriflux.lbl.gov/" target="_blank" rel="noopener noreferrer">
+  <a style="text-decoration: none;" href="https://www.ameriflux.lbl.gov/" target="_blank" rel="noopener noreferrer" class="logo-link">
     <img src="images/ameriflux.png" alt="Ameriflux logo" class="logo">
   </a>
+  <a style="text-decoration: none;" href="https://fluxnet.org/" target="_blank" rel="noopener noreferrer" class="logo-link">
+    <img src="images/fluxnet.png" alt="Fluxnet logo" class="logo">
+  </a>
 </div>
-
