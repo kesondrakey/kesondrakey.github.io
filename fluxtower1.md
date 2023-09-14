@@ -274,7 +274,7 @@ iframe + i {
     <div style="margin-bottom:20px;"></div>
 </div>
 <div id="weekly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
-    <b>Weekly Data Table:  <i>*coming soon!</i> </b>
+    <b>Weekly Data Table: </b>
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower1.html"></iframe>
       <i>Units of measurement: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
     <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
@@ -283,7 +283,7 @@ iframe + i {
     <div style="margin-bottom:20px;"></div>
 </div>
 <div id="monthly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
-    <b>Monthly Data Table: <i>*coming soon!</i> </b>
+    <b>Monthly Data Table:</b>
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower1.html"></iframe>
       <i>Units of measurement: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
     <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
