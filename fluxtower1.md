@@ -247,7 +247,10 @@ iframe + i {
     <!-- Here's where you add the iframe to embed the Plotly graph -->
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower1.html">
     </iframe>
-      <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+      <i>Units of measurement: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+      <i><b>Please note: </b> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages)."</i></b>
+          
+          the data provided here is in a raw format which means it has not been processed or quality controlled.</i>
       <div style="margin-bottom:20px;"></div>
   </div>
 </div> 
