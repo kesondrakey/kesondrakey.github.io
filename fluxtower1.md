@@ -240,7 +240,12 @@ iframe + i {
 
 
 <!-- Daily Plot - Simple Variables -->
-<h2>Long Term Data</h2>
+
+    <div style="background-color: rgb(23, 46, 84); padding: 10px; color: white;">
+      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+    </div>
+    <!-- Add a div to enforce a 20px height for spacing, it should not appear on the site -->
+    <h2>Long Term Data</h2>
 <h4>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - <i>just click the variable name and see!</i></h4>
 <div class="plot-container">
   <div class="html-object">
@@ -248,11 +253,6 @@ iframe + i {
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower1.html">
     </iframe>
     <i>Units of measurement: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1; averaged volumetric water fraction (m^3/m^3))</i>
-    <div style="background-color: rgb(23, 46, 84); padding: 10px; color: white;">
-      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
-    </div>
-    <!-- Add a div to enforce a 20px height for spacing, it should not appear on the site -->
-    <div style="height: 20px;"></div>
   </div>
 </div>
 
