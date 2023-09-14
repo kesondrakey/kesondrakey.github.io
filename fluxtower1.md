@@ -306,7 +306,7 @@ iframe + i {
         <div class="html-object">
             <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
     <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
-      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control.
+      <strong>Please note:</strong> In order to provide data near real-time, the data provided here is in a raw format and has not undergone any quality control.
     </div>
       
             <!-- View in full View Button -->
