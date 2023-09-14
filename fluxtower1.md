@@ -248,12 +248,13 @@ iframe + i {
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower1.html">
     </iframe>
     <i>Units of measurement: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1; averaged volumetric water fraction (m^3/m^3))</i>
-    <div style="background-color: lightsteelblue; padding: 10px;">
+    <div style="background-color: navy; padding: 10px; color: white;"> <!-- Changed color to navy and text to white for readability -->
       <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
     </div>
-    <div style="margin-bottom:20px;"></div>
+    <div style="height: 20px;"></div> <!-- Adjusted this to set a height -->
   </div>
 </div>
+
 
 
           
