@@ -250,7 +250,6 @@ iframe + i {
       <i>Units of measurement: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))
       <b>Please note: </b> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages)."</i>
           
-          the data provided here is in a raw format which means it has not been processed or quality controlled.</i>
       <div style="margin-bottom:20px;"></div>
   </div>
 </div> 
