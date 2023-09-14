@@ -237,17 +237,18 @@ iframe + i {
 
 
 <!-- Your existing HTML content starts here -->
-
-
 <!-- Daily Plot - Simple Variables -->
 <h2>Long Term Data</h2>
-<h4>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - <i> just click the variable name and see!</i></h4>
+<h4>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - <i>just click the variable name and see!</i></h4>
 <div class="plot-container">
   <div class="html-object">
     <!-- Here's where you add the iframe to embed the Plotly graph -->
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower3.html">
     </iframe>
-      <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+    <i>Units of measurement: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1; averaged volumetric water fraction (m^3/m^3))</i>
+    <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
+      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+    </div>
       <div style="margin-bottom:20px;"></div>
   </div>
 </div> 
@@ -267,19 +268,29 @@ iframe + i {
 <div id="daily-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <b>Daily Data Table:</b>
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower3.html"></iframe>
-     <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+      <i>Units of measurement: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+        <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
+      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+    </div>
+    
     <div style="margin-bottom:20px;"></div>
 </div>
 <div id="weekly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <b>Weekly Data Table: </b>
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower3.html"></iframe>
-     <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+      <i>Units of measurement: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+    <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
+      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+    </div>
     <div style="margin-bottom:20px;"></div>
 </div>
 <div id="monthly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <b>Monthly Data Table:</b>
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower3.html"></iframe>
-     <i>*Precipitation (sum, inches); Temperature (average °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+      <i>Units of measurement: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+    <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
+      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+    </div>
     <div style="margin-bottom:20px;"></div>
 </div>
 
@@ -296,13 +307,21 @@ iframe + i {
     
         <div class="html-object">
             <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower3.html"></iframe>
-     
+    <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
+      <strong>Please note:</strong> In order to provide data near real-time, the data provided here is in a raw format and has not undergone any quality control.
+    </div>
+      
             <!-- View in full View Button -->
 <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower3.html" class="full-view-button">Click for full view</a>
        
         </div>
     </div>
 </div>
+
+
+
+
+
 
 
 
