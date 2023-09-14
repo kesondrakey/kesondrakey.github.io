@@ -251,10 +251,6 @@ iframe + i {
     <div style="background-color: #2a304a; padding: 10px; color: white;"> <!-- Updated background color -->
       <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
     </div>
-    <!-- Add a div to enforce a 20px height for spacing -->
-    <div style="height: 20px;"></div>
-  </div>
-</div>
 
 
 
