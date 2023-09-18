@@ -241,7 +241,7 @@ iframe + i {
 
 
 <!-- Daily Plot - Simple Variables -->
-<h2>Long Term Data</h2>
+<h2 style="margin-bottom: 0;">Long Term Data</h2>
 
 <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
     <strong>Note:</strong> This tower is located on a farm that uses cover crops! 🍃
