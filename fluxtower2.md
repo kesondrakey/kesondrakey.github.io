@@ -242,9 +242,11 @@ iframe + i {
 
 <!-- Daily Plot - Simple Variables -->
 <h2>Long Term Data</h2>
+
 <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
-    <strong>Note:</strong> This tower is located on a farm that uses cover crops! &#x1F343;
+    <strong>Note:</strong> This tower is located on a farm that uses cover crops! 🍃
 </div>
+
     
 <h4>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - <i>just click the variable name and see!</i></h4>
 <div class="plot-container">
