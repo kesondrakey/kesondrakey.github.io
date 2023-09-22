@@ -250,7 +250,7 @@ iframe + i {
 <!-- Tables -->
 <div id="daily-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
 <b>Calendar View:</b>
-    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="files/calendar.html"></iframe>
+    <iframe width="100%" height="800" frameborder="0" scrolling="no" src="files/calendar.html"></iframe>
 <b>Daily Data Table:</b>
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
       <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
