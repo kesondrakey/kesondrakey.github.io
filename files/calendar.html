@@ -7,31 +7,99 @@
             display: grid;
             grid-template-columns: repeat(7, 1fr);
             grid-gap: 10px;
+            margin-bottom: 20px;
         }
         .calendar-cell {
-            border: 1px solid #ccc;
             padding: 10px;
             text-align: center;
+            background: linear-gradient(to bottom, darkgray, darkslateblue);
+            color: white;
+            position: relative;
         }
-        .calendar-header {
+        .calendar-header, #monthName {
             background-color: #f4f4f4;
+            color: black;
         }
         .info-box {
             display: none;
+            background-color: darkgray;
+            color: white;
+            position: absolute;
+            right: 0;
+            z-index: 1;
         }
         .calendar-cell:hover .info-box {
             display: block;
         }
+        #controls {
+            text-align: right;
+        }
     </style>
 </head>
 <body>
-    <button id="prev">Prev</button>
-    <button id="next">Next</button>
+    <div id="monthName" class="calendar-header"></div>
     <div id="calendar"></div>
+    <div id="controls">
+        <button id="prev">Prev</button>
+        <button id="next">Next</button>
+    </div>
 
     <script>
         let currentMonth = new Date().getMonth();
         let currentYear = new Date().getFullYear();
+        
+        function loadCalendar() {
+            fetch("../files/daily_fluxtower1.json")
+                .then(response => response.json())
+                .then(jsonData => {
+                    const calendarEl = document.getElementById('calendar');
+                    const monthNameEl = document.getElementById('monthName');
+                    monthNameEl.textContent = new Date(currentYear, currentMonth).toLocaleString('default', { month: 'long' }) + ' ' + currentYear;
+
+                    calendarEl.innerHTML = '';
+
+                    // Add headers for the days of the week
+                    ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].forEach(day => {
+                        const header = document.createElement('div');
+                        header.className = 'calendar-cell calendar-header';
+                        header.innerText = day;
+                        calendarEl.appendChild(header);
+                    });
+
+                    // Fill in the calendar
+                    const firstDay = new Date(currentYear, currentMonth, 1).getDay();
+                    const lastDate = new Date(currentYear, currentMonth + 1, 0).getDate();
+                    
+                    for (let i = 0; i < (firstDay + lastDate); i++) {
+                        const cell = document.createElement('div');
+                        cell.className = 'calendar-cell';
+
+                        if (i >= firstDay) {
+                            const date = i - firstDay + 1;
+                            const dayData = jsonData.find(d => new Date(d.DATE).getDate() === date && new Date(d.DATE).getMonth() === currentMonth);
+
+                            if (dayData) {
+                                const icon = dayData.Description === "Sunny" ? "../images/sun.png" : "../images/rain.png";
+                                const infoBox = `
+                                    <div class="info-box">
+                                        Max Temp: ${dayData["Max.Temp"]} <br>
+                                        Min Temp: ${dayData["Min.Temp"]} <br>
+                                        Soil Moisture: ${dayData["Avg.Soil.Moisture"]} <br>
+                                    </div>
+                                `;
+                                cell.innerHTML = `
+                                    <div style="position: absolute; top: 5px; left: 5px;">${date}</div>
+                                    <img src="${icon}" width="24" height="24">
+                                    <div>Max: ${dayData["Max.Temp"]}<br>Min: ${dayData["Min.Temp"]}</div>
+                                    ${infoBox}
+                                `;
+                            }
+                        }
+
+                        calendarEl.appendChild(cell);
+                    }
+                });
+        }
 
         document.getElementById("prev").addEventListener("click", function() {
             currentMonth--;
@@ -50,53 +118,6 @@
             }
             loadCalendar();
         });
-
-        function loadCalendar() {
-            fetch("../files/daily_fluxtower1.json")
-                .then(response => response.json())
-                .then(jsonData => {
-                    const calendarEl = document.getElementById('calendar');
-                    calendarEl.innerHTML = '';
-
-                    ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].forEach(day => {
-                        const header = document.createElement('div');
-                        header.className = 'calendar-cell calendar-header';
-                        header.innerText = day;
-                        calendarEl.appendChild(header);
-                    });
-
-                    const firstDay = new Date(currentYear, currentMonth, 1).getDay();
-                    const lastDate = new Date(currentYear, currentMonth + 1, 0).getDate();
-
-                    for (let i = 1; i <= (firstDay + lastDate); i++) {
-                        const cell = document.createElement('div');
-                        cell.className = 'calendar-cell';
-
-                        if (i > firstDay) {
-                            const date = i - firstDay;
-                            const dayData = jsonData.find(d => new Date(d.DATE).getDate() === date && new Date(d.DATE).getMonth() === currentMonth);
-
-                            if (dayData) {
-                                const icon = dayData.Description === "Sunny" ? "../images/sun.png" : "../images/rain.png";
-                                const infoBox = `
-                                    <div class="info-box">
-                                        Max Temp: ${dayData["Max.Temp"]} <br>
-                                        Min Temp: ${dayData["Min.Temp"]} <br>
-                                        Total Precip: ${dayData["Total.Precipitation"]} <br>
-                                    </div>
-                                `;
-                                cell.innerHTML = `
-                                    <div>${date}</div>
-                                    <img src="${icon}" width="24" height="24">
-                                    ${infoBox}
-                                `;
-                            }
-                        }
-
-                        calendarEl.appendChild(cell);
-                    }
-                });
-        }
 
         loadCalendar();
     </script>
