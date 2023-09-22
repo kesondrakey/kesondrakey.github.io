@@ -3,49 +3,102 @@
 <head>
     <title>Weather Calendar</title>
     <style>
-        /* You can style your calendar cells here */
+        #calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-gap: 10px;
+        }
         .calendar-cell {
-            /* Add your styling here */
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .calendar-header {
+            background-color: #f4f4f4;
+        }
+        .info-box {
+            display: none;
+        }
+        .calendar-cell:hover .info-box {
+            display: block;
         }
     </style>
 </head>
 <body>
+    <button id="prev">Prev</button>
+    <button id="next">Next</button>
     <div id="calendar"></div>
 
     <script>
-        // Fetch JSON data; use '../' to go up one directory from 'files' to 'main_folder'
-        fetch("../files/daily_fluxtower1.json")
-            .then(response => response.json())
-            .then(jsonData => {
-                const calendarEl = document.getElementById('calendar');
+        let currentMonth = new Date().getMonth();
+        let currentYear = new Date().getFullYear();
 
-                jsonData.forEach(day => {
-                    const cell = document.createElement('div');
-                    cell.className = 'calendar-cell';
-                    
-                    // Using your image paths based on the Description; use '../' to go up one directory
-                    const icon = day.Description === "Sunny" ? "../images/sun.png" : "../images/rain.png";
-                    const maxTemp = `Max Temp: ${day["Max.Temp"]}`;
-                    const minTemp = `Min Temp: ${day["Min.Temp"]}`;
-                    
-                    cell.innerHTML = `
-                        <div><img src="${icon}" alt="${day.Description}" width="24" height="24"></div>
-                        <div>${maxTemp}</div>
-                        <div>${minTemp}</div>
-                    `;
-                    
-                    // Adding hover functionality
-                    cell.title = `
-                        Max Temp: ${day["Max.Temp"]} deg F
-                        Min Temp: ${day["Min.Temp"]} deg F
-                    `;
-                    
-                    calendarEl.appendChild(cell);
+        document.getElementById("prev").addEventListener("click", function() {
+            currentMonth--;
+            if (currentMonth < 0) {
+                currentMonth = 11;
+                currentYear--;
+            }
+            loadCalendar();
+        });
+
+        document.getElementById("next").addEventListener("click", function() {
+            currentMonth++;
+            if (currentMonth > 11) {
+                currentMonth = 0;
+                currentYear++;
+            }
+            loadCalendar();
+        });
+
+        function loadCalendar() {
+            fetch("../files/daily_fluxtower1.json")
+                .then(response => response.json())
+                .then(jsonData => {
+                    const calendarEl = document.getElementById('calendar');
+                    calendarEl.innerHTML = '';
+
+                    ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].forEach(day => {
+                        const header = document.createElement('div');
+                        header.className = 'calendar-cell calendar-header';
+                        header.innerText = day;
+                        calendarEl.appendChild(header);
+                    });
+
+                    const firstDay = new Date(currentYear, currentMonth, 1).getDay();
+                    const lastDate = new Date(currentYear, currentMonth + 1, 0).getDate();
+
+                    for (let i = 1; i <= (firstDay + lastDate); i++) {
+                        const cell = document.createElement('div');
+                        cell.className = 'calendar-cell';
+
+                        if (i > firstDay) {
+                            const date = i - firstDay;
+                            const dayData = jsonData.find(d => new Date(d.DATE).getDate() === date && new Date(d.DATE).getMonth() === currentMonth);
+
+                            if (dayData) {
+                                const icon = dayData.Description === "Sunny" ? "../images/sun.png" : "../images/rain.png";
+                                const infoBox = `
+                                    <div class="info-box">
+                                        Max Temp: ${dayData["Max.Temp"]} <br>
+                                        Min Temp: ${dayData["Min.Temp"]} <br>
+                                        Total Precip: ${dayData["Total.Precipitation"]} <br>
+                                    </div>
+                                `;
+                                cell.innerHTML = `
+                                    <div>${date}</div>
+                                    <img src="${icon}" width="24" height="24">
+                                    ${infoBox}
+                                `;
+                            }
+                        }
+
+                        calendarEl.appendChild(cell);
+                    }
                 });
-            })
-            .catch(error => {
-                console.error("Error fetching JSON:", error);
-            });
+        }
+
+        loadCalendar();
     </script>
 </body>
 </html>
