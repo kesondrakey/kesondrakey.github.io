@@ -46,12 +46,13 @@
         #controls {
             text-align: right;
         }
+     .info {
+            text-align: left;
     </style>
 </head>
 <body>
     <div id="monthName"></div>
-    <div id="calendar">
-    </div>
+    <div id="calendar"></div>
     <div id="controls">
         <button id="prev">Prev</button>
         <button id="next">Next</button>
@@ -59,13 +60,12 @@
     <script>
         let currentMonth;
         let currentYear;
-        const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
         
-        function populateCalendar(month, year) {
+        function populateCalendar(month, year, data) {
             const calendarEl = document.getElementById('calendar');
             calendarEl.innerHTML = '';
 
-            // Add headers again
             ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].forEach(day => {
                 const header = document.createElement('div');
                 header.className = 'calendar-header';
@@ -86,6 +86,29 @@
                 const cell = document.createElement('div');
                 cell.className = 'calendar-cell';
                 cell.innerText = i;
+
+                const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(i).padStart(2, '0')}`;
+                const record = data.find(d => d.DATE === dateStr);
+
+                if (record) {
+                    const icon = record['Total.Precipitation'] === 0 ? '../images/sun.png' : '../images/rain.png';
+                    const info = document.createElement('div');
+                    info.className = 'info';
+                    info.innerHTML = `<img src="${icon}" alt="weather-icon"> Min Temp: ${record['Min.Temp']}°F <br> Max Temp: ${record['Max.Temp']}°F`;
+                    cell.appendChild(info);
+
+                    const hoverInfo = document.createElement('div');
+                    hoverInfo.className = 'info-box';
+                    hoverInfo.innerHTML = `
+                        Date: ${new Date(year, month, i).toDateString()}<br>
+                        Min Temp: ${record['Min.Temp']}°F <br>
+                        Max Temp: ${record['Max.Temp']}°F <br>
+                        Precipitation: ${record['Total.Precipitation']} in <br>
+                        Avg Soil Moisture: ${record['Avg.Soil.Moisture']}
+                    `;
+                    cell.appendChild(hoverInfo);
+                }
+
                 calendarEl.appendChild(cell);
             }
         }
@@ -93,41 +116,36 @@
         fetch("../files/daily_fluxtower1.json")
             .then(response => response.json())
             .then(jsonData => {
-                const mostRecentDate = jsonData.reduce((latest, current) => {
-                    return (new Date(latest.DATE) > new Date(current.DATE)) ? latest : current;
-                }, jsonData[0]).DATE;
-                
-                const parsedDate = new Date(mostRecentDate);
-                currentMonth = parsedDate.getMonth();
-                currentYear = parsedDate.getFullYear();
-                
+                const today = new Date();
+                currentMonth = today.getMonth();
+                currentYear = today.getFullYear();
+
                 document.getElementById('monthName').innerText = `${monthNames[currentMonth]} ${currentYear}`;
-                
-                populateCalendar(currentMonth, currentYear);
+                populateCalendar(currentMonth, currentYear, jsonData);
+
+                document.getElementById('prev').addEventListener('click', () => {
+                    currentMonth--;
+                    if (currentMonth < 0) {
+                        currentMonth = 11;
+                        currentYear--;
+                    }
+                    document.getElementById('monthName').innerText = `${monthNames[currentMonth]} ${currentYear}`;
+                    populateCalendar(currentMonth, currentYear, jsonData);
+                });
+
+                document.getElementById('next').addEventListener('click', () => {
+                    currentMonth++;
+                    if (currentMonth > 11) {
+                        currentMonth = 0;
+                        currentYear++;
+                    }
+                    document.getElementById('monthName').innerText = `${monthNames[currentMonth]} ${currentYear}`;
+                    populateCalendar(currentMonth, currentYear, jsonData);
+                });
             })
             .catch(error => {
                 console.error("Error fetching JSON:", error);
             });
-
-        document.getElementById('prev').addEventListener('click', () => {
-            currentMonth--;
-            if (currentMonth < 0) {
-                currentMonth = 11;
-                currentYear--;
-            }
-            document.getElementById('monthName').innerText = `${monthNames[currentMonth]} ${currentYear}`;
-            populateCalendar(currentMonth, currentYear);
-        });
-        
-        document.getElementById('next').addEventListener('click', () => {
-            currentMonth++;
-            if (currentMonth > 11) {
-                currentMonth = 0;
-                currentYear++;
-            }
-            document.getElementById('monthName').innerText = `${monthNames[currentMonth]} ${currentYear}`;
-            populateCalendar(currentMonth, currentYear);
-        });
     </script>
 </body>
 </html>
