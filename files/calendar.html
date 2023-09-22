@@ -64,25 +64,31 @@
         <button id="prev">Prev</button>
         <button id="next">Next</button>
     </div>
-    <script>
+   <script>
         let currentMonth;
         let currentYear;
         
-        const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        if (!currentMonth || !currentYear) {
+            const today = new Date();
+            currentMonth = today.getMonth();
+            currentYear = today.getFullYear();
+        }
         
+        const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
         function populateCalendar(month, year, jsonData) {
             const calendarEl = document.getElementById('calendar');
             calendarEl.innerHTML = '';
-        
+
             const firstDay = new Date(year, month, 1).getDay();
             const daysInMonth = new Date(year, month + 1, 0).getDate();
-        
+
             for (let i = 0; i < firstDay; i++) {
                 const cell = document.createElement('div');
                 cell.className = 'calendar-cell';
                 calendarEl.appendChild(cell);
             }
-        
+
             for (let i = 1; i <= daysInMonth; i++) {
                 const cell = document.createElement('div');
                 cell.className = 'calendar-cell';
@@ -91,16 +97,15 @@
             }
         }
         
-        fetch("../files/daily_fluxtower1.json")
+      fetch("../files/daily_fluxtower1.json")
             .then(response => response.json())
             .then(jsonData => {
-                // Initialize currentMonth and currentYear
-                populateCalendar(parseInt(currentMonth) - 1, parseInt(currentYear), jsonData);
+                populateCalendar(currentMonth, currentYear, jsonData);
             })
             .catch(error => {
                 console.error("Error fetching JSON:", error);
             });
-        
+
         document.getElementById('prev').addEventListener('click', () => {
             currentMonth--;
             if (currentMonth < 0) {
