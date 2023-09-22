@@ -65,46 +65,47 @@
     </div>
     <script>
         fetch("../files/daily_fluxtower1.json")
-            .then(response => response.json())
-            .then(jsonData => {
-                const calendarEl = document.getElementById('calendar');
+    .then(response => response.json())
+    .then(jsonData => {
+        const calendarEl = document.getElementById('calendar');
 
-                jsonData.forEach(day => {
-                    const cell = document.createElement('div');
-                    cell.className = 'calendar-cell';
+        jsonData.forEach(day => {
+            const cell = document.createElement('div');
+            cell.className = 'calendar-cell';
 
-                    const dayNumber = day.Date.split('-')[2];
-                    cell.innerHTML = `<small>${dayNumber}</small>`;
-                    
-                    const icon = day.Description === "Sunny" ? "../images/sun.png" : "../images/rain.png";
-                    
-                    const info = `
-                        <div style="display: flex; align-items: center; font-size: 0.9em;">
-                            <img src="${icon}" alt="${day.Description}" style="width:30px; height:30px; margin-right:5px;">
-                            <div>
-                                Max Temp: ${day.MaxTemp}&#176;F<br>
-                                Min Temp: ${day.MinTemp}&#176;F
-                            </div>
-                        </div>
-                    `;
-                    cell.innerHTML += info;
-                    
-                    const infoBox = document.createElement('div');
-                    infoBox.className = 'info-box';
-                    infoBox.innerHTML = `
-                        Date: ${day.DATE}<br>
-                        Max Temp: ${day.MaxTemp}&#176;F<br>
-                        Min Temp: ${day.MinTemp}&#176;F<br>
-                        Precipitation: ${day.TotalPrecipitation} in.<br>
-                        Soil Moisture: ${day.AvgSoilMoisture}
-                    `;
-                    cell.appendChild(infoBox);
-                    calendarEl.appendChild(cell);
-                });
-            })
-            .catch(error => {
-                console.error("Error fetching JSON:", error);
-            });
+            const dayNumber = day.DATE.split('-')[2];  // Changed to "DATE"
+            cell.innerHTML = `<small>${dayNumber}</small>`;
+            
+            const icon = day.Description === "Sunny" ? "../images/sun.png" : "../images/rain.png";
+            
+            // Updated the temperature and description fields to match your JSON structure
+            const info = `
+                <div style="display: flex; align-items: center; font-size: 0.9em;">
+                    <img src="${icon}" alt="${day.Description}" style="width:30px; height:30px; margin-right:5px;">
+                    <div>
+                        Max Temp: ${day['Max.Temp']}&#176;F<br>  <!-- Max.Temp -->
+                        Min Temp: ${day['Min.Temp']}&#176;F  <!-- Min.Temp -->
+                    </div>
+                </div>
+            `;
+            cell.innerHTML += info;
+            
+            const infoBox = document.createElement('div');
+            infoBox.className = 'info-box';
+            infoBox.innerHTML = `
+                ${day.DATE}<br>  <!-- DATE -->
+                Max Temp: ${day['Max.Temp']}&#176;F<br>  <!-- Max.Temp -->
+                Min Temp: ${day['Min.Temp']}&#176;F<br>  <!-- Min.Temp -->
+                Precipitation: ${day['Total.Precipitation']} in.<br>  <!-- Total.Precipitation -->
+                Soil Moisture: ${day['Avg.Soil.Moisture']}  <!-- Avg.Soil.Moisture -->
+            `;
+            cell.appendChild(infoBox);
+            calendarEl.appendChild(cell);
+        });
+    })
+    .catch(error => {
+        console.error("Error fetching JSON:", error);
+    });
     </script>
 </body>
 </html>
