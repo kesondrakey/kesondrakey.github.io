@@ -47,8 +47,8 @@
             text-align: right;
         }
         .info img {
-            height: 60px;
-            width: 60px;
+            height: 70px;
+            width: 70px;
             vertical-align: middle;
         }
         .info {
@@ -57,8 +57,8 @@
             justify-content: flex-start;
         }
              .temp-info strong {
-            margin-left: 10px;
-            margin-bottom: 5px;  /* Creates space between Max and Min */
+            margin-left: 8px;
+            margin-bottom: 2px;  /* Creates space between Max and Min */
             display: block;
         }
     </style>
@@ -110,8 +110,8 @@
                     info.innerHTML = `
                             <img src="${icon}" alt="weather-icon">
                             <div class="temp-info">
-                                <strong>Max: ${record['Max.Temp']}&deg;F</strong><br>
-                                <strong>Min: ${record['Min.Temp']}&deg;F</strong>
+                                <strong>${record['Max.Temp']}&deg;F</strong><br>
+                                <strong>${record['Min.Temp']}&deg;F</strong>
                             </div>`;      
                     cell.appendChild(info);
 
