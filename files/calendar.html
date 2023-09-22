@@ -24,6 +24,7 @@
             text-align: center;
             background: #343a54;
             color: white;
+            font-weight: bold;
         }
         #monthName {
             text-align: center;
@@ -55,12 +56,16 @@
         .info {
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center; 
         }
-             .temp-info strong {
-            margin-left: 10px;
-            margin-bottom: 0.5px;  /* Creates space between Max and Min */
+        .temp-info strong {
+            margin-left: 5px;   /* Smaller margin to bring closer */
+            margin-bottom: 0;  /* No space between Max and Min */
             display: block;
+            text-align: center;  /* Center align text */
+        }
+        .temp-info {
+            margin-left: 5px;  /* Adjust as needed */
         }
     </style>
 </head>
