@@ -249,14 +249,36 @@ iframe + i {
 
 <!-- Tables -->
 <div id="daily-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
-<b>Calendar View:</b>
-    <iframe width="100%" height="800" frameborder="0" scrolling="no" src="files/calendar.html"></iframe>
+    <iframe width="100%" height="600" frameborder="0" scrolling="no" src="files/calendar.html"></iframe>
+        <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
+      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+    </div>
+    <div style="margin-bottom:20px;"></div>
+
+
+
+<div class="collapsible-container">
+    <button class="collapsible">Daily Data Table</button>
+    <div class="container">
+    
 <b>Daily Data Table:</b>
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
       <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
         <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
       <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
     </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    
     
     <div style="margin-bottom:20px;"></div>
 </div>
