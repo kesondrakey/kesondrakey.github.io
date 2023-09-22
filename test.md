@@ -276,20 +276,34 @@ iframe + i {
 
 
 
-
-
-    
-    
-
 <div id="weekly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
-    <b>Weekly Data Table: </b>
-    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower1.html"></iframe>
-      <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
-    <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
+    <iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/weekly_1.html"></iframe>
+        <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
       <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
     </div>
     <div style="margin-bottom:20px;"></div>
+
+
+
+<div class="collapsible-container">
+    <button class="collapsible">Weekly Data Table</button>
+    <div class="container">
+    
+<b>Weekly  Data Table:</b>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower1.html"></iframe>
+      <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+        <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
+      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+    </div>
+
+        </div>
+    </div>
 </div>
+
+
+    
+    
+
 <div id="monthly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <b>Monthly Data Table:</b>
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower1.html"></iframe>
