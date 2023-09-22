@@ -3,54 +3,12 @@
 <head>
     <title>Weather Calendar</title>
     <style>
-        body, div {
-            font-family: Arial, sans-serif;
-            background-color: #232943;
-        }
-        #calendar {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            grid-gap: 5px;
-        }
-        .calendar-header, .calendar-cell {
-            padding: 10px;
-            text-align: center;
-            background: linear-gradient(to bottom, #343a54, #232943);
-            color: white;
-            position: relative;
-            min-height: 100px;
-        }
-        .calendar-header {
-            font-weight: bold;
-        }
-        #monthName {
-            text-align: center;
-            color: white;
-            margin-bottom: 10px;
-            font-size: 24px;
-        }
-        .info-box {
-            display: none;
-            background-color: #141414;
-            color: white;
-            position: absolute;
-            right: 10px;
-            z-index: 1;
-            width: 220px;
-            padding: 10px;
-        }
-        .calendar-cell:hover .info-box {
-            display: block;
-        }
-        #controls {
-            text-align: right;
-            margin-top: 10px;
-        }
+        /* Your existing CSS */
     </style>
 </head>
 <body>
-    <div id="monthName"></div>
-    <div id="calendar-header">
+    <div id="monthName">September 2023</div>
+    <div id="calendar">
         <div class="calendar-header">Sun</div>
         <div class="calendar-header">Mon</div>
         <div class="calendar-header">Tue</div>
@@ -59,44 +17,53 @@
         <div class="calendar-header">Fri</div>
         <div class="calendar-header">Sat</div>
     </div>
-    <div id="calendar">
     <div id="controls">
         <button id="prev">Prev</button>
         <button id="next">Next</button>
     </div>
-   <script>
+    <script>
         let currentMonth;
         let currentYear;
         
-        if (!currentMonth || !currentYear) {
-            const today = new Date();
-            currentMonth = today.getMonth();
-            currentYear = today.getFullYear();
-        }
-        
-        const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-
-        function populateCalendar(month, year, jsonData) {
+        function populateCalendar(month, year) {
             const calendarEl = document.getElementById('calendar');
+            // Clear existing days
             calendarEl.innerHTML = '';
+            
+            // Add headers again
+            ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].forEach(day => {
+                const header = document.createElement('div');
+                header.className = 'calendar-header';
+                header.innerText = day;
+                calendarEl.appendChild(header);
+            });
 
             const firstDay = new Date(year, month, 1).getDay();
             const daysInMonth = new Date(year, month + 1, 0).getDate();
-
+            
+            // Add empty cells before first day
             for (let i = 0; i < firstDay; i++) {
                 const cell = document.createElement('div');
                 cell.className = 'calendar-cell';
                 calendarEl.appendChild(cell);
             }
 
+            // Add actual days
             for (let i = 1; i <= daysInMonth; i++) {
                 const cell = document.createElement('div');
                 cell.className = 'calendar-cell';
-                // populate cell
+                cell.innerText = i;
                 calendarEl.appendChild(cell);
             }
         }
-        
+
+        if (!currentMonth || !currentYear) {
+            const today = new Date();
+            currentMonth = today.getMonth();
+            currentYear = today.getFullYear();
+        }
+
+        populateCalendar(currentMonth, currentYear);
       fetch("../files/daily_fluxtower1.json")
             .then(response => response.json())
             .then(jsonData => {
