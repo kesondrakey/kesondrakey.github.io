@@ -3,26 +3,34 @@
 <head>
     <title>Weather Calendar</title>
     <style>
+        body, div {
+            font-family: 'Sans-serif';
+        }
         #calendar {
             display: grid;
             grid-template-columns: repeat(7, 1fr);
-            grid-gap: 10px;
+            grid-gap: 5px; /* Adjust this to bring boxes closer */
             margin-bottom: 20px;
         }
         .calendar-cell {
             padding: 10px;
             text-align: center;
-            background: linear-gradient(to bottom, darkgray, darkslateblue);
+            background: linear-gradient(to bottom, #2F4F4F, #000080); /* Darker shades */
             color: white;
             position: relative;
         }
         .calendar-header, #monthName {
-            background-color: #f4f4f4;
-            color: black;
+            font-weight: bold; /* Make headers bold */
+        }
+        #monthName {
+            text-align: center;
+            color: white;
+            margin-bottom: 10px;
+            background: none;
         }
         .info-box {
             display: none;
-            background-color: darkgray;
+            background-color: #333; /* Darker gray */
             color: white;
             position: absolute;
             right: 0;
@@ -37,7 +45,7 @@
     </style>
 </head>
 <body>
-    <div id="monthName" class="calendar-header"></div>
+    <div id="monthName"></div>
     <div id="calendar"></div>
     <div id="controls">
         <button id="prev">Prev</button>
