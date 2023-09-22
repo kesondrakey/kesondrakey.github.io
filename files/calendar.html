@@ -49,7 +49,7 @@
     </style>
 </head>
 <body>
-    <div id="monthName">September 2023</div>
+    <div id="monthName"></div>
     <div id="calendar">
         <div class="calendar-header">Sun</div>
         <div class="calendar-header">Mon</div>
@@ -65,17 +65,34 @@
         <button id="next">Next</button>
     </div>
     <script>
+        let currentMonth;
+        let currentYear;
+        const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
         fetch("../files/daily_fluxtower1.json")
             .then(response => response.json())
             .then(jsonData => {
-                const calendarEl = document.getElementById('calendar');
+                const mostRecentDate = jsonData.reduce((latest, current) => {
+                    return (new Date(latest.DATE) > new Date(current.DATE)) ? latest : current;
+                }, jsonData[0]).DATE;
 
-                jsonData.forEach(day => {
+                if (!currentMonth || !currentYear) {
+                    [currentYear, currentMonth] = mostRecentDate.split("-").slice(0, 2);
+                    document.getElementById('monthName').innerText = `${monthNames[parseInt(currentMonth) - 1]} ${currentYear}`;
+                }
+
+                const calendarEl = document.getElementById('calendar');
+                const filteredData = jsonData.filter(day => {
+                    const [year, month] = day.DATE.split("-").slice(0, 2);
+                    return year === currentYear && month === currentMonth;
+                }).sort((a, b) => new Date(a.DATE) - new Date(b.DATE));
+
+                filteredData.forEach(day => {
                     const cell = document.createElement('div');
                     cell.className = 'calendar-cell';
-
+                    
                     const dayNumber = day.DATE.split('-')[2];
-                    cell.innerHTML = `<small>${dayNumber}</small>`;
+                    cell.innerHTML = `<small style="position:absolute; top: 10px; left: 10px;">${dayNumber}</small>`;
                     
                     const icon = day.Description === "Sunny" ? "../images/sun.png" : "../images/rain.png";
                     
@@ -88,6 +105,7 @@
                             </div>
                         </div>
                     `;
+                    
                     cell.innerHTML += info;
                     
                     const infoBox = document.createElement('div');
@@ -99,6 +117,7 @@
                         Precipitation: ${day['Total.Precipitation']} in.<br>
                         Soil Moisture: ${day['Avg.Soil.Moisture']}
                     `;
+                    
                     cell.appendChild(infoBox);
                     calendarEl.appendChild(cell);
                 });
