@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post 
 description: Flux Tower 1
 title: Flux Tower 1
 nav-menu: true
