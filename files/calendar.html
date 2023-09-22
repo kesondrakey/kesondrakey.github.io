@@ -12,22 +12,21 @@
             grid-template-columns: repeat(7, 1fr);
             grid-gap: 5px;
         }
-        .calendar-cell {
+        .calendar-header, .calendar-cell {
             padding: 10px;
+            text-align: center;
             background: linear-gradient(to bottom, #343a54, #232943);
             color: white;
             position: relative;
             min-height: 100px;
-            text-align: center;
         }
-        .calendar-header, #monthName {
+        .calendar-header {
             font-weight: bold;
         }
         #monthName {
             text-align: center;
             color: white;
             margin-bottom: 10px;
-            background: none;
             font-size: 24px;
         }
         .info-box {
@@ -35,8 +34,7 @@
             background-color: #141414;
             color: white;
             position: absolute;
-            right: -220px;
-            top: 0;
+            right: 10px;
             z-index: 1;
             width: 220px;
             padding: 10px;
@@ -46,9 +44,7 @@
         }
         #controls {
             text-align: right;
-        }
-        small {
-            font-size: 0.8em;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -62,7 +58,7 @@
         <div class="calendar-header">Thu</div>
         <div class="calendar-header">Fri</div>
         <div class="calendar-header">Sat</div>
-        <!-- Dynamic cells will go here -->
+        <!-- Populated dynamically -->
     </div>
     <div id="controls">
         <button id="prev">Prev</button>
