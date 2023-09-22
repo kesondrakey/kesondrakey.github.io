@@ -13,10 +13,10 @@
         }
         .calendar-cell {
             padding: 10px;
-            text-align: center;
             background: linear-gradient(to bottom, #232943, #343a54);
             color: white;
             position: relative;
+            min-height: 100px;
         }
         .calendar-header, #monthName {
             font-weight: bold;
@@ -30,11 +30,14 @@
         }
         .info-box {
             display: none;
-            background-color: #333;
+            background-color: #1a1a1a; /* darker gray */
             color: white;
             position: absolute;
-            right: 0;
+            right: -200px; /* position it to the right */
+            top: 0;
             z-index: 1;
+            width: 200px;
+            padding: 10px;
         }
         .calendar-cell:hover .info-box {
             display: block;
@@ -66,10 +69,10 @@
                     // Moved the icon to the left of the temperature text
                     cell.innerHTML = `
                         <div style="display: flex; align-items: center;">
-                            <img src="${icon}" alt="${day.Description}" width="30" height="30">
+                            <img src="${icon}" alt="${day.Description}" style="width:40px; height:40px; margin-right:10px;">
                             <div>
-                                <div>Max. Temp: ${day["Max.Temp"]}&#176; F</div>
-                                <div>Min. Temp: ${day["Min.Temp"]}&#176; F</div>
+                                <div>Max. Temp: ${day.MaxTemp}&#176;F</div>
+                                <div>Min. Temp: ${day.MinTemp}&#176;F</div>
                             </div>
                         </div>
                     `;
@@ -77,10 +80,10 @@
                     const infoBox = document.createElement('div');
                     infoBox.className = 'info-box';
                     infoBox.innerHTML = `
-                        Max Temp: ${day["Max.Temp"]}&#176; F<br>
-                        Min Temp: ${day["Min.Temp"]}&#176; F<br>
-                        Precipitation: ${day["Total.Precipitation"]} inches<br>
-                        Soil Moisture: ${day["Avg.Soil.Moisture"]}
+                        Max Temp: ${day.MaxTemp}&#176;F<br>
+                        Min Temp: ${day.MinTemp}&#176;F<br>
+                        Precipitation: ${day.TotalPrecipitation} inches<br>
+                        Soil Moisture: ${day.AvgSoilMoisture}
                     `;
                     
                     cell.appendChild(infoBox);
@@ -91,8 +94,5 @@
                 console.error("Error fetching JSON:", error);
             });
     </script>
-</body>
-</html>
-
 </body>
 </html>
