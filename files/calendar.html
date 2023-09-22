@@ -13,15 +13,14 @@
         }
         .calendar-cell {
             padding: 10px;
-            background: linear-gradient(to bottom, #1b1f3b, #2f3554);  /* Slightly darker gradient */
+            background: linear-gradient(to bottom, #343a54, #232943);
             color: white;
             position: relative;
             min-height: 100px;
-            font-size: 12px;  /* Smaller text */
+            text-align: center;
         }
         .calendar-header, #monthName {
             font-weight: bold;
-            text-align: center;
         }
         #monthName {
             text-align: center;
@@ -32,13 +31,13 @@
         }
         .info-box {
             display: none;
-            background-color: #171717;  /* Even darker gray */
+            background-color: #141414; /* darker gray */
             color: white;
             position: absolute;
-            right: -200px;
+            right: -220px; /* position it to the right */
             top: 0;
             z-index: 1;
-            width: 200px;
+            width: 220px;
             padding: 10px;
         }
         .calendar-cell:hover .info-box {
@@ -46,6 +45,9 @@
         }
         #controls {
             text-align: right;
+        }
+        small {
+            font-size: 0.8em;
         }
     </style>
 </head>
@@ -55,10 +57,7 @@
         <div class="calendar-header">Sun</div>
         <div class="calendar-header">Mon</div>
         <div class="calendar-header">Tue</div>
-        <div class="calendar-header">Wed</div>
-        <div class="calendar-header">Thu</div>
-        <div class="calendar-header">Fri</div>
-        <div class="calendar-header">Sat</div>
+        <!-- Add the remaining weekdays here -->
     </div>
     <div id="controls">
         <button id="prev">Prev</button>
@@ -69,23 +68,26 @@
             .then(response => response.json())
             .then(jsonData => {
                 const calendarEl = document.getElementById('calendar');
-                
+
                 jsonData.forEach(day => {
                     const cell = document.createElement('div');
                     cell.className = 'calendar-cell';
+
+                    const dayNumber = day.Date.split('-')[2];
+                    cell.innerHTML = `<small>${dayNumber}</small>`;
                     
                     const icon = day.Description === "Sunny" ? "../images/sun.png" : "../images/rain.png";
                     
-                    cell.innerHTML = `
-                        <div>${day.Date.split('-')[2]}</div>  <!-- Day number -->
-                        <div style="display: flex; align-items: center;">
-                            <img src="${icon}" alt="${day.Description}" style="width:40px; height:40px; margin-right:10px;">
+                    const info = `
+                        <div style="display: flex; align-items: center; font-size: 0.9em;">
+                            <img src="${icon}" alt="${day.Description}" style="width:30px; height:30px; margin-right:5px;">
                             <div>
-                                <div>Max Temp: ${day.MaxTemp}&#176;F</div>
-                                <div>Min Temp: ${day.MinTemp}&#176;F</div>
+                                Max Temp: ${day.MaxTemp}&#176;F<br>
+                                Min Temp: ${day.MinTemp}&#176;F
                             </div>
                         </div>
                     `;
+                    cell.innerHTML += info;
                     
                     const infoBox = document.createElement('div');
                     infoBox.className = 'info-box';
@@ -96,7 +98,6 @@
                         Precipitation: ${day.TotalPrecipitation} in.<br>
                         Soil Moisture: ${day.AvgSoilMoisture}
                     `;
-                    
                     cell.appendChild(infoBox);
                     calendarEl.appendChild(cell);
                 });
