@@ -246,7 +246,7 @@ iframe + i {
     <button class="icon icon-weekly" onclick="showTable('weekly')">Weekly</button>
     <button class="icon icon-monthly" onclick="showTable('monthly')">Monthly</button>
 </div>
-
+ 
 <!-- Tables -->
 <div id="daily-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <iframe width="100%" height="650" frameborder="0" scrolling="no" src="files/calendar.html"></iframe>
