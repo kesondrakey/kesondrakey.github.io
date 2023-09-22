@@ -50,7 +50,7 @@
 </head>
 <body>
     <div id="monthName"></div>
-    <div id="calendar">
+    <div id="calendar-header">
         <div class="calendar-header">Sun</div>
         <div class="calendar-header">Mon</div>
         <div class="calendar-header">Tue</div>
@@ -58,8 +58,8 @@
         <div class="calendar-header">Thu</div>
         <div class="calendar-header">Fri</div>
         <div class="calendar-header">Sat</div>
-        <!-- Populated dynamically -->
     </div>
+    <div id="calendar">
     <div id="controls">
         <button id="prev">Prev</button>
         <button id="next">Next</button>
@@ -67,64 +67,59 @@
     <script>
         let currentMonth;
         let currentYear;
+        
         const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-
+        
+        function populateCalendar(month, year, jsonData) {
+            const calendarEl = document.getElementById('calendar');
+            calendarEl.innerHTML = '';
+        
+            const firstDay = new Date(year, month, 1).getDay();
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+        
+            for (let i = 0; i < firstDay; i++) {
+                const cell = document.createElement('div');
+                cell.className = 'calendar-cell';
+                calendarEl.appendChild(cell);
+            }
+        
+            for (let i = 1; i <= daysInMonth; i++) {
+                const cell = document.createElement('div');
+                cell.className = 'calendar-cell';
+                // populate cell
+                calendarEl.appendChild(cell);
+            }
+        }
+        
         fetch("../files/daily_fluxtower1.json")
             .then(response => response.json())
             .then(jsonData => {
-                const mostRecentDate = jsonData.reduce((latest, current) => {
-                    return (new Date(latest.DATE) > new Date(current.DATE)) ? latest : current;
-                }, jsonData[0]).DATE;
-
-                if (!currentMonth || !currentYear) {
-                    [currentYear, currentMonth] = mostRecentDate.split("-").slice(0, 2);
-                    document.getElementById('monthName').innerText = `${monthNames[parseInt(currentMonth) - 1]} ${currentYear}`;
-                }
-
-                const calendarEl = document.getElementById('calendar');
-                const filteredData = jsonData.filter(day => {
-                    const [year, month] = day.DATE.split("-").slice(0, 2);
-                    return year === currentYear && month === currentMonth;
-                }).sort((a, b) => new Date(a.DATE) - new Date(b.DATE));
-
-                filteredData.forEach(day => {
-                    const cell = document.createElement('div');
-                    cell.className = 'calendar-cell';
-                    
-                    const dayNumber = day.DATE.split('-')[2];
-                    cell.innerHTML = `<small style="position:absolute; top: 10px; left: 10px;">${dayNumber}</small>`;
-                    
-                    const icon = day.Description === "Sunny" ? "../images/sun.png" : "../images/rain.png";
-                    
-                    const info = `
-                        <div style="display: flex; align-items: center; font-size: 0.9em;">
-                            <img src="${icon}" alt="${day.Description}" style="width:30px; height:30px; margin-right:5px;">
-                            <div>
-                                Max Temp: ${day['Max.Temp']}&#176;F<br>
-                                Min Temp: ${day['Min.Temp']}&#176;F
-                            </div>
-                        </div>
-                    `;
-                    
-                    cell.innerHTML += info;
-                    
-                    const infoBox = document.createElement('div');
-                    infoBox.className = 'info-box';
-                    infoBox.innerHTML = `
-                        Date: ${day.DATE}<br>
-                        Max Temp: ${day['Max.Temp']}&#176;F<br>
-                        Min Temp: ${day['Min.Temp']}&#176;F<br>
-                        Precipitation: ${day['Total.Precipitation']} in.<br>
-                        Soil Moisture: ${day['Avg.Soil.Moisture']}
-                    `;
-                    
-                    cell.appendChild(infoBox);
-                    calendarEl.appendChild(cell);
-                });
+                // Initialize currentMonth and currentYear
+                populateCalendar(parseInt(currentMonth) - 1, parseInt(currentYear), jsonData);
             })
             .catch(error => {
                 console.error("Error fetching JSON:", error);
             });
+        
+        document.getElementById('prev').addEventListener('click', () => {
+            currentMonth--;
+            if (currentMonth < 0) {
+                currentMonth = 11;
+                currentYear--;
+            }
+            document.getElementById('monthName').innerText = `${monthNames[currentMonth]} ${currentYear}`;
+            // Call populateCalendar again
+        });
+        
+        document.getElementById('next').addEventListener('click', () => {
+            currentMonth++;
+            if (currentMonth > 11) {
+                currentMonth = 0;
+                currentYear++;
+            }
+            document.getElementById('monthName').innerText = `${monthNames[currentMonth]} ${currentYear}`;
+            // Call populateCalendar again
+        });
     </script>
 </body>
 </html>
