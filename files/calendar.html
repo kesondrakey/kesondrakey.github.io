@@ -2,20 +2,55 @@
 <html>
 <head>
     <title>Weather Calendar</title>
-    <style>
-        /* Your existing CSS */
+ <style>
+        body, div {
+            font-family: Arial, sans-serif;
+        }
+        #calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-gap: 5px;
+        }
+        .calendar-cell {
+            padding: 10px;
+            text-align: center;
+            background: linear-gradient(to bottom, #343a54, #232943);
+            color: white;
+            position: relative;
+            min-height: 100px;
+        }
+        .calendar-header {
+            padding: 10px;
+            text-align: center;
+            background: #343a54;
+            color: white;
+        }
+        #monthName {
+            text-align: center;
+            color: white;
+            margin-bottom: 10px;
+            background: none;
+            font-size: 24px;
+        }
+        .info-box {
+            display: none;
+            background-color: #333;
+            color: white;
+            position: absolute;
+            right: 0;
+            z-index: 1;
+        }
+        .calendar-cell:hover .info-box {
+            display: block;
+        }
+        #controls {
+            text-align: right;
+        }
     </style>
 </head>
 <body>
-    <div id="monthName">September 2023</div>
+    <div id="monthName"></div>
     <div id="calendar">
-        <div class="calendar-header">Sun</div>
-        <div class="calendar-header">Mon</div>
-        <div class="calendar-header">Tue</div>
-        <div class="calendar-header">Wed</div>
-        <div class="calendar-header">Thu</div>
-        <div class="calendar-header">Fri</div>
-        <div class="calendar-header">Sat</div>
     </div>
     <div id="controls">
         <button id="prev">Prev</button>
@@ -24,12 +59,12 @@
     <script>
         let currentMonth;
         let currentYear;
+        const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         
         function populateCalendar(month, year) {
             const calendarEl = document.getElementById('calendar');
-            // Clear existing days
             calendarEl.innerHTML = '';
-            
+
             // Add headers again
             ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].forEach(day => {
                 const header = document.createElement('div');
@@ -41,14 +76,12 @@
             const firstDay = new Date(year, month, 1).getDay();
             const daysInMonth = new Date(year, month + 1, 0).getDate();
             
-            // Add empty cells before first day
             for (let i = 0; i < firstDay; i++) {
                 const cell = document.createElement('div');
                 cell.className = 'calendar-cell';
                 calendarEl.appendChild(cell);
             }
 
-            // Add actual days
             for (let i = 1; i <= daysInMonth; i++) {
                 const cell = document.createElement('div');
                 cell.className = 'calendar-cell';
@@ -57,17 +90,20 @@
             }
         }
 
-        if (!currentMonth || !currentYear) {
-            const today = new Date();
-            currentMonth = today.getMonth();
-            currentYear = today.getFullYear();
-        }
-
-        populateCalendar(currentMonth, currentYear);
-      fetch("../files/daily_fluxtower1.json")
+        fetch("../files/daily_fluxtower1.json")
             .then(response => response.json())
             .then(jsonData => {
-                populateCalendar(currentMonth, currentYear, jsonData);
+                const mostRecentDate = jsonData.reduce((latest, current) => {
+                    return (new Date(latest.DATE) > new Date(current.DATE)) ? latest : current;
+                }, jsonData[0]).DATE;
+                
+                const parsedDate = new Date(mostRecentDate);
+                currentMonth = parsedDate.getMonth();
+                currentYear = parsedDate.getFullYear();
+                
+                document.getElementById('monthName').innerText = `${monthNames[currentMonth]} ${currentYear}`;
+                
+                populateCalendar(currentMonth, currentYear);
             })
             .catch(error => {
                 console.error("Error fetching JSON:", error);
@@ -80,7 +116,7 @@
                 currentYear--;
             }
             document.getElementById('monthName').innerText = `${monthNames[currentMonth]} ${currentYear}`;
-            // Call populateCalendar again
+            populateCalendar(currentMonth, currentYear);
         });
         
         document.getElementById('next').addEventListener('click', () => {
@@ -90,7 +126,7 @@
                 currentYear++;
             }
             document.getElementById('monthName').innerText = `${monthNames[currentMonth]} ${currentYear}`;
-            // Call populateCalendar again
+            populateCalendar(currentMonth, currentYear);
         });
     </script>
 </body>
