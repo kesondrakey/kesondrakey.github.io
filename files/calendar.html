@@ -47,14 +47,18 @@
             text-align: right;
         }
         .info img {
-            height: 40px;
-            width: 40px;
+            height: 45px;
+            width: 45px;
             vertical-align: middle;
         }
         .info {
-            display: inline-block;
-            vertical-align: middle;
-            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+        }
+        
+        .temp-info {
+            margin-left: 10px;
         }
     </style>
 </head>
@@ -102,7 +106,12 @@
                     const icon = record['Total.Precipitation'] === 0 ? '../images/sun.png' : '../images/rain.png';
                     const info = document.createElement('div');
                     info.className = 'info';
-                    info.innerHTML = `<img src="${icon}" alt="weather-icon"> Min Temp: ${record['Min.Temp']}°F <br> Max Temp: ${record['Max.Temp']}°F`;
+                    info.innerHTML = `
+                        <img src="${icon}" alt="weather-icon">
+                        <div class="temp-info">
+                            Min Temp: ${record['Min.Temp']}°F <br>
+                            Max Temp: ${record['Max.Temp']}°F
+                        </div>`;           
                     cell.appendChild(info);
 
                     const hoverInfo = document.createElement('div');
