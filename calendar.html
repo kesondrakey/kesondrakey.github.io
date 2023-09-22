@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Calendar</title>
+    <link href='fullcalendar/main.css' rel='stylesheet' />
+    <script src='fullcalendar/main.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body style="background-color: navy; color: white;">
+
+    <div id="calendar"></div>
+
+    <script>
+        $(document).ready(function() {
+            $.getJSON("files/daily_fluxtower1.json", function(data) {
+                var events = [];
+                data.forEach(function(day) {
+                    events.push({
+                        title: "",  // title is empty; we'll use icons instead
+                        start: day.DATE,
+                        extendedProps: {
+                            minTemp: day['Min.Temp'],
+                            maxTemp: day['Max.Temp'],
+                            description: day.Description,
+                            precipitation: day['Total.Precipitation'],
+                            soilMoisture: day['Avg.Soil.Moisture']
+                        }
+                    });
+                });
+
+                var calendarEl = document.getElementById('calendar');
+                var calendar = new FullCalendar.Calendar(calendarEl, {
+                    initialView: 'dayGridMonth',
+                    events: events,
+                    eventContent: function(arg) {
+                        var imageUrl = arg.event.extendedProps.description === 'Sunny' ? 'images/sun.png' : 'images/rain.png';
+                        return {
+                            html: `
+                                <img src="${imageUrl}" style="width: 24px; height: 24px;">
+                                <div>Max Temp: ${arg.event.extendedProps.maxTemp} deg F</div>
+                                <div>Min Temp: ${arg.event.extendedProps.minTemp} deg F</div>
+                            `
+                        };
+                    },
+                    eventMouseEnter: function(info) {
+                        // Create a tooltip showing additional info
+                        // You'd ideally use a library like Tippy.js to create a tooltip with the below content
+                        var tooltipContent = `
+                            Max Temp: ${info.event.extendedProps.maxTemp} deg F<br>
+                            Min Temp: ${info.event.extendedProps.minTemp} deg F<br>
+                            Precipitation: ${info.event.extendedProps.precipitation} inches<br>
+                            Avg Soil Moisture: ${info.event.extendedProps.soilMoisture}
+                        `;
+
+                        // Insert tooltip logic here
+                    }
+                });
+
+                calendar.render();
+            });
+        });
+    </script>
+
+</body>
+</html>
+
