@@ -2,65 +2,50 @@
 <html>
 <head>
     <title>Weather Calendar</title>
-    <link href='fullcalendar/main.css' rel='stylesheet' />
-    <script src='fullcalendar/main.js'></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        /* You can style your calendar cells here */
+        .calendar-cell {
+            /* Add your styling here */
+        }
+    </style>
 </head>
-<body style="background-color: navy; color: white;">
-
+<body>
     <div id="calendar"></div>
 
     <script>
-        $(document).ready(function() {
-            $.getJSON("files/daily_fluxtower1.json", function(data) {
-                var events = [];
-                data.forEach(function(day) {
-                    events.push({
-                        title: "",  // title is empty; we'll use icons instead
-                        start: day.DATE,
-                        extendedProps: {
-                            minTemp: day['Min.Temp'],
-                            maxTemp: day['Max.Temp'],
-                            description: day.Description,
-                            precipitation: day['Total.Precipitation'],
-                            soilMoisture: day['Avg.Soil.Moisture']
-                        }
-                    });
+        // Fetch JSON data; use '../' to go up one directory from 'files' to 'main_folder'
+        fetch("../files/daily_fluxtower1.json")
+            .then(response => response.json())
+            .then(jsonData => {
+                const calendarEl = document.getElementById('calendar');
+
+                jsonData.forEach(day => {
+                    const cell = document.createElement('div');
+                    cell.className = 'calendar-cell';
+                    
+                    // Using your image paths based on the Description; use '../' to go up one directory
+                    const icon = day.Description === "Sunny" ? "../images/sun.png" : "../images/rain.png";
+                    const maxTemp = `Max Temp: ${day["Max.Temp"]}`;
+                    const minTemp = `Min Temp: ${day["Min.Temp"]}`;
+                    
+                    cell.innerHTML = `
+                        <div><img src="${icon}" alt="${day.Description}" width="24" height="24"></div>
+                        <div>${maxTemp}</div>
+                        <div>${minTemp}</div>
+                    `;
+                    
+                    // Adding hover functionality
+                    cell.title = `
+                        Max Temp: ${day["Max.Temp"]} deg F
+                        Min Temp: ${day["Min.Temp"]} deg F
+                    `;
+                    
+                    calendarEl.appendChild(cell);
                 });
-
-                var calendarEl = document.getElementById('calendar');
-                var calendar = new FullCalendar.Calendar(calendarEl, {
-                    initialView: 'dayGridMonth',
-                    events: events,
-                    eventContent: function(arg) {
-                        var imageUrl = arg.event.extendedProps.description === 'Sunny' ? 'images/sun.png' : 'images/rain.png';
-                        return {
-                            html: `
-                                <img src="${imageUrl}" style="width: 24px; height: 24px;">
-                                <div>Max Temp: ${arg.event.extendedProps.maxTemp} deg F</div>
-                                <div>Min Temp: ${arg.event.extendedProps.minTemp} deg F</div>
-                            `
-                        };
-                    },
-                    eventMouseEnter: function(info) {
-                        // Create a tooltip showing additional info
-                        // You'd ideally use a library like Tippy.js to create a tooltip with the below content
-                        var tooltipContent = `
-                            Max Temp: ${info.event.extendedProps.maxTemp} deg F<br>
-                            Min Temp: ${info.event.extendedProps.minTemp} deg F<br>
-                            Precipitation: ${info.event.extendedProps.precipitation} inches<br>
-                            Avg Soil Moisture: ${info.event.extendedProps.soilMoisture}
-                        `;
-
-                        // Insert tooltip logic here
-                    }
-                });
-
-                calendar.render();
+            })
+            .catch(error => {
+                console.error("Error fetching JSON:", error);
             });
-        });
     </script>
-
 </body>
 </html>
-
