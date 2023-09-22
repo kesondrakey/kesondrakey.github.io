@@ -46,22 +46,42 @@
         #controls {
             text-align: right;
         }
-        .info img {
-            height: 60px;
-            width: 60px;
-            vertical-align: middle;
-        }
-        .info {
-            display: center;
-            align-items: center;
-            justify-content: center;
-        }
+
         
              .temp-info strong {
             margin-left: 10px;
             margin-bottom: 5px;  /* Creates space between Max and Min */
             display: block;
         }
+
+     .temp-info strong.max-temp {
+    margin-bottom: 5px;  /* Creates space between Max and Min */
+}
+
+/* Center the content in each calendar cell */
+.calendar-cell {
+    /* ... existing styles ... */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+        /* Style the info group */
+        .info {
+            display: inline-flex;  /* Make it a flex container but inline */
+            align-items: center;
+        }
+        
+        .info img {
+            height: 60px;
+            width: 60px;
+            margin-right: 10px; /* Add some space between the icon and text */
+        }
+        
+        .temp-info strong {
+            margin-left: 5px;
+        }
+
     </style>
 </head>
 <body>
@@ -110,10 +130,11 @@
                     info.className = 'info';
                         info.innerHTML = `
                             <img src="${icon}" alt="weather-icon">
-                            <div class="temp-info">
-                                <strong>${record['Max.Temp']}&deg;F</strong><br>
-                                <strong>${record['Min.Temp']}&deg;F</strong>
-                            </div>`;         
+                                <div class="temp-info">
+                                    <strong class="max-temp">${record['Max.Temp']}&deg;F</strong><br>
+                                    <strong>${record['Min.Temp']}&deg;F</strong>
+                                </div>
+                                     
                     cell.appendChild(info);
 
                     const hoverInfo = document.createElement('div');
