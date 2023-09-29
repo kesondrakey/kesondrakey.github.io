@@ -1,5 +1,5 @@
 Month,year,start_DATE,end_DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Timeframe,Tower
-Sep,2023,2023-09-01,2023-09-28,40.98,87.41,0.46,0.11,Rain/Snow,"Friday, September 1  to  Thursday, September 28",fluxtower3
+Sep,2023,2023-09-01,2023-09-29,40.98,87.41,0.46,0.11,Rain/Snow,"Friday, September 1  to  Friday, September 29",fluxtower3
 Aug,2023,2023-08-01,2023-08-31,43.97,90.07,1.09,0.17,Rain/Snow,"Tuesday, August 1  to  Thursday, August 31",fluxtower3
 Jul,2023,2023-07-01,2023-07-31,51.81,89.58,3.53,0.01,Rain/Snow,"Saturday, July 1  to  Monday, July 31",fluxtower3
 Jun,2023,2023-06-22,2023-06-30,50.23,85.75,1,-0,Rain/Snow,"Thursday, June 22  to  Friday, June 30",fluxtower3
