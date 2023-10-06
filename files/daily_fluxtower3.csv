@@ -1,5 +1,6 @@
 DATE,Year,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Tower
-2023-10-05,2023,62.53,73.64,0.27,0.11,Rain/Snow,fluxtower3
+2023-10-06,2023,60.83,61.34,0,0.12,Sunny,fluxtower3
+2023-10-05,2023,61.48,73.64,0.32,0.11,Rain/Snow,fluxtower3
 2023-10-04,2023,64.15,84.29,0,0.11,Sunny,fluxtower3
 2023-10-03,2023,54.31,85.88,0,0.11,Sunny,fluxtower3
 2023-10-02,2023,53.97,85.47,0,0.11,Sunny,fluxtower3
