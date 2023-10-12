@@ -117,12 +117,7 @@
         <div class="text-overlay">Flux Tower 4</div>
       </a>
     </div>
-    <div class="grid-item full-width">
-  <a href="https://kesondrakey.github.io/TowerComparisons">
-    <img src="images/image5.jpeg" alt="Image 5">
-    <div class="text-overlay">Tower Comparisons</div>
-  </a>
-</div>
+
 
   </div>
 </body>
