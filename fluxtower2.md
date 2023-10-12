@@ -225,6 +225,9 @@ iframe + i {
 
 </style>
 
+<div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
+    <strong>Note:</strong> This tower is located on a farm that uses cover crops! 🍃
+</div>
 
 <!-- Add the banner grid-container here -->
 <div class="grid-container">
@@ -242,9 +245,6 @@ iframe + i {
 
 <!-- Daily Plot - Simple Variables -->
 
-<div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
-    <strong>Note:</strong> This tower is located on a farm that uses cover crops! 🍃
-</div>
 
 
 
