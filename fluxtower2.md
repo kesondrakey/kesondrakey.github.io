@@ -247,20 +247,6 @@ iframe + i {
     <strong>Note:</strong> This tower is located on a farm that uses cover crops! 🍃
 </div>
 
-    
-<h4>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - <i>just click the variable name and see!</i></h4>
-<div class="plot-container">
-  <div class="html-object">
-    <!-- Here's where you add the iframe to embed the Plotly graph -->
-    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower2.html">
-    </iframe>
-    <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1; averaged volumetric water fraction (m^3/m^3))</i>
-    <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
-      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
-    </div>
-      <div style="margin-bottom:20px;"></div>
-  </div>
-</div> 
 
 
 
@@ -302,6 +288,26 @@ iframe + i {
     </div>
     <div style="margin-bottom:20px;"></div>
 </div>
+
+
+    
+<h4>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - <i>just click the variable name and see!</i></h4>
+<div class="plot-container">
+  <div class="html-object">
+    <!-- Here's where you add the iframe to embed the Plotly graph -->
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower2.html">
+    </iframe>
+    <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1; averaged volumetric water fraction (m^3/m^3))</i>
+    <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
+      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+    </div>
+      <div style="margin-bottom:20px;"></div>
+  </div>
+</div> 
+
+
+
+
 
 
 
