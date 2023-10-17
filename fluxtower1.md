@@ -117,12 +117,15 @@ button, a, iframe {
 }
 
 /* Monthly */
+  
 .icon-monthly { 
-    background: linear-gradient(to right, #004d00, #7cfc00);
+    background: linear-gradient(to right, #006600, #32CD32); /* Adjusted colors for better readability */
 }
 .icon-monthly.selected { 
-    background: linear-gradient(to right, #003200, #59A800);
+    background: linear-gradient(to right, #004400, #228B22); /* Adjusted colors for better readability */
 }
+
+
 .icon-container {
     display: flex;
     justify-content: center;
@@ -249,7 +252,7 @@ iframe + i {
  
 <!-- Tables -->
 <div id="daily-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
-    <iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/calendar.html"></iframe>
+    <iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar1.html"></iframe>
         <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
       <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
     </div>
