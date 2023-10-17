@@ -227,6 +227,7 @@ iframe + i {
     <strong>Note:</strong> This tower is located on a farm that uses cover crops! 🍃
 </div>
 
+
 <!-- Add the banner grid-container here -->
 <div class="grid-container">
   <div class="grid-item">
@@ -306,6 +307,9 @@ iframe + i {
     <div style="margin-bottom:20px;"></div>
 </div>
 
+<div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
+    <strong>Note:</strong> This tower does not have a precipitation sensor! 🌧️ <i> Please see flux tower 1 for precipitaiton information</i>
+</div>
 
 
 <!-- Daily Plot - Simple Variables -->
