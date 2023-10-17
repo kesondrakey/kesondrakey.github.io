@@ -308,7 +308,7 @@ iframe + i {
 </div>
 
 <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
-    <strong>Note:</strong> This tower does not have a precipitation sensor! 🌧️ <i> Please see flux tower 1 for precipitaiton information</i>
+    <strong>Note:</strong> This tower does not have a precipitation sensor! 🌧️ <i> Please see Flux Tower 1 for precipitation information</i>
 </div>
 
 
