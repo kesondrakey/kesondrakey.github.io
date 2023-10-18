@@ -10,7 +10,7 @@ nav-menu: true
 /* General resets for buttons and icons */
 button, a, iframe {
     border: none;
-    outline: none;
+    outline: none; 
     box-shadow: none;
 }
 
