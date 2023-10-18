@@ -144,7 +144,7 @@
             }
         }
 
-        fetch("../files/daily_fluxtower2.csv")
+        fetch("../files/daily_fluxtower4.csv")
             .then(response => response.text())
             .then(csvText => {
                 const data = csvText.split('\n').slice(1).map(row => {
