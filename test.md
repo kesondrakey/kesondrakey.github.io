@@ -46,10 +46,6 @@ nav-menu: true
                 <img src="{% link assets/images/novickdogs.jpg %}" alt="Novick Lab Team with Dogs" data-position="center center"/>
             </a>
             <figcaption>Official Biomet Lab Dogs studying tree physiology</figcaption>
-            <a href="generic.html"> <!-- Update href for the second image if necessary -->
-                <img src="{% link assets/images/novick.jpg %}" alt="Kim Novick" data-position="center center"/>
-            </a>
-            <figcaption>Kim Novick</figcaption>
         </figure> 
 		<div class="content">
 			<div class="inner">
