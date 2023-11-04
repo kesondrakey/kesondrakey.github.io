@@ -46,7 +46,8 @@ nav-menu: true
                 <img src="{% link assets/images/novick.jpg %}" alt="Kim Novick" data-position="center center" />
             </a>
             <figcaption>Kim Novick</figcaption>
-        </figure> ="content">
+        </figure> 
+		<div class="content">
 			<div class="inner">
 				<header class="major">
     <h3>The Biomet Lab (PI: <a href="https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/novick-kimberly.html">Kim Novick</a>)</h3>
