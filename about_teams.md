@@ -86,6 +86,9 @@ nav-menu: true
 			</div>
 		</div>
 	</section>
+</section>
+
+<section id="three" class="spotlights">
 	<section><!-- Royer Lab -->
   		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
@@ -106,12 +109,8 @@ Erin Carman-Sweeney, a master’s student in the IU O’Neill School of Public a
 			</div>
 		</div>
 	</section>
-</section>
-
-
 <!-- Tank Lab -->
-<section id="three" class="spotlights">
-	<section>
+<section>
 		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
 				<img src="{% link assets/images/tank.jpg %}" alt="Jennifer Tank" data-position="center center" />
@@ -177,7 +176,3 @@ Tank’s extensive research experience aims at better understanding the role tha
 	</section>
 </section>
 
-
-
-
-</div>
