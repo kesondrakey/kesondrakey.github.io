@@ -1,8 +1,7 @@
 ---
-title: Landing
+title: Meet the Teams
 layout: landing
-description: 'Lorem ipsum dolor sit amet nullam consequa<br />sed veroeros. tempus adipiscing nulla.'
-image: assets/images/bannerz.jpeg
+image: assets/images/kimnovick.jpg
 nav-menu: true
 ---
 
@@ -13,7 +12,7 @@ nav-menu: true
 <section id="one">
 	<div class="inner">
 		<header class="major">
-			<h2>Sed amet aliquam</h2>
+			<h2>Summary</h2>
 		</header>
 		<p>Multiple labs are involved with this project, including those from Indiana University and collaborators from the University of Notre Dame. The key players involved include the Novick lab, Royer Lab, Barnes Lab, Yoder Labs from Indiana University and the Tank lab from Notre Dame. Each lab is focusing on certain key aspects of the project, described below.</p>
 	</div>
@@ -30,8 +29,8 @@ nav-menu: true
 		<div class="content">
 			<div class="inner">
 				<header class="major">
-					<h3The Novick Lab (PI: [Kim Novick](https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/novick-kimberly.html))</h3>
-				</header>
+    <h3>The Novick Lab (PI: <a href="https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/novick-kimberly.html">Kim Novick</a>)</h3>
+</header>
 				<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
 				<ul class="actions">
 					<li><a href="https://scholar.google.com/citations?user=K5tffpEAAAAJ&hl=en" class="button">Learn more</a></li>
@@ -46,7 +45,7 @@ nav-menu: true
 		<div class="content">
 			<div class="inner">
 				<header class="major">
-					<h3>The Barnes Lab (PI: [Mallory Barnes](https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/barnes-mallory.html))</h3>
+					<h3>The Barnes Lab (PI: <a href="https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/barnes-mallory.html">Mallory Barnes</a>)</h3>
 				</header>
 				<p>The Barnes lab at Indiana University focuses on the integration of quantitative remote sensing techniques and environmental informatics to advance our understanding of climate impacts on ecosystems. The lab, led by Dr. Mallory Barnes, leverages her expertise in ecohydrology and environmental management to scale ecohydrological and biophysical processes across spatial and temporal dimensions. One of the lab's significant endeavors, managed by Dr. Barnes, aims to develop standard methods for estimating forest carbon stocks to inform future carbon trading mechanisms.
 Kesondra Key, a student in the Environmental Science PhD program, is investigating drought signals by analyzing plant responses to aridity, utilizing eddy covariance data from a multitude of US towers. Key manages data operations for the DISES project. Her role includes the collection, quality assurance, processing, and preparation of data for the eventual submission to AmeriFlux and Fluxnet. She is responsible for ensuring accurate data capture, efficient processing workflows, and adherence to the data standards required by these networks
@@ -64,7 +63,7 @@ Dr. Barnes's work in scaling up this research involves the use of remote sensing
 		<div class="content">
 			<div class="inner">
 				<header class="major">
-					<h3>The Royer Lab (PI: [Todd Royer](https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/royer-todd.html))</h3>
+					<h3>The Royer Lab (PI: <a href="https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/royer-todd.html">Todd Royer</a>)</h3>
 				</header>
 				<p>The Royer Lab at Indiana University conducts research in freshwater biogeochemistry, primarily in ecosystems dominated by agriculture or other human activities. Students in the Royer Lab collect and analyze soil and water samples as well as hydrologic data at agricultural field sites. Graduate research facilitated by the project incorporates the effect of cover crops on multiple processes and patterns of biogeochemical cycling. Erin Carman-Sweeney, a master’s student in the IU O’Neill School of Public and Environmental Affairs, will evaluate the effect of cover crops on soil greenhouse gas emissions as part of his thesis. Lindsey Rasnake, a student in the Environmental Science PhD program, uses stream and tile water samples to determine organic carbon loss through subsurface tile drainage in cover-cropped fields vs fields without cover crops.</p>
 				<ul class="actions">
