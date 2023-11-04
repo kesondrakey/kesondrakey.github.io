@@ -6,6 +6,37 @@ image: images/clouds.jpeg
 nav-menu: true
 ---
 
+/* Style for images to make them smaller and circular */
+.img-circle {
+  border-radius: 50%;
+  width: 150px; /* or any size you want */
+  height: 150px; /* should be the same as width for a circle */
+  object-fit: cover;
+  margin-right: 15px; /* adds space between the image and the text */
+}
+
+/* Style for floating the image left with text wrap */
+.float-left {
+  float: left;
+}
+
+/* Clear fix for the floating elements */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* You may want to add responsive behavior as well */
+@media screen and (max-width: 768px) {
+  .float-left {
+    float: none;
+    display: block;
+    margin: 0 auto; /* Center align image when in a single column view */
+  }
+}
+
+
 # Meet the Team!
 
 ## Summary
@@ -15,12 +46,13 @@ Multiple labs are involved with this project, including those from Indiana Unive
 
 ## The Labs
 
-### [The Novick Lab (PI: Kim Novick)](https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/novick-kimberly.html)
+### The Novick Lab (PI: [Kim Novick](https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/novick-kimberly.html))
 
 [Add Novick lab summary and images here]
 
 
-### [The Barnes Lab (PI: Mallory Barnes)](https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/barnes-mallory.html)
+
+### The Barnes Lab (PI: [Mallory Barnes](https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/royer-todd.html))
 
 *The Barnes lab at Indiana University focuses on the integration of quantitative remote sensing techniques and environmental informatics to advance our understanding of climate impacts on ecosystems. The lab, led by Dr. Mallory Barnes, leverages her expertise in ecohydrology and environmental management to scale ecohydrological and biophysical processes across spatial and temporal dimensions. One of the lab's significant endeavors, managed by Dr. Barnes, aims to develop standard methods for estimating forest carbon stocks to inform future carbon trading mechanisms.
 
@@ -37,17 +69,19 @@ Dr. Barnes's work in scaling up this research involves the use of remote sensing
 *The Royer Lab at Indiana University conducts research in freshwater biogeochemistry, primarily in ecosystems dominated by agriculture or other human activities. Students in the Royer Lab collect and analyze soil and water samples as well as hydrologic data at agricultural field sites. Graduate research facilitated by the project incorporates the effect of cover crops on multiple processes and patterns of biogeochemical cycling. Erin Carman-Sweeney, a master’s student in the IU O’Neill School of Public and Environmental Affairs, will evaluate the effect of cover crops on soil greenhouse gas emissions as part of his thesis. Lindsey Rasnake, a student in the Environmental Science PhD program, uses stream and tile water samples to determine organic carbon loss through subsurface tile drainage in cover-cropped fields vs fields without cover crops.*
 
 
-![Lucy Bailey (left) and Erin Carman-Sweeney (right) conducting field sampling in an agricultural drainage ditch.](/images/royer.jpg)  
-*Lucy Bailey (left) and Erin Carman-Sweeney (right) conducting field sampling in an agricultural drainage ditch.*
-
-![Lindsey Rasnake prepares to collect water samples from a subsurface tile drain in an agricultural landscape.](/images/royer1.jpg)  
-*Lindsey Rasnake prepares to collect water samples from a subsurface tile drain in an agricultural landscape.*
+<div class="clearfix">
+  <!-- Make sure to correct the link if the previous was incorrect and meant to be Barnes instead -->
+  <img src="/images/royer.jpg" alt="Lucy Bailey and Erin Carman-Sweeney conducting field sampling" class="img-circle float-left">
+  <p>
+    The Royer Lab at Indiana University conducts research in freshwater biogeochemistry... [Rest of the text here]
+  </p>
+</div>
 
 ---
 
-### The Tank Lab (PI: [Jennifer Tank](https://reilly.nd.edu/people/jennifer-tank/))
+### [The Tank Lab](https://tanklab.weebly.com/) (PI: [Jennifer Tank](https://reilly.nd.edu/people/jennifer-tank/))
 [Add Tank lab summary and images here]
 ---
 
-### The Yoder Lab (PI: [Landon Yoder](https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/yoder-landon.html))
+### [The Yoder Lab](https://yoder.lab.indiana.edu/index.html) (PI: [Landon Yoder](https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/yoder-landon.html))
 [Add Yoder lab summary and images here]
