@@ -35,13 +35,18 @@ nav-menu: true
 <!-- Novick Lab -->
 <section id="two" class="spotlights">
 	<section>
-		<figure class="image"> <!-- Begin figure tag here -->
-			<a href="generic.html">
-				<img src="{% link assets/images/novickdogs.jpg %}" alt="Novick Lab Team with Dogs" data-position="center center" />
-			</a>
-			<figcaption>Official Biomet Lab Dogs studying tree physiology</figcaption>
-		</figure> 
-		<div class="content">
+        <figure class="image"> <!-- Begin figure tag for the image group -->
+            <!-- First image with a caption -->
+            <a href="generic.html">
+                <img src="{% link assets/images/novickdogs.jpg %}" alt="Novick Lab Team with Dogs" data-position="center center" />
+            </a>
+            <figcaption>Official Biomet Lab Dogs studying tree physiology</figcaption>
+            <!-- Second image with a caption directly below the first one -->
+            <a href="generic.html"> <!-- Update href for the second image if necessary -->
+                <img src="{% link assets/images/novick.jpg %}" alt="Kim Novick" data-position="center center" />
+            </a>
+            <figcaption>Kim Novick</figcaption>
+        </figure> ="content">
 			<div class="inner">
 				<header class="major">
     <h3>The Biomet Lab (PI: <a href="https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/novick-kimberly.html">Kim Novick</a>)</h3>
@@ -51,8 +56,6 @@ nav-menu: true
 <p>The Biomet Lab's research endeavors are propelled by its strategic utilization of data from expansive environmental observation networks like AmeriFlux, FLUXNET, and NEON. These networks compile a wealth of data across a spectrum of sites, essential for the research endeavors of scientists worldwide. Guided by Novick, the lab intricately weaves together this collective data with detailed examinations of plant ecophysiological functions and macroscopic satellite imagery, achieving a nuanced understanding of ecosystem processes on a spectrum from micro to macro scales. The lab, a dynamic environment at Indiana University, is composed of an enthusiastic team of students, postdoctoral researchers, and technicians conducting groundbreaking field studies and data syntheses. Their commitment is towards leveraging this knowledge to guide actionable, <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.16156">nature-based climate solutions</a> .</p>
 
 <p>A pivotal element of Novick's work, and that of her colleagues within this project, revolves around nature-based solutions to climate change, a crucial aspect highlighted in their collective research. The basis of their collaborative efforts are encapsulated in a <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.16156">key paper</a>, showcasing their shared dedication to advancing the understanding and implementation of natural climate solutions.</p>
-
-
 				<ul class="actions">
 					<li><a href="https://scholar.google.com/citations?user=K5tffpEAAAAJ&hl=en" class="button">Learn more</a></li>
 				</ul>
