@@ -107,19 +107,6 @@ Erin Carman-Sweeney, a master’s student in the IU O’Neill School of Public a
 	</section>
 </section>
 
-<!-- x Lab -->
-<section id="three">
-	<div class="inner">
-		<header class="major">
-			<h2>Massa libero</h2>
-		</header>
-		<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-		<ul class="actions">
-			<li><a href="generic.html" class="button next">Get Started</a></li>
-		</ul>
-	</div>
-</section>
-
 
 <!-- Tank Lab -->
 <section id="three" class="spotlights">
@@ -152,7 +139,7 @@ Tank’s extensive research experience aims at better understanding the role tha
 			<a href="generic.html">
 				<img src="{% link assets/images/yoder.jpg %}" alt="Landon Yoder" data-position="center center" />
 			</a>
-			<figcaption>Yoder</figcaption>
+			<figcaption>Landon Yoder</figcaption>
 		</figure> <!-- End figure tag here -->
 		<div class="content">
 			<div class="inner">
