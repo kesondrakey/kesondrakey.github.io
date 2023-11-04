@@ -38,12 +38,12 @@ nav-menu: true
         <figure class="image"> <!-- Begin figure tag for the image group -->
             <!-- First image with a caption -->
             <a href="generic.html">
-                <img src="{% link assets/images/novickdogs.jpg %}" alt="Novick Lab Team with Dogs" data-position="center center" />
+                <img src="{% link assets/images/novickdogs.jpg %}" alt="Novick Lab Team with Dogs" data-position="center center" style="width: 100%;"/>
             </a>
             <figcaption>Official Biomet Lab Dogs studying tree physiology</figcaption>
             <!-- Second image with a caption directly below the first one -->
             <a href="generic.html"> <!-- Update href for the second image if necessary -->
-                <img src="{% link assets/images/novick.jpg %}" alt="Kim Novick" data-position="center center" />
+                <img src="{% link assets/images/novick.jpg %}" alt="Kim Novick" data-position="center center" style="width: 100%;"/>
             </a>
             <figcaption>Kim Novick</figcaption>
         </figure> 
