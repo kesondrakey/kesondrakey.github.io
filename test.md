@@ -26,7 +26,7 @@ nav-menu: true
 		<header class="major">
 			<h2>Summary</h2>
 		</header>
-		<p>Multiple labs are involved with this project, including those from Indiana University and collaborators from the University of Notre Dame. The key players involved include the Novick lab, Royer Lab, Barnes Lab, Yoder Labs from Indiana University and the Tank lab from Notre Dame. Each lab is focusing on certain key aspects of the project, described below.</p>
+		<p>Multiple labs are involved with this project, including those from Indiana University and collaborators from the University of Notre Dame. The key players involved include the Novick/Biomet lab, Royer Lab, Barnes Lab, Yoder Lab, Suttles from Indiana University and the Tank lab from Notre Dame. Each lab is focusing on certain key aspects of the project. Leanr more below.</p>
 	</div>
 </section>
 
