@@ -1,0 +1,35 @@
+/* Style for images to make them smaller and circular */
+.img-circle {
+  border-radius: 50%;
+  width: 150px; /* or any size you want */
+  height: 150px; /* should be the same as width for a circle */
+  object-fit: cover;
+  margin-right: 15px; /* adds space between the image and the text */
+}
+
+/* Style for floating the image left with text wrap */
+.float-left {
+  float: left;
+}
+
+/* Clear fix for the floating elements */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* You may want to add responsive behavior as well */
+@media screen and (max-width: 768px) {
+  .img-circle,
+  .float-left {
+    width: 100px; /* smaller size on mobile */
+    height: 100px; /* smaller size on mobile */
+  }
+
+  .float-left {
+    float: none;
+    display: block;
+    margin: 0 auto; /* Center align image when in a single column view */
+  }
+}
