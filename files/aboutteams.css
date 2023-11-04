@@ -23,8 +23,8 @@
 @media screen and (max-width: 768px) {
   .img-circle,
   .float-left {
-    width: 100px; /* smaller size on mobile */
-    height: 100px; /* smaller size on mobile */
+    width: 120px; /* adjust this size for mobile if needed */
+    height: 120px; /* adjust this size for mobile if needed */
   }
 
   .float-left {
