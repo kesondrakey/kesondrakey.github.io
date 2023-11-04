@@ -26,7 +26,7 @@ nav-menu: true
 		<header class="major">
 			<h2>Summary</h2>
 		</header>
-		<p>Multiple labs are involved with this project, including those from Indiana University and collaborators from the University of Notre Dame. The key players involved include the Novick/Biomet lab, Royer Lab, Barnes Lab, Yoder Lab, Suttles labs from Indiana University and the Tank lab from Notre Dame. Each lab is focusing on certain key aspects of the project. Learn more below.</p>
+		<p>Multiple labs are involved with this project, including those from Indiana University and collaborators from the University of Notre Dame. The key players involved include the Novick/Biomet lab, Royer Lab, Barnes Lab, Yoder Lab, Suttles from Indiana University and the Tank lab from Notre Dame. Each lab is focusing on certain key aspects of the project. Learn more below.</p>
 	</div>
 </section>
 
@@ -86,6 +86,9 @@ nav-menu: true
 			</div>
 		</div>
 	</section>
+</section>
+
+<section id="three" class="spotlights">
 	<section><!-- Royer Lab -->
   		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
@@ -106,8 +109,8 @@ Erin Carman-Sweeney, a master’s student in the IU O’Neill School of Public a
 			</div>
 		</div>
 	</section>
-</section>
-	<section>
+<!-- Tank Lab -->
+<section>
 		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
 				<img src="{% link assets/images/tank.jpg %}" alt="Jennifer Tank" data-position="center center" />
