@@ -39,14 +39,16 @@ nav-menu: true
 			<a href="generic.html">
 				<img src="{% link assets/images/novickdogs.jpg %}" alt="Novick Lab Team with Dogs" data-position="center center" />
 			</a>
-			<figcaption>Official Novick Dogs studying tree physiology in Bloomington, Indiana</figcaption>
+			<figcaption>Official Biomet Lab Dogs studying tree physiology</figcaption>
 		</figure> 
 		<div class="content">
 			<div class="inner">
 				<header class="major">
-    <h3>The Novick Lab (PI: <a href="https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/novick-kimberly.html">Kim Novick</a>)</h3>
+    <h3>The Biomet Lab (PI: <a href="https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/novick-kimberly.html">Kim Novick</a>)</h3>
 </header>
-				<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
+				<p>The Biomet Lab, headed by Kimberly Novick, operates at the confluence of biometeorology, plant physiology, and hydrology. This laboratory is a hub of innovation and interdisciplinary research housed within the O'Neill School of Public and Environmental Affairs. Novick's team is dedicated to unraveling the intricate relationships between climate variability and ecosystem functions, focusing on how these interactions both affect and are influenced by climate change. The lab’s approach is rooted in the understanding that without a deep knowledge of land-atmosphere interactions, the ability to model the land carbon sink remains uncertain, which in turn, casts doubt on future climate predictions. Novick's work particularly zeroes in on the interplay between climate and land cover changes in the Eastern United States' fertile forests and farmlands, with a spotlight on drought's influence.</p>
+
+<p>The research prowess of the Biomet Lab is amplified by leveraging extensive datasets from environmental observation networks such as AmeriFlux, FLUXNET, and NEON. These networks are a goldmine of information from numerous sites, aiding the research of countless scientists globally. Under Novick's guidance, the lab synthesizes this data with detailed plant ecophysiological measurements and satellite remote sensing to build a comprehensive understanding of ecosystem processes across various scales. The Biomet Lab at Indiana University is a melting pot of intellectual pursuit, with students, postdoctoral researchers, and technicians spearheading pioneering field studies and data synthesis, aiming to create actionable environmental insights from the ground up to the global level..</p>
 				<ul class="actions">
 					<li><a href="https://scholar.google.com/citations?user=K5tffpEAAAAJ&hl=en" class="button">Learn more</a></li>
 				</ul>
@@ -69,7 +71,7 @@ nav-menu: true
 					
 <p>Kesondra Key, a student in the Environmental Science PhD program, is investigating drought signals by analyzing plant responses to aridity, utilizing eddy covariance data from a multitude of US towers. Key manages data operations for the DISES project. Her role includes the collection, quality assurance, processing, and preparation of data for the eventual submission to AmeriFlux and Fluxnet. She is responsible for ensuring accurate data capture, efficient processing workflows, and adherence to the data standards required by these networks</p>
 					
-<p>Dr. Barnes's work in scaling up this research involves the use of remote sensing to extend observations from the local scale of individual research sites to broader, more comprehensive forest landscapes, aiming to provide scalable solutions for environmental challenges faced worldwide.</p>
+<p>Dr. Barnes's work in scaling up this research involves the use of remote sensing to extend observations from the local scale of individual research sites to broader, more comprehensive landscapes, aiming to provide scalable solutions for environmental challenges.</p>
 				<ul class="actions">
 					<li><a href="https://scholar.google.com/citations?user=0PxF8zAAAAAJ&hl=en" class="button">Learn more</a></li>
 				</ul>
@@ -112,12 +114,75 @@ Erin Carman-Sweeney, a master’s student in the IU O’Neill School of Public a
 </section>
 
 
-<!-- Royer Lab -->
-
-<!-- Yoder Lab -->
-
-<!-- Suttles Lab -->
-
 <!-- Tank Lab -->
+<section id="three" class="spotlights">
+	<section>
+		<figure class="image"> <!-- Begin figure tag here -->
+			<a href="generic.html">
+				<img src="{% link assets/images/tank.jpg %}" alt="Jennifer Tank" data-position="center center" />
+			</a>
+			<figcaption>Jennifer Tank</figcaption>
+		</figure> 
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+    <h3>The Tank Lab (PI: <a href="https://biology.nd.edu/people/jennifer-tank/">Jennifer Tank</a>)</h3>
+</header>
+				<p>Professor Jennifer Tank is the Director of the University of Notre Dame Environmental Change Initiative (ND-ECI). Tank has been actively involved at ND-ECI since it's inception, previously serving as the principle investigator of the Land Use Program and the Director of the Notre Dame Linked Experimental Ecosystem Facility (ND-LEEF). 
+
+Tank is the Ludmilla F., Stephen J., and Robert T. Galla Professor of Biological Sciences at the University of Notre Dame. Her research focuses on nutrient and carbon cycling in streams and rivers and the influence of human activities on water quality and stream health.
+
+Tank’s extensive research experience aims at better understanding the role that small streams play in removing nitrogen from the water and to prevent it from polluting downstream ecosystems. Her research was recently featured on the University of Notre Dame’s “What Would You Fight For?” series.
+</p>
+				<ul class="actions">
+					<li><a href="https://tanklab.weebly.com/" class="button">Learn more</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section>   <!-- Yoder Lab -->
+		<figure class="image">
+			<a href="generic.html">
+				<img src="{% link assets/images/yoder.jpg %}" alt="Landon Yoder" data-position="center center" />
+			</a>
+			<figcaption>Yoder</figcaption>
+		</figure> <!-- End figure tag here -->
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3>The Yoder Lab (PI: <a href="https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/yoder-landon.html">Landon Yoder</a>)</h3>
+				</header>
+				<p>Landon Yoder's research delves into the complex issue of agricultural nonpoint source pollution, a collective action problem that has persisted for decades. His interest lies particularly in the dynamics of collective action within agricultural landscapes, examining how stakeholders such as farmers, governmental entities, and society at large collaborate to balance the demands of agricultural productivity with environmental conservation efforts. Yoder's work is informed by a keen understanding of the interplay between biophysical conditions, infrastructure, and monitoring data, and how these elements influence the feedback mechanisms between social and ecological systems. His approach to studying these facets of environmental governance is methodologically diverse, incorporating semi-structured interviews, spatial analysis, and inferential statistics to obtain a multifaceted perspective.</p>
+
+<p>In addition to his primary research endeavors, Yoder is an active member of several interdisciplinary research communities, including the American Association of Geographers, the Global Land Programme, and the International Association for the Study of the Commons. His engagement with these communities reflects a dedication to advancing knowledge and fostering collaboration across disciplines. Within Indiana University, he is also an affiliate of the Environmental Resilience Institute, contributing to its mission of developing resilience strategies in response to environmental change.</p>
+				<ul class="actions">
+					<li><a href="https://yoder.lab.indiana.edu/index.html" class="button">Learn more</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section><!-- Suttles Lab -->
+  		<figure class="image"> <!-- Begin figure tag here -->
+			<a href="generic.html">
+				<img src="{% link assets/images/suttles.jpg %}" alt="Shellye Suttles" data-position="center center" />
+			</a>
+			<figcaption>Shellye Suttles</figcaption>
+		</figure> 
+	<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3>The Suttles Lab (PI: <a href="https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/suttles-shellye.html">Shellye Suttles</a>)</h3>
+				</header>
+				<p>Dr. Shellye Suttles is an agricultural economist with a focus on food system sustainability, including local and regional food systems, agricultural production, and agriculture’s impact on climate change. Her research applies macroeconomic and microeconomic analysis to a variety of sustainable food system topics. Her areas of interest include public policy impacts on sustainability in food and agricultural systems, particularly social, economic, and climate policy.</p>
+				<ul class="actions">
+					<li><a href="https://scholar.google.com/citations?user=FX196ZcAAAAJ&hl=en" class="button">Learn more</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</section>
+
+
+
 
 </div>
