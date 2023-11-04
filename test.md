@@ -5,6 +5,18 @@ image: assets/images/kimnovick.jpg
 nav-menu: true
 ---
 
+<style>
+        figcaption {
+            font-size: smaller; /* or a specific value like 0.9em */
+            font-style: italic;
+        }
+</style>
+
+
+
+
+
+
 <!-- Main -->
 <div id="main">
 
@@ -44,7 +56,7 @@ nav-menu: true
 	<section>   <!-- Barnes Lab -->
 		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
-				<img src="{% link assets/images/barnes.jpg %}" alt="Novick Lab Team with Dogs" data-position="center center" />
+				<img src="{% link assets/images/barnes.jpg %}" alt="Barnes lab thermal drone" data-position="center center" />
 			</a>
 			<figcaption>Technology specialist, Steve Scott, testing the Barnes lab thermal drone in Bloomington, Indiana</figcaption>
 		</figure> <!-- End figure tag here -->
@@ -65,11 +77,12 @@ nav-menu: true
 		</div>
 	</section>
 	<section><!-- Royer Lab -->
-		<a href="generic.html" class="image">
-			<img src="{% link assets/images/royer1.jpg %}" alt="" data-position="25% 25%" />
-		</a>
-		<figcaption>Lindsey Rasnake prepares to collect water samples from a subsurface tile drain in an agricultural landscape.</figcaption> 
-	</figure>
+  		<figure class="image"> <!-- Begin figure tag here -->
+			<a href="generic.html">
+				<img src="{% link assets/images/royer1.jpg %}" alt="Lindsey Rasnake" data-position="center center" />
+			</a>
+			<figcaption>Lindsey Rasnake prepares to collect water samples from a subsurface tile drain in an agricultural landscape</figcaption>
+		</figure> 
 	<div class="content">
 			<div class="inner">
 				<header class="major">
