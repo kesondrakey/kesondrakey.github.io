@@ -2,7 +2,7 @@
 title: Landing
 layout: landing
 description: 'Lorem ipsum dolor sit amet nullam consequa<br />sed veroeros. tempus adipiscing nulla.'
-image: assets/images/cloudylandscape.jpg
+image: images/clouds.jpg
 nav-menu: true
 ---
 
