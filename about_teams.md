@@ -5,36 +5,12 @@ description: About the Teams
 image: images/clouds.jpeg
 nav-menu: true
 ---
+<head>
+  <!-- other head elements -->
 
-/* Style for images to make them smaller and circular */
-.img-circle {
-  border-radius: 50%;
-  width: 150px; /* or any size you want */
-  height: 150px; /* should be the same as width for a circle */
-  object-fit: cover;
-  margin-right: 15px; /* adds space between the image and the text */
-}
-
-/* Style for floating the image left with text wrap */
-.float-left {
-  float: left;
-}
-
-/* Clear fix for the floating elements */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* You may want to add responsive behavior as well */
-@media screen and (max-width: 768px) {
-  .float-left {
-    float: none;
-    display: block;
-    margin: 0 auto; /* Center align image when in a single column view */
-  }
-}
+  <!-- Link to your main stylesheet -->
+  <link rel="stylesheet" href="/files/aboutteams.css">
+</head>
 
 
 # Meet the Team!
@@ -60,7 +36,12 @@ Kesondra Key, a student in the Environmental Science PhD program, is investigati
 
 Dr. Barnes's work in scaling up this research involves the use of remote sensing to extend observations from the local scale of individual research sites to broader, more comprehensive forest landscapes, aiming to provide scalable solutions for environmental challenges faced worldwide.*
 
-### ![The Barnes Lab](/images/barneslab.png)
+<div class="clearfix">
+  <img src="/images/barneslab.png" alt="The Barnes Lab" class="img-circle float-left">
+  <p>
+    The Barnes lab at Indiana University focuses on... [Rest of the text here]
+  </p>
+</div>
 
 ---
 
