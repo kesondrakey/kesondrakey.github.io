@@ -1,5 +1,5 @@
 week,year,start_DATE,end_DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Timeframe,Tower
-45,2023,2023-11-05,2023-11-05,28.72,48.97,0,0.48,Sunny,"Sunday, November 5  to  Sunday, November 5",fluxtower2
+45,2023,2023-11-05,2023-11-05,28.46,60.82,0,0.48,Sunny,"Sunday, November 5  to  Sunday, November 5",fluxtower2
 44,2023,2023-10-29,2023-11-04,22.85,60.61,0,0.09,Sunny,"Sunday, October 29  to  Saturday, November 4",fluxtower2
 43,2023,2023-10-22,2023-10-28,35.23,78.32,0,-0,Sunny,"Sunday, October 22  to  Saturday, October 28",fluxtower2
 42,2023,2023-10-15,2023-10-21,34.3,69.89,0,-0,Sunny,"Sunday, October 15  to  Saturday, October 21",fluxtower2
