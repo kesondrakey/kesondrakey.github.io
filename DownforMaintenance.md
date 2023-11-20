@@ -15,11 +15,14 @@ nav-menu: true
             flex-direction: column;
             justify-content: center; /* Center content vertically */
             align-items: center;
-            min-height: 80vh; /* Full viewport height */
+            min-height: 100vh; /* Full viewport height */
         }
         .content-container {
             text-align: center;
-            padding: 20px; /* Reduced padding */
+            padding-top: 10vh; /* Adjust top padding as needed */
+            padding-bottom: 10vh; /* Adjust bottom padding to maintain symmetry if needed */
+            width: 90%; /* Adjust width as necessary */
+            max-width: 600px; /* Adjust maximum width as necessary */
         }
         img.maintenance-image {
             width: auto; /* Maintain the natural width of the image */
