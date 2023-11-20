@@ -1,6 +1,5 @@
 ---
 layout: post 
-description: Down for Maintenance
 nav-menu: true
 ---
 
