@@ -25,7 +25,7 @@ nav-menu: true
             align-items: center;
         }
         img.maintenance-image {
-            width: 50%; /* You can adjust the width as needed */
+            width: 40%; /* You can adjust the width as needed */
             height: auto;
         }
         .citation {
