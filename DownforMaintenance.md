@@ -17,19 +17,19 @@ nav-menu: true
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center; /* This will center the container */
             min-height: 100vh; /* Full viewport height */
-            justify-content: flex-start; /* Align to the top */
         }
         .content-container {
             text-align: center;
-            padding-top: 10vh; /* Adjust top padding as needed */
-            padding-bottom: 10vh; /* Adjust bottom padding to maintain symmetry if needed */
-            width: 90%; /* Adjust width as necessary */
-            max-width: 600px; /* Adjust maximum width as necessary */
+            /* Remove or reduce top padding if necessary */
+            padding-bottom: 2vh; /* Adjust bottom padding to maintain symmetry if needed */
+            width: auto; /* Let the width be automatic */
+            max-width: 100%; /* Ensure the container does not exceed the width of the viewport */
         }
         img.maintenance-image {
-            width: auto; /* Maintain the natural width of the image */
-            max-width: 100%; /* Image can grow up to 100% of its container */
+            max-width: 80%; /* Adjust the width of the image as necessary */
+            height: auto;
             margin-bottom: 20px; /* Space between image and citation */
         }
         .citation {
