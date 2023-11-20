@@ -161,31 +161,20 @@ nav-menu: true
     <div id="content-wrapper">
         <div id="main-content">
 
-            <section id="intro">
-                <h1>Understanding Nature's Role in Climate Solutions</h1>
-                <img id="top-right-image" src="images/eddy_cov_ex.png" alt="Eddy Covariance Example">
-                <p>
-                    Farmers and land stewards have a unique opportunity to play a major role in combatting climate change. Nature-based Climate Solutions (NbCS) are management techniques that may enhance the sequestration of carbon dioxide and reduce greenhouse gas emissions in croplands and forests. In addition to aiding in the fight against global warming, NbCS may provide numerous benefits such as improved soil health, better air and water quality.
-                </p>
-            </section>
-
             <section id="flux-tower">
-                <h2>The Significance of Flux Towers</h2>
-                <p>
-                    However, to successfully implement NbCS, we need reliable data to ensure these strategies truly benefit the climate. This is where flux towers come into the picture.
-                </p>
+                <h1>The Significance of Flux Towers</h1>
                 <p>
                     Imagine a lighthouse that doesn’t guide ships but instead gathers vital data from the surrounding environment. <strong>Flux towers</strong> are like these lighthouses, standing tall amidst fields, forests, and wetlands, continuously collecting essential data. Each tower is equipped with sophisticated instruments that measure the exchange of carbon dioxide, water vapor, and energy between the earth and the atmosphere.
                 </p>
                 <p>
-                    Understanding the diverse scales of monitoring is crucial for the successful implementation of NbCS. The image below offers a comparative view:
+                    The ways we can monitor the earth vary, the following image showcases some of these ways, from the soil to the global scale:
                 </p>
                 <img src="images/Nbcs_scales.png" alt="Monitoring Scales for NbCS" style="display:block;margin:auto;">
                 <p style="font-style: italic; text-align: center;">
            <a href="https://oneill.indiana.edu/doc/research/climate/climate-solutions-summary.pdf" target="_blank" rel="noopener noreferrer">Sourced from the report</a>
                 </p>
                 <p>
-                    By analyzing the tiniest of changes in the air, flux towers give us a snapshot of how gases and energy move in and out of an ecosystem. In essence, they help us monitor the land and atmosphere.
+                    By analyzing the tiniest of changes in the air, flux towers give us a snapshot of how gases and energy move in and out of an ecosystem. With long time series, we can detect important changes in these systems. 
                 </p>
             </section>
 
