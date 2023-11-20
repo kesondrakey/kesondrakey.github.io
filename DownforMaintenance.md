@@ -16,27 +16,24 @@ nav-menu: true
             padding: 0;
             display: flex;
             flex-direction: column;
-            justify-content: space-around; /* This will provide space around the items */
+            justify-content: center; /* Center content vertically */
             align-items: center;
             min-height: 100vh; /* Full viewport height */
         }
         .content-container {
-            flex-grow: 1; /* Allow the container to grow and fill the space */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center; /* Center content vertically in the available space */
-            padding: 50px 0; /* Add padding at the top and bottom */
+            text-align: center;
+            padding: 20px; /* Reduced padding */
         }
         img.maintenance-image {
             width: auto; /* Maintain the natural width of the image */
             max-width: 90%; /* Limit the width to 90% of its container */
-            max-height: 50vh; /* Limit the height to 50% of the viewport */
+            max-height: 60vh; /* Limit the height to 60% of the viewport */
+            margin-bottom: 20px; /* Space between image and citation */
         }
         .citation {
             font-size: 0.8em;
             color: #CCC;
-            margin: 20px 0; /* Space between image and citation */
+            margin-bottom: 20px; /* Space between citation and button */
             font-weight: bold;
         }
         .home-button {
@@ -66,3 +63,4 @@ nav-menu: true
     </div>
 </body>
 </html>
+
