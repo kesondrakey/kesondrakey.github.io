@@ -1,6 +1,5 @@
 ---
 layout: post
-title: About the Project
 description: Exploring the Nature Based Climate Solutions Project
 nav-menu: true
 ---
@@ -89,11 +88,13 @@ nav-menu: true
         </div>
     </section>
 
-   <p class="section-title"><strong>Overview:</strong></p>
-    <p>Nature-based climate solutions (NbCS) offer a promising avenue to combat climate change by leveraging natural processes to reduce greenhouse gas concentrations. Some of these strategies include reforestation, climate-smart agriculture, and wetland restoration. Despite garnering significant bipartisan support and private sector interest, the scientific frameworks guiding NbCS implementation and monitoring are yet to be fully established. That is where this project comes in.</p>
+   <p class="section-title"><strong>About the Project:</strong></p>
+    <p>Nature-based climate solutions (NbCS) offer a promising avenue to combat climate change by leveraging natural processes to reduce greenhouse gas concentrations. Some of these strategies include climate-smart agriculture like cover crops and reducing excess irrigation, and reforestation. Despite garnering significant bipartisan support and private sector interest, the scientific frameworks guiding NbCS implementation and monitoring are yet to be fully established. That is where this project comes in.</p>
 
-    <p class="section-title"><strong>Objective:</strong></p>
-    <p>This initiative aims to provide a scientific roadmap to ensure robust, scalable, and credible NbCS in the U.S. It focuses on identifying knowledge gaps, integrating the best available tools, and offering actionable cross-sectoral data. By understanding both the technical and socio-economic potential of NbCS, we can steer our efforts towards strategies that genuinely mitigate climate change impacts.</p>
+    <p class="section-title"><strong>A multitude of scientists at Indiana University and Notre Dame are guiding the way towards scientifically-informated nature based climate solutions</strong></p>
+    <p>Funded by the National Scientific Foundation (NSF), this million dollar project aims to close the carbon and water budgets of agriculturla systems, while also bridging the knowledge gap regarding greenhouse gas emisisons and carbon sequestration for cover crop vs non-cover crop usage on farms. 
+    
+    .</p>
 
     <div class="flex-container">
         <div class="flex-item-text">
@@ -111,8 +112,8 @@ nav-menu: true
             <a href="https://oneill.indiana.edu/faculty-research/research/climate/index.html">
                 <img src="images/nbcs.jpg" alt="Nature Based Climate Solutions">
             </a>
-            <p class="section-title">Join Us:</p>
-            <p>Explore our in-depth report, be part of the conversation, and help us shape a sustainable future.</p>
+            <p class="section-title">Learn More</p>
+            <p>Explore the white paper focused on nature based climate solutions</p>
         </div>
     </div>
 </body>
