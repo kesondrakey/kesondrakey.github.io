@@ -12,43 +12,44 @@ nav-menu: true
     <title>Maintenance Page</title>
     <style>
         body, html {
-            height: 100%;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-around; /* This will provide space around the items */
             align-items: center;
+            min-height: 100vh; /* Full viewport height */
         }
         .content-container {
-            width: 100%; /* Full width */
-            max-width: 768px; /* Maximum width of the container */
-            margin: 0 auto; /* Center the container */
-            text-align: center;
+            flex-grow: 1; /* Allow the container to grow and fill the space */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Center content vertically in the available space */
+            padding: 50px 0; /* Add padding at the top and bottom */
         }
         img.maintenance-image {
-            max-width: 100%; /* Image will scale down if necessary */
-            height: auto;
-            display: block; /* Prevent inline default alignment issues */
-            margin-bottom: 20px; /* Space between image and citation */
+            width: auto; /* Maintain the natural width of the image */
+            max-width: 90%; /* Limit the width to 90% of its container */
+            max-height: 50vh; /* Limit the height to 50% of the viewport */
         }
         .citation {
             font-size: 0.8em;
-            color: #CCC; /* Light color for contrast */
-            margin-bottom: 20px; /* Space between citation and button */
-            font-weight: bold; /* Makes the text bold */
+            color: #CCC;
+            margin: 20px 0; /* Space between image and citation */
+            font-weight: bold;
         }
         .home-button {
             padding: 10px 20px;
             font-size: 1em;
-            font-weight: bold; /* Make the button text bold */
-            color: #FFFFFF; /* Text color */
-            background-color: #000000; /* Button color - black */
+            font-weight: bold;
+            color: #FFFFFF;
+            background-color: #000000; /* Black background */
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            text-decoration: none; /* Removes underline from anchor tag */
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            text-decoration: none;
+            transition: color 0.3s ease;
         }
         .home-button:hover {
             color: #7DF9FF; /* Electric blue text color on hover */
