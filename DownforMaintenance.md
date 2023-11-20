@@ -1,8 +1,11 @@
 ---
 layout: post 
+description: Down for Maintenance
 nav-menu: true
 ---
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +16,9 @@ nav-menu: true
             padding: 0;
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Center content vertically */
             align-items: center;
             min-height: 100vh; /* Full viewport height */
+            justify-content: flex-start; /* Align to the top */
         }
         .content-container {
             text-align: center;
@@ -26,9 +29,8 @@ nav-menu: true
         }
         img.maintenance-image {
             width: auto; /* Maintain the natural width of the image */
-            max-width: 90%; /* Limit the width to 90% of its container */
-            max-height: 60vh; /* Limit the height to 60% of the viewport */
-            margin-bottom: 10px; /* Space between image and citation */
+            max-width: 100%; /* Image can grow up to 100% of its container */
+            margin-bottom: 20px; /* Space between image and citation */
         }
         .citation {
             font-size: 0.8em;
@@ -62,5 +64,4 @@ nav-menu: true
         <a href="https://kesondrakey.github.io//" class="home-button">Go Back to Home</a>
     </div>
 </body>
-
-
+</html>
