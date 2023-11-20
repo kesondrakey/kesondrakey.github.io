@@ -15,7 +15,7 @@ nav-menu: true
             flex-direction: column;
             justify-content: center; /* Center content vertically */
             align-items: center;
-            min-height: 100vh; /* Full viewport height */
+            min-height: 80vh; /* Full viewport height */
         }
         .content-container {
             text-align: center;
@@ -25,7 +25,7 @@ nav-menu: true
             width: auto; /* Maintain the natural width of the image */
             max-width: 90%; /* Limit the width to 90% of its container */
             max-height: 60vh; /* Limit the height to 60% of the viewport */
-            margin-bottom: 20px; /* Space between image and citation */
+            margin-bottom: 10px; /* Space between image and citation */
         }
         .citation {
             font-size: 0.8em;
@@ -59,5 +59,5 @@ nav-menu: true
         <a href="https://kesondrakey.github.io//" class="home-button">Go Back to Home</a>
     </div>
 </body>
-</html>
+
 
