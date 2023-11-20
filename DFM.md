@@ -3,7 +3,6 @@ layout: post
 description: Down for Maintenance
 nav-menu: true
 ---
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,6 +23,7 @@ nav-menu: true
             display: flex;
             flex-direction: column;
             align-items: center;
+            text-align: center;
         }
         img.maintenance-image {
             width: 30%; /* Adjust the size as needed */
@@ -34,21 +34,23 @@ nav-menu: true
             font-size: 0.8em;
             color: #CCC; /* Light color for contrast */
             text-align: center;
+            font-weight: bold; /* Makes the text bold */
         }
         .home-button {
             margin-top: 20px;
             padding: 10px 20px;
             font-size: 1em;
-            color: #FFFFFF;
-            background-color: #3498DB; /* Blue color to match the background */
+            color: #FFFFFF; /* Text color */
+            background-color: #000000; /* Button color - black */
             border: none;
             border-radius: 5px;
             cursor: pointer;
             text-decoration: none; /* Removes underline from anchor tag */
-            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+            transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effect */
         }
         .home-button:hover {
-            background-color: #2980B9; /* Darker blue on hover */
+            color: #ADD8E6; /* Text color on hover - light blue */
+            background-color: #333333; /* Button color on hover - dark gray for contrast */
         }
     </style>
 </head>
