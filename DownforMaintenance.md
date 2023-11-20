@@ -12,43 +12,40 @@ nav-menu: true
     <title>Maintenance Page</title>
     <style>
         body, html {
+            height: 100%;
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            justify-content: center; /* This will center the container */
-            min-height: 100vh; /* Full viewport height */
         }
         .content-container {
-            text-align: center;
-            /* Remove or reduce top padding if necessary */
-            padding-bottom: 2vh; /* Adjust bottom padding to maintain symmetry if needed */
-            width: auto; /* Let the width be automatic */
-            max-width: 100%; /* Ensure the container does not exceed the width of the viewport */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         img.maintenance-image {
-            max-width: 80%; /* Adjust the width of the image as necessary */
+            width: 40%; /* You can adjust the width as needed */
             height: auto;
-            margin-bottom: 20px; /* Space between image and citation */
         }
         .citation {
+            margin-top: 20px;
             font-size: 0.8em;
-            color: #CCC;
-            margin-bottom: 20px; /* Space between citation and button */
-            font-weight: bold;
+            color: #CCC; /* Light color for contrast */
+            text-align: center;
         }
         .home-button {
+            margin-top: 20px;
             padding: 10px 20px;
             font-size: 1em;
-            font-weight: bold;
-            color: #FFFFFF;
-            background-color: #000000; /* Black background */
+            font-weight: bold; /* Make the button text bold */
+            color: #FFFFFF; /* Text color */
+            background-color: #000000; /* Button color - black */
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            text-decoration: none;
-            transition: color 0.3s ease;
+            text-decoration: none; /* Removes underline from anchor tag */
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
         }
         .home-button:hover {
             color: #7DF9FF; /* Electric blue text color on hover */
