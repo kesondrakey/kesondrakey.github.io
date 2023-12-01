@@ -88,11 +88,11 @@ nav-menu: true
         </div>
     </section>
 
-   <p class="section-title"><strong>About the Project:</strong></p>
-    <p>Nature-based climate solutions (NbCS) offer a promising avenue to combat climate change by leveraging natural processes to reduce greenhouse gas concentrations. Some of these strategies include climate-smart agriculture like cover crops and reducing excess irrigation, and reforestation. Despite garnering significant bipartisan support and private sector interest, the scientific frameworks guiding NbCS implementation and monitoring are yet to be fully established. That is where this project comes in.</p>
+   <p class="section-title"><strong>Nature-based climate solutions</strong></p>
+    <p>Nature-based climate solutions (NbCS) offer a promising avenue to combat climate change by leveraging natural processes to reduce greenhouse gas concentrations. Some of these strategies include climate-smart agriculture like cover crops, reforesting previously deforested landscapes (like many of the forests in the eastern US) and reducing excess irrigation. Despite garnering significant bipartisan support and private sector interest, the scientific frameworks guiding NbCS implementation and monitoring are yet to be fully established. That is where this project comes in.</p>
 
     <p class="section-title"><strong>A multitude of scientists at Indiana University and Notre Dame are guiding the way towards scientifically-informated nature based climate solutions</strong></p>
-    <p>Funded by the National Scientific Foundation (NSF), this million dollar project aims to close the carbon and water budgets of agriculturla systems, while also bridging the knowledge gap regarding greenhouse gas emisisons and carbon sequestration for cover crop vs non-cover crop usage on farms. 
+    <p>Funded by the National Scientific Foundation (NSF), this million dollar project aims to close the carbon and water budgets of agricultural systems, while also bridging the knowledge gap regarding greenhouse gas emisisons and carbon sequestration for cover crop vs non-cover crop usage on farms. 
     
     .</p>
 
@@ -100,11 +100,11 @@ nav-menu: true
         <div class="flex-item-text">
             <p class="section-title"><strong>Key Highlights:</strong></p>
             <ul>
-                <li><strong>The Need:</strong> As the climate crisis intensifies, simply reducing greenhouse gas emissions may not suffice. Complementing this with NbCS, which targets atmospheric greenhouse gas emission reduction, can bolster our fight against climate change</li>
-                <li><strong>Benefits Beyond Climate Mitigation:</strong> NbCS not only aids in climate mitigation but also positively impacts biodiversity, air and water quality, soil health, and boosts ecosystem resilience</li>
-                <li><strong>Criteria for Success:</strong> For NbCS to be effective, they must meet four essential criteria: additional enhancements to carbon uptake, net cooling effect, durability of carbon storage, and accounting for leakage</li>
+                <li><strong>The Need:</strong> As the climate crisis intensifies, reducing greenhouse gas emissions through a multitude of systems, in conjunction with the reduction of fossil fuels, is critical. Complementing such efforts with NbCS, which targets atmospheric greenhouse gas emission reduction while providing secondary benefits (enhanced biodiversity, soil health, etc), can bolster our fight against climate change</li>
+                <li><strong>Benefits Beyond Climate Mitigation:</strong> NbCS not only aids in climate mitigation but also positively impacts biodiversity, air and water quality, soil health,  boosts ecosystem resilience, and enhances ecosystem potential for climate adaptation</li>
+                <li><strong>Criteria for Success:</strong> To be defined as a NBCS, they must meet four essential criteria: additional enhancements to carbon uptake, net cooling effect, durability of carbon storage, and accounting for leakage</li>
                 <li><strong>Challenges and Uncertainties:</strong> The current scientific knowledge lacks a complete understanding of NbCS impacts across varying scales, raising questions about their overall efficacy</li>
-                <li><strong>Bridging the Gap:</strong> Over the years, technological advancements and innovative measurement tools have provided insights into the ecosystem carbon cycles. By integrating these tools and technologies, we can develop a comprehensive NbCS "Information Network," a cornerstone in guiding the implementation of effective NbCS strategies</li>
+                <li><strong>Bridging the Gap:</strong> Over the years, technological advancements and innovative measurement tools have provided insights into ecosystem carbon cycles. By integrating these tools and technologies, we can develop a comprehensive NbCS "Information Network," a cornerstone in guiding the implementation of effective NbCS strategies</li>
             </ul>
         </div>
 
