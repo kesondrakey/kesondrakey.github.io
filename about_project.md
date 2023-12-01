@@ -91,7 +91,7 @@ nav-menu: true
    <p class="section-title"><strong>Nature-based climate solutions</strong></p>
     <p>Nature-based climate solutions (NbCS) offer a promising avenue to combat climate change by leveraging natural processes to reduce greenhouse gas concentrations. Some of these strategies include climate-smart agriculture like cover crops, reforesting previously deforested landscapes (like many of the forests in the eastern US) and reducing excess irrigation. Despite garnering significant bipartisan support and private sector interest, the scientific frameworks guiding NbCS implementation and monitoring are yet to be fully established. That is where this project comes in.</p>
 
-    <p class="section-title"><strong>A multitude of scientists at Indiana University and Notre Dame are guiding the way towards scientifically-informated nature based climate solutions</strong></p>
+    <p class="section-title"><strong>A team of scientists at Indiana University and Notre Dame are guiding the way towards scientifically-informated nature based climate solutions</strong></p>
     <p>Funded by the National Scientific Foundation (NSF), this million dollar project aims to close the carbon and water budgets of agricultural systems, while also bridging the knowledge gap regarding greenhouse gas emisisons and carbon sequestration for cover crop vs non-cover crop usage on farms. 
     
     .</p>
