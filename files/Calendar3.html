@@ -118,14 +118,14 @@
                 const record = data.find(d => d.DATE === dateStr);
 
                 if (record) {
-                       let icon; // Declare the icon variable
-                            if (record['Total Precipitation'] === '0') {
-                                icon = '../images/sun.png';
-                            } else if (record['Total Precipitation'] > 0 && record['Min Temp'] < 32 && record['Max Temp'] < 32) {
-                                icon = '../images/snow.png';
-                            } else {
-                                icon = '../images/rain.png';
-                            }
+                    let icon; // Declare the icon variable
+                    if (record['Total Precipitation'] === '0') {
+                        icon = '../images/sun.png';
+                    } else if (record['Total Precipitation'] > 0 && record['Min Temp'] < 32 && record['Max Temp'] < 32) {
+                        icon = '../images/snow.png';
+                    } else {
+                        icon = '../images/rain.png';
+                    }
                     const info = document.createElement('div');
                     info.className = 'info';
                         info.innerHTML = `
@@ -140,8 +140,8 @@
                     hoverInfo.className = 'info-box';
                     hoverInfo.innerHTML = `
                         Date: ${new Date(year, month, i).toDateString()}<br>
-                        Min Temp: ${record['Min Temp']}°F<br>
                         Max Temp: ${record['Max Temp']}°F<br>
+                        Min Temp: ${record['Min Temp']}°F<br>
                         Precipitation: ${record['Total Precipitation']} in <br>
                         Avg Soil Moisture: ${record['Avg Soil Moisture']}
                     `;
