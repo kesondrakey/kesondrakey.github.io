@@ -118,10 +118,10 @@
                 const record = data.find(d => d.DATE === dateStr);
 
                 if (record) {
-                    let icon; // Declare the icon variable
+                       let icon; // Declare the icon variable
                             if (record['Total Precipitation'] === '0') {
                                 icon = '../images/sun.png';
-                            } else if (record['Total Precipitation'] > 0 && record['Max Temp'] < 32) {
+                            } else if (record['Total Precipitation'] > 0 && record['Min Temp'] < 32 && record['Max Temp'] < 32) {
                                 icon = '../images/snow.png';
                             } else {
                                 icon = '../images/rain.png';
@@ -131,8 +131,8 @@
                     info.innerHTML = `
                         <img src="${icon}" alt="weather-icon">
                         <div class="temp-info">
-                            <strong>${record['Max Temp']}&deg;F</strong><br>
-                            <strong>${record['Min Temp']}&deg;F</strong>
+                            <strong>${record['Min Temp']}&deg;F</strong><br> <!-- Min Temp displayed first -->
+                            <strong>${record['Max Temp']}&deg;F</strong> <!-- Max Temp displayed second -->
                         </div>`;
                     cell.appendChild(info);
 
@@ -145,6 +145,7 @@
                         Precipitation: ${record['Total Precipitation']} in <br>
                         Avg Soil Moisture: ${record['Avg Soil Moisture']}
                     `;
+
                     cell.appendChild(hoverInfo);
                 }
                 calendarEl.appendChild(cell);
