@@ -270,7 +270,7 @@ iframe + i {
     
 <b>Daily Data Table:</b>
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower4.html"></iframe>
-      <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+            <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3)); Daytime Avg Evapotranspiration (ET) (8AM to 8PM, mm/day); Daytime Avg Vapor Pressure Deficit (VPD) (8AM to 8PM, kPa); Daytime Max Relative Humidity (RH) (8AM to 8PM; %) </i>
         <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
       <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
     </div>
@@ -291,7 +291,7 @@ iframe + i {
 <div id="weekly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <b>Weekly Data Table: </b>
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower4.html"></iframe>
-      <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+            <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3)); Daytime Avg Evapotranspiration (ET) (8AM to 8PM, mm/day); Daytime Avg Vapor Pressure Deficit (VPD) (8AM to 8PM, kPa); Daytime Max Relative Humidity (RH) (8AM to 8PM; %) </i>
     <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
       <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
     </div>
@@ -300,7 +300,7 @@ iframe + i {
 <div id="monthly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <b>Monthly Data Table:</b>
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower4.html"></iframe>
-      <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+            <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3)); Daytime Avg Evapotranspiration (ET) (8AM to 8PM, mm/day); Daytime Avg Vapor Pressure Deficit (VPD) (8AM to 8PM, kPa); Daytime Max Relative Humidity (RH) (8AM to 8PM; %) </i>
     <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
       <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
     </div>
