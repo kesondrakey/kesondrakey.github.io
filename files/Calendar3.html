@@ -118,10 +118,10 @@
                 const record = data.find(d => d.DATE === dateStr);
 
                 if (record) {
-                    let icon; // Declare the icon variable
+                       let icon; // Declare the icon variable
                             if (record['Total Precipitation'] === '0') {
                                 icon = '../images/sun.png';
-                            } else if (record['Total Precipitation'] > 0 && record['Max Temp'] < 32) {
+                            } else if (record['Total Precipitation'] > 0 && record['Min Temp'] < 32 && record['Max Temp'] < 32) {
                                 icon = '../images/snow.png';
                             } else {
                                 icon = '../images/rain.png';
