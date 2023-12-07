@@ -139,11 +139,12 @@
                     const hoverInfo = document.createElement('div');
                     hoverInfo.className = 'info-box';
                     hoverInfo.innerHTML = `
-                        Date: ${new Date(year, month, i).toDateString()}<br>
-                        Min Temp: ${record["Min Temp"]}°F<br>
-                        Max Temp: ${record["Max Temp"]}°F<br>
-                        Precipitation: ${record['Total Precipitation']} in <br>
-                        Avg Soil Moisture: ${record['Avg Soil Moisture']}
+   <!-- Debug Info: ${JSON.stringify(record)} -->
+    Date: ${new Date(year, month, i).toDateString()}<br>
+    Max Temp: ${record['Max Temp']}°F<br> 
+    Min Temp: ${record['Min Temp']}°F<br>
+    Precipitation: ${record['Total Precipitation']} in <br>
+    Avg Soil Moisture: ${record['Avg Soil Moisture']}
                     `;
                     cell.appendChild(hoverInfo);
                 }
