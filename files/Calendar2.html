@@ -118,44 +118,50 @@
                 const record = data.find(d => d.DATE === dateStr);
 
                 if (record) {
-                    let icon; // Declare the icon variable
-                    if (record['Total Precipitation'] === '0') {
-                        icon = '../images/sun.png';
-                    } else if (record['Total Precipitation'] > 0 && record['Min Temp'] < 32 && record['Max Temp'] < 32) {
-                        icon = '../images/snow.png';
-                    } else {
-                        icon = '../images/rain.png';
-                    }
-                    const info = document.createElement('div');
-                    info.className = 'info';
-                         info.innerHTML = `
+                        let icon; // Declare the icon variable
+                        // Convert string to number for comparison
+                        const minTemp = parseFloat(record['Min Temp']);
+                        const maxTemp = parseFloat(record['Max Temp']);
+                        const totalPrecipitation = parseFloat(record['Total Precipitation']);
+                    
+                        if (totalPrecipitation === 0) {
+                            icon = '../images/sun.png';
+                        } else if (totalPrecipitation > 0 && minTemp < 32 && maxTemp < 32) {
+                            icon = '../images/snow.png';
+                        } else {
+                            icon = '../images/rain.png';
+                        }
+                        const info = document.createElement('div');
+                        info.className = 'info';
+                        info.innerHTML = `
                             <img src="${icon}" alt="weather-icon">
                             <div class="temp-info">
-                                <strong>${record['Min Temp']}&deg;F</strong><br> <!-- Min Temp displayed first -->
-                                <strong>${record['Max Temp']}&deg;F</strong> <!-- Max Temp displayed second -->
+                                <strong>${maxTemp}&deg;F</strong> <!-- Max Temp displayed second -->
+                                <strong>${minTemp}&deg;F</strong><br> <!-- Min Temp displayed first -->
                             </div>`;
-                    cell.appendChild(info);
+                        cell.appendChild(info);
+                    
+                        const hoverInfo = document.createElement('div');
+                        hoverInfo.className = 'info-box';
+                        hoverInfo.innerHTML = `
+                            Date: ${new Date(year, month, i).toDateString()}<br>
+                            Max Temp: ${maxTemp}°F<br> 
+                            Min Temp: ${minTemp}°F<br>
+                            Precipitation: ${totalPrecipitation} in <br>
+                            Avg Soil Moisture: ${record['Avg Soil Moisture']}
+                        `;
+                    
+                        cell.appendChild(hoverInfo);
+                    }
 
-                    const hoverInfo = document.createElement('div');
-                    hoverInfo.className = 'info-box';
-                    hoverInfo.innerHTML = `
-   <!-- Debug Info: ${JSON.stringify(record)} -->
-    Date: ${new Date(year, month, i).toDateString()}<br>
-    Max Temp: ${record['Max Temp']}°F<br> 
-    Min Temp: ${record['Min Temp']}°F<br>
-    Precipitation: ${record['Total Precipitation']} in <br>
-    Avg Soil Moisture: ${record['Avg Soil Moisture']}
-                    `;
-                    cell.appendChild(hoverInfo);
-                }
                 calendarEl.appendChild(cell);
             }
         }
 
         fetch("../files/daily_fluxtower2.csv")
-                .then(response => response.text())
-                .then(csvText => {
-                    const data = csvText.split('\n').slice(1).map(row => {
+            .then(response => response.text())
+            .then(csvText => {
+                const data = csvText.split('\n').slice(1).map(row => {
                     const fields = row.split(',');
                     return {
                         DATE: fields[0],
@@ -163,7 +169,7 @@
                         'Max Temp': fields[2], // Assuming this is the correct index for Max Temp
                         'Total Precipitation': fields[3], // Assuming this is the correct index for Total Precipitation
                         'Avg Soil Moisture': fields[4], // Assuming this is the correct index for Avg Soil Moisture
-                        'Daytime Avg ET': fields[5], // Added field for Dayti
+                        'Daytime Avg ET': fields[5], // Added field for Daytime Avg ET
                     };
                 });
 
