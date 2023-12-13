@@ -1,4 +1,5 @@
 DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Daytime Avg ET,Daytime Avg VPD,Daytime STDEV VPD,Daytime Max RH,Daytime STDEV RH,Description,Tower
+2023-12-13,23.61,31.15,0,0.45,0.01,0.16,0.02,74.06,2.24,Sunny,fluxtower2
 2023-12-12,26.26,41.49,0,0.46,1.1,0.32,0.16,90.48,16.17,Sunny,fluxtower2
 2023-12-11,25.67,37.37,0,0.46,0.67,0.15,0.07,90.19,9.28,Sunny,fluxtower2
 2023-12-10,29.4,43.38,0,0.48,0.54,0.11,0.07,92.38,5.95,Sunny,fluxtower2
