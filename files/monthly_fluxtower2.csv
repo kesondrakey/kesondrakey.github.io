@@ -1,8 +1,8 @@
-Month,year,start_DATE,end_DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Timeframe,Tower
-Dec,2023,2023-12-01,2023-12-18,23.61,58.26,0,0.47,Sunny,"Friday, December 1  to  Monday, December 18",fluxtower2
-Nov,2023,2023-11-01,2023-11-30,15.89,76.75,0,0.43,Sunny,"Wednesday, November 1  to  Thursday, November 30",fluxtower2
-Oct,2023,2023-10-01,2023-10-31,22.85,87.13,0,0.15,Sunny,"Sunday, October 1  to  Tuesday, October 31",fluxtower2
-Sep,2023,2023-09-01,2023-09-30,43.74,88.68,0,0.4,Sunny,"Friday, September 1  to  Saturday, September 30",fluxtower2
-Aug,2023,2023-08-01,2023-08-31,48.9,93.03,0,0.51,Sunny,"Tuesday, August 1  to  Thursday, August 31",fluxtower2
-Jul,2023,2023-07-01,2023-07-31,53.73,90.56,0,0.48,Sunny,"Saturday, July 1  to  Monday, July 31",fluxtower2
-Jun,2023,2023-06-21,2023-06-30,50.42,90.21,0,0.29,Sunny,"Wednesday, June 21  to  Friday, June 30",fluxtower2
+Month,start_DATE,end_DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Year,Daytime Avg ET,Daytime Avg VPD,Daytime STDEV VPD,Daytime Max RH,Daytime STDEV RH,Description,Timeframe,Tower
+Dec,2023-12-01,2023-12-13,23.61,58.26,0,0.47,2023,0.94,0.19,0.15,99.64,14.53,Sunny,"Friday, December 1  to  Wednesday, December 13",fluxtower2
+Nov,2023-11-01,2023-11-30,15.89,76.75,0,0.43,2023,1.26,0.43,0.36,99.89,17.65,Sunny,"Wednesday, November 1  to  Thursday, November 30",fluxtower2
+Oct,2023-10-01,2023-10-31,22.85,87.13,0,0.15,2023,1.47,0.73,0.67,99.9,19.71,Sunny,"Sunday, October 1  to  Tuesday, October 31",fluxtower2
+Sep,2023-09-01,2023-09-30,43.74,88.68,0,0.4,2023,3.14,1.06,0.65,99.55,17.65,Sunny,"Friday, September 1  to  Saturday, September 30",fluxtower2
+Aug,2023-08-01,2023-08-31,48.9,93.03,0,0.51,2023,4.73,0.87,0.43,99.13,11.86,Sunny,"Tuesday, August 1  to  Thursday, August 31",fluxtower2
+Jul,2023-07-01,2023-07-31,53.73,90.56,0,0.48,2023,1.31,1.16,0.39,95.05,10.2,Sunny,"Saturday, July 1  to  Monday, July 31",fluxtower2
+Jun,2023-06-21,2023-06-30,50.42,90.21,0,0.29,NA,NA,NA,NA,NA,NA,Sunny,"Wednesday, June 21  to  Friday, June 30",fluxtower2
