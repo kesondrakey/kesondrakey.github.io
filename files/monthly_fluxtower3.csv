@@ -1,8 +1,8 @@
-Month,start_DATE,end_DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Year,Daytime Avg ET,Daytime Avg VPD,Daytime STDEV VPD,Daytime Max RH,Daytime STDEV RH,Description,Timeframe,Tower
-Dec,2023-12-01,2023-12-14,-40.22,57.35,0.35,0.24,2023,1.08,0.21,0.16,99.48,14.76,Rain,"Friday, December 1  to  Thursday, December 14",fluxtower3
-Nov,2023-11-01,2023-11-30,15.28,67.25,0.12,0.11,2023,0.98,0.46,0.31,99.62,16.75,Rain,"Wednesday, November 1  to  Thursday, November 30",fluxtower3
-Oct,2023-10-01,2023-10-31,25.11,85.88,1.66,0.03,2023,1.93,0.53,0.44,98.12,17.42,Rain,"Sunday, October 1  to  Tuesday, October 31",fluxtower3
-Sep,2023-09-01,2023-09-30,40.98,87.41,0.46,0.11,2023,6.22,1.08,0.5,94.94,10.48,Rain,"Friday, September 1  to  Saturday, September 30",fluxtower3
-Aug,2023-08-01,2023-08-31,43.97,90.07,1.09,0.17,2023,6.29,0.94,0.5,98.91,14.67,Rain,"Tuesday, August 1  to  Thursday, August 31",fluxtower3
-Jul,2023-07-01,2023-07-31,51.81,89.58,3.53,0.01,2023,8.59,1.07,0.47,97.45,12.1,Rain,"Saturday, July 1  to  Monday, July 31",fluxtower3
-Jun,2023-06-22,2023-06-30,50.23,85.75,1,-0,NA,NA,NA,NA,NA,NA,Rain,"Thursday, June 22  to  Friday, June 30",fluxtower3
+Month,year,start_DATE,end_DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Timeframe,Tower
+Dec,2023,2023-12-01,2023-12-20,-40.22,57.35,0.59,0.23,Rain,"Friday, December 1  to  Wednesday, December 20",fluxtower3
+Nov,2023,2023-11-01,2023-11-30,15.28,67.25,0.12,0.11,Rain,"Wednesday, November 1  to  Thursday, November 30",fluxtower3
+Oct,2023,2023-10-01,2023-10-31,25.11,85.88,1.66,0.03,Rain,"Sunday, October 1  to  Tuesday, October 31",fluxtower3
+Sep,2023,2023-09-01,2023-09-30,40.98,87.41,0.46,0.11,Rain,"Friday, September 1  to  Saturday, September 30",fluxtower3
+Aug,2023,2023-08-01,2023-08-31,43.97,90.07,1.09,0.17,Rain,"Tuesday, August 1  to  Thursday, August 31",fluxtower3
+Jul,2023,2023-07-01,2023-07-31,51.81,89.58,3.53,0.01,Rain,"Saturday, July 1  to  Monday, July 31",fluxtower3
+Jun,2023,2023-06-22,2023-06-30,50.23,85.75,1,-0,Rain,"Thursday, June 22  to  Friday, June 30",fluxtower3
