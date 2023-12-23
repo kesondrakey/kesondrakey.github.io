@@ -1,7 +1,7 @@
 week,year,start_DATE,end_DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Timeframe,Tower
-51,2023,2023-12-17,2023-12-19,13.11,44.16,0.27,0.45,Rain,"Sunday, December 17  to  Tuesday, December 19",fluxtower1
-50,2023,2023-12-10,2023-12-16,24.18,54.19,0.22,0.44,Rain,"Sunday, December 10  to  Saturday, December 16",fluxtower1
-49,2023,2023-12-03,2023-12-09,31.04,58.22,0.1,0.46,Rain,"Sunday, December 3  to  Saturday, December 9",fluxtower1
+51,2023,2023-12-17,2023-12-22,13.11,48.77,0.4,0.45,Rain,"Sunday, December 17  to  Friday, December 22",fluxtower1
+50,2023,2023-12-10,2023-12-16,24.18,54.19,0.33,0.44,Rain,"Sunday, December 10  to  Saturday, December 16",fluxtower1
+49,2023,2023-12-03,2023-12-09,31.04,58.22,0.11,0.46,Rain,"Sunday, December 3  to  Saturday, December 9",fluxtower1
 48,2023,2023-11-26,2023-12-02,15.8,54.69,0.4,0.44,Rain,"Sunday, November 26  to  Saturday, December 2",fluxtower1
 47,2023,2023-11-20,2023-11-25,26.37,47.76,0.11,0.45,Rain,"Monday, November 20  to  Saturday, November 25",fluxtower1
 46,2023,2023-11-12,2023-11-16,26.76,66.63,0,0.45,Sunny,"Sunday, November 12  to  Thursday, November 16",fluxtower1
