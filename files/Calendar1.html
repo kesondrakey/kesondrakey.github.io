@@ -157,21 +157,34 @@
                 calendarEl.appendChild(cell);
             }
         }
-
         fetch("../files/daily_fluxtower1.csv")
-            .then(response => response.text())
-            .then(csvText => {
-                const data = csvText.split('\n').slice(1).map(row => {
-                    const fields = row.split(',');
-                    return {
-                        DATE: fields[0],
-                        'Min Temp': fields[1], // Assuming this is the correct index for Min Temp
-                        'Max Temp': fields[2], // Assuming this is the correct index for Max Temp
-                        'Total Precipitation': fields[3], // Assuming this is the correct index for Total Precipitation
-                        'Avg Soil Moisture': fields[4], // Assuming this is the correct index for Avg Soil Moisture
-                        'Daytime Avg ET': fields[5], // Added field for Daytime Avg ET
-                    };
-                });
+    .then(response => response.text())
+    .then(csvText => {
+        const data = csvText.split('\n').slice(1).map(row => {
+            const fields = row.split(',');
+            return {
+                DATE: fields[0].trim(),
+                'Min Temp': fields[1].trim() !== 'NA' ? parseFloat(fields[1].trim()) : null,
+                'Max Temp': fields[2].trim() !== 'NA' ? parseFloat(fields[2].trim()) : null,
+                'Total Precipitation': fields[3].trim() !== 'NA' ? parseFloat(fields[3].trim()) : null,
+                'Avg Soil Moisture': fields[4].trim() !== 'NA' ? parseFloat(fields[4].trim()) : null,
+            };
+        });
+
+'        fetch("../files/daily_fluxtower1.csv")
+'            .then(response => response.text())
+'            .then(csvText => {
+'                const data = csvText.split('\n').slice(1).map(row => {
+'                    const fields = row.split(',');
+'                    return {
+'                        DATE: fields[0],
+'                        'Min Temp': fields[1], // Assuming this is the correct index for Min Temp
+'                        'Max Temp': fields[2], // Assuming this is the correct index for Max Temp
+'                        'Total Precipitation': fields[3], // Assuming this is the correct index for Total Precipitation
+'                        'Avg Soil Moisture': fields[4], // Assuming this is the correct index for Avg Soil Moisture
+'                        'Daytime Avg ET': fields[5], // Added field for Daytime Avg ET
+'                    };
+'                });
 
                 const today = new Date();
                 currentMonth = today.getMonth();
