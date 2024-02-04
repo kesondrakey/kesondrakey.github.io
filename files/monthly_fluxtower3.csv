@@ -1,5 +1,5 @@
 Month,year,start_DATE,end_DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Timeframe,Tower
-Feb,2024,2024-02-01,2024-02-02,31.04,49.57,0,0.32,Sunny,"Thursday, February 1  to  Friday, February 2",fluxtower3
+Feb,2024,2024-02-01,2024-02-03,26.99,49.57,0,0.31,Sunny,"Thursday, February 1  to  Saturday, February 3",fluxtower3
 Jan,2024,2024-01-01,2024-01-31,-9.01,41.01,3.09,0.23,Rain,"Monday, January 1  to  Wednesday, January 31",fluxtower3
 Dec,2023,2023-12-01,2023-12-31,-40.22,57.71,4.37,0.24,Rain,"Friday, December 1  to  Sunday, December 31",fluxtower3
 Nov,2023,2023-11-01,2023-11-30,15.28,67.25,0.12,0.11,Rain,"Wednesday, November 1  to  Thursday, November 30",fluxtower3
