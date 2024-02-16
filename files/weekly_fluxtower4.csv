@@ -1,37 +1,37 @@
-"week","year","start_DATE","end_DATE","Min.Temp","Max.Temp","Total.Precipitation","Avg.Soil.Moisture","Description","Timeframe","Tower"
-7,2024,"2024-02-12","2024-02-16",21.87,43.41,0.11,0.19,"Rain","Monday, February 12  to  Friday, February 16","fluxtower4"
-6,2024,"2024-02-05","2024-02-11",24.17,61.47,0,0.21,"Sunny","Monday, February 5  to  Sunday, February 11","fluxtower4"
-5,2024,"2024-01-29","2024-02-04",27.32,49.27,0.07,0.24,"Rain","Monday, January 29  to  Sunday, February 4","fluxtower4"
-4,2024,"2024-01-22","2024-01-28",14.36,41.3,0.9,0.17,"Rain","Monday, January 22  to  Sunday, January 28","fluxtower4"
-3,2024,"2024-01-15","2024-01-21",-8.87,23.31,0,0.12,"Sunny","Monday, January 15  to  Sunday, January 21","fluxtower4"
-2,2024,"2024-01-08","2024-01-14",-8.44,34.76,2.34,0.19,"Rain","Monday, January 8  to  Sunday, January 14","fluxtower4"
-NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-50,2023,"2023-12-10","2023-12-16",22.38,44.4,0,0.16,"Sunny","Sunday, December 10  to  Saturday, December 16","fluxtower4"
-49,2023,"2023-12-03","2023-12-09",32.34,57.49,0.15,0.19,"Rain","Sunday, December 3  to  Saturday, December 9","fluxtower4"
-48,2023,"2023-11-26","2023-12-02",15.63,53.09,0.24,0.16,"Rain","Sunday, November 26  to  Saturday, December 2","fluxtower4"
-47,2023,"2023-11-19","2023-11-25",23.8,54.04,0.09,0.16,"Rain","Sunday, November 19  to  Saturday, November 25","fluxtower4"
-46,2023,"2023-11-12","2023-11-18",25.45,64.71,0,0.12,"Sunny","Sunday, November 12  to  Saturday, November 18","fluxtower4"
-45,2023,"2023-11-05","2023-11-11",31.15,67.59,0,-0.01,"Sunny","Sunday, November 5  to  Saturday, November 11","fluxtower4"
-44,2023,"2023-10-29","2023-11-04",24.82,60.37,0.26,-0.01,"Rain","Sunday, October 29  to  Saturday, November 4","fluxtower4"
-43,2023,"2023-10-22","2023-10-28",36.83,80.99,0.22,0,"Rain","Sunday, October 22  to  Saturday, October 28","fluxtower4"
-42,2023,"2023-10-15","2023-10-21",38.09,66.06,0.35,0,"Rain","Sunday, October 15  to  Saturday, October 21","fluxtower4"
-41,2023,"2023-10-08","2023-10-14",35.08,67.48,0.4,0.04,"Rain","Sunday, October 8  to  Saturday, October 14","fluxtower4"
-40,2023,"2023-10-01","2023-10-07",42.73,85.81,0.37,0.09,"Rain","Sunday, October 1  to  Saturday, October 7","fluxtower4"
-39,2023,"2023-09-24","2023-09-30",49.14,79.69,0.28,0.08,"Rain","Sunday, September 24  to  Saturday, September 30","fluxtower4"
-38,2023,"2023-09-17","2023-09-23",47.04,80.88,0.01,0.07,"Rain","Sunday, September 17  to  Saturday, September 23","fluxtower4"
-37,2023,"2023-09-10","2023-09-16",45.72,75.72,0.1,0.07,"Rain","Sunday, September 10  to  Saturday, September 16","fluxtower4"
-36,2023,"2023-09-03","2023-09-09",56.9,87.04,0.04,0.07,"Rain","Sunday, September 3  to  Saturday, September 9","fluxtower4"
-35,2023,"2023-08-27","2023-09-02",48.98,82.13,0.08,0.09,"Rain","Sunday, August 27  to  Saturday, September 2","fluxtower4"
-34,2023,"2023-08-22","2023-08-26",66.3,90.17,0,0.1,"Sunny","Tuesday, August 22  to  Saturday, August 26","fluxtower4"
-33,2023,"2023-08-13","2023-08-18",55.04,79.96,0.22,0.13,"Rain","Sunday, August 13  to  Friday, August 18","fluxtower4"
-32,2023,"2023-08-06","2023-08-12",57.92,80.17,0.7,0.13,"Rain","Sunday, August 6  to  Saturday, August 12","fluxtower4"
-31,2023,"2023-07-30","2023-08-05",53.2,83.3,0.21,0.11,"Rain","Sunday, July 30  to  Saturday, August 5","fluxtower4"
-30,2023,"2023-07-23","2023-07-29",59.15,88.54,0.74,0.1,"Rain","Sunday, July 23  to  Saturday, July 29","fluxtower4"
-29,2023,"2023-07-16","2023-07-22",56.02,84.06,0.06,0.12,"Rain","Sunday, July 16  to  Saturday, July 22","fluxtower4"
-28,2023,"2023-07-09","2023-07-15",54.71,84.75,1.08,0.12,"Rain","Sunday, July 9  to  Saturday, July 15","fluxtower4"
-27,2023,"2023-07-02","2023-07-08",58.45,85.18,0.87,0.13,"Rain","Sunday, July 2  to  Saturday, July 8","fluxtower4"
-26,2023,"2023-06-25","2023-07-01",52.15,84.01,1.7,0.14,"Rain","Sunday, June 25  to  Saturday, July 1","fluxtower4"
-25,2023,"2023-06-22","2023-06-24",61.46,85.12,0,0.1,"Sunny","Thursday, June 22  to  Saturday, June 24","fluxtower4"
+week,year,start_DATE,end_DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Timeframe,Tower
+7,2024,2024-02-12,2024-02-16,21.87,43.41,0.11,0.19,Rain,"Monday, February 12  to  Friday, February 16",fluxtower4
+6,2024,2024-02-05,2024-02-11,24.17,61.47,0,0.21,Sunny,"Monday, February 5  to  Sunday, February 11",fluxtower4
+5,2024,2024-01-29,2024-02-04,27.32,49.27,0.07,0.24,Rain,"Monday, January 29  to  Sunday, February 4",fluxtower4
+4,2024,2024-01-22,2024-01-28,14.36,41.3,0.9,0.17,Rain,"Monday, January 22  to  Sunday, January 28",fluxtower4
+3,2024,2024-01-15,2024-01-21,-8.87,23.31,0,0.12,Sunny,"Monday, January 15  to  Sunday, January 21",fluxtower4
+2,2024,2024-01-08,2024-01-14,-8.44,34.76,2.34,0.19,Rain,"Monday, January 8  to  Sunday, January 14",fluxtower4
+1,2024,2024-01-01,2024-01-07,NA,NA,0.05,0.18,Rain,"Monday, January 1  to  Sunday, January 7",fluxtower4
+53,2023,2023-12-31,2023-12-31,NA,NA,0.01,0.19,Rain,"Sunday, December 31  to  Sunday, December 31",fluxtower4
+52,2023,2023-12-24,2023-12-30,NA,NA,0.9,0.19,Rain,"Sunday, December 24  to  Saturday, December 30",fluxtower4
+51,2023,2023-12-17,2023-12-23,NA,NA,1.05,0.18,Rain,"Sunday, December 17  to  Saturday, December 23",fluxtower4
+50,2023,2023-12-10,2023-12-16,22.38,44.4,0,0.16,Sunny,"Sunday, December 10  to  Saturday, December 16",fluxtower4
+49,2023,2023-12-03,2023-12-09,32.34,57.49,0.15,0.19,Rain,"Sunday, December 3  to  Saturday, December 9",fluxtower4
+48,2023,2023-11-26,2023-12-02,15.63,53.09,0.24,0.16,Rain,"Sunday, November 26  to  Saturday, December 2",fluxtower4
+47,2023,2023-11-19,2023-11-25,23.8,54.04,0.09,0.16,Rain,"Sunday, November 19  to  Saturday, November 25",fluxtower4
+46,2023,2023-11-12,2023-11-18,25.45,64.71,0,0.12,Sunny,"Sunday, November 12  to  Saturday, November 18",fluxtower4
+45,2023,2023-11-05,2023-11-11,31.15,67.59,0,-0.01,Sunny,"Sunday, November 5  to  Saturday, November 11",fluxtower4
+44,2023,2023-10-29,2023-11-04,24.82,60.37,0.26,-0.01,Rain,"Sunday, October 29  to  Saturday, November 4",fluxtower4
+43,2023,2023-10-22,2023-10-28,36.83,80.99,0.22,-0,Rain,"Sunday, October 22  to  Saturday, October 28",fluxtower4
+42,2023,2023-10-15,2023-10-21,38.09,66.06,0.35,-0,Rain,"Sunday, October 15  to  Saturday, October 21",fluxtower4
+41,2023,2023-10-08,2023-10-14,35.08,67.48,0.4,0.04,Rain,"Sunday, October 8  to  Saturday, October 14",fluxtower4
+40,2023,2023-10-01,2023-10-07,42.73,85.81,0.37,0.09,Rain,"Sunday, October 1  to  Saturday, October 7",fluxtower4
+39,2023,2023-09-24,2023-09-30,49.14,79.69,0.28,0.08,Rain,"Sunday, September 24  to  Saturday, September 30",fluxtower4
+38,2023,2023-09-17,2023-09-23,47.04,80.88,0.01,0.07,Rain,"Sunday, September 17  to  Saturday, September 23",fluxtower4
+37,2023,2023-09-10,2023-09-16,45.72,75.72,0.1,0.07,Rain,"Sunday, September 10  to  Saturday, September 16",fluxtower4
+36,2023,2023-09-03,2023-09-09,56.9,87.04,0.04,0.07,Rain,"Sunday, September 3  to  Saturday, September 9",fluxtower4
+35,2023,2023-08-27,2023-09-02,48.98,82.13,0.08,0.09,Rain,"Sunday, August 27  to  Saturday, September 2",fluxtower4
+34,2023,2023-08-22,2023-08-26,66.3,90.17,0,0.1,Sunny,"Tuesday, August 22  to  Saturday, August 26",fluxtower4
+33,2023,2023-08-13,2023-08-18,55.04,79.96,0.22,0.13,Rain,"Sunday, August 13  to  Friday, August 18",fluxtower4
+32,2023,2023-08-06,2023-08-12,57.92,80.17,0.7,0.13,Rain,"Sunday, August 6  to  Saturday, August 12",fluxtower4
+31,2023,2023-07-30,2023-08-05,53.2,83.3,0.21,0.11,Rain,"Sunday, July 30  to  Saturday, August 5",fluxtower4
+30,2023,2023-07-23,2023-07-29,59.15,88.54,0.74,0.1,Rain,"Sunday, July 23  to  Saturday, July 29",fluxtower4
+29,2023,2023-07-16,2023-07-22,56.02,84.06,0.06,0.12,Rain,"Sunday, July 16  to  Saturday, July 22",fluxtower4
+28,2023,2023-07-09,2023-07-15,54.71,84.75,1.08,0.12,Rain,"Sunday, July 9  to  Saturday, July 15",fluxtower4
+27,2023,2023-07-02,2023-07-08,58.45,85.18,0.87,0.13,Rain,"Sunday, July 2  to  Saturday, July 8",fluxtower4
+26,2023,2023-06-25,2023-07-01,52.15,84.01,1.7,0.14,Rain,"Sunday, June 25  to  Saturday, July 1",fluxtower4
+25,2023,2023-06-22,2023-06-24,61.46,85.12,0,0.1,Sunny,"Thursday, June 22  to  Saturday, June 24",fluxtower4
