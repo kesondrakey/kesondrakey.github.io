@@ -1,4 +1,5 @@
 week,year,start_DATE,end_DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Timeframe,Tower
+<<<<<<< Updated upstream
 8,2024,2024-02-19,2024-02-22,20.25,60.61,0.11,0.18,Rain,"Monday, February 19  to  Thursday, February 22",fluxtower4
 7,2024,2024-02-12,2024-02-18,13.77,43.41,0.11,0.19,Rain,"Monday, February 12  to  Sunday, February 18",fluxtower4
 6,2024,2024-02-05,2024-02-11,24.17,61.47,0,0.21,Sunny,"Monday, February 5  to  Sunday, February 11",fluxtower4
@@ -36,3 +37,6 @@ week,year,start_DATE,end_DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moi
 27,2023,2023-07-02,2023-07-08,58.45,85.18,0.87,0.13,Rain,"Sunday, July 2  to  Saturday, July 8",fluxtower4
 26,2023,2023-06-25,2023-07-01,52.15,84.01,1.7,0.14,Rain,"Sunday, June 25  to  Saturday, July 1",fluxtower4
 25,2023,2023-06-22,2023-06-24,61.46,85.12,0,0.1,Sunny,"Thursday, June 22  to  Saturday, June 24",fluxtower4
+=======
+8,2024,2024-02-23,2024-02-23,36.56,47.22,0,0.19,Sunny,"Friday, February 23  to  Friday, February 23",fluxtower4
+>>>>>>> Stashed changes
