@@ -235,10 +235,7 @@ iframe + i {
 
 </style>
 
-<div class="summary-box">
-    <!-- Updated background color -->
-    <strong>Note:</strong> This page is best viewed on a desktop format
-</div>
+
 
 
 <!-- Add the banner grid-container here -->
@@ -250,7 +247,10 @@ iframe + i {
     </a>
   </div>
 </div>
-
+<div class="summary-box">
+    <!-- Updated background color -->
+    <strong>Note:</strong> This page is best viewed on a desktop format
+</div>
 
 <!-- Your existing HTML content starts here -->
 <h2 class="summary-heading">Summary</h2>
