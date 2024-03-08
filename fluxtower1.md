@@ -220,6 +220,18 @@ iframe + i {
     padding: 0;
 }
 
+        /* Adjust the margin of the summary heading */
+    .summary-heading {
+        margin-bottom: 10px; /* Adjust this value as needed to reduce/increase space */
+    }
+
+    .summary-box {
+        background-color: #343A54;
+        padding: 5px;
+        color: white;
+        margin-top: 10px; /* Adjust this value as needed to reduce/increase space */
+    }
+
 
 </style>
 
@@ -236,10 +248,10 @@ iframe + i {
 
 
 <!-- Your existing HTML content starts here -->
-<h2>Summary</h2>
-<div style="background-color: #343A54; padding: 5px; color: white;">
+<h2 class="summary-heading">Summary</h2>
+<div class="summary-box">
     <!-- Updated background color -->
-    <strong>Flux Tower One:</strong> This tower is located on an Indiana farm, focusing on corn and soy cash crops without the use of interim cover crops.
+    <strong>Flux Tower 1:</strong> This tower is located on an Indiana farm, focusing on corn and soy cash crops without the use of interim cover crops.
 </div>
 
 
