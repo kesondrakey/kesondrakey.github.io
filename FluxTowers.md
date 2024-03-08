@@ -164,14 +164,7 @@ nav-menu: true
             <section id="flux-tower">
                 <h1>The Significance of Flux Towers</h1>
                 <p>
-                    Imagine a lighthouse that doesn’t guide ships but instead gathers vital data from the surrounding environment. <strong>Flux towers</strong> are like these lighthouses, standing tall amidst fields, forests, and wetlands, continuously collecting essential data. Each tower is equipped with sophisticated instruments that measure the exchange of carbon dioxide, water vapor, and energy between the earth and the atmosphere.
-                </p>
-                <p>
-                    The ways we can monitor the earth vary, the following image showcases some of these ways, from the soil to the global scale:
-                </p>
-                <img src="images/Nbcs_scales.png" alt="Monitoring Scales for NbCS" style="display:block;margin:auto;">
-                <p style="font-style: italic; text-align: center;">
-           <a href="https://oneill.indiana.edu/doc/research/climate/climate-solutions-summary.pdf" target="_blank" rel="noopener noreferrer">Sourced from the report</a>
+                Flux towers, also known as Eddy Covariance systems, are like high-tech weather stations, but with a special focus. Imagine them as detectives that can capture tiny bits of air, known as eddys, and analyze what's in them. These towers stand in places like fields, forests, or wetlands and help scientists understand how much carbon dioxide and water vapor is moving in and out of an area at any given time. They're equipped with advanced scientific sensors that measure all sorts of variables (carbon dioxide, water vapor, soil moisture/temperature, precipitation, and energy), giving us critical information about the health of our planet
                 </p>
                 <p>
                     By analyzing the tiniest of changes in the air, flux towers give us a snapshot of how gases and energy move in and out of an ecosystem. With long time series, we can detect important changes in these systems. 
