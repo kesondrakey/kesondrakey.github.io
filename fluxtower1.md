@@ -236,7 +236,14 @@ iframe + i {
 
 
 <!-- Your existing HTML content starts here -->
+<h2>Summary</h2>
+<div style="background-color: #343A54; padding: 10px; color: white;">
+    <!-- Updated background color -->
+    <strong>Flux Tower One:</strong> This tower is located on an Indiana farm, focusing on corn and soy cash crops without the use of interim cover crops.
+</div>
 
+
+<h2>Calendar</h2>
 <iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar1.html"></iframe>
 <div style="background-color: #343A54; padding: 10px; color: white;">
     <!-- Updated background color -->
@@ -268,9 +275,6 @@ iframe + i {
       <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
         <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
       <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
-    </div>
-
-
     </div>
 </div>
 
