@@ -251,7 +251,7 @@ iframe + i {
 <h2 class="summary-heading">Summary</h2>
 <div class="summary-box">
     <!-- Updated background color -->
-    <strong>Flux Tower 1:</strong> This tower is situated on an Indiana farm focused on the cultivation of corn and soy. Unlike some other agricultural practices, this site does not employ interim cover crops, allowing for a unique insight into the environmental impact and dynamics of traditional cash crop farming.
+    <strong>Flux Tower 1:</strong> This tower is situated on an Indiana farm focused on the cultivation of corn and soy. Unlike its companion site (Tower 2), this site does not employ interim cover crops, allowing for a unique insight into the environmental impact and dynamics of traditional cash crop farming
 </div>
 <i> </i>
 
