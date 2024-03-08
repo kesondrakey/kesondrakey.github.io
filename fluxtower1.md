@@ -237,12 +237,13 @@ iframe + i {
 
 <!-- Your existing HTML content starts here -->
 
-
 <iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar1.html"></iframe>
-        <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
-      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
-    </div>
+<div style="background-color: #343A54; padding: 10px; color: white;">
+    <!-- Updated background color -->
+    <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+</div>
 <div style="margin-bottom:20px;"></div>
+
 
 
 
@@ -304,6 +305,10 @@ iframe + i {
 
 
 <!-- Daily Plot - Simple Variables -->
+<div class="collapsible-container">
+    <button class="collapsible">Long Term Data</button>
+    <div class="container">
+        
 <h2>Long Term Data</h2>
 <h4>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - <i>just click the variable name and see!</i></h4>
 <div class="plot-container">
@@ -317,6 +322,7 @@ iframe + i {
     </div>
       <div style="margin-bottom:20px;"></div>
   </div>
+</div> 
 </div> 
 
 
