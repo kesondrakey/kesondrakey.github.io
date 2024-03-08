@@ -237,13 +237,12 @@ iframe + i {
 
 <!-- Your existing HTML content starts here -->
 <h2>Summary</h2>
-<div style="background-color: #343A54; padding: 10px; color: white;">
+<div style="background-color: #343A54; padding: 5px; color: white;">
     <!-- Updated background color -->
     <strong>Flux Tower One:</strong> This tower is located on an Indiana farm, focusing on corn and soy cash crops without the use of interim cover crops.
 </div>
 
 
-<h2>Calendar</h2>
 <iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar1.html"></iframe>
 <div style="background-color: #343A54; padding: 10px; color: white;">
     <!-- Updated background color -->
@@ -309,9 +308,7 @@ iframe + i {
 
 
 <!-- Daily Plot - Simple Variables -->
-<div class="collapsible-container">
-    <button class="collapsible">Long Term Data</button>
-    <div class="container">
+
         
 <h2>Long Term Data</h2>
 <h4>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - <i>just click the variable name and see!</i></h4>
@@ -326,7 +323,6 @@ iframe + i {
     </div>
       <div style="margin-bottom:20px;"></div>
   </div>
-</div> 
 </div> 
 
 
