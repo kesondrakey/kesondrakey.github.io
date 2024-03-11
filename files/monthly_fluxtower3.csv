@@ -1,9 +1,10 @@
-"Month","year","start_DATE","end_DATE","Min.Temp","Max.Temp","Total.Precipitation","Avg.Soil.Moisture","Description","Timeframe","Tower"
-"Mar",2024,"2024-03-01","2024-03-11",27.77,65.59,66052.39,0.25,"Rain","Friday, March 1  to  Monday, March 11","fluxtower3"
-"Feb",2024,"2024-02-08","2024-02-29",13.52,67.72,0.22,0.25,"Rain","Thursday, February 8  to  Thursday, February 29","fluxtower3"
-"Jan",2024,"2024-01-11","2024-01-26",-3.58,39.76,0.32,0.17,"Rain","Thursday, January 11  to  Friday, January 26","fluxtower3"
-"Nov",2023,"2023-11-01","2023-11-30",15.28,67.25,0.12,0.11,"Rain","Wednesday, November 1  to  Thursday, November 30","fluxtower3"
-"Oct",2023,"2023-10-01","2023-10-31",25.11,85.88,1.39,0.04,"Rain","Sunday, October 1  to  Tuesday, October 31","fluxtower3"
-"Sep",2023,"2023-09-01","2023-09-30",40.98,87.41,0.45,0.11,"Rain","Friday, September 1  to  Saturday, September 30","fluxtower3"
-"Aug",2023,"2023-08-01","2023-08-31",43.97,90.07,0.94,0.17,"Rain","Tuesday, August 1  to  Thursday, August 31","fluxtower3"
-"Jul",2023,"2023-07-26","2023-07-31",51.81,89.58,0.77,0.14,"Rain","Wednesday, July 26  to  Monday, July 31","fluxtower3"
+Month,year,start_DATE,end_DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Timeframe,Tower
+Mar,2024,2024-03-01,2024-03-11,27.77,65.59,66052.39,0.25,Rain,"Friday, March 1  to  Monday, March 11",fluxtower3
+Feb,2024,2024-02-08,2024-02-29,13.52,67.72,0.22,0.25,Rain,"Thursday, February 8  to  Thursday, February 29",fluxtower3
+Jan,2024,2024-01-11,2024-01-26,-3.58,39.76,0.32,0.17,Rain,"Thursday, January 11  to  Friday, January 26",fluxtower3
+Dec,2023,2023-12-01,2023-12-13,-40.22,57.35,0.35,0.24,Rain,"Friday, December 1  to  Wednesday, December 13",fluxtower3
+Nov,2023,2023-11-01,2023-11-30,15.28,67.25,0.12,0.11,Rain,"Wednesday, November 1  to  Thursday, November 30",fluxtower3
+Oct,2023,2023-10-01,2023-10-31,25.11,85.88,1.39,0.04,Rain,"Sunday, October 1  to  Tuesday, October 31",fluxtower3
+Sep,2023,2023-09-01,2023-09-30,40.98,87.41,0.45,0.11,Rain,"Friday, September 1  to  Saturday, September 30",fluxtower3
+Aug,2023,2023-08-01,2023-08-31,43.97,90.07,0.94,0.17,Rain,"Tuesday, August 1  to  Thursday, August 31",fluxtower3
+Jul,2023,2023-07-26,2023-07-31,51.81,89.58,0.77,0.14,Rain,"Wednesday, July 26  to  Monday, July 31",fluxtower3
