@@ -144,7 +144,7 @@ nav-menu: true
 <!-- Add the banner grid-container here -->
 <div class="grid-container">
   <div class="grid-item">
-    <a href="https://kesondrakey.github.io/DownforMaintenance](https://kesondrakey.github.io/about_teams.html">
+    <a href="https://kesondrakey.github.io/about_teams.html">
       <img src="images/flux_tower.jpg" alt="fluxtower">
       <div class="text-overlay">Meet the Teams &#8594;</div> <!-- Added arrow here -->
     </a>
