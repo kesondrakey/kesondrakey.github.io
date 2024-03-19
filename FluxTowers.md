@@ -183,7 +183,7 @@ nav-menu: true
                 <h1><u>Frequently Asked Questions:</u></h1>
                 <h3><b>What’s the tower in my field doing? </b></h3>
                 <section>
-                <p>
+                <p style="text-align: left;">
         Known as Eddy Covariance Systems within the industry, these flux towers contain a set of sensitive instruments that are measuring and analyzing samples of air for its components. The data collected gives us information about the carbon dioxide, water vapor, soil moisture, soil temperature, precipitation, and energy that characterize the crop site across specific moments in time. This is meteorology on a micro scale.  
         
         When these measurements are pieced together, we can observe how gases and energy are exchanged between soil, plants, and the atmosphere over time (across a singular day or season, for example). This is known as flux. For these specific towers, we are looking at differences between fields with cover crops, and those without, so we can learn how they change local atmospheric dynaymis, such as whether or not cover crops take in more carbon dioxide from the air and into the soil.
@@ -191,7 +191,7 @@ nav-menu: true
                 </section>
 
                 <h3><b>Where can I access the data from my tower? </b></h3>
-                <p>
+                <p style="text-align: left;">
                 You can access non-quality filtered data through this website! We keep this information up to date on a daily basis. 
                 For more high quality data -  filtered and processed data will eventually be submitted to free data repository networks liked Ameriflux and Fluxnet.
                 </p>
