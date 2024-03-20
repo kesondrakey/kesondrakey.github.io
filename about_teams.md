@@ -55,8 +55,6 @@ nav-menu: true
 				<p>The Biomet Lab, led by Kim Novick at the O'Neill School of Public and Environmental Affairs, stands at the nexus of biometeorology, plant physiology, and hydrology. The lab is a thriving center for interdisciplinary exploration, keen on demystifying the reciprocal impacts between climate variability and ecosystem functions. Novick’s targeted research particularly delves into the Eastern United States, probing the interactions between climate dynamics and land cover changes in its agriculturally rich ecosystems, with an acute emphasis on understanding the ramifications of drought.</p>
 
 <p>A pivotal element of Novick's work, and that of her colleagues within this project, revolves around  <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.16156">nature-based climate solutions</a> to climate change, a crucial aspect highlighted in their collective research. The basis of their collaborative efforts are encapsulated in showcasing their shared dedication to advancing the understanding and implementation of natural climate solutions.</p>
-
-<p>solutions to climate change, a crucial aspect highlighted in their collective research. The basis of their collaborative efforts are encapsulated in showcasing their shared dedication to advancing the understanding and implementation of natural climate solutions.</p>
 				<ul class="actions">
 					<li><a href="https://scholar.google.com/citations?user=K5tffpEAAAAJ&hl=en" class="button">Learn more</a></li>
 				</ul>
