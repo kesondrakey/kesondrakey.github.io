@@ -144,7 +144,7 @@ nav-menu: true
 <!-- Add the banner grid-container here -->
 <div class="grid-container">
   <div class="grid-item">
-    <a href="https://kesondrakey.github.io/DownforMaintenance">
+    <a href="https://kesondrakey.github.io/about_teams.html">
       <img src="images/flux_tower.jpg" alt="fluxtower">
       <div class="text-overlay">Meet the Teams &#8594;</div> <!-- Added arrow here -->
     </a>
@@ -164,7 +164,7 @@ nav-menu: true
             <section id="flux-tower">
                 <h1>The Significance of Flux Towers</h1>
                 <p>
-                Flux towers, also known as Eddy Covariance systems, are like high-tech weather stations, but with a special focus. Imagine them as detectives that can capture tiny bits of air, known as eddys, and analyze what's in them. These towers stand in places like fields, forests, or wetlands and help scientists understand how much carbon dioxide and water vapor is moving in and out of an area at any given time. They're equipped with advanced scientific sensors that measure all sorts of variables (carbon dioxide, water vapor, soil moisture/temperature, precipitation, and energy), giving us critical information about the health of our planet
+                Flux towers, also known as Eddy Covariance systems, are like high-tech weather stations, but with a special focus. They can capture tiny bits of circulating air, known as eddys, and analyze how much carbon dioxide, water vapor, and energy is within them at rate of ten times a second. These towers stand in places like fields, forests, or wetlands and help scientists understand how much carbon dioxide and water vapor is moving in and out of an area at any given time. They're equipped with advanced scientific sensors that measure all sorts of variables (carbon dioxide, water vapor, soil moisture/temperature, precipitation, and energy), giving us critical information regarding the current state of the environment.
                 </p>
                 <p>
                     By analyzing the tiniest of changes in the air, flux towers give us a snapshot of how gases and energy move in and out of an ecosystem. With long time series, we can detect important changes in these systems. 
@@ -180,10 +180,20 @@ nav-menu: true
     <a href="https://www.neonscience.org/impact/observatory-blog/ameriflux-and-neon-program-join-forces-eddy-covariance-data" target="_blank" rel="noopener noreferrer">Sourced from NEON</a>
                     </p>
 
+                <h1><u>Frequently Asked Questions:</u></h1>
+                <h3><b>What’s the tower in my field doing? </b></h3>
+                <section>
+                <p style="text-align: left;">
+        Known as Eddy Covariance Systems within the industry, these flux towers contain a set of sensitive instruments that are measuring and analyzing samples of air for its components. The data collected gives us information about the carbon dioxide, water vapor, soil moisture, soil temperature, precipitation, and energy that characterize the crop site across specific moments in time. This is meteorology on a micro scale.  
+        
+        When these measurements are pieced together, we can observe how gases and energy are exchanged between soil, plants, and the atmosphere over time (across a singular day or season, for example). This is known as flux. For these specific towers, we are looking at differences between fields with cover crops, and those without, so we can learn how they change local atmospheric dynaymis, such as whether or not cover crops take in more carbon dioxide from the air and into the soil.
+                </p>
+                </section>
 
-
-          <p>
-                  <i>  Data sourced from this project will later be submitted to Ameriflux and Fluxnet </i>
+                <h3><b>Where can I access the data from my tower? </b></h3>
+                <p style="text-align: left;">
+                You can access non-quality filtered data through this website! We keep this information up to date on a daily basis. 
+                For more high quality data -  filtered and processed data will eventually be submitted to free data repository networks liked Ameriflux and Fluxnet.
                 </p>
 
 
