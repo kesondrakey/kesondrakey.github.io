@@ -227,11 +227,6 @@ iframe + i {
     <strong>Note:</strong> This tower is located on a farm that uses cover crops! 🍃
 </div>
 
-<div class="summary-box">
-    <!-- Updated background color -->
-    <strong>Note:</strong> This page is best viewed on a desktop format
-</div>
-
 <!-- Add the banner grid-container here -->
 <div class="grid-container">
   <div class="grid-item">
@@ -242,6 +237,17 @@ iframe + i {
   </div>
 </div>
 <!-- Your existing HTML content starts here -->
+<!-- Your existing HTML content starts here -->
+<h2 class="summary-heading">Summary</h2>
+<div class="summary-box">
+    <!-- Updated background color -->
+    <strong>Flux Tower 2:</strong> This tower is situated on an Indiana farm focused on the cultivation of corn and soy. Unlike its companion site (Tower 1), this site does employs interim cover crops, allowing for a unique insight into the environmental impact and dynamics of traditional cash crop farming
+</div>
+
+<div class="summary-box">
+    <!-- Updated background color -->
+    <strong>Note:</strong> This page is best viewed on a desktop format
+</div>
 
 
 <i> </i>
