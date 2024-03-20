@@ -30,7 +30,7 @@ nav-menu: true
 	</div>
 </section>
 
-
+ 
 
 <!-- Novick Lab -->
 <section id="two" class="spotlights">
