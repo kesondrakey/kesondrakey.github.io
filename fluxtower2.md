@@ -219,6 +219,17 @@ iframe + i {
         margin: 0;
     padding: 0;
 }
+            /* Adjust the margin of the summary heading */
+    .summary-heading {
+        margin-bottom: 10px; /* Adjust this value as needed to reduce/increase space */
+    }
+
+    .summary-box {
+        background-color: #343A54;
+        padding: 5px;
+        color: white;
+        margin-top: 10px; /* Adjust this value as needed to reduce/increase space */
+    }
 
 
 </style>
@@ -237,6 +248,7 @@ iframe + i {
   </div>
 </div>
 <!-- Your existing HTML content starts here -->
+
 <!-- Your existing HTML content starts here -->
 <h2 class="summary-heading">Summary</h2>
 <div class="summary-box">
