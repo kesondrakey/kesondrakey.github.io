@@ -1,5 +1,6 @@
 DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Tower
-2024-03-29,37,37,0,0.24,Sunny,fluxtower3
+2024-03-30,NA,NA,0,0.24,Sunny,fluxtower3
+2024-03-29,32,38,0.02,0.24,Rain,fluxtower3
 2024-03-28,29,50,0,0.25,Sunny,fluxtower3
 2024-03-27,31,41,0,0.25,Sunny,fluxtower3
 2024-03-26,39,60,0.34,0.26,Rain,fluxtower3
