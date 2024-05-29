@@ -1,5 +1,10 @@
 Month,year,start_DATE,end_DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Timeframe,Tower
+<<<<<<< Updated upstream
 Apr,2024,2024-04-01,2024-04-17,-21,80,3.09,0.29,Rain,"Monday, April 1  to  Wednesday, April 17",fluxtower3
+=======
+May,2024,2024-05-01,2024-05-29,14,86,4.06,0.25,Rain,"Wednesday, May 1  to  Wednesday, May 29",fluxtower3
+Apr,2024,2024-04-01,2024-04-30,-21,80,5,0.28,Rain,"Monday, April 1  to  Tuesday, April 30",fluxtower3
+>>>>>>> Stashed changes
 Mar,2024,2024-03-01,2024-03-31,-12,73,6.52,0.26,Rain,"Friday, March 1  to  Sunday, March 31",fluxtower3
 Feb,2024,2024-02-01,2024-02-29,14,68,1.11,0.25,Rain,"Thursday, February 1  to  Thursday, February 29",fluxtower3
 Jan,2024,2024-01-01,2024-01-31,-9,41,2.76,0.23,Rain,"Monday, January 1  to  Wednesday, January 31",fluxtower3
@@ -10,4 +15,4 @@ Sep,2023,2023-09-01,2023-09-30,41,87,0.45,0.11,Rain,"Friday, September 1  to  Sa
 Aug,2023,2023-08-01,2023-08-31,44,90,0.94,0.17,Rain,"Tuesday, August 1  to  Thursday, August 31",fluxtower3
 Jul,2023,2023-07-01,2023-07-31,52,90,3.53,0.01,Rain,"Saturday, July 1  to  Monday, July 31",fluxtower3
 Jun,2023,2023-06-22,2023-06-30,50,86,1,-0,Rain,"Thursday, June 22  to  Friday, June 30",fluxtower3
-NA,NA,NA,NA,-5,76,0.55,0.21,Rain,"NA, NA NA  to  NA, NA NA",fluxtower3
+NA,NA,NA,NA,-5,79,0.7,0.22,Rain,"NA, NA NA  to  NA, NA NA",fluxtower3
