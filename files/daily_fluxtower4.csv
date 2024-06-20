@@ -1,4 +1,5 @@
 DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Tower
+<<<<<<< HEAD
 2024-06-20,76,76,0,0.13,Sunny,fluxtower4
 2024-06-19,75,90,0,0.13,Sunny,fluxtower4
 2024-06-18,77,89,0,0.13,Sunny,fluxtower4
@@ -24,6 +25,15 @@ DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Tower
 2024-05-29,54,66,0.04,0.2,Rain,fluxtower4
 2024-05-28,53,69,0.31,0.2,Rain,fluxtower4
 2024-05-27,57,69,1,0.2,Rain,fluxtower4
+=======
+<<<<<<< Updated upstream
+2024-04-17,65,65,0,0.2,Sunny,fluxtower4
+2024-04-16,52,79,0.04,0.2,Rain,fluxtower4
+=======
+2024-05-29,55,55,0,0.2,Sunny,fluxtower4
+2024-05-28,53,69,0.19,0.2,Rain,fluxtower4
+2024-05-27,57,69,0.8,0.2,Rain,fluxtower4
+>>>>>>> cf56751b679212cbd3566c0ef943e71a66235ba4
 2024-05-26,53,73,0.51,0.16,Rain,fluxtower4
 2024-05-25,57,75,0,0.14,Sunny,fluxtower4
 2024-05-24,59,82,0.09,0.14,Rain,fluxtower4
@@ -65,6 +75,10 @@ DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Tower
 2024-04-18,46,64,0.22,0.2,Rain,fluxtower4
 2024-04-17,56,70,0.12,0.2,Rain,fluxtower4
 2024-04-16,52,79,0.05,0.2,Rain,fluxtower4
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+>>>>>>> cf56751b679212cbd3566c0ef943e71a66235ba4
 2024-04-15,52,73,0,0.21,Sunny,fluxtower4
 2024-04-14,57,79,0,0.22,Sunny,fluxtower4
 2024-04-13,41,64,0,0.24,Sunny,fluxtower4
