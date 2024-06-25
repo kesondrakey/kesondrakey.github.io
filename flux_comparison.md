@@ -254,18 +254,12 @@ iframe + i {
 <div class="summary-box">
     <!-- Updated background color -->
     <strong>Flux Tower 1; companion site with flux tower 2</strong> 
-</div>
-<div class="summary-box">
     <!-- Updated background color -->
     <strong>Flux Tower 2: Cover Crop site 🍃; companion site with flux tower 1</strong> 
-</div>
-<div class="summary-box">
     <!-- Updated background color -->
     <strong>Flux Tower 3; companion site with flux tower 4</strong> 
-</div>
-<div class="summary-box">
     <!-- Updated background color -->
-    <strong>Flux Tower 4: Cover Crop site 🍃; companion site with flux tower 3</strong> e
+    <strong>Flux Tower 4: Cover Crop site 🍃; companion site with flux tower 3</strong> 
 </div>
 <div class="summary-box">
     <!-- Updated background color -->
@@ -276,11 +270,6 @@ iframe + i {
 
 
 
-
-
-
-
-    
 <b>Descriptive Statistics</b>
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/combined_stats_all_towers.html"></iframe>
       <i>Units: Air Temperature (average, °C); Soil Water Content (averaged volumetric water fraction (m^3/m^3)) ... </i>
