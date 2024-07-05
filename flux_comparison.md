@@ -275,9 +275,8 @@ iframe + i {
 
 <!-- Embed the image plot -->
 <div class="plot-container">
-    <img src="https://indiana-my.sharepoint.com/:i:/r/personal/keyke_iu_edu/Documents/Github_Plots/T1_T2_Fc_Plot.png?csf=1&web=1&e=8qwPRy" alt="Midday Carbon Flux Comparison">
+    <img src="[https://indiana-my.sharepoint.com/:i:/r/personal/keyke_iu_edu/Documents/Github_Plots/T1_T2_Fc_Plot.png?csf=1&web=1&e=8qwPRy]" alt="Midday Carbon Flux Comparison">
 </div>
-
 
 <h4>Each variable is interactive - <i>just click the variable name and see!</i></h4>
 <div class="plot-container">
