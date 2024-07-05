@@ -269,30 +269,17 @@ iframe + i {
 <i> </i>
 
 
+        
+<h2>Flux Towers 1 and 2🍃 Comparison</h2>
+<h4>This plot is showing the midday carbon flux (Fc) between sites Fc</h4>
 
-<b>Descriptive Statistics</b>
-<iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/combined_stats_all_towers.html"></iframe>
-<i>Units: Air Temperature (average, °C); Soil Water Content (averaged volumetric water fraction (m^3/m^3)) ... </i>
-<div style="background-color: #343A54; padding: 10px; color: white;">
-    <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+<!-- Embed the image plot -->
+<div class="plot-container">
+    <img src="https://indiana-my.sharepoint.com/:i:/r/personal/keyke_iu_edu/Documents/Github_Plots/T1_T2_Fc_Plot.png?csf=1&web=1&e=8qwPRy" alt="Midday Carbon Flux Comparison">
 </div>
 
 
-
-
-
-
-
-    
-    
-
-
-
-
-
-        
-<h2>Flux Towers 1 and 2🍃 Comparison</h2>
-<h4>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - <i>just click the variable name and see!</i></h4>
+<h4>Each variable is interactive - <i>just click the variable name and see!</i></h4>
 <div class="plot-container">
   <div class="html-object">
     <!-- Here's where you add the iframe to embed the Plotly graph -->
@@ -324,7 +311,12 @@ iframe + i {
 
 
 
-
+<b>Descriptive Statistics</b>
+<iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/combined_stats_all_towers.html"></iframe>
+<i>Units: Air Temperature (average, °C); Soil Water Content (averaged volumetric water fraction (m^3/m^3)) ... </i>
+<div style="background-color: #343A54; padding: 10px; color: white;">
+    <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+</div>
 
 
 
