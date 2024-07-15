@@ -587,16 +587,16 @@ document.addEventListener("DOMContentLoaded", function() {
             const formattedRecentDate = recentDate.toLocaleDateString('en-US', options);
             document.getElementById('isco-tile').textContent = `Recent ISCO trigger: ${formattedRecentDate} with ${recentCount} count${recentCount > 1 ? 's' : ''}.`;
           } else {
-            document.getElementById('isco-tile').textContent = "Recent ISCO trigger: No recent data.";
+            document.getElementById('isco-tile').textContent = "Recent ISCO trigger: No recent data";
           }
         } else {
           console.error('Script tag with JSON data not found.');
-          document.getElementById('isco-tile').textContent = "Recent ISCO trigger: No recent data.";
+          document.getElementById('isco-tile').textContent = "Recent ISCO trigger: No recent data";
         }
       })
       .catch(error => {
         console.error('Error fetching the HTML:', error);
-        document.getElementById('isco-tile').textContent = "Recent ISCO trigger: Error loading data.";
+        document.getElementById('isco-tile').textContent = "Recent ISCO trigger: Error loading data";
       });
 });
 
