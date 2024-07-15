@@ -596,7 +596,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 
                 if (recentDate) {
                   const formattedRecentDate = recentDate.toLocaleDateString('en-US', options);
-                  document.getElementById('isco-tile').textContent = `Recent ISCO trigger: ${formattedRecentDate} with ${recentCount} count${recentCount > 1 ? 's' : ''}.`;
+                  document.getElementById('isco-tile').textContent = `Recent ISCO trigger: ${formattedRecentDate} with ${recentCount} count${recentCount > 1 ? 's' : ''}`;
                 } else {
                   document.getElementById('isco-tile').textContent = "Recent ISCO trigger: No recent data";
                 }
