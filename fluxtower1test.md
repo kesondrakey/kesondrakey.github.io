@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Flux Tower 2
-description: Flux Tower 2
+title: Flux Tower 1
+description: Flux Tower 1
 nav-menu: true 
 ---
 
@@ -295,7 +295,7 @@ body {
 <!-- Your existing HTML content starts here -->
 <h2 class="summary-heading">Summary</h2>
 <div class="summary-box">
-    <strong>Flux Tower 2:</strong> This tower is situated on an Indiana farm focused on the cultivation of corn and soy. Unlike its companion site (Tower 1), this site employs interim cover crops, allowing for a unique insight into the environmental impact and dynamics of cover crop farming.
+    <strong>Flux Tower 1:</strong> This tower is situated on an Indiana farm focused on the cultivation of corn and soy using conventional farming methods
 </div>
 <div class="summary-box">
     <strong>Note:</strong> This page is best viewed on a desktop format.
@@ -356,7 +356,7 @@ body {
     <strong>Note:</strong> This is a general location for Western Indiana for comparison.
 </div>
 
-<iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar2.html"></iframe>
+<iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar1.html"></iframe>
 <div style="background-color: #343A54; padding: 10px; color: white;">
     <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
 </div>
@@ -374,7 +374,7 @@ body {
 <!-- Tables -->
 <div id="daily-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <b>Daily Data Table:</b>
-    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower2.html"></iframe>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
     <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m³/m³))</i>
     <div style="background-color: #343A54; padding: 10px; color: white;">
       <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
@@ -383,7 +383,7 @@ body {
 
 <div id="weekly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <b>Weekly Data Table:</b>
-    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower2.html"></iframe>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower1.html"></iframe>
     <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m³/m³))</i>
     <div style="background-color: #343A54; padding: 10px; color: white;">
       <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
@@ -392,7 +392,7 @@ body {
 </div>
 <div id="monthly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <b>Monthly Data Table:</b>
-    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower2.html"></iframe>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower1.html"></iframe>
     <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m³/m³))</i>
     <div style="background-color: #343A54; padding: 10px; color: white;">
       <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
@@ -406,7 +406,7 @@ body {
 <div class="plot-container">
   <div class="html-object">
     <!-- Here's where you add the iframe to embed the Plotly graph -->
-    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower2.html"></iframe>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower1.html"></iframe>
     <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m³/m³))</i>
     <div style="background-color: #343A54; padding: 10px; color: white;">
       <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
@@ -422,12 +422,12 @@ body {
     <div class="container">
         <h5>Flux towers take a lot of different kinds of data. Just click your variable of interest to see the pattern across the entire period of data collection!</h5>
         <div class="html-object">
-            <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower2.html"></iframe>
+            <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
             <div style="background-color: #343A54; padding: 10px; color: white;">
                 <strong>Please note:</strong> In order to provide data near real-time, the data provided here is in a raw format and has not undergone any quality control.
             </div>
             <!-- View in full View Button -->
-            <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower2.html" class="full-view-button">Click for full view</a>
+            <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower1.html" class="full-view-button">Click for full view</a>
         </div>
     </div>
 </div>
