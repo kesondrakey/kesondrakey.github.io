@@ -312,7 +312,7 @@ iframe + i {
 <i> </i>
 
 <!-- forecast -->
-<h3>Forecast for general Western Indiana location</h3>
+<h3>Forecast for general location within Western Indiana</h3>
 
  <div class="tomorrow"
          data-location-id="125460"
@@ -333,7 +333,7 @@ iframe + i {
 
 <div class="summary-box">
     <!-- Updated background color -->
-    <strong>Note:</strong> This is a general location for Western Indiana for comparison
+    <strong>Note:</strong> This is based on a general location for Western Indiana for comparison
 </div>
 <!-- end forecast -->
 <i> </i>
