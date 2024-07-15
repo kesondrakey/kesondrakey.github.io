@@ -263,8 +263,12 @@ iframe + i {
 <i> </i>
 
 
+
+  
+        
+
  <div class="tomorrow"
-         data-location-id="128520"
+         data-location-id="125460"
          data-language="EN"
          data-unit-system="IMPERIAL"
          data-skin="dark"
@@ -284,7 +288,7 @@ iframe + i {
 
 <div class="summary-box">
     <!-- Updated background color -->
-    <strong>Note:</strong> This is a general location for Northern Indiana for comparison.
+    <strong>Note:</strong> This is a general location for Western Indiana for comparison
 </div>
 
 
@@ -462,5 +466,3 @@ for (let i = 0; i < coll.length; i++) {
   
 </script>
 
-</body>
-</html>
