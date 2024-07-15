@@ -287,7 +287,7 @@ body {
   </div>
 </div>
 
-<h3>Forecast for general Western Indiana location</h3>
+<h3>Forecast</h3>
 <div class="tomorrow"
      data-location-id="125460"
      data-language="EN"
@@ -307,7 +307,7 @@ body {
 <i></i>
 
 <div class="summary-box">
-    <strong>Note:</strong> This is a general location for Western Indiana for comparison.
+    <strong>Note:</strong> This is based on a general western Indiana location 
 </div>
 
 <!-- Your existing HTML content starts here -->
