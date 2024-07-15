@@ -551,7 +551,6 @@ document.addEventListener("DOMContentLoaded", function() {
             console.error('Error fetching the HTML:', error);
             document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate + " (Error loading data)";
         });
-    
 
     // Fetch the ISCO counts data
     fetch('longterm_plots/longterm_plotly_fluxtower1.html')
@@ -599,7 +598,6 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('isco-tile').textContent = "Recent ISCO trigger: Error loading data";
       });
 });
-
 
 
 
