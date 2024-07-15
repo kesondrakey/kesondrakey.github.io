@@ -234,12 +234,6 @@ iframe + i {
 
 
     /* Weather tiles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #121821;
-    margin: 0;
-    padding: 20px;
-}
 
 .tile-container {
     display: flex;
@@ -249,7 +243,7 @@ body {
 }
 
 .tile {
-    background-color: #222e40;
+    background-color: #06012b;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
