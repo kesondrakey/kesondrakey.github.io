@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Flux Tower 1
-description: Flux Tower 1
+title: Flux Tower 2
+description: Flux Tower 2
 nav-menu: true 
 ---
 
@@ -262,21 +262,12 @@ body {
     gap: 5px;
 }
 
-/* Full-width ISCO tile */
-.full-width-tile {
-    background-color: #343A54;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 20px;
-}
+
 </style>
+
+<div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
+    <strong>Note:</strong> This tower is located on a farm that uses cover crops! 🍃
+</div>
 
 <!-- Add the banner grid-container here -->
 <div class="grid-container">
@@ -314,7 +305,7 @@ body {
 <!-- Your existing HTML content starts here -->
 <h2 class="summary-heading">Summary</h2>
 <div class="summary-box">
-    <strong>Flux Tower 1:</strong> This tower is situated on an Indiana farm focused on the cultivation of corn and soy using conventional farming methods
+    <strong>Flux Tower 2:</strong> This tower is situated on an Indiana farm focused on the cultivation of corn and soy using cover crops
 </div>
 <div class="summary-box">
     <strong>Note:</strong> This page is best viewed on a desktop format.
@@ -349,11 +340,8 @@ body {
 </div>
 <!-- End tiles for yesterday's information -->
 
-<!-- ISCO Trigger Tile -->
-<div class="full-width-tile" id="isco-tile">
-    💧Recent ISCO trigger: Loading...
-</div>
 <i></i>
+
 
 <iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar1.html"></iframe>
 <div style="background-color: #343A54; padding: 10px; color: white;">
@@ -373,7 +361,7 @@ body {
 <!-- Tables -->
 <div id="daily-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <b>Daily Data Table:</b>
-    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower2.html"></iframe>
     <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m³/m³))</i>
     <div style="background-color: #343A54; padding: 10px; color: white;">
       <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
@@ -382,7 +370,7 @@ body {
 
 <div id="weekly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <b>Weekly Data Table:</b>
-    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower1.html"></iframe>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower2.html"></iframe>
     <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m³/m³))</i>
     <div style="background-color: #343A54; padding: 10px; color: white;">
       <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
@@ -391,7 +379,7 @@ body {
 </div>
 <div id="monthly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <b>Monthly Data Table:</b>
-    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower1.html"></iframe>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower2.html"></iframe>
     <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m³/m³))</i>
     <div style="background-color: #343A54; padding: 10px; color: white;">
       <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
@@ -405,7 +393,7 @@ body {
 <div class="plot-container">
   <div class="html-object">
     <!-- Here's where you add the iframe to embed the Plotly graph -->
-    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower1.html"></iframe>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower2.html"></iframe>
     <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m³/m³))</i>
     <div style="background-color: #343A54; padding: 10px; color: white;">
       <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
@@ -421,12 +409,12 @@ body {
     <div class="container">
         <h5>Flux towers take a lot of different kinds of data. Just click your variable of interest to see the pattern across the entire period of data collection!</h5>
         <div class="html-object">
-            <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
+            <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower2.html"></iframe>
             <div style="background-color: #343A54; padding: 10px; color: white;">
                 <strong>Please note:</strong> In order to provide data near real-time, the data provided here is in a raw format and has not undergone any quality control.
             </div>
             <!-- View in full View Button -->
-            <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower1.html" class="full-view-button">Click for full view</a>
+            <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower2.html" class="full-view-button">Click for full view</a>
         </div>
     </div>
 </div>
@@ -493,7 +481,7 @@ for (let i = 0; i < coll.length; i++) {
 // for tiles at top of page
 document.addEventListener("DOMContentLoaded", function() {
     // Fetch the HTML content (assuming the HTML file is accessible via a URL)
-    fetch('longterm_plots/datatable_daily_fluxtower1.html')
+    fetch('longterm_plots/datatable_daily_fluxtower2.html')
         .then(response => response.text())
         .then(htmlContent => {
             // Parse the HTML content
@@ -551,75 +539,4 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate + " (Error loading data)";
         });
 
-  // Fetch the ISCO counts data
- fetch('longterm_plots/longterm_plotly_fluxtower1.html')
-      .then(response => response.text())
-      .then(htmlContent => {
-        // Parse the HTML content
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(htmlContent, 'text/html');
-        
-        // Find the script tag that contains the JSON data
-        const scriptTags = doc.querySelectorAll('script[type="application/json"][data-for]');
-        
-        let foundISCOData = false;
-        const options = { year: 'numeric', month: 'long', day: 'numeric' };
-        
-        scriptTags.forEach(scriptTag => {
-          const dataJson = JSON.parse(scriptTag.textContent);
-          
-          // Check if the script contains ISCO data
-          if (dataJson.x && dataJson.x.data) {
-            dataJson.x.data.forEach(item => {
-              if (item.name === "ISCO (counts)") {
-                foundISCOData = true;
-                
-                // Extract the dates and ISCO counts from the matched data
-                const dates = item.x.map(dateStr => new Date(dateStr));
-                const counts = item.y;
-                
-                console.log('ISCO Dates:', dates);
-                console.log('ISCO Counts:', counts);
-                
-                // Find the most recent date with ISCO (counts) not equal to zero and accumulate counts for that date
-                let recentDate = null;
-                let totalRecentCount = 0;
-                let foundRecentDate = false;
-                
-                for (let i = counts.length - 1; i >= 0; i--) {
-                  if (counts[i] !== 0) {
-                    const currentDate = dates[i];
-                    if (!foundRecentDate) {
-                      recentDate = currentDate;
-                      foundRecentDate = true;
-                    }
-                    if (currentDate.toDateString() === recentDate.toDateString()) {
-                      totalRecentCount += counts[i];
-                    } else {
-                      break;
-                    }
-                  }
-                }
-                
-                if (recentDate) {
-                  const formattedRecentDate = recentDate.toLocaleDateString('en-US', options);
-                  document.getElementById('isco-tile').textContent = `💧Recent ISCO trigger: ${formattedRecentDate} with ${totalRecentCount} count${totalRecentCount > 1 ? 's' : ''}`;
-                } else {
-                  document.getElementById('isco-tile').textContent = "💧Recent ISCO trigger: No recent data";
-                }
-              }
-            });
-          }
-        });
-        
-        if (!foundISCOData) {
-          console.error('ISCO data not found in any script tags.');
-          document.getElementById('isco-tile').textContent = "💧Recent ISCO trigger: No recent data";
-        }
-      })
-      .catch(error => {
-        console.error('Error fetching the HTML:', error);
-        document.getElementById('isco-tile').textContent = "💧Recent ISCO trigger: Error loading data";
-      });
-});
 </script>
