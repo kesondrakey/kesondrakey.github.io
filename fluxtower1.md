@@ -307,7 +307,7 @@ body {
 </div>
 
 <div class="summary-box">
-    <strong>Note:</strong> This is based on a general western Indiana location 
+     <strong>Note:</strong> This is based on a general location near western Indiana 
 </div>
 <i></i>
 
