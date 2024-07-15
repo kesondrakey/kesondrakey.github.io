@@ -351,7 +351,7 @@ body {
 
 <!-- ISCO Trigger Tile -->
 <div class="full-width-tile" id="isco-tile">
-    💧Recent ISCO trigger: Loading...
+    💧Most Recent ISCO trigger: Loading...
 </div>
 <i></i>
 
@@ -596,7 +596,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 
                 if (recentDate) {
                   const formattedRecentDate = recentDate.toLocaleDateString('en-US', options);
-                  document.getElementById('isco-tile').textContent = `💧Recent ISCO trigger: ${formattedRecentDate}`;
+                  document.getElementById('isco-tile').textContent = `💧Most Recent ISCO trigger: ${formattedRecentDate}`;
                 } else {
                   document.getElementById('isco-tile').textContent = "💧Recent ISCO trigger: No recent data";
                 }
