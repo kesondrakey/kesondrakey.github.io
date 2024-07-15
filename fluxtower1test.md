@@ -553,7 +553,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
 
     // Fetch the ISCO counts data
-    fetch('longterm_plots/longterm_daily_plotly_fluxtower1.html')
+    fetch('longterm_plots/longterm_plotly_fluxtower1.html')
       .then(response => response.text())
       .then(htmlContent => {
         // Parse the HTML content
