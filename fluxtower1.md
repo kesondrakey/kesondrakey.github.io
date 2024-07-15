@@ -264,7 +264,8 @@ iframe + i {
 
 
 
-<iframe width="1400" height="300" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=in&metricTemp=°F&metricWind=mph&zoom=11&overlay=wind&product=ecmwf&level=surface&lat=41.192&lon=-85.614&detailLat=41.238&detailLon=-85.853&detail=true&message=true" frameborder="0"></iframe>
+
+<div id="ww_1be03a6627624" v='1.3' loc='id' a='{"t":"horizontal","lang":"en","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>More forecasts: <a href="https://oneweather.org/fr/paris/30_jours/" id="ww_1be03a6627624_u" target="_blank">Météo paris 30 jours</a></div><script async src="https://app2.weatherwidget.org/js/?id=ww_1be03a6627624"></script>
 
 <div class="summary-box">
     <!-- Updated background color -->
