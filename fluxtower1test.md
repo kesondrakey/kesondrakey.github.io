@@ -560,36 +560,48 @@ document.addEventListener("DOMContentLoaded", function() {
         const parser = new DOMParser();
         const doc = parser.parseFromString(htmlContent, 'text/html');
         
-        // Find the data section that contains the ISCO (counts) information
-        const textData = doc.body.textContent;
-        const iscoDataRegex = /{"x":\[([^\]]+)\],"y":\[([^\]]+)\],"type":"scatter","mode":"lines","name":"ISCO \(counts\)"/;
-        const match = textData.match(iscoDataRegex);
+        // Find the script tag that contains the JSON data
+        const scriptTags = doc.querySelectorAll('script[type="application/json"][data-for]');
         
-        if (match) {
-          // Extract the dates and ISCO counts from the matched data
-          const dates = JSON.parse(`[${match[1]}]`);
-          const counts = JSON.parse(`[${match[2]}]`);
+        let foundISCOData = false;
+        
+        scriptTags.forEach(scriptTag => {
+          const dataJson = JSON.parse(scriptTag.textContent);
           
-          // Find the most recent date with ISCO (counts) not equal to zero
-          let recentDate = null;
-          let recentCount = 0;
-          
-          for (let i = counts.length - 1; i >= 0; i--) {
-            if (counts[i] !== 0) {
-              recentDate = new Date(dates[i]);
-              recentCount = counts[i];
-              break;
+          // Check if the script contains ISCO data
+          if (dataJson.x && dataJson.x.data && dataJson.x.data.some(item => item.name === "ISCO (counts)")) {
+            foundISCOData = true;
+            
+            // Extract the data from the JSON
+            const data = dataJson.x.data.find(item => item.name === "ISCO (counts)");
+            
+            // Extract the dates and ISCO counts from the matched data
+            const dates = data.x.map(dateStr => new Date(dateStr));
+            const counts = data.y;
+            
+            // Find the most recent date with ISCO (counts) not equal to zero
+            let recentDate = null;
+            let recentCount = 0;
+            
+            for (let i = counts.length - 1; i >= 0; i--) {
+              if (counts[i] !== 0) {
+                recentDate = dates[i];
+                recentCount = counts[i];
+                break;
+              }
+            }
+            
+            if (recentDate) {
+              const formattedRecentDate = recentDate.toLocaleDateString('en-US', options);
+              document.getElementById('isco-tile').textContent = `Recent ISCO trigger: ${formattedRecentDate} with ${recentCount} count${recentCount > 1 ? 's' : ''}.`;
+            } else {
+              document.getElementById('isco-tile').textContent = "Recent ISCO trigger: No recent data";
             }
           }
-          
-          if (recentDate) {
-            const formattedRecentDate = recentDate.toLocaleDateString('en-US', options);
-            document.getElementById('isco-tile').textContent = `Recent ISCO trigger: ${formattedRecentDate} with ${recentCount} count${recentCount > 1 ? 's' : ''}.`;
-          } else {
-            document.getElementById('isco-tile').textContent = "Recent ISCO trigger: No recent data";
-          }
-        } else {
-          console.error('ISCO data not found in the HTML.');
+        });
+        
+        if (!foundISCOData) {
+          console.error('ISCO data not found in any script tags.');
           document.getElementById('isco-tile').textContent = "Recent ISCO trigger: No recent data";
         }
       })
