@@ -311,38 +311,8 @@ iframe + i {
 
 <i> </i>
 
-<!-- title here -->
-<h>Yesterday (add date data is pulling from here!)</h>
-
-
-<!-- Tiles for yesterday's information -->
-<div class="tile-container">
-    <div class="tile">
-        <div class="title">Min Temp</div>
-        <div class="icon">🌡️</div>
-        <div class="value" id="min-temp">Loading... °F</div>
-    </div>
-    <div class="tile">
-        <div class="title">Max Temp</div>
-        <div class="icon">🌡️</div>
-        <div class="value" id="max-temp">Loading... °F</div>
-    </div>
-    <div class="tile">
-        <div class="title">Precipitation</div>
-        <div class="icon">☔</div>
-        <div class="value" id="total-precipitation">Loading... inches</div>
-    </div>
-    <div class="tile">
-        <div class="title">Soil Moisture</div>
-        <div class="icon">🌱</div>
-        <div class="value" id="avg-soil-moisture">Loading... m³/m³</div>
-    </div>
-</div>
-<!-- End tiles for yesterday's information -->
-<i> </i>
-
 <!-- forecast -->
-<h>Forecast for general Western Indiana location</h>
+<h3>Forecast for general Western Indiana location</h3>
 
  <div class="tomorrow"
          data-location-id="125460"
@@ -366,6 +336,36 @@ iframe + i {
     <strong>Note:</strong> This is a general location for Western Indiana for comparison
 </div>
 <!-- end forecast -->
+<i> </i>
+
+<!-- Yesterday's Date Header -->
+<h2 class="summary-heading" id="yesterday-date">Yesterday</h2>
+
+<!-- Tiles for yesterday's information -->
+<div class="tile-container">
+    <div class="tile">
+        <div class="title">Min Temp</div>
+        <div class="icon">🌡️</div>
+        <div class="value"><span id="min-temp">Loading...</span> <span class="unit">°F</span></div>
+    </div>
+    <div class="tile">
+        <div class="title">Max Temp</div>
+        <div class="icon">🌡️</div>
+        <div class="value"><span id="max-temp">Loading...</span> <span class="unit">°F</span></div>
+    </div>
+    <div class="tile">
+        <div class="title">Precipitation</div>
+        <div class="icon">☔</div>
+        <div class="value"><span id="total-precipitation">Loading...</span> <span class="unit">inches</span></div>
+    </div>
+    <div class="tile">
+        <div class="title">Soil Moisture</div>
+        <div class="icon">🌱</div>
+        <div class="value"><span id="avg-soil-moisture">Loading...</span> <span class="unit">m³/m³</span></div>
+    </div>
+</div>
+<!-- End tiles for yesterday's information -->
+
 
 
 <i> </i>
