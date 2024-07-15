@@ -282,7 +282,7 @@ iframe + i {
 
 <div class="summary-box">
     <!-- Updated background color -->
-    <strong>Note:</strong> This is a general location for Northern Indiana for comparison.
+    <strong>Note:</strong> This is a general location for Northern Indiana for comparison
 </div>
 
 
