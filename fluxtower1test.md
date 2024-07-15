@@ -1,7 +1,7 @@
 ---
-layout: post 
-description: Flux Tower 1
+layout: post
 title: Flux Tower 1
+description: Flux Tower 1
 nav-menu: true
 ---
 
@@ -15,7 +15,7 @@ button, a, iframe {
 
 /* Styling for the Toggle Technical Data button */
 .collapsible {
-   background-image: linear-gradient(to right, #121821, #222e40);
+    background-image: linear-gradient(to right, #121821, #222e40);
     cursor: pointer;
     padding: 10px 15px;
     border-radius: 4px;
@@ -92,12 +92,12 @@ button, a, iframe {
 /* Daily */
 .icon-daily { 
     background: linear-gradient(to right, #2E3192, #1BFFFF);
-        box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1),
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1),
                 inset 0px 1px 3px rgba(0, 0, 0, 0.2); /* inner shadows for selected */
 }
 .icon-daily.selected { 
     background: linear-gradient(to right, #1C1D59, #118B8B);
-        box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1),
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1),
                 inset 0px 1px 3px rgba(0, 0, 0, 0.2); /* inner shadows for selected */
 }
 
@@ -224,16 +224,15 @@ iframe + i {
 
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
 }
 .tile-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    margin-top: 20px;
 }
 .tile {
     background-color: white;
@@ -246,7 +245,6 @@ body {
     font-size: 40px;
     margin-bottom: 10px;
 }
-
 </style>
 
 <!-- Add the banner grid-container here -->
@@ -276,3 +274,222 @@ body {
     <div class="tile">
         <div class="icon">🌱</div>
         <div id="avg-soil-moisture">Avg Soil Moisture: Loading...</div>
+    </div>
+</div>
+<!-- end tiles for yesterday's information -->
+
+<!-- Your existing HTML content starts here -->
+<h2 class="summary-heading">Summary</h2>
+<div class="summary-box">
+    <!-- Updated background color -->
+    <strong>Flux Tower 1:</strong> This tower is situated on an Indiana farm focused on the cultivation of corn and soy. Unlike its companion site (Tower 2), this site does not employ interim cover crops, allowing for a unique insight into the environmental impact and dynamics of traditional cash crop farming.
+</div>
+<div class="summary-box">
+    <!-- Updated background color -->
+    <strong>Note:</strong> This page is best viewed on a desktop format.
+</div>
+
+<i> </i>
+
+<div class="tomorrow" data-location-id="125460" data-language="EN" data-unit-system="IMPERIAL" data-skin="dark" data-widget-type="upcoming" style="padding-bottom:22px;position:relative;">
+    <a href="https://www.tomorrow.io/weather-api/" rel="nofollow noopener noreferrer" target="_blank" style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
+        <img alt="Powered by the Tomorrow.io Weather API" src="https://weather-website-client.tomorrow.io/img/powered-by.svg" width="250" height="18"/>
+    </a>
+</div>
+
+<div class="summary-box">
+    <!-- Updated background color -->
+    <strong>Note:</strong> This is a general location for Western Indiana for comparison.
+</div>
+
+<iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar1.html"></iframe>
+<div style="background-color: #343A54; padding: 10px; color: white;">
+    <!-- Updated background color -->
+    <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+</div>
+<div style="margin-bottom:20px;"></div>
+
+<!-- Table Section -->
+<h3>Select your time period of interest to see the data in a table format:</h3>
+<!-- Icons/buttons -->
+<div class="icon-container">
+    <button class="icon icon-daily" onclick="showTable('daily')">Daily</button>
+    <button class="icon icon-weekly" onclick="showTable('weekly')">Weekly</button>
+    <button class="icon icon-monthly" onclick="showTable('monthly')">Monthly</button>
+</div>
+ 
+<!-- Tables -->
+<div id="daily-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
+    <b>Daily Data Table:</b>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower1.html"></iframe>
+    <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+    <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
+      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+    </div>
+</div>
+
+<div id="weekly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
+    <b>Weekly Data Table:</b>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower1.html"></iframe>
+    <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+    <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
+      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+    </div>
+    <div style="margin-bottom:20px;"></div>
+</div>
+<div id="monthly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
+    <b>Monthly Data Table:</b>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower1.html"></iframe>
+    <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+    <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
+      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+    </div>
+    <div style="margin-bottom:20px;"></div>
+</div>
+
+<!-- Daily Plot - Simple Variables -->
+<h2>Long Term Data</h2>
+<h4>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - <i>just click the variable name and see!</i></h4>
+<div class="plot-container">
+    <div class="html-object">
+        <!-- Here's where you add the iframe to embed the Plotly graph -->
+        <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower1.html"></iframe>
+        <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m^3/m^3))</i>
+        <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
+            <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+        </div>
+        <div style="margin-bottom:20px;"></div>
+    </div>
+</div>
+
+<!-- Technical Data Section -->
+<!-- More Technical Data -->
+<div class="collapsible-container">
+    <button class="collapsible">More Technical Data</button>
+    <div class="container">
+        <h5>Flux towers take a lot of different kinds of data. Just click your variable of interest to see the pattern across the entire period of data collection!</h5>
+        <div class="html-object">
+            <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower1.html"></iframe>
+            <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
+                <strong>Please note:</strong> In order to provide data near real-time, the data provided here is in a raw format and has not undergone any quality control.
+            </div>
+            <!-- View in full View Button -->
+            <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower1.html" class="full-view-button">Click for full view</a>
+        </div>
+    </div>
+</div>
+
+<script>
+function showTable(tableType) {
+    const tables = document.querySelectorAll('.table-container');
+    const selectedTable = document.getElementById(tableType + '-table');
+    const icons = document.querySelectorAll('.icon');
+    let isAlreadyVisible = (selectedTable.style.display === 'block');
+
+    // Hide all tables first
+    tables.forEach(table => {
+        table.style.display = 'none';
+    });
+
+    // Remove selected class from all icons
+    icons.forEach(icon => {
+        icon.classList.remove('selected');
+    });
+
+    // If the selected table was not already visible, show it
+    if (!isAlreadyVisible) {
+        selectedTable.style.display = 'block';
+        // Add the selected class to the clicked icon only if the table was not already visible
+        document.querySelector('.icon-' + tableType).classList.add('selected');
+    }
+}
+
+// Collapsible Functionality
+var coll = document.getElementsByClassName("collapsible");
+for (let i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        
+        // Adjust this part to target the .container inside the .collapsible-container
+        var content = this.parentNode.querySelector(".container");
+
+        if (content.style.visibility === "visible" || content.style.visibility === "") {
+            content.style.visibility = "hidden";
+            content.style.height = "0";  // this will collapse the space taken by the hidden content
+        } else {
+            content.style.visibility = "visible";
+            content.style.height = "auto";  // revert to its original height
+        }
+    });
+}
+
+// for weather
+(function(d, s, id) {
+    if (d.getElementById(id)) {
+        if (window.__TOMORROW__) {
+            window.__TOMORROW__.renderWidget();
+        }
+        return;
+    }
+    const fjs = d.getElementsByTagName(s)[0];
+    const js = d.createElement(s);
+    js.id = id;
+    js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
+    fjs.parentNode.insertBefore(js, fjs);
+})(document, 'script', 'tomorrow-sdk');
+
+// for tiles at top of page
+document.addEventListener("DOMContentLoaded", function() {
+    // Fetch the HTML content (assuming the HTML file is accessible via a URL)
+    fetch('longterm_plots/datatable_daily_fluxtower1.html')
+      .then(response => response.text())
+      .then(htmlContent => {
+        // Parse the HTML content
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(htmlContent, 'text/html');
+        
+        // Find the script tag that contains the JSON data
+        const scriptTag = doc.querySelector('script[type="application/json"][data-for]');
+        
+        if (scriptTag) {
+          // Load the JSON data
+          const dataJson = JSON.parse(scriptTag.textContent);
+          
+          // Extract the data from the JSON
+          const data = dataJson.x.data;
+          
+          // Get the dates and convert them to Date objects
+          const dates = data[0].map(dateStr => new Date(dateStr));
+          
+          // Find the index for yesterday's date
+          const yesterday = new Date();
+          yesterday.setDate(yesterday.getDate() - 1);
+          const yesterdayStr = yesterday.toISOString().split('T')[0];
+          
+          const index = data[0].indexOf(yesterdayStr);
+          if (index !== -1) {
+            // Extract data for yesterday
+            const minTemp = data[1][index];
+            const maxTemp = data[2][index];
+            const totalPrecipitation = data[3][index];
+            const avgSoilMoisture = data[4][index];
+            
+            // Update the HTML elements with the data
+            document.getElementById('min-temp').textContent = `Min Temp: ${minTemp}`;
+            document.getElementById('max-temp').textContent = `Max Temp: ${maxTemp}`;
+            document.getElementById('total-precipitation').textContent = `Total Precipitation: ${totalPrecipitation}`;
+            document.getElementById('avg-soil-moisture').textContent = `Avg Soil Moisture: ${avgSoilMoisture}`;
+          } else {
+            document.getElementById('min-temp').textContent = 'Min Temp: No data';
+            document.getElementById('max-temp').textContent = 'Max Temp: No data';
+            document.getElementById('total-precipitation').textContent = 'Total Precipitation: No data';
+            document.getElementById('avg-soil-moisture').textContent = 'Avg Soil Moisture: No data';
+          }
+        } else {
+          console.error('Script tag with JSON data not found.');
+        }
+      })
+      .catch(error => console.error('Error fetching the HTML:', error));
+});
+</script>
