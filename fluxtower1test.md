@@ -596,9 +596,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 
                 if (recentDate) {
                   const formattedRecentDate = recentDate.toLocaleDateString('en-US', options);
-                  document.getElementById('isco-tile').textContent = `Recent ISCO trigger: ${formattedRecentDate} with ${recentCount} count${recentCount > 1 ? 's' : ''}`;
+                  document.getElementById('isco-tile').textContent = `💧Recent ISCO trigger: ${formattedRecentDate} with ${recentCount} count${recentCount > 1 ? 's' : ''}`;
                 } else {
-                  document.getElementById('isco-tile').textContent = "Recent ISCO trigger: No recent data";
+                  document.getElementById('isco-tile').textContent = "💧Recent ISCO trigger: No recent data";
                 }
               }
             });
@@ -607,12 +607,12 @@ document.addEventListener("DOMContentLoaded", function() {
         
         if (!foundISCOData) {
           console.error('ISCO data not found in any script tags.');
-          document.getElementById('isco-tile').textContent = "Recent ISCO trigger: No recent data";
+          document.getElementById('isco-tile').textContent = "💧Recent ISCO trigger: No recent data";
         }
       })
       .catch(error => {
         console.error('Error fetching the HTML:', error);
-        document.getElementById('isco-tile').textContent = "Recent ISCO trigger: Error loading data";
+        document.getElementById('isco-tile').textContent = "💧Recent ISCO trigger: Error loading data";
       });
 });
 
