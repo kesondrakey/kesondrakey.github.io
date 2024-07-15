@@ -233,6 +233,47 @@ iframe + i {
     }
 
 
+    /* Weather tiles */
+
+.tile-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tile {
+    background-color: #343A54;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.tile .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.tile .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.tile .value {
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
 </style>
 
 <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
@@ -253,22 +294,8 @@ iframe + i {
 
 <!-- Your existing HTML content starts here -->
 
-
-
-
-
-<!-- Your existing HTML content starts here -->
-<h2 class="summary-heading">Summary</h2>
-<div class="summary-box">
-    <!-- Updated background color -->
-    <strong>Flux Tower 2:</strong> This tower is situated on an Indiana farm focused on the cultivation of corn and soy. Unlike its companion site (Tower 1), this site employs interim cover crops, allowing for a unique insight into the environmental impact and dynamics of cover crop farming
-</div>
-<div class="summary-box">
-    <!-- Updated background color -->
-    <strong>Note:</strong> This page is best viewed on a desktop format
-</div>
-
-<i> </i>
+<!-- forecast -->
+<h3>Forecast for a general location within western Indiana</h3>
 
  <div class="tomorrow"
          data-location-id="125460"
@@ -289,12 +316,59 @@ iframe + i {
 
 <div class="summary-box">
     <!-- Updated background color -->
-    <strong>Note:</strong> This is a general location for Western Indiana for comparison
+    <strong>Note:</strong> This is based on a general location within western Indiana for comparison
+</div>
+<!-- end forecast -->
+<i> </i>
+
+
+
+<!-- Your existing HTML content starts here -->
+<h2 class="summary-heading">Summary</h2>
+<div class="summary-box">
+    <!-- Updated background color -->
+    <strong>Flux Tower 1:</strong> This tower is situated on an Indiana farm focused on the cultivation of corn and soy using cover crops!
+</div>
+<div class="summary-box">
+    <!-- Updated background color -->
+    <strong>Note:</strong> This page is best viewed on a desktop format
 </div>
 
+<i> </i>
 
 
 
+<!-- Yesterday's Date Header -->
+<h2 class="summary-heading" id="yesterday-date">Yesterday</h2>
+
+<!-- Tiles for yesterday's information -->
+<div class="tile-container">
+    <div class="tile">
+        <div class="title">Min Temp</div>
+        <div class="icon">🌡️</div>
+        <div class="value"><span id="min-temp">Loading...</span> <span class="unit">°F</span></div>
+    </div>
+    <div class="tile">
+        <div class="title">Max Temp</div>
+        <div class="icon">🌡️</div>
+        <div class="value"><span id="max-temp">Loading...</span> <span class="unit">°F</span></div>
+    </div>
+    <div class="tile">
+        <div class="title">Precipitation</div>
+        <div class="icon">☔</div>
+        <div class="value"><span id="total-precipitation">Loading...</span> <span class="unit">inches</span></div>
+    </div>
+    <div class="tile">
+        <div class="title">Soil Moisture</div>
+        <div class="icon">🌱</div>
+        <div class="value"><span id="avg-soil-moisture">Loading...</span> <span class="unit">m³/m³</span></div>
+    </div>
+</div>
+<!-- End tiles for yesterday's information -->
+
+
+
+<i> </i>
 <iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar2.html"></iframe>
 <div style="background-color: #343A54; padding: 10px; color: white;">
     <!-- Updated background color -->
@@ -455,5 +529,70 @@ for (let i = 0; i < coll.length; i++) {
 
             fjs.parentNode.insertBefore(js, fjs);
         })(document, 'script', 'tomorrow-sdk');
+
+
+
+// for tiles at top of page
+document.addEventListener("DOMContentLoaded", function() {
+    // Fetch the HTML content (assuming the HTML file is accessible via a URL)
+    fetch('longterm_plots/datatable_daily_fluxtower2.html')
+      .then(response => response.text())
+      .then(htmlContent => {
+        // Parse the HTML content
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(htmlContent, 'text/html');
+        
+        // Find the script tag that contains the JSON data
+        const scriptTag = doc.querySelector('script[type="application/json"][data-for]');
+        
+        if (scriptTag) {
+          // Load the JSON data
+          const dataJson = JSON.parse(scriptTag.textContent);
+          
+          // Extract the data from the JSON
+          const data = dataJson.x.data;
+          
+          // Get the dates and convert them to Date objects
+          const dates = data[0].map(dateStr => new Date(dateStr));
+          
+          // Find the index for yesterday's date
+          const yesterday = new Date();
+          yesterday.setDate(yesterday.getDate() - 1);
+          const options = { year: 'numeric', month: 'long', day: 'numeric' };
+          const yesterdayStr = yesterday.toISOString().split('T')[0];
+          const formattedDate = yesterday.toLocaleDateString('en-US', options);
+          
+          const index = data[0].indexOf(yesterdayStr);
+          if (index !== -1) {
+            // Extract data for yesterday
+            const minTemp = data[1][index];
+            const maxTemp = data[2][index];
+            const totalPrecipitation = data[3][index];
+            const avgSoilMoisture = data[4][index];
+            
+            // Update the HTML elements with the data
+            document.getElementById('min-temp').textContent = minTemp;
+            document.getElementById('max-temp').textContent = maxTemp;
+            document.getElementById('total-precipitation').textContent = totalPrecipitation;
+            document.getElementById('avg-soil-moisture').textContent = avgSoilMoisture;
+            document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate;
+          } else {
+            document.getElementById('min-temp').textContent = 'No data';
+            document.getElementById('max-temp').textContent = 'No data';
+            document.getElementById('total-precipitation').textContent = 'No data';
+            document.getElementById('avg-soil-moisture').textContent = 'No data';
+            document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate + " (No data)";
+          }
+        } else {
+          console.error('Script tag with JSON data not found.');
+          document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate + " (No data)";
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching the HTML:', error);
+        document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate + " (Error loading data)";
+      });
+});
+
   
 </script>
