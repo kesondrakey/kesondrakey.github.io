@@ -243,7 +243,7 @@ iframe + i {
 }
 
 .tile {
-    background-color: #06012b;
+    background-color: #343A54;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -311,35 +311,38 @@ iframe + i {
 
 <i> </i>
 
+<!-- title here -->
+<h>Yesterday (add date data is pulling from here!)</h>
+
+
 <!-- Tiles for yesterday's information -->
 <div class="tile-container">
     <div class="tile">
         <div class="title">Min Temp</div>
         <div class="icon">🌡️</div>
-        <div class="value" id="min-temp">Loading...</div>
-        <div class="unit">°F</div>
+        <div class="value" id="min-temp">Loading... °F</div>
     </div>
     <div class="tile">
         <div class="title">Max Temp</div>
         <div class="icon">🌡️</div>
-        <div class="value" id="max-temp">Loading...</div>
-        <div class="unit">°F</div>
+        <div class="value" id="max-temp">Loading... °F</div>
     </div>
     <div class="tile">
-        <div class="title">Total Precipitation</div>
+        <div class="title">Precipitation</div>
         <div class="icon">☔</div>
-        <div class="value" id="total-precipitation">Loading...</div>
-        <div class="unit">inches</div>
+        <div class="value" id="total-precipitation">Loading... inches</div>
     </div>
     <div class="tile">
-        <div class="title">Avg Soil Moisture</div>
+        <div class="title">Soil Moisture</div>
         <div class="icon">🌱</div>
-        <div class="value" id="avg-soil-moisture">Loading...</div>
-        <div class="unit">m³/m³</div>
+        <div class="value" id="avg-soil-moisture">Loading... m³/m³</div>
     </div>
 </div>
 <!-- End tiles for yesterday's information -->
 <i> </i>
+
+<!-- forecast -->
+<h>Forecast for general Western Indiana location</h>
 
  <div class="tomorrow"
          data-location-id="125460"
@@ -362,10 +365,10 @@ iframe + i {
     <!-- Updated background color -->
     <strong>Note:</strong> This is a general location for Western Indiana for comparison
 </div>
+<!-- end forecast -->
 
 
-
-
+<i> </i>
 <iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar2.html"></iframe>
 <div style="background-color: #343A54; padding: 10px; color: white;">
     <!-- Updated background color -->
