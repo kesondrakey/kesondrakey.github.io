@@ -232,7 +232,32 @@ iframe + i {
         margin-top: 10px; /* Adjust this value as needed to reduce/increase space */
     }
 
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  .tile-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .tile {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
 
+    
 </style>
 
 
@@ -247,6 +272,30 @@ iframe + i {
     </a>
   </div>
 </div>
+
+
+<!-- tiles for yesterday's information -->
+<div class="tile-container">
+    <div class="tile">
+        <div class="icon">🌡️</div>
+        <div id="min-temp">Min Temp: Loading...</div>
+    </div>
+    <div class="tile">
+        <div class="icon">🌡️</div>
+        <div id="max-temp">Max Temp: Loading...</div>
+    </div>
+    <div class="tile">
+        <div class="icon">☔</div>
+        <div id="total-precipitation">Total Precipitation: Loading...</div>
+    </div>
+    <div class="tile">
+        <div class="icon">🌱</div>
+        <div id="avg-soil-moisture">Avg Soil Moisture: Loading...</div>
+    </div>
+</div>
+<!-- end tiles for yesterday's information -->
+
+
 
 
 <!-- Your existing HTML content starts here -->
@@ -463,6 +512,60 @@ for (let i = 0; i < coll.length; i++) {
 
             fjs.parentNode.insertBefore(js, fjs);
         })(document, 'script', 'tomorrow-sdk');
+
+    //for tiles at top of page
+      document.addEventListener("DOMContentLoaded", function() {
+    // Fetch the HTML content (assuming the HTML file is accessible via a URL)
+    fetch('path/to/your/datatable_daily_fluxtower1.html')
+      .then(response => response.text())
+      .then(htmlContent => {
+        // Parse the HTML content
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(htmlContent, 'text/html');
+        
+        // Find the script tag that contains the JSON data
+        const scriptTag = doc.querySelector('script[type="application/json"][data-for]');
+        
+        if (scriptTag) {
+          // Load the JSON data
+          const dataJson = JSON.parse(scriptTag.textContent);
+          
+          // Extract the data from the JSON
+          const data = dataJson.x.data;
+          
+          // Get the dates and convert them to Date objects
+          const dates = data[0].map(dateStr => new Date(dateStr));
+          
+          // Find the index for yesterday's date
+          const yesterday = new Date();
+          yesterday.setDate(yesterday.getDate() - 1);
+          const yesterdayStr = yesterday.toISOString().split('T')[0];
+          
+          const index = data[0].indexOf(yesterdayStr);
+          if (index !== -1) {
+            // Extract data for yesterday
+            const minTemp = data[1][index];
+            const maxTemp = data[2][index];
+            const totalPrecipitation = data[3][index];
+            const avgSoilMoisture = data[4][index];
+            
+            // Update the HTML elements with the data
+            document.getElementById('min-temp').textContent = `Min Temp: ${minTemp}`;
+            document.getElementById('max-temp').textContent = `Max Temp: ${maxTemp}`;
+            document.getElementById('total-precipitation').textContent = `Total Precipitation: ${totalPrecipitation}`;
+            document.getElementById('avg-soil-moisture').textContent = `Avg Soil Moisture: ${avgSoilMoisture}`;
+          } else {
+            document.getElementById('min-temp').textContent = 'Min Temp: No data';
+            document.getElementById('max-temp').textContent = 'Max Temp: No data';
+            document.getElementById('total-precipitation').textContent = 'Total Precipitation: No data';
+            document.getElementById('avg-soil-moisture').textContent = 'Avg Soil Moisture: No data';
+          }
+        } else {
+          console.error('Script tag with JSON data not found.');
+        }
+      })
+      .catch(error => console.error('Error fetching the HTML:', error));
+  });
   
 </script>
 
