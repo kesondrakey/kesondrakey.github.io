@@ -552,7 +552,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate + " (Error loading data)";
         });
 
-    // Fetch the ISCO counts data
+  // Fetch the ISCO counts data
     fetch('longterm_plots/longterm_plotly_fluxtower1.html')
       .then(response => response.text())
       .then(htmlContent => {
@@ -560,48 +560,39 @@ document.addEventListener("DOMContentLoaded", function() {
         const parser = new DOMParser();
         const doc = parser.parseFromString(htmlContent, 'text/html');
         
-        // Find the script tag that contains the JSON data
-        const scriptTags = doc.querySelectorAll('script[type="application/json"][data-for]');
+        // Find the data section that contains the ISCO (counts) information
+        const textData = doc.body.textContent;
+        const iscoDataRegex = /{"x":\["([^"]+)"(,"[^"]+")*],"y":\[([^]]+)],"type":"scatter","mode":"lines","name":"ISCO \(counts\)"/;
+        const match = textData.match(iscoDataRegex);
         
-        let foundISCOData = false;
-        
-        scriptTags.forEach(scriptTag => {
-          const dataJson = JSON.parse(scriptTag.textContent);
+        if (match) {
+          // Extract the dates and ISCO counts from the matched data
+          const dates = match[1].split(',').map(dateStr => new Date(dateStr.replace(/"/g, '')));
+          const counts = match[3].split(',').map(Number);
           
-          // Check if the script contains ISCO data
-          if (dataJson.x && dataJson.x.data && dataJson.x.data.some(item => item.name === "ISCO (counts)")) {
-            foundISCOData = true;
-            
-            // Extract the data from the JSON
-            const data = dataJson.x.data.find(item => item.name === "ISCO (counts)");
-            
-            // Extract the dates and ISCO counts from the matched data
-            const dates = data.x.map(dateStr => new Date(dateStr));
-            const counts = data.y;
-            
-            // Find the most recent date with ISCO (counts) not equal to zero
-            let recentDate = null;
-            let recentCount = 0;
-            
-            for (let i = counts.length - 1; i >= 0; i--) {
-              if (counts[i] !== 0) {
-                recentDate = dates[i];
-                recentCount = counts[i];
-                break;
-              }
-            }
-            
-            if (recentDate) {
-              const formattedRecentDate = recentDate.toLocaleDateString('en-US', options);
-              document.getElementById('isco-tile').textContent = `Recent ISCO trigger: ${formattedRecentDate} with ${recentCount} count${recentCount > 1 ? 's' : ''}.`;
-            } else {
-              document.getElementById('isco-tile').textContent = "Recent ISCO trigger: No recent data";
+          console.log('Dates:', dates);
+          console.log('Counts:', counts);
+          
+          // Find the most recent date with ISCO (counts) not equal to zero
+          let recentDate = null;
+          let recentCount = 0;
+          
+          for (let i = counts.length - 1; i >= 0; i--) {
+            if (counts[i] !== 0) {
+              recentDate = dates[i];
+              recentCount = counts[i];
+              break;
             }
           }
-        });
-        
-        if (!foundISCOData) {
-          console.error('ISCO data not found in any script tags.');
+          
+          if (recentDate) {
+            const formattedRecentDate = recentDate.toLocaleDateString('en-US', options);
+            document.getElementById('isco-tile').textContent = `Recent ISCO trigger: ${formattedRecentDate} with ${recentCount} count${recentCount > 1 ? 's' : ''}.`;
+          } else {
+            document.getElementById('isco-tile').textContent = "Recent ISCO trigger: No recent data";
+          }
+        } else {
+          console.error('ISCO data not found in the HTML.');
           document.getElementById('isco-tile').textContent = "Recent ISCO trigger: No recent data";
         }
       })
@@ -610,7 +601,6 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('isco-tile').textContent = "Recent ISCO trigger: Error loading data";
       });
 });
-
 
 
 
