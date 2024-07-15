@@ -304,11 +304,11 @@ body {
              width="250" height="18"/>
     </a>
 </div>
-<i></i>
 
 <div class="summary-box">
     <strong>Note:</strong> This is based on a general western Indiana location 
 </div>
+<i></i>
 
 <!-- Your existing HTML content starts here -->
 <h2 class="summary-heading">Summary</h2>
@@ -551,51 +551,56 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate + " (Error loading data)";
         });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    
     // Fetch the ISCO counts data
     fetch('longterm_plots/longterm_daily_plotly_fluxtower1.html')
-        .then(response => response.text())
-        .then(htmlContent => {
-            // Parse the HTML content
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(htmlContent, 'text/html');
-            
-            // Find the script tag that contains the JSON data
-            const scriptTag = doc.querySelector('script[type="application/json"][data-for]');
-            
-            if (scriptTag) {
-                // Load the JSON data
-                const dataJson = JSON.parse(scriptTag.textContent);
-                
-                // Extract the data from the JSON
-                const data = dataJson.x.data;
-                
-                // Find the most recent date with ISCO (counts) not equal to zero
-                let recentDate = null;
-                let recentCount = 0;
-                
-                for (let i = data[0].length - 1; i >= 0; i--) {
-                    if (data[12][i] !== 0) {
-                        recentDate = new Date(data[0][i]);
-                        recentCount = data[12][i];
-                        break;
-                    }
-                }
-                
-                if (recentDate) {
-                    const formattedRecentDate = recentDate.toLocaleDateString('en-US', options);
-                    document.getElementById('isco-tile').textContent = `Recent ISCO trigger: ${formattedRecentDate} with ${recentCount} count${recentCount > 1 ? 's' : ''}.`;
-                } else {
-                    document.getElementById('isco-tile').textContent = "Recent ISCO trigger: No recent data.";
-                }
-            } else {
-                console.error('Script tag with JSON data not found.');
-                document.getElementById('isco-tile').textContent = "Recent ISCO trigger: No recent data.";
+      .then(response => response.text())
+      .then(htmlContent => {
+        // Parse the HTML content
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(htmlContent, 'text/html');
+        
+        // Find the script tag that contains the JSON data
+        const scriptTag = doc.querySelector('script[type="application/json"][data-for]');
+        
+        if (scriptTag) {
+          // Load the JSON data
+          const dataJson = JSON.parse(scriptTag.textContent);
+          
+          // Extract the data from the JSON
+          const data = dataJson.x.data;
+          
+          // Find the most recent date with ISCO (counts) not equal to zero
+          let recentDate = null;
+          let recentCount = 0;
+          
+          for (let i = data[0].length - 1; i >= 0; i--) {
+            if (data[12][i] !== 0) {
+              recentDate = new Date(data[0][i]);
+              recentCount = data[12][i];
+              break;
             }
-        })
-        .catch(error => {
-            console.error('Error fetching the HTML:', error);
-            document.getElementById('isco-tile').textContent = "Recent ISCO trigger: Error loading data.";
-        });
+          }
+          
+          if (recentDate) {
+            const formattedRecentDate = recentDate.toLocaleDateString('en-US', options);
+            document.getElementById('isco-tile').textContent = `Recent ISCO trigger: ${formattedRecentDate} with ${recentCount} count${recentCount > 1 ? 's' : ''}.`;
+          } else {
+            document.getElementById('isco-tile').textContent = "Recent ISCO trigger: No recent data.";
+          }
+        } else {
+          console.error('Script tag with JSON data not found.');
+          document.getElementById('isco-tile').textContent = "Recent ISCO trigger: No recent data.";
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching the HTML:', error);
+        document.getElementById('isco-tile').textContent = "Recent ISCO trigger: Error loading data.";
+      });
+});
+
 });
 
 
