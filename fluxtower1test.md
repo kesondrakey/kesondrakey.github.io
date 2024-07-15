@@ -250,11 +250,12 @@ body {
 .tile .title {
     font-weight: bold;
     margin-bottom: 10px;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .tile .value {
     font-size: 1.2em;
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
