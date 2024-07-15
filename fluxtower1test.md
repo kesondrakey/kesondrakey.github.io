@@ -417,7 +417,7 @@ body {
 <!-- Technical Data Section -->
 <!-- More Technical Data -->
 <div class="collapsible-container">
-    <button class="collapsible">More Technical Data</button>
+    <button class="collapsible">For Data Managers</button>
     <div class="container">
         <h5>Flux towers take a lot of different kinds of data. Just click your variable of interest to see the pattern across the entire period of data collection!</h5>
         <div class="html-object">
