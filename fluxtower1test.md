@@ -308,6 +308,7 @@ body {
              width="250" height="18"/>
     </a>
 </div>
+<i></i>
 
 <div class="summary-box">
     <strong>Note:</strong> This is a general location for Western Indiana for comparison.
