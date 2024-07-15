@@ -3,7 +3,7 @@ layout: post
 title: Flux Tower 1
 description: Flux Tower 1
 nav-menu: true 
----
+--- 
 
 <style>
 /* General resets for buttons and icons */
