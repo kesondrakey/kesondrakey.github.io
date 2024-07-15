@@ -558,7 +558,9 @@ document.addEventListener("DOMContentLoaded", function() {
           // Find the index for yesterday's date
           const yesterday = new Date();
           yesterday.setDate(yesterday.getDate() - 1);
+          const options = { year: 'numeric', month: 'long', day: 'numeric' };
           const yesterdayStr = yesterday.toISOString().split('T')[0];
+          const formattedDate = yesterday.toLocaleDateString('en-US', options);
           
           const index = data[0].indexOf(yesterdayStr);
           if (index !== -1) {
@@ -573,23 +575,24 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('max-temp').textContent = maxTemp;
             document.getElementById('total-precipitation').textContent = totalPrecipitation;
             document.getElementById('avg-soil-moisture').textContent = avgSoilMoisture;
-            document.getElementById('yesterday-date').textContent = "Yesterday (" + yesterdayStr + ")";
+            document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate;
           } else {
             document.getElementById('min-temp').textContent = 'No data';
             document.getElementById('max-temp').textContent = 'No data';
             document.getElementById('total-precipitation').textContent = 'No data';
             document.getElementById('avg-soil-moisture').textContent = 'No data';
-            document.getElementById('yesterday-date').textContent = "Yesterday (No data)";
+            document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate + " (No data)";
           }
         } else {
           console.error('Script tag with JSON data not found.');
-          document.getElementById('yesterday-date').textContent = "Yesterday (No data)";
+          document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate + " (No data)";
         }
       })
       .catch(error => {
         console.error('Error fetching the HTML:', error);
-        document.getElementById('yesterday-date').textContent = "Yesterday (Error loading data)";
+        document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate + " (Error loading data)";
       });
 });
+
   
 </script>
