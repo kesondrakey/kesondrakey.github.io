@@ -217,7 +217,6 @@ iframe + i {
 /* Weather tiles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #121821;
     margin: 0;
     padding: 20px;
 }
