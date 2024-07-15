@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Flux Tower 2
-description: Flux Tower 2
+description: Flux Tower 2 
 nav-menu: true 
 ---
 
