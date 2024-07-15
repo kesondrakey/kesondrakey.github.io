@@ -291,6 +291,28 @@ body {
   </div>
 </div>
 
+<h3>Forecast for general Western Indiana location</h3>
+<div class="tomorrow"
+     data-location-id="125460"
+     data-language="EN"
+     data-unit-system="IMPERIAL"
+     data-skin="dark"
+     data-widget-type="upcoming"
+     style="padding-bottom:22px;position:relative;">
+    <a href="https://www.tomorrow.io/weather-api/"
+       rel="nofollow noopener noreferrer"
+       target="_blank"
+       style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
+        <img alt="Powered by the Tomorrow.io Weather API"
+             src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
+             width="250" height="18"/>
+    </a>
+</div>
+
+<div class="summary-box">
+    <strong>Note:</strong> This is a general location for Western Indiana for comparison.
+</div>
+
 <!-- Your existing HTML content starts here -->
 <h2 class="summary-heading">Summary</h2>
 <div class="summary-box">
@@ -299,6 +321,7 @@ body {
 <div class="summary-box">
     <strong>Note:</strong> This page is best viewed on a desktop format.
 </div>
+<i></i>
 
 <!-- Yesterday's Date Header -->
 <h2 class="summary-heading" id="yesterday-date">Yesterday</h2>
@@ -332,28 +355,8 @@ body {
 <div class="full-width-tile" id="isco-tile">
     Recent ISCO trigger: Loading...
 </div>
+<i></i>
 
-<h3>Forecast for general Western Indiana location</h3>
-<div class="tomorrow"
-     data-location-id="125460"
-     data-language="EN"
-     data-unit-system="IMPERIAL"
-     data-skin="dark"
-     data-widget-type="upcoming"
-     style="padding-bottom:22px;position:relative;">
-    <a href="https://www.tomorrow.io/weather-api/"
-       rel="nofollow noopener noreferrer"
-       target="_blank"
-       style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
-        <img alt="Powered by the Tomorrow.io Weather API"
-             src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
-             width="250" height="18"/>
-    </a>
-</div>
-
-<div class="summary-box">
-    <strong>Note:</strong> This is a general location for Western Indiana for comparison.
-</div>
 
 <iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar1.html"></iframe>
 <div style="background-color: #343A54; padding: 10px; color: white;">
