@@ -569,52 +569,59 @@ document.addEventListener("DOMContentLoaded", function() {
         scriptTags.forEach(scriptTag => {
           const dataJson = JSON.parse(scriptTag.textContent);
           
-          // Check if the script contains ISCO data
-          if (dataJson.x && dataJson.x.data) {
-            dataJson.x.data.forEach(item => {
-              if (item.name === "ISCO (counts)") {
-                foundISCOData = true;
-                
-                // Extract the dates and ISCO counts from the matched data
-                const dates = item.x.map(dateStr => new Date(dateStr));
-                const counts = item.y;
-                
-                console.log('ISCO Dates:', dates);
-                console.log('ISCO Counts:', counts);
-                
-                // Find the most recent date with ISCO (counts) not equal to zero
-                let recentDate = null;
-                let recentCount = 0;
-                
-                for (let i = counts.length - 1; i >= 0; i--) {
-                  if (counts[i] !== 0) {
-                    recentDate = dates[i];
-                    recentCount = counts[i];
-                    break;
-                  }
-                }
-                
-                if (recentDate) {
-                  const formattedRecentDate = recentDate.toLocaleDateString('en-US', options);
-                  document.getElementById('isco-tile').textContent = `💧Recent ISCO trigger: ${formattedRecentDate} with ${recentCount} count${recentCount > 1 ? 's' : ''}`;
-                } else {
-                  document.getElementById('isco-tile').textContent = "💧Recent ISCO trigger: No recent data";
-                }
-              }
-            });
+// Check if the script contains ISCO data
+if (dataJson.x && dataJson.x.data) {
+  dataJson.x.data.forEach(item => {
+    if (item.name === "ISCO (counts)") {
+      foundISCOData = true;
+      
+      // Extract the dates and ISCO counts from the matched data
+      const dates = item.x.map(dateStr => new Date(dateStr));
+      const counts = item.y;
+      
+      console.log('ISCO Dates:', dates);
+      console.log('ISCO Counts:', counts);
+      
+      // Find the most recent date with ISCO (counts) not equal to zero and accumulate counts for that date
+      let recentDate = null;
+      let totalRecentCount = 0;
+      let foundRecentDate = false;
+      
+      for (let i = counts.length - 1; i >= 0; i--) {
+        if (counts[i] !== 0) {
+          const currentDate = dates[i];
+          if (!foundRecentDate) {
+            recentDate = currentDate;
+            foundRecentDate = true;
           }
-        });
-        
-        if (!foundISCOData) {
-          console.error('ISCO data not found in any script tags.');
-          document.getElementById('isco-tile').textContent = "💧Recent ISCO trigger: No recent data";
+          if (currentDate.toDateString() === recentDate.toDateString()) {
+            totalRecentCount += counts[i];
+          } else {
+            break;
+          }
         }
-      })
-      .catch(error => {
-        console.error('Error fetching the HTML:', error);
-        document.getElementById('isco-tile').textContent = "💧Recent ISCO trigger: Error loading data";
-      });
+      }
+      
+      if (recentDate) {
+        const formattedRecentDate = recentDate.toLocaleDateString('en-US', options);
+        document.getElementById('isco-tile').textContent = `💧Recent ISCO trigger: ${formattedRecentDate} with ${totalRecentCount} count${totalRecentCount > 1 ? 's' : ''}`;
+      } else {
+        document.getElementById('isco-tile').textContent = "💧Recent ISCO trigger: No recent data";
+      }
+    }
+  });
+}
+
+if (!foundISCOData) {
+  console.error('ISCO data not found in any script tags.');
+  document.getElementById('isco-tile').textContent = "💧Recent ISCO trigger: No recent data";
+}
+})
+.catch(error => {
+  console.error('Error fetching the HTML:', error);
+  document.getElementById('isco-tile').textContent = "💧Recent ISCO trigger: Error loading data";
 });
+
 
 
 </script>
