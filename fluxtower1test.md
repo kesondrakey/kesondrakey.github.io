@@ -531,7 +531,8 @@ for (let i = 0; i < coll.length; i++) {
         })(document, 'script', 'tomorrow-sdk');
 
 
-    // for tiles at top of page
+
+// for tiles at top of page
 document.addEventListener("DOMContentLoaded", function() {
     // Fetch the HTML content (assuming the HTML file is accessible via a URL)
     fetch('longterm_plots/datatable_daily_fluxtower1.html')
@@ -572,17 +573,23 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('max-temp').textContent = maxTemp;
             document.getElementById('total-precipitation').textContent = totalPrecipitation;
             document.getElementById('avg-soil-moisture').textContent = avgSoilMoisture;
+            document.getElementById('yesterday-date').textContent = "Yesterday (" + yesterdayStr + ")";
           } else {
             document.getElementById('min-temp').textContent = 'No data';
             document.getElementById('max-temp').textContent = 'No data';
             document.getElementById('total-precipitation').textContent = 'No data';
             document.getElementById('avg-soil-moisture').textContent = 'No data';
+            document.getElementById('yesterday-date').textContent = "Yesterday (No data)";
           }
         } else {
           console.error('Script tag with JSON data not found.');
+          document.getElementById('yesterday-date').textContent = "Yesterday (No data)";
         }
       })
-      .catch(error => console.error('Error fetching the HTML:', error));
+      .catch(error => {
+        console.error('Error fetching the HTML:', error);
+        document.getElementById('yesterday-date').textContent = "Yesterday (Error loading data)";
+      });
 });
   
 </script>
