@@ -351,7 +351,7 @@ body {
 
 <!-- ISCO Trigger Tile -->
 <div class="full-width-tile" id="isco-tile">
-    Recent ISCO trigger: Loading...
+    💧Recent ISCO trigger: Loading...
 </div>
 <i></i>
 
