@@ -262,7 +262,20 @@ body {
     gap: 5px;
 }
 
-
+/* Full-width ISCO tile */
+.full-width-tile {
+    background-color: #343A54;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
 </style>
 
 <!-- Add the banner grid-container here -->
@@ -534,6 +547,7 @@ document.addEventListener("DOMContentLoaded", function() {
             console.error('Error fetching the HTML:', error);
             document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate + " (Error loading data)";
         });
+
 
 
 </script>
