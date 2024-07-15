@@ -264,7 +264,7 @@ iframe + i {
 
 
 
-<iframe width="650" height="450" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=in&metricTemp=°F&metricWind=mph&zoom=11&overlay=wind&product=ecmwf&level=surface&lat=41.192&lon=-85.853&detailLat=41.238&detailLon=-85.853&detail=true&message=true" frameborder="0"></iframe>
+<iframe width="1200" height="400" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=in&metricTemp=°F&metricWind=mph&zoom=11&overlay=wind&product=ecmwf&level=surface&lat=41.186&lon=-85.667&detailLat=41.238&detailLon=-85.853&detail=true&message=true" frameborder="0"></iframe>
 
 <div class="summary-box">
     <!-- Updated background color -->
