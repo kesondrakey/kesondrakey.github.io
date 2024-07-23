@@ -273,10 +273,27 @@ iframe + i {
 <h2>Flux Towers 1 and 2🍃 Comparison</h2>
 <h4>This plot is showing the midday carbon flux (Fc) between sites Fc</h4>
 
+
+
+
+
+
+
+
 <!-- Embed the image plot -->
 <div class="plot-container">
-    <img src="https://indiana-my.sharepoint.com/:i:/g/personal/keyke_iu_edu/Efv1RnqM0r1KlT0vkIegXFYBg8kM7ocVGCwleie40mz3kA?e=SZgmdh" alt="Midday Carbon Flux Comparison">
+    <img src="https://indiana-my.sharepoint.com/:i:/r/personal/keyke_iu_edu/Documents/Github_Plots/T1_T2_Fc_Plot.png?download=1" alt="Midday Carbon Flux Comparison">
 </div>
+
+
+
+
+
+
+
+
+
+
 
 
 <h4>Each variable is interactive - <i>just click the variable name and see!</i></h4>
