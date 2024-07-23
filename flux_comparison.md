@@ -1,5 +1,5 @@
 ---
-layout: post 
+layout: post  
 description: Flux Tower Comparisons
 title: Flux Tower Comparisons
 nav-menu: true
