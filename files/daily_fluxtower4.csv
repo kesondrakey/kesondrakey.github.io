@@ -1,5 +1,6 @@
 DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Tower
-2024-08-30,73,73,0,0.07,Sunny,fluxtower4
+2024-08-31,72,72,0.03,0.11,Rain,fluxtower4
+2024-08-30,70,88,0.28,0.08,Rain,fluxtower4
 2024-08-29,66,85,0,0.07,Sunny,fluxtower4
 2024-08-28,69,82,0.06,0.07,Rain,fluxtower4
 2024-08-27,69,91,0.18,0.07,Rain,fluxtower4
