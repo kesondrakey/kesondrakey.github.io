@@ -84,20 +84,28 @@ nav-menu: true
 
 <!-- Section 4 -->
 <section id="three" class="spotlights">
-	<section><!-- Royer Lab -->
+	<section>
   		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
-				<img src="{% link assets/images/royer1.jpg %}" alt="Lindsey Rasnake" data-position="center center" />
+				<img src="{% link assets/images/wind.jpeg %}" data-position="center center" />
 			</a>
-			<figcaption>Lindsey Rasnake prepares to collect water samples from a subsurface tile drain in an agricultural landscape</figcaption>
-		</figure> 
+			</figure> 
 	<div class="content">
 			<div class="inner">
 				<header class="major">
-					<h3>The Royer Lab (PI: <a href="https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/royer-todd.html">Todd Royer</a>)</h3>
+					<h3>The DISES Project: Pioneering Research in Agricultural NbCS</h3>
 				</header>
-				<p>The Royer Lab at Indiana University conducts research in freshwater biogeochemistry, primarily in ecosystems dominated by agriculture or other human activities. Students in the Royer Lab collect and analyze soil and water samples as well as hydrologic data at agricultural field sites. Graduate research facilitated by the project incorporates the effect of cover crops on multiple processes and patterns of biogeochemical cycling. 
-Erin Carman-Sweeney, a master’s student in the IU O’Neill School of Public and Environmental Affairs, will evaluate the effect of cover crops on soil greenhouse gas emissions as part of his thesis. Lindsey Rasnake (pictured to the left), a student in the Environmental Science PhD program, uses stream and tile water samples to determine organic carbon loss through subsurface tile drainage in cover-cropped fields vs fields without cover crops.</p>
+				<p>Addressing these challenges is the goal of the Dynamics of Integrated Socio-Environmental Systems (DISES) project. Funded by the National Science Foundation (NSF), this million-dollar initiative brings together a team of scientists from Indiana University and Notre Dame. The DISES project is an innovative effort aiming to:</p>
+<p>•	Close the Carbon, Water, and Energy Budgets in agricultural systems.</p>
+<p>•	Compare Conventional Farming Methods with practices utilizing cover crops.</p>
+<p>•	Bridge Knowledge Gaps regarding the potential for cover crops as a NbCS.</p>
+<p></p>
+<p>Key Objectives</p>
+<p>The project seeks to understand:</p>
+<p>•  Carbon Pathways: Where carbon goes within agricultural systems and how much is sequestered into the soil.</p>
+<p>•  Biogeochemical Cycles: The functionality and interactions within agricultural ecosystems.</p>
+<p>•  Impact of Cover Crops: How cover cropping influences carbon sequestration and other environmental factors over time.</p>
+
 				<ul class="actions">
 					<li><a href="https://royer.lab.indiana.edu/" class="button">Learn more</a></li>
 				</ul>
