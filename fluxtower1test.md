@@ -1,538 +1,328 @@
 ---
-layout: post
-title: Flux Tower 2
-description: Flux Tower 2
-nav-menu: true 
+title: Nature-Based Climate Solutions and the DISES Project: Exploring the Role of Cover Crops in Combating Climate Change
+layout: landing
+image: assets/images/kimnovick.jpg
+nav-menu: true
 ---
 
 <style>
-/* General resets for buttons and icons */
-button, a, iframe {
-    border: none;
-    outline: none;
-    box-shadow: none;
-}
-
-/* Styling for the Toggle Technical Data button */
-.collapsible {
-    background-image: linear-gradient(to right, #121821, #222e40);
-    cursor: pointer;
-    padding: 10px 15px;
-    border-radius: 4px;
-    text-align: center;
-    text-transform: none;
-    display: block;
-    margin: auto;
-    margin-bottom: 20px;  
-    width: 100%;
-    line-height: 40px;
-    color: white;
-}
-
-/* Styles for container */
-.container {
-    visibility: hidden;
-    height: 0;
-    overflow: hidden;  
-}
-
-.centered-text {
-    text-align: center;
-}
-
-/* Styling for the View in full View button */
-.full-view-button {
-    display: block;
-    margin: 20px auto; 
-    background-image: linear-gradient(to right, #121821, #222e40);
-    color: white;
-    cursor: pointer;
-    padding: 10px 15px;
-    border-radius: 4px;
-    text-align: center;
-    font-size: 1em; 
-    text-decoration: none; 
-    font-weight: bold; 
-}
-
-.collapsible.selected {
-    filter: brightness(60%); /* darken the color */
-}
-
-/* Styling for the icons */
-.icon {
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.2); /* outer and inner shadows */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* horizontal offset, vertical offset, blur radius, color */
-    position: relative;
-    color: white;
-    text-transform: none;
-    padding: 10px;
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    background-size: 100%;
-    letter-spacing: 1px;
-    font-size: 1em;
-    font-weight: bold;
-    background-color: transparent;
-    transition: filter 0.2s;
-}
-
-/* Styling for the icons */
-/* Daily */
-.icon-daily { 
-    background: linear-gradient(to right, #2E3192, #1BFFFF);
-    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1), inset 0px 1px 3px rgba(0, 0, 0, 0.2); /* inner shadows for selected */
-}
-.icon-daily.selected { 
-    background: linear-gradient(to right, #1C1D59, #118B8B);
-    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1), inset 0px 1px 3px rgba(0, 0, 0, 0.2); /* inner shadows for selected */
-}
-
-/* Weekly */
-.icon-weekly { 
-    background: linear-gradient(to right, #2d006b, #660066);
-}
-.icon-weekly.selected { 
-    background: linear-gradient(to right, #1C003E, #4C004D);
-}
-
-/* Monthly */
-.icon-monthly { 
-    background: linear-gradient(to right, #006600, #32CD32); /* Adjusted colors for better readability */
-}
-.icon-monthly.selected { 
-    background: linear-gradient(to right, #004400, #228B22); /* Adjusted colors for better readability */
-}
-
-.icon-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-/* Space after the note */
-iframe + i {
-    display: block; /* ensure the element takes up its full width */
-    margin-bottom: 20px; /* space below the note */
-}
-
-/* Ensuring text size consistency */
-.icon, .collapsible {
-    font-size: 1em;
-}
-
-.table-container {
-    display: none;
-}
-
-.grid-container, .toggle-icons, .content {
-    margin-bottom: 40px;
-}
-
-/* for static plot */
-.plot-container {
-    visibility: visible;  // makes it visible
-    height: auto;        // adjusts the height to its content
-}
-
-/* Banner styles */
-/* Make the image darker by adding this overlay */
-.grid-item:before {
-    height: 200px;
-    width: 100%;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(18, 24, 33, 0.4); /* Your specific dark blue with 70% opacity */
-    z-index: 1;
-}
-
-/* Modify your existing text-overlay */
-.text-overlay {
-    transition: all 0.3s ease; /* Add transition for smooth changes */
-    color: rgba(255, 255, 255, 0.7); /* Making text a bit transparent */
-    transition: color 0.3s ease, border 0.3s ease; /* Added transition for border */
-    position: absolute;
-    top: 50%;
-    right: 10%;
-    transform: translateY(-50%);
-    color: white;
-    background-color: rgba(0, 0, 0, 0); /* Make it transparent */
-    border: 2px solid white; /* White border */
-    padding: 10px;
-    border-radius: 4px;
-    font-weight: bold; /* Make text bold */
-    z-index: 2; /* Sit on top of the image and the dark overlay */
-}
-
-.text-overlay:hover {
-    border: 2px solid lightblue; /* Add light blue border */
-    color: white; /* Keep the text color white */
-    background-color: rgba(0, 0, 0, 0.1); /* Slight background change to indicate hover */
-}
-
-/* Update grid-item to position the image and text overlay */
-.grid-item {
-    height: 200px;
-    width: 100%;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    border: none;
-}
-
-/* Style the image */
-.grid-item img {
-    object-fit: cover;  /* Adjust to make the image cover the entire div */
-    width: 100%;  
-    height: 100%;  /* Make it span full height */
-    margin: 0;
-    padding: 0;
-}
-
-/* Adjust the margin of the summary heading */
-.summary-heading {
-    margin-bottom: 10px; /* Adjust this value as needed to reduce/increase space */
-}
-
-.summary-box {
-    background-color: #343A54;
-    padding: 5px;
-    color: white;
-    margin-top: 10px; /* Adjust this value as needed to reduce/increase space */
-}
-
-/* Weather tiles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-}
-
-.tile-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.tile {
-    background-color: #343A54;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 200px;
-}
-
-.tile .icon {
-    font-size: 35px;
-    margin-bottom: 10px;
-    cursor: default; /* Make sure these icons are not clickable */
-}
-
-.tile .title {
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 1em;
-}
-
-.tile .value {
-    font-size: 1em;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-}
-
+        figcaption {
+            font-size: smaller; /* or a specific value like 0.9em */
+            font-style: italic;
+        }
 </style>
 
-<div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
-    <strong>Note:</strong> This tower is located on a farm that uses cover crops! 🍃
-</div>
 
-<!-- Add the banner grid-container here -->
-<div class="grid-container">
-  <div class="grid-item">
-    <a href="https://kesondrakey.github.io/FluxTowers">
-      <img src="images/corn.jpeg" alt="clouds">
-      <div class="text-overlay">Learn about Flux Towers &#8594;</div> <!-- Added arrow here -->
-    </a>
-  </div>
-</div>
 
-<h3>Forecast</h3>
-<div class="tomorrow"
-     data-location-id="125460"
-     data-language="EN"
-     data-unit-system="IMPERIAL"
-     data-skin="dark"
-     data-widget-type="upcoming"
-     style="padding-bottom:22px;position:relative;">
-    <a href="https://www.tomorrow.io/weather-api/"
-       rel="nofollow noopener noreferrer"
-       target="_blank"
-       style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
-        <img alt="Powered by the Tomorrow.io Weather API"
-             src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
-             width="250" height="18"/>
-    </a>
-</div>
 
-<div class="summary-box">
-    <strong>Note:</strong> This is based on a general western Indiana location 
-</div>
-<i></i>
 
-<!-- Your existing HTML content starts here -->
-<h2 class="summary-heading">Summary</h2>
-<div class="summary-box">
-    <strong>Flux Tower 2:</strong> This tower is situated on an Indiana farm focused on the cultivation of corn and soy using cover crops!
-</div>
-<div class="summary-box">
-    <strong>Note:</strong> This page is best viewed on a desktop format.
-</div>
-<i></i>
 
-<!-- Yesterday's Date Header -->
-<h2 class="summary-heading" id="yesterday-date">Yesterday</h2>
+<!-- Main -->
+<div id="main">
 
-<!-- Tiles for yesterday's information -->
-<div class="tile-container">
-    <div class="tile">
-        <div class="title">Min Temp</div>
-        <div class="icon">🌡️</div>
-        <div class="value"><span id="min-temp">Loading...</span> <span class="unit">°F</span></div>
-    </div>
-    <div class="tile">
-        <div class="title">Max Temp</div>
-        <div class="icon">🌡️</div>
-        <div class="value"><span id="max-temp">Loading...</span> <span class="unit">°F</span></div>
-    </div>
-    <div class="tile">
-        <div class="title">Precipitation</div>
-        <div class="icon">☔</div>
-        <div class="value"><span id="total-precipitation">Loading...</span> <span class="unit">inches</span></div>
-    </div>
-    <div class="tile">
-        <div class="title">Soil Moisture</div>
-        <div class="icon">🌱</div>
-        <div class="value"><span id="avg-soil-moisture">Loading...</span> <span class="unit">m³/m³</span></div>
-    </div>
-</div>
-<!-- End tiles for yesterday's information -->
+<!-- summary -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h2>Nature-based Climate Solutions</h2>
+		</header>
+		<p>
 
-<iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar2.html"></iframe>
-<div style="background-color: #343A54; padding: 10px; color: white;">
-    <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
-</div>
-<div style="margin-bottom:20px;"></div>
 
-<!-- Table Section -->
-<h3>Select your time period of interest to see the data in a table format:</h3>
-<!-- Icons/buttons -->
-<div class="icon-container">
-    <button class="icon icon-daily" onclick="showTable('daily')">Daily</button>
-    <button class="icon icon-weekly" onclick="showTable('weekly')">Weekly</button>
-    <button class="icon icon-monthly" onclick="showTable('monthly')">Monthly</button>
-</div>
-
-<!-- Tables -->
-<div id="daily-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
-    <b>Daily Data Table:</b>
-    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower2.html"></iframe>
-    <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m³/m³))</i>
-    <div style="background-color: #343A54; padding: 10px; color: white;">
-      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
-    </div>
-</div>
-
-<div id="weekly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
-    <b>Weekly Data Table:</b>
-    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower2.html"></iframe>
-    <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m³/m³))</i>
-    <div style="background-color: #343A54; padding: 10px; color: white;">
-      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
-    </div>
-    <div style="margin-bottom:20px;"></div>
-</div>
-<div id="monthly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
-    <b>Monthly Data Table:</b>
-    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower2.html"></iframe>
-    <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m³/m³))</i>
-    <div style="background-color: #343A54; padding: 10px; color: white;">
-      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
-    </div>
-    <div style="margin-bottom:20px;"></div>
-</div>
-
-<!-- Daily Plot - Simple Variables -->
-<h2>Long Term Data</h2>
-<h4>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - <i>just click the variable name and see!</i></h4>
-<div class="plot-container">
-  <div class="html-object">
-    <!-- Here's where you add the iframe to embed the Plotly graph -->
-    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower2.html"></iframe>
-    <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m³/m³))</i>
-    <div style="background-color: #343A54; padding: 10px; color: white;">
-      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
-    </div>
-    <div style="margin-bottom:20px;"></div>
-  </div>
-</div>
-
-<!-- Technical Data Section -->
-<!-- More Technical Data -->
-<div class="collapsible-container">
-    <button class="collapsible">For Data Managers</button>
-    <div class="container">
-        <h5>Flux towers take a lot of different kinds of data. Just click your variable of interest to see the pattern across the entire period of data collection!</h5>
-        <div class="html-object">
-            <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower2.html"></iframe>
-            <div style="background-color: #343A54; padding: 10px; color: white;">
-                <strong>Please note:</strong> In order to provide data near real-time, the data provided here is in a raw format and has not undergone any quality control.
-            </div>
-            <!-- View in full View Button -->
-            <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower2.html" class="full-view-button">Click for full view</a>
-        </div>
-    </div>
-</div>
-
-<script>
-function showTable(tableType) {
-    const tables = document.querySelectorAll('.table-container');
-    const selectedTable = document.getElementById(tableType + '-table');
-    const icons = document.querySelectorAll('.icon');
-    let isAlreadyVisible = (selectedTable.style.display === 'block');
-
-    // Hide all tables first
-    tables.forEach(table => {
-        table.style.display = 'none';
-    });
-
-    // Remove selected class from all icons
-    icons.forEach(icon => {
-        icon.classList.remove('selected');
-    });
-
-    // If the selected table was not already visible, show it
-    if (!isAlreadyVisible) {
-        selectedTable.style.display = 'block';
-        // Add the selected class to the clicked icon only if the table was not already visible
-        document.querySelector('.icon-' + tableType).classList.add('selected');
-    }
-}
-
-// Collapsible Functionality
-var coll = document.getElementsByClassName("collapsible");
-for (let i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        
-        // Adjust this part to target the .container inside the .collapsible-container
-        var content = this.parentNode.querySelector(".container");
-
-        if (content.style.visibility === "visible" || content.style.visibility === "") {
-            content.style.visibility = "hidden";
-            content.style.height = "0";  // this will collapse the space taken by the hidden content
-        } else {
-            content.style.visibility = "visible";
-            content.style.height = "auto";  // revert to its original height
-        }
-    });
-}
-
-// for weather
-(function(d, s, id) {
-    if (d.getElementById(id)) {
-        if (window.__TOMORROW__) {
-            window.__TOMORROW__.renderWidget();
-        }
-        return;
-    }
-    const fjs = d.getElementsByTagName(s)[0];
-    const js = d.createElement(s);
-    js.id = id;
-    js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
-    fjs.parentNode.insertBefore(js, fjs);
-})(document, 'script', 'tomorrow-sdk');
-
-// for tiles at top of page
-document.addEventListener("DOMContentLoaded", function() {
-    // Fetch the HTML content (assuming the HTML file is accessible via a URL)
-    fetch('longterm_plots/datatable_daily_fluxtower2.html')
-        .then(response => response.text())
-        .then(htmlContent => {
-            // Parse the HTML content
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(htmlContent, 'text/html');
             
-            // Find the script tag that contains the JSON data
-            const scriptTag = doc.querySelector('script[type="application/json"][data-for]');
-            
-            if (scriptTag) {
-                // Load the JSON data
-                const dataJson = JSON.parse(scriptTag.textContent);
-                
-                // Extract the data from the JSON
-                const data = dataJson.x.data;
-                
-                // Get the dates and convert them to Date objects
-                const dates = data[0].map(dateStr => new Date(dateStr));
-                
-                // Find the index for yesterday's date
-                const yesterday = new Date();
-                yesterday.setDate(yesterday.getDate() - 1);
-                const options = { year: 'numeric', month: 'long', day: 'numeric' };
-                const yesterdayStr = yesterday.toISOString().split('T')[0];
-                const formattedDate = yesterday.toLocaleDateString('en-US', options);
-                
-                const index = data[0].indexOf(yesterdayStr);
-                if (index !== -1) {
-                    // Extract data for yesterday
-                    const minTemp = data[1][index];
-                    const maxTemp = data[2][index];
-                    const totalPrecipitation = data[3][index];
-                    const avgSoilMoisture = data[4][index];
-                    
-                    // Update the HTML elements with the data
-                    document.getElementById('min-temp').textContent = minTemp;
-                    document.getElementById('max-temp').textContent = maxTemp;
-                    document.getElementById('total-precipitation').textContent = totalPrecipitation;
-                    document.getElementById('avg-soil-moisture').textContent = avgSoilMoisture;
-                    document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate;
-                } else {
-                    document.getElementById('min-temp').textContent = 'No data';
-                    document.getElementById('max-temp').textContent = 'No data';
-                    document.getElementById('total-precipitation').textContent = 'No data';
-                    document.getElementById('avg-soil-moisture').textContent = 'No data';
-                    document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate + " (No data)";
-                }
-            } else {
-                console.error('Script tag with JSON data not found.');
-                document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate + " (No data)";
-            }
-        })
-        .catch(error => {
-            console.error('Error fetching the HTML:', error);
-            document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate + " (Error loading data)";
-        });
-});
-</script>
+        </p>
+	</div>
+</section>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISES Project Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        ul {
+            margin-bottom: 20px;
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .key-points {
+            margin-bottom: 40px;
+        }
+        .key-points li {
+            font-weight: bold;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #16a085;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Advancing Nature-based Climate Solutions: An Overview of the DISES Project</h1>
+
+    <h2>Introduction to Nature-Based Climate Solutions</h2>
+    <p>As the climate crisis intensifies, innovative approaches are crucial to reduce greenhouse gas concentrations in the atmosphere. <span class="highlight">Nature-based climate solutions (NbCS)</span> offer a promising avenue by leveraging natural processes to mitigate climate change. These strategies encompass practices like reforesting previously deforested landscapes, reducing excess irrigation, and implementing climate-smart agriculture techniques such as the use of <strong>cover crops</strong>.</p>
+
+    <p>NbCS not only aid in climate mitigation but also provide a multitude of co-benefits:</p>
+
+    <ul>
+        <li>Enhanced Biodiversity: Supporting a wider range of plant and animal life.</li>
+        <li>Improved Air and Water Quality: Filtering pollutants and reducing runoff.</li>
+        <li>Increased Soil Health: Enhancing nutrient content and soil structure.</li>
+        <li>Greater Ecosystem Resilience: Strengthening the ability to withstand climatic extremes.</li>
+        <li>Climate Adaptation Potential: Helping ecosystems adjust to changing conditions.</li>
+    </ul>
+
+    <p>To qualify as a true NbCS, initiatives must meet four essential criteria:</p>
+
+    <ul class="key-points">
+        <li>Additional Enhancements to Carbon Uptake</li>
+        <li>Net Cooling Effect</li>
+        <li>Durability of Carbon Storage</li>
+        <li>Accounting for Leakage</li>
+    </ul>
+
+    <p>Despite bipartisan support and private sector interest, the scientific frameworks guiding NbCS implementation and monitoring are not yet fully established. This gap presents challenges in understanding their overall efficacy across varying scales.</p>
+
+    <h2>The DISES Project: Pioneering Research in Agricultural NbCS</h2>
+    <p>Addressing these challenges, particularly for cover crops, is the goal of the <strong>Dynamics of Integrated Socio-Environmental Systems (DISES)</strong> project. Funded by the National Science Foundation (NSF), this million-dollar initiative brings together a team of scientists from Indiana University and Notre Dame. The DISES project is an innovative effort aiming to:</p>
+
+    <ul>
+        <li><strong>Close the Carbon, Water, and Energy Budgets</strong> in agricultural systems.</li>
+        <li><strong>Compare Conventional Farming Methods</strong> with practices utilizing cover crops.</li>
+        <li><strong>Bridge Knowledge Gaps</strong> regarding the potential for cover crops as a NbCS.</li>
+    </ul>
+
+    <h2>Key Objectives</h2>
+    <p>The project seeks to understand:</p>
+    
+    <ul>
+        <li>Where carbon goes within agricultural systems and how much is sequestered into the soil.</li>
+        <li>The functionality and interactions within agricultural biogeochemical cycles.</li>
+        <li>The impact of cover crops on carbon sequestration and other environmental factors over time.</li>
+    </ul>
+
+    <h2>Methodologies Employed</h2>
+    <p>To achieve its objectives, the DISES project utilizes a comprehensive suite of methodologies:</p>
+
+    <ul>
+        <li><strong>Eddy Covariance Towers</strong> measure fluxes of carbon dioxide, evapotranspiration, and radiation, etc.</li>
+        <li><strong>Soil Sampling</strong> quantifies soil water content, dissolved organic carbon, and nutrient levels.</li>
+        <li><strong>Water Sampling</strong> assesses runoff outputs, including potential fertilizer runoff.</li>
+        <li><strong>Radiation Measurements</strong> collect data on incoming and outgoing radiation to understand the energy balance.</li>
+    </ul>
+
+    <h2>Cover Crops: A Closer Look</h2>
+    <p><strong>Cover crops</strong> are plants grown outside of the main cash crop season, such as before planting or after harvest. Examples include rye, clover, and vetch. The benefits of cover crops are multifaceted:</p>
+
+    <ul>
+        <li><strong>Soil Protection</strong>: Acts as a barrier against extreme temperatures and wind erosion.</li>
+        <li><strong>Soil Structure Improvement</strong>: Root growth promotes soil aggregation, crucial for carbon sequestration.</li>
+        <li><strong>Enhanced Carbon Uptake</strong>: Additional plant growth removes more carbon dioxide from the atmosphere.</li>
+        <li><strong>Long-Term Carbon Storage</strong>: Over time, carbon is stored within plant tissues and eventually the soil. The extent of this is still being researched.</li>
+    </ul>
+
+    <p>Soil carbon sequestration is one of the main drivers behind considering cover crops as a NbCS. By enhancing human-managed natural systems, cover crops may improve the capacity to absorb atmospheric carbon dioxide and store it long-term. However, how long this process takes and how much carbon is stored is unknown. The DISES project aims to provide valuable insights into these processes</p>
+
+    <h2>Anticipated Outcomes and Broader Impacts</h2>
+    <p>While results are preliminary and data processing is ongoing, the DISES project holds promise for studying the impacts of cover crops, including overviewing whether cover crops:</p>
+
+    <ul>
+        <li><strong>Increase Soil Carbon Sequestration</strong>: Potentially boosting the amount of carbon stored in soils.</li>
+        <li><strong>Improve Soil Water Retention</strong>: Enhancing the soil's ability to retain moisture.</li>
+        <li><strong>Reduce Nutrient Runoff</strong>: Minimizing fertilizer runoff into waterways, mitigating environmental pollution.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>The DISES project represents a significant step forward in understanding how nature-based solutions like cover cropping can contribute to climate change mitigation. By closing the carbon, water, and energy budgets in agricultural systems, this research provides valuable insights that can inform sustainable farming practices and NbCS implementation on a broader scale.</p>
+
+    <p><em>For more information on the DISES project and updates on our findings, please continue to explore our website or contact our research team.</em></p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+<!-- Novick Lab -->
+<section id="two" class="spotlights">
+	<section>
+        <figure class="image"> <!-- Begin figure tag for the image group -->
+            <!-- First image with a caption -->
+		<a href="generic.html"> <!-- Update href for the second image if necessary -->
+                <img src="{% link assets/images/novick.jpg %}" alt="Kim Novick" data-position="center center"/>
+            </a>
+            <figcaption>Kim Novick</figcaption>
+            <!-- Second image with a caption directly below the first one -->
+            <a href="generic.html">
+                <img src="{% link assets/images/novickdogs.jpg %}" alt="Novick Lab Team with Dogs" data-position="center center"/>
+            </a>
+            <figcaption>Official Biomet Lab Dogs studying tree physiology</figcaption>
+        </figure> 
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+    <h3>The Biomet Lab (PI: <a href="https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/novick-kimberly.html">Kim Novick</a>)</h3>
+</header>
+				<p>The Biomet Lab, led by Kim Novick at the O'Neill School of Public and Environmental Affairs, stands at the nexus of biometeorology, plant physiology, and hydrology. The lab is a thriving center for interdisciplinary exploration, keen on demystifying the reciprocal impacts between climate variability and ecosystem functions. Novick’s targeted research particularly delves into the Eastern United States, probing the interactions between climate dynamics and land cover changes in its agriculturally rich ecosystems, with an acute emphasis on understanding the ramifications of drought.</p>
+
+<p>A pivotal element of Novick's work, and that of her colleagues within this project, revolves around  <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.16156">nature-based climate solutions</a> to climate change, a crucial aspect highlighted in their collective research. The basis of their collaborative efforts are encapsulated in showcasing their shared dedication to advancing the understanding and implementation of natural climate solutions.</p>
+				<ul class="actions">
+					<li><a href="https://scholar.google.com/citations?user=K5tffpEAAAAJ&hl=en" class="button">Learn more</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section>   <!-- Barnes Lab -->
+		<figure class="image"> <!-- Begin figure tag here -->
+			<a href="generic.html">
+				<img src="{% link assets/images/barnes.jpg %}" alt="Barnes lab thermal drone" data-position="center center" />
+			</a>
+			<figcaption>Technology specialist, Steve Scott, testing the Barnes lab thermal drone in Bloomington, Indiana</figcaption>
+		</figure> <!-- End figure tag here -->
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3>The Barnes Lab (PI: <a href="https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/barnes-mallory.html">Mallory Barnes</a>)</h3>
+				</header>
+				<p>The Barnes lab, led by Mallory Barnes at the O'Neill School of Public and Environmental Affairs at Indiana University focuses on the integration of quantitative remote sensing techniques and environmental informatics to advance our understanding of climate impacts on ecosystems. The lab leverages Dr. Barnes expertise in ecohydrology and environmental management to scale ecohydrological and biophysical processes across spatial and temporal dimensions. Dr. Barnes's work in scaling up this research involves the use of remote sensing to extend observations from the local scale of individual research sites to broader, more comprehensive landscapes, aiming to provide scalable solutions for environmental challenges. One of the lab's significant endeavors aims to develop standard methods for estimating forest carbon stocks to inform future carbon trading mechanisms.</p>
+					
+<p>Kesondra Key, a PhD student in the Barnes lab, is investigating drought signals by analyzing plant responses to aridity, utilizing eddy covariance data from a multitude of US towers. Key manages data operations for the DISES project, including this website. Her role includes the collection, quality assurance, processing, and preparation of data for the eventual submission to AmeriFlux and Fluxnet. She is responsible for ensuring accurate data capture, efficient processing workflows, and adherence to the data standards required by these networks</p>
+				<ul class="actions">
+					<li><a href="https://scholar.google.com/citations?user=0PxF8zAAAAAJ&hl=en" class="button">Learn more</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</section>
+
+<section id="three" class="spotlights">
+	<section><!-- Royer Lab -->
+  		<figure class="image"> <!-- Begin figure tag here -->
+			<a href="generic.html">
+				<img src="{% link assets/images/royer1.jpg %}" alt="Lindsey Rasnake" data-position="center center" />
+			</a>
+			<figcaption>Lindsey Rasnake prepares to collect water samples from a subsurface tile drain in an agricultural landscape</figcaption>
+		</figure> 
+	<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3>The Royer Lab (PI: <a href="https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/royer-todd.html">Todd Royer</a>)</h3>
+				</header>
+				<p>The Royer Lab at Indiana University conducts research in freshwater biogeochemistry, primarily in ecosystems dominated by agriculture or other human activities. Students in the Royer Lab collect and analyze soil and water samples as well as hydrologic data at agricultural field sites. Graduate research facilitated by the project incorporates the effect of cover crops on multiple processes and patterns of biogeochemical cycling. 
+Erin Carman-Sweeney, a master’s student in the IU O’Neill School of Public and Environmental Affairs, will evaluate the effect of cover crops on soil greenhouse gas emissions as part of his thesis. Lindsey Rasnake (pictured to the left), a student in the Environmental Science PhD program, uses stream and tile water samples to determine organic carbon loss through subsurface tile drainage in cover-cropped fields vs fields without cover crops.</p>
+				<ul class="actions">
+					<li><a href="https://royer.lab.indiana.edu/" class="button">Learn more</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+<!-- Tank Lab -->
+<section>
+		<figure class="image"> <!-- Begin figure tag here -->
+			<a href="generic.html">
+				<img src="{% link assets/images/tank.jpg %}" alt="Jennifer Tank" data-position="center center" />
+			</a>
+			<figcaption>Jennifer Tank</figcaption>
+		</figure> 
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+    <h3>The Tank Lab (PI: <a href="https://biology.nd.edu/people/jennifer-tank/">Jennifer Tank</a>)</h3>
+</header>
+				<p>Professor Jennifer Tank is the Director of the University of Notre Dame Environmental Change Initiative (ND-ECI). Tank has been actively involved at ND-ECI since it's inception, previously serving as the principle investigator of the Land Use Program and the Director of the Notre Dame Linked Experimental Ecosystem Facility (ND-LEEF). 
+
+Tank is the Ludmilla F., Stephen J., and Robert T. Galla Professor of Biological Sciences at the University of Notre Dame. Her research focuses on nutrient and carbon cycling in streams and rivers and the influence of human activities on water quality and stream health.
+
+Tank’s extensive research experience aims at better understanding the role that small streams play in removing nitrogen from the water and to prevent it from polluting downstream ecosystems. Her research was recently featured on the University of Notre Dame’s “What Would You Fight For?” series.
+</p>
+				<ul class="actions">
+					<li><a href="https://tanklab.weebly.com/" class="button">Learn more</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section>   <!-- Yoder Lab -->
+		<figure class="image">
+			<a href="generic.html">
+				<img src="{% link assets/images/yoder.jpg %}" alt="Landon Yoder" data-position="center center" />
+			</a>
+			<figcaption>Landon Yoder</figcaption>
+		</figure> <!-- End figure tag here -->
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3>The Yoder Lab (PI: <a href="https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/yoder-landon.html">Landon Yoder</a>)</h3>
+				</header>
+<p>  The Yoder Lab focuses on environmental outcomes of agricultural management, particularly the role of farmer decision-making in using more environmentally friendly practices. One of the major areas of focus is the role of nonpoint source water pollution from large-scale grain farms. Our lab explores this challenge using a social-ecological systems perspective, drawing on social science methods to understand farmers' perspectives on water quality data, the influence of social norms on adoption decisions, and the role of agricultural policy in shaping the options and constraints for farm management. Members of the lab study different agri-environmental outcomes of farm management, including water quality, agrobiodiversity, sustainability, and climate impacts.</p>
+
+
+<p>On the DISES project, the lab's contribution will be to analyze drivers of adoption, long-term use, and abandonment of cover cropping by farmers in the Corn Belt. Our role will be to use semi-structured interviews, focus groups, and large-N surveys to understand barriers and opportunities for scaling up the use of cover crops as a natural climate solution for mitigation and adaptation. Our research will include farmers' perspectives on the opportunities and challenges of cover crops, the role of cover crops as a risk mitigation strategy, and preferences around policy options. Additionally, we will research the role of farm program administrator, county-level conservation staff and extension, and farm service advisors in encouraging cover crop use.</p>	
+				<ul class="actions">
+					<li><a href="https://yoder.lab.indiana.edu/index.html" class="button">Learn more</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section><!-- Suttles Lab -->
+  		<figure class="image"> <!-- Begin figure tag here -->
+			<a href="generic.html">
+				<img src="{% link assets/images/suttles.jpg %}" alt="Shellye Suttles" data-position="center center" />
+			</a>
+			<figcaption>Shellye Suttles</figcaption>
+		</figure> 
+	<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3>The Suttles Lab (PI: <a href="https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/suttles-shellye.html">Shellye Suttles</a>)</h3>
+				</header>
+				<p>Dr. Shellye Suttles is an agricultural economist with a focus on food system sustainability, including local and regional food systems, agricultural production, and agriculture’s impact on climate change. Her research applies macroeconomic and microeconomic analysis to a variety of sustainable food system topics. Her areas of interest include public policy impacts on sustainability in food and agricultural systems, particularly social, economic, and climate policy.</p>
+				<ul class="actions">
+					<li><a href="https://scholar.google.com/citations?user=FX196ZcAAAAJ&hl=en" class="button">Learn more</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</section>
+
