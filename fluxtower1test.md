@@ -1,45 +1,39 @@
----
-title: Nature-Based Climate Solutions and the DISES Project
-layout: landing
-description: 'Exploring the Role of Cover Crops in Combating Climate Change'
-image: assets/images/kimnovick.jpg
-nav-menu: true
----
-
-
-
 <!-- Main -->
 <div id="main">
 
-<!-- One -->
+<!-- Section 1 -->
 <section id="one">
 	<div class="inner">
 		<header class="major">
 			<h2>Introduction to Nature-Based Climate Solutions</h2>
 		</header>
-		<p>As the climate crisis intensifies, innovative approaches are crucial to reduce greenhouse gas concentrations in the atmosphere. Nature-based climate solutions (NbCS) offer a promising avenue by leveraging natural processes to mitigate climate change. These strategies encompass practices like reforesting previously deforested landscapes, reducing excess irrigation, and implementing climate-smart agriculture techniques such as the use of cover crops.</p>
+		<p>As the climate crisis intensifies, innovative approaches are crucial to reduce greenhouse gas concentrations in the atmosphere. Nature-based climate solutions (<b>NbCS</b>) offer a promising avenue by leveraging natural processes to mitigate climate change. These strategies encompass practices like reforesting previously deforested landscapes, reducing excess irrigation, and implementing climate-smart agriculture techniques such as the use of <b>cover crops</b>.</p>
 	</div>
 </section>
 
-<!-- Two -->
+<!-- Sections with images -->
 <section id="two" class="spotlights">
+
 	<!-- Section 2 -->
 	<section>
-		<a href="#" class="image">
-			<img src="{% link assets/images/soil.jpeg %}" alt="Soil" data-position="center center" />
-		</a>
+		<figure class="image">
+			<a href="#">
+				<img src="{% link assets/images/soil.jpeg %}" alt="Soil" data-position="center center" />
+			</a>
+		</figure>
 		<div class="content">
 			<div class="inner">
 				<header class="major">
 					<h3>Co-Benefits of NbCS</h3>
 				</header>
 				<p>NbCS not only aid in climate mitigation but also provide a multitude of co-benefits:</p>
-				<ul>
-					<li>Enhanced Biodiversity: Supporting a wider range of plant and animal life.</li>
-					<li>Improved Air and Water Quality: Filtering pollutants and reducing runoff.</li>
-					<li>Increased Soil Health: Enhancing nutrient content and soil structure.</li>
-					<li>Greater Ecosystem Resilience: Strengthening the ability to withstand climatic extremes.</li>
-					<li>Climate Adaptation Potential: Helping ecosystems adjust to changing conditions.</li>
+				<p>• Enhanced Biodiversity: Supporting a wider range of plant and animal life.</p>
+				<p>• Improved Air and Water Quality: Filtering pollutants and reducing runoff.</p>
+				<p>• Increased Soil Health: Enhancing nutrient content and soil structure.</p>
+				<p>• Greater Ecosystem Resilience: Strengthening the ability to withstand climatic extremes.</p>
+				<p>• Climate Adaptation Potential: Helping ecosystems adjust to changing conditions.</p>
+				<ul class="actions">
+					<li><a href="#" class="button">Learn more</a></li>
 				</ul>
 			</div>
 		</div>
@@ -47,9 +41,11 @@ nav-menu: true
 
 	<!-- Section 3 -->
 	<section>
-		<a href="#" class="image">
-			<img src="{% link assets/images/other.jpeg %}" alt="Criteria for NbCS" data-position="center center" />
-		</a>
+		<figure class="image">
+			<a href="#">
+				<img src="{% link assets/images/other.jpeg %}" alt="Criteria for NbCS" data-position="center center" />
+			</a>
+		</figure>
 		<div class="content">
 			<div class="inner">
 				<header class="major">
@@ -69,15 +65,17 @@ nav-menu: true
 
 	<!-- Section 4 -->
 	<section>
-		<a href="#" class="image">
-			<img src="{% link assets/images/wind.jpeg %}" alt="The DISES Project" data-position="center center" />
-		</a>
+		<figure class="image">
+			<a href="#">
+				<img src="{% link assets/images/wind.jpeg %}" alt="The DISES Project" data-position="center center" />
+			</a>
+		</figure>
 		<div class="content">
 			<div class="inner">
 				<header class="major">
 					<h3>The DISES Project: Pioneering Research in Agricultural NbCS</h3>
 				</header>
-				<p>Addressing these challenges is the goal of the Dynamics of Integrated Socio-Environmental Systems (DISES) project. Funded by the National Science Foundation (NSF), this million-dollar initiative brings together a team of scientists from Indiana University and Notre Dame. The DISES project is an innovative effort aiming to:</p>
+				<p>Addressing these challenges is the goal of the Dynamics of Integrated Socio-Environmental Systems (<b>DISES</b>) project. Funded by the National Science Foundation (<b>NSF</b>), this million-dollar initiative brings together a team of scientists from Indiana University and Notre Dame. The DISES project is an innovative effort aiming to:</p>
 				<ul>
 					<li>Close the Carbon, Water, and Energy Budgets in agricultural systems.</li>
 					<li>Compare Conventional Farming Methods with practices utilizing cover crops.</li>
@@ -96,9 +94,11 @@ nav-menu: true
 
 	<!-- Section 5 -->
 	<section>
-		<a href="#" class="image">
-			<img src="{% link assets/images/eddy_cov.ex.png %}" alt="Methodologies" data-position="center center" />
-		</a>
+		<figure class="image">
+			<a href="#">
+				<img src="{% link assets/images/eddy_cov.ex.png %}" alt="Methodologies" data-position="center center" />
+			</a>
+		</figure>
 		<div class="content">
 			<div class="inner">
 				<header class="major">
@@ -117,9 +117,11 @@ nav-menu: true
 
 	<!-- Section 6 -->
 	<section>
-		<a href="#" class="image">
-			<img src="{% link assets/images/temp.jpeg %}" alt="Cover Crops" data-position="center center" />
-		</a>
+		<figure class="image">
+			<a href="#">
+				<img src="{% link assets/images/temp.jpeg %}" alt="Cover Crops" data-position="center center" />
+			</a>
+		</figure>
 		<div class="content">
 			<div class="inner">
 				<header class="major">
@@ -130,7 +132,7 @@ nav-menu: true
 					<li><strong>Soil Protection</strong>: Acts as a barrier against extreme temperatures and wind erosion.</li>
 					<li><strong>Soil Structure Improvement</strong>: Root growth promotes soil aggregation, crucial for carbon sequestration.</li>
 					<li><strong>Enhanced Carbon Uptake</strong>: Additional plant growth removes more carbon dioxide from the atmosphere.</li>
-					<li><strong>Long-Term Carbon Storage</strong>: Hypothetically - over time, carbon is stored within plant tissues and eventually the soil. The extent of this is still being researched and quantifying this is one goal of the DISES project.</li>
+					<li><strong>Long-Term Carbon Storage</strong>: Over time, carbon is stored within plant tissues and eventually the soil. The extent of this is still being researched, and quantifying this is one goal of the DISES project.</li>
 				</ul>
 				<p>Soil carbon sequestration is one of the main drivers behind considering cover crops as a NbCS.</p>
 				<p>By enhancing human-managed natural systems through the use of cover crops, we may improve the capacity of the soil to absorb atmospheric carbon dioxide and store it long-term.</p>
@@ -141,9 +143,11 @@ nav-menu: true
 
 	<!-- Section 7 -->
 	<section>
-		<a href="#" class="image">
-			<img src="{% link assets/images/netrad.jpeg %}" alt="Anticipated Outcomes" data-position="center center" />
-		</a>
+		<figure class="image">
+			<a href="#">
+				<img src="{% link assets/images/netrad.jpeg %}" alt="Anticipated Outcomes" data-position="center center" />
+			</a>
+		</figure>
 		<div class="content">
 			<div class="inner">
 				<header class="major">
@@ -158,9 +162,10 @@ nav-menu: true
 			</div>
 		</div>
 	</section>
+
 </section>
 
-<!-- Three -->
+<!-- Section 9 -->
 <section id="three">
 	<div class="inner">
 		<header class="major">
