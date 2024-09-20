@@ -8,7 +8,7 @@ nav-menu: true
 <style>
         figcaption {
             font-size: smaller; /* or a specific value like 0.9em */
-            font-style: italic;
+            font-style: italic; 
         }
 </style>
 
