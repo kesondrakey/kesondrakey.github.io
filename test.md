@@ -1,7 +1,7 @@
 ---
 title: Nature-Based Climate Solutions and the DISES Project
 layout: landing
-image: assets/images/kimnovick.jpg
+image: images/kimnovick.jpg
 nav-menu: true
 ---
 
@@ -36,7 +36,7 @@ nav-menu: true
 	<section>
   		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
-				<img src="{% link assets/images/soil.jpeg %}" data-position="center center" />
+				<img src="{% link images/soil.jpeg %}" data-position="center center" />
 			</a>
 		</figure> 
 	<div class="content">
@@ -60,7 +60,7 @@ nav-menu: true
 <section>  
 		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
-				<img src="{% link assets/images/other.jpeg %}" data-position="center center" />
+				<img src="{% link images/other.jpeg %}" data-position="center center" />
 			</a>
 		</figure> <!-- End figure tag here -->
 		<div class="content">
@@ -87,7 +87,7 @@ nav-menu: true
 	<section>
   		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
-				<img src="{% link assets/images/wind.jpeg %}" data-position="center center" />
+				<img src="{% link images/wind.jpeg %}" data-position="center center" />
 			</a>
 			</figure> 
 	<div class="content">
@@ -119,7 +119,7 @@ nav-menu: true
 <section>
 		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
-				<img src="{% link assets/images/tank.jpg %}" alt="Jennifer Tank" data-position="center center" />
+				<img src="{% link images/tank.jpg %}" alt="Jennifer Tank" data-position="center center" />
 			</a>
 			<figcaption>Jennifer Tank</figcaption>
 		</figure> 
@@ -143,7 +143,7 @@ Tank’s extensive research experience aims at better understanding the role tha
 	<section>   <!-- Yoder Lab -->
 		<figure class="image">
 			<a href="generic.html">
-				<img src="{% link assets/images/yoder.jpg %}" alt="Landon Yoder" data-position="center center" />
+				<img src="{% link images/yoder.jpg %}" alt="Landon Yoder" data-position="center center" />
 			</a>
 			<figcaption>Landon Yoder</figcaption>
 		</figure> <!-- End figure tag here -->
@@ -165,7 +165,7 @@ Tank’s extensive research experience aims at better understanding the role tha
 	<section><!-- Suttles Lab -->
   		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
-				<img src="{% link assets/images/suttles.jpg %}" alt="Shellye Suttles" data-position="center center" />
+				<img src="{% link images/suttles.jpg %}" alt="Shellye Suttles" data-position="center center" />
 			</a>
 			<figcaption>Shellye Suttles</figcaption>
 		</figure> 
