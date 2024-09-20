@@ -10,43 +10,7 @@ nav-menu: true
             font-size: smaller; /* or a specific value like 0.9em */
             font-style: italic;
         }
-</style>
 
-
-
-
-
-
-<!-- Main -->
-<div id="main">
-
-<!-- summary -->
-<section id="one">
-	<div class="inner">
-		<header class="major">
-			<h2>Nature-based Climate Solutions</h2>
-		</header>
-		<p>
-
-
-            
-        </p>
-	</div>
-</section>
-
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DISES Project Overview</title>
-    <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -86,10 +50,32 @@ nav-menu: true
 </head>
 <body>
 
-    <h1>Advancing Nature-based Climate Solutions: An Overview of the DISES Project</h1>
 
-    <h2>Introduction to Nature-Based Climate Solutions</h2>
+
+
+<!-- Main -->
+<div id="main">
+
+<!-- summary -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h2>Nature-based Climate Solutions</h2>
+		</header>
+		    <h2>Introduction to Nature-Based Climate Solutions</h2>
     <p>As the climate crisis intensifies, innovative approaches are crucial to reduce greenhouse gas concentrations in the atmosphere. <span class="highlight">Nature-based climate solutions (NbCS)</span> offer a promising avenue by leveraging natural processes to mitigate climate change. These strategies encompass practices like reforesting previously deforested landscapes, reducing excess irrigation, and implementing climate-smart agriculture techniques such as the use of <strong>cover crops</strong>.</p>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
 
     <p>NbCS not only aid in climate mitigation but also provide a multitude of co-benefits:</p>
 
