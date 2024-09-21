@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Have a question?</title>
-  <meta name="description" content="Please feel free to reach out to us with any thoughts or questions - we would love to hear from you!">
-  
+---
+title: Have a question?
+description: Please feel free to reach out to us with any thoughts or questions - we  would love to hear from you!
+layout: landing
+image: assets/images/kimnovick.jpg
+nav-menu: true
+---
+
+
   <!-- Include Font Awesome Library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   
