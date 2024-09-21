@@ -1,5 +1,6 @@
 ---
 title: Nature-Based Climate Solutions and the DISES Project
+description: 'Working to close the carbon, water, and energy budgets<br />in Indiana agricultural systems'
 layout: landing
 image: assets/images/kimnovick.jpg
 nav-menu: true
@@ -20,12 +21,18 @@ nav-menu: true
 <!-- Section 1 -->
 <section id="one">
 	<div class="inner">
+		<header class="major">
+			<h2>Nature-based Climate Solutions</h2>
+		</header>
 		<p>As the climate crisis intensifies, innovative approaches are crucial to reduce greenhouse gas concentrations in the atmosphere. Nature-based climate solutions (NbCS) offer a promising avenue by leveraging natural processes to mitigate climate change. These strategies encompass practices like reforesting previously deforested landscapes, reducing excess irrigation, and implementing climate-smart agriculture techniques such as the use of <b>cover crops</b>.</p>
 	</div>
 </section>
 
- 
-<!-- Section 2 -->
+
+
+
+
+<!-- Sections -->
  <section id="two" class="spotlights">
 	<section>
   		<figure class="image"> <!-- Begin figure tag here -->
@@ -50,11 +57,7 @@ nav-menu: true
 		</div>
 	</section>
 </section>
-
-
-
 <!-- Section 3 -->
- <section id="three" class="spotlights">
 	<section>  
 		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
@@ -76,14 +79,8 @@ nav-menu: true
 				</ul>
 			</div>
 		</div>
-	</section>
 </section>
-
-
-
-
 <!-- Section 4 -->
- <section id="four" class="spotlights">
 	<section>
   		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
@@ -108,15 +105,8 @@ nav-menu: true
 <p>•<b> Impact of Cover Crops</b>: How cover cropping influences carbon sequestration and other environmental factors over time.</p>
       </div>
     </div>
-    </section>
 </section>
-
-
-
-
-
 <!-- Section 5 -->
- <section id="five" class="spotlights">
 	<section>
   		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
@@ -138,16 +128,8 @@ nav-menu: true
 				</ul>
       </div>
     </div>
-	</section>
 </section>
-
-
-
-
-
-
     <!-- Section 6 -->
-<section id="six" class="spotlights">
 	<section>
   		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
@@ -169,17 +151,8 @@ nav-menu: true
 <p>However, how long this process takes and how much carbon is stored is unknown. The DISES project aims to provide valuable insights into these processes.</p>			
       </div>
     </div>
-	 </section>
 </section>
-
-
-
-
-
-
-
  <!-- Section 7 -->
- <section id="seven" class="spotlights">
 	<section>
   		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
@@ -197,28 +170,21 @@ nav-menu: true
 <p>• <b>Reduce Nutrient Runoff: </b> Minimizing fertilizer runoff into waterways, mitigating environmental pollution.</p>
       </div>
     </div>
-	</section>
 </section>
 
 
 
-
-
-     <!-- Section 8 -->
- <section id="eight" class="spotlights">
-	<section>
-  		<figure class="image"> <!-- Begin figure tag here -->
-			<a href="generic.html">
-				<img src="{% link images/temp.jpeg %}" alt="" data-position="center center" />
-			</a>
-			</figure> 
-	<div class="content">
-			<div class="inner">
-				<header class="major">
-					<h3>Conclusion</h3>
-				</header>
-<p>The DISES project represents a significant step forward in understanding how nature-based solutions like cover cropping can contribute to climate change mitigation. By closing the carbon, water, and energy budgets in agricultural systems, this research provides valuable insights that can inform sustainable farming practices and NbCS implementation on a broader scale.</p>
-      </div>
-    </div>
-	</section>
+<!-- Section 8 -->
+<section id="eight">
+	<div class="inner">
+		<header class="major">
+			<h2>Research is ongoing</h2>
+		</header>
+		<p>The DISES project represents a significant step forward in understanding how nature-based solutions like cover cropping can contribute to climate change mitigation. By closing the carbon, water, and energy budgets in agricultural systems, this research provides valuable insights that can inform sustainable farming practices and NbCS implementation on a broader scale.</p>
+		<ul class="actions">
+			<li><a href="Publications.html" class="button next">Publications (currently unavailable)</a></li>
+		</ul>
+	</div>
 </section>
+
+</div>
