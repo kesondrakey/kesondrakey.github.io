@@ -56,7 +56,7 @@ nav-menu: true
                 </ul>
             </div>
         </div>
-    </section>
+</section>
 <!-- Section 3 -->
 <section>
         <a href="generic.html" class="image">
@@ -78,7 +78,7 @@ nav-menu: true
 				</ul>
            </div>
         </div>
-    </section>
+</section>
 <!-- Section 4 -->
 <section>
         <a href="generic.html" class="image">
@@ -146,7 +146,7 @@ nav-menu: true
     </div>
 </section>
  <!-- Section 7 -->
-	<section>
+<section>
   		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
 				<img src="{% link images/netrad.jpeg %}" alt="" data-position="center center" />
