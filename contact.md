@@ -32,7 +32,7 @@ nav-menu: true
 			</form>
 		</section>
 		<section class="split">
-			<h2>Relevant Links:</h2>
+			<h5>Relevant Links:</h5>
 			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-tree"></span>
@@ -41,7 +41,7 @@ nav-menu: true
 			</section>
 			<section>
 				<div class="contact-method">
-					<span class="icon alt fa-<FontAwesomeIcon icon="fa-solid fa-satellite" />"></span>
+					<span class="icon alt fa-satellite" />"></span>
 					<h4><a href="https://scholar.google.com/citations?user=0PxF8zAAAAAJ&hl=en">Barnes Lab: Data Informatics</a></h4><p><i>(lab website undergoing construction)</i></p>
 				</div>
 			</section>
