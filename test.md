@@ -16,6 +16,7 @@ nav-menu: true
 <!-- Main -->
 <div id="main">
 
+
 <!-- Section 1 -->
 <section id="one">
 	<div class="inner">
@@ -49,6 +50,8 @@ nav-menu: true
 		</div>
 	</section>
 
+
+
 <!-- Section 3 -->
 <section>  
 		<figure class="image"> <!-- Begin figure tag here -->
@@ -75,6 +78,8 @@ nav-menu: true
 </section>
 
 
+
+
 <!-- Section 4 -->
 <section id="three" class="spotlights">
 	<section>
@@ -99,9 +104,10 @@ nav-menu: true
 <p>•<b>Carbon Pathways</b>: Where carbon goes within agricultural systems and how much is sequestered into the soil.</p>
 <p>•<b>Biogeochemical Cycles</b>: The functionality and interactions within agricultural ecosystems.</p>
 <p>•<b> Impact of Cover Crops</b>: How cover cropping influences carbon sequestration and other environmental factors over time.</p>
-			</div>
-		</div>
-	</section>
+      </div>
+    </div>
+  </section>
+</section>
 
 
 
@@ -128,9 +134,13 @@ nav-menu: true
 				<ul class="actions">
 					<li><a href="https://kesondrakey.github.io/FluxTowers.html" class="button">Learn more about Eddy Covariance</a></li>
 				</ul>
-			</div>
-		</div>
-	</section>
+      </div>
+    </div>
+  </section>
+</section>
+
+
+
 
 
 
@@ -156,12 +166,12 @@ nav-menu: true
 <p><b>By enhancing human-managed natural systems through the use of cover crops, we may improve the capacity of the soil to absorb atmospheric carbon dioxide and store it long-term. </b></p>
 <p>However, how long this process takes and how much carbon is stored is unknown. The DISES project aims to provide valuable insights into these processes.</p>
 				
-				<ul class="actions">
-					<li><a href="https://royer.lab.indiana.edu/" class="button">Learn more</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
+      </div>
+    </div>
+  </section>
+</section>
+
+
 
 
 
@@ -184,9 +194,10 @@ nav-menu: true
 <p>• <b>Increase Soil Carbon Sequestration: </b> Potentially boosting the amount of carbon stored in soils.</p>
 <p>• <b>Improve Soil Water Retention:</b> Enhancing the soil's ability to retain moisture.</p>
 <p>• <b>Reduce Nutrient Runoff: </b> Minimizing fertilizer runoff into waterways, mitigating environmental pollution.</p>
-			</div>
-		</div>
-	</section>
+      </div>
+    </div>
+  </section>
+</section>
 
 
 
@@ -206,6 +217,7 @@ nav-menu: true
 					<h3>Conclusion</h3>
 				</header>
 <p>The DISES project represents a significant step forward in understanding how nature-based solutions like cover cropping can contribute to climate change mitigation. By closing the carbon, water, and energy budgets in agricultural systems, this research provides valuable insights that can inform sustainable farming practices and NbCS implementation on a broader scale.</p>
-			</div>
-		</div>
-	</section>
+      </div>
+    </div>
+  </section>
+</section>
