@@ -51,7 +51,6 @@ nav-menu: true
             </div>
         </div>
     </section>
-
     <!-- Section 3 -->
     <section>
         <a href="generic.html" class="image">
@@ -75,7 +74,6 @@ nav-menu: true
             </div>
         </div>
     </section>
-
     <!-- Section 4 -->
     <section>
         <a href="generic.html" class="image">
@@ -86,7 +84,8 @@ nav-menu: true
                 <header class="major">
                     <h3>The DISES Project: Pioneering Research in Agricultural NbCS</h3>
                 </header>
-                <p>Addressing these challenges is the goal of the Dynamics of Integrated Socio-Environmental Systems (DISES) project. Funded by the National Science Foundation (NSF), this million-dollar initiative brings together a team of scientists from Indiana University and Notre Dame. The DISES project is an innovative effort aiming to:</p>
+                <p>Addressing these challenges is the goal of the Dynamics of Integrated Socio-Environmental Systems (DISES) project. Funded by the National Science Foundation (NSF), this million-dollar initiative brings together a team of scientists from Indiana University and Notre Dame. </p>
+                <p>The DISES project is an innovative effort aiming to:</p>
                 <ol>
                     <li><b>Close the Carbon, Water, and Energy Budgets in agricultural systems</b></li>
                     <li><b>Compare Conventional Farming Methods with practices utilizing cover crops</b></li>
@@ -95,8 +94,7 @@ nav-menu: true
             </div>
         </div>
     </section>
-
-    <!-- Section 5 (New Section) -->
+    <!-- Section 5 -->
     <section>
         <a href="generic.html" class="image">
             <img src="{% link images/wind.jpeg %}" alt="" data-position="center center" />
@@ -115,8 +113,7 @@ nav-menu: true
             </div>
         </div>
     </section>
-
-    <!-- Section 6 (Renumbered) -->
+    <!-- Section 6  -->
     <section>
         <a href="generic.html" class="image">
             <img src="{% link images/temp.jpeg %}" alt="" data-position="center center" />
@@ -128,7 +125,7 @@ nav-menu: true
                 </header>
                 <p>To achieve its objectives, the DISES project utilizes a comprehensive suite of methodologies:</p>
                 <ul>
-                    <li><b>Eddy Covariance Towers</b>: Measure various fluxes, including carbon dioxide, evapotranspiration, and latent heat between the land surface and the atmosphere</li>
+                    <li><b>Eddy Covariance Towers</b>: Measure various fluxes, including carbon dioxide and latent heat between the land surface and the atmosphere</li>
                     <li><b>Soil Sampling</b>: Quantify soil water content, dissolved organic carbon, and nutrient levels</li>
                     <li><b>Water Sampling</b>: Assess runoff outputs, including potential fertilizer runoff</li>
                     <li><b>Radiation Measurements</b>: Collect data on incoming and outgoing radiation to understand the energy balance</li>
@@ -139,8 +136,7 @@ nav-menu: true
             </div>
         </div>
     </section>
-
-    <!-- Section 7 (Renumbered) -->
+    <!-- Section 7 -->
     <section>
         <a href="generic.html" class="image">
             <img src="{% link images/netrad.jpeg %}" alt="" data-position="center center" />
@@ -150,21 +146,21 @@ nav-menu: true
                 <header class="major">
                     <h3>Cover Crops: A Closer Look</h3>
                 </header>
-                <p>Cover crops are plants grown outside of the main cash crop season, such as before planting or after harvest. Examples include rye, clover, and vetch. The benefits of cover crops are multifaceted:</p>
+                <p>Cover crops are plants grown outside of the main cash crop season, such as before planting or after harvest. Examples include rye, clover, and vetch. </p>
+                <p>The benefits of cover crops are multifaceted:</p>
                 <ul>
                     <li><b>Soil Protection</b>: Acts as a barrier against extreme temperatures and wind erosion</li>
                     <li><b>Soil Structure Improvement</b>: Root growth promotes soil aggregation, crucial for carbon sequestration</li>
                     <li><b>Enhanced Carbon Uptake</b>: Additional plant growth removes more carbon dioxide from the atmosphere</li>
-                    <li><b>Long-Term Soil Carbon Storage?</b>: Ideally, over time, carbon is stored within plant tissues and eventually the soil. The extent of this is still being researched, and quantifying this is one goal of the DISES project</li>
+                    <li><b>Long-Term Soil Carbon Storage?</b>: Ideally, over time, carbon is stored within plant tissues and eventually the soil. <i>The extent of this is still being researched, and quantifying this through timeseries analysis using the eddy covariance method is one goal of the DISES project</i></li>
                 </ul>
                 <p>Soil carbon sequestration is one of the main drivers behind considering cover crops as a NbCS.</p>
                 <p><b>By enhancing human-managed natural systems through the use of cover crops, we may improve the capacity of the soil to absorb atmospheric carbon dioxide and store it long-term.</b></p>
-                <p>However, how long this process takes and how much carbon is stored is unknown. The DISES project aims to provide valuable insights into these processes.</p>
+                <p>However, how long this process takes and how much carbon is stored on agricultural lands is unknown. The DISES project aims to provide valuable insights into these difficult-to-measure processes.</p>
             </div>
         </div>
     </section>
-
-    <!-- Section 8 (Renumbered) -->
+    <!-- Section 8  -->
     <section>
         <a href="generic.html" class="image">
             <img src="{% link images/netrad.jpeg %}" alt="" data-position="center center" />
@@ -191,7 +187,7 @@ nav-menu: true
         <header class="major">
             <h2>Research is Ongoing</h2>
         </header>
-        <p>The DISES project represents a significant step forward in understanding how nature-based solutions like cover cropping can contribute to climate change mitigation. By closing the carbon, water, and energy budgets in agricultural systems, this research provides valuable insights that can inform sustainable farming practices and NbCS implementation on a broader scale.</p>
+        <p>The DISES project represents a significant step forward in understanding how nature-based solutions like cover cropping can contribute to climate change mitigation. By closing the carbon, water, and energy budgets in agricultural systems, this research provides useful insights that can inform sustainable farming practices and NbCS implementation on a broader scale.</p>
         <ul class="actions">
             <li><a href="https://kesondrakey.github.io/DownforMaintenance" class="button next">Publications (currently unavailable)</a></li>
         </ul>
