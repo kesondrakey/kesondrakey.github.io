@@ -22,7 +22,7 @@ nav-menu: true
 <section id="one">
 	<div class="inner">
 		<header class="major">
-			<h2>Nature-based Climate Solutions</h2>
+			<h2>Nature-based Climate Solutions (NbCS)</h2>
 		</header>
 	<ul>
 		<p>As the climate crisis intensifies, innovative approaches are crucial to reduce greenhouse gas concentrations in the atmosphere. Nature-based climate solutions (NbCS) offer a promising avenue by leveraging natural processes to mitigate climate change. These strategies encompass practices like reforesting previously deforested landscapes, reducing excess irrigation, and implementing climate-smart agriculture techniques such as the use of <b>cover crops</b>.</p>
