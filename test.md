@@ -32,19 +32,18 @@ nav-menu: true
 
 
 
+
 <!-- Sections -->
- <section id="two" class="spotlights">
-	<section>
-  		<figure class="image"> <!-- Begin figure tag here -->
-			<a href="generic.html">
-				<img src="{% link images/soil.jpeg %}" alt="" data-position="center center" />
-			</a>
-		</figure> 
-	<div class="content">
-			<div class="inner">
-				<header class="major">
-					<h3>NbCS not only aid in climate mitigation but also provide a multitude of co-benefits:</h3>
-				</header>
+<section id="two" class="spotlights">
+    <section>
+        <a href="generic.html" class="image">
+            <img src="{% link images/soil.jpeg %}" alt="" data-position="center center" />
+        </a> 
+        <div class="content">
+            <div class="inner">
+                <header class="major">
+                    <h3>NbCS not only aid in climate mitigation but also provide a multitude of co-benefits:</h3>
+                </header>
 <p>• <b>Enhanced Biodiversityy</b>: Supporting a wider range of plant and animal life</p>
 <p>• <b>Improved Air and Water Quality</b>: Filtering pollutants and reducing runoff</p>
 <p>• <b>Increased Soil Health</b>: Enhancing nutrient content and soil structure</p>
@@ -55,17 +54,15 @@ nav-menu: true
 				</ul>
 			</div>
 		</div>
-	</section>
 </section>
 <!-- Section 3 -->
-	<section>  
-		<figure class="image"> <!-- Begin figure tag here -->
-			<a href="generic.html">
-				<img src="{% link images/other.jpeg %}" alt=""  data-position="center center" />
-			</a>
-		</figure> <!-- End figure tag here -->
-		<div class="content">
-			<div class="inner">
+<section>
+        <a href="generic.html" class="image">
+            <img src="{% link images/other.jpeg %}" alt="" data-position="center center" />
+        </a> 
+        <div class="content">
+            <div class="inner">
+                <header class="major">
 				<header class="major">
 					<h3>To qualify as a true NbCS, initiatives must meet four essential criteria:</h3>
 				</header>
@@ -81,14 +78,12 @@ nav-menu: true
 		</div>
 </section>
 <!-- Section 4 -->
-	<section>
-  		<figure class="image"> <!-- Begin figure tag here -->
-			<a href="generic.html">
-				<img src="{% link images/wind.jpeg %}" alt="" data-position="center center" />
-			</a>
-			</figure> 
-	<div class="content">
-			<div class="inner">
+<section>
+        <a href="generic.html" class="image">
+            <img src="{% link images/wind.jpeg %}" alt="" data-position="center center" />
+        </a> 
+        <div class="content">
+            <div class="inner">
 				<header class="major">
 					<h3>The DISES Project: Pioneering Research in Agricultural NbCS</h3>
 				</header>
@@ -107,14 +102,12 @@ nav-menu: true
     </div>
 </section>
 <!-- Section 5 -->
-	<section>
-  		<figure class="image"> <!-- Begin figure tag here -->
-			<a href="generic.html">
-				<img src="{% link images/eddy_cov_ex.png %}" alt="" data-position="center center" />
-			</a>
-		</figure> 
-	<div class="content">
-			<div class="inner">
+<section>
+        <a href="generic.html" class="image">
+            <img src="{% link images/temp.jpeg %}" alt="" data-position="center center" />
+        </a> 
+        <div class="content">
+            <div class="inner">
 				<header class="major">
 					<h3>Methodologies Employed</h3>
 				</header>
@@ -130,14 +123,12 @@ nav-menu: true
     </div>
 </section>
     <!-- Section 6 -->
-	<section>
-  		<figure class="image"> <!-- Begin figure tag here -->
-			<a href="generic.html">
-				<img src="{% link images/temp.jpeg %}" alt="" data-position="center center" />
-			</a>
-			</figure> 
-	<div class="content">
-			<div class="inner">
+<section>
+        <a href="generic.html" class="image">
+            <img src="{% link images/netrad.jpeg %}" alt="" data-position="center center" />
+        </a> 
+        <div class="content">
+            <div class="inner">
 				<header class="major">
 					<h3>Cover Crops: A Closer Look</h3>
 				</header>
