@@ -31,7 +31,7 @@ nav-menu: true
     <!-- Section 2 -->
     <section>
         <a href="generic.html" class="image">
-            <img src="{% link images/soil.jpeg %}" alt="" data-position="center center" />
+            <img src="{% link images/wind.jpeg %}" alt="" data-position="center center" />
         </a> 
         <div class="content">
             <div class="inner">
@@ -97,7 +97,7 @@ nav-menu: true
     <!-- Section 5 -->
     <section>
         <a href="generic.html" class="image">
-            <img src="{% link images/wind.jpeg %}" alt="" data-position="center center" />
+            <img src="{% link images/soil.jpeg %}" alt="" data-position="center center" />
         </a>
         <div class="content">
             <div class="inner">
