@@ -112,7 +112,7 @@ nav-menu: true
 	<section>
   		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
-				<img src="{% link images/eddy_cov.ex.png %}" alt="" data-position="center center" />
+				<img src="{% link images/eddy_cov_ex.png %}" alt="" data-position="center center" />
 			</a>
 		</figure> 
 	<div class="content">
