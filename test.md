@@ -7,10 +7,15 @@ nav-menu: true
 ---
 
 <style>
-        figcaption {
-            font-size: smaller; /* or a specific value like 0.9em */
-            font-style: italic;
-        }
+figcaption {
+    font-size: smaller;
+    font-style: italic;
+}
+.image img {
+    width: 100%;
+    height: auto; /* Set your desired fixed height */
+    object-fit: cover;
+}
 </style>
 
 <!-- Main -->
@@ -31,7 +36,7 @@ nav-menu: true
     <!-- Section 2 -->
     <section>
         <a href="generic.html" class="image">
-            <img src="{% link images/soil.jpeg %}" alt="" data-position="center center" />
+            <img src="{% link images/wind.jpeg %}" alt="" data-position="center center" />
         </a> 
         <div class="content">
             <div class="inner">
@@ -77,7 +82,7 @@ nav-menu: true
     <!-- Section 4 -->
     <section>
         <a href="generic.html" class="image">
-            <img src="{% link images/wind.jpeg %}" alt="" data-position="center center" />
+            <img src="{% link images/precip.jpeg %}" alt="" data-position="center center" />
         </a> 
         <div class="content">
             <div class="inner">
@@ -97,7 +102,7 @@ nav-menu: true
     <!-- Section 5 -->
     <section>
         <a href="generic.html" class="image">
-            <img src="{% link images/wind.jpeg %}" alt="" data-position="center center" />
+            <img src="{% link images/soil.jpeg %}" alt="" data-position="center center" />
         </a>
         <div class="content">
             <div class="inner">
@@ -116,7 +121,7 @@ nav-menu: true
     <!-- Section 6  -->
     <section>
         <a href="generic.html" class="image">
-            <img src="{% link images/temp.jpeg %}" alt="" data-position="center center" />
+            <img src="{% link images/eddy_cov_ex.png %}" alt="" data-position="center center" />
         </a>
         <div class="content">
             <div class="inner">
@@ -139,7 +144,7 @@ nav-menu: true
     <!-- Section 7 -->
     <section>
         <a href="generic.html" class="image">
-            <img src="{% link images/netrad.jpeg %}" alt="" data-position="center center" />
+            <img src="{% link images/redclover.jpg %}" alt="" data-position="center center" />
         </a>
         <div class="content">
             <div class="inner">
