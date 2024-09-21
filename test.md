@@ -26,7 +26,8 @@ nav-menu: true
 
  
 <!-- Section 2 -->
-<section>
+ <section id="two" class="spotlights">
+	<section>
   		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
 				<img src="{% link images/soil.jpeg %}" alt="" data-position="center center" />
@@ -47,12 +48,14 @@ nav-menu: true
 				</ul>
 			</div>
 		</div>
+	</section>
 </section>
 
 
 
 <!-- Section 3 -->
-<section>  
+ <section id="three" class="spotlights">
+	<section>  
 		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
 				<img src="{% link images/other.jpeg %}" alt=""  data-position="center center" />
@@ -80,7 +83,8 @@ nav-menu: true
 
 
 <!-- Section 4 -->
-<section>
+ <section id="four" class="spotlights">
+	<section>
   		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
 				<img src="{% link images/wind.jpeg %}" alt="" data-position="center center" />
@@ -104,6 +108,7 @@ nav-menu: true
 <p>•<b> Impact of Cover Crops</b>: How cover cropping influences carbon sequestration and other environmental factors over time.</p>
       </div>
     </div>
+    </section>
 </section>
 
 
