@@ -11,10 +11,22 @@ figcaption {
     font-size: smaller;
     font-style: italic;
 }
-.image img {
+/* Fixed-size container for images */
+.image {
     width: 100%;
-    height: 500px; /* Set your desired fixed height or use auto */
-    object-fit: cover;
+    height: 500px; /* Set your desired fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Images adjust to fit within the container without cropping */
+.image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
 }
 </style>
 
