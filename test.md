@@ -11,14 +11,23 @@ figcaption {
     font-size: smaller;
     font-style: italic;
 }
-/* Fixed-size container for images */
+
+/* Ensure the container adjusts to its content */
 .image {
     width: 100%;
-    height: 500px; /* Set your desired fixed height */
-    object-fit: contain;
+    /* No fixed height */
+    display: block; /* Default display */
+    overflow: hidden; /* Ensure any overflow is contained */
 }
 
+/* Make images responsive */
+.image img {
+    width: 100%;
+    height: auto; /* Let the height adjust automatically */
+    display: block; /* Remove any inline spacing */
+}
 </style>
+
 
 <!-- Main -->
 <div id="main">
