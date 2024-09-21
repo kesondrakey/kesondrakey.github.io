@@ -26,8 +26,7 @@ nav-menu: true
 
  
 <!-- Section 2 -->
-<section id="three" class="spotlights">
-	<section>
+<section>
   		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
 				<img src="{% link images/soil.jpeg %}" alt="" data-position="center center" />
@@ -48,7 +47,7 @@ nav-menu: true
 				</ul>
 			</div>
 		</div>
-	</section>
+</section>
 
 
 
@@ -81,8 +80,7 @@ nav-menu: true
 
 
 <!-- Section 4 -->
-<section id="three" class="spotlights">
-	<section>
+<section>
   		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
 				<img src="{% link images/wind.jpeg %}" alt="" data-position="center center" />
@@ -106,7 +104,6 @@ nav-menu: true
 <p>•<b> Impact of Cover Crops</b>: How cover cropping influences carbon sequestration and other environmental factors over time.</p>
       </div>
     </div>
-  </section>
 </section>
 
 
@@ -114,8 +111,7 @@ nav-menu: true
 
 
 <!-- Section 5 -->
-<section id="three" class="spotlights">
-	<section>
+<section>
   		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
 				<img src="{% link images/eddy_cov_ex.png %}" alt="" data-position="center center" />
@@ -136,7 +132,6 @@ nav-menu: true
 				</ul>
       </div>
     </div>
-  </section>
 </section>
 
 
@@ -145,8 +140,7 @@ nav-menu: true
 
 
     <!-- Section 6 -->
-<section id="three" class="spotlights">
-	<section>
+<section>
   		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
 				<img src="{% link images/temp.jpeg %}" alt="" data-position="center center" />
@@ -164,11 +158,9 @@ nav-menu: true
 <p>•<b>Long-Term Soil Carbon Storage?</b>: Ideally - over time, carbon is stored within plant tissues and eventually the soil. The extent of this is still being researched and quantifying this is one goal of the DISES project</p>
 <p>Soil carbon sequestration is one of the main drivers behind considering cover crops as a NbCS. </p>
 <p><b>By enhancing human-managed natural systems through the use of cover crops, we may improve the capacity of the soil to absorb atmospheric carbon dioxide and store it long-term. </b></p>
-<p>However, how long this process takes and how much carbon is stored is unknown. The DISES project aims to provide valuable insights into these processes.</p>
-				
+<p>However, how long this process takes and how much carbon is stored is unknown. The DISES project aims to provide valuable insights into these processes.</p>			
       </div>
     </div>
-  </section>
 </section>
 
 
@@ -178,8 +170,7 @@ nav-menu: true
 
 
  <!-- Section 7 -->
-<section id="three" class="spotlights">
-	<section>
+<section>
   		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
 				<img src="{% link images/netrad.jpeg %}" alt="" data-position="center center" />
@@ -196,7 +187,6 @@ nav-menu: true
 <p>• <b>Reduce Nutrient Runoff: </b> Minimizing fertilizer runoff into waterways, mitigating environmental pollution.</p>
       </div>
     </div>
-  </section>
 </section>
 
 
@@ -204,8 +194,7 @@ nav-menu: true
 
 
      <!-- Section 8 -->
-<section id="three" class="spotlights">
-	<section>
+<section>
   		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
 				<img src="{% link images/temp.jpeg %}" alt="" data-position="center center" />
@@ -219,5 +208,4 @@ nav-menu: true
 <p>The DISES project represents a significant step forward in understanding how nature-based solutions like cover cropping can contribute to climate change mitigation. By closing the carbon, water, and energy budgets in agricultural systems, this research provides valuable insights that can inform sustainable farming practices and NbCS implementation on a broader scale.</p>
       </div>
     </div>
-  </section>
 </section>
