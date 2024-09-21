@@ -64,33 +64,40 @@ nav-menu: true
 			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-tree"></span>
-					<h4><a href="https://kesondrakey.github.io/DownforMaintenance">Novick Lab</a></h4><p><i>(undergoing construction)</i></p>
+					<h4><a href="https://scholar.google.com/citations?user=K5tffpEAAAAJ&hl=en">Novick Lab: the Biomet Lab</a></h4><p><i>(Lab website undergoing construction)</i></p>
+				</div>
+			</section>
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-tree"></span>
+					<h4><a href="https://scholar.google.com/citations?user=0PxF8zAAAAAJ&hl=en">Barnes Lab: Data Informatics</a></h4><p><i>(Lab website undergoing construction)</i></p>
 				</div>
 			</section>
 			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-envelope"></span>
-					<h3><a href="https://kesondrakey.github.io/DownforMaintenance">Royer Lab (undergoing construction)</a></h3>
+					<h3><a href="https://tanklab.weebly.com/">Tank Lab</a></h3>
 				</div>
 			</section>
-					<section>
+			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-envelope"></span>
-					<h3><a href="https://kesondrakey.github.io/DownforMaintenance">Yoder Lab (undergoing construction)</a></h3>
+					<h3><a href="https://royer.lab.indiana.edu/">the Royer Lab</a></h3>
+				</div>
+			</section>
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-envelope"></span>
+					<h3><a href="https://yoder.lab.indiana.edu/index.html">Yoder Lab</a></h3>
 				</div>
 			</section>
    			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-envelope"></span>
-					<h3><a href="https://kesondrakey.github.io/DownforMaintenance">Suttles Lab (undergoing construction)</a></h3>
+					<h3><a href="https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/suttles-shellye.html">Shellye Suttles</a></h3>
 				</div>
 			</section>
-			<section>
-				<div class="contact-method">
-					<span class="icon alt fa-envelope"></span>
-					<h3><a href="https://kesondrakey.github.io/DownforMaintenance">Tank Lab (undergoing construction)</a></h3>
-				</div>
-			</section>
+
 		</section>
 	</div>
 </section>
