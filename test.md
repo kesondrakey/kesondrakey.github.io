@@ -15,6 +15,7 @@ figcaption {
 .image {
     width: 100%;
     height: 500px; /* Set your desired fixed height */
+    object-fit: cover;
     
 }
 
