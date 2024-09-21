@@ -32,7 +32,6 @@ nav-menu: true
 			</form>
 		</section>
 		<section class="split">
-			<h5>Relevant Links:</h5>
 			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-tree"></span>
