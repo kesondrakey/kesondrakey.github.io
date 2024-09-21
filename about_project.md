@@ -77,7 +77,7 @@ nav-menu: true
     <!-- Section 4 -->
     <section>
         <a href="generic.html" class="image">
-            <img src="{% link images/wind.jpeg %}" alt="" data-position="center center" />
+            <img src="{% link images/precip.jpeg %}" alt="" data-position="center center" />
         </a> 
         <div class="content">
             <div class="inner">
@@ -139,7 +139,7 @@ nav-menu: true
     <!-- Section 7 -->
     <section>
         <a href="generic.html" class="image">
-            <img src="{% link images/netrad.jpeg %}" alt="" data-position="center center" />
+            <img src="{% link images/redclover.jpg %}" alt="" data-position="center center" />
         </a>
         <div class="content">
             <div class="inner">
