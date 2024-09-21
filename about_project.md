@@ -7,11 +7,27 @@ nav-menu: true
 ---
 
 <style>
-        figcaption {
-            font-size: smaller; /* or a specific value like 0.9em */
-            font-style: italic;
-        }
+figcaption {
+    font-size: smaller;
+    font-style: italic;
+}
+
+/* Ensure the container adjusts to its content */
+.image {
+    width: 100%;
+    /* No fixed height */
+    display: block; /* Default display */
+    overflow: hidden; /* Ensure any overflow is contained */
+}
+
+/* Make images responsive */
+.image img {
+    width: 100%;
+    height: auto; /* Let the height adjust automatically */
+    display: block; /* Remove any inline spacing */
+}
 </style>
+
 
 <!-- Main -->
 <div id="main">
@@ -77,7 +93,7 @@ nav-menu: true
     <!-- Section 4 -->
     <section>
         <a href="generic.html" class="image">
-            <img src="{% link images/precip.jpeg %}" alt="" data-position="center center" />
+            <img src="images/precip.jpeg" alt="" data-position="center center" />
         </a> 
         <div class="content">
             <div class="inner">
