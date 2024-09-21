@@ -3,7 +3,7 @@ title: Have a question?
 description: Please feel free to reach out to us with any thoughts or questions - we  would love to hear from you!
 layout: landing
 image: assets/images/kimnovick.jpg
-nav-menu: true
+nav-menu: true 
 ---
 
 
