@@ -5,7 +5,10 @@ image: assets/images/kimnovick.jpg
 nav-menu: true
 ---
 
-<!-- Contact -->
+<h1>Have a question?</h1>
+<p>Please feel free to reach out to us with any thoughts or questions - we  would love to hear from you!</p>
+
+
 <!-- Contact -->
 <section id="contact"> 
   <div class="inner">
