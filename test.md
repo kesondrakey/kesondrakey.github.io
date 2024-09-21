@@ -21,13 +21,6 @@ figcaption {
     
 }
 
-/* Images adjust to fit within the container without cropping */
-.image img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-}
 </style>
 
 <!-- Main -->
