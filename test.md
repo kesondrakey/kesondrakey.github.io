@@ -15,9 +15,6 @@ figcaption {
 .image {
     width: 100%;
     height: 500px; /* Set your desired fixed height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
     
 }
 
