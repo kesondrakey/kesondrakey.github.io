@@ -31,21 +31,23 @@ nav-menu: true
         </ul>
 </form>
 <!-- Updated Contact Section -->
-    <section class="split">
+  <section class="split">
       <section>
         <div class="contact-method">
-          <i class="fas fa-tree"></i>
+          <span class="icon fa fa-tree"></span>
           <h4><a href="https://scholar.google.com/citations?user=K5tffpEAAAAJ&hl=en">Novick Lab: the Biomet Lab</a></h4>
           <p><i>(lab website undergoing construction)</i></p>
         </div>
       </section>
       <section>
         <div class="contact-method">
-          <i class="fas fa-satellite"></i>
+          <!-- Changed icon to one available in Font Awesome 4 -->
+          <span class="icon fa fa-database"></span>
           <h4><a href="https://scholar.google.com/citations?user=0PxF8zAAAAAJ&hl=en">Barnes Lab: Data Informatics</a></h4>
           <p><i>(lab website undergoing construction)</i></p>
         </div>
       </section>
+    
       <section>
         <div class="contact-method">
           <i class="fas fa-tint"></i>
