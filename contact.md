@@ -35,44 +35,44 @@ nav-menu: true
       <section>
         <div class="contact-method">
           <span class="icon alt fa-tree"></span>
-          <h4><a href="https://scholar.google.com/citations?user=K5tffpEAAAAJ&hl=en">Novick Lab: the Biomet Lab</a></h4>
+          <h4><a href="https://scholar.google.com/citations?user=K5tffpEAAAAJ&hl=en">Novick Lab: Biogeochemistry</a></h4>
           <p><i>(lab website undergoing construction)</i></p>
         </div>
       </section>
       <section>
         <div class="contact-method">
           <!-- Changed icon to one available in Font Awesome 4 -->
-          <span class="icon alt fa-satellite"></span>
-          <h4><a href="https://scholar.google.com/citations?user=0PxF8zAAAAAJ&hl=en">Barnes Lab: Data Informatics</a></h4>
+          <span class="icon alt fa-desktop"></span>
+          <h4><a href="https://scholar.google.com/citations?user=0PxF8zAAAAAJ&hl=en">Barnes Lab: Biogeochemistry & Data Informatics</a></h4>
           <p><i>(lab website undergoing construction)</i></p>
         </div>
       </section>
     <section>
         <div class="contact-method">
           <!-- Changed icon to one available in Font Awesome 4 -->
-          <span class="icon alt fa-droplet"></span>
+          <span class="icon alt fa-tint"></span>
           <h4><a href="https://royer.lab.indiana.edu/">The Royer Lab: Hydrology</a></h4>
         </div>
       </section>
           <section>
         <div class="contact-method">
           <!-- Changed icon to one available in Font Awesome 4 -->
-          <span class="icon alt fa-faucet-drip"></span>
+          <span class="icon alt fa-tint"></span>
           <h4><a href="https://tanklab.weebly.com/">The Tank Lab: Hydrology</a></h4>
         </div>
       </section>
     <section>
         <div class="contact-method">
           <!-- Changed icon to one available in Font Awesome 4 -->
-          <span class="icon alt fa-seedling"></span>
-          <h4><a href="https://yoder.lab.indiana.edu/index.html">Yoder Lab</a></h4>
+          <span class="icon alt fa-leaf"></span>
+          <h4><a href="https://yoder.lab.indiana.edu/index.html">Yoder Lab: Economics & Policy</a></h4>
         </div>
       </section>
           <section>
         <div class="contact-method">
           <!-- Changed icon to one available in Font Awesome 4 -->
           <span class="icon alt fa-leaf"></span>
-          <h4><a href="https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/suttles-shellye.html">Suttles Lab</a></h4>
+          <h4><a href="https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/suttles-shellye.html">Suttles Lab: Economics & Policy</a></h4>
         </div>
       </section>
     </section>
