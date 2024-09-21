@@ -64,7 +64,7 @@ nav-menu: true
 			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-tree"></span>
-					<h4><a href="https://kesondrakey.github.io/DownforMaintenance">Novick Lab (undergoing construction)</a></h4>
+					<h4><a href="https://kesondrakey.github.io/DownforMaintenance">Novick Lab</a></h4><p><i>(undergoing construction)</i></p>
 				</div>
 			</section>
 			<section>
