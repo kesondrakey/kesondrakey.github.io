@@ -116,7 +116,7 @@ nav-menu: true
     <!-- Section 6  -->
     <section>
         <a href="generic.html" class="image">
-            <img src="{% link images/temp.jpeg %}" alt="" data-position="center center" />
+            <img src="{% link images/eddy_cov_ex.png %}" alt="" data-position="center center" />
         </a>
         <div class="content">
             <div class="inner">
