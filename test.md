@@ -34,6 +34,7 @@ nav-menu: true
 
 
 <!-- Sections -->
+<!-- Section 2 -->
 <section id="two" class="spotlights">
     <section>
         <a href="generic.html" class="image">
@@ -49,12 +50,13 @@ nav-menu: true
 <p>• <b>Increased Soil Health</b>: Enhancing nutrient content and soil structure</p>
 <p>• <b>Greater Ecosystem Resilience</b>: Strengthening the ability to withstand climatic extremes</p>
 <p>• <b>Climate Adaptation Potential</b>: Helping ecosystems adjust to changing conditions</p>
-				<ul class="actions">
-					<li><a href="https://oneill.indiana.edu/faculty-research/research/climate/index.html" class="button">Learn more</a></li>
-				</ul>
-			</div>
-		</div>
-</section>
+			<ul class="actions">
+                <ul class="actions">
+                    <li><a href="https://oneill.indiana.edu/faculty-research/research/climate/index.html" class="button">Learn more</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
 <!-- Section 3 -->
 <section>
         <a href="generic.html" class="image">
@@ -74,9 +76,9 @@ nav-menu: true
 				<ul class="actions">
 					<li><a href="https://oneill.indiana.edu/faculty-research/research/climate/index.html" class="button">Learn more</a></li>
 				</ul>
-			</div>
-		</div>
-</section>
+           </div>
+        </div>
+    </section>
 <!-- Section 4 -->
 <section>
         <a href="generic.html" class="image">
@@ -162,7 +164,7 @@ nav-menu: true
       </div>
     </div>
 </section>
-
+</section>
 
 
 <!-- Section 8 -->
