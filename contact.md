@@ -82,10 +82,4 @@ nav-menu: true
 
 
 
-			<section>
-				<div class="contact-method">
-					<span class="icon alt fa-solid fa-money-bill"></span>
-					<p><a href="https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/suttles-shellye.html">Suttles Lab</a></p4>
-				</div>
-			</section>
 
