@@ -37,10 +37,10 @@ nav-menu: true
 				<header class="major">
 					<h3>NbCS not only aid in climate mitigation but also provide a multitude of co-benefits:</h3>
 				</header>
-				<p>• Enhanced Biodiversity: Supporting a wider range of plant and animal life.</p>
-<p>• <b>Improved Air and Water Quality</b>: Filtering pollutants and reducing runoff.</p>
-<p>• <b>Increased Soil Health</b>: Enhancing nutrient content and soil structure.</p>
-<p>• <b>Greater Ecosystem Resilience</b>: Strengthening the ability to withstand climatic extremes.</p>
+<p>• <b>Enhanced Biodiversityy</b>: Supporting a wider range of plant and animal life</p>
+<p>• <b>Improved Air and Water Quality</b>: Filtering pollutants and reducing runoff</p>
+<p>• <b>Increased Soil Health</b>: Enhancing nutrient content and soil structure</p>
+<p>• <b>Greater Ecosystem Resilience</b>: Strengthening the ability to withstand climatic extremes</p>
 <p>• <b>Climate Adaptation Potential</b>: Helping ecosystems adjust to changing conditions</p>
 				<ul class="actions">
 					<li><a href="https://oneill.indiana.edu/faculty-research/research/climate/index.html" class="button">Learn more</a></li>
@@ -61,10 +61,10 @@ nav-menu: true
 				<header class="major">
 					<h3>To qualify as a true NbCS, initiatives must meet four essential criteria:</h3>
 				</header>
-<p>1.	<b>Additional Enhancements to Carbon Uptake</b>: Going beyond what would naturally occur.</p>
-<p>2.	<b>Net Cooling Effect</b>: Contributing to a reduction in global temperatures.</p>
-<p>3.	<b>Durability of Carbon Storage</b>: Ensuring long-term sequestration of carbon.</p>
-<p>4.	<b>Accounting for Leakage</b>: Preventing the displacement of emissions elsewhere.</p>
+<p>1.	<b>Additional Enhancements to Carbon Uptake</b>: Going beyond what would naturally occur</p>
+<p>2.	<b>Net Cooling Effect</b>: Contributing to a reduction in global temperatures</p>
+<p>3.	<b>Durability of Carbon Storage</b>: Ensuring long-term sequestration of carbon</p>
+<p>4.	<b>Accounting for Leakage</b>: Preventing the displacement of emissions elsewhere</p>
 <p>Despite bipartisan support and private sector interest, the scientific frameworks guiding NbCS implementation and monitoring are not yet fully established. This gap presents challenges in understanding their overall efficacy across varying scales.</p>
 				<ul class="actions">
 					<li><a href="https://oneill.indiana.edu/faculty-research/research/climate/index.html" class="button">Learn more</a></li>
@@ -89,22 +89,21 @@ nav-menu: true
 					<h3>The DISES Project: Pioneering Research in Agricultural NbCS</h3>
 				</header>
 				<p>Addressing these challenges is the goal of the Dynamics of Integrated Socio-Environmental Systems (DISES) project. Funded by the National Science Foundation (NSF), this million-dollar initiative brings together a team of scientists from Indiana University and Notre Dame. The DISES project is an innovative effort aiming to:</p>
-<p>•	<b>Close the Carbon, Water, and Energy Budgets in agricultural systems.</b></p>
-<p>•	<b>Compare Conventional Farming Methods with practices utilizing cover crops.</b></p>
-<p>•	<b>Bridge Knowledge Gaps regarding the potential for cover crops as a NbCS.</b></p>
+<p>1.<b>Close the Carbon, Water, and Energy Budgets in agricultural systems</b></p>
+<p>2.<b>Compare Conventional Farming Methods with practices utilizing cover crops</b></p>
+<p>3.<b>Bridge Knowledge Gaps regarding the potential for cover crops as a NbCS</b></p>
 <p></p>
+				
 <h2>Key Objectives</h2>
 <p>The project seeks to understand:</p>
-<p>•  <b>Carbon Pathways</b>: Where carbon goes within agricultural systems and how much is sequestered into the soil.</p>
-<p>•  <b>Biogeochemical Cycles</b>: The functionality and interactions within agricultural ecosystems.</p>
-<p>• <b> Impact of Cover Crops</b>: How cover cropping influences carbon sequestration and other environmental factors over time.</p>
-
-				<ul class="actions">
-					<li><a href="https://royer.lab.indiana.edu/" class="button">Learn more</a></li>
-				</ul>
+<p>•<b>Carbon Pathways</b>: Where carbon goes within agricultural systems and how much is sequestered into the soil.</p>
+<p>•<b>Biogeochemical Cycles</b>: The functionality and interactions within agricultural ecosystems.</p>
+<p>•<b> Impact of Cover Crops</b>: How cover cropping influences carbon sequestration and other environmental factors over time.</p>
 			</div>
 		</div>
 	</section>
+
+
 
 
 
@@ -122,10 +121,10 @@ nav-menu: true
 					<h3>Methodologies Employed</h3>
 				</header>
 <p>To achieve its objectives, the DISES project utilizes a comprehensive suite of methodologies:</p>
-<p>• <b>Eddy Covariance Towers</b>: Measure various fluxes, including carbon dioxide, evapotranspiration, and latent heat between the land surface and the atmosphere.</p>
-<p>• <b>Soil Sampling</b>: Quantify soil water content, dissolved organic carbon, and nutrient levels.</p>
-<p>• <b>Water Sampling</b>: Assess runoff outputs, including potential fertilizer runoff.</p>
-<p>• <b>Radiation Measurements</b>: Collect data on incoming and outgoing radiation to understand the energy balance.</p>
+<p>•<b>Eddy Covariance Towers</b>: Measure various fluxes, including carbon dioxide, evapotranspiration, and latent heat between the land surface and the atmosphere</p>
+<p>•<b>Soil Sampling</b>: Quantify soil water content, dissolved organic carbon, and nutrient levels</p>
+<p>•<b>Water Sampling</b>: Assess runoff outputs, including potential fertilizer runoff</p>
+<p>•<b>Radiation Measurements</b>: Collect data on incoming and outgoing radiation to understand the energy balance</p>
 				<ul class="actions">
 					<li><a href="https://kesondrakey.github.io/FluxTowers.html" class="button">Learn more about Eddy Covariance</a></li>
 				</ul>
@@ -149,10 +148,10 @@ nav-menu: true
 					<h3>Cover Crops: A Closer Look</h3>
 				</header>
 <p>Cover crops are plants grown outside of the main cash crop season, such as before planting or after harvest. Examples include rye, clover, and vetch. The benefits of cover crops are multifaceted:</p>
-<p>•<b>Soil Protection:</b> Acts as a barrier against extreme temperatures and wind erosion.</p>
-<p>•<b>Soil Structure Improvement:</b> Root growth promotes soil aggregation, crucial for carbon sequestration.</p>
-<p>•<b>Enhanced Carbon Uptake:</b> Additional plant growth removes more carbon dioxide from the atmosphere.</p>
-<p>•<b>Long-Term Soil Carbon Storage?:</b> Ideally - over time, carbon is stored within plant tissues and eventually the soil. The extent of this is still being researched and quantifying this is one goal of the DISES project.</p>
+<p>•<b>Soil Protection</b>: Acts as a barrier against extreme temperatures and wind erosion</p>
+<p>•<b>Soil Structure Improvement</b>: Root growth promotes soil aggregation, crucial for carbon sequestration</p>
+<p>•<b>Enhanced Carbon Uptake</b>: Additional plant growth removes more carbon dioxide from the atmosphere</p>
+<p>•<b>Long-Term Soil Carbon Storage?</b>: Ideally - over time, carbon is stored within plant tissues and eventually the soil. The extent of this is still being researched and quantifying this is one goal of the DISES project</p>
 <p>Soil carbon sequestration is one of the main drivers behind considering cover crops as a NbCS. </p>
 <p><b>By enhancing human-managed natural systems through the use of cover crops, we may improve the capacity of the soil to absorb atmospheric carbon dioxide and store it long-term. </b></p>
 <p>However, how long this process takes and how much carbon is stored is unknown. The DISES project aims to provide valuable insights into these processes.</p>
