@@ -24,7 +24,9 @@ nav-menu: true
 		<header class="major">
 			<h2>Nature-based Climate Solutions</h2>
 		</header>
-		<li>As the climate crisis intensifies, innovative approaches are crucial to reduce greenhouse gas concentrations in the atmosphere. Nature-based climate solutions (NbCS) offer a promising avenue by leveraging natural processes to mitigate climate change. These strategies encompass practices like reforesting previously deforested landscapes, reducing excess irrigation, and implementing climate-smart agriculture techniques such as the use of <b>cover crops</b>.</li>
+	<ul>
+		<p>As the climate crisis intensifies, innovative approaches are crucial to reduce greenhouse gas concentrations in the atmosphere. Nature-based climate solutions (NbCS) offer a promising avenue by leveraging natural processes to mitigate climate change. These strategies encompass practices like reforesting previously deforested landscapes, reducing excess irrigation, and implementing climate-smart agriculture techniques such as the use of <b>cover crops</b>.</p>
+	</ul>
 	</div>
 </section>
 
@@ -48,11 +50,11 @@ nav-menu: true
                     <h3>NbCS not only aid in climate mitigation but also provide a multitude of co-benefits:</h3>
                 </header>
 		<ul>
-                <li>• <b>Enhanced Biodiversity</b>: Supporting a wider range of plant and animal life</li>
-                <li>• <b>Improved Air and Water Quality</b>: Filtering pollutants and reducing runoff</li>
-                <li>• <b>Increased Soil Health</b>: Enhancing nutrient content and soil structure</li>
-                <li>• <b>Greater Ecosystem Resilience</b>: Strengthening the ability to withstand climatic extremes</li>
-                <li>• <b>Climate Adaptation Potential</b>: Helping ecosystems adjust to changing conditions</li>
+                <li><b>Enhanced Biodiversity</b>: Supporting a wider range of plant and animal life</li>
+                <li><b>Improved Air and Water Quality</b>: Filtering pollutants and reducing runoff</li>
+                <li><b>Increased Soil Health</b>: Enhancing nutrient content and soil structure</li>
+                <li><b>Greater Ecosystem Resilience</b>: Strengthening the ability to withstand climatic extremes</li>
+                <li><b>Climate Adaptation Potential</b>: Helping ecosystems adjust to changing conditions</li>
 		</ul>
                 <ul class="actions">
                     <li><a href="https://oneill.indiana.edu/faculty-research/research/climate/index.html" class="button">Learn more</a></li>
@@ -99,9 +101,9 @@ nav-menu: true
                 <li>3. <b>Bridge Knowledge Gaps regarding the potential for cover crops as a NbCS</b></li>
                 <h2>Key Objectives</h2>
                 <li>The project seeks to understand:</li>
-                <li>• <b>Carbon Pathways</b>: Where carbon goes within agricultural systems and how much is sequestered into the soil.</li>
-                <li>• <b>Biogeochemical Cycles</b>: The functionality and interactions within agricultural ecosystems.</li>
-                <li>• <b>Impact of Cover Crops</b>: How cover cropping influences carbon sequestration and other environmental factors over time.</li>
+                <li><li> <b>Carbon Pathways</b>: Where carbon goes within agricultural systems and how much is sequestered into the soil.</li>
+                <li><li> <b>Biogeochemical Cycles</b>: The functionality and interactions within agricultural ecosystems.</li>
+                <li><li> <b>Impact of Cover Crops</b>: How cover cropping influences carbon sequestration and other environmental factors over time.</li>
             </div>
         </div>
     </section>
@@ -117,10 +119,10 @@ nav-menu: true
                     <h3>Methodologies Employed</h3>
                 </header>
                 <li>To achieve its objectives, the DISES project utilizes a comprehensive suite of methodologies:</li>
-                <li>• <b>Eddy Covariance Towers</b>: Measure various fluxes, including carbon dioxide, evapotranspiration, and latent heat between the land surface and the atmosphere</li>
-                <li>• <b>Soil Sampling</b>: Quantify soil water content, dissolved organic carbon, and nutrient levels</li>
-                <li>• <b>Water Sampling</b>: Assess runoff outputs, including potential fertilizer runoff</li>
-                <li>• <b>Radiation Measurements</b>: Collect data on incoming and outgoing radiation to understand the energy balance</li>
+                <li><li> <b>Eddy Covariance Towers</b>: Measure various fluxes, including carbon dioxide, evapotranspiration, and latent heat between the land surface and the atmosphere</li>
+                <li><li> <b>Soil Sampling</b>: Quantify soil water content, dissolved organic carbon, and nutrient levels</li>
+                <li><li> <b>Water Sampling</b>: Assess runoff outputs, including potential fertilizer runoff</li>
+                <li><li> <b>Radiation Measurements</b>: Collect data on incoming and outgoing radiation to understand the energy balance</li>
                 <ul class="actions">
                     <li><a href="https://kesondrakey.github.io/FluxTowers.html" class="button">Learn more about Eddy Covariance</a></li>
                 </ul>
@@ -139,10 +141,10 @@ nav-menu: true
                     <h3>Cover Crops: A Closer Look</h3>
                 </header>
                 <li>Cover crops are plants grown outside of the main cash crop season, such as before planting or after harvest. Examples include rye, clover, and vetch. The benefits of cover crops are multifaceted:</li>
-                <li>• <b>Soil Protection</b>: Acts as a barrier against extreme temperatures and wind erosion</li>
-                <li>• <b>Soil Structure Improvement</b>: Root growth promotes soil aggregation, crucial for carbon sequestration</li>
-                <li>• <b>Enhanced Carbon Uptake</b>: Additional plant growth removes more carbon dioxide from the atmosphere</li>
-                <li>• <b>Long-Term Soil Carbon Storage?</b>: Ideally, over time, carbon is stored within plant tissues and eventually the soil. The extent of this is still being researched, and quantifying this is one goal of the DISES project</li>
+                <li><li> <b>Soil Protection</b>: Acts as a barrier against extreme temperatures and wind erosion</li>
+                <li><li> <b>Soil Structure Improvement</b>: Root growth promotes soil aggregation, crucial for carbon sequestration</li>
+                <li><li> <b>Enhanced Carbon Uptake</b>: Additional plant growth removes more carbon dioxide from the atmosphere</li>
+                <li><li> <b>Long-Term Soil Carbon Storage?</b>: Ideally, over time, carbon is stored within plant tissues and eventually the soil. The extent of this is still being researched, and quantifying this is one goal of the DISES project</li>
                 <li>Soil carbon sequestration is one of the main drivers behind considering cover crops as a NbCS.</li>
                 <li><b>By enhancing human-managed natural systems through the use of cover crops, we may improve the capacity of the soil to absorb atmospheric carbon dioxide and store it long-term.</b></li>
                 <li>However, how long this process takes and how much carbon is stored is unknown. The DISES project aims to provide valuable insights into these processes.</li>			
@@ -161,9 +163,9 @@ nav-menu: true
                     <h3>Anticipated Outcomes and Broader Impacts</h3>
                 </header>
                 <li>While results are preliminary and data processing is ongoing, the DISES project holds promise for studying the impacts of cover crops, including quantifying whether or not they:</li>
-                <li>• <b>Increase Soil Carbon Sequestration:</b> Potentially boosting the amount of carbon stored in soils.</li>
-                <li>• <b>Improve Soil Water Retention:</b> Enhancing the soil's ability to retain moisture.</li>
-                <li>• <b>Reduce Nutrient Runoff:</b> Minimizing fertilizer runoff into waterways, mitigating environmental pollution.</li>
+                <li><li> <b>Increase Soil Carbon Sequestration:</b> Potentially boosting the amount of carbon stored in soils.</li>
+                <li><li> <b>Improve Soil Water Retention:</b> Enhancing the soil's ability to retain moisture.</li>
+                <li><li> <b>Reduce Nutrient Runoff:</b> Minimizing fertilizer runoff into waterways, mitigating environmental pollution.</li>
             </div>
         </div>
     </section>
