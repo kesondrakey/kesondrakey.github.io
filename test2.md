@@ -62,7 +62,6 @@ nav-menu: true
             </div>
         </div>
     </section>
-
     <!-- Section 3 -->
     <section>
         <a href="generic.html" class="image">
@@ -73,11 +72,13 @@ nav-menu: true
                 <header class="major">
                     <h3>To qualify as a true NbCS, initiatives must meet four essential criteria:</h3>
                 </header>
-                <li>1. <b>Additional Enhancements to Carbon Uptake</b>: Going beyond what would naturally occur</li>
-                <li>2. <b>Net Cooling Effect</b>: Contributing to a reduction in global temperatures</li>
-                <li>3. <b>Durability of Carbon Storage</b>: Ensuring long-term sequestration of carbon</li>
-                <li>4. <b>Accounting for Leakage</b>: Preventing the displacement of emissions elsewhere</li>
-                <li>Despite bipartisan support and private sector interest, the scientific frameworks guiding NbCS implementation and monitoring are not yet fully established. This gap presents challenges in understanding their overall efficacy across varying scales.</li>
+		<ul>
+                <p>1. <b>Additional Enhancements to Carbon Uptake</b>: Going beyond what would naturally occur</p>
+                <p>2. <b>Net Cooling Effect</b>: Contributing to a reduction in global temperatures</p>
+                <p>3. <b>Durability of Carbon Storage</b>: Ensuring long-term sequestration of carbon</p>
+                <p>4. <b>Accounting for Leakage</b>: Preventing the displacement of emissions elsewhere</p>
+                <p>Despite bipartisan support and private sector interest, the scientific frameworks guiding NbCS implementation and monitoring are not yet fully established. This gap presents challenges in understanding their overall efficacy across varying scales.</p>
+		</ul>
                 <ul class="actions">
                     <li><a href="https://oneill.indiana.edu/faculty-research/research/climate/index.html" class="button">Learn more</a></li>
                 </ul>
