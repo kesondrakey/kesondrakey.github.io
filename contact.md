@@ -42,34 +42,37 @@ nav-menu: true
       <section>
         <div class="contact-method">
           <!-- Changed icon to one available in Font Awesome 4 -->
-          <span class="icon fa fa-database"></span>
+          <span class="icon fa fa-satellite"></span>
           <h4><a href="https://scholar.google.com/citations?user=0PxF8zAAAAAJ&hl=en">Barnes Lab: Data Informatics</a></h4>
           <p><i>(lab website undergoing construction)</i></p>
         </div>
       </section>
-    
-      <section>
+    <section>
         <div class="contact-method">
-          <i class="fas fa-tint"></i>
-          <h4><a href="https://royer.lab.indiana.edu/">The Royer Lab</a></h4>
+          <!-- Changed icon to one available in Font Awesome 4 -->
+          <span class="icon fa fa-droplet"></span>
+          <h4><a href="https://royer.lab.indiana.edu/">The Royer Lab: Hydrology</a></h4>
         </div>
       </section>
-      <section>
+          <section>
         <div class="contact-method">
-          <i class="fas fa-faucet-drip"></i>
-          <h4><a href="https://tanklab.weebly.com/">Tank Lab</a></h4>
+          <!-- Changed icon to one available in Font Awesome 4 -->
+          <span class="icon fa fa-faucet-drip"></span>
+          <h4><a href="https://tanklab.weebly.com/">The Tank Lab: Hydrology</a></h4>
         </div>
       </section>
-      <section>
+    <section>
         <div class="contact-method">
-          <i class="fas fa-seedling"></i>
+          <!-- Changed icon to one available in Font Awesome 4 -->
+          <span class="icon fa fa-seedling"></span>
           <h4><a href="https://yoder.lab.indiana.edu/index.html">Yoder Lab</a></h4>
         </div>
       </section>
-      <section>
+          <section>
         <div class="contact-method">
-          <i class="fas fa-leaf"></i>
-          <h4><a href="https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/suttles-shellye.html">Shellye Suttles</a></h4>
+          <!-- Changed icon to one available in Font Awesome 4 -->
+          <span class="icon fa fa-leaf"></span>
+          <h4><a href="https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/suttles-shellye.html">Suttles Lab</a></h4>
         </div>
       </section>
     </section>
