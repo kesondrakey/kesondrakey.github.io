@@ -116,7 +116,8 @@ nav-menu: true
 
 
 <!-- Section 5 -->
-<section>
+ <section id="five" class="spotlights">
+	<section>
   		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
 				<img src="{% link images/eddy_cov_ex.png %}" alt="" data-position="center center" />
@@ -137,6 +138,7 @@ nav-menu: true
 				</ul>
       </div>
     </div>
+	</section>
 </section>
 
 
@@ -145,7 +147,8 @@ nav-menu: true
 
 
     <!-- Section 6 -->
-<section>
+<section id="six" class="spotlights">
+	<section>
   		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
 				<img src="{% link images/temp.jpeg %}" alt="" data-position="center center" />
@@ -166,6 +169,7 @@ nav-menu: true
 <p>However, how long this process takes and how much carbon is stored is unknown. The DISES project aims to provide valuable insights into these processes.</p>			
       </div>
     </div>
+	 </section>
 </section>
 
 
@@ -175,7 +179,8 @@ nav-menu: true
 
 
  <!-- Section 7 -->
-<section>
+ <section id="seven" class="spotlights">
+	<section>
   		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
 				<img src="{% link images/netrad.jpeg %}" alt="" data-position="center center" />
@@ -192,6 +197,7 @@ nav-menu: true
 <p>• <b>Reduce Nutrient Runoff: </b> Minimizing fertilizer runoff into waterways, mitigating environmental pollution.</p>
       </div>
     </div>
+	</section>
 </section>
 
 
@@ -199,7 +205,8 @@ nav-menu: true
 
 
      <!-- Section 8 -->
-<section>
+ <section id="eight" class="spotlights">
+	<section>
   		<figure class="image"> <!-- Begin figure tag here -->
 			<a href="generic.html">
 				<img src="{% link images/temp.jpeg %}" alt="" data-position="center center" />
@@ -213,4 +220,5 @@ nav-menu: true
 <p>The DISES project represents a significant step forward in understanding how nature-based solutions like cover cropping can contribute to climate change mitigation. By closing the carbon, water, and energy budgets in agricultural systems, this research provides valuable insights that can inform sustainable farming practices and NbCS implementation on a broader scale.</p>
       </div>
     </div>
+	</section>
 </section>
