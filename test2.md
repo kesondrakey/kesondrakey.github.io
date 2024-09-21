@@ -192,9 +192,11 @@ nav-menu: true
 		<header class="major">
 			<h2>Research is ongoing</h2>
 		</header>
+		<ul>
 		<li>The DISES project represents a significant step forward in understanding how nature-based solutions like cover cropping can contribute to climate change mitigation. By closing the carbon, water, and energy budgets in agricultural systems, this research provides valuable insights that can inform sustainable farming practices and NbCS implementation on a broader scale.</li>
+		</ul>
 		<ul class="actions">
-			<li><a href="Publications.html" class="button next">Publications (currently unavailable)</a></li>
+			<li><a href="https://kesondrakey.github.io/DownforMaintenance" class="button next">Publications (currently unavailable)</a></li>
 		</ul>
 	</div>
 </section>
