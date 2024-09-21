@@ -13,7 +13,7 @@ figcaption {
 }
 .image img {
     width: 100%;
-    height: auto; /* Set your desired fixed height */
+    height: 300px; /* Set your desired fixed height or use auto */
     object-fit: cover;
 }
 </style>
