@@ -8,7 +8,7 @@ nav-menu: true
 
 
 <!-- Contact-->
-<section id="contact"> 
+<section id="contact">  
   <div class="inner">
       <form action="https://formspree.io/f/xgvwjkrz" method="POST">
         <!-- Honeypot Field for Spam Protection -->
