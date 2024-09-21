@@ -61,39 +61,40 @@ nav-menu: true
 			</form>
 		</section>
 		<section class="split">
+			<h2>Relevant Links:</h2>
 			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-tree"></span>
-					<h4><a href="https://scholar.google.com/citations?user=K5tffpEAAAAJ&hl=en">Novick Lab: the Biomet Lab</a></h4><p><i>(Lab website undergoing construction)</i></p>
+					<h4><a href="https://scholar.google.com/citations?user=K5tffpEAAAAJ&hl=en">Novick Lab: the Biomet Lab</a></h4><p><i>(lab website undergoing construction)</i></p>
 				</div>
 			</section>
 			<section>
 				<div class="contact-method">
-					<span class="icon alt fa-tree"></span>
-					<h4><a href="https://scholar.google.com/citations?user=0PxF8zAAAAAJ&hl=en">Barnes Lab: Data Informatics</a></h4><p><i>(Lab website undergoing construction)</i></p>
+					<span class="icon alt fa-<FontAwesomeIcon icon="fa-solid fa-satellite" />"></span>
+					<h4><a href="https://scholar.google.com/citations?user=0PxF8zAAAAAJ&hl=en">Barnes Lab: Data Informatics</a></h4><p><i>(lab website undergoing construction)</i></p>
 				</div>
 			</section>
 			<section>
 				<div class="contact-method">
-					<span class="icon alt fa-envelope"></span>
-					<h3><a href="https://tanklab.weebly.com/">Tank Lab</a></h3>
-				</div>
-			</section>
-			<section>
-				<div class="contact-method">
-					<span class="icon alt fa-envelope"></span>
+					<span class="icon alt fa-droplet"></span>
 					<h3><a href="https://royer.lab.indiana.edu/">the Royer Lab</a></h3>
 				</div>
 			</section>
 			<section>
 				<div class="contact-method">
-					<span class="icon alt fa-envelope"></span>
+					<span class="icon alt fa-faucet-drip"></span>
+					<h3><a href="https://tanklab.weebly.com/">Tank Lab</a></h3>
+				</div>
+			</section>
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-wheat-awn"></span>
 					<h3><a href="https://yoder.lab.indiana.edu/index.html">Yoder Lab</a></h3>
 				</div>
 			</section>
    			<section>
 				<div class="contact-method">
-					<span class="icon alt fa-envelope"></span>
+					<span class="icon alt fa-money-bill"></span>
 					<h3><a href="https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/suttles-shellye.html">Shellye Suttles</a></h3>
 				</div>
 			</section>
