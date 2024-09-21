@@ -63,8 +63,8 @@ nav-menu: true
 		<section class="split">
 			<section>
 				<div class="contact-method">
-					<span class="icon alt fa-envelope"></span>
-					<h3><a href="https://kesondrakey.github.io/DownforMaintenance">Novick Lab (undergoing construction)</a></h3>
+					<span class="icon alt fa-tree"></span>
+					<h4><a href="https://kesondrakey.github.io/DownforMaintenance">Novick Lab (undergoing construction)</a></h4>
 				</div>
 			</section>
 			<section>
