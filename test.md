@@ -1,6 +1,6 @@
 ---
 title: Nature-Based Climate Solutions and the DISES Project
-description: 'Working to close the carbon, water, and energy budgets<br />in Indiana agricultural systems'
+description: 'Working to close the carbon, water, and energy budgets in Indiana agricultural systems'
 layout: landing
 image: assets/images/kimnovick.jpg
 nav-menu: true
