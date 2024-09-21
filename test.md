@@ -1,14 +1,14 @@
 ---
 title: Nature-Based Climate Solutions and the DISES Project
 layout: landing
-image: images/kimnovick.jpg
+image: assets/images/kimnovick.jpg
 nav-menu: true
 ---
 
 <style>
         figcaption {
             font-size: smaller; /* or a specific value like 0.9em */
-            font-style: italic; 
+            font-style: italic;
         }
 </style>
 
