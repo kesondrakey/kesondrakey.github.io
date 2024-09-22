@@ -1,5 +1,5 @@
 Month,year,start_DATE,end_DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Timeframe,Tower
-Sep,2024,2024-09-01,2024-09-21,40,87,0.15,0.08,Rain,"Sunday, September 1  to  Saturday, September 21",fluxtower4
+Sep,2024,2024-09-01,2024-09-22,40,90,0.15,0.07,Rain,"Sunday, September 1  to  Sunday, September 22",fluxtower4
 Aug,2024,2024-08-01,2024-08-31,47,91,1.91,0.09,Rain,"Thursday, August 1  to  Saturday, August 31",fluxtower4
 Jul,2024,2024-07-01,2024-07-31,50,85,4.43,0.16,Rain,"Monday, July 1  to  Wednesday, July 31",fluxtower4
 Jun,2024,2024-06-01,2024-06-30,45,93,8.33,0.16,Rain,"Saturday, June 1  to  Sunday, June 30",fluxtower4
