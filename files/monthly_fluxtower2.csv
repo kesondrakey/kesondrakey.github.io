@@ -1,5 +1,5 @@
 Month,year,start_DATE,end_DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Timeframe,Tower
-Sep,2024,2024-09-01,2024-09-29,39,90,0,0.3,Sunny,"Sunday, September 1  to  Sunday, September 29",fluxtower2
+Sep,2024,2024-09-01,2024-09-30,39,90,0,0.29,Sunny,"Sunday, September 1  to  Monday, September 30",fluxtower2
 Aug,2024,2024-08-01,2024-08-31,48,90,0,0.51,Sunny,"Thursday, August 1  to  Saturday, August 31",fluxtower2
 Jul,2024,2024-07-01,2024-07-31,47,88,0,0.53,Sunny,"Monday, July 1  to  Wednesday, July 31",fluxtower2
 Jun,2024,2024-06-01,2024-06-30,45,94,0,0.53,Sunny,"Saturday, June 1  to  Sunday, June 30",fluxtower2
@@ -15,4 +15,4 @@ Sep,2023,2023-09-01,2023-09-30,44,89,0,0.4,Sunny,"Friday, September 1  to  Satur
 Aug,2023,2023-08-01,2023-08-31,49,93,0,0.51,Sunny,"Tuesday, August 1  to  Thursday, August 31",fluxtower2
 Jul,2023,2023-07-01,2023-07-31,54,91,0,0.49,Sunny,"Saturday, July 1  to  Monday, July 31",fluxtower2
 Jun,2023,2023-06-21,2023-06-30,50,90,0,0.3,Sunny,"Wednesday, June 21  to  Friday, June 30",fluxtower2
-NA,NA,NA,NA,15,82,0,0.48,Sunny,"NA, NA NA  to  NA, NA NA",fluxtower2
+NA,NA,NA,NA,15,82,0,0.47,Sunny,"NA, NA NA  to  NA, NA NA",fluxtower2
