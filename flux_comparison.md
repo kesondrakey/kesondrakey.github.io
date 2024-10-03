@@ -282,9 +282,10 @@ iframe + i {
 
 <!-- Embed the image plot -->
 <div class="plot-container">
-    <img src="https://indiana-my.sharepoint.com/:i:/r/personal/keyke_iu_edu/Documents/Github_Plots/T1_T2_Fc_Plot.png?download=1" alt="Midday Carbon Flux Comparison">
+    <img src="https://bloomington.iu.edu/images/samplegates.jpg" alt="Midday Carbon Flux Comparison">
 </div>
 
+<img src="https://indiana-my.sharepoint.com/personal/keyke_iu_edu/Documents/Github_Plots/T1_T2_Fc_Plot.png" alt="Hello">
 
 
 
