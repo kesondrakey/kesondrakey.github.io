@@ -1,5 +1,6 @@
 DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Tower
-2024-12-16,34,49,0.02,0.43,Rain,fluxtower1
+2024-12-17,33,41,0,0.44,Sunny,fluxtower1
+2024-12-16,34,57,0.02,0.44,Rain,fluxtower1
 2024-12-15,38,46,0.15,0.42,Rain,fluxtower1
 2024-12-14,21,38,0.01,0.37,Rain,fluxtower1
 2024-12-13,9,24,0,0.37,Sunny,fluxtower1
@@ -130,4 +131,4 @@ DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Tower
 2024-05-16,51,72,0.01,0.51,Rain,fluxtower1
 2024-05-15,56,70,0.01,0.51,Rain,fluxtower1
 2024-05-14,60,67,0.01,0.51,Rain,fluxtower1
-NA,41,41,0,0.43,Sunny,fluxtower1
+NA,35,35,0,0.44,Sunny,fluxtower1
