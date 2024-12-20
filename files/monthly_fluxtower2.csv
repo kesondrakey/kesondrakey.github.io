@@ -1,8 +1,21 @@
 Month,year,start_DATE,end_DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Timeframe,Tower
-Dec,2024,2024-12-01,2024-12-17,8,57,0,0.5,Sunny,"Sunday, December 1  to  Tuesday, December 17",fluxtower2
-Nov,2024,2024-11-01,2024-11-30,12,68,0,0.57,Sunny,"Friday, November 1  to  Saturday, November 30",fluxtower2
-Oct,2024,2024-10-02,2024-10-31,39,84,0,0.31,Sunny,"Wednesday, October 2  to  Thursday, October 31",fluxtower2
-Sep,2024,2024-09-08,2024-09-17,44,88,0,0.44,Sunny,"Sunday, September 8  to  Tuesday, September 17",fluxtower2
-Jul,2024,2024-07-01,2024-07-23,47,88,0,0.52,Sunny,"Monday, July 1  to  Tuesday, July 23",fluxtower2
+Dec,2024,2024-12-01,2024-12-20,8,57,0,0.5,Sunny,"Sunday, December 1  to  Friday, December 20",fluxtower2
+Nov,2024,2024-11-13,2024-11-30,12,64,0,0.58,Sunny,"Wednesday, November 13  to  Saturday, November 30",fluxtower2
+Oct,2024,2024-10-01,2024-10-30,2,84,0,0.41,Sunny,"Tuesday, October 1  to  Wednesday, October 30",fluxtower2
+Sep,2024,2024-09-01,2024-09-30,39,90,0,0.28,Sunny,"Sunday, September 1  to  Monday, September 30",fluxtower2
+Aug,2024,2024-08-01,2024-08-31,48,90,0,0.51,Sunny,"Thursday, August 1  to  Saturday, August 31",fluxtower2
+Jul,2024,2024-07-01,2024-07-31,47,88,0,0.53,Sunny,"Monday, July 1  to  Wednesday, July 31",fluxtower2
 Jun,2024,2024-06-01,2024-06-30,45,94,0,0.54,Sunny,"Saturday, June 1  to  Sunday, June 30",fluxtower2
-May,2024,2024-05-14,2024-05-31,47,88,0,0.56,Sunny,"Tuesday, May 14  to  Friday, May 31",fluxtower2
+May,2024,2024-05-01,2024-05-31,47,88,0,0.55,Sunny,"Wednesday, May 1  to  Friday, May 31",fluxtower2
+Apr,2024,2024-04-01,2024-04-30,28,81,0,0.48,Sunny,"Monday, April 1  to  Tuesday, April 30",fluxtower2
+Mar,2024,2024-03-01,2024-03-31,23,73,0,0.44,Sunny,"Friday, March 1  to  Sunday, March 31",fluxtower2
+Feb,2024,2024-02-01,2024-02-29,5,72,0,0.43,Sunny,"Thursday, February 1  to  Thursday, February 29",fluxtower2
+Jan,2024,2024-01-01,2024-01-31,-9,43,0,0.4,Sunny,"Monday, January 1  to  Wednesday, January 31",fluxtower2
+Dec,2023,2023-12-01,2023-12-31,13,58,0,0.47,Sunny,"Friday, December 1  to  Sunday, December 31",fluxtower2
+Nov,2023,2023-11-01,2023-11-30,16,77,0,0.42,Sunny,"Wednesday, November 1  to  Thursday, November 30",fluxtower2
+Oct,2023,2023-10-01,2023-10-31,23,87,0,0.18,Sunny,"Sunday, October 1  to  Tuesday, October 31",fluxtower2
+Sep,2023,2023-09-01,2023-09-30,44,89,0,0.4,Sunny,"Friday, September 1  to  Saturday, September 30",fluxtower2
+Aug,2023,2023-08-01,2023-08-31,49,93,0,0.51,Sunny,"Tuesday, August 1  to  Thursday, August 31",fluxtower2
+Jul,2023,2023-07-01,2023-07-31,54,91,0,0.48,Sunny,"Saturday, July 1  to  Monday, July 31",fluxtower2
+Jun,2023,2023-06-21,2023-06-30,50,90,0,0.29,Sunny,"Wednesday, June 21  to  Friday, June 30",fluxtower2
+NA,NA,NA,NA,31,69,0,0.48,Sunny,"NA, NA NA  to  NA, NA NA",fluxtower2
