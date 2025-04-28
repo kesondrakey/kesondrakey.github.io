@@ -1,5 +1,5 @@
 Month,year,start_DATE,end_DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Timeframe,Tower
-Apr,2025,2025-04-01,2025-04-27,23,81,0.99,NA,Rain,"Tuesday, April 1  to  Sunday, April 27",fluxtower4
+Apr,2025,2025-04-01,2025-04-28,23,81,0.99,NA,Rain,"Tuesday, April 1  to  Monday, April 28",fluxtower4
 Mar,2025,2025-03-01,2025-03-31,16,75,0.93,NA,Rain,"Saturday, March 1  to  Monday, March 31",fluxtower4
 Feb,2025,2025-02-01,2025-02-28,1,58,0.07,0.12,Rain,"Saturday, February 1  to  Friday, February 28",fluxtower4
 Jan,2025,2025-01-01,2025-01-31,-5,43,0.19,0.13,Rain,"Wednesday, January 1  to  Friday, January 31",fluxtower4
