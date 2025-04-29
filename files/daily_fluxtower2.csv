@@ -1,5 +1,6 @@
 DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Tower
-2025-04-28,58,66,0,0.52,Sunny,fluxtower2
+2025-04-29,74,80,0,0.53,Sunny,fluxtower2
+2025-04-28,52,82,0,0.52,Sunny,fluxtower2
 2025-04-27,37,67,0,0.52,Sunny,fluxtower2
 2025-04-26,44,56,0,0.53,Sunny,fluxtower2
 2025-04-25,55,79,0,0.53,Sunny,fluxtower2
@@ -658,4 +659,4 @@ DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Tower
 2023-06-23,67,83,0,0.29,Sunny,fluxtower2
 2023-06-22,61,82,0,0.3,Sunny,fluxtower2
 2023-06-21,79,87,0,0.3,Sunny,fluxtower2
-NA,31,69,0,0.47,Sunny,fluxtower2
+NA,31,74,0,0.47,Sunny,fluxtower2
