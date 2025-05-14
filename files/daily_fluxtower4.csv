@@ -1,5 +1,6 @@
 DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Tower
-2025-05-13,65,72,0,NA,Sunny,fluxtower4
+2025-05-14,63,64,0.01,NA,Rain,fluxtower4
+2025-05-13,61,72,0.07,NA,Rain,fluxtower4
 2025-05-12,51,77,0,NA,Sunny,fluxtower4
 2025-05-11,46,75,0,NA,Sunny,fluxtower4
 2025-05-10,40,77,0,NA,Sunny,fluxtower4
