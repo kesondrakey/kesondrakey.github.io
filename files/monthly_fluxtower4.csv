@@ -1,4 +1,5 @@
 Month,year,start_DATE,end_DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Timeframe,Tower
+Jun,2025,2025-06-01,2025-06-01,48,57,0,NA,Sunny,"Sunday, June 1  to  Sunday, June 1",fluxtower4
 May,2025,2025-05-01,2025-05-31,37,86,0.89,-0,Rain,"Thursday, May 1  to  Saturday, May 31",fluxtower4
 Apr,2025,2025-04-01,2025-04-30,23,82,0.99,NA,Rain,"Tuesday, April 1  to  Wednesday, April 30",fluxtower4
 Mar,2025,2025-03-01,2025-03-31,16,75,0.93,NA,Rain,"Saturday, March 1  to  Monday, March 31",fluxtower4
