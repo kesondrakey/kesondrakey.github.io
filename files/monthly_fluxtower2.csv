@@ -1,5 +1,5 @@
 Month,year,start_DATE,end_DATE,Min Temp,Max Temp,Total Precipitation,Avg Soil Moisture,Description,Timeframe,Tower
-Aug,2025,2025-08-01,2025-08-27,42,82,0,0.42,Sunny,"Friday, August 1  to  Wednesday, August 27",fluxtower2
+Aug,2025,2025-08-01,2025-08-28,42,82,0,0.41,Sunny,"Friday, August 1  to  Thursday, August 28",fluxtower2
 Jul,2025,2025-07-01,2025-07-31,58,90,0,0.42,Sunny,"Tuesday, July 1  to  Thursday, July 31",fluxtower2
 Jun,2025,2025-06-01,2025-06-30,44,91,0,0.46,Sunny,"Sunday, June 1  to  Monday, June 30",fluxtower2
 May,2025,2025-05-01,2025-05-31,41,90,0,0.51,Sunny,"Thursday, May 1  to  Saturday, May 31",fluxtower2
