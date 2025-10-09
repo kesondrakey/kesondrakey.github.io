@@ -265,7 +265,8 @@ body {
 </style>
 
 <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
-    <strong>Note:</strong> This tower is located on a farm that uses cover crops! 🍃
+<strong>(<a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT2" target="_blank">US-VT2</a></strong> measures carbon, water, and energy fluxes 
+in a no-till corn–soybean rotation on a working farm in the Midwest that uses cover crops! 🍃
 </div>
 
 <!-- Add the banner grid-container here -->
@@ -279,18 +280,6 @@ body {
 </div>
 
 <!-- Summary -->
-<div class="summary-box">
-<p>
-<strong>US-VT2</strong> (<a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT2" target="_blank">US-VT1</a>) measures carbon, water, and energy fluxes 
-in a no-till corn–soybean rotation on an actively managed farm in the Midwest. 
-</p>
-
-</div>
-
-<div class="summary-box">
-  Data for this site are available on 
-  <a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT2" target="_blank">AmeriFlux (US-VT2)</a>
-</div>
 
 <div class="summary-box">
   <strong>Note:</strong> This page is best viewed on a desktop.
@@ -323,15 +312,6 @@ in a no-till corn–soybean rotation on an actively managed farm in the Midwest.
 </div>
 <i></i>
 
-<!-- Your existing HTML content starts here -->
-<h2 class="summary-heading">Summary</h2>
-<div class="summary-box">
-    <strong>US-VT2:</strong> This tower is situated on an Indiana farm focused on the cultivation of corn and soy using cover crops!
-</div>
-<div class="summary-box">
-    <strong>Note:</strong> This page is best viewed on a desktop format.
-</div>
-<i></i>
 
 <!-- Yesterday's Date Header -->
 <h2 class="summary-heading" id="yesterday-date">Yesterday</h2>
@@ -404,6 +384,12 @@ in a no-till corn–soybean rotation on an actively managed farm in the Midwest.
       <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
     </div>
     <div style="margin-bottom:20px;"></div>
+</div>
+
+<!-- Ameriflux Note -->
+<div class="summary-box">
+  Data for this site are available on 
+  <a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT2" target="_blank">AmeriFlux (US-VT2)</a>
 </div>
 
 <!-- Daily Plot - Simple Variables -->
