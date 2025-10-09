@@ -265,9 +265,11 @@ body {
 </style>
 
 <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
-<strong>(<a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT2" target="_blank">US-VT2</a></strong> measures carbon, water, and energy fluxes 
-in a no-till corn–soybean rotation on a working farm in the Midwest that uses cover crops! 🍃
+<strong><a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT2" target="_blank">US-VT2</a></strong> is an eddy covariance tower that measures carbon, water, and energy fluxes on a working farm (no-till corn–soybean rotation) in the Midwest that uses cover crops! 🍃
+Data for this site are available on 
+              <a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT2" target="_blank">AmeriFlux</a>
 </div>
+
 
 <!-- Add the banner grid-container here -->
 <div class="grid-container">
@@ -279,16 +281,7 @@ in a no-till corn–soybean rotation on a working farm in the Midwest that uses 
   </div>
 </div>
 
-<!-- Summary -->
-
-<div class="summary-box">
-  <strong>Note:</strong> This page is best viewed on a desktop.
-</div>
-
-  <i></i>
-
-
-
+<!-- Forecast -->
 <h3>Forecast</h3>
 <div class="tomorrow"
      data-location-id="125459"
@@ -308,7 +301,7 @@ in a no-till corn–soybean rotation on a working farm in the Midwest that uses 
 </div>
 
 <div class="summary-box">
-    <strong>Note:</strong> This is based on a general location near western Indiana 
+    <strong>Note:</strong> This forecast is sourced from a general western Indiana weather station 
 </div>
 <i></i>
 
@@ -386,14 +379,11 @@ in a no-till corn–soybean rotation on a working farm in the Midwest that uses 
     <div style="margin-bottom:20px;"></div>
 </div>
 
-<!-- Ameriflux Note -->
-<div class="summary-box">
-  Data for this site are available on 
-  <a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT2" target="_blank">AmeriFlux (US-VT2)</a>
-</div>
+
 
 <!-- Daily Plot - Simple Variables -->
 <h2>Long Term Data</h2>
+
 <h4>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - <i>just click the variable name and see!</i></h4>
 <div class="plot-container">
   <div class="html-object">
