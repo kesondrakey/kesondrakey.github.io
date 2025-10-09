@@ -140,8 +140,8 @@ iframe + i {
 
 /* for static plot */
 .plot-container {
-    visibility: visible;  // makes it visible
-    height: auto;        // adjusts the height to its content
+    visibility: visible;
+    height: auto;      
 }
 
 /* Banner styles */
@@ -385,7 +385,6 @@ body {
 </div>
 
 
-
 <!-- Daily Plot - Simple Variables -->
 <h2>Long Term Data</h2>
 
@@ -403,7 +402,6 @@ body {
 </div>
 
 <!-- Technical Data Section -->
-<!-- More Technical Data -->
 <div class="collapsible-container">
     <button class="collapsible">For Data Managers</button>
     <div class="container">
@@ -425,45 +423,33 @@ function showTable(tableType) {
     const selectedTable = document.getElementById(tableType + '-table');
     const icons = document.querySelectorAll('.icon');
     let isAlreadyVisible = (selectedTable.style.display === 'block');
-
-    // Hide all tables first
     tables.forEach(table => {
         table.style.display = 'none';
     });
-
-    // Remove selected class from all icons
     icons.forEach(icon => {
         icon.classList.remove('selected');
     });
-
-    // If the selected table was not already visible, show it
     if (!isAlreadyVisible) {
         selectedTable.style.display = 'block';
-        // Add the selected class to the clicked icon only if the table was not already visible
         document.querySelector('.icon-' + tableType).classList.add('selected');
     }
 }
 
-// Collapsible Functionality
 var coll = document.getElementsByClassName("collapsible");
 for (let i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
-        
-        // Adjust this part to target the .container inside the .collapsible-container
         var content = this.parentNode.querySelector(".container");
-
         if (content.style.visibility === "visible" || content.style.visibility === "") {
             content.style.visibility = "hidden";
-            content.style.height = "0";  // this will collapse the space taken by the hidden content
+            content.style.height = "0";  
         } else {
             content.style.visibility = "visible";
-            content.style.height = "auto";  // revert to its original height
+            content.style.height = "auto"; 
         }
     });
 }
 
-// for weather
 (function(d, s, id) {
     if (d.getElementById(id)) {
         if (window.__TOMORROW__) {
@@ -478,25 +464,20 @@ for (let i = 0; i < coll.length; i++) {
     fjs.parentNode.insertBefore(js, fjs);
 })(document, 'script', 'tomorrow-sdk');
 
-// for tiles at top of page
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  // Make these visible to both if/else branches
   const options = { year: 'numeric', month: 'long', day: 'numeric' };
   const yesterday = new Date();
   yesterday.setDate(yesterday.getDate() - 1);
   const yesterdayStr = yesterday.toISOString().split('T')[0];
   const formattedDate = yesterday.toLocaleDateString('en-US', options);
 
-  // Tiles: daily summary
   fetch('longterm_plots/datatable_daily_fluxtower1.html')
     .then(r => r.text())
     .then(htmlContent => {
       const doc = new DOMParser().parseFromString(htmlContent, 'text/html');
       const scriptTag = doc.querySelector('script[type="application/json"][data-for]');
-
       if (!scriptTag) {
-        // Safe fallback if no JSON block
         document.getElementById('min-temp').textContent = 'No data';
         document.getElementById('max-temp').textContent = 'No data';
         document.getElementById('total-precipitation').textContent = 'No data';
@@ -505,7 +486,6 @@ document.addEventListener("DOMContentLoaded", function () {
           "Yesterday: " + formattedDate + " (No data)";
         return;
       }
-
       const dataJson = JSON.parse(scriptTag.textContent);
       const data = dataJson?.x?.data;
       if (!Array.isArray(data) || data.length < 5) {
@@ -513,7 +493,6 @@ document.addEventListener("DOMContentLoaded", function () {
           "Yesterday: " + formattedDate + " (No data)";
         return;
       }
-
       const idx = data[0].indexOf(yesterdayStr);
       if (idx === -1) {
         document.getElementById('min-temp').textContent = 'No data';
@@ -524,7 +503,6 @@ document.addEventListener("DOMContentLoaded", function () {
           "Yesterday: " + formattedDate + " (No data)";
         return;
       }
-
       document.getElementById('min-temp').textContent = data[1][idx];
       document.getElementById('max-temp').textContent = data[2][idx];
       document.getElementById('total-precipitation').textContent = data[3][idx];
