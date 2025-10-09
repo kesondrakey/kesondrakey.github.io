@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Flux Tower 2
-description: Flux Tower 2 
+title: Vermillion Tributary Paired Cropland – Site 2 (US-VT2)
+description: Corn/Soy; Cover Crops
 nav-menu: true 
 ---
 
@@ -278,6 +278,28 @@ body {
   </div>
 </div>
 
+<!-- Summary -->
+<div class="summary-box">
+<p>
+<strong>US-VT2</strong> (<a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT2" target="_blank">US-VT1</a>) measures carbon, water, and energy fluxes 
+in a no-till corn–soybean rotation on an actively managed farm in the Midwest. 
+</p>
+
+</div>
+
+<div class="summary-box">
+  Data for this site are available on 
+  <a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT2" target="_blank">AmeriFlux (US-VT2)</a>
+</div>
+
+<div class="summary-box">
+  <strong>Note:</strong> This page is best viewed on a desktop.
+</div>
+
+  <i></i>
+
+
+
 <h3>Forecast</h3>
 <div class="tomorrow"
      data-location-id="125459"
@@ -304,7 +326,7 @@ body {
 <!-- Your existing HTML content starts here -->
 <h2 class="summary-heading">Summary</h2>
 <div class="summary-box">
-    <strong>Flux Tower 2:</strong> This tower is situated on an Indiana farm focused on the cultivation of corn and soy using cover crops!
+    <strong>US-VT2:</strong> This tower is situated on an Indiana farm focused on the cultivation of corn and soy using cover crops!
 </div>
 <div class="summary-box">
     <strong>Note:</strong> This page is best viewed on a desktop format.

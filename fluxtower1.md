@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Flux Tower 1 (US-VT1)
-description: Flux Tower 1
+title: Vermillion Tributary Paired Cropland – Site 1 (US-VT1)
+description: Corn/Soy; No Cover Crops
 nav-menu: true 
 ---
   
@@ -297,10 +297,8 @@ nav-menu: true
 <!-- Summary -->
 <div class="summary-box">
 <p>
-<strong>Flux Tower 1</strong> (<a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT1" target="_blank">US-VT1</a>) measures carbon, water, and energy fluxes 
+<strong>US-VT1</strong> (<a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT1" target="_blank">US-VT1</a>) measures carbon, water, and energy fluxes 
 in a no-till corn–soybean rotation on an actively managed farm in the Midwest. 
-Paired with <a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT2" target="_blank">US-VT2</a>, which adds cover crops to the rotation, 
-it supports direct comparisons of conventional vs. cover-cropped systems.
 </p>
 
 </div>
