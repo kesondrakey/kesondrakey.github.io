@@ -265,9 +265,8 @@ body {
 </style>
 
 <div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
-<strong><a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT1" target="_blank">US-VT1</a></strong> is an eddy covariance tower that measures carbon, water, and energy fluxes on a working farm (no-till corn–soybean rotation) in the Midwest that uses cover crops! 🍃
-Data for this site are available on 
-              <a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT1" target="_blank">AmeriFlux</a>
+<strong><a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT1" target="_blank">US-VT1</a></strong> is an eddy covariance tower that measures carbon, water, and energy fluxes on a working farm (no-till corn–soybean rotation 🌽🫛) in the Midwest
+🔎 Data for this site are available on <a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT1" target="_blank">AmeriFlux</a>
 </div>
 
 
@@ -480,64 +479,62 @@ for (let i = 0; i < coll.length; i++) {
 })(document, 'script', 'tomorrow-sdk');
 
 // for tiles at top of page
-document.addEventListener("DOMContentLoaded", function() {
-    // Fetch the HTML content (assuming the HTML file is accessible via a URL)
-    fetch('longterm_plots/datatable_daily_fluxtower1.html')
-        .then(response => response.text())
-        .then(htmlContent => {
-            // Parse the HTML content
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(htmlContent, 'text/html');
-            
-            // Find the script tag that contains the JSON data
-            const scriptTag = doc.querySelector('script[type="application/json"][data-for]');
-            
-            if (scriptTag) {
-                // Load the JSON data
-                const dataJson = JSON.parse(scriptTag.textContent);
-                
-                // Extract the data from the JSON
-                const data = dataJson.x.data;
-                
-                // Get the dates and convert them to Date objects
-                const dates = data[0].map(dateStr => new Date(dateStr));
-                
-                // Find the index for yesterday's date
-                const yesterday = new Date();
-                yesterday.setDate(yesterday.getDate() - 1);
-                const options = { year: 'numeric', month: 'long', day: 'numeric' };
-                const yesterdayStr = yesterday.toISOString().split('T')[0];
-                const formattedDate = yesterday.toLocaleDateString('en-US', options);
-                
-                const index = data[0].indexOf(yesterdayStr);
-                if (index !== -1) {
-                    // Extract data for yesterday
-                    const minTemp = data[1][index];
-                    const maxTemp = data[2][index];
-                    const totalPrecipitation = data[3][index];
-                    const avgSoilMoisture = data[4][index];
-                    
-                    // Update the HTML elements with the data
-                    document.getElementById('min-temp').textContent = minTemp;
-                    document.getElementById('max-temp').textContent = maxTemp;
-                    document.getElementById('total-precipitation').textContent = totalPrecipitation;
-                    document.getElementById('avg-soil-moisture').textContent = avgSoilMoisture;
-                    document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate;
-                } else {
-                    document.getElementById('min-temp').textContent = 'No data';
-                    document.getElementById('max-temp').textContent = 'No data';
-                    document.getElementById('total-precipitation').textContent = 'No data';
-                    document.getElementById('avg-soil-moisture').textContent = 'No data';
-                    document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate + " (No data)";
-                }
-            } else {
-                console.error('Script tag with JSON data not found.');
-                document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate + " (No data)";
-            }
-        })
-        .catch(error => {
-            console.error('Error fetching the HTML:', error);
-            document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate + " (Error loading data)";
-        });
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Make these visible to both if/else branches
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const yesterday = new Date();
+  yesterday.setDate(yesterday.getDate() - 1);
+  const yesterdayStr = yesterday.toISOString().split('T')[0];
+  const formattedDate = yesterday.toLocaleDateString('en-US', options);
+
+  // Tiles: daily summary
+  fetch('longterm_plots/datatable_daily_fluxtower1.html')
+    .then(r => r.text())
+    .then(htmlContent => {
+      const doc = new DOMParser().parseFromString(htmlContent, 'text/html');
+      const scriptTag = doc.querySelector('script[type="application/json"][data-for]');
+
+      if (!scriptTag) {
+        // Safe fallback if no JSON block
+        document.getElementById('min-temp').textContent = 'No data';
+        document.getElementById('max-temp').textContent = 'No data';
+        document.getElementById('total-precipitation').textContent = 'No data';
+        document.getElementById('avg-soil-moisture').textContent = 'No data';
+        document.getElementById('yesterday-date').textContent =
+          "Yesterday: " + formattedDate + " (No data)";
+        return;
+      }
+
+      const dataJson = JSON.parse(scriptTag.textContent);
+      const data = dataJson?.x?.data;
+      if (!Array.isArray(data) || data.length < 5) {
+        document.getElementById('yesterday-date').textContent =
+          "Yesterday: " + formattedDate + " (No data)";
+        return;
+      }
+
+      const idx = data[0].indexOf(yesterdayStr);
+      if (idx === -1) {
+        document.getElementById('min-temp').textContent = 'No data';
+        document.getElementById('max-temp').textContent = 'No data';
+        document.getElementById('total-precipitation').textContent = 'No data';
+        document.getElementById('avg-soil-moisture').textContent = 'No data';
+        document.getElementById('yesterday-date').textContent =
+          "Yesterday: " + formattedDate + " (No data)";
+        return;
+      }
+
+      document.getElementById('min-temp').textContent = data[1][idx];
+      document.getElementById('max-temp').textContent = data[2][idx];
+      document.getElementById('total-precipitation').textContent = data[3][idx];
+      document.getElementById('avg-soil-moisture').textContent = data[4][idx];
+      document.getElementById('yesterday-date').textContent =
+        "Yesterday: " + formattedDate;
+    })
+    .catch(() => {
+      document.getElementById('yesterday-date').textContent =
+        "Yesterday: " + formattedDate + " (Error loading data)";
+    });
 });
 </script>
