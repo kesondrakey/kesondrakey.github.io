@@ -12,12 +12,20 @@
     grid-gap: 1em;
   }
 
-  .grid-item {
-    position: relative;
-    padding-top: 75%; /* 4:3 aspect ratio for mobile view, adjust as needed */
-    overflow: hidden;
-    border: none; /* Ensure no borders are added to the grid item */
+  .grid-item { position: relative; }
+  .text-overlay{
+    position: absolute;
+    inset: 0;                   /* stretch over the image */
+    display: flex;
+    align-items: center;        /* vertical center */
+    justify-content: center;    /* horizontal center */
+    z-index: 2;
+    color: white;
+    text-align: center;
+    pointer-events: none;       /* so clicks go to the <a> */
   }
+
+
 
   .grid-item a {
     position: absolute;
