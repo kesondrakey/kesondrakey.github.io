@@ -1,6 +1,6 @@
 ---
-  layout: post
-title: Flux Tower 1
+layout: post
+title: Flux Tower 1 (US-VT1)
 description: Flux Tower 1
 nav-menu: true 
 ---
@@ -294,40 +294,53 @@ nav-menu: true
   </div>
   </div>
   
-  <h3>Forecast</h3>
-  <div class="tomorrow"
-data-location-id="128520"
-data-language="EN"
-data-unit-system="IMPERIAL"
-data-skin="dark"
-data-widget-type="upcoming"
-style="padding-bottom:22px;position:relative;">
-  <a href="https://www.tomorrow.io/weather-api/"
-rel="nofollow noopener noreferrer"
-target="_blank"
-style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
-  <img alt="Powered by the Tomorrow.io Weather API"
-src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
-width="250" height="18"/>
-  </a>
-  </div>
+<!-- Summary -->
+<div class="summary-box">
+<p>
+<strong>Flux Tower 1</strong> (<a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT1" target="_blank">US-VT1</a>) measures carbon, water, and energy fluxes 
+in a no-till corn–soybean rotation on an actively managed farm in the Midwest. 
+Paired with <a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT2" target="_blank">US-VT2</a>, which adds cover crops to the rotation, 
+it supports direct comparisons of conventional vs. cover-cropped systems.
+</p>
+
+</div>
+
+<div class="summary-box">
+  Data for this site are available on 
+  <a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT1" target="_blank">AmeriFlux (US-VT1)</a>
+</div>
+
+<div class="summary-box">
+  <strong>Note:</strong> This page is best viewed on a desktop.
+</div>
+
+  <i></i>
+  
+  <!--Forecast -->
+<h3>Forecast</h3>
+<div class="tomorrow"
+     data-location-id="125459"
+     data-language="EN"
+     data-unit-system="IMPERIAL"
+     data-skin="dark"
+     data-widget-type="upcoming"
+     style="padding-bottom:22px;position:relative;">
+    <a href="https://www.tomorrow.io/weather-api/"
+       rel="nofollow noopener noreferrer"
+       target="_blank"
+       style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
+        <img alt="Powered by the Tomorrow.io Weather API"
+             src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
+             width="250" height="18"/>
+    </a>
+</div>
   
   <div class="summary-box">
-  <strong>Note:</strong> This is based on a general western Indiana location 
+  <strong>Note:</strong> This forecast is sourced from a general western Indiana weather station 
 </div>
   <i></i>
   
-  <!-- Your existing HTML content starts here -->
-  <h2 class="summary-heading">Summary</h2>
-  <div class="summary-box">
-  <!-- Updated background color -->
-  <strong>Flux Tower 1:</strong> This tower is situated on an Indiana farm focused on the cultivation of corn and soy that uses cover crops
-</div>
-  
-  <div class="summary-box">
-  <strong>Note:</strong> This page is best viewed on a desktop format.
-</div>
-  <i></i>
+
   
   <!-- Yesterday's Date Header -->
 <h2 class="summary-heading" id="yesterday-date">Yesterday</h2>
@@ -626,8 +639,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 </script>
-
-
-
-
-
