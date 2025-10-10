@@ -317,10 +317,10 @@ The first Vermillion Tributary Paired Cropland site (<strong>US-VT1</strong>) is
 
 <i></i>
 
-
+<h3>Near real-time data from US-VT2</h3>
 
 <!-- Yesterday's Date Header -->
-<h2 class="summary-heading" id="yesterday-date">Yesterday</h2>
+<h4 class="summary-heading" id="yesterday-date">Yesterday</h4>
 
 <!-- Tiles for yesterday's information -->
 <div class="tile-container">
