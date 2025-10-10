@@ -316,6 +316,8 @@ body {
 The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) is an eddy covariance tower that measures carbon, water, and energy fluxes on a working farm (no-till corn–soybean rotation 🌽🫛) in the Midwestern United States that uses cover crops! 🍃
 </div>
 
+<i></i>
+
 
 <!-- Yesterday's Date Header -->
 <h2 class="summary-heading" id="yesterday-date">Yesterday</h2>
@@ -395,8 +397,9 @@ The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) i
 
 
 
-<div class="summary-box">
-💻Data for this site are available on <strong><a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT2" target="_blank">AmeriFlux</a></strong>
+
+<div class="full-width-tile">
+💻US-VT2 Data are available on <strong><a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT2" target="_blank">AmeriFlux</a></strong>
 </div>
 
 
