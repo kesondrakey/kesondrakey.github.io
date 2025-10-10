@@ -25,6 +25,8 @@
     pointer-events: none;       /* so clicks go to the <a> */
   }
 
+  
+
 
 
   .grid-item a {
@@ -81,6 +83,7 @@
     }
     
     .grid-item {
+      aspect-ratio: 1 / 1;  /* <-- add this line */
       padding-top: 100%; /* 1:1 aspect ratio for desktop, as you had initially */
     }
 
