@@ -353,10 +353,7 @@ The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) i
 </div>
 <!-- End tiles for yesterday's information -->
 
-<!-- ISCO Trigger Tile -->
-<div class="full-width-tile" id="isco-tile">
-    💧Recent ISCO trigger: Loading...
-</div>
+
 <i></i>
 <i></i>
 
