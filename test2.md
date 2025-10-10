@@ -311,7 +311,7 @@ body {
 
 <i></i>
 
-<h3><strong>Near real-time data</h3></strong>
+<h3><strong>Near real-time data from the tower</h3></strong>
 <div class="summary-box">
 The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) is an eddy covariance tower that measures carbon, water, and energy fluxes on a working farm (no-till corn–soybean rotation 🌽🫛) in the Midwestern United States that uses cover crops! 🍃
 </div>
