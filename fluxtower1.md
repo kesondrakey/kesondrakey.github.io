@@ -485,7 +485,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('yesterday-date').textContent =
           "Yesterday: " + formattedDate + " (No data)";
         return;
-      }
+      } 
       const dataJson = JSON.parse(scriptTag.textContent);
       const data = dataJson?.x?.data;
       if (!Array.isArray(data) || data.length < 5) {
