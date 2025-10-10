@@ -295,15 +295,12 @@ body {
 </div>
 
 <!-- Your existing HTML content starts here -->
-<h2 class="summary-heading">Summary</h2>
 <div class="summary-box">
     <!-- Updated background color -->
-    <strong>Flux Tower 4:</strong> This tower is situated on an Indiana farm focused on the cultivation of corn and soy that uses cover crops
+    <strong>Flux Tower 4:</strong> This tower is situated on an Indiana farm focused on the cultivation of corn and soy that uses cover crops🍃
 </div>
 
-<div class="summary-box">
-    <strong>Note:</strong> This page is best viewed on a desktop format.
-</div>
+
 <i></i>
 
 <h3>Forecast</h3>
@@ -325,7 +322,7 @@ body {
     </div>
 
 <div class="summary-box">
-    <strong>Note:</strong> This is based on a general northern Indiana location 
+    <strong>Note:</strong> This forecast is sourced from a general northern Indiana weather station 
 </div>
 <i></i>
 
