@@ -296,7 +296,7 @@ body {
 
 <!-- Your existing HTML content starts here -->
 <!-- Forecast -->
-<h2>Forecast from a nearby weather station</h2>
+<h3>Forecast from a nearby weather station</h3>
 <div class="tomorrow"
      data-location-id="125459"
      data-language="EN"
@@ -316,7 +316,9 @@ body {
 
 <i></i>
 
-<h3><strong>Near real-time data from the tower</h3></strong>
+<h2><strong>Near real-time data from the tower</strong></h2>
+
+    
 <div class="summary-box">
 The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) is an eddy covariance tower that measures carbon, water, and energy fluxes on a working farm (no-till corn–soybean rotation 🌽🫛) in the Midwestern United States that uses cover crops! 🍃
 </div>
@@ -324,7 +326,7 @@ The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) i
 <i></i>
 
 <!-- Yesterday's Date Header -->
-<h4 class="summary-heading" id="yesterday-date">Yesterday</h4>
+<h3 class="summary-heading" id="yesterday-date">Yesterday</h3>
 
 <!-- Tiles for yesterday's information -->
 <div class="tile-container">
@@ -356,6 +358,7 @@ The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) i
     💧Recent ISCO trigger: Loading...
 </div>
 <i></i>
+<i></i>
 
 
 
@@ -363,6 +366,8 @@ The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) i
 
 <!-- Table Section -->
 <h3>Select your time period of interest to see the data in a table format:</h3>
+<i></i>
+
 <!-- Icons/buttons -->
 <div class="icon-container">
     <button class="icon icon-daily" onclick="showTable('daily')">Daily</button>
@@ -406,6 +411,9 @@ The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) i
 💻US-VT2 Data are available on <strong><a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT2" target="_blank">AmeriFlux</a></strong>
 </div>
 
+<h2><strong>Calendar</strong></h2>
+
+
 
 <iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar1.html"></iframe>
 <div style="background-color: #343A54; padding: 5px; color: white;">
@@ -418,7 +426,7 @@ The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) i
 
 
 
-
+<i></i>
 <!-- Daily Plot - Simple Variables -->
 <h2>Long Term Data</h2>
 <h4>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - <i>just click the variable name and see!</i></h4>
