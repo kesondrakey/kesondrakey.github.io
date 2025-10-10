@@ -263,19 +263,23 @@ body {
 }
 
 /* Full-width ISCO tile */
-.full-width-tile {
-    background-color: #343A54;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 20px;
+    .full-width-tile{
+  background-color:#343A54;
+  border-radius:8px;
+  padding:20px;
+  box-shadow:0 0 10px rgba(0,0,0,.1);
+  color:#fff;
+  display:flex;
+  flex-direction:row;       /* was column */
+  align-items:center;
+  justify-content:center;   /* center horizontally */
+  gap:8px;                  /* optional space between items */
+  width:100%;
+  margin-top:20px;
+  text-align:center;
+  flex-wrap:nowrap;         /* prevent wrapping of children */
 }
+    
 </style>
 
 
@@ -309,7 +313,10 @@ body {
     </a>
 </div>
 
-<h3><strong>Near real-time data from the tower</h3></strong>
+<i></i>
+
+<h2><strong>Near real-time data from the tower</strong></h2>
+
 <div class="summary-box">
 The first Vermillion Tributary Paired Cropland site (<strong>US-VT1</strong>) is an eddy covariance tower that measures carbon, water, and energy fluxes on a working farm (no-till corn–soybean rotation 🌽🫛) in the Midwestern United States
 </div>
@@ -318,7 +325,7 @@ The first Vermillion Tributary Paired Cropland site (<strong>US-VT1</strong>) is
 
 
 <!-- Yesterday's Date Header -->
-<h4 class="summary-heading" id="yesterday-date">Yesterday</h4>
+<h3 class="summary-heading" id="yesterday-date">Yesterday</h3>
 
 <!-- Tiles for yesterday's information -->
 <div class="tile-container">
@@ -350,6 +357,8 @@ The first Vermillion Tributary Paired Cropland site (<strong>US-VT1</strong>) is
     💧Recent ISCO trigger: Loading...
 </div>
 <i></i>
+<i></i>
+
 
 
 
@@ -398,6 +407,8 @@ The first Vermillion Tributary Paired Cropland site (<strong>US-VT1</strong>) is
 💻US-VT1 Data are available on <strong><a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT1" target="_blank">AmeriFlux</a></strong>
 </div>
 
+<h2><strong>Calendar</strong></h2>
+
 
 <iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar1.html"></iframe>
 <div style="background-color: #343A54; padding: 5px; color: white;">
@@ -409,7 +420,7 @@ The first Vermillion Tributary Paired Cropland site (<strong>US-VT1</strong>) is
 
 
 
-
+<i></i>
 <!-- Daily Plot - Simple Variables -->
 <h2>Long Term Data</h2>
 <h4>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - <i>just click the variable name and see!</i></h4>
