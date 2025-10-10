@@ -318,7 +318,8 @@ The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) i
 
 <i></i>
 
-
+<h3><strong>US-VT1: </strong>Near real-time data</h3>
+<i></i>
 <!-- Yesterday's Date Header -->
 <h2 class="summary-heading" id="yesterday-date">Yesterday</h2>
 
