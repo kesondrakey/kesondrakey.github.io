@@ -290,11 +290,31 @@ body {
 </div>
 
 <!-- Your existing HTML content starts here -->
+<!-- Forecast -->
+<h3>Forecast from a nearby weather station</h3>
+<div class="tomorrow"
+     data-location-id="125459"
+     data-language="EN"
+     data-unit-system="IMPERIAL"
+     data-skin="dark"
+     data-widget-type="upcoming"
+     style="padding-bottom:22px;position:relative;">
+    <a href="https://www.tomorrow.io/weather-api/"
+       rel="nofollow noopener noreferrer"
+       target="_blank"
+       style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
+        <img alt="Powered by the Tomorrow.io Weather API"
+             src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
+             width="250" height="18"/>
+    </a>
+</div>
+
+<i></i>
+
+
 <div class="summary-box">
 The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) is an eddy covariance tower that measures carbon, water, and energy fluxes on a working farm (no-till corn–soybean rotation 🌽🫛) in the Midwestern United States that uses cover crops! 🍃
 </div>
-
-💻Data for this site are available on <strong><a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT2" target="_blank">AmeriFlux</a></strong>
 
 
 <!-- Yesterday's Date Header -->
@@ -375,6 +395,10 @@ The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) i
 
 
 
+<div class="summary-box">
+💻Data for this site are available on <strong><a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT2" target="_blank">AmeriFlux</a></strong>
+</div>
+
 
 <iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar1.html"></iframe>
 <div style="background-color: #343A54; padding: 5px; color: white;">
@@ -384,26 +408,7 @@ The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) i
 
 
 
-<!-- Forecast -->
-<h3>Forecast from a nearby weather station</h3>
-<div class="tomorrow"
-     data-location-id="125459"
-     data-language="EN"
-     data-unit-system="IMPERIAL"
-     data-skin="dark"
-     data-widget-type="upcoming"
-     style="padding-bottom:22px;position:relative;">
-    <a href="https://www.tomorrow.io/weather-api/"
-       rel="nofollow noopener noreferrer"
-       target="_blank"
-       style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
-        <img alt="Powered by the Tomorrow.io Weather API"
-             src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
-             width="250" height="18"/>
-    </a>
-</div>
 
-<i></i>
 
 
 
