@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vermillion Tributary Paired Cropland (US-VT2) - Corn/Soy; Cover Crops
+title: Vermillion Tributary Paired Cropland
 description: US-VT2
 nav-menu: true 
 ---
@@ -291,38 +291,15 @@ body {
 
 <!-- Your existing HTML content starts here -->
 <div class="summary-box">
-    <!-- Updated background color -->
-    <strong>US-VT2</strong> is an eddy covariance tower that measures carbon, water, and energy fluxes on a 🚜working farm (no-till corn–soybean rotation 🌽🫛) in the Midwestern United States that uses cover crops! 🍃. 
-    💻Data for this site are available on <a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT2" target="_blank">AmeriFlux</a>
-</div>
-
-
-<i></i>
-
-<!-- Forecast -->
-<h3>Forecast</h3>
-<div class="tomorrow"
-     data-location-id="125459"
-     data-language="EN"
-     data-unit-system="IMPERIAL"
-     data-skin="dark"
-     data-widget-type="upcoming"
-     style="padding-bottom:22px;position:relative;">
-    <a href="https://www.tomorrow.io/weather-api/"
-       rel="nofollow noopener noreferrer"
-       target="_blank"
-       style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
-        <img alt="Powered by the Tomorrow.io Weather API"
-             src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
-             width="250" height="18"/>
-    </a>
+The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) is an eddy covariance tower that measures carbon, water, and energy fluxes on a working farm (no-till corn–soybean rotation 🌽🫛) in the Midwestern United States that uses cover crops! 🍃
 </div>
 
 <div class="summary-box">
-    <strong>Note:</strong> This forecast is sourced from a general western Indiana weather station 
+    💻Data for this site are available on <strong><a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT2" target="_blank">AmeriFlux</a></strong>
 </div>
-<i></i>
 
+
+<i></i>
 
 
 <!-- Yesterday's Date Header -->
@@ -360,11 +337,27 @@ body {
 <i></i>
 
 
-<iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar1.html"></iframe>
-<div style="background-color: #343A54; padding: 10px; color: white;">
-    <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+<!-- Forecast -->
+<h3>Forecast from a nearby weather station</h3>
+<div class="tomorrow"
+     data-location-id="125459"
+     data-language="EN"
+     data-unit-system="IMPERIAL"
+     data-skin="dark"
+     data-widget-type="upcoming"
+     style="padding-bottom:22px;position:relative;">
+    <a href="https://www.tomorrow.io/weather-api/"
+       rel="nofollow noopener noreferrer"
+       target="_blank"
+       style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
+        <img alt="Powered by the Tomorrow.io Weather API"
+             src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
+             width="250" height="18"/>
+    </a>
 </div>
-<div style="margin-bottom:20px;"></div>
+
+<i></i>
+
 
 <!-- Table Section -->
 <h3>Select your time period of interest to see the data in a table format:</h3>
@@ -403,6 +396,14 @@ body {
     </div>
     <div style="margin-bottom:20px;"></div>
 </div>
+
+
+
+<iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar1.html"></iframe>
+<div style="background-color: #343A54; padding: 10px; color: white;">
+    <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+</div>
+<div style="margin-bottom:20px;"></div>
 
 <!-- Daily Plot - Simple Variables -->
 <h2>Long Term Data</h2>
