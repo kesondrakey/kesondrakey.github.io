@@ -400,7 +400,7 @@ The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) i
 <div style="background-color: #343A54; padding: 10px; color: white;">
     <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
 </div>
-<div style="margin-bottom:20px;"></div>
+<div style="margin-bottom:10px;"></div>
 
 <!-- Daily Plot - Simple Variables -->
 <h2>Long Term Data</h2>
