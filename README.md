@@ -13,17 +13,7 @@
   }
 
   .grid-item { position: relative; }
-  .text-overlay{
-    position: absolute;
-    inset: 0;                   /* stretch over the image */
-    display: flex;
-    align-items: center;        /* vertical center */
-    justify-content: center;    /* horizontal center */
-    z-index: 2;
-    color: white;
-    text-align: center;
-    pointer-events: none;       /* so clicks go to the <a> */
-  }
+
 
   
 
@@ -82,9 +72,13 @@
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Multi-column for desktop view */
     }
     
+
+
+    /* 1) Give tiles height on mobile */
     .grid-item {
-      aspect-ratio: 1 / 1;  /* <-- add this line */
-      padding-top: 100%; /* 1:1 aspect ratio for desktop, as you had initially */
+      position: relative;
+      aspect-ratio: 1 / 1;   /* <- add */
+      overflow: hidden;      /* <- add (prevents spillover) */
     }
 
     .grid-item.full-width {
@@ -95,6 +89,10 @@
     .grid-item a .text-overlay {
       font-size: 3rem;
       font-weight: 900;
+      font-size: clamp(1rem, 4.5vw, 2em);  /* scales on small screens */
+      line-height: 1.2;
+      padding: 0 .5rem;                    /* prevent edge crowding */
+      word-break: break-word;
     }
   }
 
