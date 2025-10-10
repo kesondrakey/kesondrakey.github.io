@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Flux Tower 3
-description: Flux Tower 3
+description: 
 nav-menu: true 
 ---
 
@@ -262,8 +262,25 @@ body {
     gap: 5px;
 }
 
+/* Full-width ISCO tile */
+    .full-width-tile{
+  background-color:#343A54;
+  border-radius:8px;
+  padding:20px;
+  box-shadow:0 0 10px rgba(0,0,0,.1);
+  color:#fff;
+  display:flex;
+  flex-direction:row;       /* was column */
+  align-items:center;
+  justify-content:center;   /* center horizontally */
+  gap:8px;                  /* optional space between items */
+  width:100%;
+  margin-top:20px;
+  text-align:center;
+  flex-wrap:nowrap;         /* prevent wrapping of children */
+}
+    
 </style>
-
 
 
 <!-- Add the banner grid-container here -->
@@ -276,41 +293,39 @@ body {
   </div>
 </div>
 
-<h3>Forecast</h3>
- <div class="tomorrow"
-         data-location-id="128520"
-         data-language="EN"
-         data-unit-system="IMPERIAL"
-         data-skin="dark"
-         data-widget-type="upcoming"
-         style="padding-bottom:22px;position:relative;">
-        <a href="https://www.tomorrow.io/weather-api/"
-           rel="nofollow noopener noreferrer"
-           target="_blank"
-           style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
-            <img alt="Powered by the Tomorrow.io Weather API"
-                 src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
-                 width="250" height="18"/>
-        </a>
-    </div>
-
-<div class="summary-box">
-    <strong>Note:</strong> This is based on a general northern Indiana location 
-</div>
-<i></i>
-
 <!-- Your existing HTML content starts here -->
-<h2 class="summary-heading">Summary</h2>
-<div class="summary-box">
-    <strong>Flux Tower 3:</strong> This tower is situated on an Indiana farm focused on the cultivation of corn and soy using conventional farming methods
+<!-- Forecast -->
+<h4>Forecast from a nearby weather station</h4>
+<div class="tomorrow"
+     data-location-id="125459"
+     data-language="EN"
+     data-unit-system="IMPERIAL"
+     data-skin="dark"
+     data-widget-type="upcoming"
+     style="padding-bottom:22px;position:relative;">
+    <a href="https://www.tomorrow.io/weather-api/"
+       rel="nofollow noopener noreferrer"
+       target="_blank"
+       style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
+        <img alt="Powered by the Tomorrow.io Weather API"
+             src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
+             width="250" height="18"/>
+    </a>
 </div>
-<div class="summary-box">
-    <strong>Note:</strong> This page is best viewed on a desktop format.
-</div>
+
 <i></i>
+
+<h2><strong>Near real-time data from the tower</strong></h2>
+
+<div class="summary-box">
+The first Shatto Ditch Paired Cropland site (<strong>Tower 4</strong>) is an eddy covariance tower that measures carbon, water, and energy fluxes on a working farm (no-till corn–soybean rotation 🌽🫛) in the Midwestern United States
+</div>
+
+<i></i>
+
 
 <!-- Yesterday's Date Header -->
-<h2 class="summary-heading" id="yesterday-date">Yesterday</h2>
+<h3 class="summary-heading" id="yesterday-date">Yesterday</h3>
 
 <!-- Tiles for yesterday's information -->
 <div class="tile-container">
@@ -336,13 +351,13 @@ body {
     </div>
 </div>
 <!-- End tiles for yesterday's information -->
+
+
+<i></i>
 <i></i>
 
-<iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar3.html"></iframe>
-<div style="background-color: #343A54; padding: 10px; color: white;">
-    <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
-</div>
-<div style="margin-bottom:20px;"></div>
+
+
 
 <!-- Table Section -->
 <h3>Select your time period of interest to see the data in a table format:</h3>
@@ -382,6 +397,20 @@ body {
     <div style="margin-bottom:20px;"></div>
 </div>
 
+
+
+
+<iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar3.html"></iframe>
+<div style="background-color: #343A54; padding: 5px; color: white;">
+    <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages)
+</div>
+
+<div style="margin-bottom:10px;"></div>
+
+
+
+
+<i></i>
 <!-- Daily Plot - Simple Variables -->
 <h2>Long Term Data</h2>
 <h4>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - <i>just click the variable name and see!</i></h4>
@@ -391,11 +420,13 @@ body {
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower3.html"></iframe>
     <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m³/m³))</i>
     <div style="background-color: #343A54; padding: 10px; color: white;">
-      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages)
     </div>
     <div style="margin-bottom:20px;"></div>
   </div>
 </div>
+
+
 
 <!-- Technical Data Section -->
 <!-- More Technical Data -->
@@ -533,6 +564,71 @@ document.addEventListener("DOMContentLoaded", function() {
             console.error('Error fetching the HTML:', error);
             document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate + " (Error loading data)";
         });
+
+  // Fetch the ISCO counts data
+ fetch('longterm_plots/longterm_plotly_fluxtower3.html')
+      .then(response => response.text())
+      .then(htmlContent => {
+        // Parse the HTML content
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(htmlContent, 'text/html');
+        
+        // Find the script tag that contains the JSON data
+        const scriptTags = doc.querySelectorAll('script[type="application/json"][data-for]');
+        
+        let foundISCOData = false;
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        
+        scriptTags.forEach(scriptTag => {
+          const dataJson = JSON.parse(scriptTag.textContent);
+          
+          // Check if the script contains ISCO data
+          if (dataJson.x && dataJson.x.data) {
+            dataJson.x.data.forEach(item => {
+              if (item.name === "ISCO (counts)") {
+                foundISCOData = true;
+                
+                // Extract the dates and ISCO counts from the matched data
+                const dates = item.x.map(dateStr => new Date(dateStr));
+                const counts = item.y;
+                
+                console.log('ISCO Dates:', dates);
+                console.log('ISCO Counts:', counts);
+                
+                // Find the most recent date with ISCO (counts) not equal to zero
+                let recentDate = null;
+                let recentCount = 0;
+                
+                for (let i = counts.length - 1; i >= 0; i--) {
+                  if (counts[i] !== 0) {
+                    recentDate = dates[i];
+                    recentCount = counts[i];
+                    break;
+                  }
+                }
+                
+                if (recentDate) {
+                  const formattedRecentDate = recentDate.toLocaleDateString('en-US', options);
+                  document.getElementById('isco-tile').textContent = `💧Most recent ISCO trigger: ${formattedRecentDate}`;
+                } else {
+                  document.getElementById('isco-tile').textContent = "💧Recent ISCO trigger: No recent data";
+                }
+              }
+            });
+          }
+        });
+        
+        if (!foundISCOData) {
+          console.error('ISCO data not found in any script tags.');
+          document.getElementById('isco-tile').textContent = "💧Recent ISCO trigger: No recent data";
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching the HTML:', error);
+        document.getElementById('isco-tile').textContent = "💧Recent ISCO trigger: Error loading data";
+      });
 });
+
+
 </script>
 
