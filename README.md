@@ -6,7 +6,7 @@
 
 
 <style>
-  /* Base (mobile-first) */
+  /* Mobile-first grid */
   .grid-container{
     display:grid;
     grid-template-columns:1fr;   /* single column on mobile */
@@ -15,57 +15,69 @@
 
   .grid-item{
     position:relative;
-    aspect-ratio:1 / 1;         /* gives height on mobile & desktop */
+    aspect-ratio:1 / 1;          /* gives height so tiles don't overlap */
     overflow:hidden;
   }
 
+  /* Clickable tile layer */
   .grid-item a{
     position:absolute;
-    inset:0;
-    display:grid;
-    place-items:center;          /* center overlay text */
+    top:0; left:0; right:0; bottom:0;
+    display:flex;
+    align-items:center;           /* center */
+    justify-content:center;       /* center */
     text-decoration:none;
     color:#fff;
-    background:rgba(0,0,0,0.35); /* subtle veil over the image */
-    transition:background .25s ease;
+    background:rgba(0,0,0,0.7);   /* your dark veil */
     border:0;
   }
-  .grid-item a:hover{ background:rgba(0,0,0,0.6); }
 
-  /* scope to just the grid images */
+  /* Only affect images inside the grid */
   .grid-item img{
     position:absolute;
-    inset:0;
+    top:0; left:0; right:0; bottom:0;
     width:100%;
     height:100%;
     object-fit:cover;
-    display:block;
     border:0;
     outline:0;
     z-index:0;
   }
 
-  .grid-item .text-overlay{
-    pointer-events:none;         /* clicks go to the link */
-    z-index:1;
-    font-weight:700;
+  /* Centered overlay text */
+  .grid-item a .text-overlay{
+    position:absolute;
+    top:0; left:0; right:0; bottom:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:1;                    /* above the image */
+    color:#fff;
+    font-weight:bold;
     text-shadow:2px 2px 4px rgba(0,0,0,.5);
-    line-height:1.2;
+    opacity:0.7;                  /* default */
+    transition:opacity .3s ease;
     padding:0 .5rem;
+    line-height:1.2;
     word-break:break-word;
-    font-size:clamp(1rem, 6vw, 1.75rem);  /* responsive on small screens */
+    font-size:clamp(1rem, 6vw, 1.75rem); /* responsive on small screens */
   }
 
+  .grid-item a:hover .text-overlay{
+    opacity:1;                    /* your original hover behavior */
+  }
+
+  /* Desktop */
   @media (min-width:768px){
     .grid-container{
-      grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
     }
     .grid-item.full-width{
-      grid-column:1 / -1;        /* span full row */
-      aspect-ratio:5 / 1;        /* optional wide banner */
+      grid-column:1 / -1;
+      aspect-ratio:5 / 1;         /* optional wide banner */
     }
-    .grid-item .text-overlay{
-      font-size:clamp(1.25rem, 2.5vw, 3rem);  /* scale up on desktop */
+    .grid-item a .text-overlay{
+      font-size:clamp(1.25rem, 2.5vw, 3rem);
       font-weight:900;
     }
   }
