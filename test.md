@@ -292,15 +292,17 @@ body {
 <!-- Your existing HTML content starts here -->
 <div class="summary-box">
     <!-- Updated background color -->
-    <strong>US-VT1</strong> is an eddy covariance tower that measures carbon, water, and energy fluxes on a 🚜working farm (no-till corn–soybean rotation 🌽🫛) in the Midwestern United States. 
-    💻Data for this site are available on <a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT1" target="_blank">AmeriFlux</a>
+    <strong>US-VT1</strong> is an eddy covariance tower that measures carbon, water, and energy fluxes on a 🚜working farm (no-till corn–soybean rotation 🌽🫛) in the Midwestern United States
 </div>
 
+<div class="summary-box">
+    💻Data for this site are available on <strong><a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT1" target="_blank">AmeriFlux</a></strong>
+</div>
 
 <i></i>
 
 <!-- Forecast -->
-<h3>Forecast</h3>
+<h3>Forecast from a nearby weather station</h3>
 <div class="tomorrow"
      data-location-id="125459"
      data-language="EN"
@@ -318,9 +320,6 @@ body {
     </a>
 </div>
 
-<div class="summary-box">
-    <strong>Note:</strong> This forecast is sourced from a general western Indiana weather station 
-</div>
 <i></i>
 
 
@@ -361,9 +360,10 @@ body {
 
 
 <iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar1.html"></iframe>
-<div style="background-color: #343A54; padding: 10px; color: white;">
+<div style="background-color: #343A54; padding: 5px; color: white;">
     <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
 </div>
+
 <div style="margin-bottom:20px;"></div>
 
 <!-- Table Section -->
@@ -418,6 +418,8 @@ body {
     <div style="margin-bottom:20px;"></div>
   </div>
 </div>
+
+
 
 <!-- Technical Data Section -->
 <!-- More Technical Data -->
