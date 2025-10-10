@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Vermillion Tributary Paired Cropland – Site 1 (US-VT1)
-description: Corn/Soy
+title: Vermillion Tributary Paired Cropland
+description: US-VT1
 nav-menu: true 
 ---
 
@@ -140,8 +140,8 @@ iframe + i {
 
 /* for static plot */
 .plot-container {
-    visibility: visible;
-    height: auto;      
+    visibility: visible;  // makes it visible
+    height: auto;        // adjusts the height to its content
 }
 
 /* Banner styles */
@@ -262,12 +262,25 @@ body {
     gap: 5px;
 }
 
+/* Full-width ISCO tile */
+    .full-width-tile{
+  background-color:#343A54;
+  border-radius:8px;
+  padding:20px;
+  box-shadow:0 0 10px rgba(0,0,0,.1);
+  color:#fff;
+  display:flex;
+  flex-direction:row;       /* was column */
+  align-items:center;
+  justify-content:center;   /* center horizontally */
+  gap:8px;                  /* optional space between items */
+  width:100%;
+  margin-top:20px;
+  text-align:center;
+  flex-wrap:nowrap;         /* prevent wrapping of children */
+}
+    
 </style>
-
-<div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
-<strong><a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT1" target="_blank">US-VT1</a></strong> is an eddy covariance tower that measures carbon, water, and energy fluxes on a working farm (no-till corn–soybean rotation 🌽🫛) in the Midwest
-🔎 Data for this site are available on <a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT1" target="_blank">AmeriFlux</a>
-</div>
 
 
 <!-- Add the banner grid-container here -->
@@ -280,8 +293,9 @@ body {
   </div>
 </div>
 
+<!-- Your existing HTML content starts here -->
 <!-- Forecast -->
-<h3>Forecast</h3>
+<h4>Forecast from a nearby weather station</h4>
 <div class="tomorrow"
      data-location-id="125459"
      data-language="EN"
@@ -299,14 +313,19 @@ body {
     </a>
 </div>
 
+<i></i>
+
+<h2><strong>Near real-time data from the tower</strong></h2>
+
 <div class="summary-box">
-    <strong>Note:</strong> This forecast is sourced from a general western Indiana weather station 
+The first Vermillion Tributary Paired Cropland site (<strong>US-VT1</strong>) is an eddy covariance tower that measures carbon, water, and energy fluxes on a working farm (no-till corn–soybean rotation 🌽🫛) in the Midwestern United States
 </div>
+
 <i></i>
 
 
 <!-- Yesterday's Date Header -->
-<h2 class="summary-heading" id="yesterday-date">Yesterday</h2>
+<h3 class="summary-heading" id="yesterday-date">Yesterday</h3>
 
 <!-- Tiles for yesterday's information -->
 <div class="tile-container">
@@ -332,19 +351,16 @@ body {
     </div>
 </div>
 <!-- End tiles for yesterday's information -->
-<i></i>
 
 <!-- ISCO Trigger Tile -->
 <div class="full-width-tile" id="isco-tile">
     💧Recent ISCO trigger: Loading...
 </div>
 <i></i>
+<i></i>
 
-<iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar2.html"></iframe>
-<div style="background-color: #343A54; padding: 10px; color: white;">
-    <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
-</div>
-<div style="margin-bottom:20px;"></div>
+
+
 
 <!-- Table Section -->
 <h3>Select your time period of interest to see the data in a table format:</h3>
@@ -385,9 +401,27 @@ body {
 </div>
 
 
+
+
+<div class="full-width-tile">
+💻US-VT1 Data are available on <strong><a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT1" target="_blank">AmeriFlux</a></strong>
+</div>
+
+
+
+<iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar1.html"></iframe>
+<div style="background-color: #343A54; padding: 5px; color: white;">
+    <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages)
+</div>
+
+<div style="margin-bottom:10px;"></div>
+
+
+
+
+<i></i>
 <!-- Daily Plot - Simple Variables -->
 <h2>Long Term Data</h2>
-
 <h4>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - <i>just click the variable name and see!</i></h4>
 <div class="plot-container">
   <div class="html-object">
@@ -395,13 +429,16 @@ body {
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower1.html"></iframe>
     <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m³/m³))</i>
     <div style="background-color: #343A54; padding: 10px; color: white;">
-      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages)
     </div>
     <div style="margin-bottom:20px;"></div>
   </div>
 </div>
 
+
+
 <!-- Technical Data Section -->
+<!-- More Technical Data -->
 <div class="collapsible-container">
     <button class="collapsible">For Data Managers</button>
     <div class="container">
@@ -423,33 +460,45 @@ function showTable(tableType) {
     const selectedTable = document.getElementById(tableType + '-table');
     const icons = document.querySelectorAll('.icon');
     let isAlreadyVisible = (selectedTable.style.display === 'block');
+
+    // Hide all tables first
     tables.forEach(table => {
         table.style.display = 'none';
     });
+
+    // Remove selected class from all icons
     icons.forEach(icon => {
         icon.classList.remove('selected');
     });
+
+    // If the selected table was not already visible, show it
     if (!isAlreadyVisible) {
         selectedTable.style.display = 'block';
+        // Add the selected class to the clicked icon only if the table was not already visible
         document.querySelector('.icon-' + tableType).classList.add('selected');
     }
 }
 
+// Collapsible Functionality
 var coll = document.getElementsByClassName("collapsible");
 for (let i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
+        
+        // Adjust this part to target the .container inside the .collapsible-container
         var content = this.parentNode.querySelector(".container");
+
         if (content.style.visibility === "visible" || content.style.visibility === "") {
             content.style.visibility = "hidden";
-            content.style.height = "0";  
+            content.style.height = "0";  // this will collapse the space taken by the hidden content
         } else {
             content.style.visibility = "visible";
-            content.style.height = "auto"; 
+            content.style.height = "auto";  // revert to its original height
         }
     });
 }
 
+// for weather
 (function(d, s, id) {
     if (d.getElementById(id)) {
         if (window.__TOMORROW__) {
@@ -464,55 +513,131 @@ for (let i = 0; i < coll.length; i++) {
     fjs.parentNode.insertBefore(js, fjs);
 })(document, 'script', 'tomorrow-sdk');
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const options = { year: 'numeric', month: 'long', day: 'numeric' };
-  const yesterday = new Date();
-  yesterday.setDate(yesterday.getDate() - 1);
-  const yesterdayStr = yesterday.toISOString().split('T')[0];
-  const formattedDate = yesterday.toLocaleDateString('en-US', options);
+// for tiles at top of page
+document.addEventListener("DOMContentLoaded", function() {
+    // Fetch the HTML content (assuming the HTML file is accessible via a URL)
+    fetch('longterm_plots/datatable_daily_fluxtower1.html')
+        .then(response => response.text())
+        .then(htmlContent => {
+            // Parse the HTML content
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(htmlContent, 'text/html');
+            
+            // Find the script tag that contains the JSON data
+            const scriptTag = doc.querySelector('script[type="application/json"][data-for]');
+            
+            if (scriptTag) {
+                // Load the JSON data
+                const dataJson = JSON.parse(scriptTag.textContent);
+                
+                // Extract the data from the JSON
+                const data = dataJson.x.data;
+                
+                // Get the dates and convert them to Date objects
+                const dates = data[0].map(dateStr => new Date(dateStr));
+                
+                // Find the index for yesterday's date
+                const yesterday = new Date();
+                yesterday.setDate(yesterday.getDate() - 1);
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                const yesterdayStr = yesterday.toISOString().split('T')[0];
+                const formattedDate = yesterday.toLocaleDateString('en-US', options);
+                
+                const index = data[0].indexOf(yesterdayStr);
+                if (index !== -1) {
+                    // Extract data for yesterday
+                    const minTemp = data[1][index];
+                    const maxTemp = data[2][index];
+                    const totalPrecipitation = data[3][index];
+                    const avgSoilMoisture = data[4][index];
+                    
+                    // Update the HTML elements with the data
+                    document.getElementById('min-temp').textContent = minTemp;
+                    document.getElementById('max-temp').textContent = maxTemp;
+                    document.getElementById('total-precipitation').textContent = totalPrecipitation;
+                    document.getElementById('avg-soil-moisture').textContent = avgSoilMoisture;
+                    document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate;
+                } else {
+                    document.getElementById('min-temp').textContent = 'No data';
+                    document.getElementById('max-temp').textContent = 'No data';
+                    document.getElementById('total-precipitation').textContent = 'No data';
+                    document.getElementById('avg-soil-moisture').textContent = 'No data';
+                    document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate + " (No data)";
+                }
+            } else {
+                console.error('Script tag with JSON data not found.');
+                document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate + " (No data)";
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching the HTML:', error);
+            document.getElementById('yesterday-date').textContent = "Yesterday: " + formattedDate + " (Error loading data)";
+        });
 
-  fetch('longterm_plots/datatable_daily_fluxtower1.html')
-    .then(r => r.text())
-    .then(htmlContent => {
-      const doc = new DOMParser().parseFromString(htmlContent, 'text/html');
-      const scriptTag = doc.querySelector('script[type="application/json"][data-for]');
-      if (!scriptTag) {
-        document.getElementById('min-temp').textContent = 'No data';
-        document.getElementById('max-temp').textContent = 'No data';
-        document.getElementById('total-precipitation').textContent = 'No data';
-        document.getElementById('avg-soil-moisture').textContent = 'No data';
-        document.getElementById('yesterday-date').textContent =
-          "Yesterday: " + formattedDate + " (No data)";
-        return;
-      } 
-      const dataJson = JSON.parse(scriptTag.textContent);
-      const data = dataJson?.x?.data;
-      if (!Array.isArray(data) || data.length < 5) {
-        document.getElementById('yesterday-date').textContent =
-          "Yesterday: " + formattedDate + " (No data)";
-        return;
-      }
-      const idx = data[0].indexOf(yesterdayStr);
-      if (idx === -1) {
-        document.getElementById('min-temp').textContent = 'No data';
-        document.getElementById('max-temp').textContent = 'No data';
-        document.getElementById('total-precipitation').textContent = 'No data';
-        document.getElementById('avg-soil-moisture').textContent = 'No data';
-        document.getElementById('yesterday-date').textContent =
-          "Yesterday: " + formattedDate + " (No data)";
-        return;
-      }
-      document.getElementById('min-temp').textContent = data[1][idx];
-      document.getElementById('max-temp').textContent = data[2][idx];
-      document.getElementById('total-precipitation').textContent = data[3][idx];
-      document.getElementById('avg-soil-moisture').textContent = data[4][idx];
-      document.getElementById('yesterday-date').textContent =
-        "Yesterday: " + formattedDate;
-    })
-    .catch(() => {
-      document.getElementById('yesterday-date').textContent =
-        "Yesterday: " + formattedDate + " (Error loading data)";
-    });
+  // Fetch the ISCO counts data
+ fetch('longterm_plots/longterm_plotly_fluxtower1.html')
+      .then(response => response.text())
+      .then(htmlContent => {
+        // Parse the HTML content
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(htmlContent, 'text/html');
+        
+        // Find the script tag that contains the JSON data
+        const scriptTags = doc.querySelectorAll('script[type="application/json"][data-for]');
+        
+        let foundISCOData = false;
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        
+        scriptTags.forEach(scriptTag => {
+          const dataJson = JSON.parse(scriptTag.textContent);
+          
+          // Check if the script contains ISCO data
+          if (dataJson.x && dataJson.x.data) {
+            dataJson.x.data.forEach(item => {
+              if (item.name === "ISCO (counts)") {
+                foundISCOData = true;
+                
+                // Extract the dates and ISCO counts from the matched data
+                const dates = item.x.map(dateStr => new Date(dateStr));
+                const counts = item.y;
+                
+                console.log('ISCO Dates:', dates);
+                console.log('ISCO Counts:', counts);
+                
+                // Find the most recent date with ISCO (counts) not equal to zero
+                let recentDate = null;
+                let recentCount = 0;
+                
+                for (let i = counts.length - 1; i >= 0; i--) {
+                  if (counts[i] !== 0) {
+                    recentDate = dates[i];
+                    recentCount = counts[i];
+                    break;
+                  }
+                }
+                
+                if (recentDate) {
+                  const formattedRecentDate = recentDate.toLocaleDateString('en-US', options);
+                  document.getElementById('isco-tile').textContent = `💧Most recent ISCO trigger: ${formattedRecentDate}`;
+                } else {
+                  document.getElementById('isco-tile').textContent = "💧Recent ISCO trigger: No recent data";
+                }
+              }
+            });
+          }
+        });
+        
+        if (!foundISCOData) {
+          console.error('ISCO data not found in any script tags.');
+          document.getElementById('isco-tile').textContent = "💧Recent ISCO trigger: No recent data";
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching the HTML:', error);
+        document.getElementById('isco-tile').textContent = "💧Recent ISCO trigger: Error loading data";
+      });
 });
+
+
 </script>
+
