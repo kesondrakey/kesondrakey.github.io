@@ -6,96 +6,69 @@
 
 
 <style>
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr; /* Single column for mobile view */
-    grid-gap: 1em;
+  /* Base (mobile-first) */
+  .grid-container{
+    display:grid;
+    grid-template-columns:1fr;   /* single column on mobile */
+    gap:1em;
   }
 
-  .grid-item { position: relative; }
-
-
-  
-
-
-
-  .grid-item a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-decoration: none;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0,0,0,0.7); /* Add a semi-transparent overlay */
-    border: none; /* Ensure no borders are added to the link */
+  .grid-item{
+    position:relative;
+    aspect-ratio:1 / 1;         /* gives height on mobile & desktop */
+    overflow:hidden;
   }
 
-  .grid-item img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: none; /* Ensure no borders are added to the image */
-    outline: none; /* Ensure no outlines are added to the image */
+  .grid-item a{
+    position:absolute;
+    inset:0;
+    display:grid;
+    place-items:center;          /* center overlay text */
+    text-decoration:none;
+    color:#fff;
+    background:rgba(0,0,0,0.35); /* subtle veil over the image */
+    transition:background .25s ease;
+    border:0;
+  }
+  .grid-item a:hover{ background:rgba(0,0,0,0.6); }
+
+  /* scope to just the grid images */
+  .grid-item img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    border:0;
+    outline:0;
+    z-index:0;
   }
 
-  .grid-item a .text-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1; /* Make sure the text is above the image */
-    color: white; /* Set the text color */
-    font-size: 2em; /* Adjust the font size */
-    font-weight: bold; /* Make the text bold */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow for better visibility */
-    opacity: 0.7; /* Make the text semi-transparent by default */
-    transition: opacity 0.3s ease; /* Smooth transition when the opacity changes */
+  .grid-item .text-overlay{
+    pointer-events:none;         /* clicks go to the link */
+    z-index:1;
+    font-weight:700;
+    text-shadow:2px 2px 4px rgba(0,0,0,.5);
+    line-height:1.2;
+    padding:0 .5rem;
+    word-break:break-word;
+    font-size:clamp(1rem, 6vw, 1.75rem);  /* responsive on small screens */
   }
 
-  .grid-item a:hover .text-overlay {
-    opacity: 1; /* Make the text fully opaque when the link is hovered */
-  }
-
-  @media (min-width: 768px) {
-    .grid-container {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Multi-column for desktop view */
+  @media (min-width:768px){
+    .grid-container{
+      grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
     }
-    
-
-
-    /* 1) Give tiles height on mobile */
-    .grid-item {
-      position: relative;
-      aspect-ratio: 1 / 1;   /* <- add */
-      overflow: hidden;      /* <- add (prevents spillover) */
+    .grid-item.full-width{
+      grid-column:1 / -1;        /* span full row */
+      aspect-ratio:5 / 1;        /* optional wide banner */
     }
-
-    .grid-item.full-width {
-      grid-column: span 4;
-      padding-top: 20%; /* If you want this item to be thinner, adjust the padding-top value */
-    }
-
-    .grid-item a .text-overlay {
-      font-size: 3rem;
-      font-weight: 900;
-      font-size: clamp(1rem, 4.5vw, 2em);  /* scales on small screens */
-      line-height: 1.2;
-      padding: 0 .5rem;                    /* prevent edge crowding */
-      word-break: break-word;
+    .grid-item .text-overlay{
+      font-size:clamp(1.25rem, 2.5vw, 3rem);  /* scale up on desktop */
+      font-weight:900;
     }
   }
-
 </style>
 
 
