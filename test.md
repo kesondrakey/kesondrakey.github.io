@@ -291,8 +291,7 @@ body {
 
 <!-- Your existing HTML content starts here -->
 <div class="summary-box">
-    <!-- Updated background color -->
-    <strong>US-VT1</strong> is an eddy covariance tower that measures carbon, water, and energy fluxes on a 🚜working farm (no-till corn–soybean rotation 🌽🫛) in the Midwestern United States
+The first Vermillion Tributary Paired Cropland site (<strong>US-VT1</strong>) is an eddy covariance tower that measures carbon, water, and energy fluxes on a working farm (no-till corn–soybean rotation 🌽🫛) in the Midwestern United States
 </div>
 
 <div class="summary-box">
