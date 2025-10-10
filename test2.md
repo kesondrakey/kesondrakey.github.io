@@ -291,7 +291,7 @@ body {
 
 <!-- Your existing HTML content starts here -->
 <!-- Forecast -->
-<h3>Forecast from a nearby weather station</h3>
+<h2>Forecast from a nearby weather station</h2>
 <div class="tomorrow"
      data-location-id="125459"
      data-language="EN"
@@ -311,17 +311,15 @@ body {
 
 <i></i>
 
-
+<h3><strong>Near real-time data</h3></strong>
 <div class="summary-box">
 The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) is an eddy covariance tower that measures carbon, water, and energy fluxes on a working farm (no-till corn–soybean rotation 🌽🫛) in the Midwestern United States that uses cover crops! 🍃
 </div>
 
 <i></i>
 
-<h3><strong>US-VT1: </strong>Near real-time data</h3>
-<i></i>
 <!-- Yesterday's Date Header -->
-<h2 class="summary-heading" id="yesterday-date">Yesterday</h2>
+<h4 class="summary-heading" id="yesterday-date">Yesterday</h4>
 
 <!-- Tiles for yesterday's information -->
 <div class="tile-container">
