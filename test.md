@@ -394,8 +394,10 @@ The first Vermillion Tributary Paired Cropland site (<strong>US-VT1</strong>) is
 </div>
 
 
-<div class="summary-box">
-    💻Data for this site are available on <strong><a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT1" target="_blank">AmeriFlux</a></strong>
+
+
+<div class="full-width-tile">
+💻US-VT1 Data are available on <strong><a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT1" target="_blank">AmeriFlux</a></strong>
 </div>
 
 
