@@ -411,8 +411,6 @@ The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) i
 💻US-VT2 Data are available on <strong><a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT2" target="_blank">AmeriFlux</a></strong>
 </div>
 
-<h2><strong>Calendar</strong></h2>
-
 
 
 <iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar1.html"></iframe>
