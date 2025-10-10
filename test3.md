@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cover-Cropped Vermillion Tributary Paired Cropland
-description: US-VT2
+title: Flux Tower 3
+description: 
 nav-menu: true 
 ---
 
@@ -279,8 +279,7 @@ body {
   text-align:center;
   flex-wrap:nowrap;         /* prevent wrapping of children */
 }
-
-
+    
 </style>
 
 
@@ -296,7 +295,7 @@ body {
 
 <!-- Your existing HTML content starts here -->
 <!-- Forecast -->
-<h3>Forecast from a nearby weather station</h3>
+<h4>Forecast from a nearby weather station</h4>
 <div class="tomorrow"
      data-location-id="125459"
      data-language="EN"
@@ -318,12 +317,12 @@ body {
 
 <h2><strong>Near real-time data from the tower</strong></h2>
 
-    
 <div class="summary-box">
-The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) is an eddy covariance tower that measures carbon, water, and energy fluxes on a working farm (no-till corn–soybean rotation 🌽🫛) in the Midwestern United States that uses cover crops! 🍃
+The second Shatto Ditch Paired Cropland site (<strong>Tower 4</strong>) is an eddy covariance tower that measures carbon, water, and energy fluxes on a working farm (no-till corn–soybean rotation 🌽🫛) in the Midwestern United States
 </div>
 
 <i></i>
+
 
 <!-- Yesterday's Date Header -->
 <h3 class="summary-heading" id="yesterday-date">Yesterday</h3>
@@ -353,21 +352,14 @@ The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) i
 </div>
 <!-- End tiles for yesterday's information -->
 
-<!-- ISCO Trigger Tile -->
-<div class="full-width-tile" id="isco-tile">
-    💧Recent ISCO trigger: Loading...
-</div>
 <i></i>
 <i></i>
-
 
 
 
 
 <!-- Table Section -->
 <h3>Select your time period of interest to see the data in a table format:</h3>
-<i></i>
-
 <!-- Icons/buttons -->
 <div class="icon-container">
     <button class="icon icon-daily" onclick="showTable('daily')">Daily</button>
@@ -378,16 +370,16 @@ The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) i
 <!-- Tables -->
 <div id="daily-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <b>Daily Data Table:</b>
-    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower2.html"></iframe>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_daily_fluxtower3.html"></iframe>
     <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m³/m³))</i>
     <div style="background-color: #343A54; padding: 10px; color: white;">
-      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages)
+      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
     </div>
 </div>
 
 <div id="weekly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <b>Weekly Data Table:</b>
-    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower2.html"></iframe>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_weekly_fluxtower3.html"></iframe>
     <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m³/m³))</i>
     <div style="background-color: #343A54; padding: 10px; color: white;">
       <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
@@ -396,10 +388,10 @@ The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) i
 </div>
 <div id="monthly-table" class="table-container" style="display: none;"> <!-- Set initial state to 'none' -->
     <b>Monthly Data Table:</b>
-    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower2.html"></iframe>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/datatable_monthly_fluxtower3.html"></iframe>
     <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m³/m³))</i>
     <div style="background-color: #343A54; padding: 10px; color: white;">
-      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages)
+      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
     </div>
     <div style="margin-bottom:20px;"></div>
 </div>
@@ -407,19 +399,12 @@ The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) i
 
 
 
-<div class="full-width-tile">
-💻US-VT2 Data are available on <strong><a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT2" target="_blank">AmeriFlux</a></strong>
-</div>
-
-
-
-<iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar1.html"></iframe>
+<iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar3.html"></iframe>
 <div style="background-color: #343A54; padding: 5px; color: white;">
-    <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+    <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages)
 </div>
-<div style="margin-bottom:5px;"></div>
 
-
+<div style="margin-bottom:10px;"></div>
 
 
 
@@ -431,14 +416,16 @@ The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) i
 <div class="plot-container">
   <div class="html-object">
     <!-- Here's where you add the iframe to embed the Plotly graph -->
-    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower2.html"></iframe>
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower3.html"></iframe>
     <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m³/m³))</i>
     <div style="background-color: #343A54; padding: 10px; color: white;">
-      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages)
     </div>
     <div style="margin-bottom:20px;"></div>
   </div>
 </div>
+
+
 
 <!-- Technical Data Section -->
 <!-- More Technical Data -->
@@ -447,12 +434,12 @@ The second Vermillion Tributary Paired Cropland site (<strong>US-VT2</strong>) i
     <div class="container">
         <h5>Flux towers take a lot of different kinds of data. Just click your variable of interest to see the pattern across the entire period of data collection!</h5>
         <div class="html-object">
-            <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower2.html"></iframe>
+            <iframe width="100%" height="800" frameborder="0" scrolling="no" src="longterm_plots/longterm_plotly_fluxtower3.html"></iframe>
             <div style="background-color: #343A54; padding: 10px; color: white;">
                 <strong>Please note:</strong> In order to provide data near real-time, the data provided here is in a raw format and has not undergone any quality control.
             </div>
             <!-- View in full View Button -->
-            <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower2.html" class="full-view-button">Click for full view</a>
+            <a href="https://kesondrakey.github.io/longterm_plots/longterm_plotly_fluxtower3.html" class="full-view-button">Click for full view</a>
         </div>
     </div>
 </div>
@@ -519,7 +506,7 @@ for (let i = 0; i < coll.length; i++) {
 // for tiles at top of page
 document.addEventListener("DOMContentLoaded", function() {
     // Fetch the HTML content (assuming the HTML file is accessible via a URL)
-    fetch('longterm_plots/datatable_daily_fluxtower2.html')
+    fetch('longterm_plots/datatable_daily_fluxtower3.html')
         .then(response => response.text())
         .then(htmlContent => {
             // Parse the HTML content
@@ -578,7 +565,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
   // Fetch the ISCO counts data
- fetch('longterm_plots/longterm_plotly_fluxtower2.html')
+ fetch('longterm_plots/longterm_plotly_fluxtower3.html')
       .then(response => response.text())
       .then(htmlContent => {
         // Parse the HTML content
