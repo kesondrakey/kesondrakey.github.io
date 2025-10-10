@@ -45,23 +45,24 @@
   }
 
   /* Centered overlay text */
-  .grid-item a .text-overlay{
-    position:absolute;
-    top:0; left:0; right:0; bottom:0;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    z-index:1;                    /* above the image */
-    color:#fff;
-    font-weight:bold;
-    text-shadow:2px 2px 4px rgba(0,0,0,.5);
-    opacity:0.7;                  /* default */
-    transition:opacity .3s ease;
-    padding:0 .5rem;
-    line-height:1.2;
-    word-break:break-word;
-    font-size:clamp(1rem, 6vw, 1.75rem); /* responsive on small screens */
-  }
+.grid-item a .text-overlay{
+  position:absolute;
+  inset:0;
+  display:grid;                 /* grid centering */
+  place-items:center;           /* centers both axes */
+  z-index:1;
+  color:#fff;
+  text-align:center;            /* <-- center the text itself */
+  font-weight:bold;
+  text-shadow:2px 2px 4px rgba(0,0,0,.5);
+  opacity:0.7;
+  transition:opacity .3s ease;
+  padding:0 .5rem;
+  line-height:1.2;
+  word-break:break-word;
+  font-size:clamp(1rem, 6vw, 1.75rem);
+}
+
 
   .grid-item a:hover .text-overlay{
     opacity:1;                    /* your original hover behavior */
