@@ -263,19 +263,24 @@ body {
 }
 
 /* Full-width ISCO tile */
-.full-width-tile {
-    background-color: #343A54;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 20px;
+    .full-width-tile{
+  background-color:#343A54;
+  border-radius:8px;
+  padding:20px;
+  box-shadow:0 0 10px rgba(0,0,0,.1);
+  color:#fff;
+  display:flex;
+  flex-direction:row;       /* was column */
+  align-items:center;
+  justify-content:center;   /* center horizontally */
+  gap:8px;                  /* optional space between items */
+  width:100%;
+  margin-top:20px;
+  text-align:center;
+  flex-wrap:nowrap;         /* prevent wrapping of children */
 }
+
+
 </style>
 
 
