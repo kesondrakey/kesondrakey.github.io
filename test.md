@@ -314,9 +314,6 @@ body {
 The first Vermillion Tributary Paired Cropland site (<strong>US-VT1</strong>) is an eddy covariance tower that measures carbon, water, and energy fluxes on a working farm (no-till corn–soybean rotation 🌽🫛) in the Midwestern United States
 </div>
 
-<div class="summary-box">
-    💻Data for this site are available on <strong><a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT1" target="_blank">AmeriFlux</a></strong>
-</div>
 
 <i></i>
 
@@ -397,9 +394,14 @@ The first Vermillion Tributary Paired Cropland site (<strong>US-VT1</strong>) is
 </div>
 
 
+<div class="summary-box">
+    💻Data for this site are available on <strong><a href="https://ameriflux.lbl.gov/sites/siteinfo/US-VT1" target="_blank">AmeriFlux</a></strong>
+</div>
+
+
 <iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar1.html"></iframe>
 <div style="background-color: #343A54; padding: 5px; color: white;">
-    <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+    <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages)
 </div>
 
 <div style="margin-bottom:10px;"></div>
@@ -417,7 +419,7 @@ The first Vermillion Tributary Paired Cropland site (<strong>US-VT1</strong>) is
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower1.html"></iframe>
     <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m³/m³))</i>
     <div style="background-color: #343A54; padding: 10px; color: white;">
-      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages)
     </div>
     <div style="margin-bottom:20px;"></div>
   </div>
