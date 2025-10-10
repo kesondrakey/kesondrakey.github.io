@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vermillion Tributary Paired Cropland
+title: Cover-Cropped Vermillion Tributary Paired Cropland
 description: US-VT2
 nav-menu: true 
 ---
