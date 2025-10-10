@@ -291,7 +291,7 @@ body {
 
 <!-- Your existing HTML content starts here -->
 <!-- Forecast -->
-<h3>Forecast from a nearby weather station</h3>
+<h4>Forecast from a nearby weather station</h4>
 <div class="tomorrow"
      data-location-id="125459"
      data-language="EN"
@@ -309,16 +309,12 @@ body {
     </a>
 </div>
 
-
+<h3><strong>Near real-time data from the tower</h3></strong>
 <div class="summary-box">
 The first Vermillion Tributary Paired Cropland site (<strong>US-VT1</strong>) is an eddy covariance tower that measures carbon, water, and energy fluxes on a working farm (no-till corn–soybean rotation 🌽🫛) in the Midwestern United States
 </div>
 
-
 <i></i>
-<h3><strong>US-VT2: </strong>Near real-time data</h3>
-<i></i>
-
 
 
 <!-- Yesterday's Date Header -->
