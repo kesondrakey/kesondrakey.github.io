@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Flux Tower 4
-description: Flux Tower 4
+description: 
 nav-menu: true 
 ---
 
@@ -263,25 +263,24 @@ body {
 }
 
 /* Full-width ISCO tile */
-.full-width-tile {
-    background-color: #343A54;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 20px;
+    .full-width-tile{
+  background-color:#343A54;
+  border-radius:8px;
+  padding:20px;
+  box-shadow:0 0 10px rgba(0,0,0,.1);
+  color:#fff;
+  display:flex;
+  flex-direction:row;       /* was column */
+  align-items:center;
+  justify-content:center;   /* center horizontally */
+  gap:8px;                  /* optional space between items */
+  width:100%;
+  margin-top:20px;
+  text-align:center;
+  flex-wrap:nowrap;         /* prevent wrapping of children */
 }
+    
 </style>
-
-
-<div style="background-color: #343A54; padding: 10px; color: white;"> <!-- Updated background color -->
-    <strong>Note:</strong> This tower is located on a farm that uses cover crops! 🍃
-</div>
 
 
 <!-- Add the banner grid-container here -->
@@ -295,41 +294,38 @@ body {
 </div>
 
 <!-- Your existing HTML content starts here -->
-<div class="summary-box">
-    <!-- Updated background color -->
-    <strong>Flux Tower 4:</strong> This tower is situated on an Indiana farm focused on the cultivation of corn and soy that uses cover crops🍃
+<!-- Forecast -->
+<h4>Forecast from a nearby weather station</h4>
+<div class="tomorrow"
+     data-location-id="125459"
+     data-language="EN"
+     data-unit-system="IMPERIAL"
+     data-skin="dark"
+     data-widget-type="upcoming"
+     style="padding-bottom:22px;position:relative;">
+    <a href="https://www.tomorrow.io/weather-api/"
+       rel="nofollow noopener noreferrer"
+       target="_blank"
+       style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
+        <img alt="Powered by the Tomorrow.io Weather API"
+             src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
+             width="250" height="18"/>
+    </a>
 </div>
-
 
 <i></i>
 
-<h3>Forecast</h3>
- <div class="tomorrow"
-         data-location-id="128520"
-         data-language="EN"
-         data-unit-system="IMPERIAL"
-         data-skin="dark"
-         data-widget-type="upcoming"
-         style="padding-bottom:22px;position:relative;">
-        <a href="https://www.tomorrow.io/weather-api/"
-           rel="nofollow noopener noreferrer"
-           target="_blank"
-           style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
-            <img alt="Powered by the Tomorrow.io Weather API"
-                 src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
-                 width="250" height="18"/>
-        </a>
-    </div>
+<h2><strong>Near real-time data from the tower</strong></h2>
 
 <div class="summary-box">
-    <strong>Note:</strong> This forecast is sourced from a general northern Indiana weather station 
+The second Shatto Ditch Paired Cropland site (<strong>Tower 4</strong>) is an eddy covariance tower that measures carbon, water, and energy fluxes on a working farm (no-till corn–soybean rotation 🌽🫛) that uses cover crops! 🍃 in the Midwestern United States
 </div>
-<i></i>
 
+<i></i>
 
 
 <!-- Yesterday's Date Header -->
-<h2 class="summary-heading" id="yesterday-date">Yesterday</h2>
+<h3 class="summary-heading" id="yesterday-date">Yesterday</h3>
 
 <!-- Tiles for yesterday's information -->
 <div class="tile-container">
@@ -361,13 +357,10 @@ body {
     💧Recent ISCO trigger: Loading...
 </div>
 <i></i>
+<i></i>
 
 
-<iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar4.html"></iframe>
-<div style="background-color: #343A54; padding: 10px; color: white;">
-    <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
-</div>
-<div style="margin-bottom:20px;"></div>
+
 
 <!-- Table Section -->
 <h3>Select your time period of interest to see the data in a table format:</h3>
@@ -407,6 +400,20 @@ body {
     <div style="margin-bottom:20px;"></div>
 </div>
 
+
+
+
+<iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar4.html"></iframe>
+<div style="background-color: #343A54; padding: 5px; color: white;">
+    <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages)
+</div>
+
+<div style="margin-bottom:10px;"></div>
+
+
+
+
+<i></i>
 <!-- Daily Plot - Simple Variables -->
 <h2>Long Term Data</h2>
 <h4>This plot is showing the daily data for rainfall, minimum and maximum temperature, and average soil moisture. Each variable is interactive - <i>just click the variable name and see!</i></h4>
@@ -416,11 +423,13 @@ body {
     <iframe width="100%" height="400" frameborder="0" scrolling="no" src="longterm_plots/longterm_daily_plotly_fluxtower4.html"></iframe>
     <i>Units: Precipitation (sum, inches); Temperature (average, °F); Soil Water Content (soil_water_Avg.1.; averaged volumetric water fraction (m³/m³))</i>
     <div style="background-color: #343A54; padding: 10px; color: white;">
-      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+      <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages)
     </div>
     <div style="margin-bottom:20px;"></div>
   </div>
 </div>
+
+
 
 <!-- Technical Data Section -->
 <!-- More Technical Data -->
@@ -625,8 +634,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 </script>
-
-
-
-
 
