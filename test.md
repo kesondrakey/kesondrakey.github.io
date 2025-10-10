@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vermillion Tributary Paired Cropland (US-VT1) - Corn/Soy; No Cover Crops
+title: Vermillion Tributary Paired Cropland
 description: US-VT1
 nav-menu: true 
 ---
@@ -300,27 +300,6 @@ The first Vermillion Tributary Paired Cropland site (<strong>US-VT1</strong>) is
 
 <i></i>
 
-<!-- Forecast -->
-<h3>Forecast from a nearby weather station</h3>
-<div class="tomorrow"
-     data-location-id="125459"
-     data-language="EN"
-     data-unit-system="IMPERIAL"
-     data-skin="dark"
-     data-widget-type="upcoming"
-     style="padding-bottom:22px;position:relative;">
-    <a href="https://www.tomorrow.io/weather-api/"
-       rel="nofollow noopener noreferrer"
-       target="_blank"
-       style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
-        <img alt="Powered by the Tomorrow.io Weather API"
-             src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
-             width="250" height="18"/>
-    </a>
-</div>
-
-<i></i>
-
 
 
 <!-- Yesterday's Date Header -->
@@ -358,12 +337,6 @@ The first Vermillion Tributary Paired Cropland site (<strong>US-VT1</strong>) is
 <i></i>
 
 
-<iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar1.html"></iframe>
-<div style="background-color: #343A54; padding: 5px; color: white;">
-    <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
-</div>
-
-<div style="margin-bottom:20px;"></div>
 
 <!-- Table Section -->
 <h3>Select your time period of interest to see the data in a table format:</h3>
@@ -402,6 +375,35 @@ The first Vermillion Tributary Paired Cropland site (<strong>US-VT1</strong>) is
     </div>
     <div style="margin-bottom:20px;"></div>
 </div>
+
+
+<iframe width="100%" height="670" frameborder="0" scrolling="no" src="files/Calendar1.html"></iframe>
+<div style="background-color: #343A54; padding: 5px; color: white;">
+    <strong>Please note:</strong> In order to provide data with minimal latency (near real-time) for stakeholder use, the data provided here is in a raw format. This means it has not undergone any quality control and only minimal statistical processing (i.e., sums and averages).
+</div>
+
+<div style="margin-bottom:10px;"></div>
+
+<!-- Forecast -->
+<h3>Forecast from a nearby weather station</h3>
+<div class="tomorrow"
+     data-location-id="125459"
+     data-language="EN"
+     data-unit-system="IMPERIAL"
+     data-skin="dark"
+     data-widget-type="upcoming"
+     style="padding-bottom:22px;position:relative;">
+    <a href="https://www.tomorrow.io/weather-api/"
+       rel="nofollow noopener noreferrer"
+       target="_blank"
+       style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
+        <img alt="Powered by the Tomorrow.io Weather API"
+             src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
+             width="250" height="18"/>
+    </a>
+</div>
+
+
 
 <!-- Daily Plot - Simple Variables -->
 <h2>Long Term Data</h2>
