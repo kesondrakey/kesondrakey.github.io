@@ -1,5 +1,6 @@
 DATE,Min Temp,Max Temp,Total Precipitation,Water Sampler,Avg Soil Moisture,Description,Tower
-2025-10-20,43,50,0.02,0,-0,Rain,fluxtower1
+2025-10-21,54,59,0,0,-0,Sunny,fluxtower1
+2025-10-20,43,67,0.03,0,-0,Rain,fluxtower1
 2025-10-19,49,63,0.28,0,-0,Rain,fluxtower1
 2025-10-18,60,81,0,0,-0.01,Sunny,fluxtower1
 2025-10-17,51,74,0,0,-0.01,Sunny,fluxtower1
