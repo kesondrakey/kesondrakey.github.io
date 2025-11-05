@@ -1,5 +1,5 @@
 Month,year,start_DATE,end_DATE,Min Temp,Max Temp,Total Precipitation,Water Sampler,Avg Soil Moisture,Description,Timeframe,Tower
-Nov,2025,2025-11-01,2025-11-04,32,58,0,0,-0,Sunny,"Saturday, November 1  to  Tuesday, November 4",fluxtower4
+Nov,2025,2025-11-01,2025-11-05,32,62,0,0,-0,Sunny,"Saturday, November 1  to  Wednesday, November 5",fluxtower4
 Oct,2025,2025-10-01,2025-10-31,31,88,0.72,34,-0.01,Rain,"Wednesday, October 1  to  Friday, October 31",fluxtower4
 Sep,2025,2025-09-02,2025-09-30,42,89,0.64,42,0.12,Rain,"Tuesday, September 2  to  Tuesday, September 30",fluxtower4
 Aug,2025,2025-08-01,2025-08-04,53,76,0,0,NA,Sunny,"Friday, August 1  to  Monday, August 4",fluxtower4
