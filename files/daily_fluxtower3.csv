@@ -1,5 +1,6 @@
 DATE,Min Temp,Max Temp,Total Precipitation,Water Sampler,Avg Soil Moisture,Description,Tower
-2025-12-01,22,26,0,NA,-0,Sunny,fluxtower3
+2025-12-02,24,24,0,NA,0,Sunny,fluxtower3
+2025-12-01,14,27,0,NA,-0,Sunny,fluxtower3
 2025-11-30,24,35,0.02,NA,-0,Rain,fluxtower3
 2025-11-29,20,28,0,NA,-0.01,Sunny,fluxtower3
 2025-11-28,23,31,0,NA,-0.01,Sunny,fluxtower3
@@ -850,4 +851,4 @@ DATE,Min Temp,Max Temp,Total Precipitation,Water Sampler,Avg Soil Moisture,Descr
 2023-06-24,61,86,0,NA,-0.01,Sunny,fluxtower3
 2023-06-23,63,79,0,NA,-0.01,Sunny,fluxtower3
 2023-06-22,73,79,0,NA,-0.01,Sunny,fluxtower3
-NA,22,70,0,NA,0.18,Sunny,fluxtower3
+NA,24,70,0,NA,0.18,Sunny,fluxtower3
