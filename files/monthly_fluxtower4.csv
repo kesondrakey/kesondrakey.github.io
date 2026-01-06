@@ -1,5 +1,5 @@
 Month,year,start_DATE,end_DATE,Min Temp,Max Temp,Total Precipitation,Water Sampler,Avg Soil Moisture,Description,Timeframe,Tower
-Jan,2026,2026-01-01,2026-01-05,15,33,0,0,0.16,Sunny,"Thursday, January 1  to  Monday, January 5",fluxtower4
+Jan,2026,2026-01-01,2026-01-06,15,41,0,0,0.16,Sunny,"Thursday, January 1  to  Tuesday, January 6",fluxtower4
 Dec,2025,2025-12-01,2025-12-31,0,64,0.54,0,0.05,Rain,"Monday, December 1  to  Wednesday, December 31",fluxtower4
 Nov,2025,2025-11-01,2025-11-30,20,65,0.54,0,-0,Rain,"Saturday, November 1  to  Sunday, November 30",fluxtower4
 Oct,2025,2025-10-01,2025-10-31,31,88,0.72,34,-0.01,Rain,"Wednesday, October 1  to  Friday, October 31",fluxtower4
@@ -31,4 +31,4 @@ Sep,2023,2023-09-01,2023-09-30,46,87,0.42,NA,0.07,Rain,"Friday, September 1  to 
 Aug,2023,2023-08-01,2023-08-31,49,90,1.18,NA,0.11,Rain,"Tuesday, August 1  to  Thursday, August 31",fluxtower4
 Jul,2023,2023-07-01,2023-07-31,53,89,1.86,NA,0.12,Rain,"Saturday, July 1  to  Monday, July 31",fluxtower4
 Jun,2023,2023-06-22,2023-06-30,52,85,0.72,NA,0.13,Rain,"Thursday, June 22  to  Friday, June 30",fluxtower4
-NA,NA,NA,NA,30,70,0,0,0.15,Sunny,"NA, NA NA  to  NA, NA NA",fluxtower4
+NA,NA,NA,NA,31,70,0,0,0.16,Sunny,"NA, NA NA  to  NA, NA NA",fluxtower4
