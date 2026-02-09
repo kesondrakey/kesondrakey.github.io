@@ -1,5 +1,5 @@
 Month,year,start_DATE,end_DATE,Min Temp,Max Temp,Total Precipitation,Water Sampler,Avg Soil Moisture,Description,Timeframe,Tower
-Feb,2026,2026-02-01,2026-02-08,2,34,0.02,0,0.06,Rain,"Sunday, February 1  to  Sunday, February 8",fluxtower4
+Feb,2026,2026-02-01,2026-02-09,2,34,0.03,0,0.06,Rain,"Sunday, February 1  to  Monday, February 9",fluxtower4
 Jan,2026,2026-01-01,2026-01-31,-7,61,0.14,0,0.14,Rain,"Thursday, January 1  to  Saturday, January 31",fluxtower4
 Dec,2025,2025-12-01,2025-12-31,0,64,0.54,0,0.05,Rain,"Monday, December 1  to  Wednesday, December 31",fluxtower4
 Nov,2025,2025-11-01,2025-11-30,20,65,0.54,0,-0,Rain,"Saturday, November 1  to  Sunday, November 30",fluxtower4
