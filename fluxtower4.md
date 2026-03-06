@@ -318,7 +318,7 @@ body {
 <h2><strong>Near real-time data from the tower</strong></h2>
 
 <div class="summary-box">
-The second Shatto Ditch Paired Cropland site (<strong>Tower 4</strong>) is an eddy covariance tower that measures carbon, water, and energy fluxes on a working farm (no-till corn–soybean rotation 🌽🫛) that uses cover crops! 🍃 in the Midwestern United States
+The second Shatto Ditch Paired Cropland site (<strong>US-SD2</strong>) is an eddy covariance tower that measures carbon, water, and energy fluxes on a working farm (no-till corn–soybean rotation 🌽🫛) that uses cover crops! 🍃 in the Midwestern United States
 </div>
 
 <i></i>
