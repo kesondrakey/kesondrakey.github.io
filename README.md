@@ -103,13 +103,13 @@
     <div class="grid-item">
       <a href="https://kesondrakey.github.io/fluxtower3">
         <img src="images/image3.jpeg" alt="Image 3">
-        <div class="text-overlay">Flux Tower 3</div>
+        <div class="text-overlay">Flux Tower 3 (US-SD1)</div>
       </a>
     </div>
     <div class="grid-item">
       <a href="https://kesondrakey.github.io/fluxtower4">
         <img src="images/image4.jpeg" alt="Image 4">
-        <div class="text-overlay">Flux Tower 4</div>
+        <div class="text-overlay">Flux Tower 4 (US-SD2)</div>
       </a>
     </div>
 
