@@ -318,7 +318,7 @@ body {
 <h2><strong>Near real-time data from the tower</strong></h2>
 
 <div class="summary-box">
-The first Shatto Ditch Paired Cropland site (<strong>Tower 3</strong>) is an eddy covariance tower that measures carbon, water, and energy fluxes on a working farm (no-till corn–soybean rotation 🌽🫛) in the Midwestern United States
+The first Shatto Ditch Paired Cropland site (<strong>US-SD1</strong>) is an eddy covariance tower that measures carbon, water, and energy fluxes on a working farm (no-till corn–soybean rotation 🌽🫛) in the Midwestern United States
 </div>
 
 <i></i>
