@@ -1,5 +1,6 @@
 DATE,Min Temp,Max Temp,Total Precipitation,Water Sampler,Avg Soil Moisture,Description,Tower
-2026-04-16,69,71,0,NA,0.29,Sunny,fluxtower3
+2026-04-17,59,66,0,NA,0.28,Sunny,fluxtower3
+2026-04-16,60,71,0.08,NA,0.29,Rain,fluxtower3
 2026-04-15,64,73,0.25,NA,0.29,Rain,fluxtower3
 2026-04-14,62,80,0.26,NA,0.27,Rain,fluxtower3
 2026-04-13,63,80,0.28,NA,0.24,Rain,fluxtower3
