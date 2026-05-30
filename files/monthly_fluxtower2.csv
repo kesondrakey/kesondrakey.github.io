@@ -1,5 +1,5 @@
 Month,year,start_DATE,end_DATE,Min Temp,Max Temp,Total Precipitation,Water Sampler,Avg Soil Moisture,Description,Timeframe,Tower
-May,2026,2026-05-01,2026-05-29,37,86,0,NA,0.54,Sunny,"Friday, May 1  to  Friday, May 29",fluxtower2
+May,2026,2026-05-01,2026-05-30,37,86,0,NA,0.54,Sunny,"Friday, May 1  to  Saturday, May 30",fluxtower2
 Apr,2026,2026-04-01,2026-04-30,31,83,0,NA,NA,Sunny,"Wednesday, April 1  to  Thursday, April 30",fluxtower2
 Mar,2026,2026-03-01,2026-03-31,14,85,0,NA,0.43,Sunny,"Sunday, March 1  to  Tuesday, March 31",fluxtower2
 Feb,2026,2026-02-01,2026-02-28,-20,68,0,NA,0.37,Sunny,"Sunday, February 1  to  Saturday, February 28",fluxtower2
