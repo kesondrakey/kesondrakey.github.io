@@ -1,5 +1,5 @@
 Month,year,start_DATE,end_DATE,Min Temp,Max Temp,Total Precipitation,Water Sampler,Avg Soil Moisture,Description,Timeframe,Tower
-Aug,2026,2026-08-01,2026-08-27,50,84,0.91,63,0.18,Rain,"Saturday, August 1  to  Thursday, August 27",fluxtower4
+Aug,2026,2026-08-01,2026-08-28,50,84,0.91,63,0.18,Rain,"Saturday, August 1  to  Friday, August 28",fluxtower4
 Jul,2026,2026-07-01,2026-07-31,51,91,1.37,44,0.16,Rain,"Wednesday, July 1  to  Friday, July 31",fluxtower4
 Jun,2026,2026-06-01,2026-06-30,49,90,1.73,75,0.17,Rain,"Monday, June 1  to  Tuesday, June 30",fluxtower4
 May,2026,2026-05-01,2026-05-31,33,83,0.73,0,0.05,Rain,"Friday, May 1  to  Sunday, May 31",fluxtower4
